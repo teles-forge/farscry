@@ -14,6 +14,7 @@ env:
   CARGO_TERM_COLOR: always
   RUST_BACKTRACE: 1
   ORT_STRATEGY: download
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   create-release:
@@ -171,26 +172,44 @@ jobs:
           $binary    = "target\$target\release\${{ matrix.binary }}"
           $assetName = "${{ matrix.asset_name }}"
 
-          $ortDll = Get-ChildItem `
-            -Path "target\$target\release\build" `
-            -Filter "onnxruntime*.dll" `
-            -Recurse `
-            -ErrorAction SilentlyContinue |
-            Sort-Object LastWriteTime -Descending |
-            Select-Object -First 1
+          # Search for ORT DLL in build output (ort-sys places it there with ORT_STRATEGY=download)
+          # Also check the release dir directly as a fallback.
+          Write-Host "=== Searching for ORT DLL ==="
+          $searchRoots = @(
+            "target\$target\release\build",
+            "target\$target\release"
+          )
+          $ortDll = $null
+          foreach ($root in $searchRoots) {
+            if (Test-Path $root) {
+              $ortDll = Get-ChildItem `
+                -Path $root `
+                -Filter "onnxruntime*.dll" `
+                -Recurse `
+                -ErrorAction SilentlyContinue |
+                Sort-Object LastWriteTime -Descending |
+                Select-Object -First 1
+              if ($ortDll) { Write-Host "Found in $root"; break }
+            }
+          }
 
           New-Item -ItemType Directory -Force -Path "dist\$assetName" | Out-Null
           Copy-Item $binary "dist\$assetName\"
 
           if ($ortDll) {
-            Write-Host "Found ORT DLL: $($ortDll.FullName)"
+            Write-Host "Bundling ORT DLL: $($ortDll.FullName)"
             Copy-Item $ortDll.FullName "dist\$assetName\"
           } else {
-            Write-Warning "ORT DLL not found - binary may not run on other machines"
+            Write-Host "All DLLs in build dir:"
+            Get-ChildItem "target\$target\release\build" -Recurse -Filter "*.dll" -ErrorAction SilentlyContinue |
+              Select-Object FullName | Format-Table
+            Write-Error "ORT DLL not found - cannot ship a broken Windows binary. Check ORT_STRATEGY=download."
+            exit 1
           }
 
+          # Include the asset directory itself in the zip so extraction preserves structure.
           Compress-Archive `
-            -Path "dist\$assetName\*" `
+            -Path "dist\$assetName" `
             -DestinationPath "${assetName}.zip" `
             -Force
 

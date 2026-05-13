@@ -1,10 +1,12 @@
-# Show HN: farscry — vision APIs describe. farscry gives coordinates. Agents that act, not guess.
+# Show HN: farscry – I was tired of agents guessing where to click
 
 ---
 
 ## Title
 
-Show HN: farscry — vision APIs describe. farscry gives coordinates. Agents that act, not guess.
+Show HN: farscry – I was tired of agents guessing where to click
+
+vision APIs describe. farscry gives coordinates.
 
 ---
 
@@ -69,8 +71,7 @@ farscry diff before.png after.png
 3. **Clipboard** — zero friction
 
 ```bash
-# Cmd+Shift+4 -> farscry --from-clipboard | claude "fix this"
-farscry --from-clipboard | claude "fix this"
+ffix  # after: farscry setup
 ```
 
 ---
@@ -81,11 +82,11 @@ farscry --from-clipboard | claude "fix this"
 |---|---|---|---|---|
 | farscry daemon | 38ms | ~175 | Yes | $0 |
 | Tesseract 4K | ~2,500ms | raw text | No | $0 |
-| Cloud Vision | ~2-5s | ~1,568 | No | $0.0047 |
+| Cloud Vision | ~2-5s (network-dependent) | ~1,568 | No | $0.0047 |
 
 65x faster than Tesseract on 4K screens.
 9x fewer tokens than Cloud Vision on 1080p.
-100% accuracy parity with Cloud Vision (N=20, 2 runs each).
+100% accuracy parity with Cloud Vision (N=20 screenshots, 2 runs each — small sample, manual verification).
 
 Run it yourself: github.com/teles-forge/farscry/tree/main/benchmarks
 
@@ -98,6 +99,17 @@ VASP standardizes visual context for agents.
 
 Any tool can output VASP. Any agent can consume it.
 spec: vasp-protocol.github.io/spec
+
+---
+
+**What it doesn't do:**
+
+- Icon-only buttons (no text label): missed
+- Charts, graphs, diagrams: no structured output
+- `--from-clipboard` on Linux: requires xclip installed
+- Windows: binary ships, clipboard not yet implemented
+- Not a visual grounding model — farscry is fast and local OCR, not ML-based semantic understanding
+- Element classification accuracy on complex UIs: 89.4% OOD, not 100%
 
 ---
 

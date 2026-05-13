@@ -75,6 +75,16 @@ ffix  # after: farscry setup
 ```
 
 ---
+One more thing: smart paste
+
+After `farscry setup`, Cmd+V in your terminal auto-detects images
+and runs farscry automatically.
+
+No command to type. Just paste.
+
+Screenshot -> Cmd+V -> agent understands.
+
+---
 
 **Benchmarks** (N=223 real screenshots, ScreenSpot-Pro MIT, reproducible):
 
@@ -121,6 +131,9 @@ npm install -g farscry
 # or: brew install teles-forge/farscry/farscry
 
 farscry setup  # auto-configures Claude Code, Cursor, Windsurf
+# setup asks: configure smart Cmd+V? (y/N)
+# if yes: shows your terminal's key binding instructions
+# result: Cmd+V auto-detects images in terminal
 ```
 
 ---

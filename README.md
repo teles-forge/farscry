@@ -48,6 +48,26 @@ farscry --from-clipboard | your-agent "fix this"
 farscry serve --mcp
 ```
 
+## Smart paste
+
+Configure Cmd+V to auto-detect images in terminal:
+
+```bash
+farscry setup
+# -> detects your agents (claude, devin, codex, aider)
+# -> configures ffix alias for your preferred agent
+# -> asks: configure smart Cmd+V? (y/N)
+# -> creates ~/.farscry/smart-paste.sh
+# -> shows key binding instructions for your terminal
+```
+
+After setup: screenshot -> Cmd+V -> agent understands. No command to type.
+
+Supported terminals:
+- macOS: iTerm2, Warp (Terminal.app: use `fp` alias instead)
+- Linux: Kitty, Gnome Terminal
+- Windows: Windows Terminal
+
 ## How it works
 
 ```

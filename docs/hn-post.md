@@ -32,7 +32,7 @@ affordances:
 ---
 
 Vision APIs return prose. Agents guess where to click.
-They fail 58% of the time (OSWorld benchmark).
+They fail 58% of the time (OSWorld, arXiv:2404.07972, GPT-4V baseline, Table 2).
 
 farscry gives exact typed coordinates from any image.
 Local. Free. Deterministic. No API key. No GPU.
@@ -50,7 +50,7 @@ without sending them to a cloud API every time.
 
 ---
 
-**Three modes:**
+**Four modes:**
 
 1. **Extract** — any image -> typed coordinates
 
@@ -68,21 +68,23 @@ farscry diff before.png after.png
 # ~175 tokens vs 3,136 re-sending both images
 ```
 
-3. **Clipboard** — zero friction
+3. **Clipboard alias** — typed command, one word
 
 ```bash
 ffix  # after: farscry setup
 ```
 
----
-One more thing: smart paste
+`farscry setup` adds `ffix` to your shell.
+`ffix` = `farscry extract --from-clipboard | claude -p "fix this"`
+Use when: you want a typed command.
 
-After `farscry setup`, Cmd+V in your terminal auto-detects images
-and runs farscry automatically.
+4. **Smart paste** — Cmd+V auto-detects images
 
-No command to type. Just paste.
+After `farscry setup`, Cmd+V in your terminal checks the clipboard.
+Image? Runs farscry. Text? Normal paste.
 
-Screenshot -> Cmd+V -> agent understands.
+Screenshot -> Cmd+V -> done. No command to type.
+Use when: you want zero typing.
 
 ---
 
@@ -176,3 +178,7 @@ Zero runtime dependencies. Single ~8MB binary. Ships via npm, pip, Homebrew, and
 **"What's the diff token count based on?"**
 
 Measured. A typical 1080p screenshot renders to ~1,568 tokens via Claude's image encoding formula (512 base + tiles). VASP text output averages ~175 tokens across N=223. farscry diff produces ~100 tokens for a partial-change verification. Numbers in benchmarks/README.md.
+
+**"Where does the 58% failure rate come from?"**
+
+OSWorld benchmark (arXiv:2404.07972), GPT-4V baseline, Table 2. farscry doesn't claim to fix this directly — it gives agents exact coordinates instead of prose descriptions, which addresses the root cause of most coordinate errors.

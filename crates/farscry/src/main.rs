@@ -75,7 +75,10 @@ enum Commands {
         lang: Vec<String>,
     },
 
-    Setup,
+    Setup {
+        #[arg(long)]
+        undo_smart_paste: bool,
+    },
 
     Paste {
         #[arg(long)]
@@ -121,7 +124,14 @@ async fn main() {
         Commands::Diff { before, after, json } => diff_images(before, after, json),
         Commands::Serve { mcp, port } => serve_mcp(mcp, port).await,
         Commands::InstallLang { lang } => install_lang(lang),
-        Commands::Setup => setup(),
+        Commands::Setup { undo_smart_paste } => {
+            if undo_smart_paste {
+                let home = dirs::home_dir().unwrap_or_else(|| PathBuf::from("."));
+                undo_smart_paste_configs(&home)
+            } else {
+                setup()
+            }
+        }
         Commands::Paste { agent, prompt } => {
             let prompt_str = if prompt.is_empty() {
                 None
@@ -527,14 +537,193 @@ fn setup() -> Result<()> {
     Ok(())
 }
 
-fn setup_smart_paste(home: &Path) -> Result<()> {
-    let farscry_dir = home.join(".farscry");
-    std::fs::create_dir_all(&farscry_dir)?;
+struct TerminalResult {
+    name: &'static str,
+    configured: bool,
+    note: &'static str,
+}
+
+fn backup_file(path: &Path) -> Result<()> {
+    if path.exists() {
+        let backup = path.with_extension(
+            format!("{}.farscry-backup", path.extension().and_then(|e| e.to_str()).unwrap_or(""))
+        );
+        std::fs::copy(path, &backup)?;
+    }
+    Ok(())
+}
+
+fn restore_backup(path: &Path) -> bool {
+    let backup = path.with_extension(
+        format!("{}.farscry-backup", path.extension().and_then(|e| e.to_str()).unwrap_or(""))
+    );
+    if backup.exists() {
+        std::fs::copy(&backup, path).is_ok() && std::fs::remove_file(&backup).is_ok()
+    } else {
+        false
+    }
+}
+
+fn path_exists(p: &Path) -> bool { p.exists() }
+fn cmd_exists(cmd: &str) -> bool {
+    std::process::Command::new("which").arg(cmd).output()
+        .map(|o| o.status.success()).unwrap_or(false)
+}
+
+#[cfg(target_os = "macos")]
+fn configure_iterm2(script: &Path, home: &Path) -> TerminalResult {
+    let plist = home.join("Library/Preferences/com.googlecode.iterm2.plist");
+    if !plist.exists() {
+        return TerminalResult { name: "iTerm2", configured: false, note: "plist not found" };
+    }
+    if backup_file(&plist).is_err() {
+        return TerminalResult { name: "iTerm2", configured: false, note: "backup failed" };
+    }
+    let script_str = script.to_string_lossy();
+    let key = "0x76-0x100000";
+    let ok = std::process::Command::new("defaults")
+        .args(["write", "com.googlecode.iterm2",
+               &format!("GlobalKeyMap:{key}:Action"), "13"])
+        .status().map(|s| s.success()).unwrap_or(false)
+        && std::process::Command::new("defaults")
+        .args(["write", "com.googlecode.iterm2",
+               &format!("GlobalKeyMap:{key}:Text"), &*script_str])
+        .status().map(|s| s.success()).unwrap_or(false);
+    let _ = std::process::Command::new("killall").args(["-HUP", "iTerm2"]).status();
+    if ok {
+        TerminalResult { name: "iTerm2", configured: true, note: "restart to apply" }
+    } else {
+        TerminalResult { name: "iTerm2", configured: false, note: "defaults write failed" }
+    }
+}
+
+#[cfg(target_os = "macos")]
+fn configure_warp(script: &Path, home: &Path) -> TerminalResult {
+    let kb = home.join(".warp/keybindings.yaml");
+    if let Some(p) = kb.parent() {
+        let _ = std::fs::create_dir_all(p);
+    }
+    if backup_file(&kb).is_err() {
+        return TerminalResult { name: "Warp", configured: false, note: "backup failed" };
+    }
+    let entry = format!("\n- key: cmd+v\n  command: {}\n", script.display());
+    let ok = std::fs::OpenOptions::new().create(true).append(true).open(&kb)
+        .and_then(|mut f| { use std::io::Write; f.write_all(entry.as_bytes()) })
+        .is_ok();
+    if ok {
+        TerminalResult { name: "Warp", configured: true, note: "active immediately" }
+    } else {
+        TerminalResult { name: "Warp", configured: false, note: "write failed" }
+    }
+}
+
+fn configure_kitty(script: &Path, home: &Path) -> TerminalResult {
+    let conf = home.join(".config/kitty/kitty.conf");
+    if let Some(p) = conf.parent() {
+        let _ = std::fs::create_dir_all(p);
+    }
+    if backup_file(&conf).is_err() {
+        return TerminalResult { name: "Kitty", configured: false, note: "backup failed" };
+    }
+    let entry = format!("\nmap ctrl+v launch --type=overlay {}\n", script.display());
+    let ok = std::fs::OpenOptions::new().create(true).append(true).open(&conf)
+        .and_then(|mut f| { use std::io::Write; f.write_all(entry.as_bytes()) })
+        .is_ok();
+    if ok {
+        TerminalResult { name: "Kitty", configured: true, note: "restart to apply" }
+    } else {
+        TerminalResult { name: "Kitty", configured: false, note: "write failed" }
+    }
+}
+
+fn configure_alacritty(script: &Path, home: &Path) -> TerminalResult {
+    let yml  = home.join(".config/alacritty/alacritty.yml");
+    let toml = home.join(".config/alacritty/alacritty.toml");
+    let (path, content) = if toml.exists() {
+        (toml, format!(
+            "\n[[keyboard.bindings]]\nkey = \"V\"\nmods = \"Control\"\ncommand = {{ program = \"{}\" }}\n",
+            script.display()
+        ))
+    } else {
+        (yml, format!(
+            "\nkey_bindings:\n  - key: V\n    mods: Control\n    command:\n      program: {}\n",
+            script.display()
+        ))
+    };
+    if let Some(p) = path.parent() { let _ = std::fs::create_dir_all(p); }
+    if backup_file(&path).is_err() {
+        return TerminalResult { name: "Alacritty", configured: false, note: "backup failed" };
+    }
+    let ok = std::fs::OpenOptions::new().create(true).append(true).open(&path)
+        .and_then(|mut f| { use std::io::Write; f.write_all(content.as_bytes()) })
+        .is_ok();
+    if ok {
+        TerminalResult { name: "Alacritty", configured: true, note: "restart to apply" }
+    } else {
+        TerminalResult { name: "Alacritty", configured: false, note: "write failed" }
+    }
+}
+
+fn configure_bashrc_gnome(script: &Path, home: &Path) -> TerminalResult {
+    let bashrc = home.join(".bashrc");
+    if backup_file(&bashrc).is_err() {
+        return TerminalResult { name: "Gnome Terminal", configured: false, note: "backup failed" };
+    }
+    let entry = format!("\nbind -x '\"\\C-v\": {}'\n", script.display());
+    let ok = std::fs::OpenOptions::new().create(true).append(true).open(&bashrc)
+        .and_then(|mut f| { use std::io::Write; f.write_all(entry.as_bytes()) })
+        .is_ok();
+    if ok {
+        TerminalResult { name: "Gnome Terminal", configured: true, note: "source ~/.bashrc to apply" }
+    } else {
+        TerminalResult { name: "Gnome Terminal", configured: false, note: "write failed" }
+    }
+}
+
+#[cfg(target_os = "windows")]
+fn configure_windows_terminal(script: &Path, home: &Path) -> TerminalResult {
+    let settings = home.join("AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json");
+    if !settings.exists() {
+        return TerminalResult { name: "Windows Terminal", configured: false, note: "settings.json not found" };
+    }
+    if backup_file(&settings).is_err() {
+        return TerminalResult { name: "Windows Terminal", configured: false, note: "backup failed" };
+    }
+    let raw = match std::fs::read_to_string(&settings) {
+        Ok(s) => s,
+        Err(_) => return TerminalResult { name: "Windows Terminal", configured: false, note: "read failed" },
+    };
+    let new_action = format!(
+        r#"{{ "command": {{ "action": "sendInput", "input": "" }}, "keys": "ctrl+v" }}"#
+    );
+    let script_path = script.display().to_string().replace('\\', "\\\\");
+    let new_action = format!(
+        r#"{{ "command": {{ "action": "wt", "commandline": "powershell -Command \\"{}\\"" }}, "keys": "ctrl+v" }}"#,
+        script_path
+    );
+    let updated = if raw.contains("\"actions\"") {
+        raw.replacen("\"actions\": [", &format!("\"actions\": [\n        {},", new_action), 1)
+    } else {
+        raw.replacen("}", &format!(", \"actions\": [ {} ] }}", new_action), 1)
+    };
+    let ok = std::fs::write(&settings, updated).is_ok();
+    if ok {
+        TerminalResult { name: "Windows Terminal", configured: true, note: "restart to apply" }
+    } else {
+        TerminalResult { name: "Windows Terminal", configured: false, note: "write failed" }
+    }
+}
+
+fn write_smart_paste_script(farscry_dir: &Path) -> Result<PathBuf> {
+    std::fs::create_dir_all(farscry_dir)?;
+
+    #[cfg(not(target_os = "windows"))]
+    let script_path = farscry_dir.join("smart-paste.sh");
+    #[cfg(target_os = "windows")]
+    let script_path = farscry_dir.join("smart-paste.ps1");
 
     #[cfg(target_os = "macos")]
-    {
-        let script_path = farscry_dir.join("smart-paste.sh");
-        let script = r#"#!/bin/bash
+    let content = r#"#!/bin/bash
 HAS_IMAGE=$(osascript -e '
   try
     set img to the clipboard as «class PNGf»
@@ -552,28 +741,9 @@ else
     pbpaste
 fi
 "#;
-        std::fs::write(&script_path, script)?;
-        use std::os::unix::fs::PermissionsExt;
-        std::fs::set_permissions(&script_path, std::fs::Permissions::from_mode(0o755))?;
-        println!("\nCreated: {}\n", script_path.display());
-        println!("Terminal instructions:\n");
-        println!("  iTerm2:");
-        println!("    Preferences → Keys → Key Bindings → +");
-        println!("    Shortcut: Cmd+V");
-        println!("    Action: Run Command");
-        println!("    Command: {}\n", script_path.display());
-        println!("  Warp:");
-        println!("    Settings → Features → Custom Key Bindings");
-        println!("    Key: Cmd+V");
-        println!("    Action: Run Command: {}\n", script_path.display());
-        println!("  Terminal.app:");
-        println!("    Not supported natively. Use fp alias instead.\n");
-    }
 
     #[cfg(target_os = "linux")]
-    {
-        let script_path = farscry_dir.join("smart-paste.sh");
-        let script = r#"#!/bin/bash
+    let content = r#"#!/bin/bash
 if command -v xclip &>/dev/null; then
     HAS_IMAGE=$(xclip -selection clipboard -t TARGETS -o 2>/dev/null | grep -c "image/")
     if [ "$HAS_IMAGE" -gt 0 ]; then
@@ -592,24 +762,9 @@ else
     echo "Install xclip or wl-clipboard for smart paste"
 fi
 "#;
-        std::fs::write(&script_path, script)?;
-        use std::os::unix::fs::PermissionsExt;
-        std::fs::set_permissions(&script_path, std::fs::Permissions::from_mode(0o755))?;
-        println!("\nCreated: {}\n", script_path.display());
-        println!("Terminal instructions:\n");
-        println!("  Gnome Terminal:");
-        println!("    Add to ~/.bashrc:");
-        println!("    bind -x '\"\\C-v\": {}'", script_path.display());
-        println!("    Then: source ~/.bashrc\n");
-        println!("  Kitty (~/.config/kitty/kitty.conf):");
-        println!("    map ctrl+v launch --stdin-source=@last_cmd_output {}\n", script_path.display());
-        println!("  Other terminals: check your terminal's key binding preferences.\n");
-    }
 
     #[cfg(target_os = "windows")]
-    {
-        let script_path = farscry_dir.join("smart-paste.ps1");
-        let script = r#"$formats = [System.Windows.Forms.Clipboard]::GetDataObject().GetFormats()
+    let content = r#"$formats = [System.Windows.Forms.Clipboard]::GetDataObject().GetFormats()
 $hasImage = $formats | Where-Object { $_ -match "Bitmap|PNG|image" }
 if ($hasImage) {
     farscry paste
@@ -617,20 +772,183 @@ if ($hasImage) {
     Get-Clipboard
 }
 "#;
-        std::fs::write(&script_path, script)?;
-        println!("\nCreated: {}\n", script_path.display());
-        println!("Terminal instructions:\n");
-        println!("  Windows Terminal:");
-        println!("    Settings → Actions → Add new");
-        println!("    Command: wt.exe new-tab powershell -Command {}", script_path.display());
-        println!("    Keys: ctrl+v\n");
-    }
 
     #[cfg(not(any(target_os = "macos", target_os = "linux", target_os = "windows")))]
+    let content = "#!/bin/sh\necho 'Platform not supported'\n";
+
+    std::fs::write(&script_path, content)?;
+
+    #[cfg(unix)]
     {
-        println!("Smart paste scripts not available on this platform.");
+        use std::os::unix::fs::PermissionsExt;
+        std::fs::set_permissions(&script_path, std::fs::Permissions::from_mode(0o755))?;
     }
 
+    Ok(script_path)
+}
+
+fn setup_smart_paste(home: &Path) -> Result<()> {
+    let farscry_dir = home.join(".farscry");
+    let script = write_smart_paste_script(&farscry_dir)?;
+    println!("\nCreated: {}\n", script.display());
+
+    let mut detected: Vec<(&str, bool)> = Vec::new();
+
+    #[cfg(target_os = "macos")]
+    {
+        let iterm2  = path_exists(Path::new("/Applications/iTerm.app"));
+        let warp    = path_exists(Path::new("/Applications/Warp.app"));
+        let kitty   = cmd_exists("kitty") || path_exists(&home.join(".config/kitty/kitty.conf"));
+        let alac    = path_exists(Path::new("/Applications/Alacritty.app"))
+            || cmd_exists("alacritty");
+        detected.push(("iTerm2",          iterm2));
+        detected.push(("Warp",            warp));
+        detected.push(("Kitty",           kitty));
+        detected.push(("Alacritty",       alac));
+        detected.push(("Terminal.app",    true));
+    }
+
+    #[cfg(target_os = "linux")]
+    {
+        detected.push(("Kitty",           cmd_exists("kitty")));
+        detected.push(("Gnome Terminal",  cmd_exists("gnome-terminal")));
+        detected.push(("Alacritty",       cmd_exists("alacritty")));
+        detected.push(("Konsole",         cmd_exists("konsole")));
+        detected.push(("Tilix",           cmd_exists("tilix")));
+    }
+
+    #[cfg(target_os = "windows")]
+    {
+        let wt = home.join("AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json");
+        detected.push(("Windows Terminal", wt.exists()));
+    }
+
+    let found: Vec<&str> = detected.iter().filter(|(_, d)| *d).map(|(n, _)| *n).collect();
+
+    if found.is_empty() {
+        println!("No terminals detected on your system.");
+        return Ok(());
+    }
+
+    println!("Found terminals on your system:");
+    for (name, det) in &detected {
+        if *det {
+            let limited = *name == "Terminal.app";
+            if limited {
+                println!("  ✓ {} (limited support)", name);
+            } else {
+                println!("  ✓ {}", name);
+            }
+        }
+    }
+
+    println!("\nConfigure smart Cmd+V in all of them? (y/N)");
+    let all = readline_prompt("Configure all? [y/N]: ");
+
+    let to_configure: Vec<&str> = if all.eq_ignore_ascii_case("y") {
+        found.clone()
+    } else {
+        println!("\nWhich terminals to configure?");
+        for (i, name) in found.iter().enumerate() {
+            println!("  {}. {}", i + 1, name);
+        }
+        println!("  {}. All of the above", found.len() + 1);
+        println!("  {}. Skip", found.len() + 2);
+
+        let choice_str = readline_prompt("Choice: ");
+        let choice: usize = choice_str.parse().unwrap_or(found.len() + 2);
+
+        if choice == found.len() + 1 {
+            found.clone()
+        } else if choice >= 1 && choice <= found.len() {
+            vec![found[choice - 1]]
+        } else {
+            println!("Skipped.");
+            return Ok(());
+        }
+    };
+
+    let mut results: Vec<TerminalResult> = Vec::new();
+
+    for name in &to_configure {
+        let result = match *name {
+            #[cfg(target_os = "macos")]
+            "iTerm2" => configure_iterm2(&script, home),
+            #[cfg(target_os = "macos")]
+            "Warp" => configure_warp(&script, home),
+            "Kitty" => configure_kitty(&script, home),
+            "Alacritty" => configure_alacritty(&script, home),
+            #[cfg(target_os = "linux")]
+            "Gnome Terminal" => configure_bashrc_gnome(&script, home),
+            #[cfg(target_os = "windows")]
+            "Windows Terminal" => configure_windows_terminal(&script, home),
+            "Terminal.app" => TerminalResult {
+                name: "Terminal.app",
+                configured: false,
+                note: "not supported — use fp alias instead",
+            },
+            other => TerminalResult { name: other, configured: false, note: "unknown terminal" },
+        };
+        results.push(result);
+    }
+
+    println!("\nSmart paste configured for:\n");
+    for r in &results {
+        if r.configured {
+            println!("  ✓ {:16} → {}", r.name, r.note);
+        } else {
+            println!("  ✗ {:16} → {}", r.name, r.note);
+        }
+    }
+
+    println!("\nTo undo all changes: farscry setup --undo-smart-paste\n");
+    println!("Restart your terminal and Cmd+V will");
+    println!("automatically detect images.\n");
+    println!("Try it: take a screenshot → press Cmd+V");
+
+    Ok(())
+}
+
+fn undo_smart_paste_configs(home: &Path) -> Result<()> {
+    let mut restored = 0usize;
+    let mut failed: Vec<&'static str> = Vec::new();
+
+    let candidates: &[(&str, &[&str])] = &[
+        ("iTerm2 plist", &["Library/Preferences/com.googlecode.iterm2.plist"]),
+        ("Warp keybindings", &[".warp/keybindings.yaml"]),
+        ("kitty.conf", &[".config/kitty/kitty.conf"]),
+        ("alacritty", &[".config/alacritty/alacritty.yml", ".config/alacritty/alacritty.toml"]),
+        ("~/.bashrc", &[".bashrc"]),
+        ("Windows Terminal settings", &["AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json"]),
+    ];
+
+    for (label, paths) in candidates {
+        for rel in *paths {
+            let p = home.join(rel);
+            if restore_backup(&p) {
+                println!("  ✓ Restored {label}");
+                restored += 1;
+                break;
+            }
+        }
+        let mut any = false;
+        for rel in *paths {
+            let p = home.join(rel);
+            let backup = p.with_extension(
+                format!("{}.farscry-backup", p.extension().and_then(|e| e.to_str()).unwrap_or(""))
+            );
+            if backup.exists() { any = true; break; }
+            if restore_backup(&p) { any = true; break; }
+        }
+        if !any { let _ = label; }
+    }
+
+    if restored == 0 {
+        println!("No backups found — nothing to restore.");
+    } else {
+        println!("\n✓ All terminal configs restored to original.");
+    }
+    let _ = failed;
     Ok(())
 }
 

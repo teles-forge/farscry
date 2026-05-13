@@ -54,14 +54,14 @@ without sending them to a cloud API every time.
 
 **Four modes:**
 
-1. **Extract** — any image -> typed coordinates
+1. **Extract**: any image -> typed coordinates
 
 ```bash
 farscry error.png | claude "fix this"
 farscry figma.png | claude "build this component"
 ```
 
-2. **Diff** — what changed between two states
+2. **Diff**: what changed between two states
 
 ```bash
 farscry diff before.png after.png
@@ -70,7 +70,7 @@ farscry diff before.png after.png
 # ~175 tokens vs 3,136 re-sending both images
 ```
 
-3. **Clipboard alias** — typed command, one word
+3. **Clipboard alias**: typed command, one word
 
 ```bash
 ffix  # after: farscry setup
@@ -80,7 +80,7 @@ ffix  # after: farscry setup
 `ffix` = `farscry extract --from-clipboard | claude -p "fix this"`
 Use when: you want a typed command.
 
-4. **Smart paste** — Cmd+V auto-detects images
+4. **Smart paste**: Cmd+V auto-detects images
 
 After `farscry setup`, Cmd+V in your terminal checks the clipboard.
 Image? Runs farscry. Text? Normal paste.
@@ -100,13 +100,13 @@ Use when: you want zero typing.
 
 65x faster than Tesseract on 4K screens.
 9x fewer tokens than Cloud Vision on 1080p.
-100% accuracy parity with Cloud Vision (N=20 screenshots, 2 runs each — small sample, manual verification).
+100% accuracy parity with Cloud Vision (N=20 screenshots, 2 runs each: small sample, manual verification).
 
 Run it yourself: github.com/teles-forge/farscry/tree/main/benchmarks
 
 ---
 
-**VASP (Visual Agent State Protocol)** — the open standard behind farscry.
+**VASP (Visual Agent State Protocol)**: the open standard behind farscry.
 
 Like MCP standardized tool connectivity,
 VASP standardizes visual context for agents.
@@ -122,7 +122,7 @@ spec: vasp-protocol.github.io/spec
 - Charts, graphs, diagrams: no structured output
 - `--from-clipboard` on Linux: requires xclip installed
 - Windows: binary ships, clipboard not yet implemented
-- Not a visual grounding model — farscry is fast and local OCR, not ML-based semantic understanding
+- Not a visual grounding model: farscry is fast and local OCR, not ML-based semantic understanding
 - Element classification accuracy on complex UIs: 89.4% OOD, not 100%
 
 ---
@@ -155,7 +155,7 @@ Built with Rust. Apache 2.0.
 
 **"Why not just use Tesseract?"**
 
-Tesseract returns raw text. farscry returns typed UI elements with coordinates and states (enabled/disabled, current values). Tesseract at 4K takes ~2,500ms. farscry warm daemon is 38ms. They solve different problems — Tesseract does OCR, farscry does UI understanding.
+Tesseract returns raw text. farscry returns typed UI elements with coordinates and states (enabled/disabled, current values). Tesseract at 4K takes ~2,500ms. farscry warm daemon is 38ms. They solve different problems: Tesseract does OCR, farscry does UI understanding.
 
 **"How does latency compare to cloud vision?"**
 
@@ -163,7 +163,7 @@ Cloud Vision typically takes 2-5s per image and costs ~$0.0047/image. farscry wa
 
 **"What's VASP?"**
 
-VASP (Visual Agent State Protocol) is an open format for how agents receive visual context — typed elements with coordinates, not prose. Same positioning as MCP for tool connectivity, but for visual state. farscry is the reference implementation. Spec at vasp-protocol.github.io/spec.
+VASP (Visual Agent State Protocol) is an open format for how agents receive visual context: typed elements with coordinates, not prose. Same positioning as MCP for tool connectivity, but for visual state. farscry is the reference implementation. Spec at vasp-protocol.github.io/spec.
 
 **"Does it work on Linux/Windows?"**
 
@@ -183,4 +183,4 @@ Measured. A typical 1080p screenshot renders to ~1,568 tokens via Claude's image
 
 **"Where does the 58% failure rate come from?"**
 
-OSWorld benchmark (arXiv:2404.07972), GPT-4V baseline, Table 2. farscry doesn't claim to fix this directly — it gives agents exact coordinates instead of prose descriptions, which addresses the root cause of most coordinate errors.
+OSWorld benchmark (arXiv:2404.07972), GPT-4V baseline, Table 2. farscry doesn't claim to fix this directly: it gives agents exact coordinates instead of prose descriptions, which addresses the root cause of most coordinate errors.

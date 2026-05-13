@@ -335,13 +335,22 @@ async fn serve_mcp(mcp: bool, port: Option<u16>) -> Result<()> {
             .await
             .map_err(|e| anyhow::anyhow!("{}", e))?;
     } else {
-        let socket_path = dirs::home_dir()
-            .unwrap_or_else(|| PathBuf::from("."))
-            .join(".farscry")
-            .join("mcp.sock");
-        farscry_mcp::McpServer::serve_unix_with(&socket_path, adapter)
-            .await
-            .map_err(|e| anyhow::anyhow!("{}", e))?;
+        #[cfg(unix)]
+        {
+            let socket_path = dirs::home_dir()
+                .unwrap_or_else(|| PathBuf::from("."))
+                .join(".farscry")
+                .join("mcp.sock");
+            farscry_mcp::McpServer::serve_unix_with(&socket_path, adapter)
+                .await
+                .map_err(|e| anyhow::anyhow!("{}", e))?;
+        }
+        #[cfg(not(unix))]
+        {
+            anyhow::bail!(
+                "Unix Domain Sockets are not supported on Windows. Use --port to specify a TCP port."
+            );
+        }
     }
 
     Ok(())

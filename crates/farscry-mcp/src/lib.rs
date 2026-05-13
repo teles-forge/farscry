@@ -6,7 +6,9 @@ use serde_json::Value;
 use std::path::Path;
 use std::sync::{Arc, Mutex};
 use tokio::io::{AsyncBufReadExt, AsyncWriteExt, BufReader};
-use tokio::net::{TcpListener, UnixListener};
+use tokio::net::TcpListener;
+#[cfg(unix)]
+use tokio::net::UnixListener;
 
 pub trait PipelineOps: Clone + Send + 'static {
     fn process(&self, image_path: &str) -> Result<VaspOutput, String>;
@@ -91,6 +93,7 @@ impl<P: PipelineOps> McpServer<P> {
         }
     }
 
+    #[cfg(unix)]
     pub async fn serve_unix_with(socket_path: &Path, pipeline: P) -> Result<(), String> {
         if socket_path.exists() {
             std::fs::remove_file(socket_path)
@@ -146,6 +149,7 @@ impl<P: PipelineOps> McpServer<P> {
 }
 
 impl McpServer<MockPipeline> {
+    #[cfg(unix)]
     pub async fn serve_unix(socket_path: &Path) -> Result<(), String> {
         McpServer::<MockPipeline>::serve_unix_with(socket_path, MockPipeline::new()).await
     }
@@ -156,6 +160,7 @@ impl McpServer<MockPipeline> {
 }
 
 impl<P: PipelineOps> McpServer<P> {
+    #[cfg(unix)]
     async fn handle_unix_session(&self, stream: tokio::net::UnixStream) -> Result<(), String> {
         let (reader, writer) = tokio::io::split(stream);
         self.run_session(BufReader::new(reader), writer).await
@@ -631,6 +636,7 @@ mod tests {
         assert!(!delta.context_changed);
     }
 
+    #[cfg(unix)]
     #[tokio::test]
     async fn test_server_starts_unix() {
         let temp_dir = tempfile::tempdir().unwrap();

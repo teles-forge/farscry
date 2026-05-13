@@ -373,22 +373,51 @@ fn install_lang(langs: Vec<String>) -> Result<()> {
 }
 
 fn setup() -> Result<()> {
+    let snippet = r#"{
+  "mcpServers": {
+    "farscry": {
+      "command": "farscry",
+      "args": ["serve", "--mcp"]
+    }
+  }
+}"#;
+
+    let home = dirs::home_dir().unwrap_or_else(|| PathBuf::from("."));
+
+    let agents: &[(&str, &str)] = &[
+        ("Claude Code", ".claude/mcp.json"),
+        ("Cursor",      ".cursor/mcp.json"),
+        ("Windsurf",    ".windsurf/mcp.json"),
+        ("Zed",         ".config/zed/settings.json"),
+    ];
+
+    let mut detected: Vec<&str> = Vec::new();
+    for (name, rel) in agents {
+        if home.join(rel).exists() {
+            detected.push(name);
+        }
+    }
+
     println!("farscry v0.1.0\n");
 
-    println!("Detected MCP-compatible environments:");
-    println!("  Local MCP client  - config snippet below\n");
+    if detected.is_empty() {
+        println!("No MCP-compatible agents detected.");
+        println!("Checked: Claude Code, Cursor, Windsurf, Zed\n");
+    } else {
+        println!("Detected: {}\n", detected.join(", "));
+    }
 
-    println!("To use farscry with an MCP client, add this server config:");
-    println!("{{");
-    println!("  \"mcpServers\": {{");
-    println!("    \"farscry\": {{");
-    println!("      \"command\": \"farscry\",");
-    println!("      \"args\": [\"serve\", \"--mcp\"]");
-    println!("    }}");
-    println!("  }}");
-    println!("}}}}\n");
+    println!("Add this to your agent's MCP config (paste manually):\n");
+    println!("{snippet}\n");
 
-    println!("Copy and paste manually. farscry never modifies your configs automatically.\n");
+    println!("Config file locations:");
+    for (name, rel) in agents {
+        let path = home.join(rel);
+        let status = if path.exists() { "found" } else { "not found" };
+        println!("  {name:12} {status:10} {}", path.display());
+    }
+
+    println!("\nfarscry never modifies your config files automatically.");
 
     Ok(())
 }

@@ -273,13 +273,18 @@ impl<P: PipelineOps> McpServer<P> {
             "tools": [
                 {
                     "name": "farscry_extract",
-                    "description": "Converts any screenshot into VASP structured context for automation workflows. Returns typed, coordinate-rich UI elements with positions and affordances (click/type targets).",
+                    "description": "Converts one or more screenshots into VASP structured context. Returns typed, coordinate-rich UI elements with positions and affordances. Pass image_path for a single image or image_paths for multiple.",
                     "inputSchema": {
                         "type": "object",
                         "properties": {
                             "image_path": {
                                 "type": "string",
-                                "description": "Absolute path to the image file (PNG, JPG, WebP, GIF)"
+                                "description": "Absolute path to a single image file (PNG, JPG, WebP, GIF, TIFF)"
+                            },
+                            "image_paths": {
+                                "type": "array",
+                                "items": { "type": "string" },
+                                "description": "Absolute paths to multiple image files — processed in parallel, outputs separated by ---"
                             },
                             "lang": {
                                 "type": "string",
@@ -291,8 +296,7 @@ impl<P: PipelineOps> McpServer<P> {
                                 "description": "Include affordances (click/type targets) in output",
                                 "default": true
                             }
-                        },
-                        "required": ["image_path"]
+                        }
                     }
                 },
                 {
@@ -330,10 +334,57 @@ impl<P: PipelineOps> McpServer<P> {
 
         match name {
             "farscry_extract" => {
+                let multi_paths: Vec<String> = arguments
+                    .get("image_paths")
+                    .and_then(|v| v.as_array())
+                    .map(|arr| {
+                        arr.iter()
+                            .filter_map(|v| v.as_str().map(|s| s.to_string()))
+                            .collect()
+                    })
+                    .unwrap_or_default();
+
+                if !multi_paths.is_empty() {
+                    let mut tasks = Vec::new();
+                    for path in multi_paths.clone() {
+                        let pipeline = self.pipeline.clone();
+                        let task = tokio::task::spawn_blocking(move || {
+                            let dims = image::image_dimensions(&path).unwrap_or((1920, 1080));
+                            let result = pipeline.lock().unwrap().process(&path);
+                            (path, dims, result)
+                        });
+                        tasks.push(task);
+                    }
+
+                    let mut combined = String::new();
+                    for (i, task) in tasks.into_iter().enumerate() {
+                        let (path, (img_w, img_h), result) = task
+                            .await
+                            .map_err(|e| mcp_error(-32000, &format!("Spawn error: {e}")))?;
+
+                        if i > 0 {
+                            combined.push_str("\n---\n");
+                        }
+                        match result {
+                            Ok(output) => {
+                                combined.push_str(&farscry_formatter::VaspFormatter::format_vasp(
+                                    &output, &path, img_w, img_h,
+                                ));
+                            }
+                            Err(e) => {
+                                combined.push_str(&format!("Error processing {path}: {e}\n"));
+                            }
+                        }
+                    }
+                    return Ok(tool_result_text(&combined));
+                }
+
                 let image_path = arguments
                     .get("image_path")
                     .and_then(Value::as_str)
-                    .ok_or_else(|| mcp_error(-32602, "Missing required argument: image_path"))?
+                    .ok_or_else(|| {
+                        mcp_error(-32602, "Provide image_path (single) or image_paths (multiple)")
+                    })?
                     .to_string();
 
                 let (img_w, img_h) = image::image_dimensions(&image_path).unwrap_or((1920, 1080));

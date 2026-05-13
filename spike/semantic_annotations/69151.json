@@ -1,0 +1,644 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.freelife.weather:id/sli_main_bg",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        0,
+        0,
+        1440,
+        2560
+      ],
+      "componentLabel": "Background Image"
+    },
+    {
+      "resource-id": "com.freelife.weather:id/toolbar",
+      "children": [
+        {
+          "text": "Urbana",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            252,
+            51,
+            477,
+            144
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            0,
+            196,
+            196
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "shop",
+          "resource-id": "com.freelife.weather:id/menu_skin_shop",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            936,
+            14,
+            1104,
+            182
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "com.freelife.weather:id/menu_search",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1104,
+            14,
+            1272,
+            182
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "share",
+          "resource-id": "com.freelife.weather:id/menu_share",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1272,
+            14,
+            1440,
+            182
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        0,
+        1440,
+        196
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.design.widget.TabLayout$SlidingTabStrip",
+      "bounds": [
+        0,
+        196,
+        1440,
+        392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Weather",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            247,
+            261,
+            472,
+            327
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Daily news",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            941,
+            261,
+            1218,
+            327
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "text": "47°F",
+      "resource-id": "com.freelife.weather:id/today_weather_temp",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.androapplite.weather.weatherproject.view.FontTextView",
+      "bounds": [
+        485,
+        656,
+        989,
+        1085
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Hourly",
+      "resource-id": "com.freelife.weather:id/tv_hourly",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        46,
+        1343,
+        249,
+        1436
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Powered by Dark Sky",
+      "resource-id": "com.freelife.weather:id/data_source",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        937,
+        1356,
+        1394,
+        1422
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "ancestors": [
+        "com.google.android.gms.ads.BaseAdView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.google.android.gms.ads.NativeExpressAdView",
+      "bounds": [
+        35,
+        2031,
+        1405,
+        2560
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.google.android.gms.ads.internal.webview.n",
+          "bounds": [
+            53,
+            2031,
+            1386,
+            2560
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.webkit.WebView",
+                "android.widget.AbsoluteLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                53,
+                2031,
+                1386,
+                2560
+              ],
+              "clickable": true,
+              "class": "com.google.android.gms.ads.internal.webview.o",
+              "componentLabel": "Web View"
+            }
+          ],
+          "componentLabel": "Web View"
+        }
+      ],
+      "componentLabel": "Advertisement"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.freelife.weather:id/today_weather_icon",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        535,
+        515,
+        710,
+        690
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Clear",
+      "resource-id": "com.freelife.weather:id/today_weather_states",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        745,
+        546,
+        939,
+        658
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Refresh time: 05/22 10:11",
+      "resource-id": "com.freelife.weather:id/refresh_time",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        435,
+        1171,
+        1004,
+        1220
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "10:00",
+      "resource-id": "com.freelife.weather:id/time_1",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        53,
+        1471,
+        275,
+        1611
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "11:00",
+      "resource-id": "com.freelife.weather:id/time_2",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        275,
+        1471,
+        497,
+        1611
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "12:00",
+      "resource-id": "com.freelife.weather:id/time_3",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        497,
+        1471,
+        719,
+        1611
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "13:00",
+      "resource-id": "com.freelife.weather:id/time_4",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        719,
+        1471,
+        941,
+        1611
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "14:00",
+      "resource-id": "com.freelife.weather:id/time_5",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        941,
+        1471,
+        1164,
+        1611
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "15:00",
+      "resource-id": "com.freelife.weather:id/time_6",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1164,
+        1471,
+        1387,
+        1611
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "H",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        545,
+        1033,
+        590,
+        1118
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "47°F",
+      "resource-id": "com.freelife.weather:id/today_weather_min",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        601,
+        1040,
+        711,
+        1116
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "L",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        775,
+        1033,
+        809,
+        1118
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "74°F",
+      "resource-id": "com.freelife.weather:id/today_weather_max",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        820,
+        1040,
+        930,
+        1116
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.freelife.weather:id/icon_1",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        120,
+        1611,
+        208,
+        1699
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "iconClass": "weather",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.freelife.weather:id/icon_2",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        342,
+        1611,
+        430,
+        1699
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "weather",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.freelife.weather:id/icon_3",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        564,
+        1611,
+        652,
+        1699
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.freelife.weather:id/icon_4",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        786,
+        1611,
+        874,
+        1699
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.freelife.weather:id/icon_5",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        1008,
+        1611,
+        1096,
+        1699
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.freelife.weather:id/icon_6",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        1231,
+        1611,
+        1319,
+        1699
+      ],
+      "componentLabel": "Image"
+    }
+  ]
+}

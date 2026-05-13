@@ -1,0 +1,98 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.ksmobile.cb:id/webviewholder",
+      "children": [
+        {
+          "ancestors": [
+            "com.ijinshan.browser.core.apis.AbstractKWebView",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.ijinshan.browser.core.glue.KWebView",
+          "bounds": [
+            0,
+            84,
+            1440,
+            2392
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ViewSwitcher",
+                "android.widget.ViewAnimator",
+                "android.widget.FrameLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "com.ijinshan.browser.core.kandroidwebview.KAndroidWebViewFlipper",
+              "bounds": [
+                0,
+                84,
+                1440,
+                2392
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "com.ijinshan.browser.ad.NestedScrollWebView",
+                    "android.webkit.WebView",
+                    "android.widget.AbsoluteLayout",
+                    "android.view.ViewGroup",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    0,
+                    84,
+                    1440,
+                    2392
+                  ],
+                  "clickable": true,
+                  "class": "com.ijinshan.browser.core.kandroidwebview.ElementWebView",
+                  "componentLabel": "Web View"
+                }
+              ],
+              "componentLabel": "Web View"
+            }
+          ],
+          "componentLabel": "Web View"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.ijinshan.browser.ui.KAndroidWebViewHolder",
+      "bounds": [
+        0,
+        84,
+        1440,
+        2392
+      ],
+      "componentLabel": "Web View"
+    }
+  ]
+}

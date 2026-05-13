@@ -1,0 +1,376 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.sololearn.cplusplus:id/toolbar",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Code Playground",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            210,
+            135,
+            747,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "share",
+          "resource-id": "com.sololearn.cplusplus:id/action_share",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1132,
+            98,
+            1300,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "#include <iostream>\n#include <cstdio>\n#include <ctime>\n#include <cstdlib>\n\nint main()\n{\n    srand(time(NULL));\n    int tries = 0, myNum = 0, min = 0, max = 101;\n    int findNum;\n    puts(\"Welcome to Ace's Guessing Game!\");\n    puts(\"In this version, the computer tries to guess your number.\");\n    std::cout<<\"Enter a number between 1 and 100 (Warning: Bad input causes program to terminate!): \";\n    std::cin>>myNum;\n    if(std::cin.fail()) //catches bad input strings and things that wont convert \n    {\n        puts(\"Input error occured. Quitting.\");\n        return 0;\n    }else if(std::cin.bad()) //catches the case where a user just presses the enter key \n    {\n        puts(\"Input error occured. Quitting.\");\n        return 0;\n    }else if(myNum < (min+1)) //obviously going below the min value \n    {\n        puts(\"Input error occured. Quitting.\");\n        return 0; \n    }else if(myNum > (max-1)) //again obviously, going above max value \n    {\n        puts(\"Input error occured. Quitting.\");\n        return 0;\n    }\n    \n    do //now that all error cases have been handled, time for the fun \n    {\n        findNum = rand() % ((max + 1) - min) + min;\n        \n        std::cout << \"\\nComputer's guess: \" << findNum << std::endl;\n        ++tries;\n        \n        if(myNum > findNum)\n        {\n           std::cout << \"Too low!\\n\";\n           min = findNum + 1;\n        }else if(myNum < findNum)\n        {\n           std::cout << \"Too high!\\n\";\n           max = findNum - 1;\n        }else\n            std::cout << \"Computer found the number in \" << tries << \" tries.\";\n    }while(myNum != findNum);\n    return 0;\n}",
+      "resource-id": "com.sololearn.cplusplus:id/code_editor",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatEditText",
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.sololearn.app.views.playground.AdvancedEditText",
+      "bounds": [
+        0,
+        550,
+        1440,
+        2217
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "resource-id": "com.sololearn.cplusplus:id/run_code",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        1205,
+        2217,
+        1440,
+        2392
+      ],
+      "componentLabel": "Text Button",
+      "text": "RUN"
+    },
+    {
+      "iconClass": "avatar",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.sololearn.cplusplus:id/code_avatar",
+      "clickable": true,
+      "class": "com.sololearn.app.views.CircleImageView",
+      "bounds": [
+        35,
+        315,
+        158,
+        438
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Ace's Computer Guessing Game",
+      "resource-id": "com.sololearn.cplusplus:id/code_name",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        193,
+        315,
+        892,
+        381
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Ace",
+      "resource-id": "com.sololearn.cplusplus:id/code_user",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        193,
+        385,
+        264,
+        442
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "thumbs_up",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.sololearn.cplusplus:id/vote_up",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageButton",
+      "bounds": [
+        166,
+        456,
+        289,
+        522
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "+136",
+      "resource-id": "com.sololearn.cplusplus:id/vote_number",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        296,
+        456,
+        408,
+        522
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "thumbs_down",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.sololearn.cplusplus:id/vote_down",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageButton",
+      "bounds": [
+        415,
+        456,
+        538,
+        522
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Tab",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        0,
+        2221,
+        175,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "<",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        175,
+        2217,
+        350,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": ">",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        350,
+        2217,
+        525,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "{",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        525,
+        2217,
+        700,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "}",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        700,
+        2217,
+        875,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": ";",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        875,
+        2217,
+        1050,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "\"",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        1050,
+        2217,
+        1205,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    }
+  ]
+}

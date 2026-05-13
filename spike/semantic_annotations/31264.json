@@ -1,0 +1,819 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.snupps.snuppsdroid:id/toolbar",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.support.v7.widget.Toolbar",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.snupps.snuppsdroid.widget.SnuppsToolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        84,
+        1440,
+        445
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "com.snupps.snuppsdroid.widget.BaseImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.snupps.snuppsdroid:id/item_image",
+          "clickable": true,
+          "class": "com.snupps.snuppsdroid.widget.BaseSquareImageView",
+          "bounds": [
+            0,
+            84,
+            1440,
+            445
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.snupps.snuppsdroid.widget.ShopItemTitleBarView",
+      "bounds": [
+        0,
+        449,
+        1440,
+        662
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Nyx Butter Gloss - Fortune Cookie",
+          "resource-id": "com.snupps.snuppsdroid:id/item_title_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            477,
+            952,
+            558
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "resource-id": "com.snupps.snuppsdroid:id/item_wows_box",
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            28,
+            565,
+            267,
+            627
+          ],
+          "componentLabel": "Text Button",
+          "text": "13 wows"
+        },
+        {
+          "resource-id": "com.snupps.snuppsdroid:id/item_comments_box",
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            267,
+            565,
+            554,
+            627
+          ],
+          "componentLabel": "Text Button",
+          "text": "1 comment"
+        }
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        666,
+        1440,
+        824
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Wow",
+          "resource-id": "com.snupps.snuppsdroid:id/wow_button",
+          "ancestors": [
+            "com.phillipcalvin.iconbutton.IconButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.snupps.snuppsdroid.widget.WowButton",
+          "bounds": [
+            112,
+            694,
+            476,
+            799
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "Comment",
+          "resource-id": "com.snupps.snuppsdroid:id/comments_button",
+          "ancestors": [
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.phillipcalvin.iconbutton.IconButton",
+          "bounds": [
+            504,
+            694,
+            931,
+            799
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "comment"
+        },
+        {
+          "text": "Share",
+          "resource-id": "com.snupps.snuppsdroid:id/share_button",
+          "ancestors": [
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.phillipcalvin.iconbutton.IconButton",
+          "bounds": [
+            959,
+            694,
+            1314,
+            799
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "share"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        856,
+        1440,
+        1052
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "iconClass": "avatar",
+          "ancestors": [
+            "com.snupps.snuppsdroid.widget.BaseImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.snupps.snuppsdroid:id/shelf_item_author_avatar",
+          "clickable": false,
+          "class": "com.snupps.snuppsdroid.widget.RoundImageView",
+          "bounds": [
+            35,
+            884,
+            175,
+            1024
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Izzy",
+          "resource-id": "com.snupps.snuppsdroid:id/shelf_item_author_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            203,
+            890,
+            291,
+            956
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "added on 2:28 AM",
+          "resource-id": "com.snupps.snuppsdroid:id/timestamp_bottom",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            203,
+            956,
+            573,
+            1018
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1084,
+        1440,
+        1242
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "More on Lipgloss",
+          "resource-id": "com.snupps.snuppsdroid:id/subheader_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            1122,
+            1076,
+            1203
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "View All",
+          "resource-id": "com.snupps.snuppsdroid:id/action_viewall",
+          "ancestors": [
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatButton",
+          "bounds": [
+            1076,
+            1121,
+            1384,
+            1205
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "all"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1246,
+        1440,
+        1873
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.v7.widget.CardView",
+          "bounds": [
+            56,
+            1246,
+            504,
+            1845
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "text": "Nyx Butter Gloss - Fortune Cookie",
+              "resource-id": "com.snupps.snuppsdroid:id/item_title_text",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                84,
+                1708,
+                476,
+                1774
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "13 wows",
+              "resource-id": "com.snupps.snuppsdroid:id/item_wows_text",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                84,
+                1774,
+                476,
+                1831
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "ancestors": [
+                "com.snupps.snuppsdroid.widget.BaseSquareImageView",
+                "com.snupps.snuppsdroid.widget.BaseImageView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.snupps.snuppsdroid:id/item_image_view",
+              "clickable": false,
+              "class": "com.snupps.snuppsdroid.widget.SquareImageView",
+              "bounds": [
+                56,
+                1246,
+                504,
+                1694
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "componentLabel": "Card"
+        },
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.v7.widget.CardView",
+          "bounds": [
+            532,
+            1246,
+            980,
+            1845
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "text": "Essence Liquid Lipstick - 03 Almost Real",
+              "resource-id": "com.snupps.snuppsdroid:id/item_title_text",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                560,
+                1708,
+                952,
+                1774
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "26 wows",
+              "resource-id": "com.snupps.snuppsdroid:id/item_wows_text",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                560,
+                1774,
+                952,
+                1831
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "ancestors": [
+                "com.snupps.snuppsdroid.widget.BaseSquareImageView",
+                "com.snupps.snuppsdroid.widget.BaseImageView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.snupps.snuppsdroid:id/item_image_view",
+              "clickable": false,
+              "class": "com.snupps.snuppsdroid.widget.SquareImageView",
+              "bounds": [
+                532,
+                1246,
+                980,
+                1694
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "componentLabel": "Card"
+        },
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.v7.widget.CardView",
+          "bounds": [
+            1008,
+            1246,
+            1440,
+            1845
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "text": "Makeup Revolution Lipgloss - Too Shy",
+              "resource-id": "com.snupps.snuppsdroid:id/item_title_text",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                1036,
+                1708,
+                1428,
+                1774
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "11 wows",
+              "resource-id": "com.snupps.snuppsdroid:id/item_wows_text",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                1036,
+                1774,
+                1428,
+                1831
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "ancestors": [
+                "com.snupps.snuppsdroid.widget.BaseSquareImageView",
+                "com.snupps.snuppsdroid.widget.BaseImageView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.snupps.snuppsdroid:id/item_image_view",
+              "clickable": false,
+              "class": "com.snupps.snuppsdroid.widget.SquareImageView",
+              "bounds": [
+                1008,
+                1246,
+                1440,
+                1694
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "componentLabel": "Card"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        1912,
+        1440,
+        2226
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "avatar",
+          "ancestors": [
+            "com.snupps.snuppsdroid.widget.BaseImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.snupps.snuppsdroid:id/avatar_comment",
+          "clickable": true,
+          "class": "com.snupps.snuppsdroid.widget.RoundImageView",
+          "bounds": [
+            35,
+            1947,
+            175,
+            2087
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Want a try!",
+          "resource-id": "com.snupps.snuppsdroid:id/comment_body_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            203,
+            2027,
+            435,
+            2093
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "Sam Brown",
+          "resource-id": "com.snupps.snuppsdroid:id/comment_name_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            203,
+            1947,
+            1226,
+            2013
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "just now",
+          "resource-id": "com.snupps.snuppsdroid:id/timestamp_bottom",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1226,
+            1951,
+            1384,
+            2008
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "",
+          "resource-id": "com.snupps.snuppsdroid:id/like_button",
+          "ancestors": [
+            "android.widget.CheckBox",
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatCheckBox",
+          "bounds": [
+            1300,
+            2107,
+            1384,
+            2191
+          ],
+          "componentLabel": "Checkbox"
+        },
+        {
+          "text": "Like",
+          "resource-id": "com.snupps.snuppsdroid:id/like_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            203,
+            2120,
+            282,
+            2177
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "favorites"
+        },
+        {
+          "text": "Reply",
+          "resource-id": "com.snupps.snuppsdroid:id/action_comment_reply",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            352,
+            2120,
+            456,
+            2177
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "Delete",
+          "resource-id": "com.snupps.snuppsdroid:id/action_comment_delete",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            526,
+            2120,
+            647,
+            2177
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "delete"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        2230,
+        1440,
+        2388
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "",
+          "resource-id": "com.snupps.snuppsdroid:id/item_leave_comment_text",
+          "ancestors": [
+            "android.widget.MultiAutoCompleteTextView",
+            "android.widget.AutoCompleteTextView",
+            "android.widget.EditText",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatMultiAutoCompleteTextView",
+          "bounds": [
+            56,
+            2230,
+            1384,
+            2384
+          ],
+          "componentLabel": "Input"
+        }
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

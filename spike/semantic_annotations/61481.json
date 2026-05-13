@@ -1,0 +1,866 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.weather.Weather:id/toolbar",
+      "children": [
+        {
+          "resource-id": "com.weather.Weather:id/location_spinner",
+          "ancestors": [
+            "android.widget.Spinner",
+            "android.widget.AbsSpinner",
+            "android.widget.AdapterView",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatSpinner",
+          "bounds": [
+            252,
+            84,
+            1076,
+            280
+          ],
+          "componentLabel": "Text Button",
+          "text": "San Francisco, California"
+        },
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "com.weather.Weather:id/search",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1076,
+            98,
+            1244,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "notifications",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.weather.Weather:id/glance_bell",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1300,
+            140,
+            1384,
+            224
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.weather.Weather:id/glance_button",
+          "clickable": false,
+          "class": "com.weather.commons.ui.PortalButton",
+          "bounds": [
+            1326,
+            144,
+            1397,
+            226
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.view.TextureView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.weather.Weather:id/animated_background_ad",
+      "clickable": false,
+      "class": "com.weather.Weather.ads.BackgroundVideoAdView",
+      "bounds": [
+        0,
+        280,
+        1440,
+        2392
+      ],
+      "componentLabel": "Advertisement"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.weather.Weather:id/static_background",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        0,
+        280,
+        1440,
+        2392
+      ],
+      "componentLabel": "Background Image"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        280,
+        1440,
+        380
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.google.android.gms.ads.doubleclick.PublisherAdView",
+          "bounds": [
+            195,
+            280,
+            1245,
+            352
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.FrameLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "com.google.android.gms.ads.internal.webview.n",
+              "bounds": [
+                195,
+                280,
+                1245,
+                352
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "android.webkit.WebView",
+                    "android.widget.AbsoluteLayout",
+                    "android.view.ViewGroup",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    195,
+                    280,
+                    1245,
+                    352
+                  ],
+                  "clickable": true,
+                  "class": "com.google.android.gms.ads.internal.webview.o",
+                  "componentLabel": "Web View"
+                }
+              ],
+              "componentLabel": "Web View"
+            }
+          ],
+          "componentLabel": "Advertisement"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        380,
+        1440,
+        1887
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Now",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.weather.commons.ui.fonts.TextViewWithFont",
+          "bounds": [
+            84,
+            478,
+            1356,
+            608
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.weather.Weather:id/wind_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            84,
+            979,
+            189,
+            1084
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Wind",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.weather.commons.ui.fonts.TextViewWithFont",
+          "bounds": [
+            189,
+            993,
+            331,
+            1069
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "W 3 MPH",
+          "resource-id": "com.weather.Weather:id/wind",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.weather.commons.ui.fonts.TextViewWithFont",
+          "bounds": [
+            1123,
+            993,
+            1356,
+            1069
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.weather.Weather:id/humidity_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            84,
+            1119,
+            189,
+            1224
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Humidity",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.weather.commons.ui.fonts.TextViewWithFont",
+          "bounds": [
+            189,
+            1133,
+            453,
+            1209
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "72%",
+          "resource-id": "com.weather.Weather:id/humidity",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.weather.commons.ui.fonts.TextViewWithFont",
+          "bounds": [
+            1251,
+            1133,
+            1356,
+            1209
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "star",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.weather.Weather:id/dew_point_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            84,
+            1259,
+            189,
+            1364
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Dew Point",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.weather.commons.ui.fonts.TextViewWithFont",
+          "bounds": [
+            189,
+            1273,
+            482,
+            1349
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "45°",
+          "resource-id": "com.weather.Weather:id/dewpoint",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.weather.commons.ui.fonts.TextViewWithFont",
+          "bounds": [
+            1271,
+            1273,
+            1356,
+            1349
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.weather.Weather:id/pressure_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            84,
+            1399,
+            189,
+            1504
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Pressure",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.weather.commons.ui.fonts.TextViewWithFont",
+          "bounds": [
+            189,
+            1413,
+            465,
+            1489
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "30.03 In",
+          "resource-id": "com.weather.Weather:id/pressure",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.weather.commons.ui.fonts.TextViewWithFont",
+          "bounds": [
+            1143,
+            1413,
+            1356,
+            1489
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.weather.Weather:id/uvindex_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            84,
+            1539,
+            189,
+            1644
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "UV Index",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.weather.commons.ui.fonts.TextViewWithFont",
+          "bounds": [
+            189,
+            1553,
+            437,
+            1629
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0 Low",
+          "resource-id": "com.weather.Weather:id/uvindex",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.weather.commons.ui.fonts.TextViewWithFont",
+          "bounds": [
+            1193,
+            1553,
+            1356,
+            1629
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.weather.Weather:id/app_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1251,
+            1736,
+            1356,
+            1841
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Updated about 5 minutes ago",
+          "resource-id": "com.weather.Weather:id/recordCreationTime",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.weather.commons.ui.fonts.TextViewWithFont",
+          "bounds": [
+            520,
+            1753,
+            1251,
+            1823
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "53°",
+          "resource-id": "com.weather.Weather:id/feelslike",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.weather.commons.ui.fonts.TextViewWithFont",
+          "bounds": [
+            84,
+            661,
+            289,
+            844
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Feels like",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.weather.commons.ui.fonts.TextViewWithFont",
+          "bounds": [
+            84,
+            844,
+            283,
+            909
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.weather.Weather:id/sun",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            859,
+            832,
+            1034,
+            909
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "6:24 AM",
+          "resource-id": "com.weather.Weather:id/sunrise",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.weather.commons.ui.fonts.TextViewWithFont",
+          "bounds": [
+            545,
+            844,
+            722,
+            909
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "7:52 PM",
+          "resource-id": "com.weather.Weather:id/sunset",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.weather.commons.ui.fonts.TextViewWithFont",
+          "bounds": [
+            1170,
+            844,
+            1348,
+            909
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1887,
+        1440,
+        2392
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "HOURLY",
+          "resource-id": "com.weather.Weather:id/hourly_title_textview",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.weather.commons.ui.fonts.TextViewWithFont",
+          "bounds": [
+            84,
+            1985,
+            1356,
+            2115
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "TIME",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.weather.commons.ui.fonts.TextViewWithFont",
+          "bounds": [
+            84,
+            2233,
+            299,
+            2309
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "COND",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.weather.commons.ui.fonts.TextViewWithFont",
+          "bounds": [
+            310,
+            2233,
+            511,
+            2309
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "TEMP",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.weather.commons.ui.fonts.TextViewWithFont",
+          "bounds": [
+            553,
+            2233,
+            768,
+            2309
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "PRECIP",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.weather.commons.ui.fonts.TextViewWithFont",
+          "bounds": [
+            810,
+            2233,
+            1054,
+            2309
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "WIND",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.weather.commons.ui.fonts.TextViewWithFont",
+          "bounds": [
+            1054,
+            2233,
+            1356,
+            2309
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "9 AM",
+          "resource-id": "com.weather.Weather:id/hourly_row_time",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.weather.commons.ui.fonts.TextViewWithFont",
+          "bounds": [
+            84,
+            2385,
+            299,
+            2392
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.weather.Weather:id/hourly_row_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            310,
+            2357,
+            511,
+            2392
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "57°",
+          "resource-id": "com.weather.Weather:id/hourly_row_temperature",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.weather.commons.ui.fonts.TextViewWithFont",
+          "bounds": [
+            553,
+            2369,
+            768,
+            2392
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0%",
+          "resource-id": "com.weather.Weather:id/hourly_row_precipitation",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.weather.commons.ui.fonts.TextViewWithFont",
+          "bounds": [
+            810,
+            2385,
+            982,
+            2392
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "SW 4 MPH",
+          "resource-id": "com.weather.Weather:id/hourly_row_wind",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.weather.commons.ui.fonts.TextViewWithFont",
+          "bounds": [
+            982,
+            2385,
+            1356,
+            2392
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

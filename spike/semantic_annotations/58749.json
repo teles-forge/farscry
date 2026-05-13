@@ -1,0 +1,631 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "android:id/action_bar_container",
+      "children": [
+        {
+          "iconClass": "info",
+          "resource-id": "com.babycenter.pregnancytracker:id/menu_item_info",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.android.internal.view.menu.ActionMenuItemView",
+          "bounds": [
+            1048,
+            84,
+            1244,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1244,
+            84,
+            1440,
+            252
+          ],
+          "clickable": true,
+          "class": "android.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "android:id/up",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            0,
+            140,
+            56,
+            196
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "avatar",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "android:id/home",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            43,
+            112,
+            169,
+            224
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Birth preferences",
+          "resource-id": "android:id/action_bar_title",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            183,
+            128,
+            782,
+            208
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.android.internal.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        252
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.babycenter.pregnancytracker:id/tabs",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "Get started",
+          "bounds": [
+            0,
+            252,
+            480,
+            420
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button",
+          "textButtonClass": "go"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "Labor",
+          "bounds": [
+            480,
+            252,
+            960,
+            420
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "After delivery",
+          "bounds": [
+            960,
+            252,
+            1440,
+            420
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button"
+        }
+      ],
+      "ancestors": [
+        "android.widget.HorizontalScrollView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.astuetz.PagerSlidingTabStrip",
+      "bounds": [
+        0,
+        252,
+        1440,
+        420
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        420,
+        1440,
+        648
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Labor",
+          "resource-id": "com.babycenter.pregnancytracker:id/birth_preference_header",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.babycenter.calendarapp.app.widget.TextViewWithFont",
+          "bounds": [
+            0,
+            420,
+            1440,
+            648
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.babycenter.pregnancytracker.app.tools.birthpreferences.widget.BirthPreferenceCheckboxView",
+      "bounds": [
+        0,
+        650,
+        1440,
+        975
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "In the delivery room",
+          "resource-id": "com.babycenter.pregnancytracker:id/birth_header",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.babycenter.calendarapp.app.widget.TextViewWithFont",
+          "bounds": [
+            0,
+            650,
+            1440,
+            793
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.babycenter.pregnancytracker:id/checkbox",
+          "clickable": true,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            0,
+            796,
+            175,
+            971
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "I'd like to have my labor photographed or filmed.",
+          "resource-id": "com.babycenter.pregnancytracker:id/checkboxText",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "bounds": [
+            175,
+            793,
+            1440,
+            975
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "componentLabel": "Checkbox"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.babycenter.pregnancytracker.app.tools.birthpreferences.widget.BirthPreferenceCheckboxView",
+      "bounds": [
+        0,
+        977,
+        1440,
+        1159
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.babycenter.pregnancytracker:id/checkbox",
+          "clickable": true,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            0,
+            980,
+            175,
+            1155
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "I'd like to move around freely during labor.",
+          "resource-id": "com.babycenter.pregnancytracker:id/checkboxText",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "bounds": [
+            175,
+            977,
+            1440,
+            1159
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "componentLabel": "Checkbox"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.babycenter.pregnancytracker.app.tools.birthpreferences.widget.BirthPreferenceCheckboxView",
+      "bounds": [
+        0,
+        1161,
+        1440,
+        1343
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.babycenter.pregnancytracker:id/checkbox",
+          "clickable": true,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            0,
+            1164,
+            175,
+            1339
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "I'd like intermittent or wireless fetal monitoring.",
+          "resource-id": "com.babycenter.pregnancytracker:id/checkboxText",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "bounds": [
+            175,
+            1161,
+            1440,
+            1343
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "componentLabel": "Checkbox"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.babycenter.pregnancytracker.app.tools.birthpreferences.widget.BirthPreferenceCheckboxView",
+      "bounds": [
+        0,
+        1345,
+        1440,
+        1593
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.babycenter.pregnancytracker:id/checkbox",
+          "clickable": true,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            0,
+            1381,
+            175,
+            1556
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "If I need an IV, I'd like to have a saline- or hep-lock.",
+          "resource-id": "com.babycenter.pregnancytracker:id/checkboxText",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "bounds": [
+            175,
+            1345,
+            1440,
+            1593
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "componentLabel": "Checkbox"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.babycenter.pregnancytracker.app.tools.birthpreferences.widget.BirthPreferenceCheckboxView",
+      "bounds": [
+        0,
+        1595,
+        1440,
+        1777
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.babycenter.pregnancytracker:id/checkbox",
+          "clickable": true,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            0,
+            1598,
+            175,
+            1773
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "I'd like to let my water break naturally.",
+          "resource-id": "com.babycenter.pregnancytracker:id/checkboxText",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "bounds": [
+            175,
+            1595,
+            1440,
+            1777
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "componentLabel": "Checkbox"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.babycenter.pregnancytracker.app.tools.birthpreferences.widget.BirthPreferenceCheckboxNotesView",
+      "bounds": [
+        0,
+        1779,
+        1440,
+        2027
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.babycenter.pregnancytracker:id/checkbox",
+          "clickable": true,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            0,
+            1815,
+            175,
+            1990
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "I'd like to use labor props (such as a birthing tub, birthing ball, birthing stool, or squatting bar).",
+          "resource-id": "com.babycenter.pregnancytracker:id/checkboxText",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "bounds": [
+            175,
+            1779,
+            1440,
+            2027
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "componentLabel": "Checkbox"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.babycenter.pregnancytracker.app.tools.birthpreferences.widget.BirthPreferenceRadioView",
+      "bounds": [
+        0,
+        2029,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Pain relief",
+          "resource-id": "com.babycenter.pregnancytracker:id/birth_header",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.babycenter.calendarapp.app.widget.TextViewWithFont",
+          "bounds": [
+            0,
+            2029,
+            1440,
+            2172
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.babycenter.pregnancytracker:id/radio_image_0",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            0,
+            2208,
+            175,
+            2383
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "I'd like to be offered an epidural or other pain medication as soon as possible.",
+          "resource-id": "com.babycenter.pregnancytracker:id/radio_text_0",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "bounds": [
+            175,
+            2172,
+            1440,
+            2392
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

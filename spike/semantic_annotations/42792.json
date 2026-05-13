@@ -1,0 +1,1530 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.foreca.android.weather:id/toolbar",
+      "children": [
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Helsinki",
+          "resource-id": "com.foreca.android.weather:id/toolbar_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            572,
+            135,
+            820,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "expand_more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.foreca.android.weather:id/toolbar_loc_marker",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            820,
+            175,
+            869,
+            217
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "location_crosshair",
+          "resource-id": "com.foreca.android.weather:id/action_gps",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1272,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.google.android.gms.ads.doubleclick.PublisherAdView",
+      "bounds": [
+        0,
+        2217,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.google.android.gms.ads.internal.webview.l",
+          "bounds": [
+            0,
+            2217,
+            1440,
+            2392
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.webkit.WebView",
+                "android.widget.AbsoluteLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                0,
+                2217,
+                1440,
+                2392
+              ],
+              "clickable": true,
+              "class": "com.google.android.gms.ads.internal.webview.m",
+              "componentLabel": "Web View"
+            }
+          ],
+          "componentLabel": "Web View"
+        }
+      ],
+      "componentLabel": "Advertisement"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        294,
+        1440,
+        525
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "iconClass": "weather",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.foreca.android.weather:id/img_daily_weather_symbol",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1184,
+            330,
+            1342,
+            488
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Cloudy",
+          "resource-id": "com.foreca.android.weather:id/text_daily_summary",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            42,
+            428,
+            182,
+            490
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Today",
+          "resource-id": "com.foreca.android.weather:id/text_daily_day_short",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            42,
+            336,
+            357,
+            412
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.foreca.android.weather:id/img_daily_wind_symbol",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            853,
+            351,
+            944,
+            421
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "17",
+          "resource-id": "com.foreca.android.weather:id/text_daily_wind_speed",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            944,
+            359,
+            996,
+            421
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "-5°",
+          "resource-id": "com.foreca.android.weather:id/text_daily_temp_max",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            465,
+            336,
+            605,
+            421
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "-11°",
+          "resource-id": "com.foreca.android.weather:id/text_daily_temp_min",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            619,
+            343,
+            759,
+            419
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        529,
+        1440,
+        760
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "iconClass": "weather",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.foreca.android.weather:id/img_daily_weather_symbol",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1184,
+            565,
+            1342,
+            723
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Partly cloudy",
+          "resource-id": "com.foreca.android.weather:id/text_daily_summary",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            42,
+            663,
+            306,
+            725
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Tue",
+          "resource-id": "com.foreca.android.weather:id/text_daily_day_short",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            42,
+            571,
+            165,
+            656
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "07 Feb",
+          "resource-id": "com.foreca.android.weather:id/text_daily_date",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            179,
+            571,
+            372,
+            656
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "edit",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.foreca.android.weather:id/img_daily_wind_symbol",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            853,
+            586,
+            944,
+            656
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "10",
+          "resource-id": "com.foreca.android.weather:id/text_daily_wind_speed",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            944,
+            594,
+            996,
+            656
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "-10°",
+          "resource-id": "com.foreca.android.weather:id/text_daily_temp_max",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            465,
+            571,
+            605,
+            656
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "-16°",
+          "resource-id": "com.foreca.android.weather:id/text_daily_temp_min",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            619,
+            578,
+            759,
+            654
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        764,
+        1440,
+        995
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.foreca.android.weather:id/img_daily_weather_symbol",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1184,
+            800,
+            1342,
+            958
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Clear",
+          "resource-id": "com.foreca.android.weather:id/text_daily_summary",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            42,
+            898,
+            148,
+            960
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Wed",
+          "resource-id": "com.foreca.android.weather:id/text_daily_day_short",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            42,
+            806,
+            165,
+            891
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "08 Feb",
+          "resource-id": "com.foreca.android.weather:id/text_daily_date",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            179,
+            806,
+            372,
+            891
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_downward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.foreca.android.weather:id/img_daily_wind_symbol",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            866,
+            821,
+            957,
+            891
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "8",
+          "resource-id": "com.foreca.android.weather:id/text_daily_wind_speed",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            957,
+            829,
+            983,
+            891
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "-8°",
+          "resource-id": "com.foreca.android.weather:id/text_daily_temp_max",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            472,
+            806,
+            612,
+            891
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "-16°",
+          "resource-id": "com.foreca.android.weather:id/text_daily_temp_min",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            626,
+            813,
+            766,
+            889
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        999,
+        1440,
+        1230
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "iconClass": "weather",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.foreca.android.weather:id/img_daily_weather_symbol",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1184,
+            1035,
+            1342,
+            1193
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Overcast",
+          "resource-id": "com.foreca.android.weather:id/text_daily_summary",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            42,
+            1133,
+            224,
+            1195
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Thu",
+          "resource-id": "com.foreca.android.weather:id/text_daily_day_short",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            42,
+            1041,
+            165,
+            1126
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "09 Feb",
+          "resource-id": "com.foreca.android.weather:id/text_daily_date",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            179,
+            1041,
+            372,
+            1126
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "edit",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.foreca.android.weather:id/img_daily_wind_symbol",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            866,
+            1056,
+            957,
+            1126
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "9",
+          "resource-id": "com.foreca.android.weather:id/text_daily_wind_speed",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            957,
+            1064,
+            983,
+            1126
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "-8°",
+          "resource-id": "com.foreca.android.weather:id/text_daily_temp_max",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            472,
+            1041,
+            612,
+            1126
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "-17°",
+          "resource-id": "com.foreca.android.weather:id/text_daily_temp_min",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            626,
+            1048,
+            766,
+            1124
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1234,
+        1440,
+        1465
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "iconClass": "weather",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.foreca.android.weather:id/img_daily_weather_symbol",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1184,
+            1270,
+            1342,
+            1428
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Cloudy",
+          "resource-id": "com.foreca.android.weather:id/text_daily_summary",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            42,
+            1368,
+            182,
+            1430
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Fri",
+          "resource-id": "com.foreca.android.weather:id/text_daily_day_short",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            42,
+            1276,
+            165,
+            1361
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "10 Feb",
+          "resource-id": "com.foreca.android.weather:id/text_daily_date",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            179,
+            1276,
+            372,
+            1361
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "edit",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.foreca.android.weather:id/img_daily_wind_symbol",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            866,
+            1291,
+            957,
+            1361
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "8",
+          "resource-id": "com.foreca.android.weather:id/text_daily_wind_speed",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            957,
+            1299,
+            983,
+            1361
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "-4°",
+          "resource-id": "com.foreca.android.weather:id/text_daily_temp_max",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            472,
+            1276,
+            612,
+            1361
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "-10°",
+          "resource-id": "com.foreca.android.weather:id/text_daily_temp_min",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            626,
+            1283,
+            766,
+            1359
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1469,
+        1440,
+        1700
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "iconClass": "weather",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.foreca.android.weather:id/img_daily_weather_symbol",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1184,
+            1505,
+            1342,
+            1663
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Cloudy",
+          "resource-id": "com.foreca.android.weather:id/text_daily_summary",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            42,
+            1603,
+            182,
+            1665
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Sat",
+          "resource-id": "com.foreca.android.weather:id/text_daily_day_short",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            42,
+            1511,
+            165,
+            1596
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "11 Feb",
+          "resource-id": "com.foreca.android.weather:id/text_daily_date",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            179,
+            1511,
+            372,
+            1596
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.foreca.android.weather:id/img_daily_wind_symbol",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            866,
+            1526,
+            957,
+            1596
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "8",
+          "resource-id": "com.foreca.android.weather:id/text_daily_wind_speed",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            957,
+            1534,
+            983,
+            1596
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "-3°",
+          "resource-id": "com.foreca.android.weather:id/text_daily_temp_max",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            472,
+            1511,
+            612,
+            1596
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "-7°",
+          "resource-id": "com.foreca.android.weather:id/text_daily_temp_min",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            626,
+            1518,
+            766,
+            1594
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1704,
+        1440,
+        1935
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "iconClass": "weather",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.foreca.android.weather:id/img_daily_weather_symbol",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1184,
+            1740,
+            1342,
+            1898
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Overcast",
+          "resource-id": "com.foreca.android.weather:id/text_daily_summary",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            42,
+            1838,
+            224,
+            1900
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Sun",
+          "resource-id": "com.foreca.android.weather:id/text_daily_day_short",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            42,
+            1746,
+            165,
+            1831
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "12 Feb",
+          "resource-id": "com.foreca.android.weather:id/text_daily_date",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            179,
+            1746,
+            372,
+            1831
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "edit",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.foreca.android.weather:id/img_daily_wind_symbol",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            866,
+            1761,
+            957,
+            1831
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "9",
+          "resource-id": "com.foreca.android.weather:id/text_daily_wind_speed",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            957,
+            1769,
+            983,
+            1831
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "-3°",
+          "resource-id": "com.foreca.android.weather:id/text_daily_temp_max",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            472,
+            1746,
+            612,
+            1831
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "-7°",
+          "resource-id": "com.foreca.android.weather:id/text_daily_temp_min",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            626,
+            1753,
+            766,
+            1829
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1939,
+        1440,
+        2170
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "iconClass": "weather",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.foreca.android.weather:id/img_daily_weather_symbol",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1184,
+            1975,
+            1342,
+            2133
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Overcast",
+          "resource-id": "com.foreca.android.weather:id/text_daily_summary",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            42,
+            2073,
+            224,
+            2135
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Mon",
+          "resource-id": "com.foreca.android.weather:id/text_daily_day_short",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            42,
+            1981,
+            165,
+            2066
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "13 Feb",
+          "resource-id": "com.foreca.android.weather:id/text_daily_date",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            179,
+            1981,
+            372,
+            2066
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_forward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.foreca.android.weather:id/img_daily_wind_symbol",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            853,
+            1996,
+            944,
+            2066
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "16",
+          "resource-id": "com.foreca.android.weather:id/text_daily_wind_speed",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            944,
+            2004,
+            996,
+            2066
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0°",
+          "resource-id": "com.foreca.android.weather:id/text_daily_temp_max",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            465,
+            1981,
+            605,
+            2066
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "-5°",
+          "resource-id": "com.foreca.android.weather:id/text_daily_temp_min",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            619,
+            1988,
+            759,
+            2064
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        2174,
+        1440,
+        2217
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.foreca.android.weather:id/img_daily_weather_symbol",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1184,
+            2210,
+            1342,
+            2217
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Tue",
+          "resource-id": "com.foreca.android.weather:id/text_daily_day_short",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            42,
+            2216,
+            165,
+            2217
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "14 Feb",
+          "resource-id": "com.foreca.android.weather:id/text_daily_date",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            179,
+            2216,
+            372,
+            2217
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "+1°",
+          "resource-id": "com.foreca.android.weather:id/text_daily_temp_max",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            465,
+            2216,
+            605,
+            2217
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

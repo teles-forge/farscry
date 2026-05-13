@@ -1,0 +1,635 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.trivago:id/toolbar",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Image"
+        },
+        {
+          "text": "The Venetian",
+          "resource-id": "com.trivago:id/toolbarHotelName",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.trivago.ui.views.RobotoTextView",
+          "bounds": [
+            252,
+            130,
+            581,
+            196
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "",
+          "resource-id": "com.trivago:id/menuBookmark",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1104,
+            98,
+            1272,
+            266
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "",
+          "resource-id": "com.trivago:id/menuShare",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1272,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            252,
+            196,
+            430,
+            234
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.support.v7.widget.Toolbar",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.trivago.ui.views.hoteldetails.HotelDetailFragmentToolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "1 | 25",
+      "resource-id": "com.trivago:id/HotelDetailsImageNumbers",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.trivago.ui.views.RobotoTextView",
+      "bounds": [
+        1281,
+        671,
+        1384,
+        728
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "All prices",
+      "resource-id": "com.trivago:id/detailsAllPricesTab",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.trivago.ui.views.RobotoTextView",
+      "bounds": [
+        0,
+        784,
+        360,
+        952
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Details",
+      "resource-id": "com.trivago:id/detailsDetailsTab",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.trivago.ui.views.RobotoTextView",
+      "bounds": [
+        360,
+        784,
+        720,
+        952
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "info"
+    },
+    {
+      "text": "Ratings",
+      "resource-id": "com.trivago:id/detailsRatingsTab",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.trivago.ui.views.RobotoTextView",
+      "bounds": [
+        720,
+        784,
+        1080,
+        952
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Map",
+      "resource-id": "com.trivago:id/detailsMapsTab",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.trivago.ui.views.RobotoTextView",
+      "bounds": [
+        1080,
+        784,
+        1440,
+        952
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "map"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        0,
+        84,
+        1440,
+        784
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "componentLabel": "Image"
+    },
+    {
+      "resource-id": "com.trivago:id/price_content",
+      "children": [
+        {
+          "text": "$199",
+          "resource-id": "com.trivago:id/detailPriceTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.trivago.ui.views.RobotoTextView",
+          "bounds": [
+            1256,
+            1036,
+            1384,
+            1112
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "HotelTonight",
+          "resource-id": "com.trivago:id/partnerNameTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.trivago.ui.views.RobotoTextView",
+          "bounds": [
+            56,
+            1036,
+            377,
+            1112
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Breakfast not included",
+          "resource-id": "com.trivago:id/dealTypeTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.trivago.ui.views.RobotoTextView",
+          "bounds": [
+            56,
+            1190,
+            475,
+            1247
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        952,
+        1440,
+        1303
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.trivago:id/price_content",
+      "children": [
+        {
+          "text": "$199",
+          "resource-id": "com.trivago:id/detailPriceTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.trivago.ui.views.RobotoTextView",
+          "bounds": [
+            1256,
+            1359,
+            1384,
+            1435
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Hotels.com",
+          "resource-id": "com.trivago:id/partnerNameTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.trivago.ui.views.RobotoTextView",
+          "bounds": [
+            56,
+            1359,
+            344,
+            1435
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Luxury 1 King Suite - 650 Sq Ft.",
+          "resource-id": "com.trivago:id/dealDescriptionTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.trivago.ui.views.RobotoTextView",
+          "bounds": [
+            56,
+            1449,
+            631,
+            1506
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Breakfast not included",
+          "resource-id": "com.trivago:id/dealTypeTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.trivago.ui.views.RobotoTextView",
+          "bounds": [
+            56,
+            1513,
+            475,
+            1570
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1303,
+        1440,
+        1626
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.trivago:id/price_content",
+      "children": [
+        {
+          "text": "$199",
+          "resource-id": "com.trivago:id/detailPriceTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.trivago.ui.views.RobotoTextView",
+          "bounds": [
+            1256,
+            1682,
+            1384,
+            1758
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Orbitz",
+          "resource-id": "com.trivago:id/partnerNameTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.trivago.ui.views.RobotoTextView",
+          "bounds": [
+            56,
+            1682,
+            205,
+            1758
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Luxury 1 King Suite - 650 Sq Ft.",
+          "resource-id": "com.trivago:id/dealDescriptionTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.trivago.ui.views.RobotoTextView",
+          "bounds": [
+            56,
+            1772,
+            631,
+            1829
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Breakfast not included",
+          "resource-id": "com.trivago:id/dealTypeTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.trivago.ui.views.RobotoTextView",
+          "bounds": [
+            56,
+            1836,
+            475,
+            1893
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1626,
+        1440,
+        1949
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.trivago:id/price_content",
+      "children": [
+        {
+          "text": "$199",
+          "resource-id": "com.trivago:id/detailPriceTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.trivago.ui.views.RobotoTextView",
+          "bounds": [
+            1256,
+            2005,
+            1384,
+            2081
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Booking.com",
+          "resource-id": "com.trivago:id/partnerNameTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.trivago.ui.views.RobotoTextView",
+          "bounds": [
+            56,
+            2005,
+            384,
+            2081
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Venetian Luxury Suite with a King Bed",
+          "resource-id": "com.trivago:id/dealDescriptionTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.trivago.ui.views.RobotoTextView",
+          "bounds": [
+            56,
+            2095,
+            753,
+            2152
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Breakfast not included",
+          "resource-id": "com.trivago:id/dealTypeTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.trivago.ui.views.RobotoTextView",
+          "bounds": [
+            56,
+            2159,
+            475,
+            2216
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1949,
+        1440,
+        2272
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.trivago:id/price_content",
+      "children": [
+        {
+          "text": "$199",
+          "resource-id": "com.trivago:id/detailPriceTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.trivago.ui.views.RobotoTextView",
+          "bounds": [
+            1256,
+            2328,
+            1384,
+            2392
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Expedia",
+          "resource-id": "com.trivago:id/partnerNameTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.trivago.ui.views.RobotoTextView",
+          "bounds": [
+            56,
+            2328,
+            253,
+            2392
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        2272,
+        1440,
+        2392
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

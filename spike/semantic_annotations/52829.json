@@ -1,0 +1,1033 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.mobilefootie.wc2010:id/toolbar_actionbar",
+      "children": [
+        {
+          "text": "Filter",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            252,
+            135,
+            412,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "",
+          "resource-id": "com.mobilefootie.wc2010:id/menu_change_sort",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1132,
+            98,
+            1300,
+            266
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.mobilefootie.wc2010:id/search_button",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            964,
+            84,
+            1132,
+            280
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "Deselect all",
+      "resource-id": "com.mobilefootie.wc2010:id/button_deselectAll",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        610,
+        2238,
+        999,
+        2364
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Select all",
+      "resource-id": "com.mobilefootie.wc2010:id/button_selectAll",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        1055,
+        2238,
+        1384,
+        2364
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "all"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        280,
+        1440,
+        406
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "star",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.mobilefootie.wc2010:id/groupFlag",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            35,
+            280,
+            161,
+            406
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Starred",
+          "resource-id": "com.mobilefootie.wc2010:id/groupName",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            172,
+            287,
+            332,
+            399
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.mobilefootie.wc2010:id/rootAvailableLeagues",
+      "children": [
+        {
+          "text": "",
+          "resource-id": "com.mobilefootie.wc2010:id/chkLeague",
+          "ancestors": [
+            "android.widget.CheckBox",
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatCheckBox",
+          "bounds": [
+            56,
+            407,
+            231,
+            575
+          ],
+          "componentLabel": "Checkbox"
+        },
+        {
+          "iconClass": "globe",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.mobilefootie.wc2010:id/imgCountry",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            231,
+            452,
+            308,
+            529
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Europa League",
+          "resource-id": "com.mobilefootie.wc2010:id/txtLeague",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            336,
+            444,
+            1174,
+            538
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        407,
+        1440,
+        575
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.mobilefootie.wc2010:id/rootAvailableLeagues",
+      "children": [
+        {
+          "text": "",
+          "resource-id": "com.mobilefootie.wc2010:id/chkLeague",
+          "ancestors": [
+            "android.widget.CheckBox",
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatCheckBox",
+          "bounds": [
+            56,
+            576,
+            231,
+            744
+          ],
+          "componentLabel": "Checkbox"
+        },
+        {
+          "iconClass": "national_flag",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.mobilefootie.wc2010:id/imgCountry",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            231,
+            621,
+            308,
+            698
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "MLS",
+          "resource-id": "com.mobilefootie.wc2010:id/txtLeague",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            336,
+            613,
+            1174,
+            707
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        576,
+        1440,
+        744
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        745,
+        1440,
+        871
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "thumbs_up",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.mobilefootie.wc2010:id/groupFlag",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            35,
+            745,
+            161,
+            871
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Staff picks",
+          "resource-id": "com.mobilefootie.wc2010:id/groupName",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            172,
+            752,
+            405,
+            864
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.mobilefootie.wc2010:id/rootAvailableLeagues",
+      "children": [
+        {
+          "text": "",
+          "resource-id": "com.mobilefootie.wc2010:id/chkLeague",
+          "ancestors": [
+            "android.widget.CheckBox",
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatCheckBox",
+          "bounds": [
+            56,
+            872,
+            231,
+            1040
+          ],
+          "componentLabel": "Checkbox"
+        },
+        {
+          "iconClass": "globe",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.mobilefootie.wc2010:id/imgCountry",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            231,
+            917,
+            308,
+            994
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Champions League",
+          "resource-id": "com.mobilefootie.wc2010:id/txtLeague",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            336,
+            909,
+            1174,
+            1003
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        872,
+        1440,
+        1040
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.mobilefootie.wc2010:id/rootAvailableLeagues",
+      "children": [
+        {
+          "text": "",
+          "resource-id": "com.mobilefootie.wc2010:id/chkLeague",
+          "ancestors": [
+            "android.widget.CheckBox",
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatCheckBox",
+          "bounds": [
+            56,
+            1041,
+            231,
+            1209
+          ],
+          "componentLabel": "Checkbox"
+        },
+        {
+          "iconClass": "globe",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.mobilefootie.wc2010:id/imgCountry",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            231,
+            1086,
+            308,
+            1163
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Europa League",
+          "resource-id": "com.mobilefootie.wc2010:id/txtLeague",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            336,
+            1078,
+            1174,
+            1172
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1041,
+        1440,
+        1209
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.mobilefootie.wc2010:id/rootAvailableLeagues",
+      "children": [
+        {
+          "text": "",
+          "resource-id": "com.mobilefootie.wc2010:id/chkLeague",
+          "ancestors": [
+            "android.widget.CheckBox",
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatCheckBox",
+          "bounds": [
+            56,
+            1210,
+            231,
+            1378
+          ],
+          "componentLabel": "Checkbox"
+        },
+        {
+          "iconClass": "globe",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.mobilefootie.wc2010:id/imgCountry",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            231,
+            1255,
+            308,
+            1332
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "World Cup Qual 2018",
+          "resource-id": "com.mobilefootie.wc2010:id/txtLeague",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            336,
+            1247,
+            1174,
+            1341
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1210,
+        1440,
+        1378
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.mobilefootie.wc2010:id/rootAvailableLeagues",
+      "children": [
+        {
+          "text": "",
+          "resource-id": "com.mobilefootie.wc2010:id/chkLeague",
+          "ancestors": [
+            "android.widget.CheckBox",
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatCheckBox",
+          "bounds": [
+            56,
+            1379,
+            231,
+            1547
+          ],
+          "componentLabel": "Checkbox"
+        },
+        {
+          "iconClass": "add",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.mobilefootie.wc2010:id/imgCountry",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            231,
+            1424,
+            308,
+            1501
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Premier League",
+          "resource-id": "com.mobilefootie.wc2010:id/txtLeague",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            336,
+            1416,
+            1174,
+            1510
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1379,
+        1440,
+        1547
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.mobilefootie.wc2010:id/rootAvailableLeagues",
+      "children": [
+        {
+          "text": "",
+          "resource-id": "com.mobilefootie.wc2010:id/chkLeague",
+          "ancestors": [
+            "android.widget.CheckBox",
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatCheckBox",
+          "bounds": [
+            56,
+            1548,
+            231,
+            1716
+          ],
+          "componentLabel": "Checkbox"
+        },
+        {
+          "iconClass": "national_flag",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.mobilefootie.wc2010:id/imgCountry",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            231,
+            1593,
+            308,
+            1670
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "1. Bundesliga",
+          "resource-id": "com.mobilefootie.wc2010:id/txtLeague",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            336,
+            1585,
+            1174,
+            1679
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1548,
+        1440,
+        1716
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.mobilefootie.wc2010:id/rootAvailableLeagues",
+      "children": [
+        {
+          "text": "",
+          "resource-id": "com.mobilefootie.wc2010:id/chkLeague",
+          "ancestors": [
+            "android.widget.CheckBox",
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatCheckBox",
+          "bounds": [
+            56,
+            1717,
+            231,
+            1885
+          ],
+          "componentLabel": "Checkbox"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.mobilefootie.wc2010:id/imgCountry",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            231,
+            1762,
+            308,
+            1839
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Ligue 1",
+          "resource-id": "com.mobilefootie.wc2010:id/txtLeague",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            336,
+            1754,
+            1174,
+            1848
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1717,
+        1440,
+        1885
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.mobilefootie.wc2010:id/rootAvailableLeagues",
+      "children": [
+        {
+          "text": "",
+          "resource-id": "com.mobilefootie.wc2010:id/chkLeague",
+          "ancestors": [
+            "android.widget.CheckBox",
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatCheckBox",
+          "bounds": [
+            56,
+            1886,
+            231,
+            2054
+          ],
+          "componentLabel": "Checkbox"
+        },
+        {
+          "iconClass": "national_flag",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.mobilefootie.wc2010:id/imgCountry",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            231,
+            1931,
+            308,
+            2008
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "MLS",
+          "resource-id": "com.mobilefootie.wc2010:id/txtLeague",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            336,
+            1923,
+            1174,
+            2017
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1886,
+        1440,
+        2054
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.mobilefootie.wc2010:id/rootAvailableLeagues",
+      "children": [
+        {
+          "text": "",
+          "resource-id": "com.mobilefootie.wc2010:id/chkLeague",
+          "ancestors": [
+            "android.widget.CheckBox",
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatCheckBox",
+          "bounds": [
+            56,
+            2055,
+            231,
+            2210
+          ],
+          "componentLabel": "Checkbox"
+        },
+        {
+          "iconClass": "avatar",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.mobilefootie.wc2010:id/imgCountry",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            231,
+            2100,
+            308,
+            2177
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Primera Division",
+          "resource-id": "com.mobilefootie.wc2010:id/txtLeague",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            336,
+            2092,
+            1174,
+            2186
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        2055,
+        1440,
+        2210
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

@@ -1,0 +1,923 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.soundcloud.android:id/toolbar_id",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "jazz",
+          "resource-id": "com.soundcloud.android:id/search_text",
+          "ancestors": [
+            "android.widget.EditText",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.soundcloud.android.view.CustomFontEditText",
+          "bounds": [
+            252,
+            84,
+            1244,
+            280
+          ],
+          "componentLabel": "Input"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.soundcloud.android:id/search_close",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1300,
+            84,
+            1384,
+            280
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.support.v7.widget.Toolbar",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.soundcloud.android.view.CustomFontTitleToolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.design.widget.TabLayout$SlidingTabStrip",
+      "bounds": [
+        168,
+        280,
+        1440,
+        448
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.design.widget.TabLayout$TabView",
+          "bounds": [
+            168,
+            280,
+            420,
+            448
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "textButtonClass": "all"
+        },
+        {
+          "text": "TRACKS",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            476,
+            331,
+            663,
+            397
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "PEOPLE",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            775,
+            331,
+            954,
+            397
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "ALBUMS",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1066,
+            331,
+            1262,
+            397
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "PLAYLISTS",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1374,
+            331,
+            1440,
+            397
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "resource-id": "com.soundcloud.android:id/track_list_item",
+      "children": [
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.soundcloud.android:id/overflow_button",
+          "clickable": true,
+          "class": "com.soundcloud.android.view.OverflowAnchorImageView",
+          "bounds": [
+            1272,
+            595,
+            1440,
+            763
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "com.soundcloud.android.view.OptimisedImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.soundcloud.android:id/image",
+          "clickable": false,
+          "class": "com.soundcloud.android.view.ForegroundImageView",
+          "bounds": [
+            56,
+            504,
+            280,
+            728
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Dead Or Alive",
+          "resource-id": "com.soundcloud.android:id/list_item_subheader",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.soundcloud.android.view.CustomFontTextView",
+          "bounds": [
+            322,
+            577,
+            622,
+            642
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "7.07M",
+          "resource-id": "com.soundcloud.android:id/list_item_counter",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.soundcloud.android.view.CustomFontTextView",
+          "bounds": [
+            322,
+            663,
+            493,
+            719
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "3:15",
+          "resource-id": "com.soundcloud.android:id/list_item_right_info",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.soundcloud.android.view.CustomFontTextView",
+          "bounds": [
+            1312,
+            515,
+            1384,
+            571
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Jazz Cartier",
+          "resource-id": "com.soundcloud.android:id/list_item_header",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.soundcloud.android.view.CustomFontTextView",
+          "bounds": [
+            322,
+            508,
+            589,
+            573
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        448,
+        1440,
+        784
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.soundcloud.android:id/track_list_item",
+      "children": [
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.soundcloud.android:id/overflow_button",
+          "clickable": true,
+          "class": "com.soundcloud.android.view.OverflowAnchorImageView",
+          "bounds": [
+            1272,
+            931,
+            1440,
+            1099
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "sliders",
+          "ancestors": [
+            "com.soundcloud.android.view.OptimisedImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.soundcloud.android:id/image",
+          "clickable": false,
+          "class": "com.soundcloud.android.view.ForegroundImageView",
+          "bounds": [
+            56,
+            840,
+            280,
+            1064
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Jazz (Prod. by OnGaud)",
+          "resource-id": "com.soundcloud.android:id/list_item_subheader",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.soundcloud.android.view.CustomFontTextView",
+          "bounds": [
+            322,
+            913,
+            867,
+            978
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "3.1M",
+          "resource-id": "com.soundcloud.android:id/list_item_counter",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.soundcloud.android.view.CustomFontTextView",
+          "bounds": [
+            322,
+            999,
+            458,
+            1055
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "4:20",
+          "resource-id": "com.soundcloud.android:id/list_item_right_info",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.soundcloud.android.view.CustomFontTextView",
+          "bounds": [
+            1297,
+            851,
+            1384,
+            907
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "MICK JENKINS",
+          "resource-id": "com.soundcloud.android:id/list_item_header",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.soundcloud.android.view.CustomFontTextView",
+          "bounds": [
+            322,
+            844,
+            647,
+            909
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        784,
+        1440,
+        1120
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.soundcloud.android:id/track_list_item",
+      "children": [
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.soundcloud.android:id/overflow_button",
+          "clickable": true,
+          "class": "com.soundcloud.android.view.OverflowAnchorImageView",
+          "bounds": [
+            1272,
+            1337,
+            1440,
+            1505
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "com.soundcloud.android.view.OptimisedImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.soundcloud.android:id/image",
+          "clickable": false,
+          "class": "com.soundcloud.android.view.ForegroundImageView",
+          "bounds": [
+            56,
+            1176,
+            280,
+            1400
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "QUE. - Diamonds Feat. August Alsina (Prod By: Jazz Feezy)",
+          "resource-id": "com.soundcloud.android:id/list_item_subheader",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.soundcloud.android.view.CustomFontTextView",
+          "bounds": [
+            322,
+            1249,
+            1384,
+            1386
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "1.03M",
+          "resource-id": "com.soundcloud.android:id/list_item_counter",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.soundcloud.android.view.CustomFontTextView",
+          "bounds": [
+            322,
+            1407,
+            485,
+            1463
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "3:20",
+          "resource-id": "com.soundcloud.android:id/list_item_right_info",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.soundcloud.android.view.CustomFontTextView",
+          "bounds": [
+            1299,
+            1187,
+            1384,
+            1243
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "QUE",
+          "resource-id": "com.soundcloud.android:id/list_item_header",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.soundcloud.android.view.CustomFontTextView",
+          "bounds": [
+            322,
+            1180,
+            419,
+            1245
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        1120,
+        1440,
+        1526
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.soundcloud.android:id/track_list_item",
+      "children": [
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.soundcloud.android:id/overflow_button",
+          "clickable": true,
+          "class": "com.soundcloud.android.view.OverflowAnchorImageView",
+          "bounds": [
+            1272,
+            1673,
+            1440,
+            1841
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "com.soundcloud.android.view.OptimisedImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.soundcloud.android:id/image",
+          "clickable": false,
+          "class": "com.soundcloud.android.view.ForegroundImageView",
+          "bounds": [
+            56,
+            1582,
+            280,
+            1806
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "حط ايده ياه - JAZZ VERSION",
+          "resource-id": "com.soundcloud.android:id/list_item_subheader",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.soundcloud.android.view.CustomFontTextView",
+          "bounds": [
+            322,
+            1655,
+            919,
+            1720
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "622K",
+          "resource-id": "com.soundcloud.android:id/list_item_counter",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.soundcloud.android.view.CustomFontTextView",
+          "bounds": [
+            322,
+            1741,
+            479,
+            1797
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "2:45",
+          "resource-id": "com.soundcloud.android:id/list_item_right_info",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.soundcloud.android.view.CustomFontTextView",
+          "bounds": [
+            1299,
+            1593,
+            1384,
+            1649
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Ebn El-QaDy",
+          "resource-id": "com.soundcloud.android:id/list_item_header",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.soundcloud.android.view.CustomFontTextView",
+          "bounds": [
+            322,
+            1586,
+            594,
+            1651
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        1526,
+        1440,
+        1862
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.soundcloud.android:id/track_list_item",
+      "children": [
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.soundcloud.android:id/overflow_button",
+          "clickable": true,
+          "class": "com.soundcloud.android.view.OverflowAnchorImageView",
+          "bounds": [
+            1272,
+            2009,
+            1440,
+            2177
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "com.soundcloud.android.view.OptimisedImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.soundcloud.android:id/image",
+          "clickable": false,
+          "class": "com.soundcloud.android.view.ForegroundImageView",
+          "bounds": [
+            56,
+            1918,
+            280,
+            2142
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Smooth And Sexy - Smooth Jazz For Lovers",
+          "resource-id": "com.soundcloud.android:id/list_item_subheader",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.soundcloud.android.view.CustomFontTextView",
+          "bounds": [
+            322,
+            1991,
+            1286,
+            2056
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "298K",
+          "resource-id": "com.soundcloud.android:id/list_item_counter",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.soundcloud.android.view.CustomFontTextView",
+          "bounds": [
+            322,
+            2077,
+            481,
+            2133
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "58:20",
+          "resource-id": "com.soundcloud.android:id/list_item_right_info",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.soundcloud.android.view.CustomFontTextView",
+          "bounds": [
+            1271,
+            1929,
+            1384,
+            1985
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Mukunda M'Tandari",
+          "resource-id": "com.soundcloud.android:id/list_item_header",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.soundcloud.android.view.CustomFontTextView",
+          "bounds": [
+            322,
+            1922,
+            750,
+            1987
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        1862,
+        1440,
+        2198
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.soundcloud.android:id/track_list_item",
+      "children": [
+        {
+          "ancestors": [
+            "com.soundcloud.android.view.OptimisedImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.soundcloud.android:id/image",
+          "clickable": false,
+          "class": "com.soundcloud.android.view.ForegroundImageView",
+          "bounds": [
+            56,
+            2254,
+            280,
+            2392
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "BLUE NOTE RECORDS AT 75: The Jazz Label That Lives On",
+          "resource-id": "com.soundcloud.android:id/list_item_subheader",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.soundcloud.android.view.CustomFontTextView",
+          "bounds": [
+            322,
+            2327,
+            1384,
+            2392
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "1:15:57",
+          "resource-id": "com.soundcloud.android:id/list_item_right_info",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.soundcloud.android.view.CustomFontTextView",
+          "bounds": [
+            1265,
+            2265,
+            1384,
+            2321
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Monterey Jazz Festival",
+          "resource-id": "com.soundcloud.android:id/list_item_header",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.soundcloud.android.view.CustomFontTextView",
+          "bounds": [
+            322,
+            2258,
+            821,
+            2323
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        2198,
+        1440,
+        2392
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

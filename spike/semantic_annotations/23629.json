@@ -1,0 +1,820 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.slacker.radio.ui.ads.BannerAdView",
+      "bounds": [
+        160,
+        2217,
+        1280,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.google.android.gms.ads.doubleclick.PublisherAdView",
+          "bounds": [
+            160,
+            2217,
+            1280,
+            2392
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.FrameLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "com.google.android.gms.ads.internal.webview.l",
+              "bounds": [
+                160,
+                2217,
+                1280,
+                2392
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "android.webkit.WebView",
+                    "android.widget.AbsoluteLayout",
+                    "android.view.ViewGroup",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    160,
+                    2217,
+                    1280,
+                    2392
+                  ],
+                  "clickable": true,
+                  "class": "com.google.android.gms.ads.internal.webview.m",
+                  "componentLabel": "Web View"
+                }
+              ],
+              "componentLabel": "Web View"
+            }
+          ],
+          "componentLabel": "Advertisement"
+        }
+      ],
+      "componentLabel": "Advertisement"
+    },
+    {
+      "ancestors": [
+        "android.support.v7.widget.AppCompatImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.slacker.radio:id/nowPlayingBarView_miniBar_art",
+      "clickable": false,
+      "class": "com.slacker.radio.coreui.views.TintableImageView",
+      "bounds": [
+        11,
+        2053,
+        165,
+        2206
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "com.slacker.radio.coreui.components.SharedView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.slacker.radio.ui.base.SharedTitleBar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        343
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "com.slacker.radio.coreui.views.GlyphButton",
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.slacker.radio:id/drawerButton",
+          "clickable": true,
+          "class": "com.slacker.radio.coreui.views.DrawerBackButton",
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "resource-id": "com.slacker.radio:id/titleText",
+          "children": [
+            {
+              "text": "Blues",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.slacker.radio.coreui.views.CustomFontTextView",
+              "bounds": [
+                336,
+                137,
+                1104,
+                197
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.widget.ViewSwitcher",
+            "android.widget.ViewAnimator",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextSwitcher",
+          "bounds": [
+            336,
+            137,
+            1104,
+            197
+          ],
+          "componentLabel": "On/Off Switch"
+        },
+        {
+          "iconClass": "search",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1244,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.slacker.radio:id/nowPlayingBar_mediaRouteButton",
+      "clickable": true,
+      "class": "android.support.v7.app.MediaRouteButton",
+      "bounds": [
+        1097,
+        2042,
+        1265,
+        2217
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "iconClass": "play",
+      "ancestors": [
+        "com.slacker.radio.coreui.views.MediaButton",
+        "com.slacker.radio.coreui.views.GlyphButton",
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.slacker.radio:id/nowPlayingBarView_miniBar_play",
+      "clickable": true,
+      "class": "com.slacker.radio.ui.sharedviews.LiveMediaButton",
+      "bounds": [
+        1265,
+        2042,
+        1440,
+        2217
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Hailee Steinfeld & Grey",
+      "resource-id": "com.slacker.radio:id/nowPlayingBarView_miniBar_artist",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.slacker.radio.coreui.views.CustomFontTextView",
+      "bounds": [
+        194,
+        2063,
+        1051,
+        2129
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Starving",
+      "resource-id": "com.slacker.radio:id/nowPlayingBarView_miniBar_track",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.slacker.radio.coreui.views.CustomFontTextView",
+      "bounds": [
+        194,
+        2129,
+        1051,
+        2195
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Top Tracks",
+      "resource-id": "com.slacker.radio:id/tab2",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.slacker.radio.coreui.views.CustomFontTextView",
+      "bounds": [
+        0,
+        735,
+        1440,
+        783
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.slacker.radio.ui.view.PlayWithTextPillView",
+      "bounds": [
+        420,
+        434,
+        1020,
+        609
+      ],
+      "clickable": true,
+      "componentLabel": "Text Button",
+      "text": "Play Station"
+    },
+    {
+      "text": "Top Tracks",
+      "resource-id": "com.slacker.radio:id/tab2",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.slacker.radio.coreui.views.CustomFontTextView",
+      "bounds": [
+        545,
+        1082,
+        894,
+        1150
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "java.lang.Object"
+      ],
+      "bounds": [
+        17,
+        84,
+        1423,
+        1274
+      ],
+      "clickable": false,
+      "class": "android.view.View",
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "com.slacker.radio.ui.view.e",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.slacker.radio.ui.view.PremiumTooltipView",
+      "bounds": [
+        17,
+        1274,
+        1423,
+        1572
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "lock",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.slacker.radio:id/tooltip_icon",
+          "clickable": false,
+          "class": "com.slacker.radio.coreui.views.TintableImageView",
+          "bounds": [
+            130,
+            1378,
+            218,
+            1466
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Premium Feature",
+          "resource-id": "com.slacker.radio:id/tooltip_title",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.slacker.radio.coreui.views.CustomFontTextView",
+          "bounds": [
+            332,
+            1359,
+            1353,
+            1407
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Play songs on demand with Slacker Premium",
+          "resource-id": "com.slacker.radio:id/tooltip_message",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.slacker.radio.coreui.views.CustomFontTextView",
+          "bounds": [
+            332,
+            1407,
+            1353,
+            1487
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "com.slacker.radio.ui.view.SmallPlayableView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.slacker.radio.ui.view.TrackView",
+      "bounds": [
+        17,
+        1572,
+        1423,
+        1909
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "resource-id": "com.slacker.radio:id/smallPlayable_card",
+          "children": [
+            {
+              "text": "Highway Mama",
+              "resource-id": "com.slacker.radio:id/smallPlayable_title",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.slacker.radio.coreui.views.CustomFontTextView",
+              "bounds": [
+                94,
+                1673,
+                1100,
+                1749
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "by MIKE ZITO",
+              "resource-id": "com.slacker.radio:id/smallPlayable_subtitle",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.slacker.radio.coreui.views.CustomFontTextView",
+              "bounds": [
+                94,
+                1760,
+                1100,
+                1807
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "iconClass": "globe",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatImageView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.slacker.radio:id/smallPlayable_play",
+              "clickable": false,
+              "class": "com.slacker.radio.coreui.views.TintableImageView",
+              "bounds": [
+                1170,
+                1652,
+                1345,
+                1827
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.CardView",
+          "bounds": [
+            17,
+            1572,
+            1423,
+            1909
+          ],
+          "componentLabel": "Card"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "com.slacker.radio.ui.view.SmallPlayableView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.slacker.radio.ui.view.TrackView",
+      "bounds": [
+        17,
+        1909,
+        1423,
+        2042
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "resource-id": "com.slacker.radio:id/smallPlayable_card",
+          "children": [
+            {
+              "resource-id": "com.slacker.radio:id/smallPlayable_textContent",
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.widget.LinearLayout",
+              "bounds": [
+                24,
+                1920,
+                1100,
+                2042
+              ],
+              "componentLabel": "Text Button",
+              "text": "Snake Pit"
+            },
+            {
+              "ancestors": [
+                "android.support.v7.widget.AppCompatImageView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.slacker.radio:id/smallPlayable_play",
+              "clickable": false,
+              "class": "com.slacker.radio.coreui.views.TintableImageView",
+              "bounds": [
+                1170,
+                1989,
+                1345,
+                2042
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.CardView",
+          "bounds": [
+            17,
+            1909,
+            1423,
+            2042
+          ],
+          "componentLabel": "Card"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        0,
+        84,
+        1440,
+        959
+      ],
+      "clickable": false,
+      "class": "com.slacker.radio.ui.sharedviews.d",
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        0,
+        84,
+        1440,
+        959
+      ],
+      "clickable": false,
+      "class": "com.slacker.radio.ui.sharedviews.d",
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.support.v7.widget.AppCompatImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.slacker.radio:id/left_arrow",
+      "clickable": false,
+      "class": "com.slacker.radio.coreui.views.TintableImageView",
+      "bounds": [
+        0,
+        959,
+        350,
+        1274
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.support.v7.widget.AppCompatImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.slacker.radio:id/right_arrow",
+      "clickable": false,
+      "class": "com.slacker.radio.coreui.views.TintableImageView",
+      "bounds": [
+        1090,
+        959,
+        1440,
+        1274
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "resource-id": "com.slacker.radio:id/button_bar",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.slacker.radio.ui.buttonbar.a",
+          "bounds": [
+            0,
+            784,
+            480,
+            959
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "iconClass": "share",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatImageView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                205,
+                836,
+                275,
+                906
+              ],
+              "clickable": false,
+              "class": "com.slacker.radio.coreui.views.TintableImageView",
+              "componentLabel": "Icon"
+            }
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.slacker.radio.ui.buttonbar.a",
+          "bounds": [
+            480,
+            784,
+            960,
+            959
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "iconClass": "star",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatImageView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                685,
+                836,
+                755,
+                906
+              ],
+              "clickable": false,
+              "class": "com.slacker.radio.coreui.views.TintableImageView",
+              "componentLabel": "Icon"
+            }
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.slacker.radio.ui.buttonbar.a",
+          "bounds": [
+            960,
+            784,
+            1440,
+            959
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "iconClass": "file_download",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatImageView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                1165,
+                836,
+                1235,
+                906
+              ],
+              "clickable": false,
+              "class": "com.slacker.radio.coreui.views.TintableImageView",
+              "componentLabel": "Icon"
+            },
+            {
+              "iconClass": "file_download",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatImageView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                1144,
+                815,
+                1256,
+                927
+              ],
+              "clickable": false,
+              "class": "com.slacker.radio.coreui.views.TintableImageView",
+              "componentLabel": "Icon"
+            }
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.slacker.radio.ui.buttonbar.ButtonBarView",
+      "bounds": [
+        0,
+        784,
+        1440,
+        959
+      ],
+      "componentLabel": "Button Bar"
+    }
+  ]
+}

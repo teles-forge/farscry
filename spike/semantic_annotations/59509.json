@@ -1,0 +1,721 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "text": "To use auto backup, allow access to your files.",
+      "resource-id": "com.battlelancer.seriesguide:id/snackbar_text",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        42,
+        2101,
+        1084,
+        2392
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Settings",
+      "resource-id": "com.battlelancer.seriesguide:id/snackbar_action",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        1084,
+        2162,
+        1398,
+        2330
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "settings"
+    },
+    {
+      "resource-id": "com.battlelancer.seriesguide:id/sgToolbar",
+      "children": [
+        {
+          "text": "Shows",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            252,
+            135,
+            461,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "com.battlelancer.seriesguide:id/menu_search",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1132,
+            98,
+            1300,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.battlelancer.seriesguide:id/tabLayoutTabs",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            0,
+            280,
+            256,
+            448
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "text": "SHOWS"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            256,
+            280,
+            452,
+            448
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "text": "NOW"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            452,
+            280,
+            790,
+            448
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "text": "UPCOMING"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            790,
+            280,
+            1057,
+            448
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "textButtonClass": "past"
+        }
+      ],
+      "ancestors": [
+        "android.widget.HorizontalScrollView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.battlelancer.seriesguide.widgets.SlidingTabLayout",
+      "bounds": [
+        0,
+        280,
+        1440,
+        448
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        28,
+        598,
+        1412,
+        962
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.battlelancer.seriesguide:id/imageViewActivityPoster",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            28,
+            598,
+            270,
+            962
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "check",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.battlelancer.seriesguide:id/watchedBoxActivity",
+          "clickable": true,
+          "class": "com.battlelancer.seriesguide.widgets.WatchedBox",
+          "bounds": [
+            1244,
+            689,
+            1412,
+            857
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Westworld",
+          "resource-id": "com.battlelancer.seriesguide:id/textViewActivityShow",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            298,
+            598,
+            1244,
+            692
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "1x10 The Bicameral Mind",
+          "resource-id": "com.battlelancer.seriesguide:id/textViewActivityEpisode",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            298,
+            692,
+            1244,
+            782
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "8:00 PM / HBO",
+          "resource-id": "com.battlelancer.seriesguide:id/textViewActivityInfo",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            298,
+            782,
+            1244,
+            853
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "6 days ago",
+          "resource-id": "com.battlelancer.seriesguide:id/textViewActivityTimestamp",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            298,
+            853,
+            1244,
+            938
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        28,
+        1112,
+        1412,
+        1476
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.battlelancer.seriesguide:id/imageViewActivityPoster",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            28,
+            1112,
+            270,
+            1476
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "check",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.battlelancer.seriesguide:id/watchedBoxActivity",
+          "clickable": true,
+          "class": "com.battlelancer.seriesguide.widgets.WatchedBox",
+          "bounds": [
+            1244,
+            1203,
+            1412,
+            1371
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Westworld",
+          "resource-id": "com.battlelancer.seriesguide:id/textViewActivityShow",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            298,
+            1112,
+            1244,
+            1206
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "1x09 The Well-Tempered Clavier",
+          "resource-id": "com.battlelancer.seriesguide:id/textViewActivityEpisode",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            298,
+            1206,
+            1244,
+            1296
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "8:00 PM / HBO",
+          "resource-id": "com.battlelancer.seriesguide:id/textViewActivityInfo",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            298,
+            1296,
+            1244,
+            1367
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Nov 27",
+          "resource-id": "com.battlelancer.seriesguide:id/textViewActivityTimestamp",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            298,
+            1367,
+            1244,
+            1452
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        28,
+        1626,
+        1412,
+        1990
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.battlelancer.seriesguide:id/imageViewActivityPoster",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            28,
+            1626,
+            270,
+            1990
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "check",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.battlelancer.seriesguide:id/watchedBoxActivity",
+          "clickable": true,
+          "class": "com.battlelancer.seriesguide.widgets.WatchedBox",
+          "bounds": [
+            1244,
+            1717,
+            1412,
+            1885
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Westworld",
+          "resource-id": "com.battlelancer.seriesguide:id/textViewActivityShow",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            298,
+            1626,
+            1244,
+            1720
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "1x08 Trace Decay",
+          "resource-id": "com.battlelancer.seriesguide:id/textViewActivityEpisode",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            298,
+            1720,
+            1244,
+            1810
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "8:00 PM / HBO",
+          "resource-id": "com.battlelancer.seriesguide:id/textViewActivityInfo",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            298,
+            1810,
+            1244,
+            1881
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Nov 20",
+          "resource-id": "com.battlelancer.seriesguide:id/textViewActivityTimestamp",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            298,
+            1881,
+            1244,
+            1966
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        28,
+        2140,
+        1412,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.battlelancer.seriesguide:id/imageViewActivityPoster",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            28,
+            2140,
+            270,
+            2392
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.battlelancer.seriesguide:id/watchedBoxActivity",
+          "clickable": true,
+          "class": "com.battlelancer.seriesguide.widgets.WatchedBox",
+          "bounds": [
+            1244,
+            2231,
+            1412,
+            2392
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Westworld",
+          "resource-id": "com.battlelancer.seriesguide:id/textViewActivityShow",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            298,
+            2140,
+            1244,
+            2234
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "1x07 Trompe L'Oeil",
+          "resource-id": "com.battlelancer.seriesguide:id/textViewActivityEpisode",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            298,
+            2234,
+            1244,
+            2324
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "8:00 PM / HBO",
+          "resource-id": "com.battlelancer.seriesguide:id/textViewActivityInfo",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            298,
+            2324,
+            1244,
+            2392
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    }
+  ]
+}

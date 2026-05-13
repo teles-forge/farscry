@@ -1,0 +1,492 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.hi5.app:id/screen_toolbar",
+      "children": [
+        {
+          "text": "Show me",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            252,
+            140,
+            537,
+            224
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            14,
+            84,
+            210,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Save",
+          "resource-id": "com.hi5.app:id/menu_filters_save",
+          "ancestors": [
+            "com.tagged.view.CustomFontTextView",
+            "com.tagged.view.ForegroundSupportingTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.tagged.view.CustomFontMenuTextView",
+          "bounds": [
+            1193,
+            84,
+            1426,
+            280
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "save"
+        }
+      ],
+      "ancestors": [
+        "android.support.v7.widget.Toolbar",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.tagged.view.TaggedToolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "Gender",
+      "ancestors": [
+        "com.tagged.view.ForegroundSupportingTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.tagged.view.CustomFontTextView",
+      "bounds": [
+        0,
+        364,
+        1440,
+        448
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Age",
+      "ancestors": [
+        "com.tagged.view.ForegroundSupportingTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.tagged.view.CustomFontTextView",
+      "bounds": [
+        0,
+        644,
+        1440,
+        728
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "com.hi5.app:id/filter_age",
+      "children": [
+        {
+          "text": "20",
+          "resource-id": "com.hi5.app:id/filter_age_from",
+          "ancestors": [
+            "com.tagged.view.ForegroundSupportingTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.tagged.view.CustomFontTextView",
+          "bounds": [
+            56,
+            778,
+            125,
+            845
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "40",
+          "resource-id": "com.hi5.app:id/filter_age_to",
+          "ancestors": [
+            "com.tagged.view.ForegroundSupportingTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.tagged.view.CustomFontTextView",
+          "bounds": [
+            1315,
+            778,
+            1384,
+            845
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            125,
+            749,
+            1315,
+            875
+          ],
+          "clickable": false,
+          "class": "com.tagged.view.RangeSeekBar",
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.tagged.view.filter.FilterAgeSeekBar",
+      "bounds": [
+        0,
+        728,
+        1440,
+        896
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "text": "Location",
+      "ancestors": [
+        "com.tagged.view.ForegroundSupportingTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.tagged.view.CustomFontTextView",
+      "bounds": [
+        0,
+        924,
+        1440,
+        1008
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Reset All",
+      "resource-id": "com.hi5.app:id/filter_reset",
+      "ancestors": [
+        "com.tagged.view.ForegroundSupportingTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.tagged.view.CustomFontTextView",
+      "bounds": [
+        544,
+        2156,
+        896,
+        2324
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Males",
+      "resource-id": "com.hi5.app:id/filter_gender_male",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatRadioButton",
+      "bounds": [
+        36,
+        448,
+        300,
+        616
+      ],
+      "componentLabel": "Radio Button"
+    },
+    {
+      "text": "Females",
+      "resource-id": "com.hi5.app:id/filter_gender_female",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatRadioButton",
+      "bounds": [
+        680,
+        448,
+        1004,
+        616
+      ],
+      "componentLabel": "Radio Button"
+    },
+    {
+      "resource-id": "com.hi5.app:id/spinner",
+      "ancestors": [
+        "android.widget.Spinner",
+        "android.widget.AbsSpinner",
+        "android.widget.AdapterView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatSpinner",
+      "bounds": [
+        56,
+        1344,
+        1384,
+        1512
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "distance"
+    },
+    {
+      "text": "Relationship Status",
+      "resource-id": "com.hi5.app:id/filter_name",
+      "ancestors": [
+        "com.tagged.view.ForegroundSupportingTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.tagged.view.CustomFontTextView",
+      "bounds": [
+        56,
+        1757,
+        1280,
+        1841
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Edit",
+      "resource-id": "com.hi5.app:id/filter_edit_label",
+      "ancestors": [
+        "com.tagged.view.ForegroundSupportingTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.tagged.view.CustomFontTextView",
+      "bounds": [
+        1315,
+        1757,
+        1384,
+        1841
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Ethnicity",
+      "resource-id": "com.hi5.app:id/filter_name",
+      "ancestors": [
+        "com.tagged.view.ForegroundSupportingTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.tagged.view.CustomFontTextView",
+      "bounds": [
+        56,
+        1939,
+        1280,
+        2023
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Edit",
+      "resource-id": "com.hi5.app:id/filter_edit_label",
+      "ancestors": [
+        "com.tagged.view.ForegroundSupportingTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.tagged.view.CustomFontTextView",
+      "bounds": [
+        1315,
+        1939,
+        1384,
+        2023
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Country",
+      "resource-id": "com.hi5.app:id/filter_location_name",
+      "ancestors": [
+        "com.tagged.view.ForegroundSupportingTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.tagged.view.CustomFontTextView",
+      "bounds": [
+        56,
+        1058,
+        277,
+        1125
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "United States",
+      "resource-id": "com.hi5.app:id/filter_location_value",
+      "ancestors": [
+        "com.tagged.view.ForegroundSupportingTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.tagged.view.CustomFontTextView",
+      "bounds": [
+        277,
+        1062,
+        1384,
+        1121
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "City/Zip Code",
+      "resource-id": "com.hi5.app:id/filter_location_name",
+      "ancestors": [
+        "com.tagged.view.ForegroundSupportingTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.tagged.view.CustomFontTextView",
+      "bounds": [
+        56,
+        1226,
+        421,
+        1293
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Urbana, IL",
+      "resource-id": "com.hi5.app:id/filter_location_value",
+      "ancestors": [
+        "com.tagged.view.ForegroundSupportingTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.tagged.view.CustomFontTextView",
+      "bounds": [
+        421,
+        1230,
+        1384,
+        1289
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "location_crosshair",
+      "ancestors": [
+        "com.makeramen.roundedimageview.RoundedImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.hi5.app:id/locateme_icon",
+      "clickable": false,
+      "class": "com.tagged.view.TaggedImageView",
+      "bounds": [
+        539,
+        1557,
+        616,
+        1634
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Locate me",
+      "resource-id": "com.hi5.app:id/locateme_text",
+      "ancestors": [
+        "com.tagged.view.ForegroundSupportingTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.tagged.view.CustomFontTextView",
+      "bounds": [
+        644,
+        1562,
+        900,
+        1629
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

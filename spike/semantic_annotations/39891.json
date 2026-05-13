@@ -1,0 +1,985 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "gbis.gbandroid:id/activity_stationsearch_interactionbar",
+      "children": [
+        {
+          "resource-id": "gbis.gbandroid:id/interactionbar_fuel_group_layout",
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.FrameLayout",
+          "bounds": [
+            0,
+            2224,
+            564,
+            2392
+          ],
+          "componentLabel": "Text Button",
+          "text": "Regular"
+        },
+        {
+          "resource-id": "gbis.gbandroid:id/interactionbar_sort_type_layout",
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.FrameLayout",
+          "bounds": [
+            564,
+            2224,
+            1129,
+            2392
+          ],
+          "componentLabel": "Text Button",
+          "text": "By Distance"
+        },
+        {
+          "iconClass": "minus",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "gbis.gbandroid:id/interactionbar_refresh_image",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1129,
+            2224,
+            1440,
+            2392
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "gbis.gbandroid.ui.filtering.GbInteractionBar",
+      "bounds": [
+        0,
+        2220,
+        1440,
+        2392
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "gbis.gbandroid:id/toolbar",
+      "children": [
+        {
+          "text": "Stations",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            210,
+            135,
+            469,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "",
+          "resource-id": "gbis.gbandroid:id/action_search",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            978,
+            98,
+            1146,
+            266
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "",
+          "resource-id": "gbis.gbandroid:id/action_stationsearch_map",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1146,
+            98,
+            1314,
+            266
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1314,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "Regular Gas Near Me by Distance",
+      "resource-id": "gbis.gbandroid:id/component_contextbar_text",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        0,
+        280,
+        1440,
+        375
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "gbis.gbandroid.ui.stationsearch.list.StationListRow",
+      "bounds": [
+        0,
+        375,
+        1440,
+        767
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "2 hours ago",
+          "resource-id": "gbis.gbandroid:id/stationlist_row_price_time",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "gbis.gbandroid.ui.TypeFaceTextView",
+          "bounds": [
+            1,
+            523,
+            369,
+            572
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "By WitToTurTo",
+          "resource-id": "gbis.gbandroid:id/stationlist_row_price_member",
+          "ancestors": [
+            "gbis.gbandroid.ui.TypeFaceTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "gbis.gbandroid.ui.stationsearch.list.StationListRowMemberView",
+          "bounds": [
+            12,
+            572,
+            358,
+            624
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Chevron",
+          "resource-id": "gbis.gbandroid:id/stationlist_row_name",
+          "ancestors": [
+            "gbis.gbandroid.ui.TypeFaceTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "gbis.gbandroid.ui.TargetTypeFaceTextView",
+          "bounds": [
+            419,
+            381,
+            1418,
+            479
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "1601 Mission St & S Van Ness Ave",
+          "resource-id": "gbis.gbandroid:id/stationlist_row_address",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "gbis.gbandroid.ui.TypeFaceTextView",
+          "bounds": [
+            401,
+            502,
+            1407,
+            567
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "San Francisco, CA",
+          "resource-id": "gbis.gbandroid:id/stationlist_row_citystate",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            401,
+            567,
+            1439,
+            637
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0.2 mi",
+          "resource-id": "gbis.gbandroid:id/stationlist_row_distance",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1274,
+            567,
+            1407,
+            632
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Price is Wrong",
+          "resource-id": "gbis.gbandroid:id/stationlist_quickrow_wrong",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "gbis.gbandroid.ui.TypeFaceTextView",
+          "bounds": [
+            0,
+            639,
+            720,
+            764
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "Price is Right",
+          "resource-id": "gbis.gbandroid:id/stationlist_quickrow_right",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "gbis.gbandroid.ui.TypeFaceTextView",
+          "bounds": [
+            720,
+            639,
+            1440,
+            764
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "gbis.gbandroid.ui.stationsearch.list.StationListRow",
+      "bounds": [
+        0,
+        767,
+        1440,
+        1159
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "52 minutes ago",
+          "resource-id": "gbis.gbandroid:id/stationlist_row_price_time",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "gbis.gbandroid.ui.TypeFaceTextView",
+          "bounds": [
+            1,
+            915,
+            369,
+            964
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "By sfhairyarab",
+          "resource-id": "gbis.gbandroid:id/stationlist_row_price_member",
+          "ancestors": [
+            "gbis.gbandroid.ui.TypeFaceTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "gbis.gbandroid.ui.stationsearch.list.StationListRowMemberView",
+          "bounds": [
+            12,
+            964,
+            358,
+            1016
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Chevron",
+          "resource-id": "gbis.gbandroid:id/stationlist_row_name",
+          "ancestors": [
+            "gbis.gbandroid.ui.TypeFaceTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "gbis.gbandroid.ui.TargetTypeFaceTextView",
+          "bounds": [
+            419,
+            773,
+            1418,
+            871
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "1298 Howard St & 9th St",
+          "resource-id": "gbis.gbandroid:id/stationlist_row_address",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "gbis.gbandroid.ui.TypeFaceTextView",
+          "bounds": [
+            401,
+            894,
+            1407,
+            959
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "San Francisco, CA",
+          "resource-id": "gbis.gbandroid:id/stationlist_row_citystate",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            401,
+            959,
+            1439,
+            1029
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0.4 mi",
+          "resource-id": "gbis.gbandroid:id/stationlist_row_distance",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1274,
+            959,
+            1407,
+            1024
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Price is Wrong",
+          "resource-id": "gbis.gbandroid:id/stationlist_quickrow_wrong",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "gbis.gbandroid.ui.TypeFaceTextView",
+          "bounds": [
+            0,
+            1031,
+            720,
+            1156
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "Price is Right",
+          "resource-id": "gbis.gbandroid:id/stationlist_quickrow_right",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "gbis.gbandroid.ui.TypeFaceTextView",
+          "bounds": [
+            720,
+            1031,
+            1440,
+            1156
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "gbis.gbandroid.ui.stationsearch.list.StationListRow",
+      "bounds": [
+        0,
+        1159,
+        1440,
+        1551
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "2 hours ago",
+          "resource-id": "gbis.gbandroid:id/stationlist_row_price_time",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "gbis.gbandroid.ui.TypeFaceTextView",
+          "bounds": [
+            1,
+            1307,
+            369,
+            1356
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "By WitToTurTo",
+          "resource-id": "gbis.gbandroid:id/stationlist_row_price_member",
+          "ancestors": [
+            "gbis.gbandroid.ui.TypeFaceTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "gbis.gbandroid.ui.stationsearch.list.StationListRowMemberView",
+          "bounds": [
+            12,
+            1356,
+            358,
+            1408
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "ARCO",
+          "resource-id": "gbis.gbandroid:id/stationlist_row_name",
+          "ancestors": [
+            "gbis.gbandroid.ui.TypeFaceTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "gbis.gbandroid.ui.TargetTypeFaceTextView",
+          "bounds": [
+            419,
+            1165,
+            1418,
+            1263
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "1798 Mission St & 14th St",
+          "resource-id": "gbis.gbandroid:id/stationlist_row_address",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "gbis.gbandroid.ui.TypeFaceTextView",
+          "bounds": [
+            401,
+            1286,
+            1407,
+            1351
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "San Francisco, CA",
+          "resource-id": "gbis.gbandroid:id/stationlist_row_citystate",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            401,
+            1351,
+            1439,
+            1421
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0.4 mi",
+          "resource-id": "gbis.gbandroid:id/stationlist_row_distance",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1274,
+            1351,
+            1407,
+            1416
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Price is Wrong",
+          "resource-id": "gbis.gbandroid:id/stationlist_quickrow_wrong",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "gbis.gbandroid.ui.TypeFaceTextView",
+          "bounds": [
+            0,
+            1423,
+            720,
+            1548
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "Price is Right",
+          "resource-id": "gbis.gbandroid:id/stationlist_quickrow_right",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "gbis.gbandroid.ui.TypeFaceTextView",
+          "bounds": [
+            720,
+            1423,
+            1440,
+            1548
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "gbis.gbandroid.ui.stationsearch.list.StationListRow",
+      "bounds": [
+        0,
+        1551,
+        1440,
+        1818
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "3 hours ago",
+          "resource-id": "gbis.gbandroid:id/stationlist_row_price_time",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "gbis.gbandroid.ui.TypeFaceTextView",
+          "bounds": [
+            1,
+            1699,
+            369,
+            1748
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "By WitToTurTo",
+          "resource-id": "gbis.gbandroid:id/stationlist_row_price_member",
+          "ancestors": [
+            "gbis.gbandroid.ui.TypeFaceTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "gbis.gbandroid.ui.stationsearch.list.StationListRowMemberView",
+          "bounds": [
+            12,
+            1748,
+            358,
+            1800
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Shell",
+          "resource-id": "gbis.gbandroid:id/stationlist_row_name",
+          "ancestors": [
+            "gbis.gbandroid.ui.TypeFaceTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "gbis.gbandroid.ui.TargetTypeFaceTextView",
+          "bounds": [
+            419,
+            1557,
+            1418,
+            1655
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "800 Turk St & Franklin St",
+          "resource-id": "gbis.gbandroid:id/stationlist_row_address",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "gbis.gbandroid.ui.TypeFaceTextView",
+          "bounds": [
+            401,
+            1678,
+            1407,
+            1743
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "San Francisco, CA",
+          "resource-id": "gbis.gbandroid:id/stationlist_row_citystate",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            401,
+            1743,
+            1439,
+            1813
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0.5 mi",
+          "resource-id": "gbis.gbandroid:id/stationlist_row_distance",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1274,
+            1743,
+            1407,
+            1808
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1818,
+        1440,
+        2220
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "gbis.gbandroid:id/mopub_native_ad_main_image",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            80,
+            2183,
+            1360,
+            2220
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "gbis.gbandroid:id/mopub_native_ad_icon_image",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            70,
+            1836,
+            298,
+            2064
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "A Different Special Everyday ",
+          "resource-id": "gbis.gbandroid:id/mopub_native_ad_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "gbis.gbandroid.ui.TypeFaceTextView",
+          "bounds": [
+            400,
+            2026,
+            1408,
+            2091
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "Get Directions",
+          "resource-id": "gbis.gbandroid:id/mopub_native_ad_cta",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1079,
+            2102,
+            1408,
+            2172
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "Weekday Lunch Specials $5.99",
+          "resource-id": "gbis.gbandroid:id/mopub_native_ad_title",
+          "ancestors": [
+            "gbis.gbandroid.ui.TypeFaceTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "gbis.gbandroid.ui.TargetTypeFaceTextView",
+          "bounds": [
+            400,
+            1822,
+            1206,
+            2003
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "Ad",
+          "resource-id": "gbis.gbandroid:id/mopub_native_ad_sponsored",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "gbis.gbandroid.ui.TypeFaceTextView",
+          "bounds": [
+            1280,
+            1844,
+            1327,
+            1897
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "info",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "gbis.gbandroid:id/mopub_native_ad_privacy_image",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1338,
+            1836,
+            1408,
+            1906
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

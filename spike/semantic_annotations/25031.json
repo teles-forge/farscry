@@ -1,0 +1,717 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.mapquest.android.ace:id/map",
+      "children": [
+        {
+          "resource-id": "com.mapquest.android.ace:id/weather_finger",
+          "ancestors": [
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.mapquest.android.ace.ui.weather.WeatherOverviewView",
+          "bounds": [
+            1020,
+            2013,
+            1440,
+            2188
+          ],
+          "componentLabel": "Text Button",
+          "text": ""
+        },
+        {
+          "text": "+",
+          "resource-id": "com.mapquest.android.ace:id/zoom_in_button",
+          "ancestors": [
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.mapquest.android.ace.ui.button.AceOnMapSymbolButton",
+          "bounds": [
+            18,
+            1071,
+            193,
+            1246
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "-",
+          "resource-id": "com.mapquest.android.ace:id/zoom_out_button",
+          "ancestors": [
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.mapquest.android.ace.ui.button.AceOnMapSymbolButton",
+          "bounds": [
+            18,
+            1250,
+            193,
+            1425
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.mapbox.mapboxsdk.views.MapView",
+      "bounds": [
+        0,
+        273,
+        1440,
+        2223
+      ],
+      "componentLabel": "Map View"
+    },
+    {
+      "resource-id": "com.mapquest.android.ace:id/utility_belt_layers_button",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            300,
+            2223,
+            580,
+            2392
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "resource-id": "com.mapquest.android.ace:id/symbol",
+          "ancestors": [
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.mapquest.android.ace.ui.text.AceLayeredTextView",
+          "bounds": [
+            335,
+            2238,
+            545,
+            2327
+          ],
+          "componentLabel": "Pager Indicator"
+        },
+        {
+          "text": "Layers",
+          "resource-id": "com.mapquest.android.ace:id/label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.mapquest.android.ace.ui.text.AceTextView",
+          "bounds": [
+            335,
+            2327,
+            545,
+            2369
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "com.mapquest.android.ace.ui.utilitybelt.UtilityBeltButtonView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.mapquest.android.ace.ui.utilitybelt.UtilityBeltButtonBadgeView",
+      "bounds": [
+        300,
+        2223,
+        580,
+        2392
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "resource-id": "com.mapquest.android.ace:id/utility_belt_traffic_button",
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.mapquest.android.ace.ui.utilitybelt.UtilityBeltButtonView",
+      "bounds": [
+        580,
+        2223,
+        860,
+        2392
+      ],
+      "componentLabel": "Text Button",
+      "text": "ω"
+    },
+    {
+      "resource-id": "com.mapquest.android.ace:id/utility_belt_go_to_button",
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.mapquest.android.ace.ui.utilitybelt.UtilityBeltButtonView",
+      "bounds": [
+        860,
+        2223,
+        1140,
+        2392
+      ],
+      "componentLabel": "Text Button",
+      "text": "φ"
+    },
+    {
+      "text": "ϲ",
+      "resource-id": "com.mapquest.android.ace:id/search_bar_menu_btn",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.mapquest.android.ace.ui.text.AceTextView",
+      "bounds": [
+        18,
+        119,
+        137,
+        238
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "resource-id": "com.mapquest.android.ace:id/search_bar_find_places_button",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        207,
+        102,
+        533,
+        255
+      ],
+      "componentLabel": "Text Button",
+      "text": "Q"
+    },
+    {
+      "resource-id": "com.mapquest.android.ace:id/search_bar_get_directions_button",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        586,
+        102,
+        1303,
+        255
+      ],
+      "componentLabel": "Text Button",
+      "text": "ϴ"
+    },
+    {
+      "text": "G",
+      "resource-id": "com.mapquest.android.ace:id/search_bar_layer_list_btn",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.mapquest.android.ace.ui.text.AceTextView",
+      "bounds": [
+        1303,
+        119,
+        1422,
+        238
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.mapquest.android.ace.layers.bar.LayersBarButton",
+      "bounds": [
+        4,
+        2025,
+        179,
+        2200
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "i",
+          "resource-id": "com.mapquest.android.ace:id/symbol",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.mapquest.android.ace.ui.text.AceTextView",
+          "bounds": [
+            35,
+            2037,
+            147,
+            2149
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Groceries",
+          "resource-id": "com.mapquest.android.ace:id/label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.mapquest.android.ace.ui.text.AceTextView",
+          "bounds": [
+            20,
+            2149,
+            163,
+            2187
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.mapquest.android.ace.layers.bar.LayersBarButton",
+      "bounds": [
+        193,
+        2025,
+        368,
+        2200
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "a",
+          "resource-id": "com.mapquest.android.ace:id/symbol",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.mapquest.android.ace.ui.text.AceTextView",
+          "bounds": [
+            224,
+            2037,
+            336,
+            2149
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Airports",
+          "resource-id": "com.mapquest.android.ace:id/label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.mapquest.android.ace.ui.text.AceTextView",
+          "bounds": [
+            222,
+            2149,
+            339,
+            2187
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.mapquest.android.ace.layers.bar.LayersBarButton",
+      "bounds": [
+        382,
+        2025,
+        557,
+        2200
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "d",
+          "resource-id": "com.mapquest.android.ace:id/symbol",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.mapquest.android.ace.ui.text.AceTextView",
+          "bounds": [
+            413,
+            2037,
+            525,
+            2149
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Banks",
+          "resource-id": "com.mapquest.android.ace:id/label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.mapquest.android.ace.ui.text.AceTextView",
+          "bounds": [
+            424,
+            2149,
+            515,
+            2187
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.mapquest.android.ace.layers.bar.LayersBarButton",
+      "bounds": [
+        571,
+        2025,
+        746,
+        2200
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "k",
+          "resource-id": "com.mapquest.android.ace:id/symbol",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.mapquest.android.ace.ui.text.AceTextView",
+          "bounds": [
+            602,
+            2037,
+            714,
+            2149
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Ice Cream",
+          "resource-id": "com.mapquest.android.ace:id/label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.mapquest.android.ace.ui.text.AceTextView",
+          "bounds": [
+            582,
+            2149,
+            734,
+            2187
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.mapquest.android.ace.layers.bar.LayersBarButton",
+      "bounds": [
+        760,
+        2025,
+        935,
+        2200
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "#",
+          "resource-id": "com.mapquest.android.ace:id/symbol",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.mapquest.android.ace.ui.text.AceTextView",
+          "bounds": [
+            791,
+            2037,
+            903,
+            2149
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Schools",
+          "resource-id": "com.mapquest.android.ace:id/label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.mapquest.android.ace.ui.text.AceTextView",
+          "bounds": [
+            788,
+            2149,
+            907,
+            2187
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.mapquest.android.ace.layers.bar.LayersBarButton",
+      "bounds": [
+        949,
+        2025,
+        1124,
+        2200
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "q",
+          "resource-id": "com.mapquest.android.ace:id/symbol",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.mapquest.android.ace.ui.text.AceTextView",
+          "bounds": [
+            980,
+            2037,
+            1092,
+            2149
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Postal",
+          "resource-id": "com.mapquest.android.ace:id/label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.mapquest.android.ace.ui.text.AceTextView",
+          "bounds": [
+            990,
+            2149,
+            1082,
+            2187
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.mapquest.android.ace.layers.bar.LayersBarButton",
+      "bounds": [
+        1138,
+        2025,
+        1313,
+        2200
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "n",
+          "resource-id": "com.mapquest.android.ace:id/symbol",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.mapquest.android.ace.ui.text.AceTextView",
+          "bounds": [
+            1169,
+            2037,
+            1281,
+            2149
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Pharmacy",
+          "resource-id": "com.mapquest.android.ace:id/label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.mapquest.android.ace.ui.text.AceTextView",
+          "bounds": [
+            1150,
+            2149,
+            1300,
+            2187
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.mapquest.android.ace.layers.bar.LayersBarButton",
+      "bounds": [
+        1327,
+        2025,
+        1440,
+        2200
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "j",
+          "resource-id": "com.mapquest.android.ace:id/symbol",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.mapquest.android.ace.ui.text.AceTextView",
+          "bounds": [
+            1358,
+            2037,
+            1440,
+            2149
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Hospitals",
+          "resource-id": "com.mapquest.android.ace:id/label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.mapquest.android.ace.ui.text.AceTextView",
+          "bounds": [
+            1345,
+            2149,
+            1440,
+            2187
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Image"
+    }
+  ]
+}

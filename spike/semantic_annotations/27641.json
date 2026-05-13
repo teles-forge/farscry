@@ -1,0 +1,122 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    80,
+    84,
+    1360,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        80,
+        84,
+        1360,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "android:id/titleDivider",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            135,
+            393,
+            1312,
+            397
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "android:id/icon",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            170,
+            172,
+            373,
+            361
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "PitchLab 1.0.22",
+          "resource-id": "android:id/alertTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.android.internal.widget.DialogTitle",
+          "bounds": [
+            373,
+            215,
+            1277,
+            318
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Welcome to PitchLab, a general purpose chromatic tuner and pitch visualization tool.\n\n** Latest Release **\n\n1.0.22: Updated feature set to avoid potential patent issues (sorry people, please don't complain).\n\n** Quick Start **\n\nChange visualization mode by swiping the screen left/right or by pressing and holding the current display to get a pop-up view selection menu.\n\nPress the Menu button to access the options screen or, if your device doesn't have a Menu button, select the 'Options' item from the pop-up view selection menu.\n\nNeedle displays show deviation in cents from true note tuning.\n\nStrobe displays provide extremely accurate feedback when close to the true note tuning: if a strobe moves to the left the analysed note is flat, if a strobe moves to the right the analysed note is sharp.\n\nTake some time to understand each visualization mode by playing (or humming) single notes. Vary the note pitch by tuning up or down by a small amount to see how changes in pitch are reflected in the different visualizations. The Chord visualization requires multiple notes to be played simultaneously so try playing a few chords on your instrument to understand the results.\n\n** Visualization Modes **\n\nInstrument: Combination radial strobe and string/note indicators for easy instrument tuning. Includes a database of common tunings for Guitar, Violin/Fiddle, Mandolin, Ukulele, Banjo, Bouzouki and Pedal Steel, plus a built-in editor for up to 100 user-defined instrument tunings.\n\nDial & Strobe: Combination dial tuner and innovative linear strobe for rapid and extremely accurate hands-free instrument tuning (this linear strobe is a genuine implementation of the strobe-tuner concept, not a decorative imitation).\n\nSpectrogram: Scrolling display of live sound analysis, showing the perceived pitch of a wide range of sound types (including human voices and singing).\n\nChords: Grid-based estimation display of common chord types (maj/min, maj7/min7, dom7/dim7), ideal for quickly determining the 'strum along' chords for a tune where the chords are reasonably clear.\n\nBigStrobe: A large, single strobe display, optimized for small screen devices.\n\n** Instrument/Temperament Editor **\n\nPress 'New' to create a new custom definition, edit the name and available parameters as required and then save.\n\nTo manage existing custom definitions, press 'Load', 'Edit' or 'Delete' and then select the definition on which you want that operation to be performed.\n\nCopy a custom definition by using the 'Edit' operation to change its name and then save it under the new name (you can then delete the old copy if required).\n\n** Compatibility **\n\nIf notes on the Chromatic Tiles or Spectrogram display do not appear to line up correctly with the note calibration markers, please use the Compatibility options to switch the Spectrogram texture format to RGBA-5551.\n\nIf PitchLab reports a sample rate error, use the compatibility options to change the version of audio setup code that is in use. One of the available versions might work on your device.\n\nOtherwise, please email pitchlabapp@gmail.com to report the issue.\n\n** Performance **\n\nIf the tuning displays are slow or unresponsive, use the options screen to lower the sample rate to 22khz first; if that doesn't fix the problem, also drop the analysis rate to 'low' or try an even lower sample rate.\n\n** Bugs & Crashes **\n\nEmail pitchlabapp@gmail.com to report issues for quick resolution. If you are feeling adventurous, try to narrow down the cause of the issue by using the debug options to disable different internal functions of the app.\n\n** Credits **\n\nBitmap resources by Rob James of www.gomobli.com\n\nGoogle Breakpad: Copyright (c) 2006, Google Inc. All rights reserved.\n\n** Release Notes **\n\n1.0.22: Updated feature set to avoid potential patent issues (sorry people, please don't complain).\n\n1.0.21: Improved error checking to fix intermittent crash.\n\n1.0.20: Integrated ads to support this free version. Sorry people, I know ads are terrible but it's the only way to keep this free version of PitchLab alive.\n\n1.0.19: Improved audio-error recovery instructions. Updated title page.\n\n1.0.18: Fixed 5-string banjo tunings (big thanks to Mike Rivers).\n\n1.0.17: Updated title page.\n\n1.0.16: Updated audio analysis to cover bass instruments (previous version now available via compatibility options). Reworked Partials display to show waveform data. Updated built-in help text. Added Bass Guitar tunings (thanks Cameron).\n\n1.0.15: Fixed Guitar/OpenD tuning (thanks Aidan). Reworked audio setup (thanks Peter).\n\n1.0.14: Added text hint when there are tuning views that have not been accessed.\n\n1.0.13: Added instrument tuner visualization plus a database of common instrument tunings and an editor for user-defined tunings. Added display option to lock screen orientation (thanks Nate). Improved flat notation support (thanks Charles).\n\n1.0.12: Fix for corrupted 1.0.11 release (sorry people, my fault).\n\n1.0.11: Added crash detection and logging system (writes crashlogs to external storage). Added debug options to enable user diagnosis of compatibility issues. Fixed intermittent crash on HTC One X (huge thanks to Bernard Spiegeleer).\n\n1.0.10: Graphics compatibility fix for Galaxy S2 (huge thanks to Mr Anon).\n\n1.0.9: Reworked audio setup code (old versions now available through compatibility options). Added 'BigStrobe' visualization for small screen devices. Added sharp/flat notation option.\n\n1.0.8: Added 'Partials' visualization.\n\n1.0.7: Reworked audio setup code plus a few minor layout tweaks for different resolutions.\n\n1.0.6: Fixed responsiveness issue on Nexus 7.\n\n1.0.5: General compatibility tweaks and adjusted tablet layouts.\n\n1.0.4: Fixed Bluetooth security violation when un-muting the microphone in some situations.\n\n1.0.3: Improved text clarity on smaller screens. e.g. Samsung M901 (thanks Sam!).\n\n1.0.2: Now defaults to 32bit textures for Chromatic Tiles & Spectrogram displays to fix a graphical issue on HTC One X (thanks Jon!).\n\n1.0.1: Improved display contrast and updated credits text.\n\n1.0.0: Initial release.\n\n",
+          "resource-id": "android:id/message",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "bounds": [
+            184,
+            404,
+            1277,
+            2136
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "OK",
+          "resource-id": "android:id/button1",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.Button",
+          "bounds": [
+            432,
+            2150,
+            1014,
+            2318
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "ok"
+        }
+      ],
+      "componentLabel": "Modal"
+    }
+  ]
+}

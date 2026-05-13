@@ -1,0 +1,383 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.cmcm.armorfly:id/tool_bar",
+      "children": [
+        {
+          "text": "",
+          "resource-id": "com.cmcm.armorfly:id/toolbar_backward",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.ijinshan.browser.view.IconFontTextView",
+          "bounds": [
+            0,
+            2217,
+            288,
+            2392
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "",
+          "resource-id": "com.cmcm.armorfly:id/toolbar_forward",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.ijinshan.browser.view.IconFontTextView",
+          "bounds": [
+            288,
+            2217,
+            576,
+            2392
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "",
+          "resource-id": "com.cmcm.armorfly:id/toolbar_home",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.ijinshan.browser.view.IconFontTextView",
+          "bounds": [
+            1152,
+            2217,
+            1440,
+            2392
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.cmcm.armorfly:id/toolbar_menu",
+          "clickable": true,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            615,
+            2217,
+            825,
+            2392
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "",
+          "resource-id": "com.cmcm.armorfly:id/toolbar_multi_window_bg",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.ijinshan.browser.view.IconFontTextView",
+          "bounds": [
+            864,
+            2217,
+            1152,
+            2392
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "1",
+          "resource-id": "com.cmcm.armorfly:id/right_active",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.ijinshan.browser.ui.widget.ToolBarViewItem",
+          "bounds": [
+            989,
+            2267,
+            1027,
+            2341
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.ijinshan.browser.ui.widget.ToolBar",
+      "bounds": [
+        0,
+        2217,
+        1440,
+        2392
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "https://www.google.com/",
+      "resource-id": "com.cmcm.armorfly:id/description",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.ijinshan.browser.view.TypefacedTextView",
+      "bounds": [
+        210,
+        2068,
+        1356,
+        2191
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "com.cmcm.armorfly:id/webviewholder",
+      "children": [
+        {
+          "ancestors": [
+            "com.ijinshan.browser.core.apis.AbstractKWebView",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.ijinshan.browser.core.glue.KWebView",
+          "bounds": [
+            0,
+            259,
+            1440,
+            2217
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ViewSwitcher",
+                "android.widget.ViewAnimator",
+                "android.widget.FrameLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "com.ijinshan.browser.core.kandroidwebview.KAndroidWebViewFlipper",
+              "bounds": [
+                0,
+                259,
+                1440,
+                2217
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "com.ijinshan.browser.ad.NestedScrollWebView",
+                    "android.webkit.WebView",
+                    "android.widget.AbsoluteLayout",
+                    "android.view.ViewGroup",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    0,
+                    259,
+                    1440,
+                    2217
+                  ],
+                  "clickable": true,
+                  "class": "com.ijinshan.browser.core.kandroidwebview.ElementWebView",
+                  "componentLabel": "Web View"
+                }
+              ],
+              "componentLabel": "Web View"
+            }
+          ],
+          "componentLabel": "Web View"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.ijinshan.browser.ui.KAndroidWebViewHolder",
+      "bounds": [
+        0,
+        259,
+        1440,
+        2217
+      ],
+      "componentLabel": "Web View"
+    },
+    {
+      "iconClass": "location",
+      "resource-id": "com.cmcm.armorfly:id/icon",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.ijinshan.browser.view.IconFontTextView",
+      "bounds": [
+        84,
+        1949,
+        168,
+        2033
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Fetch Location Info.",
+      "resource-id": "com.cmcm.armorfly:id/title",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.ijinshan.browser.view.TypefacedTextView",
+      "bounds": [
+        210,
+        1956,
+        704,
+        2032
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "com.cmcm.armorfly:id/btn_block",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        749,
+        2209,
+        1047,
+        2297
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "block"
+    },
+    {
+      "resource-id": "com.cmcm.armorfly:id/btn_allow",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        1082,
+        2209,
+        1380,
+        2297
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "accept"
+    },
+    {
+      "text": "Google",
+      "resource-id": "com.cmcm.armorfly:id/address_bar_hint",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        180,
+        98,
+        1412,
+        245
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "google"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.cmcm.armorfly:id/web_icon",
+      "clickable": true,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        60,
+        127,
+        148,
+        215
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "iconClass": "lock",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.cmcm.armorfly:id/badge",
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        102,
+        148,
+        179,
+        225
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "",
+      "resource-id": "com.cmcm.armorfly:id/stop_refresh_btn",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.ijinshan.browser.view.IconFontTextView",
+      "bounds": [
+        1251,
+        98,
+        1398,
+        245
+      ],
+      "componentLabel": "Text Button"
+    }
+  ]
+}

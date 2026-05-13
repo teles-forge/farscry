@@ -1,0 +1,1215 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.bbm:id/conversation_root",
+      "children": [
+        {
+          "resource-id": "com.bbm:id/main_toolbar",
+          "children": [
+            {
+              "iconClass": "arrow_backward",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                0,
+                84,
+                196,
+                280
+              ],
+              "clickable": true,
+              "class": "android.widget.ImageButton",
+              "componentLabel": "Icon"
+            },
+            {
+              "iconClass": "follow",
+              "resource-id": "com.bbm:id/group_chat_invite",
+              "ancestors": [
+                "android.support.v7.widget.bm",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.view.menu.ActionMenuItemView",
+              "bounds": [
+                1132,
+                98,
+                1300,
+                266
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "iconClass": "more",
+              "ancestors": [
+                "android.support.v7.widget.av",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                1300,
+                98,
+                1440,
+                266
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.o",
+              "componentLabel": "Icon"
+            },
+            {
+              "iconClass": "home",
+              "ancestors": [
+                "com.bbm.ui.GifImageView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.bbm:id/avatar_image",
+              "clickable": false,
+              "class": "com.bbm.ui.CircleImageView",
+              "bounds": [
+                206,
+                95,
+                379,
+                268
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "text": "44",
+              "resource-id": "com.bbm:id/actionbar_group_name",
+              "ancestors": [
+                "com.bbm.ui.fr",
+                "com.bbm.ui.ht",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.bbm.ui.InlineImageTextView",
+              "bounds": [
+                417,
+                135,
+                495,
+                228
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "(1)",
+              "resource-id": "com.bbm:id/actionbar_group_count",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.bm",
+              "bounds": [
+                495,
+                135,
+                582,
+                228
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.support.v7.widget.Toolbar",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.bbm.bali.ui.main.groups.GroupsMainToolbar",
+          "bounds": [
+            0,
+            84,
+            1440,
+            280
+          ],
+          "componentLabel": "Toolbar"
+        },
+        {
+          "resource-id": "com.bbm:id/emoticon_input_panel",
+          "children": [
+            {
+              "text": "",
+              "resource-id": "com.bbm:id/message_input_text",
+              "ancestors": [
+                "com.bbm.ui.InlineImageEditText",
+                "android.support.v7.widget.as",
+                "android.widget.EditText",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "com.bbm.ui.SendEditText",
+              "bounds": [
+                0,
+                1083,
+                1138,
+                1195
+              ],
+              "componentLabel": "Input"
+            },
+            {
+              "iconClass": "emoji",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.bbm:id/emoticon_button",
+              "clickable": true,
+              "class": "android.support.v7.widget.av",
+              "bounds": [
+                1138,
+                1064,
+                1261,
+                1215
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "iconClass": "send",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.bbm:id/send_button",
+              "clickable": false,
+              "class": "android.support.v7.widget.av",
+              "bounds": [
+                1261,
+                1064,
+                1440,
+                1215
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "iconClass": "emoji",
+              "ancestors": [
+                "android.widget.ImageButton",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.bbm:id/emoticon_button",
+              "clickable": true,
+              "class": "android.support.v7.widget.at",
+              "bounds": [
+                0,
+                1215,
+                179,
+                1359
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageButton",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.bbm:id/shop_button",
+              "clickable": true,
+              "class": "android.support.v7.widget.at",
+              "bounds": [
+                179,
+                1236,
+                358,
+                1331
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.LinearLayout",
+              "bounds": [
+                366,
+                1215,
+                517,
+                1359
+              ],
+              "clickable": true,
+              "children": [
+                {
+                  "iconClass": "emoji",
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.bbm:id/picker_tab_icon",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.av",
+                  "bounds": [
+                    366,
+                    1215,
+                    517,
+                    1359
+                  ],
+                  "componentLabel": "Icon"
+                }
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.FrameLayout",
+              "bounds": [
+                517,
+                1215,
+                668,
+                1359
+              ],
+              "clickable": true,
+              "children": [
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.bbm:id/picker_tab_icon",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.av",
+                  "bounds": [
+                    517,
+                    1215,
+                    668,
+                    1359
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "iconClass": "cart",
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    598,
+                    1289,
+                    668,
+                    1359
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.av",
+                  "componentLabel": "Icon"
+                }
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.FrameLayout",
+              "bounds": [
+                668,
+                1215,
+                819,
+                1359
+              ],
+              "clickable": true,
+              "children": [
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.bbm:id/picker_tab_icon",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.av",
+                  "bounds": [
+                    668,
+                    1215,
+                    819,
+                    1359
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "iconClass": "cart",
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    749,
+                    1289,
+                    819,
+                    1359
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.av",
+                  "componentLabel": "Icon"
+                }
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.FrameLayout",
+              "bounds": [
+                819,
+                1215,
+                970,
+                1359
+              ],
+              "clickable": true,
+              "children": [
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.bbm:id/picker_tab_icon",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.av",
+                  "bounds": [
+                    819,
+                    1215,
+                    970,
+                    1359
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "iconClass": "cart",
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    900,
+                    1289,
+                    970,
+                    1359
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.av",
+                  "componentLabel": "Icon"
+                }
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.LinearLayout",
+              "bounds": [
+                970,
+                1215,
+                1121,
+                1359
+              ],
+              "clickable": true,
+              "children": [
+                {
+                  "iconClass": "settings",
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.bbm:id/picker_tab_icon",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.av",
+                  "bounds": [
+                    970,
+                    1215,
+                    1121,
+                    1359
+                  ],
+                  "componentLabel": "Icon"
+                }
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "text": "To preview, touch and hold a sticker.",
+              "resource-id": "com.bbm:id/preview_hint_text",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.bm",
+              "bounds": [
+                216,
+                1833,
+                1224,
+                1918
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "iconClass": "close",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.bbm:id/preview_hint_close",
+              "clickable": true,
+              "class": "android.support.v7.widget.av",
+              "bounds": [
+                1245,
+                1412,
+                1387,
+                1554
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.FrameLayout",
+              "bounds": [
+                0,
+                1380,
+                360,
+                1583
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "iconClass": "emoji",
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    78,
+                    1380,
+                    281,
+                    1583
+                  ],
+                  "clickable": false,
+                  "class": "android.widget.ImageView",
+                  "componentLabel": "Icon"
+                }
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.FrameLayout",
+              "bounds": [
+                360,
+                1380,
+                720,
+                1583
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "iconClass": "emoji",
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    438,
+                    1380,
+                    641,
+                    1583
+                  ],
+                  "clickable": false,
+                  "class": "android.widget.ImageView",
+                  "componentLabel": "Icon"
+                }
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.FrameLayout",
+              "bounds": [
+                720,
+                1380,
+                1080,
+                1583
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    798,
+                    1380,
+                    1001,
+                    1583
+                  ],
+                  "clickable": false,
+                  "class": "android.widget.ImageView",
+                  "componentLabel": "Image"
+                }
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.FrameLayout",
+              "bounds": [
+                1080,
+                1380,
+                1440,
+                1583
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "iconClass": "close",
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    1158,
+                    1380,
+                    1361,
+                    1583
+                  ],
+                  "clickable": false,
+                  "class": "android.widget.ImageView",
+                  "componentLabel": "Icon"
+                }
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.FrameLayout",
+              "bounds": [
+                0,
+                1625,
+                360,
+                1828
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "iconClass": "emoji",
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    78,
+                    1625,
+                    281,
+                    1828
+                  ],
+                  "clickable": false,
+                  "class": "android.widget.ImageView",
+                  "componentLabel": "Icon"
+                }
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.FrameLayout",
+              "bounds": [
+                360,
+                1625,
+                720,
+                1828
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "iconClass": "launch",
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    438,
+                    1625,
+                    641,
+                    1828
+                  ],
+                  "clickable": false,
+                  "class": "android.widget.ImageView",
+                  "componentLabel": "Icon"
+                }
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.FrameLayout",
+              "bounds": [
+                720,
+                1625,
+                1080,
+                1828
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    798,
+                    1625,
+                    1001,
+                    1828
+                  ],
+                  "clickable": false,
+                  "class": "android.widget.ImageView",
+                  "componentLabel": "Image"
+                }
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.FrameLayout",
+              "bounds": [
+                1080,
+                1625,
+                1440,
+                1828
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "iconClass": "emoji",
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    1158,
+                    1625,
+                    1361,
+                    1828
+                  ],
+                  "clickable": false,
+                  "class": "android.widget.ImageView",
+                  "componentLabel": "Icon"
+                }
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.FrameLayout",
+              "bounds": [
+                0,
+                1870,
+                360,
+                2073
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    78,
+                    1870,
+                    281,
+                    2073
+                  ],
+                  "clickable": false,
+                  "class": "android.widget.ImageView",
+                  "componentLabel": "Image"
+                }
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.FrameLayout",
+              "bounds": [
+                360,
+                1870,
+                720,
+                2073
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    438,
+                    1870,
+                    641,
+                    2073
+                  ],
+                  "clickable": false,
+                  "class": "android.widget.ImageView",
+                  "componentLabel": "Image"
+                }
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.FrameLayout",
+              "bounds": [
+                720,
+                1870,
+                1080,
+                2073
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    798,
+                    1870,
+                    1001,
+                    2073
+                  ],
+                  "clickable": false,
+                  "class": "android.widget.ImageView",
+                  "componentLabel": "Image"
+                }
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.FrameLayout",
+              "bounds": [
+                1080,
+                1870,
+                1440,
+                2073
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    1158,
+                    1870,
+                    1361,
+                    2073
+                  ],
+                  "clickable": false,
+                  "class": "android.widget.ImageView",
+                  "componentLabel": "Image"
+                }
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.FrameLayout",
+              "bounds": [
+                0,
+                2115,
+                360,
+                2318
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "iconClass": "emoji",
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    78,
+                    2115,
+                    281,
+                    2318
+                  ],
+                  "clickable": false,
+                  "class": "android.widget.ImageView",
+                  "componentLabel": "Icon"
+                }
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.FrameLayout",
+              "bounds": [
+                360,
+                2115,
+                720,
+                2318
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "iconClass": "emoji",
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    438,
+                    2115,
+                    641,
+                    2318
+                  ],
+                  "clickable": false,
+                  "class": "android.widget.ImageView",
+                  "componentLabel": "Icon"
+                }
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.FrameLayout",
+              "bounds": [
+                720,
+                2115,
+                1080,
+                2318
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    798,
+                    2115,
+                    1001,
+                    2318
+                  ],
+                  "clickable": false,
+                  "class": "android.widget.ImageView",
+                  "componentLabel": "Image"
+                }
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.FrameLayout",
+              "bounds": [
+                1080,
+                2115,
+                1440,
+                2318
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    1158,
+                    2115,
+                    1361,
+                    2318
+                  ],
+                  "clickable": false,
+                  "class": "android.widget.ImageView",
+                  "componentLabel": "Image"
+                }
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.FrameLayout",
+              "bounds": [
+                0,
+                2360,
+                360,
+                2392
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    78,
+                    2360,
+                    281,
+                    2392
+                  ],
+                  "clickable": false,
+                  "class": "android.widget.ImageView",
+                  "componentLabel": "Image"
+                }
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.FrameLayout",
+              "bounds": [
+                360,
+                2360,
+                720,
+                2392
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    438,
+                    2360,
+                    641,
+                    2392
+                  ],
+                  "clickable": false,
+                  "class": "android.widget.ImageView",
+                  "componentLabel": "Image"
+                }
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.FrameLayout",
+              "bounds": [
+                720,
+                2360,
+                1080,
+                2392
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    798,
+                    2360,
+                    1001,
+                    2392
+                  ],
+                  "clickable": false,
+                  "class": "android.widget.ImageView",
+                  "componentLabel": "Image"
+                }
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.FrameLayout",
+              "bounds": [
+                1080,
+                2360,
+                1440,
+                2392
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    1158,
+                    2360,
+                    1361,
+                    2392
+                  ],
+                  "clickable": false,
+                  "class": "android.widget.ImageView",
+                  "componentLabel": "Image"
+                }
+              ],
+              "componentLabel": "List Item"
+            }
+          ],
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.bbm.ui.EmoticonInputPanel",
+          "bounds": [
+            0,
+            1060,
+            1440,
+            2392
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.bbm.ui.EmoticonPanelViewLayout",
+      "bounds": [
+        0,
+        84,
+        1440,
+        2392
+      ],
+      "componentLabel": "Image"
+    }
+  ]
+}

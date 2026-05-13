@@ -1,0 +1,146 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    36,
+    84,
+    1404,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        92,
+        140,
+        1348,
+        2336
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "resource-id": "android:id/buttonPanel",
+          "children": [
+            {
+              "text": "Cancel",
+              "resource-id": "android:id/button2",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.widget.Button",
+              "bounds": [
+                811,
+                2154,
+                1082,
+                2322
+              ],
+              "componentLabel": "Text Button",
+              "textButtonClass": "back"
+            },
+            {
+              "text": "OK",
+              "resource-id": "android:id/button1",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.widget.Button",
+              "bounds": [
+                1082,
+                2154,
+                1306,
+                2322
+              ],
+              "componentLabel": "Text Button",
+              "textButtonClass": "ok"
+            }
+          ],
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.android.internal.widget.ButtonBarLayout",
+          "bounds": [
+            92,
+            2140,
+            1348,
+            2336
+          ],
+          "componentLabel": "Button Bar"
+        },
+        {
+          "iconClass": "info",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "android:id/icon",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            176,
+            203,
+            288,
+            315
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Update is available",
+          "resource-id": "android:id/alertTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.android.internal.widget.DialogTitle",
+          "bounds": [
+            316,
+            212,
+            1264,
+            305
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "- v1.4.26 12/21/2016\r\r\n  - ECU: \r\r\n    - Toyota ABS (CAN)\r\r\n    - Peugout 807 EDC15C2 \r\r\n    - KIA AT Aisin\r\r\n\r\r\n- v1.4.25 11/21/2016\r\r\n  - ECU: \r\r\n    - Renault Megane 2 (CAN)\r\r\n    - Renault Duster K9K Diesel (CAN)\r\r\n    - Fiat PALIO/PUNTO (BoschME73H4_M)\r\r\n    - Toyota SRS - Система безопасности: Чтение кодов ошибок.\r\r\n  - Декоратор image поддерживает атрибуты image-width/image-height - абсолютные размеры в экранных пикселях\r\r\n  - chart (графики) поддерживают атрибут cover-description (рисовать ли поверх текста описания сенсора)\r\r\n  - Экран с общим списком сенсоров можно настраивать на фильтрацию сенсоров по группам.\r\r\n    Можно установить фильтр сразу из layout: <section name=\"Renault Sensors\" class=\"SensorList\" ns=\"Renault\">\r\r\n  - В gauge можно использовать фильтр для параметров всего экрана.\r\r\n    Например <gauge id=\"Sensor List:*\" border-opacity=\"1\"/> Установит рамку на всех датчиках экрана \"Sensor List\"\r\r\n  - ECUXML:\r\r\n    - <base-data> with correct offset instead of <base-raw>\r\r\n    - <text offset=\"20\" length=\"10\">: text sensors\r\r\n    - get_wordle/get_dwordle, to_signed_byte/to_signed_word/to_signed_dword in <eval>\r\r\n    - data-offset атрибут описывает нестандартный размер смещения данных в ответе (по умолчанию - 2 байта)\r\r\n\r\r\n- v1.4.24 10/10/2016\r\r\n  - Исправления в win32 версии\r\r\n  - Атрибут \"Расцвечивать описание\" (colored-descr в layout), если включен, то текст подписи датчика расцвечивается в цвет датчика\r\r\n  - Декоратор padding (отступы). Контролирует границы у виджетов. (Использовать как decorator-p=\"padding\" p-padding=\"5 15 5 15\"). Цифры - логические пиксели.\r\r\n  - ECU: Mercedes HFM_PMS. Mercedes C,E,S with M111\\M104 93-98 year. Необходим модифицированный ELM адаптер от hfmscan.com\r\r\n\r\r\n- v1.4.23 10/04/2016\r\r\n  - Экраны со сгенерированной статистикой улучшены, более удобный просмотр на мобильных устройствах,\r\r\n    добавлены визуальное отслеживание величин.\r\r\n  - ECU: UAZ Bosch 17.9.71\r\r\n  - Исправления для Андроид 5.х\r\r\n\r\r\n- v1.4.22 09/16/2016\r\r\n  - Исправлено падение при запуске в случае если OBD адаптер не спарен.\r\r\n  - Добавлен экран Эффективность. Параметр эффективности выражается в процентах\r\r\n    и показывает насколько равномерная и спокойная была ваша поездка.\r\r\n  - Улучшения связанные с расчетом эффективности в статистике.\r\r\n  - ECU: KIA RIO 2012 (UB) AT\r\r\n\r\r\n- v1.4.21 08/22/2016\r\r\n  - ECU: ABS Bosch 8(8.1) VAZ, UAZ\r\r\n  - Исправлена ошибка в обнаружении потери связи с KWP ЭБУ.\r\r\n\r\r\n- v1.4.20 08/19/2016\r\r\n  - Android:\r\r\n    - Улучшения на старте с испорченными данными\r\r\n    - Интервал переподключения WiFi при сбое соединения увеличен\r\r\n    - Исправлен вылет на старте некоторых устройств.\r\r\n\r\r\n- v1.4.19 07/20/2016\r\r\n  - ECU: Bosch EDC15C2 (Citroen Jumpy 2.0HDI RHZ)\r\r\n  - ECU: Toyota D-4D KWP (Hilux)\r\n",
+          "resource-id": "android:id/message",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            92,
+            378,
+            1348,
+            2140
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Modal"
+    }
+  ]
+}

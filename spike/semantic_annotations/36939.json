@@ -1,0 +1,107 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.giago.imgsearch:id/toolbar",
+      "children": [
+        {
+          "resource-id": "com.giago.imgsearch:id/indicator",
+          "ancestors": [
+            "android.widget.HorizontalScrollView",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.giago.imgsearch.result.PageIndicator",
+          "bounds": [
+            252,
+            84,
+            1440,
+            280
+          ],
+          "componentLabel": "Pager Indicator"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.giago.imgsearch:id/search",
+      "clickable": true,
+      "class": "tengio.fab.FabButton",
+      "bounds": [
+        1237,
+        2189,
+        1412,
+        2364
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "No results",
+      "resource-id": "com.giago.imgsearch:id/empty",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.giago.imgsearch.common.views.RoboTextView",
+      "bounds": [
+        0,
+        280,
+        1440,
+        2217
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

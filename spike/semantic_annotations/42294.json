@@ -1,0 +1,515 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "android:id/action_bar_container",
+      "children": [
+        {
+          "text": "",
+          "resource-id": "com.microsoft.amp.apps.bingfinance:id/action_bar_search_box",
+          "ancestors": [
+            "android.widget.AutoCompleteTextView",
+            "android.widget.EditText",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.microsoft.amp.platform.uxcomponents.autosuggest.views.AutoSuggestView",
+          "bounds": [
+            187,
+            109,
+            1405,
+            227
+          ],
+          "componentLabel": "Input"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "android:id/up",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            0,
+            140,
+            56,
+            196
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "android:id/home",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            43,
+            112,
+            155,
+            224
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.android.internal.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        252
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "Retirement Planner",
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/page_title",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.CommonFontTextView",
+      "bounds": [
+        0,
+        252,
+        1440,
+        326
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/indicator",
+      "ancestors": [
+        "android.widget.HorizontalScrollView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.viewpagerindicator.TabPageIndicator",
+      "bounds": [
+        0,
+        326,
+        1440,
+        451
+      ],
+      "componentLabel": "Pager Indicator"
+    },
+    {
+      "text": "Calculate",
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/retirement_calculate",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        35,
+        1692,
+        1405,
+        1843
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "calculate"
+    },
+    {
+      "text": "To retire at the age of 65 with annual income of $ 100000, each year you need to save 11% which equates to",
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/retirement_planner_summary_statement",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.CommonFontTextView",
+      "bounds": [
+        35,
+        1948,
+        1405,
+        2102
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "$ 13,187",
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/retirement_planner_yearly_saving",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.CommonFontTextView",
+      "bounds": [
+        35,
+        2085,
+        1405,
+        2346
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Current Annual Income",
+      "ancestors": [
+        "com.microsoft.amp.platform.uxcomponents.text.CommonFontTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.AutoScaleTextView",
+      "bounds": [
+        35,
+        521,
+        685,
+        612
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "120,000",
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/retirement_planner_current_annual_income",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.CommonFontEditText",
+      "bounds": [
+        35,
+        612,
+        685,
+        752
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Current Saving",
+      "ancestors": [
+        "com.microsoft.amp.platform.uxcomponents.text.CommonFontTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.AutoScaleTextView",
+      "bounds": [
+        755,
+        521,
+        1405,
+        612
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "10,000",
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/retirement_planner_current_saving",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.CommonFontEditText",
+      "bounds": [
+        755,
+        612,
+        1405,
+        752
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Current Age",
+      "ancestors": [
+        "com.microsoft.amp.platform.uxcomponents.text.CommonFontTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.AutoScaleTextView",
+      "bounds": [
+        35,
+        805,
+        685,
+        896
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "30",
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/retirement_planner_current_age",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.CommonFontEditText",
+      "bounds": [
+        35,
+        896,
+        685,
+        1036
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Retirement Age",
+      "ancestors": [
+        "com.microsoft.amp.platform.uxcomponents.text.CommonFontTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.AutoScaleTextView",
+      "bounds": [
+        755,
+        805,
+        1405,
+        896
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "65",
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/retirement_planner_retirement_age",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.CommonFontEditText",
+      "bounds": [
+        755,
+        896,
+        1405,
+        1036
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Life Expectancy",
+      "ancestors": [
+        "com.microsoft.amp.platform.uxcomponents.text.CommonFontTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.AutoScaleTextView",
+      "bounds": [
+        35,
+        1089,
+        685,
+        1180
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "85",
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/retirement_planner_life_expectancy",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.CommonFontEditText",
+      "bounds": [
+        35,
+        1180,
+        685,
+        1320
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Retirement Income",
+      "ancestors": [
+        "com.microsoft.amp.platform.uxcomponents.text.CommonFontTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.AutoScaleTextView",
+      "bounds": [
+        755,
+        1089,
+        1405,
+        1180
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "100,000",
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/retirement_planner_retirement_income",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.CommonFontEditText",
+      "bounds": [
+        755,
+        1180,
+        1405,
+        1320
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Pre-Retirement Return",
+      "ancestors": [
+        "com.microsoft.amp.platform.uxcomponents.text.CommonFontTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.AutoScaleTextView",
+      "bounds": [
+        35,
+        1373,
+        685,
+        1464
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "5",
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/retirement_planner_pre_retirement_return",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.CommonFontEditText",
+      "bounds": [
+        35,
+        1464,
+        685,
+        1604
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Post-Retirement Return",
+      "ancestors": [
+        "com.microsoft.amp.platform.uxcomponents.text.CommonFontTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.AutoScaleTextView",
+      "bounds": [
+        755,
+        1373,
+        1405,
+        1464
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "5",
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/retirement_planner_post_retirement_return",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.CommonFontEditText",
+      "bounds": [
+        755,
+        1464,
+        1405,
+        1604
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Total saved for retirement",
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/retirement_planner_saving_summary_statement",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.CommonFontTextView",
+      "bounds": [
+        35,
+        2356,
+        755,
+        2392
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "$ 1.25M",
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/retirement_planner_total_savings",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.CommonFontTextView",
+      "bounds": [
+        790,
+        2319,
+        1405,
+        2392
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

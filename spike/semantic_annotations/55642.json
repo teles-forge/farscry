@@ -1,0 +1,1317 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.qihoo.mm.weather:id/action_bar_container",
+      "children": [
+        {
+          "text": "Sun & Moon",
+          "resource-id": "com.qihoo.mm.weather:id/home_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+          "bounds": [
+            252,
+            0,
+            630,
+            168
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.internal.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        0,
+        1440,
+        168
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.qihoo.mm.weather:id/day_container_layout",
+      "children": [
+        {
+          "text": "06:09",
+          "resource-id": "com.qihoo.mm.weather:id/day_sunrise_time",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+          "bounds": [
+            230,
+            179,
+            336,
+            236
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Tomorrow Sunrise: 06:07",
+          "resource-id": "com.qihoo.mm.weather:id/day_tomorrow_sunrise_time",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+          "bounds": [
+            486,
+            179,
+            953,
+            236
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "20:05",
+          "resource-id": "com.qihoo.mm.weather:id/day_sunset_time",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+          "bounds": [
+            1104,
+            179,
+            1210,
+            236
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        28,
+        168,
+        1412,
+        320
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "resource-id": "com.qihoo.mm.weather:id/day_weather_list_content_layout",
+      "children": [
+        {
+          "text": "Daily Forecast",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+          "bounds": [
+            28,
+            348,
+            1412,
+            516
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.RelativeLayout",
+          "bounds": [
+            28,
+            516,
+            1412,
+            684
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "TIME",
+              "resource-id": "com.qihoo.mm.weather:id/title_time",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                84,
+                516,
+                224,
+                684
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                522,
+                572,
+                732,
+                628
+              ],
+              "clickable": false,
+              "class": "android.widget.ImageView",
+              "componentLabel": "Image"
+            },
+            {
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.qihoo.mm.weather:id/moonrise_time_imageView",
+              "clickable": false,
+              "class": "android.widget.ImageView",
+              "bounds": [
+                767,
+                572,
+                977,
+                628
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "PHASE",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                977,
+                516,
+                1356,
+                684
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.RelativeLayout",
+          "bounds": [
+            28,
+            684,
+            1412,
+            852
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "SAT",
+              "resource-id": "com.qihoo.mm.weather:id/week",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                84,
+                684,
+                224,
+                852
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "05/06",
+              "resource-id": "com.qihoo.mm.weather:id/date",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                280,
+                735,
+                412,
+                801
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "06:09",
+              "resource-id": "com.qihoo.mm.weather:id/sunrise_time_textView",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                522,
+                735,
+                732,
+                801
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "20:05",
+              "resource-id": "com.qihoo.mm.weather:id/sunset_time_textView",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                767,
+                735,
+                977,
+                801
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "iconClass": "swap",
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.qihoo.mm.weather:id/phase_imageView",
+              "clickable": false,
+              "class": "android.widget.ImageView",
+              "bounds": [
+                977,
+                684,
+                1356,
+                852
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.RelativeLayout",
+          "bounds": [
+            28,
+            852,
+            1412,
+            1020
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "SUN",
+              "resource-id": "com.qihoo.mm.weather:id/week",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                84,
+                852,
+                224,
+                1020
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "05/07",
+              "resource-id": "com.qihoo.mm.weather:id/date",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                280,
+                903,
+                412,
+                969
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "06:07",
+              "resource-id": "com.qihoo.mm.weather:id/sunrise_time_textView",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                522,
+                903,
+                732,
+                969
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "20:05",
+              "resource-id": "com.qihoo.mm.weather:id/sunset_time_textView",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                767,
+                903,
+                977,
+                969
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "iconClass": "swap",
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.qihoo.mm.weather:id/phase_imageView",
+              "clickable": false,
+              "class": "android.widget.ImageView",
+              "bounds": [
+                977,
+                852,
+                1356,
+                1020
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.RelativeLayout",
+          "bounds": [
+            28,
+            1020,
+            1412,
+            1188
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "MON",
+              "resource-id": "com.qihoo.mm.weather:id/week",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                84,
+                1020,
+                224,
+                1188
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "05/08",
+              "resource-id": "com.qihoo.mm.weather:id/date",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                280,
+                1071,
+                412,
+                1137
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "06:06",
+              "resource-id": "com.qihoo.mm.weather:id/sunrise_time_textView",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                522,
+                1071,
+                732,
+                1137
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "20:06",
+              "resource-id": "com.qihoo.mm.weather:id/sunset_time_textView",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                767,
+                1071,
+                977,
+                1137
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "iconClass": "swap",
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.qihoo.mm.weather:id/phase_imageView",
+              "clickable": false,
+              "class": "android.widget.ImageView",
+              "bounds": [
+                977,
+                1020,
+                1356,
+                1188
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.RelativeLayout",
+          "bounds": [
+            28,
+            1188,
+            1412,
+            1356
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "TUE",
+              "resource-id": "com.qihoo.mm.weather:id/week",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                84,
+                1188,
+                224,
+                1356
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "05/09",
+              "resource-id": "com.qihoo.mm.weather:id/date",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                280,
+                1239,
+                412,
+                1305
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "06:05",
+              "resource-id": "com.qihoo.mm.weather:id/sunrise_time_textView",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                522,
+                1239,
+                732,
+                1305
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "20:07",
+              "resource-id": "com.qihoo.mm.weather:id/sunset_time_textView",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                767,
+                1239,
+                977,
+                1305
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "iconClass": "swap",
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.qihoo.mm.weather:id/phase_imageView",
+              "clickable": false,
+              "class": "android.widget.ImageView",
+              "bounds": [
+                977,
+                1188,
+                1356,
+                1356
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.RelativeLayout",
+          "bounds": [
+            28,
+            1356,
+            1412,
+            1524
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "WED",
+              "resource-id": "com.qihoo.mm.weather:id/week",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                84,
+                1356,
+                224,
+                1524
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "05/10",
+              "resource-id": "com.qihoo.mm.weather:id/date",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                280,
+                1407,
+                412,
+                1473
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "06:04",
+              "resource-id": "com.qihoo.mm.weather:id/sunrise_time_textView",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                522,
+                1407,
+                732,
+                1473
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "20:08",
+              "resource-id": "com.qihoo.mm.weather:id/sunset_time_textView",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                767,
+                1407,
+                977,
+                1473
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "iconClass": "swap",
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.qihoo.mm.weather:id/phase_imageView",
+              "clickable": false,
+              "class": "android.widget.ImageView",
+              "bounds": [
+                977,
+                1356,
+                1356,
+                1524
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.RelativeLayout",
+          "bounds": [
+            28,
+            1524,
+            1412,
+            1692
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "THU",
+              "resource-id": "com.qihoo.mm.weather:id/week",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                84,
+                1524,
+                224,
+                1692
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "05/11",
+              "resource-id": "com.qihoo.mm.weather:id/date",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                280,
+                1575,
+                412,
+                1641
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "06:04",
+              "resource-id": "com.qihoo.mm.weather:id/sunrise_time_textView",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                522,
+                1575,
+                732,
+                1641
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "20:09",
+              "resource-id": "com.qihoo.mm.weather:id/sunset_time_textView",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                767,
+                1575,
+                977,
+                1641
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.qihoo.mm.weather:id/phase_imageView",
+              "clickable": false,
+              "class": "android.widget.ImageView",
+              "bounds": [
+                977,
+                1524,
+                1356,
+                1692
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.RelativeLayout",
+          "bounds": [
+            28,
+            1692,
+            1412,
+            1860
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "FRI",
+              "resource-id": "com.qihoo.mm.weather:id/week",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                84,
+                1692,
+                224,
+                1860
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "05/12",
+              "resource-id": "com.qihoo.mm.weather:id/date",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                280,
+                1743,
+                412,
+                1809
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "06:03",
+              "resource-id": "com.qihoo.mm.weather:id/sunrise_time_textView",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                522,
+                1743,
+                732,
+                1809
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "20:10",
+              "resource-id": "com.qihoo.mm.weather:id/sunset_time_textView",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                767,
+                1743,
+                977,
+                1809
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.qihoo.mm.weather:id/phase_imageView",
+              "clickable": false,
+              "class": "android.widget.ImageView",
+              "bounds": [
+                977,
+                1692,
+                1356,
+                1860
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.RelativeLayout",
+          "bounds": [
+            28,
+            1860,
+            1412,
+            2028
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "SAT",
+              "resource-id": "com.qihoo.mm.weather:id/week",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                84,
+                1860,
+                224,
+                2028
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "05/13",
+              "resource-id": "com.qihoo.mm.weather:id/date",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                280,
+                1911,
+                412,
+                1977
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "06:02",
+              "resource-id": "com.qihoo.mm.weather:id/sunrise_time_textView",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                522,
+                1911,
+                732,
+                1977
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "20:11",
+              "resource-id": "com.qihoo.mm.weather:id/sunset_time_textView",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                767,
+                1911,
+                977,
+                1977
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.qihoo.mm.weather:id/phase_imageView",
+              "clickable": false,
+              "class": "android.widget.ImageView",
+              "bounds": [
+                977,
+                1860,
+                1356,
+                2028
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.RelativeLayout",
+          "bounds": [
+            28,
+            2028,
+            1412,
+            2196
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "SUN",
+              "resource-id": "com.qihoo.mm.weather:id/week",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                84,
+                2028,
+                224,
+                2196
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "05/14",
+              "resource-id": "com.qihoo.mm.weather:id/date",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                280,
+                2079,
+                412,
+                2145
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "06:01",
+              "resource-id": "com.qihoo.mm.weather:id/sunrise_time_textView",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                522,
+                2079,
+                732,
+                2145
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "20:12",
+              "resource-id": "com.qihoo.mm.weather:id/sunset_time_textView",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                767,
+                2079,
+                977,
+                2145
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.qihoo.mm.weather:id/phase_imageView",
+              "clickable": false,
+              "class": "android.widget.ImageView",
+              "bounds": [
+                977,
+                2028,
+                1356,
+                2196
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.RelativeLayout",
+          "bounds": [
+            28,
+            2196,
+            1412,
+            2364
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "MON",
+              "resource-id": "com.qihoo.mm.weather:id/week",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                84,
+                2196,
+                224,
+                2364
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "05/15",
+              "resource-id": "com.qihoo.mm.weather:id/date",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                280,
+                2247,
+                412,
+                2313
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "06:00",
+              "resource-id": "com.qihoo.mm.weather:id/sunrise_time_textView",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                522,
+                2247,
+                732,
+                2313
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "20:13",
+              "resource-id": "com.qihoo.mm.weather:id/sunset_time_textView",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.qihoo.mm.weather.locale.widget.LocaleTextView",
+              "bounds": [
+                767,
+                2247,
+                977,
+                2313
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "iconClass": "swap",
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.qihoo.mm.weather:id/phase_imageView",
+              "clickable": false,
+              "class": "android.widget.ImageView",
+              "bounds": [
+                977,
+                2196,
+                1356,
+                2364
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        28,
+        348,
+        1412,
+        2364
+      ],
+      "componentLabel": "Card"
+    }
+  ]
+}

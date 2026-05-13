@@ -1,0 +1,653 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.yahoo.mobile.client.android.finance:id/toolbar",
+      "children": [
+        {
+          "text": "Interpace Diagnostics Group, Inc.",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            210,
+            135,
+            1062,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "star",
+          "resource-id": "com.yahoo.mobile.client.android.finance:id/quotedetail_menu_star",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1076,
+            98,
+            1244,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "com.yahoo.mobile.client.android.finance:id/action_search",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1244,
+            98,
+            1412,
+            266
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.yahoo.mobile.client.android.finance:id/quotedetail_summary",
+      "children": [
+        {
+          "text": "1.40",
+          "resource-id": "com.yahoo.mobile.client.android.finance:id/quote_price",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.yahoo.mobile.client.android.finance.ui.FlashingRedGreenTextView",
+          "bounds": [
+            63,
+            480,
+            1377,
+            767
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "IDXG",
+          "resource-id": "com.yahoo.mobile.client.android.finance:id/quotedetail_symbol",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            63,
+            322,
+            249,
+            434
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "NasdaqCM",
+          "resource-id": "com.yahoo.mobile.client.android.finance:id/exchange",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            284,
+            374,
+            457,
+            434
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Current Price",
+          "resource-id": "com.yahoo.mobile.client.android.finance:id/current_change_today_close_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            63,
+            726,
+            387,
+            802
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "+0.39 (+38.18%)",
+          "resource-id": "com.yahoo.mobile.client.android.finance:id/current_change_today_close",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.yahoo.mobile.client.android.finance.ui.RedGreenTextView",
+          "bounds": [
+            63,
+            802,
+            476,
+            878
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "2:45 PM EST",
+          "resource-id": "com.yahoo.mobile.client.android.finance:id/timestamp_left",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            63,
+            878,
+            259,
+            932
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.yahoo.mobile.client.android.finance.ui.quotedetail.summary.QuoteDetailSummaryView",
+      "bounds": [
+        0,
+        280,
+        1440,
+        995
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.yahoo.mobile.client.android.finance.ui.chart.InPageChartView",
+      "bounds": [
+        0,
+        995,
+        1440,
+        1880
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "1D",
+          "resource-id": "com.yahoo.mobile.client.android.finance:id/time_1d",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            63,
+            1737,
+            250,
+            1845
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "5D",
+          "resource-id": "com.yahoo.mobile.client.android.finance:id/time_5d",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            250,
+            1737,
+            437,
+            1845
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "3M",
+          "resource-id": "com.yahoo.mobile.client.android.finance:id/time_3m",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            437,
+            1737,
+            625,
+            1845
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "6M",
+          "resource-id": "com.yahoo.mobile.client.android.finance:id/time_6m",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            625,
+            1737,
+            813,
+            1845
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "1Y",
+          "resource-id": "com.yahoo.mobile.client.android.finance:id/time_1y",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            813,
+            1737,
+            1001,
+            1845
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "5Y",
+          "resource-id": "com.yahoo.mobile.client.android.finance:id/time_5y",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1001,
+            1737,
+            1189,
+            1845
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "MAX",
+          "resource-id": "com.yahoo.mobile.client.android.finance:id/time_max",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1189,
+            1737,
+            1377,
+            1845
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.yahoo.mobile.client.android.finance.ui.quotedetail.stats.QuoteDetailStatsView",
+      "bounds": [
+        0,
+        1880,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.v7.widget.CardView",
+          "bounds": [
+            0,
+            1915,
+            1440,
+            2392
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "Key statistics",
+              "resource-id": "com.yahoo.mobile.client.android.finance:id/keystats_header",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                0,
+                1915,
+                1440,
+                2106
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Prev Close",
+              "resource-id": "com.yahoo.mobile.client.android.finance:id/stat_title_left",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                63,
+                2106,
+                296,
+                2228
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "1.01",
+              "resource-id": "com.yahoo.mobile.client.android.finance:id/stat_value_left",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.yahoo.mobile.client.android.finance.ui.FontResizableTextView",
+              "bounds": [
+                296,
+                2106,
+                688,
+                2228
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Open",
+              "resource-id": "com.yahoo.mobile.client.android.finance:id/stat_title_right",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                752,
+                2106,
+                866,
+                2228
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "1.61",
+              "resource-id": "com.yahoo.mobile.client.android.finance:id/stat_value_right",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.yahoo.mobile.client.android.finance.ui.FontResizableTextView",
+              "bounds": [
+                866,
+                2106,
+                1377,
+                2228
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Low",
+              "resource-id": "com.yahoo.mobile.client.android.finance:id/stat_title_left",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                63,
+                2232,
+                154,
+                2354
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "1.20",
+              "resource-id": "com.yahoo.mobile.client.android.finance:id/stat_value_left",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.yahoo.mobile.client.android.finance.ui.FontResizableTextView",
+              "bounds": [
+                154,
+                2232,
+                688,
+                2354
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "High",
+              "resource-id": "com.yahoo.mobile.client.android.finance:id/stat_title_right",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                752,
+                2232,
+                853,
+                2354
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "1.98",
+              "resource-id": "com.yahoo.mobile.client.android.finance:id/stat_value_right",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.yahoo.mobile.client.android.finance.ui.FontResizableTextView",
+              "bounds": [
+                853,
+                2232,
+                1377,
+                2354
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "52wk Low",
+              "resource-id": "com.yahoo.mobile.client.android.finance:id/stat_title_left",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                63,
+                2358,
+                284,
+                2392
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "0.07",
+              "resource-id": "com.yahoo.mobile.client.android.finance:id/stat_value_left",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.yahoo.mobile.client.android.finance.ui.FontResizableTextView",
+              "bounds": [
+                284,
+                2358,
+                688,
+                2392
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "52wk High",
+              "resource-id": "com.yahoo.mobile.client.android.finance:id/stat_title_right",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                752,
+                2358,
+                983,
+                2392
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "1.98",
+              "resource-id": "com.yahoo.mobile.client.android.finance:id/stat_value_right",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.yahoo.mobile.client.android.finance.ui.FontResizableTextView",
+              "bounds": [
+                983,
+                2358,
+                1377,
+                2392
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "Card"
+        }
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

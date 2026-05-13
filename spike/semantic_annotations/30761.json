@@ -1,0 +1,635 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "co.inbox.messenger:id/toolbar",
+      "children": [
+        {
+          "text": "Inbox",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            135,
+            230,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "co.inbox.messenger:id/action_search",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1115,
+            98,
+            1300,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.design.widget.TabLayout$SlidingTabStrip",
+      "bounds": [
+        0,
+        280,
+        1440,
+        448
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.design.widget.TabLayout$TabView",
+          "bounds": [
+            960,
+            280,
+            1440,
+            448
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "textButtonClass": "contacts"
+        },
+        {
+          "text": "Chatrooms",
+          "resource-id": "co.inbox.messenger:id/tab_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            90,
+            331,
+            389,
+            397
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Direct",
+          "resource-id": "co.inbox.messenger:id/tab_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            636,
+            331,
+            804,
+            397
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "iconClass": "add",
+      "ancestors": [
+        "android.support.design.widget.VisibilityAwareImageButton",
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "co.inbox.messenger:id/friendsFAB",
+      "clickable": true,
+      "class": "android.support.design.widget.FloatingActionButton",
+      "bounds": [
+        1188,
+        2140,
+        1384,
+        2336
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        448,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            0,
+            448,
+            1440,
+            581
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "Friend Chatrooms",
+              "resource-id": "co.inbox.messenger:id/chatroom_section_text",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                56,
+                448,
+                470,
+                581
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "resource-id": "co.inbox.messenger:id/empty",
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                571,
+                735,
+                869,
+                1033
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "componentLabel": "Image"
+            },
+            {
+              "text": "No chatroom created by friends.\nScroll down to checkout public chatrooms!",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                317,
+                1145,
+                1122,
+                1251
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            0,
+            735,
+            1440,
+            1251
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            0,
+            1405,
+            1440,
+            1538
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "Public Chatrooms",
+              "resource-id": "co.inbox.messenger:id/chatroom_section_text",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                56,
+                1405,
+                469,
+                1538
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "co.inbox.messenger.ui.chatrooms.list.views.ChatroomView",
+          "bounds": [
+            0,
+            1538,
+            1440,
+            1749
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "text": "Trending",
+              "resource-id": "co.inbox.messenger:id/chatroom_additional_information",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                56,
+                1655,
+                1384,
+                1721
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "co.inbox.messenger:id/chatroom_hashtag_icon",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                56,
+                1582,
+                98,
+                1624
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": " Atlanta ",
+              "resource-id": "co.inbox.messenger:id/chatroom_name",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                112,
+                1566,
+                455,
+                1641
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "co.inbox.messenger.ui.chatrooms.list.views.ChatroomView",
+          "bounds": [
+            0,
+            1749,
+            1440,
+            1960
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "text": "Trending",
+              "resource-id": "co.inbox.messenger:id/chatroom_additional_information",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                56,
+                1866,
+                1384,
+                1932
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "iconClass": "dialpad",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "co.inbox.messenger:id/chatroom_hashtag_icon",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                56,
+                1793,
+                98,
+                1835
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "text": " Boston ",
+              "resource-id": "co.inbox.messenger:id/chatroom_name",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                112,
+                1777,
+                454,
+                1852
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "co.inbox.messenger.ui.chatrooms.list.views.ChatroomView",
+          "bounds": [
+            0,
+            1960,
+            1440,
+            2171
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "text": "Trending",
+              "resource-id": "co.inbox.messenger:id/chatroom_additional_information",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                56,
+                2077,
+                1384,
+                2143
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "iconClass": "dialpad",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "co.inbox.messenger:id/chatroom_hashtag_icon",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                56,
+                2004,
+                98,
+                2046
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "text": " California ",
+              "resource-id": "co.inbox.messenger:id/chatroom_name",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                112,
+                1988,
+                521,
+                2063
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "co.inbox.messenger.ui.chatrooms.list.views.ChatroomView",
+          "bounds": [
+            0,
+            2171,
+            1440,
+            2382
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "text": "Trending",
+              "resource-id": "co.inbox.messenger:id/chatroom_additional_information",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                56,
+                2288,
+                1384,
+                2354
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "iconClass": "dialpad",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "co.inbox.messenger:id/chatroom_hashtag_icon",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                56,
+                2215,
+                98,
+                2257
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "text": " Florida ",
+              "resource-id": "co.inbox.messenger:id/chatroom_name",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                112,
+                2199,
+                452,
+                2274
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "co.inbox.messenger.ui.chatrooms.list.views.ChatroomView",
+          "bounds": [
+            0,
+            2382,
+            1440,
+            2392
+          ],
+          "clickable": true,
+          "children": [],
+          "componentLabel": "List Item"
+        }
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

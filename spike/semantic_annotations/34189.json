@@ -1,0 +1,711 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.lushusa:id/toolbar",
+      "children": [
+        {
+          "text": "LUSH",
+          "resource-id": "com.lushusa:id/toolbar_title",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.ovenbits.fontviews.FontTextView",
+          "bounds": [
+            252,
+            135,
+            462,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "com.lushusa:id/action_search",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1097,
+            98,
+            1265,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "shop",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.lushusa:id/icon_cart",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1293,
+            140,
+            1377,
+            224
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.lushusa:id/recyclerView",
+      "children": [
+        {
+          "resource-id": "com.lushusa:id/productView",
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.lushusa:id/imageViewProductItem",
+              "clickable": false,
+              "class": "com.lushusa.view.LoaderImageView",
+              "bounds": [
+                45,
+                1074,
+                675,
+                1704
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "Intergalactic",
+              "resource-id": "com.lushusa:id/textViewProductItemTitle",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.ovenbits.fontviews.FontTextView",
+              "bounds": [
+                28,
+                1704,
+                692,
+                1877
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Out-of-this-world baths",
+              "resource-id": "com.lushusa:id/textViewProductItemDescription",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.ovenbits.fontviews.FontTextView",
+              "bounds": [
+                28,
+                1991,
+                692,
+                2105
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Bath Bombs",
+              "resource-id": "com.lushusa:id/textViewProductItemSubTitle",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.ovenbits.fontviews.FontTextView",
+              "bounds": [
+                28,
+                1905,
+                608,
+                1963
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "V",
+              "resource-id": "com.lushusa:id/icon_vegan",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.ovenbits.fontviews.FontTextView",
+              "bounds": [
+                636,
+                1906,
+                692,
+                1962
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "$7.75",
+              "resource-id": "com.lushusa:id/textViewProductItemPrice",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.ovenbits.fontviews.FontTextView",
+              "bounds": [
+                28,
+                2137,
+                412,
+                2201
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "com.lushusa.view.a",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.lushusa.view.TileProductView",
+          "bounds": [
+            14,
+            1008,
+            706,
+            2268
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "resource-id": "com.lushusa:id/productView",
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.lushusa:id/imageViewProductItem",
+              "clickable": false,
+              "class": "com.lushusa.view.LoaderImageView",
+              "bounds": [
+                765,
+                1074,
+                1395,
+                1704
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "The Experimenter",
+              "resource-id": "com.lushusa:id/textViewProductItemTitle",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.ovenbits.fontviews.FontTextView",
+              "bounds": [
+                748,
+                1704,
+                1412,
+                1877
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Technicolor bathing",
+              "resource-id": "com.lushusa:id/textViewProductItemDescription",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.ovenbits.fontviews.FontTextView",
+              "bounds": [
+                748,
+                1991,
+                1412,
+                2105
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Bath Bombs",
+              "resource-id": "com.lushusa:id/textViewProductItemSubTitle",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.ovenbits.fontviews.FontTextView",
+              "bounds": [
+                748,
+                1905,
+                1328,
+                1963
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "V",
+              "resource-id": "com.lushusa:id/icon_vegan",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.ovenbits.fontviews.FontTextView",
+              "bounds": [
+                1356,
+                1906,
+                1412,
+                1962
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "$8.95",
+              "resource-id": "com.lushusa:id/textViewProductItemPrice",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.ovenbits.fontviews.FontTextView",
+              "bounds": [
+                748,
+                2137,
+                1132,
+                2201
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "com.lushusa.view.a",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.lushusa.view.TileProductView",
+          "bounds": [
+            734,
+            1008,
+            1426,
+            2268
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "resource-id": "com.lushusa:id/productView",
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.lushusa:id/imageViewProductItem",
+              "clickable": false,
+              "class": "com.lushusa.view.LoaderImageView",
+              "bounds": [
+                45,
+                2362,
+                675,
+                2392
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "ancestors": [
+            "com.lushusa.view.a",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.lushusa.view.TileProductView",
+          "bounds": [
+            14,
+            2296,
+            706,
+            2392
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "resource-id": "com.lushusa:id/productView",
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.lushusa:id/imageViewProductItem",
+              "clickable": false,
+              "class": "com.lushusa.view.LoaderImageView",
+              "bounds": [
+                765,
+                2362,
+                1395,
+                2392
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "ancestors": [
+            "com.lushusa.view.a",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.lushusa.view.TileProductView",
+          "bounds": [
+            734,
+            2296,
+            1426,
+            2392
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.RecyclerView",
+      "bounds": [
+        0,
+        280,
+        1440,
+        2392
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.lushusa:id/header",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.v7.widget.CardView",
+          "bounds": [
+            28,
+            308,
+            518,
+            798
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.lushusa:id/image",
+              "clickable": false,
+              "class": "com.lushusa.view.LoaderImageView",
+              "bounds": [
+                28,
+                308,
+                518,
+                798
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "Easter",
+              "resource-id": "com.lushusa:id/title",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.ovenbits.fontviews.FontTextView",
+              "bounds": [
+                56,
+                506,
+                490,
+                599
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "Card"
+        },
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.v7.widget.CardView",
+          "bounds": [
+            546,
+            308,
+            1036,
+            798
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.lushusa:id/image",
+              "clickable": false,
+              "class": "com.lushusa.view.LoaderImageView",
+              "bounds": [
+                546,
+                308,
+                1036,
+                798
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "Mother's Day",
+              "resource-id": "com.lushusa:id/title",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.ovenbits.fontviews.FontTextView",
+              "bounds": [
+                574,
+                506,
+                1008,
+                599
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "Card"
+        },
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.v7.widget.CardView",
+          "bounds": [
+            1064,
+            308,
+            1440,
+            798
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.lushusa:id/image",
+              "clickable": false,
+              "class": "com.lushusa.view.LoaderImageView",
+              "bounds": [
+                1064,
+                308,
+                1440,
+                798
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "Self-Preserving Products",
+              "resource-id": "com.lushusa:id/title",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.ovenbits.fontviews.FontTextView",
+              "bounds": [
+                1092,
+                426,
+                1440,
+                680
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "Card"
+        },
+        {
+          "text": "Filter",
+          "resource-id": "com.lushusa:id/button_refine",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.ovenbits.fontviews.FontTextView",
+          "bounds": [
+            1132,
+            829,
+            1440,
+            990
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "filter"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            0,
+            826,
+            385,
+            994
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "text": "All Products"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        280,
+        1440,
+        994
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.lushusa:id/body",
+      "children": [],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        994,
+        1440,
+        2392
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

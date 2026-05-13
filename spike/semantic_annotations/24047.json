@@ -1,0 +1,539 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "br.com.icarros.androidapp:id/toolbar",
+      "children": [
+        {
+          "text": "Deals",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            252,
+            135,
+            428,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "filter",
+          "resource-id": "br.com.icarros.androidapp:id/filter_menu",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1104,
+            98,
+            1272,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "swap",
+          "resource-id": "br.com.icarros.androidapp:id/sort_menu",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1272,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "iconClass": "search",
+      "ancestors": [
+        "android.support.design.widget.VisibilityAwareImageButton",
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "br.com.icarros.androidapp:id/newSearchButton",
+      "clickable": true,
+      "class": "android.support.design.widget.FloatingActionButton",
+      "bounds": [
+        1209,
+        2161,
+        1405,
+        2357
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Carros usados, seminovos e novos em Salvador - BA",
+      "resource-id": "br.com.icarros.androidapp:id/dealsResultText",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        0,
+        280,
+        1440,
+        414
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "br.com.icarros.androidapp.ui.widgets.GridViewItemContainer",
+      "bounds": [
+        0,
+        414,
+        1440,
+        1911
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.RelativeLayout",
+          "bounds": [
+            0,
+            414,
+            1440,
+            1911
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "resource-id": "br.com.icarros.androidapp:id/cardview",
+              "children": [
+                {
+                  "resource-id": "br.com.icarros.androidapp:id/viewOverviewPicSwitcher",
+                  "children": [
+                    {
+                      "ancestors": [
+                        "android.view.View",
+                        "java.lang.Object"
+                      ],
+                      "resource-id": "br.com.icarros.androidapp:id/indicator",
+                      "clickable": false,
+                      "class": "com.viewpagerindicator.UnderlinePageIndicator",
+                      "bounds": [
+                        35,
+                        1458,
+                        1405,
+                        1465
+                      ],
+                      "componentLabel": "Pager Indicator"
+                    },
+                    {
+                      "ancestors": [
+                        "android.widget.ImageView",
+                        "android.view.View",
+                        "java.lang.Object"
+                      ],
+                      "resource-id": "br.com.icarros.androidapp:id/imgGallery",
+                      "clickable": false,
+                      "class": "android.support.v7.widget.AppCompatImageView",
+                      "bounds": [
+                        35,
+                        432,
+                        1405,
+                        1458
+                      ],
+                      "componentLabel": "Image"
+                    }
+                  ],
+                  "ancestors": [
+                    "android.widget.ViewAnimator",
+                    "android.widget.FrameLayout",
+                    "android.view.ViewGroup",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.widget.ViewSwitcher",
+                  "bounds": [
+                    35,
+                    432,
+                    1405,
+                    1465
+                  ],
+                  "componentLabel": "On/Off Switch"
+                },
+                {
+                  "text": "",
+                  "resource-id": "br.com.icarros.androidapp:id/favoriteCheck",
+                  "ancestors": [
+                    "android.widget.CheckBox",
+                    "android.widget.CompoundButton",
+                    "android.widget.Button",
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": true,
+                  "class": "android.support.v7.widget.AppCompatCheckBox",
+                  "bounds": [
+                    1245,
+                    460,
+                    1377,
+                    581
+                  ],
+                  "componentLabel": "Input"
+                },
+                {
+                  "text": "Chevrolet Onix 1.4 LTZ SPE/4 Eco",
+                  "resource-id": "br.com.icarros.androidapp:id/titleText",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    70,
+                    1483,
+                    1370,
+                    1559
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "R$",
+                  "resource-id": "br.com.icarros.androidapp:id/priceCurrencyText",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    70,
+                    1324,
+                    128,
+                    1390
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "54,990",
+                  "resource-id": "br.com.icarros.androidapp:id/priceText",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    146,
+                    1302,
+                    363,
+                    1395
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "2017",
+                  "resource-id": "br.com.icarros.androidapp:id/yearText",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    70,
+                    1595,
+                    285,
+                    1661
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "0 km",
+                  "resource-id": "br.com.icarros.androidapp:id/mileageText",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    289,
+                    1595,
+                    719,
+                    1661
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "manual transm.",
+                  "resource-id": "br.com.icarros.androidapp:id/transmissionText",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    723,
+                    1595,
+                    1370,
+                    1661
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "br.com.icarros.androidapp:id/makeImage",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "bounds": [
+                    70,
+                    1697,
+                    196,
+                    1823
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "text": "Chevrolet deals",
+                  "resource-id": "br.com.icarros.androidapp:id/dealerText",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    231,
+                    1727,
+                    1370,
+                    1793
+                  ],
+                  "componentLabel": "Text"
+                }
+              ],
+              "ancestors": [
+                "android.widget.FrameLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.CardView",
+              "bounds": [
+                35,
+                432,
+                1405,
+                1893
+              ],
+              "componentLabel": "Card"
+            }
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "br.com.icarros.androidapp.ui.widgets.GridViewItemContainer",
+      "bounds": [
+        0,
+        1911,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.RelativeLayout",
+          "bounds": [
+            0,
+            1911,
+            1440,
+            2392
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "resource-id": "br.com.icarros.androidapp:id/cardview",
+              "children": [
+                {
+                  "resource-id": "br.com.icarros.androidapp:id/viewOverviewPicSwitcher",
+                  "children": [
+                    {
+                      "ancestors": [
+                        "android.widget.ImageView",
+                        "android.view.View",
+                        "java.lang.Object"
+                      ],
+                      "resource-id": "br.com.icarros.androidapp:id/imgGallery",
+                      "clickable": false,
+                      "class": "android.support.v7.widget.AppCompatImageView",
+                      "bounds": [
+                        35,
+                        1929,
+                        1405,
+                        2392
+                      ],
+                      "componentLabel": "Image"
+                    }
+                  ],
+                  "ancestors": [
+                    "android.widget.ViewAnimator",
+                    "android.widget.FrameLayout",
+                    "android.view.ViewGroup",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.widget.ViewSwitcher",
+                  "bounds": [
+                    35,
+                    1929,
+                    1405,
+                    2392
+                  ],
+                  "componentLabel": "On/Off Switch"
+                },
+                {
+                  "text": "",
+                  "resource-id": "br.com.icarros.androidapp:id/favoriteCheck",
+                  "ancestors": [
+                    "android.widget.CheckBox",
+                    "android.widget.CompoundButton",
+                    "android.widget.Button",
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": true,
+                  "class": "android.support.v7.widget.AppCompatCheckBox",
+                  "bounds": [
+                    1245,
+                    1957,
+                    1377,
+                    2078
+                  ],
+                  "componentLabel": "Input"
+                }
+              ],
+              "ancestors": [
+                "android.widget.FrameLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.CardView",
+              "bounds": [
+                35,
+                1929,
+                1405,
+                2392
+              ],
+              "componentLabel": "Card"
+            }
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

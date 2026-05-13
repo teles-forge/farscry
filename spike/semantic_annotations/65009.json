@@ -1,0 +1,617 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "org.wikipedia.beta:id/single_fragment_toolbar",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.wikipedia.beta:id/single_fragment_toolbar_wordmark",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            56,
+            130,
+            406,
+            234
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "more",
+          "resource-id": "org.wikipedia.beta:id/menu_overflow_button",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1272,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.design.widget.TabLayout$SlidingTabStrip",
+      "bounds": [
+        0,
+        2196,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.design.widget.TabLayout$TabView",
+          "bounds": [
+            720,
+            2196,
+            1080,
+            2392
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "textButtonClass": "history"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.design.widget.TabLayout$TabView",
+          "bounds": [
+            1080,
+            2196,
+            1440,
+            2392
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "textButtonClass": "nearby"
+        },
+        {
+          "text": "Explore",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "org.wikipedia.navtab.NavTabView",
+          "bounds": [
+            42,
+            2215,
+            318,
+            2372
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "My lists",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "org.wikipedia.navtab.NavTabView",
+          "bounds": [
+            402,
+            2220,
+            678,
+            2368
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "ancestors": [
+        "org.wikipedia.feed.view.DefaultFeedCardView",
+        "android.support.v7.widget.CardView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "org.wikipedia.feed.searchbar.SearchCardView",
+      "bounds": [
+        25,
+        333,
+        1415,
+        501
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "search",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            25,
+            333,
+            193,
+            501
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Search Wikipedia",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            193,
+            384,
+            1247,
+            450
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "microphone",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.wikipedia.beta:id/voice_search_button",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1247,
+            333,
+            1415,
+            501
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "org.wikipedia.feed.view.HorizontalScrollingListCardView",
+        "org.wikipedia.feed.view.ListCardView",
+        "org.wikipedia.feed.view.DefaultFeedCardView",
+        "android.support.v7.widget.CardView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "org.wikipedia.feed.news.NewsListCardView",
+      "bounds": [
+        25,
+        537,
+        1415,
+        1503
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.support.v7.widget.CardView",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "org.wikipedia.feed.view.HorizontalScrollingListCardItemView",
+          "bounds": [
+            81,
+            705,
+            711,
+            1433
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "ancestors": [
+                "com.facebook.drawee.view.SimpleDraweeView",
+                "com.facebook.drawee.view.GenericDraweeView",
+                "com.facebook.drawee.view.DraweeView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "org.wikipedia.beta:id/horizontal_scroll_list_item_image",
+              "clickable": false,
+              "class": "org.wikipedia.views.FaceAndColorDetectImageView",
+              "bounds": [
+                81,
+                705,
+                711,
+                1041
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "The Netherlands and Turkey expel each others' diplomats in response to a diplomatic incident.",
+              "resource-id": "org.wikipedia.beta:id/horizontal_scroll_list_item_text",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                137,
+                1087,
+                655,
+                1433
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.support.v7.widget.CardView",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "org.wikipedia.feed.view.HorizontalScrollingListCardItemView",
+          "bounds": [
+            739,
+            705,
+            1369,
+            1433
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "ancestors": [
+                "com.facebook.drawee.view.SimpleDraweeView",
+                "com.facebook.drawee.view.GenericDraweeView",
+                "com.facebook.drawee.view.DraweeView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "org.wikipedia.beta:id/horizontal_scroll_list_item_image",
+              "clickable": false,
+              "class": "org.wikipedia.views.FaceAndColorDetectImageView",
+              "bounds": [
+                739,
+                705,
+                1369,
+                1041
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "South Korea's Constitutional Court removes President Park Geun-hye from office.",
+              "resource-id": "org.wikipedia.beta:id/horizontal_scroll_list_item_text",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                795,
+                1087,
+                1313,
+                1433
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.support.v7.widget.CardView",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "org.wikipedia.feed.view.HorizontalScrollingListCardItemView",
+          "bounds": [
+            1397,
+            705,
+            1415,
+            1433
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "ancestors": [
+                "com.facebook.drawee.view.SimpleDraweeView",
+                "com.facebook.drawee.view.GenericDraweeView",
+                "com.facebook.drawee.view.DraweeView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "org.wikipedia.beta:id/horizontal_scroll_list_item_image",
+              "clickable": false,
+              "class": "org.wikipedia.views.FaceAndColorDetectImageView",
+              "bounds": [
+                1397,
+                705,
+                1415,
+                1041
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "iconClass": "date_range",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.wikipedia.beta:id/view_card_header_image",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            81,
+            579,
+            165,
+            663
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "In the news",
+          "resource-id": "org.wikipedia.beta:id/view_card_header_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            193,
+            588,
+            441,
+            654
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Mar 14, 2017",
+          "resource-id": "org.wikipedia.beta:id/view_card_header_subtitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1029,
+            592,
+            1275,
+            649
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.wikipedia.beta:id/view_list_card_header_menu",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1275,
+            551,
+            1415,
+            691
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "org.wikipedia.feed.view.DefaultFeedCardView",
+        "android.support.v7.widget.CardView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "org.wikipedia.feed.featured.FeaturedArticleCardView",
+      "bounds": [
+        25,
+        1539,
+        1415,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "com.facebook.drawee.view.SimpleDraweeView",
+            "com.facebook.drawee.view.GenericDraweeView",
+            "com.facebook.drawee.view.DraweeView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.wikipedia.beta:id/view_featured_article_card_image",
+          "clickable": true,
+          "class": "org.wikipedia.views.FaceAndColorDetectImageView",
+          "bounds": [
+            25,
+            1711,
+            1415,
+            2383
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Hugh de Neville",
+          "resource-id": "org.wikipedia.beta:id/view_featured_article_card_article_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            81,
+            2387,
+            1359,
+            2392
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "star",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.wikipedia.beta:id/view_card_header_image",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            81,
+            1581,
+            165,
+            1665
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Featured article",
+          "resource-id": "org.wikipedia.beta:id/view_card_header_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            193,
+            1590,
+            538,
+            1656
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Mar 14, 2017",
+          "resource-id": "org.wikipedia.beta:id/view_card_header_subtitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1029,
+            1594,
+            1275,
+            1651
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.wikipedia.beta:id/view_list_card_header_menu",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1275,
+            1553,
+            1415,
+            1693
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "Card"
+    }
+  ]
+}

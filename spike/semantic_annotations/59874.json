@@ -1,0 +1,575 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.brands4friends.b4f:id/toolbar_actionbar",
+      "children": [
+        {
+          "text": "Warenkorb",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            252,
+            146,
+            593,
+            218
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "1",
+          "resource-id": "com.brands4friends.b4f:id/basket_item_count",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.brands4friends.b4f.widget.B4FTextView",
+          "bounds": [
+            1314,
+            140,
+            1398,
+            224
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "26:47",
+          "resource-id": "com.brands4friends.b4f:id/basket_time_left",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.brands4friends.b4f.widget.B4FTextView",
+          "bounds": [
+            1312,
+            103,
+            1400,
+            261
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        280,
+        1440,
+        1753
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Rechnungsadresse entspricht der Lieferadresse",
+          "resource-id": "com.brands4friends.b4f:id/cartDeliveryAndBillingAddressCheck",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatCheckBox",
+            "android.widget.CheckBox",
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.brands4friends.b4f.widget.B4FCheckBox",
+          "bounds": [
+            28,
+            436,
+            1412,
+            548
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "Versandart",
+          "resource-id": "com.brands4friends.b4f:id/cartCarrierTitle",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.brands4friends.b4f.widget.B4FTextView",
+          "bounds": [
+            28,
+            781,
+            1412,
+            972
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "resource-id": "com.brands4friends.b4f:id/cartCarrierTypesSpinner",
+          "ancestors": [
+            "android.widget.Spinner",
+            "android.widget.AbsSpinner",
+            "android.widget.AdapterView",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatSpinner",
+          "bounds": [
+            28,
+            1000,
+            527,
+            1084
+          ],
+          "componentLabel": "Text Button",
+          "text": "Auswählen"
+        },
+        {
+          "text": "Zahlungsmethode",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.brands4friends.b4f.widget.B4FTextView",
+          "bounds": [
+            28,
+            1084,
+            1412,
+            1275
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "resource-id": "com.brands4friends.b4f:id/paymentMethod",
+          "ancestors": [
+            "com.brands4friends.b4f.payment.PaymentMethodView",
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.brands4friends.b4f.payment.PaymentMethodView_",
+          "bounds": [
+            63,
+            1275,
+            1412,
+            1422
+          ],
+          "componentLabel": "Text Button",
+          "text": "PayPal"
+        },
+        {
+          "text": "Deine Artikel",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.brands4friends.b4f.widget.B4FTextView",
+          "bounds": [
+            28,
+            1534,
+            351,
+            1613
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Lieferadresse",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.brands4friends.b4f.widget.B4FTextView",
+          "bounds": [
+            28,
+            315,
+            1258,
+            387
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.brands4friends.b4f:id/cartShippingAddressEdit",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1258,
+            315,
+            1412,
+            399
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Rechnungsadresse",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.brands4friends.b4f.widget.B4FTextView",
+          "bounds": [
+            28,
+            681,
+            1258,
+            760
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "navigation",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.brands4friends.b4f:id/cartBillingAddressEdit",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1258,
+            688,
+            1412,
+            772
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Deine Ersparnis ggü. UVP",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.brands4friends.b4f.widget.B4FTextView",
+          "bounds": [
+            56,
+            1627,
+            1216,
+            1697
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "€40.00",
+          "resource-id": "com.brands4friends.b4f:id/cartSavings",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.brands4friends.b4f.widget.B4FTextView",
+          "bounds": [
+            1216,
+            1627,
+            1384,
+            1697
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1753,
+        1440,
+        1977
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Aktion 1: FÜR DEIN ZUHAUSE",
+          "resource-id": "com.brands4friends.b4f:id/txt_campaign_name",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.brands4friends.b4f.widget.B4FTextView",
+          "bounds": [
+            56,
+            1809,
+            1440,
+            1879
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Lieferzeitraum: Feb 10, 2017 - Feb 17, 2017",
+          "resource-id": "com.brands4friends.b4f:id/txt_campaign_delivery_date",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.brands4friends.b4f.widget.B4FTextView",
+          "bounds": [
+            56,
+            1879,
+            1440,
+            1949
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1977,
+        1440,
+        2363
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.brands4friends.b4f:id/img_delete",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            56,
+            2005,
+            168,
+            2345
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.brands4friends.b4f:id/img_product",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            168,
+            2062,
+            392,
+            2345
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "resource-id": "com.brands4friends.b4f:id/txt_product_price_quantity",
+          "ancestors": [
+            "android.widget.Spinner",
+            "android.widget.AbsSpinner",
+            "android.widget.AdapterView",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatSpinner",
+          "bounds": [
+            1130,
+            2005,
+            1384,
+            2089
+          ],
+          "componentLabel": "Text Button",
+          "text": "1"
+        },
+        {
+          "text": "WMF",
+          "resource-id": "com.brands4friends.b4f:id/txt_brand_name",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.brands4friends.b4f.widget.B4FTextView",
+          "bounds": [
+            392,
+            2005,
+            1130,
+            2075
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Kaffeemaschine Lono, Cromargan, 900 W, silbern",
+          "resource-id": "com.brands4friends.b4f:id/txt_product_name",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.brands4friends.b4f.widget.B4FTextView",
+          "bounds": [
+            392,
+            2075,
+            1130,
+            2285
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Größe: ONE SIZE",
+          "resource-id": "com.brands4friends.b4f:id/txt_product_size",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.brands4friends.b4f.widget.B4FTextView",
+          "bounds": [
+            392,
+            2285,
+            757,
+            2345
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "€59.99",
+          "resource-id": "com.brands4friends.b4f:id/txt_product_price_name",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.brands4friends.b4f.widget.B4FTextView",
+          "bounds": [
+            1212,
+            2264,
+            1384,
+            2345
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.brands4friends.b4f:id/footerLinear",
+      "children": [],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        2363,
+        1440,
+        2392
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

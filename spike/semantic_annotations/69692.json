@@ -1,0 +1,888 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.beyondmenu:id/action_bar_container",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            252
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "filter",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.beyondmenu:id/secondIconBTN",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            1104,
+            84,
+            1272,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "cart",
+          "resource-id": "com.beyondmenu:id/shoppingCartIconView",
+          "children": [
+            {
+              "iconClass": "cart",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.beyondmenu:id/cartIV",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                1290,
+                102,
+                1422,
+                234
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "ancestors": [
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.beyondmenu.view.ShoppingCartIconView",
+          "bounds": [
+            1272,
+            84,
+            1440,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "",
+          "resource-id": "com.beyondmenu:id/autocompleteTV",
+          "ancestors": [
+            "android.widget.AutoCompleteTextView",
+            "android.widget.EditText",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.beyondmenu.view.BMAutocompleteTextView",
+          "bounds": [
+            196,
+            102,
+            1104,
+            234
+          ],
+          "componentLabel": "Input"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        252
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        0,
+        374,
+        1440,
+        409
+      ],
+      "clickable": false,
+      "class": "com.beyondmenu.view.ShadowView",
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.beyondmenu.view.BriefRestaurantCell",
+      "bounds": [
+        0,
+        374,
+        1440,
+        778
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Closes at 10:00 PM",
+          "resource-id": "com.beyondmenu:id/moreInfoTV",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            60,
+            638,
+            1380,
+            697
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Mizutani Sushi Bar",
+          "resource-id": "com.beyondmenu:id/restaurantNameTV",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            60,
+            427,
+            1240,
+            502
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "2.97 mi",
+          "resource-id": "com.beyondmenu:id/distanceTV",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1240,
+            439,
+            1380,
+            490
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Japanese, Sushi",
+          "resource-id": "com.beyondmenu:id/cuisinesTV",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            60,
+            579,
+            1258,
+            638
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "NEW",
+          "resource-id": "com.beyondmenu:id/newRestaurantTV",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1276,
+            587,
+            1380,
+            630
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "1 rating",
+          "resource-id": "com.beyondmenu:id/ratingCountTV",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            398,
+            515,
+            1380,
+            572
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            60,
+            512,
+            380,
+            568
+          ],
+          "clickable": false,
+          "componentLabel": "Pager Indicator"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.beyondmenu.view.BriefRestaurantCell",
+      "bounds": [
+        0,
+        778,
+        1440,
+        1182
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Free Delivery  •  Minimum $25.00",
+          "resource-id": "com.beyondmenu:id/moreInfoTV",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            60,
+            1042,
+            1380,
+            1101
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Chaat Corner - Powell",
+          "resource-id": "com.beyondmenu:id/restaurantNameTV",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            60,
+            831,
+            1240,
+            906
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "1.34 mi",
+          "resource-id": "com.beyondmenu:id/distanceTV",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1240,
+            843,
+            1380,
+            894
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Indian",
+          "resource-id": "com.beyondmenu:id/cuisinesTV",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            60,
+            983,
+            1258,
+            1042
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "NEW",
+          "resource-id": "com.beyondmenu:id/newRestaurantTV",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1276,
+            991,
+            1380,
+            1034
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "1 rating",
+          "resource-id": "com.beyondmenu:id/ratingCountTV",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            398,
+            919,
+            1380,
+            976
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            60,
+            916,
+            380,
+            972
+          ],
+          "clickable": false,
+          "componentLabel": "Pager Indicator"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.beyondmenu.view.BriefRestaurantCell",
+      "bounds": [
+        0,
+        1182,
+        1440,
+        1586
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Free Delivery  •  Minimum $30.00",
+          "resource-id": "com.beyondmenu:id/moreInfoTV",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            60,
+            1446,
+            1380,
+            1505
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Naan N Curry",
+          "resource-id": "com.beyondmenu:id/restaurantNameTV",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            60,
+            1235,
+            1240,
+            1310
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0.88 mi",
+          "resource-id": "com.beyondmenu:id/distanceTV",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1240,
+            1247,
+            1380,
+            1298
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Indian, Middle Eastern",
+          "resource-id": "com.beyondmenu:id/cuisinesTV",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            60,
+            1387,
+            1258,
+            1446
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "NEW",
+          "resource-id": "com.beyondmenu:id/newRestaurantTV",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1276,
+            1395,
+            1380,
+            1438
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "1 rating",
+          "resource-id": "com.beyondmenu:id/ratingCountTV",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            398,
+            1323,
+            1380,
+            1380
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            60,
+            1320,
+            380,
+            1376
+          ],
+          "clickable": false,
+          "componentLabel": "Pager Indicator"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.beyondmenu.view.BriefRestaurantCell",
+      "bounds": [
+        0,
+        1586,
+        1440,
+        1913
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Closes at 10:00 PM",
+          "resource-id": "com.beyondmenu:id/moreInfoTV",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            60,
+            1773,
+            1380,
+            1832
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Imperial Garden Seafood Restaurant",
+          "resource-id": "com.beyondmenu:id/restaurantNameTV",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            60,
+            1639,
+            1240,
+            1714
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "4.05 mi",
+          "resource-id": "com.beyondmenu:id/distanceTV",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1240,
+            1651,
+            1380,
+            1702
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Chinese",
+          "resource-id": "com.beyondmenu:id/cuisinesTV",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            60,
+            1714,
+            1258,
+            1773
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "NEW",
+          "resource-id": "com.beyondmenu:id/newRestaurantTV",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1276,
+            1722,
+            1380,
+            1765
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.beyondmenu.view.BriefRestaurantCell",
+      "bounds": [
+        0,
+        1913,
+        1440,
+        2299
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Closes at 10:30 PM",
+          "resource-id": "com.beyondmenu:id/moreInfoTV",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            60,
+            2100,
+            1380,
+            2159
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "May not deliver to your location",
+          "resource-id": "com.beyondmenu:id/notInDeliveryZoneTV",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            60,
+            2159,
+            1380,
+            2218
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Sushi Shoh",
+          "resource-id": "com.beyondmenu:id/restaurantNameTV",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            60,
+            1966,
+            1240,
+            2041
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "4.10 mi",
+          "resource-id": "com.beyondmenu:id/distanceTV",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1240,
+            1978,
+            1380,
+            2029
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Japanese, Sushi",
+          "resource-id": "com.beyondmenu:id/cuisinesTV",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            60,
+            2041,
+            1258,
+            2100
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "NEW",
+          "resource-id": "com.beyondmenu:id/newRestaurantTV",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1276,
+            2049,
+            1380,
+            2092
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.beyondmenu.view.BriefRestaurantCell",
+      "bounds": [
+        0,
+        2299,
+        1440,
+        2392
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Mongol Cafe",
+          "resource-id": "com.beyondmenu:id/restaurantNameTV",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            60,
+            2352,
+            1240,
+            2392
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0.90 mi",
+          "resource-id": "com.beyondmenu:id/distanceTV",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1240,
+            2364,
+            1380,
+            2392
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "text": "283 restaurants near San Francisco, CA, USA",
+      "resource-id": "com.beyondmenu:id/restaurantCountTV",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        56,
+        280,
+        1384,
+        346
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

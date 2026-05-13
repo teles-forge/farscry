@@ -1,0 +1,94 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "co.good.android:id/toolbar",
+      "children": [
+        {
+          "text": "Loading...",
+          "resource-id": "co.good.android:id/toolbar_title_tv",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "co.good.android.ui.view.GCTextView",
+          "bounds": [
+            224,
+            122,
+            1422,
+            213
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "co.good.android:id/toolbar_left_btn",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            42,
+            126,
+            126,
+            210
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "co.good.android.ui.view.BaseToolbar",
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "co.good.android.ui.view.GCToolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        252
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.webkit.WebView",
+        "android.widget.AbsoluteLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "co.good.android:id/webview",
+      "clickable": true,
+      "class": "co.good.android.ui.view.GCWebView",
+      "bounds": [
+        0,
+        252,
+        1440,
+        2392
+      ],
+      "componentLabel": "Web View"
+    }
+  ]
+}

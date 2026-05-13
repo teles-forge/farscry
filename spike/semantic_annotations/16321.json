@@ -1,0 +1,531 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.hillman.mtatracker:id/action_bar_container",
+      "children": [
+        {
+          "text": "Transit Tracker",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            210,
+            135,
+            683,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "settings",
+          "resource-id": "com.hillman.mtatracker:id/preferences",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.internal.view.menu.ActionMenuItemView",
+          "bounds": [
+            1132,
+            98,
+            1300,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.internal.widget.TintImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$d",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.internal.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "com.google.android.gms.ads.BaseAdView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.google.android.gms.ads.AdView",
+      "bounds": [
+        160,
+        2217,
+        1280,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.google.android.gms.ads.internal.webview.n",
+          "bounds": [
+            160,
+            2217,
+            1280,
+            2392
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.webkit.WebView",
+                "android.widget.AbsoluteLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                160,
+                2217,
+                1280,
+                2392
+              ],
+              "clickable": true,
+              "class": "com.google.android.gms.ads.internal.webview.o",
+              "componentLabel": "Web View"
+            }
+          ],
+          "componentLabel": "Web View"
+        }
+      ],
+      "componentLabel": "Advertisement"
+    },
+    {
+      "resource-id": "com.hillman.mtatracker:id/map",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            18,
+            2122,
+            228,
+            2199
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.google.android.gms.maps.MapView",
+      "bounds": [
+        0,
+        280,
+        1440,
+        2217
+      ],
+      "componentLabel": "Map View"
+    },
+    {
+      "text": "3",
+      "resource-id": "com.hillman.mtatracker:id/countdown",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.hillman.transittracker.ui.view.FontTextView",
+      "bounds": [
+        1293,
+        287,
+        1433,
+        427
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "com.hillman.mtatracker:id/filter_spinner",
+      "ancestors": [
+        "android.widget.Spinner",
+        "android.widget.AbsSpinner",
+        "android.widget.AdapterView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.hillman.transittracker.ui.view.MapControlSpinner",
+      "bounds": [
+        25,
+        833,
+        566,
+        917
+      ],
+      "componentLabel": "Text Button",
+      "text": "no direction filter"
+    },
+    {
+      "iconClass": "arrow_backward",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.hillman.mtatracker:id/previous_button",
+      "clickable": true,
+      "class": "com.hillman.transittracker.ui.view.FontImageButton",
+      "bounds": [
+        904,
+        2045,
+        1051,
+        2192
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "chat",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.hillman.mtatracker:id/track_button",
+      "clickable": true,
+      "class": "com.hillman.transittracker.ui.view.FontImageButton",
+      "bounds": [
+        1086,
+        2045,
+        1233,
+        2192
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "arrow_forward",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.hillman.mtatracker:id/next_button",
+      "clickable": true,
+      "class": "com.hillman.transittracker.ui.view.FontImageButton",
+      "bounds": [
+        1268,
+        2045,
+        1415,
+        2192
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "add",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.hillman.mtatracker:id/zoom_in",
+      "clickable": true,
+      "class": "com.hillman.transittracker.ui.view.FontImageButton",
+      "bounds": [
+        1268,
+        1092,
+        1415,
+        1239
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "minus",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.hillman.mtatracker:id/zoom_out",
+      "clickable": true,
+      "class": "com.hillman.transittracker.ui.view.FontImageButton",
+      "bounds": [
+        1268,
+        1257,
+        1415,
+        1404
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "YORKVILLE EAST END AV CROSSTOWN",
+      "resource-id": "com.hillman.mtatracker:id/destination",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.hillman.transittracker.ui.view.FontTextView",
+      "bounds": [
+        25,
+        635,
+        864,
+        758
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "route:",
+      "resource-id": "com.hillman.mtatracker:id/route_label",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.hillman.transittracker.ui.view.FontTextView",
+      "bounds": [
+        25,
+        305,
+        153,
+        371
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "number:",
+      "resource-id": "com.hillman.mtatracker:id/number_label",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.hillman.transittracker.ui.view.FontTextView",
+      "bounds": [
+        25,
+        371,
+        204,
+        437
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "direction:",
+      "resource-id": "com.hillman.mtatracker:id/direction_label",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.hillman.transittracker.ui.view.FontTextView",
+      "bounds": [
+        25,
+        437,
+        231,
+        503
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "status:",
+      "resource-id": "com.hillman.mtatracker:id/status_label",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.hillman.transittracker.ui.view.FontTextView",
+      "bounds": [
+        25,
+        503,
+        178,
+        569
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "destination:",
+      "resource-id": "com.hillman.mtatracker:id/destination_label",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.hillman.transittracker.ui.view.FontTextView",
+      "bounds": [
+        25,
+        569,
+        286,
+        635
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "5894",
+      "resource-id": "com.hillman.mtatracker:id/number",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.hillman.transittracker.ui.view.FontTextView",
+      "bounds": [
+        304,
+        371,
+        416,
+        437
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "outbound",
+      "resource-id": "com.hillman.mtatracker:id/direction",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.hillman.transittracker.ui.view.FontTextView",
+      "bounds": [
+        304,
+        437,
+        517,
+        503
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "no progress",
+      "resource-id": "com.hillman.mtatracker:id/status",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.hillman.transittracker.ui.view.FontTextView",
+      "bounds": [
+        304,
+        503,
+        568,
+        569
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "M79",
+      "resource-id": "com.hillman.mtatracker:id/route",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.hillman.transittracker.ui.view.FontTextView",
+      "bounds": [
+        304,
+        305,
+        770,
+        371
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "1/5",
+      "resource-id": "com.hillman.mtatracker:id/result_count",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.hillman.transittracker.ui.view.FontTextView",
+      "bounds": [
+        770,
+        305,
+        846,
+        371
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

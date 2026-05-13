@@ -1,0 +1,321 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.aircanada:id/toolbar",
+      "children": [
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            140,
+            196,
+            224
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Find a flight",
+          "resource-id": "com.aircanada:id/toolbar_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.aircanada.view.FontTextView",
+          "bounds": [
+            196,
+            138,
+            575,
+            225
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.support.v7.widget.Toolbar",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.aircanada.view.ACToolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "Search",
+      "resource-id": "com.aircanada:id/button_search",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.aircanada.view.FontTextView",
+      "bounds": [
+        56,
+        2127,
+        1384,
+        2336
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "search"
+    },
+    {
+      "text": "Flight\nnumber",
+      "resource-id": "com.aircanada:id/button_by_flight_number",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.aircanada.view.AnimatedRadioButton",
+      "bounds": [
+        56,
+        336,
+        505,
+        545
+      ],
+      "componentLabel": "Radio Button"
+    },
+    {
+      "text": "Route",
+      "resource-id": "com.aircanada:id/button_by_city",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.aircanada.view.AnimatedRadioButton",
+      "bounds": [
+        499,
+        336,
+        948,
+        545
+      ],
+      "componentLabel": "Radio Button"
+    },
+    {
+      "text": "Booking reference",
+      "resource-id": "com.aircanada:id/button_by_pnr",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.aircanada.view.AnimatedRadioButton",
+      "bounds": [
+        942,
+        336,
+        1384,
+        545
+      ],
+      "componentLabel": "Radio Button"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        56,
+        580,
+        1384,
+        852
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "dialpad",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.aircanada:id/flight_number_image",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            109,
+            674,
+            193,
+            758
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Flight number",
+          "resource-id": "com.aircanada:id/label_flight_number",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.aircanada.view.FontTextView",
+          "bounds": [
+            228,
+            615,
+            1331,
+            679
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "AC",
+          "resource-id": "com.aircanada:id/label_ac_prefix",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.aircanada.view.FontTextView",
+          "bounds": [
+            228,
+            703,
+            319,
+            799
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "",
+          "resource-id": "com.aircanada:id/flight_number_editText",
+          "ancestors": [
+            "com.aircanada.view.FontEditText",
+            "android.widget.EditText",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.aircanada.view.ClearableEditTextView",
+          "bounds": [
+            319,
+            685,
+            1331,
+            817
+          ],
+          "componentLabel": "Input"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        56,
+        887,
+        1384,
+        1123
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "date_range",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.aircanada:id/date_image",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            109,
+            963,
+            193,
+            1047
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Flight date",
+          "resource-id": "com.aircanada:id/label_flight_date",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.aircanada.view.FontTextView",
+          "bounds": [
+            228,
+            922,
+            1331,
+            986
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Thu 06 Apr",
+          "resource-id": "com.aircanada:id/flight_date_textView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.aircanada.view.FontTextView",
+          "bounds": [
+            228,
+            992,
+            1331,
+            1088
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    }
+  ]
+}

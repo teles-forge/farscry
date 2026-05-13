@@ -1,0 +1,798 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "text": "Lunar Eclipses",
+      "resource-id": "com.dafftin.android.moon_phase:id/tvTitle",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        183,
+        27,
+        587,
+        112
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "com.dafftin.android.moon_phase:id/llListRoot",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.TableRow",
+          "bounds": [
+            271,
+            518,
+            1169,
+            575
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "text": "Moonset: "
+        },
+        {
+          "resource-id": "com.dafftin.android.moon_phase:id/trPenumbralBeg",
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.TableRow",
+          "bounds": [
+            271,
+            575,
+            1169,
+            632
+          ],
+          "componentLabel": "Text Button",
+          "text": "Penumbral Eclipse Begins:"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.TableRow",
+          "bounds": [
+            271,
+            632,
+            1169,
+            689
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "text": "Full moon"
+        },
+        {
+          "resource-id": "com.dafftin.android.moon_phase:id/trGreatest",
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.TableRow",
+          "bounds": [
+            271,
+            689,
+            1169,
+            746
+          ],
+          "componentLabel": "Text Button",
+          "text": "Greatest Eclipse:"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.TableRow",
+          "bounds": [
+            271,
+            746,
+            1169,
+            803
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "text": "Moonrise: "
+        },
+        {
+          "resource-id": "com.dafftin.android.moon_phase:id/trPenumbralEnd",
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.TableRow",
+          "bounds": [
+            271,
+            803,
+            1169,
+            860
+          ],
+          "componentLabel": "Text Button",
+          "text": "Penumbral Eclipse Ends:"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.TableRow",
+          "bounds": [
+            271,
+            860,
+            1169,
+            917
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "text": "Moonset: "
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.dafftin.android.moon_phase:id/ivEclipseType",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            75,
+            351,
+            224,
+            500
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "play",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.dafftin.android.moon_phase:id/btInfo",
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "bounds": [
+            1235,
+            334,
+            1383,
+            516
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Penumbral Duration:",
+          "resource-id": "com.dafftin.android.moon_phase:id/tvPenumbralDuration",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            271,
+            939,
+            800,
+            1014
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "4h19m14s",
+          "resource-id": "com.dafftin.android.moon_phase:id/tvPenumbralDurationValue",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            800,
+            957,
+            1169,
+            1014
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Penumbral Magnitude:",
+          "resource-id": "com.dafftin.android.moon_phase:id/tvPenumbralMagnitude",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            271,
+            1014,
+            800,
+            1089
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0.9884",
+          "resource-id": "com.dafftin.android.moon_phase:id/tvPenumbralMagnitudeValue",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            800,
+            1032,
+            1169,
+            1089
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Penumbral Eclipse",
+          "resource-id": "com.dafftin.android.moon_phase:id/tvEclipseName",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            242,
+            340,
+            877,
+            425
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "10 Feb 2017  19:43:47",
+          "resource-id": "com.dafftin.android.moon_phase:id/tvGreatestEclipseTimeDate",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            242,
+            425,
+            877,
+            510
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        57,
+        333,
+        1383,
+        1089
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.dafftin.android.moon_phase:id/llListRoot",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.TableRow",
+          "bounds": [
+            280,
+            1278,
+            1159,
+            1335
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "text": "Moonset: "
+        },
+        {
+          "resource-id": "com.dafftin.android.moon_phase:id/trPenumbralBeg",
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.TableRow",
+          "bounds": [
+            280,
+            1335,
+            1159,
+            1392
+          ],
+          "componentLabel": "Text Button",
+          "text": "Penumbral Eclipse Begins:"
+        },
+        {
+          "resource-id": "com.dafftin.android.moon_phase:id/trPartialBeg",
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.TableRow",
+          "bounds": [
+            280,
+            1392,
+            1159,
+            1449
+          ],
+          "componentLabel": "Text Button",
+          "text": "Partial Eclipse Begins:"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.TableRow",
+          "bounds": [
+            280,
+            1449,
+            1159,
+            1506
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "text": "Full moon"
+        },
+        {
+          "resource-id": "com.dafftin.android.moon_phase:id/trGreatest",
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.TableRow",
+          "bounds": [
+            280,
+            1506,
+            1159,
+            1563
+          ],
+          "componentLabel": "Text Button",
+          "text": "Greatest Eclipse:"
+        },
+        {
+          "resource-id": "com.dafftin.android.moon_phase:id/trPartialEnd",
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.TableRow",
+          "bounds": [
+            280,
+            1563,
+            1159,
+            1620
+          ],
+          "componentLabel": "Text Button",
+          "text": "Partial Eclipse Ends:"
+        },
+        {
+          "resource-id": "com.dafftin.android.moon_phase:id/trPenumbralEnd",
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.TableRow",
+          "bounds": [
+            280,
+            1620,
+            1159,
+            1677
+          ],
+          "componentLabel": "Text Button",
+          "text": "Penumbral Eclipse Ends:"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.TableRow",
+          "bounds": [
+            280,
+            1677,
+            1159,
+            1734
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "text": "Moonrise: "
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.dafftin.android.moon_phase:id/ivEclipseType",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            75,
+            1111,
+            224,
+            1260
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "play",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.dafftin.android.moon_phase:id/btInfo",
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "bounds": [
+            1235,
+            1094,
+            1383,
+            1276
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Penumbral Duration:",
+          "resource-id": "com.dafftin.android.moon_phase:id/tvPenumbralDuration",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            280,
+            1756,
+            809,
+            1831
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "5h00m59s",
+          "resource-id": "com.dafftin.android.moon_phase:id/tvPenumbralDurationValue",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            809,
+            1774,
+            1159,
+            1831
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Partial Duration:",
+          "resource-id": "com.dafftin.android.moon_phase:id/tvPartialDuration",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            280,
+            1831,
+            809,
+            1888
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "1h55m20s",
+          "resource-id": "com.dafftin.android.moon_phase:id/tvPartialDurationValue",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            809,
+            1831,
+            1159,
+            1888
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Penumbral Magnitude:",
+          "resource-id": "com.dafftin.android.moon_phase:id/tvPenumbralMagnitude",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            280,
+            1888,
+            809,
+            1963
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "1.2888",
+          "resource-id": "com.dafftin.android.moon_phase:id/tvPenumbralMagnitudeValue",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            809,
+            1906,
+            1159,
+            1963
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Umbral Magnitude:",
+          "resource-id": "com.dafftin.android.moon_phase:id/tvUmbralMagnitude",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            280,
+            1963,
+            809,
+            2020
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0.2468",
+          "resource-id": "com.dafftin.android.moon_phase:id/tvUmbralMagnitudeValue",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            809,
+            1963,
+            1159,
+            2020
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Partial Eclipse",
+          "resource-id": "com.dafftin.android.moon_phase:id/tvEclipseName",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            242,
+            1100,
+            851,
+            1185
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "7 Aug 2017  13:20:32",
+          "resource-id": "com.dafftin.android.moon_phase:id/tvGreatestEclipseTimeDate",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            242,
+            1185,
+            851,
+            1270
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        57,
+        1093,
+        1383,
+        2020
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "iconClass": "arrow_backward",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.dafftin.android.moon_phase:id/ibTools",
+      "clickable": true,
+      "class": "android.widget.ImageButton",
+      "bounds": [
+        18,
+        0,
+        130,
+        140
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "refresh",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.dafftin.android.moon_phase:id/ibRefresh",
+      "clickable": true,
+      "class": "android.widget.ImageButton",
+      "bounds": [
+        1176,
+        0,
+        1288,
+        140
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "more",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.dafftin.android.moon_phase:id/ibOptions",
+      "clickable": true,
+      "class": "android.widget.ImageButton",
+      "bounds": [
+        1328,
+        0,
+        1440,
+        140
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "av_rewind",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.dafftin.android.moon_phase:id/ibPrevDay",
+      "clickable": true,
+      "class": "android.widget.ImageButton",
+      "bounds": [
+        18,
+        158,
+        154,
+        298
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "2017",
+      "resource-id": "com.dafftin.android.moon_phase:id/tCurTime",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        648,
+        158,
+        792,
+        298
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "iconClass": "av_forward",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.dafftin.android.moon_phase:id/ibNextDay",
+      "clickable": true,
+      "class": "android.widget.ImageButton",
+      "bounds": [
+        1286,
+        158,
+        1422,
+        298
+      ],
+      "componentLabel": "Icon"
+    }
+  ]
+}

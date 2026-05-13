@@ -1,0 +1,1242 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "org.stocktwits.android.activity:id/main_toolbar",
+      "children": [
+        {
+          "iconClass": "twitter",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            56,
+            140,
+            140,
+            224
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "",
+          "resource-id": "org.stocktwits.android.activity:id/action_streams",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            628,
+            98,
+            796,
+            266
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "notifications",
+          "resource-id": "org.stocktwits.android.activity:id/action_notifications",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            796,
+            98,
+            964,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "",
+          "resource-id": "org.stocktwits.android.activity:id/action_messages",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            964,
+            98,
+            1132,
+            266
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.stocktwits.android.activity:id/search_button",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1132,
+            98,
+            1300,
+            266
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "org.stocktwits.android.activity:id/sliding_tabs",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "Watchlist",
+          "bounds": [
+            0,
+            280,
+            629,
+            448
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "Trending",
+          "bounds": [
+            629,
+            280,
+            1258,
+            448
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button"
+        }
+      ],
+      "ancestors": [
+        "android.widget.HorizontalScrollView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "org.stocktwits.android.activity.utils.SlidingTabLayout.SlidingTabLayout",
+      "bounds": [
+        0,
+        280,
+        1258,
+        448
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "iconClass": "filter_list",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "org.stocktwits.android.activity:id/filterListButton",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        1258,
+        301,
+        1384,
+        427
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        450,
+        1440,
+        702
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "TWTR",
+          "resource-id": "org.stocktwits.android.activity:id/tickerTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            105,
+            518,
+            260,
+            584
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Twitter",
+          "resource-id": "org.stocktwits.android.activity:id/tickerSubTitleTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            105,
+            584,
+            1054,
+            641
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "resource-id": "org.stocktwits.android.activity:id/priceTextSwitcher",
+          "children": [
+            {
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "text": "16.52",
+              "bounds": [
+                1184,
+                510,
+                1328,
+                586
+              ],
+              "clickable": false,
+              "class": "android.widget.TextView",
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.widget.ViewSwitcher",
+            "android.widget.ViewAnimator",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextSwitcher",
+          "bounds": [
+            1184,
+            510,
+            1328,
+            586
+          ],
+          "componentLabel": "On/Off Switch"
+        },
+        {
+          "text": "▲ 0.71 (4.49%)",
+          "resource-id": "org.stocktwits.android.activity:id/priceChangeTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1054,
+            584,
+            1328,
+            641
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.stocktwits.android.activity:id/overFlowMenu",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1328,
+            518,
+            1412,
+            602
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        702,
+        1440,
+        954
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "GRPN",
+          "resource-id": "org.stocktwits.android.activity:id/tickerTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            105,
+            770,
+            255,
+            836
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Groupon",
+          "resource-id": "org.stocktwits.android.activity:id/tickerSubTitleTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            105,
+            836,
+            1054,
+            893
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "resource-id": "org.stocktwits.android.activity:id/priceTextSwitcher",
+          "children": [
+            {
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "text": "3.84",
+              "bounds": [
+                1216,
+                762,
+                1328,
+                838
+              ],
+              "clickable": false,
+              "class": "android.widget.TextView",
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.widget.ViewSwitcher",
+            "android.widget.ViewAnimator",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextSwitcher",
+          "bounds": [
+            1216,
+            762,
+            1328,
+            838
+          ],
+          "componentLabel": "On/Off Switch"
+        },
+        {
+          "text": "▲ 0.28 (7.77%)",
+          "resource-id": "org.stocktwits.android.activity:id/priceChangeTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1054,
+            836,
+            1328,
+            893
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.stocktwits.android.activity:id/overFlowMenu",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1328,
+            770,
+            1412,
+            854
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        954,
+        1440,
+        1206
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "ACIA",
+          "resource-id": "org.stocktwits.android.activity:id/tickerTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            105,
+            1022,
+            233,
+            1088
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Acacia Communications",
+          "resource-id": "org.stocktwits.android.activity:id/tickerSubTitleTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            105,
+            1088,
+            1054,
+            1145
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "resource-id": "org.stocktwits.android.activity:id/priceTextSwitcher",
+          "children": [
+            {
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "text": "66.45",
+              "bounds": [
+                1184,
+                1014,
+                1328,
+                1090
+              ],
+              "clickable": false,
+              "class": "android.widget.TextView",
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.widget.ViewSwitcher",
+            "android.widget.ViewAnimator",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextSwitcher",
+          "bounds": [
+            1184,
+            1014,
+            1328,
+            1090
+          ],
+          "componentLabel": "On/Off Switch"
+        },
+        {
+          "text": "▲ 4.84 (7.78%)",
+          "resource-id": "org.stocktwits.android.activity:id/priceChangeTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1054,
+            1088,
+            1328,
+            1145
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.stocktwits.android.activity:id/overFlowMenu",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1328,
+            1022,
+            1412,
+            1106
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1206,
+        1440,
+        1458
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "CRBP",
+          "resource-id": "org.stocktwits.android.activity:id/tickerTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            105,
+            1274,
+            250,
+            1340
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Corbus Pharmaceuticals Holdings Inc",
+          "resource-id": "org.stocktwits.android.activity:id/tickerSubTitleTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            105,
+            1340,
+            1030,
+            1397
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "resource-id": "org.stocktwits.android.activity:id/priceTextSwitcher",
+          "children": [
+            {
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "text": "8.65",
+              "bounds": [
+                1216,
+                1266,
+                1328,
+                1342
+              ],
+              "clickable": false,
+              "class": "android.widget.TextView",
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.widget.ViewSwitcher",
+            "android.widget.ViewAnimator",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextSwitcher",
+          "bounds": [
+            1216,
+            1266,
+            1328,
+            1342
+          ],
+          "componentLabel": "On/Off Switch"
+        },
+        {
+          "text": "▲ 1.15 (14.98%)",
+          "resource-id": "org.stocktwits.android.activity:id/priceChangeTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1030,
+            1340,
+            1328,
+            1397
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.stocktwits.android.activity:id/overFlowMenu",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1328,
+            1274,
+            1412,
+            1358
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1458,
+        1440,
+        1710
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "QQQ",
+          "resource-id": "org.stocktwits.android.activity:id/tickerTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            105,
+            1526,
+            222,
+            1592
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "PowerShares Nasdaq-100 QQQ",
+          "resource-id": "org.stocktwits.android.activity:id/tickerSubTitleTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            105,
+            1592,
+            1054,
+            1649
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "resource-id": "org.stocktwits.android.activity:id/priceTextSwitcher",
+          "children": [
+            {
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "text": "128.62",
+              "bounds": [
+                1152,
+                1518,
+                1328,
+                1594
+              ],
+              "clickable": false,
+              "class": "android.widget.TextView",
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.widget.ViewSwitcher",
+            "android.widget.ViewAnimator",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextSwitcher",
+          "bounds": [
+            1152,
+            1518,
+            1328,
+            1594
+          ],
+          "componentLabel": "On/Off Switch"
+        },
+        {
+          "text": "▲ 0.52 (0.41%)",
+          "resource-id": "org.stocktwits.android.activity:id/priceChangeTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1054,
+            1592,
+            1328,
+            1649
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.stocktwits.android.activity:id/overFlowMenu",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1328,
+            1526,
+            1412,
+            1610
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1710,
+        1440,
+        1962
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "FOSL",
+          "resource-id": "org.stocktwits.android.activity:id/tickerTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            105,
+            1778,
+            239,
+            1844
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Fossil, Inc.",
+          "resource-id": "org.stocktwits.android.activity:id/tickerSubTitleTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            105,
+            1844,
+            1030,
+            1901
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "resource-id": "org.stocktwits.android.activity:id/priceTextSwitcher",
+          "children": [
+            {
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "text": "19.83",
+              "bounds": [
+                1184,
+                1770,
+                1328,
+                1846
+              ],
+              "clickable": false,
+              "class": "android.widget.TextView",
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.widget.ViewSwitcher",
+            "android.widget.ViewAnimator",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextSwitcher",
+          "bounds": [
+            1184,
+            1770,
+            1328,
+            1846
+          ],
+          "componentLabel": "On/Off Switch"
+        },
+        {
+          "text": "▼ 3.15 (13.77%)",
+          "resource-id": "org.stocktwits.android.activity:id/priceChangeTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1030,
+            1844,
+            1328,
+            1901
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.stocktwits.android.activity:id/overFlowMenu",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1328,
+            1778,
+            1412,
+            1862
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1962,
+        1440,
+        2214
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "LC",
+          "resource-id": "org.stocktwits.android.activity:id/tickerTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            105,
+            2030,
+            170,
+            2096
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "LendingClub",
+          "resource-id": "org.stocktwits.android.activity:id/tickerSubTitleTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            105,
+            2096,
+            1054,
+            2153
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "resource-id": "org.stocktwits.android.activity:id/priceTextSwitcher",
+          "children": [
+            {
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "text": "6.06",
+              "bounds": [
+                1216,
+                2022,
+                1328,
+                2098
+              ],
+              "clickable": false,
+              "class": "android.widget.TextView",
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.widget.ViewSwitcher",
+            "android.widget.ViewAnimator",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextSwitcher",
+          "bounds": [
+            1216,
+            2022,
+            1328,
+            2098
+          ],
+          "componentLabel": "On/Off Switch"
+        },
+        {
+          "text": "▼ 0.62 (9.38%)",
+          "resource-id": "org.stocktwits.android.activity:id/priceChangeTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1054,
+            2096,
+            1328,
+            2153
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.stocktwits.android.activity:id/overFlowMenu",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1328,
+            2030,
+            1412,
+            2114
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        2214,
+        1440,
+        2392
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "OCLR",
+          "resource-id": "org.stocktwits.android.activity:id/tickerTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            105,
+            2282,
+            247,
+            2348
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Oclaro, Inc.",
+          "resource-id": "org.stocktwits.android.activity:id/tickerSubTitleTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            105,
+            2348,
+            1054,
+            2392
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "resource-id": "org.stocktwits.android.activity:id/priceTextSwitcher",
+          "children": [
+            {
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "text": "10.92",
+              "bounds": [
+                1184,
+                2274,
+                1328,
+                2350
+              ],
+              "clickable": false,
+              "class": "android.widget.TextView",
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.widget.ViewSwitcher",
+            "android.widget.ViewAnimator",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextSwitcher",
+          "bounds": [
+            1184,
+            2274,
+            1328,
+            2350
+          ],
+          "componentLabel": "On/Off Switch"
+        },
+        {
+          "text": "▲ 0.99 (9.93%)",
+          "resource-id": "org.stocktwits.android.activity:id/priceChangeTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1054,
+            2348,
+            1328,
+            2392
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.stocktwits.android.activity:id/overFlowMenu",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1328,
+            2282,
+            1412,
+            2366
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

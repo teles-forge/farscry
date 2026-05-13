@@ -1,0 +1,455 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.baidu.BaiduMap:id/routr_result_map_layout",
+      "children": [
+        {
+          "iconClass": "add",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.baidu.BaiduMap:id/zoom_in",
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "bounds": [
+            1265,
+            1695,
+            1405,
+            1835
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.baidu.BaiduMap:id/zoom_out",
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "bounds": [
+            1265,
+            1835,
+            1405,
+            1975
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "resource-id": "com.baidu.BaiduMap:id/location",
+          "children": [
+            {
+              "iconClass": "globe",
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.baidu.BaiduMap:id/location_icon",
+              "clickable": false,
+              "class": "android.widget.ImageView",
+              "bounds": [
+                37,
+                1938,
+                181,
+                2082
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "ancestors": [
+            "android.widget.ViewAnimator",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.ViewSwitcher",
+          "bounds": [
+            32,
+            1933,
+            186,
+            2087
+          ],
+          "componentLabel": "On/Off Switch"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.baidu.BaiduMap:id/route_report_error",
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "bounds": [
+            1265,
+            448,
+            1405,
+            588
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "location",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.baidu.BaiduMap:id/route_nearby_search",
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "bounds": [
+            1265,
+            602,
+            1405,
+            742
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": " 100米 ",
+          "resource-id": "com.baidu.BaiduMap:id/map_scale_bg",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            207,
+            1999,
+            332,
+            2076
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": " 100米 ",
+          "resource-id": "com.baidu.BaiduMap:id/map_scale",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            207,
+            1999,
+            332,
+            2076
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "com.baidu.mapframework.common.mapview.SimpleMapLayout",
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.baidu.baidumaps.common.mapview.DefaultMapLayout",
+      "bounds": [
+        0,
+        378,
+        1440,
+        2122
+      ],
+      "componentLabel": "Map View"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.baidu.BaiduMap:id/nav_btn_icon",
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        1086,
+        1989,
+        1387,
+        2290
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "出发",
+      "resource-id": "com.baidu.BaiduMap:id/nav_btn_text",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        1190,
+        2147,
+        1282,
+        2209
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "arrow_backward",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.baidu.BaiduMap:id/ibRouteTopBarLeft",
+      "clickable": true,
+      "class": "android.widget.ImageButton",
+      "bounds": [
+        0,
+        84,
+        172,
+        238
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "路线",
+      "resource-id": "com.baidu.BaiduMap:id/tvRouteTopBarTitle",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        172,
+        84,
+        1268,
+        238
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "resource-id": "com.baidu.BaiduMap:id/route_tab_item_rentcar",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        97,
+        238,
+        297,
+        378
+      ],
+      "componentLabel": "Text Button",
+      "text": "专车"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        297,
+        238,
+        542,
+        378
+      ],
+      "clickable": true,
+      "componentLabel": "Text Button",
+      "text": "出租车"
+    },
+    {
+      "resource-id": "com.baidu.BaiduMap:id/route_tab_item_car",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        542,
+        238,
+        742,
+        378
+      ],
+      "componentLabel": "Text Button",
+      "text": "驾车"
+    },
+    {
+      "resource-id": "com.baidu.BaiduMap:id/route_tab_item_bus",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        742,
+        238,
+        942,
+        378
+      ],
+      "componentLabel": "Text Button",
+      "text": "公交"
+    },
+    {
+      "resource-id": "com.baidu.BaiduMap:id/route_tab_item_walk",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        942,
+        238,
+        1142,
+        378
+      ],
+      "componentLabel": "Text Button",
+      "text": "步行"
+    },
+    {
+      "resource-id": "com.baidu.BaiduMap:id/route_tab_item_bike",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        1142,
+        238,
+        1342,
+        378
+      ],
+      "componentLabel": "Text Button",
+      "text": "骑行"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.baidu.BaiduMap:id/bar_shadow",
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        0,
+        2122,
+        1440,
+        2123
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        0,
+        2391,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "componentLabel": "Image"
+    },
+    {
+      "iconClass": "expand_less",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.baidu.BaiduMap:id/icon_arrow_up",
+      "clickable": true,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        693,
+        2158,
+        746,
+        2183
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "3分钟",
+      "resource-id": "com.baidu.BaiduMap:id/tv_route_totaltime",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        53,
+        2201,
+        197,
+        2277
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "940米",
+      "resource-id": "com.baidu.BaiduMap:id/tv_route_totaldistance",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        232,
+        2201,
+        384,
+        2277
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "消耗35大卡",
+      "resource-id": "com.baidu.BaiduMap:id/rl_ItemCalorie",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        56,
+        2295,
+        272,
+        2352
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

@@ -1,0 +1,641 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "pl.wp.android.openfm:id/toolbar_actionbar",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "nirvana",
+          "resource-id": "pl.wp.android.openfm:id/search_src_text",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatAutoCompleteTextView",
+            "android.widget.AutoCompleteTextView",
+            "android.widget.EditText",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.SearchView$SearchAutoComplete",
+          "bounds": [
+            280,
+            119,
+            1204,
+            245
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "close",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "pl.wp.android.openfm:id/search_close_btn",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1204,
+            98,
+            1344,
+            266
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "pl.wp.android.openfm:id/fragment_channel_list",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "pl.wp.android.openfm.ui.views.SearchResultSectionHeaderView",
+          "bounds": [
+            0,
+            308,
+            1440,
+            476
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "Wykonawcy",
+              "resource-id": "pl.wp.android.openfm:id/line_one",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                56,
+                359,
+                1384,
+                425
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "pl.wp.android.openfm.ui.views.SearchResultMostPlayedHeaderView",
+          "bounds": [
+            0,
+            476,
+            1440,
+            618
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "Nirvana",
+              "resource-id": "pl.wp.android.openfm:id/most_played_line_one",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                56,
+                476,
+                1384,
+                552
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "często gramy na:",
+              "resource-id": "pl.wp.android.openfm:id/most_played_line_two",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                56,
+                552,
+                1384,
+                618
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "pl.wp.android.openfm.ui.views.ChannelItemView",
+          "bounds": [
+            0,
+            618,
+            1440,
+            938
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "pl.wp.android.openfm:id/channel_logo",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                56,
+                708,
+                196,
+                848
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "500 Rock Hits",
+              "resource-id": "pl.wp.android.openfm:id/channel_name",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                196,
+                674,
+                606,
+                750
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Guns N' Roses - November Rain (edit)",
+              "resource-id": "pl.wp.android.openfm:id/channel_first_track",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                196,
+                750,
+                1066,
+                816
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Fall Out Boy - This Ain't a Scene, It's an Arms Race",
+              "resource-id": "pl.wp.android.openfm:id/channel_second_track",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                196,
+                816,
+                1333,
+                882
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "pl.wp.android.openfm.ui.views.ChannelItemView",
+          "bounds": [
+            0,
+            938,
+            1440,
+            1258
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "iconClass": "star",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "pl.wp.android.openfm:id/channel_logo",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                56,
+                1028,
+                196,
+                1168
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "text": "Giganci Rocka",
+              "resource-id": "pl.wp.android.openfm:id/channel_name",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                196,
+                994,
+                697,
+                1070
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "The Police - Every Breath You Take",
+              "resource-id": "pl.wp.android.openfm:id/channel_first_track",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                196,
+                1070,
+                1002,
+                1136
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Scorpions - Send Me an Angel",
+              "resource-id": "pl.wp.android.openfm:id/channel_second_track",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                196,
+                1136,
+                902,
+                1202
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "pl.wp.android.openfm.ui.views.ChannelItemView",
+          "bounds": [
+            0,
+            1258,
+            1440,
+            1578
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "pl.wp.android.openfm:id/channel_logo",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                56,
+                1348,
+                196,
+                1488
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "500 Alternative Hits",
+              "resource-id": "pl.wp.android.openfm:id/channel_name",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                196,
+                1314,
+                754,
+                1390
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Kent - Music Non Stop",
+              "resource-id": "pl.wp.android.openfm:id/channel_first_track",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                196,
+                1390,
+                736,
+                1456
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Arctic Monkeys - When the Sun Goes Down",
+              "resource-id": "pl.wp.android.openfm:id/channel_second_track",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                196,
+                1456,
+                1187,
+                1522
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "pl.wp.android.openfm.ui.views.ChannelItemView",
+          "bounds": [
+            0,
+            1578,
+            1440,
+            1898
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "pl.wp.android.openfm:id/channel_logo",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                56,
+                1668,
+                196,
+                1808
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "Alt Classic",
+              "resource-id": "pl.wp.android.openfm:id/channel_name",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                196,
+                1634,
+                522,
+                1710
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "The Velvet Underground - I'm Waiting for the Man",
+              "resource-id": "pl.wp.android.openfm:id/channel_first_track",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                196,
+                1710,
+                1318,
+                1776
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Belle and Sebastian - Get Me Away from Here, I'm Dying",
+              "resource-id": "pl.wp.android.openfm:id/channel_second_track",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                196,
+                1776,
+                1384,
+                1842
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "ancestors": [
+        "android.widget.ViewAnimator",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "pl.wp.android.openfm.ui.views.ChannelListSwitcher",
+      "bounds": [
+        0,
+        280,
+        1440,
+        2182
+      ],
+      "componentLabel": "On/Off Switch"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "pl.wp.android.openfm:id/mini_player_album_art",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        0,
+        2182,
+        210,
+        2392
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.support.design.widget.FloatingActionButton",
+        "android.support.design.widget.VisibilityAwareImageButton",
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "pl.wp.android.openfm:id/mini_player_button_play",
+      "clickable": true,
+      "class": "pl.wp.android.openfm.ui.widgets.PlayPauseButton",
+      "bounds": [
+        1272,
+        2217,
+        1412,
+        2357
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Music Non Stop",
+      "resource-id": "pl.wp.android.openfm:id/mini_player_line_one",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        266,
+        2221,
+        613,
+        2287
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Kent",
+      "resource-id": "pl.wp.android.openfm:id/mini_player_line_two",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        266,
+        2287,
+        365,
+        2353
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

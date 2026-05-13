@@ -1,0 +1,295 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.boondoggle.autocalc:id/action_bar_container",
+      "children": [
+        {
+          "text": "Car Loan Calculator: Affordability",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            135,
+            1100,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "If you want to pay $450.00 per month over 48.00 months with no trade-in, you can afford to finance $19,733.82. Remember that this value includes the value of the new car plus taxes and dealer fees assessed during purchase.",
+      "resource-id": "com.boondoggle.autocalc:id/var_affordexplain",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        53,
+        1253,
+        1387,
+        1490
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Desired Amt/Month ($)",
+      "resource-id": "com.boondoggle.autocalc:id/S_monthlypay1",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        18,
+        330,
+        522,
+        396
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "450",
+      "resource-id": "com.boondoggle.autocalc:id/var_monthlypay1",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatEditText",
+      "bounds": [
+        522,
+        280,
+        1422,
+        438
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Interest Rate (%)",
+      "resource-id": "com.boondoggle.autocalc:id/S_interestpay1",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        18,
+        488,
+        522,
+        554
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "4.5",
+      "resource-id": "com.boondoggle.autocalc:id/var_interestpay1",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatEditText",
+      "bounds": [
+        522,
+        438,
+        1422,
+        596
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Desired Term (Months)",
+      "resource-id": "com.boondoggle.autocalc:id/S_term",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        18,
+        646,
+        522,
+        712
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "48",
+      "resource-id": "com.boondoggle.autocalc:id/var_term",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatEditText",
+      "bounds": [
+        522,
+        596,
+        1422,
+        754
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Calculate",
+      "resource-id": "com.boondoggle.autocalc:id/buttoncalc",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        1069,
+        754,
+        1422,
+        922
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "calculate"
+    },
+    {
+      "text": "Trade-in Value ($)",
+      "resource-id": "com.boondoggle.autocalc:id/S_tradein",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        18,
+        972,
+        522,
+        1038
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "com.boondoggle.autocalc:id/var_tradein",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatEditText",
+      "bounds": [
+        522,
+        922,
+        1422,
+        1080
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Total You Can Afford",
+      "resource-id": "com.boondoggle.autocalc:id/S_amountafford",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        18,
+        1145,
+        522,
+        1211
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "$19,733.82",
+      "resource-id": "com.boondoggle.autocalc:id/var_amountafford",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        522,
+        1115,
+        1422,
+        1218
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

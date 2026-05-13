@@ -1,0 +1,492 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.fairfax.domain:id/toolbar",
+      "children": [
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Aberfoyle Park",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            210,
+            135,
+            676,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "compare",
+          "resource-id": "com.fairfax.domain:id/menu_sort",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            936,
+            98,
+            1104,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "",
+          "resource-id": "com.fairfax.domain:id/menu_search",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1272,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "notifications",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fairfax.domain:id/notification_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1157,
+            151,
+            1218,
+            212
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "3",
+          "resource-id": "com.fairfax.domain:id/notif_count",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1188,
+            126,
+            1244,
+            182
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.support.v7.widget.Toolbar",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.fairfax.domain.ui.DomainToolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "Map",
+      "resource-id": "com.fairfax.domain:id/show_list_buttons",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        0,
+        2224,
+        1001,
+        2392
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "map"
+    },
+    {
+      "text": "Save Search",
+      "resource-id": "com.fairfax.domain:id/save_search_button",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        1001,
+        2224,
+        1440,
+        2392
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "save"
+    },
+    {
+      "text": "57 homes • Buy • Sorted by Featured",
+      "resource-id": "com.fairfax.domain:id/listing_lblTotalPropertyCount",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        28,
+        296,
+        1284,
+        362
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "close",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.fairfax.domain:id/infoBar_clear",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        1312,
+        300,
+        1412,
+        358
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "resource-id": "com.fairfax.domain:id/list_item_root",
+      "children": [
+        {
+          "ancestors": [
+            "com.fairfax.domain.ui.AspectRatioImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fairfax.domain:id/property_image_view",
+          "clickable": true,
+          "class": "com.fairfax.domain.ui.PicassoImageView",
+          "bounds": [
+            0,
+            378,
+            1440,
+            1338
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "star",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fairfax.domain:id/shortlist_image",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1228,
+            378,
+            1440,
+            587
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "2 Casuarina Place, Aberfoyle Park",
+          "resource-id": "com.fairfax.domain:id/listing_address",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            0,
+            1338,
+            1139,
+            1496
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "3 Beds",
+          "resource-id": "com.fairfax.domain:id/beds",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            1496,
+            280,
+            1555
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "2 Baths",
+          "resource-id": "com.fairfax.domain:id/baths",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            280,
+            1496,
+            520,
+            1555
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "3 Parking",
+          "resource-id": "com.fairfax.domain:id/parking",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            520,
+            1496,
+            1068,
+            1555
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fairfax.domain:id/agency_logo",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1153,
+            1464,
+            1426,
+            1548
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "avatar",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fairfax.domain:id/agent_photo",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1193,
+            1236,
+            1386,
+            1429
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "$419,000 - $449,000",
+          "resource-id": "com.fairfax.domain:id/listing_price",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            0,
+            1188,
+            774,
+            1338
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "New",
+          "resource-id": "com.fairfax.domain:id/listing_status",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            1119,
+            203,
+            1188
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        378,
+        1440,
+        1625
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.fairfax.domain:id/list_item_root",
+      "children": [
+        {
+          "ancestors": [
+            "com.fairfax.domain.ui.AspectRatioImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fairfax.domain:id/property_image_view",
+          "clickable": true,
+          "class": "com.fairfax.domain.ui.PicassoImageView",
+          "bounds": [
+            0,
+            1639,
+            1440,
+            2392
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "star",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fairfax.domain:id/shortlist_image",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1228,
+            1639,
+            1440,
+            1848
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Updated",
+          "resource-id": "com.fairfax.domain:id/listing_status",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            2380,
+            281,
+            2392
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1639,
+        1440,
+        2392
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

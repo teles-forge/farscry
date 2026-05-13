@@ -1,0 +1,1203 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "ancestors": [
+        "android.support.v7.widget.Toolbar",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.nbc.news.view.NbcToolBar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            154,
+            105,
+            361,
+            259
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            154,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "San Francisco",
+          "resource-id": "com.nbcuni.telemundostation.telemundo52:id/title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.nbc.news.view.NbcTextView",
+          "bounds": [
+            546,
+            139,
+            893,
+            224
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "iconClass": "add",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.nbcuni.telemundostation.telemundo52:id/add_location_icon",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1337,
+            153,
+            1415,
+            209
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.nbcuni.telemundostation.telemundo52:id/frame_layout",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            280,
+            1440,
+            298
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.v7.widget.RecyclerView",
+          "bounds": [
+            0,
+            280,
+            1440,
+            2392
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "resource-id": "com.nbcuni.telemundostation.telemundo52:id/root_view",
+              "children": [
+                {
+                  "text": "PRONÓSTICO PARA LOS PRÓXIMOS 10 DÍAS",
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/headline",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": true,
+                  "class": "com.nbc.news.view.NbcTextView",
+                  "bounds": [
+                    0,
+                    329,
+                    1212,
+                    503
+                  ],
+                  "componentLabel": "Text Button"
+                }
+              ],
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.widget.RelativeLayout",
+              "bounds": [
+                0,
+                280,
+                1440,
+                503
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "resource-id": "com.nbcuni.telemundostation.telemundo52:id/weather_daily_forecast_layout",
+              "children": [
+                {
+                  "iconClass": "weather",
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/weather_image",
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NetworkImageView",
+                  "bounds": [
+                    513,
+                    572,
+                    667,
+                    736
+                  ],
+                  "componentLabel": "Icon"
+                },
+                {
+                  "text": "62°",
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/max_temp_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    667,
+                    603,
+                    883,
+                    706
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "56°",
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/min_temp_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    883,
+                    603,
+                    1100,
+                    706
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "50%",
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/rainfall_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    1100,
+                    614,
+                    1344,
+                    695
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "iconClass": "arrow_forward",
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    1344,
+                    623,
+                    1391,
+                    686
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "componentLabel": "Icon"
+                },
+                {
+                  "text": "LUNES",
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/day_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NbcTextView",
+                  "bounds": [
+                    49,
+                    563,
+                    173,
+                    616
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "Aguaceros por la tarde",
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/weather_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NbcTextView",
+                  "bounds": [
+                    49,
+                    616,
+                    513,
+                    746
+                  ],
+                  "componentLabel": "Text"
+                }
+              ],
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.widget.LinearLayout",
+              "bounds": [
+                0,
+                503,
+                1440,
+                806
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "resource-id": "com.nbcuni.telemundostation.telemundo52:id/weather_daily_forecast_layout",
+              "children": [
+                {
+                  "iconClass": "weather",
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/weather_image",
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NetworkImageView",
+                  "bounds": [
+                    513,
+                    875,
+                    667,
+                    1039
+                  ],
+                  "componentLabel": "Icon"
+                },
+                {
+                  "text": "60°",
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/max_temp_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    667,
+                    906,
+                    883,
+                    1009
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "51°",
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/min_temp_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    883,
+                    906,
+                    1100,
+                    1009
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "80%",
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/rainfall_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    1100,
+                    917,
+                    1344,
+                    998
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "iconClass": "arrow_forward",
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    1344,
+                    926,
+                    1391,
+                    989
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "componentLabel": "Icon"
+                },
+                {
+                  "text": "MARTES",
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/day_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NbcTextView",
+                  "bounds": [
+                    49,
+                    866,
+                    204,
+                    919
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "Tormentas en la mañana",
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/weather_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NbcTextView",
+                  "bounds": [
+                    49,
+                    919,
+                    513,
+                    1049
+                  ],
+                  "componentLabel": "Text"
+                }
+              ],
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.widget.LinearLayout",
+              "bounds": [
+                0,
+                806,
+                1440,
+                1109
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "resource-id": "com.nbcuni.telemundostation.telemundo52:id/weather_daily_forecast_layout",
+              "children": [
+                {
+                  "iconClass": "flash",
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/weather_image",
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NetworkImageView",
+                  "bounds": [
+                    513,
+                    1155,
+                    667,
+                    1319
+                  ],
+                  "componentLabel": "Icon"
+                },
+                {
+                  "text": "55°",
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/max_temp_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    667,
+                    1185,
+                    883,
+                    1288
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "46°",
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/min_temp_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    883,
+                    1185,
+                    1100,
+                    1288
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "80%",
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/rainfall_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    1100,
+                    1196,
+                    1344,
+                    1277
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "iconClass": "arrow_forward",
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    1344,
+                    1205,
+                    1391,
+                    1268
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "componentLabel": "Icon"
+                },
+                {
+                  "text": "MIÉRCOLES",
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/day_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NbcTextView",
+                  "bounds": [
+                    49,
+                    1169,
+                    264,
+                    1222
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "Tormentas",
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/weather_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NbcTextView",
+                  "bounds": [
+                    49,
+                    1222,
+                    335,
+                    1288
+                  ],
+                  "componentLabel": "Text"
+                }
+              ],
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.widget.LinearLayout",
+              "bounds": [
+                0,
+                1109,
+                1440,
+                1365
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "resource-id": "com.nbcuni.telemundostation.telemundo52:id/weather_daily_forecast_layout",
+              "children": [
+                {
+                  "iconClass": "weather",
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/weather_image",
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NetworkImageView",
+                  "bounds": [
+                    513,
+                    1434,
+                    667,
+                    1598
+                  ],
+                  "componentLabel": "Icon"
+                },
+                {
+                  "text": "57°",
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/max_temp_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    667,
+                    1465,
+                    883,
+                    1568
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "50°",
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/min_temp_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    883,
+                    1465,
+                    1100,
+                    1568
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "0%",
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/rainfall_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    1100,
+                    1476,
+                    1344,
+                    1557
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "iconClass": "arrow_forward",
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    1344,
+                    1485,
+                    1391,
+                    1548
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "componentLabel": "Icon"
+                },
+                {
+                  "text": "JUEVES",
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/day_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NbcTextView",
+                  "bounds": [
+                    49,
+                    1425,
+                    194,
+                    1478
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "Mayormente soleado",
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/weather_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NbcTextView",
+                  "bounds": [
+                    49,
+                    1478,
+                    513,
+                    1608
+                  ],
+                  "componentLabel": "Text"
+                }
+              ],
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.widget.LinearLayout",
+              "bounds": [
+                0,
+                1365,
+                1440,
+                1668
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "resource-id": "com.nbcuni.telemundostation.telemundo52:id/weather_daily_forecast_layout",
+              "children": [
+                {
+                  "iconClass": "weather",
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/weather_image",
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NetworkImageView",
+                  "bounds": [
+                    513,
+                    1714,
+                    667,
+                    1878
+                  ],
+                  "componentLabel": "Icon"
+                },
+                {
+                  "text": "56°",
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/max_temp_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    667,
+                    1744,
+                    883,
+                    1847
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "49°",
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/min_temp_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    883,
+                    1744,
+                    1100,
+                    1847
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "90%",
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/rainfall_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    1100,
+                    1755,
+                    1344,
+                    1836
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "iconClass": "arrow_forward",
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    1344,
+                    1764,
+                    1391,
+                    1827
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "componentLabel": "Icon"
+                },
+                {
+                  "text": "VIERNES",
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/day_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NbcTextView",
+                  "bounds": [
+                    49,
+                    1728,
+                    210,
+                    1781
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "Lluvia / Viento",
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/weather_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NbcTextView",
+                  "bounds": [
+                    49,
+                    1781,
+                    424,
+                    1847
+                  ],
+                  "componentLabel": "Text"
+                }
+              ],
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.widget.LinearLayout",
+              "bounds": [
+                0,
+                1668,
+                1440,
+                1924
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "resource-id": "com.nbcuni.telemundostation.telemundo52:id/weather_daily_forecast_layout",
+              "children": [
+                {
+                  "iconClass": "weather",
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/weather_image",
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NetworkImageView",
+                  "bounds": [
+                    513,
+                    1993,
+                    667,
+                    2157
+                  ],
+                  "componentLabel": "Icon"
+                },
+                {
+                  "text": "57°",
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/max_temp_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    667,
+                    2024,
+                    883,
+                    2127
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "46°",
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/min_temp_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    883,
+                    2024,
+                    1100,
+                    2127
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "30%",
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/rainfall_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    1100,
+                    2035,
+                    1344,
+                    2116
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "iconClass": "arrow_forward",
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    1344,
+                    2044,
+                    1391,
+                    2107
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "componentLabel": "Icon"
+                },
+                {
+                  "text": "SÁBADO",
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/day_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NbcTextView",
+                  "bounds": [
+                    49,
+                    1984,
+                    202,
+                    2037
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "Aguaceros en la mañana",
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/weather_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NbcTextView",
+                  "bounds": [
+                    49,
+                    2037,
+                    513,
+                    2167
+                  ],
+                  "componentLabel": "Text"
+                }
+              ],
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.widget.LinearLayout",
+              "bounds": [
+                0,
+                1924,
+                1440,
+                2227
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "resource-id": "com.nbcuni.telemundostation.telemundo52:id/weather_daily_forecast_layout",
+              "children": [
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/weather_image",
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NetworkImageView",
+                  "bounds": [
+                    513,
+                    2296,
+                    667,
+                    2392
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "text": "56°",
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/max_temp_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    667,
+                    2327,
+                    883,
+                    2392
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "46°",
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/min_temp_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    883,
+                    2327,
+                    1100,
+                    2392
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "50%",
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/rainfall_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    1100,
+                    2338,
+                    1344,
+                    2392
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "iconClass": "arrow_forward",
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    1344,
+                    2347,
+                    1391,
+                    2392
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "componentLabel": "Icon"
+                },
+                {
+                  "text": "DOMINGO",
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/day_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NbcTextView",
+                  "bounds": [
+                    49,
+                    2287,
+                    228,
+                    2340
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "Aguaceros por la tarde",
+                  "resource-id": "com.nbcuni.telemundostation.telemundo52:id/weather_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NbcTextView",
+                  "bounds": [
+                    49,
+                    2340,
+                    513,
+                    2392
+                  ],
+                  "componentLabel": "Text"
+                }
+              ],
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.widget.LinearLayout",
+              "bounds": [
+                0,
+                2227,
+                1440,
+                2392
+              ],
+              "componentLabel": "List Item"
+            }
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.nbc.news.view.NbcLayout",
+      "bounds": [
+        0,
+        280,
+        1440,
+        2392
+      ],
+      "componentLabel": "Drawer"
+    }
+  ]
+}

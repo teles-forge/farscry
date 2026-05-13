@@ -1,0 +1,450 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "org.adblockplus.browser:id/progress",
+      "clickable": false,
+      "class": "org.mozilla.gecko.toolbar.ToolbarProgressView",
+      "bounds": [
+        0,
+        2071,
+        1440,
+        2120
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "org.mozilla.gecko.tabs.TabsPanel$TabsPanelToolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        252
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "resource-id": "org.adblockplus.browser:id/tab_widget",
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                0,
+                84,
+                210,
+                252
+              ],
+              "clickable": true,
+              "class": "android.widget.ImageButton",
+              "componentLabel": "Image"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                210,
+                84,
+                420,
+                252
+              ],
+              "clickable": true,
+              "class": "android.widget.ImageButton",
+              "componentLabel": "Image"
+            }
+          ],
+          "ancestors": [
+            "android.widget.TabWidget",
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "org.mozilla.gecko.widget.IconTabWidget",
+          "bounds": [
+            0,
+            84,
+            420,
+            252
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "add",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.adblockplus.browser:id/add_tab",
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "bounds": [
+            1104,
+            84,
+            1272,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.adblockplus.browser:id/menu",
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "bounds": [
+            1272,
+            84,
+            1440,
+            252
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "org.adblockplus.browser:id/browser_toolbar",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.adblockplus.browser:id/url_bar_entry",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            28,
+            1958,
+            1068,
+            2070
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "org.mozilla.gecko.widget.ThemedImageButton",
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.adblockplus.browser:id/menu",
+          "clickable": true,
+          "class": "org.mozilla.gecko.toolbar.ShapedButton",
+          "bounds": [
+            1272,
+            1930,
+            1440,
+            2098
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "org.mozilla.gecko.toolbar.ShapedButton",
+            "org.mozilla.gecko.widget.ThemedImageButton",
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.adblockplus.browser:id/tabs",
+          "clickable": true,
+          "class": "org.mozilla.gecko.toolbar.PhoneTabsButton",
+          "bounds": [
+            1048,
+            1930,
+            1272,
+            2098
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.adblockplus.browser:id/favicon",
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "bounds": [
+            56,
+            1930,
+            131,
+            2098
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "close",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.adblockplus.browser:id/stop",
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "bounds": [
+            942,
+            1930,
+            1054,
+            2098
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "org.mozilla.gecko.toolbar.BrowserToolbarPhoneBase",
+        "org.mozilla.gecko.toolbar.BrowserToolbar",
+        "org.mozilla.gecko.widget.ThemedRelativeLayout",
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "org.mozilla.gecko.toolbar.BrowserToolbarPhone",
+      "bounds": [
+        0,
+        1930,
+        1440,
+        2098
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "Adblock Browser Home",
+      "resource-id": "org.adblockplus.browser:id/title",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        624,
+        273,
+        1321,
+        610
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "org.adblockplus.browser:id/close",
+      "clickable": true,
+      "class": "android.widget.ImageButton",
+      "bounds": [
+        1321,
+        273,
+        1440,
+        610
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "org.adblockplus.browser:id/thumbnail",
+      "clickable": false,
+      "class": "org.mozilla.gecko.widget.ThumbnailView",
+      "bounds": [
+        53,
+        284,
+        613,
+        599
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "HISTORY",
+      "bounds": [
+        0,
+        2135,
+        197,
+        2201
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "componentLabel": "Text Button",
+      "textButtonClass": "history"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "TOP SITES",
+      "bounds": [
+        604,
+        2135,
+        836,
+        2201
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "BOOKMARKS",
+      "bounds": [
+        1145,
+        2135,
+        1440,
+        2201
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "componentLabel": "Text Button"
+    },
+    {
+      "ancestors": [
+        "android.widget.GridView",
+        "android.widget.AbsListView",
+        "android.widget.AdapterView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "org.mozilla.gecko.home.TopSitesGridView",
+      "bounds": [
+        0,
+        2238,
+        1440,
+        2392
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "iconClass": "font",
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "org.adblockplus.browser:id/thumbnail",
+              "clickable": false,
+              "class": "org.mozilla.gecko.home.TopSitesThumbnailView",
+              "bounds": [
+                43,
+                2281,
+                702,
+                2392
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "ancestors": [
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "org.mozilla.gecko.home.TopSitesGridItemView",
+          "bounds": [
+            25,
+            2263,
+            720,
+            2392
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "org.adblockplus.browser:id/thumbnail",
+              "clickable": false,
+              "class": "org.mozilla.gecko.home.TopSitesThumbnailView",
+              "bounds": [
+                738,
+                2281,
+                1397,
+                2392
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "ancestors": [
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "org.mozilla.gecko.home.TopSitesGridItemView",
+          "bounds": [
+            720,
+            2263,
+            1415,
+            2392
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

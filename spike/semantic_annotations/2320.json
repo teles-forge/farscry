@@ -1,0 +1,677 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.hi5.app:id/screen_toolbar",
+      "children": [
+        {
+          "text": "Feed",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            252,
+            140,
+            409,
+            224
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            14,
+            84,
+            210,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "sliders",
+          "resource-id": "com.hi5.app:id/menu_filters",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            922,
+            98,
+            1090,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "notifications",
+          "resource-id": "com.hi5.app:id/menu_alerts",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1090,
+            98,
+            1258,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "edit",
+          "resource-id": "com.hi5.app:id/menu_compose",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1258,
+            98,
+            1426,
+            266
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.support.v7.widget.Toolbar",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.tagged.view.TaggedToolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.google.android.gms.ads.doubleclick.PublisherAdView",
+      "bounds": [
+        0,
+        2217,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "com.mopub.mobileads.BaseHtmlWebView",
+            "com.mopub.mobileads.BaseWebView",
+            "android.webkit.WebView",
+            "android.widget.AbsoluteLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            160,
+            2217,
+            1280,
+            2392
+          ],
+          "clickable": true,
+          "class": "com.mopub.mobileads.HtmlBannerWebView",
+          "componentLabel": "Advertisement"
+        }
+      ],
+      "componentLabel": "Advertisement"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.design.widget.TabLayout$SlidingTabStrip",
+      "bounds": [
+        0,
+        280,
+        1440,
+        448
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Everyone",
+          "resource-id": "com.hi5.app:id/tab_title",
+          "ancestors": [
+            "com.tagged.view.ForegroundSupportingTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.tagged.view.CustomFontTextView",
+          "bounds": [
+            137,
+            280,
+            385,
+            448
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Friends",
+          "resource-id": "com.hi5.app:id/tab_title",
+          "ancestors": [
+            "com.tagged.view.ForegroundSupportingTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.tagged.view.CustomFontTextView",
+          "bounds": [
+            660,
+            280,
+            859,
+            448
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Me",
+          "resource-id": "com.hi5.app:id/tab_title",
+          "ancestors": [
+            "com.tagged.view.ForegroundSupportingTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.tagged.view.CustomFontTextView",
+          "bounds": [
+            1184,
+            280,
+            1253,
+            448
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        448,
+        1440,
+        1180
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "com.makeramen.roundedimageview.RoundedImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.hi5.app:id/photoImageView",
+          "clickable": true,
+          "class": "com.tagged.view.ProfileImageView",
+          "bounds": [
+            84,
+            518,
+            224,
+            658
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "com.makeramen.roundedimageview.RoundedImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.hi5.app:id/options",
+          "clickable": true,
+          "class": "com.tagged.view.TaggedImageView",
+          "bounds": [
+            1300,
+            518,
+            1384,
+            602
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Queen_Naye",
+          "resource-id": "com.hi5.app:id/posterNameTextView",
+          "ancestors": [
+            "com.tagged.view.CustomFontTextView",
+            "com.tagged.view.ForegroundSupportingTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.tagged.view.EmojiAwareTextView",
+          "bounds": [
+            280,
+            522,
+            928,
+            581
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "0 min. ago",
+          "resource-id": "com.hi5.app:id/timestampTextView",
+          "ancestors": [
+            "com.tagged.view.ForegroundSupportingTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.tagged.view.CustomFontTextView",
+          "bounds": [
+            280,
+            595,
+            507,
+            654
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "I forgot a lot of ppl who see my post ain't from New Orleans that was a song I wasn't talkin bout nobody ....... yet ",
+          "resource-id": "com.hi5.app:id/post_content",
+          "ancestors": [
+            "com.tagged.view.CustomFontTextView",
+            "com.tagged.view.ForegroundSupportingTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.tagged.view.EmojiAwareTextView",
+          "bounds": [
+            84,
+            714,
+            1356,
+            931
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "iconClass": "thumbs_up",
+          "ancestors": [
+            "com.makeramen.roundedimageview.RoundedImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.hi5.app:id/likeImageButton",
+          "clickable": true,
+          "class": "com.tagged.view.TaggedImageView",
+          "bounds": [
+            1076,
+            1005,
+            1216,
+            1145
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "chat",
+          "ancestors": [
+            "com.makeramen.roundedimageview.RoundedImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.hi5.app:id/commentImageButton",
+          "clickable": true,
+          "class": "com.tagged.view.TaggedImageView",
+          "bounds": [
+            1244,
+            1005,
+            1384,
+            1145
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        1180,
+        1440,
+        1772
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "com.makeramen.roundedimageview.RoundedImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.hi5.app:id/photoImageView",
+          "clickable": true,
+          "class": "com.tagged.view.ProfileImageView",
+          "bounds": [
+            84,
+            1250,
+            224,
+            1390
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "com.makeramen.roundedimageview.RoundedImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.hi5.app:id/options",
+          "clickable": true,
+          "class": "com.tagged.view.TaggedImageView",
+          "bounds": [
+            1300,
+            1250,
+            1384,
+            1334
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "SupaheadJr",
+          "resource-id": "com.hi5.app:id/posterNameTextView",
+          "ancestors": [
+            "com.tagged.view.CustomFontTextView",
+            "com.tagged.view.ForegroundSupportingTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.tagged.view.EmojiAwareTextView",
+          "bounds": [
+            280,
+            1254,
+            901,
+            1313
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "0 min. ago",
+          "resource-id": "com.hi5.app:id/timestampTextView",
+          "ancestors": [
+            "com.tagged.view.ForegroundSupportingTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.tagged.view.CustomFontTextView",
+          "bounds": [
+            280,
+            1327,
+            507,
+            1386
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "DL FREAKS INBOX ME",
+          "resource-id": "com.hi5.app:id/post_content",
+          "ancestors": [
+            "com.tagged.view.CustomFontTextView",
+            "com.tagged.view.ForegroundSupportingTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.tagged.view.EmojiAwareTextView",
+          "bounds": [
+            84,
+            1446,
+            1356,
+            1523
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "iconClass": "thumbs_up",
+          "ancestors": [
+            "com.makeramen.roundedimageview.RoundedImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.hi5.app:id/likeImageButton",
+          "clickable": true,
+          "class": "com.tagged.view.TaggedImageView",
+          "bounds": [
+            1076,
+            1597,
+            1216,
+            1737
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "chat",
+          "ancestors": [
+            "com.makeramen.roundedimageview.RoundedImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.hi5.app:id/commentImageButton",
+          "clickable": true,
+          "class": "com.tagged.view.TaggedImageView",
+          "bounds": [
+            1244,
+            1597,
+            1384,
+            1737
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "1 like",
+          "resource-id": "com.hi5.app:id/numLikesTextView",
+          "ancestors": [
+            "com.tagged.view.ForegroundSupportingTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.tagged.view.CustomFontTextView",
+          "bounds": [
+            84,
+            1637,
+            189,
+            1696
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.hi5.app:id/root",
+      "children": [
+        {
+          "iconClass": "avatar",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.hi5.app:id/native_ad_icon_image",
+          "clickable": true,
+          "class": "com.makeramen.roundedimageview.RoundedImageView",
+          "bounds": [
+            84,
+            1842,
+            224,
+            1982
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "How to keep more of your 1099-MISC money",
+          "resource-id": "com.hi5.app:id/native_ad_title",
+          "ancestors": [
+            "com.tagged.view.ForegroundSupportingTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.tagged.view.CustomFontTextView",
+          "bounds": [
+            280,
+            1842,
+            1285,
+            1901
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "Sponsored",
+          "resource-id": "com.hi5.app:id/native_ad_sponsored_text",
+          "ancestors": [
+            "com.tagged.view.ForegroundSupportingTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.tagged.view.CustomFontTextView",
+          "bounds": [
+            280,
+            1915,
+            515,
+            1974
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "Freelancing? Getting 1099-MISC income? Use TurboTax Self-Employed to get every deduction, with experts on demand. Keep more of your hard-earned money",
+          "resource-id": "com.hi5.app:id/native_ad_text",
+          "ancestors": [
+            "com.tagged.view.ForegroundSupportingTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.tagged.view.CustomFontTextView",
+          "bounds": [
+            84,
+            2038,
+            1356,
+            2217
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "com.makeramen.roundedimageview.RoundedImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.hi5.app:id/native_ad_daa_icon_image",
+          "clickable": true,
+          "class": "com.tagged.view.TaggedImageView",
+          "bounds": [
+            1341,
+            1787,
+            1411,
+            1857
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        1772,
+        1440,
+        2217
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

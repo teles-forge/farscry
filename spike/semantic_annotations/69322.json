@@ -1,0 +1,517 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.gilt.android:id/toolbar",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            56,
+            144,
+            411,
+            220
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "com.gilt.android:id/action_search",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            936,
+            98,
+            1104,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "settings",
+          "resource-id": "com.gilt.android:id/action_account",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1104,
+            98,
+            1272,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "cart",
+          "resource-id": "com.gilt.android:id/action_cart",
+          "children": [
+            {
+              "iconClass": "cart",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.gilt.android:id/toolbar_cart_badge_icon",
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                1293,
+                119,
+                1419,
+                245
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "text": "1",
+              "resource-id": "com.gilt.android:id/toolbar_cart_badge_label",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.gilt.android.base.views.CustomFontTextView",
+              "bounds": [
+                1334,
+                112,
+                1354,
+                175
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.gilt.android.cart.views.ToolbarBadgedCartView",
+          "bounds": [
+            1272,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.gilt.android:id/toolbar_tabs",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.RelativeLayout",
+          "bounds": [
+            0,
+            280,
+            321,
+            434
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "text": "WOMEN"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.RelativeLayout",
+          "bounds": [
+            321,
+            280,
+            622,
+            434
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "text": "MEN"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.RelativeLayout",
+          "bounds": [
+            622,
+            280,
+            923,
+            434
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "textButtonClass": "home"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.RelativeLayout",
+          "bounds": [
+            923,
+            280,
+            1224,
+            434
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "text": "KIDS"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.RelativeLayout",
+          "bounds": [
+            1224,
+            280,
+            1440,
+            434
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "text": "CITY: LA"
+        }
+      ],
+      "ancestors": [
+        "android.widget.HorizontalScrollView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.astuetz.PagerSlidingTabStrip",
+      "bounds": [
+        0,
+        280,
+        1440,
+        448
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "text": "Gilt Unlimited",
+      "resource-id": "com.gilt.android:id/user_message_title",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.gilt.android.base.views.CustomFontTextView",
+      "bounds": [
+        84,
+        2037,
+        1356,
+        2101
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "$9.95 for 30 days of free U.S. shipping",
+      "resource-id": "com.gilt.android:id/user_message_subtitle",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.gilt.android.base.views.CustomFontTextView",
+      "bounds": [
+        84,
+        2101,
+        1356,
+        2160
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "*Terms and Conditions apply",
+      "resource-id": "com.gilt.android:id/user_message_note",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.gilt.android.base.views.CustomFontTextView",
+      "bounds": [
+        84,
+        2160,
+        1356,
+        2202
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        448,
+        1440,
+        1208
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "com.android.volley.toolbox.NetworkImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.gilt.android:id/list_item_sale_image",
+          "clickable": true,
+          "class": "com.gilt.android.base.views.AnimatedNetworkImageView",
+          "bounds": [
+            0,
+            448,
+            1440,
+            1208
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Bold Streak: Must-Have Activewear",
+          "resource-id": "com.gilt.android:id/list_item_sale_name",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.gilt.android.base.views.CustomFontTextView",
+          "bounds": [
+            712,
+            885,
+            1398,
+            1038
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "ENDS IN 2 DAYS",
+          "resource-id": "com.gilt.android:id/list_item_sale_end",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.gilt.android.base.views.CustomFontTextView",
+          "bounds": [
+            712,
+            1038,
+            1015,
+            1110
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        1208,
+        1440,
+        1968
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "com.android.volley.toolbox.NetworkImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.gilt.android:id/list_item_sale_image",
+          "clickable": true,
+          "class": "com.gilt.android.base.views.AnimatedNetworkImageView",
+          "bounds": [
+            0,
+            1208,
+            1440,
+            1968
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "James Perse",
+          "resource-id": "com.gilt.android:id/list_item_sale_name",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.gilt.android.base.views.CustomFontTextView",
+          "bounds": [
+            712,
+            1645,
+            1068,
+            1798
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "ENDS IN 2 DAYS",
+          "resource-id": "com.gilt.android:id/list_item_sale_end",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.gilt.android.base.views.CustomFontTextView",
+          "bounds": [
+            712,
+            1798,
+            1015,
+            1870
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        1968,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "com.android.volley.toolbox.NetworkImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.gilt.android:id/list_item_sale_image",
+          "clickable": true,
+          "class": "com.gilt.android.base.views.AnimatedNetworkImageView",
+          "bounds": [
+            0,
+            1968,
+            1440,
+            2392
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "text": "Dismiss",
+      "resource-id": "com.gilt.android:id/user_message_dismiss",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.gilt.android.base.views.CustomFontButton",
+      "bounds": [
+        1154,
+        2265,
+        1356,
+        2329
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "close"
+    }
+  ]
+}

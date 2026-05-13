@@ -1,0 +1,521 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.fp.cheapoair:id/tabs",
+      "children": [
+        {
+          "text": "Round Trip",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.fareportal.corelibrary.view.CustomTextViewMedium",
+          "bounds": [
+            0,
+            284,
+            480,
+            445
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "round trip"
+        },
+        {
+          "text": "One Way",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.fareportal.corelibrary.view.CustomTextViewMedium",
+          "bounds": [
+            480,
+            284,
+            960,
+            445
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "one way"
+        },
+        {
+          "text": "Multi City",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.fareportal.corelibrary.view.CustomTextViewMedium",
+          "bounds": [
+            960,
+            284,
+            1440,
+            445
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "ancestors": [
+        "android.widget.HorizontalScrollView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.fareportal.corelibrary.view.SlidingTabLayout",
+      "bounds": [
+        0,
+        284,
+        1440,
+        445
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "resource-id": "com.fp.cheapoair:id/base_top_toolbar",
+      "children": [
+        {
+          "text": "Flight Search",
+          "resource-id": "com.fp.cheapoair:id/toolbar_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomTextView",
+          "bounds": [
+            231,
+            141,
+            643,
+            223
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.internal.widget.TintImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.fp.cheapoair:id/base_footer_layout",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        40,
+        2151,
+        1400,
+        2352
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "search"
+    },
+    {
+      "resource-id": "com.fp.cheapoair:id/search_card_view",
+      "children": [
+        {
+          "iconClass": "check",
+          "resource-id": "com.fp.cheapoair:id/air_search_segment_depart_flight_image",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomImageView",
+          "bounds": [
+            69,
+            539,
+            185,
+            655
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "From",
+          "resource-id": "com.fp.cheapoair:id/air_search_segment_depart_location_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomTextView",
+          "bounds": [
+            214,
+            514,
+            337,
+            576
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Enter a city or airport",
+          "resource-id": "com.fp.cheapoair:id/air_search_segment_depart_location_placeholder_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomTextViewLight",
+          "bounds": [
+            214,
+            576,
+            1371,
+            664
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "",
+          "resource-id": "com.fp.cheapoair:id/air_search_segment_return_flight_image",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomImageView",
+          "bounds": [
+            69,
+            767,
+            185,
+            883
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "To",
+          "resource-id": "com.fp.cheapoair:id/air_search_segment_return_location_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomTextView",
+          "bounds": [
+            214,
+            742,
+            273,
+            804
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Enter a city or airport",
+          "resource-id": "com.fp.cheapoair:id/air_search_segment_return_location_placeholder_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomTextViewLight",
+          "bounds": [
+            214,
+            804,
+            1371,
+            892
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "resource-id": "com.fp.cheapoair:id/air_search_segment_return_date_layout",
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.RelativeLayout",
+          "bounds": [
+            722,
+            941,
+            1400,
+            1165
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "back"
+        },
+        {
+          "iconClass": "date_range",
+          "resource-id": "com.fp.cheapoair:id/air_search_segment_depart_date_calendar_image",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomImageView",
+          "bounds": [
+            69,
+            1007,
+            185,
+            1123
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Depart",
+          "resource-id": "com.fp.cheapoair:id/air_search_segment_depart_date_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomTextView",
+          "bounds": [
+            214,
+            982,
+            373,
+            1044
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Choose Date",
+          "resource-id": "com.fp.cheapoair:id/air_search_segment_depart_date_placeholder",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomTextViewLight",
+          "bounds": [
+            214,
+            1071,
+            507,
+            1132
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "",
+          "resource-id": "com.fp.cheapoair:id/air_search_segment_traveler_selection_image",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomImageView",
+          "bounds": [
+            69,
+            1223,
+            185,
+            1339
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Traveler(s)",
+          "resource-id": "com.fp.cheapoair:id/air_search_segment_travelers_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomTextView",
+          "bounds": [
+            214,
+            1198,
+            468,
+            1260
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "1",
+          "resource-id": "com.fp.cheapoair:id/air_search_segment_travelers_number_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomTextViewMedium",
+          "bounds": [
+            214,
+            1260,
+            264,
+            1374
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            658,
+            1325,
+            689,
+            1374
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "text": "",
+          "resource-id": "com.fp.cheapoair:id/air_search_segment_traveler_class_image",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomImageView",
+          "bounds": [
+            751,
+            1222,
+            877,
+            1348
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Class",
+          "resource-id": "com.fp.cheapoair:id/air_search_segment_travel_class_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomTextView",
+          "bounds": [
+            896,
+            1202,
+            1028,
+            1264
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Coach",
+          "resource-id": "com.fp.cheapoair:id/air_search_segment_travel_class",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomTextViewMedium",
+          "bounds": [
+            896,
+            1264,
+            1096,
+            1369
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fp.cheapoair:id/tempDropDown",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1340,
+            1320,
+            1371,
+            1369
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        33,
+        474,
+        1407,
+        1404
+      ],
+      "componentLabel": "Card"
+    }
+  ]
+}

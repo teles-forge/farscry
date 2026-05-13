@@ -1,0 +1,813 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.fivemobile.thescore:id/toolbar",
+      "children": [
+        {
+          "resource-id": "com.fivemobile.thescore:id/tab_spinner",
+          "ancestors": [
+            "android.widget.Spinner",
+            "android.widget.AbsSpinner",
+            "android.widget.AdapterView",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.fivemobile.thescore.view.ScoreSpinner",
+          "bounds": [
+            252,
+            107,
+            738,
+            256
+          ],
+          "componentLabel": "Text Button",
+          "text": "MYSCORE"
+        },
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "com.fivemobile.thescore:id/menu_search",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1272,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.fivemobile.thescore:id/adview",
+      "children": [
+        {
+          "ancestors": [
+            "com.fivemobile.thescore.ads.view.ScoreMoPubView",
+            "com.mopub.mobileads.MoPubView",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fivemobile.thescore:id/mopub_adview",
+          "clickable": false,
+          "class": "com.fivemobile.thescore.ads.view.ScoreAmazonDtbAdView",
+          "bounds": [
+            0,
+            2217,
+            1440,
+            2392
+          ],
+          "componentLabel": "Advertisement"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.fivemobile.thescore.ads.view.ScoreAdView",
+      "bounds": [
+        0,
+        2217,
+        1440,
+        2392
+      ],
+      "componentLabel": "Advertisement"
+    },
+    {
+      "resource-id": "com.fivemobile.thescore:id/indicator",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "PAST",
+          "bounds": [
+            28,
+            280,
+            233,
+            458
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button",
+          "textButtonClass": "past"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "TODAY",
+          "bounds": [
+            233,
+            280,
+            471,
+            458
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button",
+          "textButtonClass": "today"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "UPCOMING",
+          "bounds": [
+            471,
+            280,
+            810,
+            458
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button"
+        }
+      ],
+      "ancestors": [
+        "com.thescore.view.SlidingTabLayout",
+        "android.widget.HorizontalScrollView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.fivemobile.thescore.view.ScoreSlidingTabLayout",
+      "bounds": [
+        0,
+        280,
+        1440,
+        458
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        458,
+        1440,
+        626
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Wednesday, December 7",
+          "resource-id": "com.fivemobile.thescore:id/header_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            0,
+            507,
+            648,
+            573
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        626,
+        1440,
+        920
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "7:00 PM",
+          "resource-id": "com.fivemobile.thescore:id/txt_status",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1151,
+            686,
+            1356,
+            762
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "T:220.0",
+          "resource-id": "com.fivemobile.thescore:id/txt_away_score",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            831,
+            686,
+            1013,
+            762
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fivemobile.thescore:id/img_team_away_logo",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            56,
+            682,
+            140,
+            766
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "LA Lakers",
+          "resource-id": "com.fivemobile.thescore:id/txt_away_city",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            168,
+            686,
+            415,
+            762
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "-12.0",
+          "resource-id": "com.fivemobile.thescore:id/txt_home_score",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            891,
+            784,
+            1013,
+            860
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "sliders",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fivemobile.thescore:id/img_team_home_logo",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            56,
+            780,
+            140,
+            864
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Houston",
+          "resource-id": "com.fivemobile.thescore:id/txt_home_city",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            168,
+            784,
+            380,
+            860
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        920,
+        1440,
+        1088
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Thursday, December 8",
+          "resource-id": "com.fivemobile.thescore:id/header_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            0,
+            969,
+            600,
+            1035
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1088,
+        1440,
+        1382
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "8:30 PM",
+          "resource-id": "com.fivemobile.thescore:id/txt_status",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1151,
+            1148,
+            1356,
+            1224
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fivemobile.thescore:id/img_team_away_logo",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            56,
+            1144,
+            140,
+            1228
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "San Antonio",
+          "resource-id": "com.fivemobile.thescore:id/txt_away_city",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            168,
+            1148,
+            470,
+            1224
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "cart",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fivemobile.thescore:id/img_team_home_logo",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            56,
+            1242,
+            140,
+            1326
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Chicago",
+          "resource-id": "com.fivemobile.thescore:id/txt_home_city",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            168,
+            1246,
+            371,
+            1322
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1382,
+        1440,
+        1550
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Friday, December 9",
+          "resource-id": "com.fivemobile.thescore:id/header_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            0,
+            1431,
+            530,
+            1497
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1550,
+        1440,
+        1844
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "9:30 PM",
+          "resource-id": "com.fivemobile.thescore:id/txt_status",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1151,
+            1610,
+            1356,
+            1686
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fivemobile.thescore:id/img_team_away_logo",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            56,
+            1606,
+            140,
+            1690
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Phoenix",
+          "resource-id": "com.fivemobile.thescore:id/txt_away_city",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            168,
+            1610,
+            369,
+            1686
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fivemobile.thescore:id/img_team_home_logo",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            56,
+            1704,
+            140,
+            1788
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "LA Lakers",
+          "resource-id": "com.fivemobile.thescore:id/txt_home_city",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            168,
+            1708,
+            415,
+            1784
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1844,
+        1440,
+        2012
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Saturday, December 10",
+          "resource-id": "com.fivemobile.thescore:id/header_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            0,
+            1893,
+            619,
+            1959
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        2012,
+        1440,
+        2217
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "7:00 PM",
+          "resource-id": "com.fivemobile.thescore:id/txt_status",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1151,
+            2072,
+            1356,
+            2148
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fivemobile.thescore:id/img_team_away_logo",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            56,
+            2068,
+            140,
+            2152
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Miami",
+          "resource-id": "com.fivemobile.thescore:id/txt_away_city",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            168,
+            2072,
+            324,
+            2148
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "cart",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fivemobile.thescore:id/img_team_home_logo",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            56,
+            2166,
+            140,
+            2217
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Chicago",
+          "resource-id": "com.fivemobile.thescore:id/txt_home_city",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            168,
+            2170,
+            371,
+            2217
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

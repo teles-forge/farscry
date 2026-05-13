@@ -1,0 +1,278 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "ancestors": [
+        "com.lyft.android.maps.google.GoogleMapView",
+        "com.google.android.gms.maps.MapView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "me.lyft.android.maps.LyftMapView",
+      "bounds": [
+        0,
+        84,
+        1440,
+        2392
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            18,
+            1208,
+            228,
+            1285
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Image"
+        }
+      ],
+      "componentLabel": "Map View"
+    },
+    {
+      "iconClass": "arrow_backward",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "me.lyft.android:id/back_button",
+      "clickable": true,
+      "class": "android.widget.ImageButton",
+      "bounds": [
+        28,
+        1149,
+        182,
+        1303
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "location_crosshair",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "me.lyft.android:id/center_to_current_location_button",
+      "clickable": true,
+      "class": "android.widget.ImageButton",
+      "bounds": [
+        1258,
+        1149,
+        1412,
+        1303
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "resource-id": "me.lyft.android:id/toolbar",
+      "children": [
+        {
+          "iconClass": "avatar",
+          "ancestors": [
+            "com.makeramen.roundedimageview.RoundedImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "me.lyft.android:id/user_image_view",
+          "clickable": true,
+          "class": "com.lyft.widgets.ForegroundRoundedImageView",
+          "bounds": [
+            28,
+            112,
+            182,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "me.lyft.android:id/logo_image_view",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            643,
+            112,
+            797,
+            266
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "me.lyft.android.controls.PreRideTransparentToolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        294
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "Request Lyft",
+      "resource-id": "me.lyft.android:id/confirm_ride_button",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        28,
+        2161,
+        1412,
+        2364
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "me.lyft.android:id/ride_type_info_image",
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        564,
+        1355,
+        876,
+        1551
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Add payment",
+      "resource-id": "me.lyft.android:id/payment_widget_label",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        230,
+        1669,
+        519,
+        1735
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "me.lyft.android:id/pickup_dot",
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        87,
+        1841,
+        115,
+        1869
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "me.lyft.android:id/destination_dot",
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        87,
+        2023,
+        115,
+        2051
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "me.lyft.android:id/cc_logo",
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        337,
+        1599,
+        411,
+        1669
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Updating location...",
+      "resource-id": "me.lyft.android:id/pickup_address_field",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        31,
+        1762,
+        1409,
+        1944
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Add destination",
+      "resource-id": "me.lyft.android:id/destination_address_field",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        31,
+        1996,
+        1409,
+        2081
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

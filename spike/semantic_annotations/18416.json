@@ -1,0 +1,204 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.vividseats.android:id/toolbar_main",
+      "children": [
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.vividseats.android:id/search_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            298,
+            152,
+            356,
+            210
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Team, performer, event, or venue",
+          "resource-id": "com.vividseats.android:id/search_input",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            391,
+            146,
+            1244,
+            217
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "date_range",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.vividseats.android:id/date_filter",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1314,
+            140,
+            1398,
+            224
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.vividseats.android:id/home_tabs",
+      "children": [
+        {
+          "text": "Suggested",
+          "resource-id": "com.vividseats.android:id/psts_tab_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            0,
+            280,
+            480,
+            469
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "Viewed",
+          "resource-id": "com.vividseats.android:id/psts_tab_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            480,
+            280,
+            960,
+            469
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "Favorites",
+          "resource-id": "com.vividseats.android:id/psts_tab_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            960,
+            280,
+            1440,
+            469
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "favorites"
+        }
+      ],
+      "ancestors": [
+        "com.astuetz.PagerSlidingTabStrip",
+        "android.widget.HorizontalScrollView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.vividseats.android.views.custom.VsPagerSlidingTabStrip",
+      "bounds": [
+        0,
+        280,
+        1440,
+        476
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "text": "Your recently viewed events and performers will show here. Tap the icon above to start searching",
+      "resource-id": "com.vividseats.android:id/text_view_no_recent",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        0,
+        476,
+        1440,
+        2392
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

@@ -1,0 +1,635 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.medium.reader:id/collection_collapsing_toolbar",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "share",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.medium.reader:id/collection_share_button",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            1272,
+            84,
+            1440,
+            280
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "resource-id": "com.medium.reader:id/collection_follow_button",
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.medium.android.common.ui.FollowButtonView",
+          "bounds": [
+            992,
+            98,
+            1272,
+            266
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "follow"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.design.widget.CollapsingToolbarLayout",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.medium.android.common.stream.post.PostPreviewCardView",
+      "bounds": [
+        0,
+        448,
+        1440,
+        1655
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "resource-id": "com.medium.reader:id/post_preview_card_view_card",
+          "children": [
+            {
+              "text": "13 Ways for Authors to Engage on Medium",
+              "resource-id": "com.medium.reader:id/post_summary_view_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                70,
+                983,
+                1370,
+                1191
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "You’ve just spent a year, two years, five, writing your book. Now you’re releasing it out into the world, and you just want everyone to…",
+              "resource-id": "com.medium.reader:id/post_summary_view_subtitle",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                70,
+                1191,
+                1370,
+                1414
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "14 responses",
+              "resource-id": "com.medium.reader:id/post_preview_footer_view_response_count_text",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                950,
+                1524,
+                1203,
+                1581
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "·",
+              "resource-id": "com.medium.reader:id/post_preview_footer_view_response_count_dot",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                1249,
+                1524,
+                1260,
+                1581
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "iconClass": "bookmark",
+              "ancestors": [
+                "android.widget.ImageButton",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.medium.reader:id/post_preview_footer_view_bookmark",
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatImageButton",
+              "bounds": [
+                1260,
+                1469,
+                1428,
+                1637
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.medium.reader:id/post_summary_view_image",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                0,
+                448,
+                1440,
+                955
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "iconClass": "favorite",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.medium.reader:id/post_preview_footer_view_recommend_heart",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                71,
+                1515,
+                155,
+                1591
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "text": "435",
+              "resource-id": "com.medium.reader:id/post_preview_footer_view_recommend_count_text",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                162,
+                1524,
+                234,
+                1581
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.CardView",
+          "bounds": [
+            0,
+            448,
+            1440,
+            1637
+          ],
+          "componentLabel": "Card"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.medium.android.common.stream.post.PostPreviewCardView",
+      "bounds": [
+        0,
+        1655,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "resource-id": "com.medium.reader:id/post_preview_card_view_card",
+          "children": [
+            {
+              "text": "Tips and tricks for Medium writers",
+              "resource-id": "com.medium.reader:id/post_summary_view_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                70,
+                1894,
+                1370,
+                2006
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Make the best out of Medium as a writer with these hints.",
+              "resource-id": "com.medium.reader:id/post_summary_view_subtitle",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                70,
+                2006,
+                1370,
+                2151
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "60 responses",
+              "resource-id": "com.medium.reader:id/post_preview_footer_view_response_count_text",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                950,
+                2261,
+                1203,
+                2318
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "·",
+              "resource-id": "com.medium.reader:id/post_preview_footer_view_response_count_dot",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                1249,
+                2261,
+                1260,
+                2318
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "iconClass": "bookmark",
+              "ancestors": [
+                "android.widget.ImageButton",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.medium.reader:id/post_preview_footer_view_bookmark",
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatImageButton",
+              "bounds": [
+                1260,
+                2206,
+                1428,
+                2374
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "iconClass": "favorite",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.medium.reader:id/post_preview_footer_view_recommend_heart",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                71,
+                2252,
+                155,
+                2328
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "text": "1.5K",
+              "resource-id": "com.medium.reader:id/post_preview_footer_view_recommend_count_text",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                162,
+                2261,
+                247,
+                2318
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.medium.reader:id/post_preview_attribution_view_collection_image",
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                70,
+                1733,
+                203,
+                1866
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "on 10/2/2014 · 4 min read",
+              "resource-id": "com.medium.reader:id/post_preview_attribution_view_collection_updated_at",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                231,
+                1799,
+                718,
+                1856
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "In ",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                231,
+                1738,
+                275,
+                1795
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "3 min read",
+              "resource-id": "com.medium.reader:id/post_preview_attribution_view_collection_name",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                275,
+                1738,
+                472,
+                1795
+              ],
+              "componentLabel": "Text Button"
+            },
+            {
+              "text": " by ",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                472,
+                1738,
+                536,
+                1795
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Medium",
+              "resource-id": "com.medium.reader:id/post_preview_attribution_view_collection_author_name",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                536,
+                1738,
+                689,
+                1795
+              ],
+              "componentLabel": "Text Button",
+              "textButtonClass": "medium"
+            }
+          ],
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.CardView",
+          "bounds": [
+            0,
+            1673,
+            1440,
+            2374
+          ],
+          "componentLabel": "Card"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.design.widget.TabLayout$SlidingTabStrip",
+      "bounds": [
+        0,
+        280,
+        1440,
+        448
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Your Stories",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            0,
+            337,
+            97,
+            390
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Company",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            237,
+            337,
+            444,
+            390
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Tips and Tricks",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            584,
+            337,
+            947,
+            390
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Legal Notes",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1087,
+            337,
+            1370,
+            390
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Multi-Tab"
+    }
+  ]
+}

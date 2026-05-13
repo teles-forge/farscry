@@ -1,0 +1,917 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.augmentra.viewranger.map.views.VRMapViewParent",
+      "bounds": [
+        0,
+        84,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [],
+      "componentLabel": "Map View"
+    },
+    {
+      "resource-id": "com.augmentra.viewranger.android:id/tabs",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.augmentra.viewranger.android:id/tabs_inspiration",
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "bounds": [
+            0,
+            84,
+            288,
+            280
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            288,
+            84,
+            576,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "avatar",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            576,
+            84,
+            864,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            864,
+            84,
+            1152,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1152,
+            84,
+            1440,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.HorizontalScrollView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.astuetz.PagerSlidingTabStrip",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        140,
+        504,
+        140,
+        504
+      ],
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Trip time",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        1300,
+        1902,
+        1300,
+        1902
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "com.augmentra.viewranger.android:id/layout_inspiration_tile_search",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.augmentra.viewranger.ui.main.views.RouteView",
+          "bounds": [
+            0,
+            280,
+            1135,
+            759
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "textButtonClass": "free"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.augmentra.viewranger.ui.main.views.RouteView",
+          "bounds": [
+            1135,
+            280,
+            1440,
+            759
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "resource-id": "com.augmentra.viewranger.android:id/cardview",
+              "children": [
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.augmentra.viewranger.android:id/route_image",
+                  "clickable": false,
+                  "class": "com.augmentra.viewranger.ui.views.UrlImageView",
+                  "bounds": [
+                    1156,
+                    280,
+                    1440,
+                    615
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.augmentra.viewranger.android:id/profile_image",
+                  "clickable": true,
+                  "class": "com.augmentra.viewranger.ui.views.UrlImageView",
+                  "bounds": [
+                    1163,
+                    625,
+                    1275,
+                    737
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "text": "Point Reyes National Seashore, CA: Sky Camp",
+                  "resource-id": "com.augmentra.viewranger.android:id/title_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    1296,
+                    620,
+                    1440,
+                    743
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "4.41km",
+                  "resource-id": "com.augmentra.viewranger.android:id/routeinfo_length",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    1268,
+                    544,
+                    1437,
+                    601
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.augmentra.viewranger.android:id/routeinfo_path",
+                  "clickable": false,
+                  "class": "com.augmentra.viewranger.ui.views.UrlImageView",
+                  "bounds": [
+                    1437,
+                    538,
+                    1440,
+                    608
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.augmentra.viewranger.android:id/routeinfo_type",
+                  "clickable": false,
+                  "class": "com.augmentra.viewranger.ui.views.UrlImageView",
+                  "bounds": [
+                    1184,
+                    545,
+                    1240,
+                    601
+                  ],
+                  "componentLabel": "Image"
+                }
+              ],
+              "ancestors": [
+                "android.widget.FrameLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.CardView",
+              "bounds": [
+                1149,
+                280,
+                1440,
+                759
+              ],
+              "componentLabel": "Card"
+            }
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        280,
+        1440,
+        777
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.augmentra.viewranger.android:id/layout_inspiration_tile_gallery",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.augmentra.viewranger.android:id/group_category_image",
+          "clickable": false,
+          "class": "com.augmentra.viewranger.ui.views.UrlImageView",
+          "bounds": [
+            0,
+            813,
+            88,
+            901
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "There and Back - near San Mateo County: 5",
+          "resource-id": "com.augmentra.viewranger.android:id/matchingText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            88,
+            824,
+            1078,
+            890
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Show All",
+          "resource-id": "com.augmentra.viewranger.android:id/expandText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1078,
+            798,
+            1440,
+            917
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.augmentra.viewranger.ui.main.views.RouteView",
+          "bounds": [
+            0,
+            917,
+            1135,
+            1494
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "textButtonClass": "free"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.augmentra.viewranger.ui.main.views.RouteView",
+          "bounds": [
+            1135,
+            917,
+            1440,
+            1494
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "resource-id": "com.augmentra.viewranger.android:id/cardview",
+              "children": [
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.augmentra.viewranger.android:id/route_image",
+                  "clickable": false,
+                  "class": "com.augmentra.viewranger.ui.views.UrlImageView",
+                  "bounds": [
+                    1156,
+                    928,
+                    1440,
+                    1350
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.augmentra.viewranger.android:id/profile_image",
+                  "clickable": true,
+                  "class": "com.augmentra.viewranger.ui.views.UrlImageView",
+                  "bounds": [
+                    1163,
+                    1360,
+                    1275,
+                    1472
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "text": "San Pedro County Park - Waterfall Loop",
+                  "resource-id": "com.augmentra.viewranger.android:id/title_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    1296,
+                    1355,
+                    1440,
+                    1478
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "11.3km",
+                  "resource-id": "com.augmentra.viewranger.android:id/routeinfo_length",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    1268,
+                    1279,
+                    1437,
+                    1336
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.augmentra.viewranger.android:id/routeinfo_path",
+                  "clickable": false,
+                  "class": "com.augmentra.viewranger.ui.views.UrlImageView",
+                  "bounds": [
+                    1437,
+                    1273,
+                    1440,
+                    1343
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.augmentra.viewranger.android:id/routeinfo_type",
+                  "clickable": false,
+                  "class": "com.augmentra.viewranger.ui.views.UrlImageView",
+                  "bounds": [
+                    1184,
+                    1280,
+                    1240,
+                    1336
+                  ],
+                  "componentLabel": "Image"
+                }
+              ],
+              "ancestors": [
+                "android.widget.FrameLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.CardView",
+              "bounds": [
+                1149,
+                917,
+                1440,
+                1494
+              ],
+              "componentLabel": "Card"
+            }
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        777,
+        1440,
+        1512
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.augmentra.viewranger.android:id/layout_inspiration_tile_gallery",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.augmentra.viewranger.android:id/group_category_image",
+          "clickable": false,
+          "class": "com.augmentra.viewranger.ui.views.UrlImageView",
+          "bounds": [
+            0,
+            1548,
+            88,
+            1636
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Length Medium - near San Mateo County: 4",
+          "resource-id": "com.augmentra.viewranger.android:id/matchingText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            88,
+            1559,
+            1078,
+            1625
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Show All",
+          "resource-id": "com.augmentra.viewranger.android:id/expandText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1078,
+            1533,
+            1440,
+            1652
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.augmentra.viewranger.ui.main.views.RouteView",
+          "bounds": [
+            0,
+            1652,
+            1135,
+            2229
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "textButtonClass": "free"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.augmentra.viewranger.ui.main.views.RouteView",
+          "bounds": [
+            1135,
+            1652,
+            1440,
+            2229
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "resource-id": "com.augmentra.viewranger.android:id/cardview",
+              "children": [
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.augmentra.viewranger.android:id/route_image",
+                  "clickable": false,
+                  "class": "com.augmentra.viewranger.ui.views.UrlImageView",
+                  "bounds": [
+                    1156,
+                    1663,
+                    1440,
+                    2085
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.augmentra.viewranger.android:id/profile_image",
+                  "clickable": true,
+                  "class": "com.augmentra.viewranger.ui.views.UrlImageView",
+                  "bounds": [
+                    1163,
+                    2095,
+                    1275,
+                    2207
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "text": "Skyline to Grizzly Flats Track (1/4/16, 9:42:46AM)",
+                  "resource-id": "com.augmentra.viewranger.android:id/title_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    1296,
+                    2090,
+                    1440,
+                    2213
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "13.9km",
+                  "resource-id": "com.augmentra.viewranger.android:id/routeinfo_length",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    1268,
+                    2014,
+                    1437,
+                    2071
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.augmentra.viewranger.android:id/routeinfo_path",
+                  "clickable": false,
+                  "class": "com.augmentra.viewranger.ui.views.UrlImageView",
+                  "bounds": [
+                    1437,
+                    2008,
+                    1440,
+                    2078
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.augmentra.viewranger.android:id/routeinfo_type",
+                  "clickable": false,
+                  "class": "com.augmentra.viewranger.ui.views.UrlImageView",
+                  "bounds": [
+                    1184,
+                    2015,
+                    1240,
+                    2071
+                  ],
+                  "componentLabel": "Image"
+                }
+              ],
+              "ancestors": [
+                "android.widget.FrameLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.CardView",
+              "bounds": [
+                1149,
+                1652,
+                1440,
+                2229
+              ],
+              "componentLabel": "Card"
+            }
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1512,
+        1440,
+        2247
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        2247,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.augmentra.viewranger.android:id/imageView",
+          "clickable": true,
+          "class": "com.augmentra.viewranger.ui.views.UrlImageView",
+          "bounds": [
+            0,
+            2261,
+            1440,
+            2392
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        336,
+        410,
+        357,
+        431
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "componentLabel": "Image"
+    },
+    {
+      "iconClass": "shop",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        697,
+        410,
+        718,
+        431
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        1058,
+        410,
+        1079,
+        431
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        1419,
+        410,
+        1440,
+        431
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "componentLabel": "Image"
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.medisafe.android.client:id/toolbar",
+      "children": [
+        {
+          "text": "Add Medication",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            252,
+            135,
+            748,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "close",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Done",
+          "resource-id": "com.medisafe.android.client:id/action_done",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1227,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "finish"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.medisafe.android.client:id/wizard_card_name",
+      "children": [
+        {
+          "text": "Medication Name",
+          "resource-id": "com.medisafe.android.client:id/card_title_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            60,
+            364,
+            1212,
+            457
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Advil PM",
+          "resource-id": "com.medisafe.android.client:id/cardview_name_text",
+          "ancestors": [
+            "android.widget.AutoCompleteTextView",
+            "android.widget.EditText",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatAutoCompleteTextView",
+          "bounds": [
+            102,
+            497,
+            1338,
+            659
+          ],
+          "componentLabel": "Input"
+        },
+        {
+          "iconClass": "expand_less",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.medisafe.android.client:id/card_title_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1212,
+            336,
+            1380,
+            482
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "com.medisafe.android.base.client.views.addmed.AbstractWizardCardView",
+        "android.support.v7.widget.CardView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.medisafe.android.base.client.views.addmed.AddMedNameWizardCardView",
+      "bounds": [
+        60,
+        336,
+        1380,
+        673
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "resource-id": "com.medisafe.android.client:id/wizard_card_hours",
+      "children": [
+        {
+          "text": "Take as needed",
+          "resource-id": "com.medisafe.android.client:id/card_summary_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            60,
+            876,
+            1380,
+            998
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "Reminder Times",
+          "resource-id": "com.medisafe.android.client:id/card_title_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            60,
+            757,
+            1046,
+            850
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "",
+          "ancestors": [
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.SwitchCompat",
+          "bounds": [
+            1046,
+            754,
+            1212,
+            849
+          ],
+          "componentLabel": "Input"
+        },
+        {
+          "iconClass": "expand_more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.medisafe.android.client:id/card_title_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1212,
+            729,
+            1380,
+            876
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "com.medisafe.android.base.client.views.addmed.AbstractWizardCardView",
+        "android.support.v7.widget.CardView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.medisafe.android.base.client.views.addmed.AddMedHoursWizardCardView",
+      "bounds": [
+        60,
+        729,
+        1380,
+        998
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "resource-id": "com.medisafe.android.client:id/wizard_card_shape",
+      "children": [
+        {
+          "text": " ",
+          "resource-id": "com.medisafe.android.client:id/card_summary_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            60,
+            1201,
+            1380,
+            1397
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "Shape & Color",
+          "resource-id": "com.medisafe.android.client:id/card_title_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            60,
+            1082,
+            1212,
+            1175
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "expand_more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.medisafe.android.client:id/card_title_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1212,
+            1054,
+            1380,
+            1201
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "com.medisafe.android.base.client.views.addmed.AbstractWizardCardView",
+        "android.support.v7.widget.CardView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.medisafe.android.base.client.views.addmed.AddMedShapeWizardCardView",
+      "bounds": [
+        60,
+        1054,
+        1380,
+        1397
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "text": "More options",
+      "resource-id": "com.medisafe.android.client:id/btn_more_options",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        566,
+        1481,
+        1048,
+        1607
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "options"
+    },
+    {
+      "text": "Done",
+      "resource-id": "com.medisafe.android.client:id/btn_next",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        1076,
+        1481,
+        1384,
+        1607
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "finish"
+    }
+  ]
+}

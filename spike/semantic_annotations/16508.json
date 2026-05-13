@@ -1,0 +1,686 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.androidcentral.app:id/toolbar",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.Spinner",
+            "android.widget.AbsSpinner",
+            "android.widget.AdapterView",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.v7.widget.AppCompatSpinner",
+          "bounds": [
+            252,
+            98,
+            1104,
+            266
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "textButtonClass": "all"
+        },
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "check",
+          "resource-id": "com.androidcentral.app:id/action_mark_as_read",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1272,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.androidcentral.app:id/search_button",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1104,
+            98,
+            1272,
+            266
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "Release Notes: Android Central - 3.1.4",
+      "resource-id": "com.androidcentral.app:id/release_notes_title",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        0,
+        1742,
+        1216,
+        2029
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "This release is all about performance! We are taking every part of the app, from loading speeds to scrolling smoothness, and given it a nice boost … more to come in next releases.\n\nWe've also introduced ads. We know ads aren't sexy, so we're working on integrating them as unobtrusively as possible. Let us know what you think!\n\nOther changes:\n- Added HTTPS support for additional security\n- Fixed the wonky swipe gesture in the news header\n- Improved user experience in the article screen\n- General performance and stability improvements",
+      "resource-id": "com.androidcentral.app:id/release_notes_content",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        0,
+        2029,
+        1440,
+        2392
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "close",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.androidcentral.app:id/release_notes_exit",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        1216,
+        1742,
+        1440,
+        1966
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "resource-id": "com.androidcentral.app:id/featured_frame",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.androidcentral.app:id/featured_indicator",
+          "clickable": false,
+          "class": "com.viewpagerindicator.CirclePageIndicator",
+          "bounds": [
+            0,
+            832,
+            1440,
+            910
+          ],
+          "componentLabel": "Pager Indicator"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.androidcentral.app:id/featured_banner",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            0,
+            280,
+            1440,
+            910
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "DOWNLOAD THIS",
+          "resource-id": "com.androidcentral.app:id/featured_badge",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            0,
+            508,
+            1440,
+            574
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Myst is now available on Android. Here's the story of how it got there!",
+          "resource-id": "com.androidcentral.app:id/featured_short_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            0,
+            574,
+            1440,
+            910
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        280,
+        1440,
+        910
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.androidcentral.app:id/news_item_row",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.androidcentral.app:id/news_hero_image",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            56,
+            970,
+            336,
+            1250
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Best UK transport apps for Android",
+          "resource-id": "com.androidcentral.app:id/news_heading",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            392,
+            956,
+            1356,
+            1114
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Alex Dobie | ",
+          "resource-id": "com.androidcentral.app:id/news_by",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            392,
+            1114,
+            659,
+            1191
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "16 COMMENTS",
+          "resource-id": "com.androidcentral.app:id/news_comment_count",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            659,
+            1114,
+            999,
+            1191
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": " | 7m",
+          "resource-id": "com.androidcentral.app:id/news_published_date",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            999,
+            1125,
+            1106,
+            1191
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        914,
+        1440,
+        1306
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.androidcentral.app:id/news_item_row",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.androidcentral.app:id/news_hero_image",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            56,
+            1366,
+            336,
+            1646
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Best accessories for Porn in VR [NSFW]",
+          "resource-id": "com.androidcentral.app:id/news_heading",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            392,
+            1352,
+            1356,
+            1510
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Jen Karner | ",
+          "resource-id": "com.androidcentral.app:id/news_by",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            392,
+            1510,
+            665,
+            1587
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0 COMMENTS",
+          "resource-id": "com.androidcentral.app:id/news_comment_count",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            665,
+            1510,
+            977,
+            1587
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": " | 9h",
+          "resource-id": "com.androidcentral.app:id/news_published_date",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            977,
+            1521,
+            1068,
+            1587
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        1310,
+        1440,
+        1702
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.androidcentral.app:id/news_item_row",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.androidcentral.app:id/news_hero_image",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            56,
+            1762,
+            336,
+            2042
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "HTC 10 update delayed yet again for mainland Europe ",
+          "resource-id": "com.androidcentral.app:id/news_heading",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            392,
+            1748,
+            1356,
+            1906
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Marc Lagace | ",
+          "resource-id": "com.androidcentral.app:id/news_by",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            392,
+            1906,
+            712,
+            1983
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "6 COMMENTS",
+          "resource-id": "com.androidcentral.app:id/news_comment_count",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            712,
+            1906,
+            1024,
+            1983
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": " | 11h",
+          "resource-id": "com.androidcentral.app:id/news_published_date",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1024,
+            1917,
+            1143,
+            1983
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        1706,
+        1440,
+        2098
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.androidcentral.app:id/news_item_row",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.androidcentral.app:id/news_hero_image",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            56,
+            2158,
+            336,
+            2392
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "ZTE Axon 7 Mini comes to Canada through Virgin Mobile",
+          "resource-id": "com.androidcentral.app:id/news_heading",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            392,
+            2144,
+            1356,
+            2302
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Daniel Bader | ",
+          "resource-id": "com.androidcentral.app:id/news_by",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            392,
+            2302,
+            705,
+            2379
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0 COMMENTS",
+          "resource-id": "com.androidcentral.app:id/news_comment_count",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            705,
+            2302,
+            1017,
+            2379
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": " | 11h",
+          "resource-id": "com.androidcentral.app:id/news_published_date",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1017,
+            2313,
+            1136,
+            2379
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        2102,
+        1440,
+        2392
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

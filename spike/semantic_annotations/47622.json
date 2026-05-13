@@ -1,0 +1,357 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "ancestors": [
+        "android.support.v7.widget.Toolbar",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.nbc.news.view.NbcToolBar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            154,
+            105,
+            410,
+            259
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            154,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.nbcuni.telemundostation.houston:id/weather_app_title_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            410,
+            104,
+            753,
+            258
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.nbcuni.telemundostation.houston:id/frame_layout",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            280,
+            1440,
+            298
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "resource-id": "com.nbcuni.telemundostation.houston:id/radar_map_view",
+          "children": [],
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.wsi.android.framework.map.WSIMapView",
+          "bounds": [
+            0,
+            280,
+            1440,
+            2392
+          ],
+          "componentLabel": "Map View"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.v7.widget.RecyclerView",
+          "bounds": [
+            0,
+            280,
+            1440,
+            2392
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.RelativeLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "com.nbc.news.view.WeatherOverviewLayout",
+              "bounds": [
+                0,
+                280,
+                1440,
+                2392
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.telemundostation.houston:id/weather_info_background",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "bounds": [
+                    0,
+                    280,
+                    1440,
+                    2392
+                  ],
+                  "componentLabel": "Background Image"
+                },
+                {
+                  "iconClass": "arrow_backward",
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.telemundostation.houston:id/map_open_button",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "bounds": [
+                    588,
+                    928,
+                    693,
+                    1031
+                  ],
+                  "componentLabel": "Icon"
+                },
+                {
+                  "text": "Champaign, IL",
+                  "resource-id": "com.nbcuni.telemundostation.houston:id/selected_location_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": true,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    49,
+                    343,
+                    514,
+                    428
+                  ],
+                  "componentLabel": "Text Button"
+                },
+                {
+                  "text": "Actualizado 8:01 AM",
+                  "resource-id": "com.nbcuni.telemundostation.houston:id/current_updated_time",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    49,
+                    447,
+                    436,
+                    504
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "iconClass": "weather",
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.telemundostation.houston:id/current_weather_forecast_image",
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NetworkImageView",
+                  "bounds": [
+                    49,
+                    560,
+                    224,
+                    735
+                  ],
+                  "componentLabel": "Icon"
+                },
+                {
+                  "text": "40°",
+                  "resource-id": "com.nbcuni.telemundostation.houston:id/current_temp_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": true,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    49,
+                    659,
+                    367,
+                    995
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "Lluvia ligera",
+                  "resource-id": "com.nbcuni.telemundostation.houston:id/current_forecast_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NbcTextView",
+                  "bounds": [
+                    49,
+                    957,
+                    574,
+                    1051
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "SENSACIÓN TÉRMICA \n30°",
+                  "resource-id": "com.nbcuni.telemundostation.houston:id/current_feels_like_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    49,
+                    1100,
+                    487,
+                    1219
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "POS. DE PRECIP \n40%",
+                  "resource-id": "com.nbcuni.telemundostation.houston:id/current_precip_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    49,
+                    1268,
+                    378,
+                    1387
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "VIENTO NNO \n23MPH",
+                  "resource-id": "com.nbcuni.telemundostation.houston:id/current_wind_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    49,
+                    1436,
+                    315,
+                    1555
+                  ],
+                  "componentLabel": "Text"
+                }
+              ],
+              "componentLabel": "List Item"
+            }
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.nbc.news.view.NbcLayout",
+      "bounds": [
+        0,
+        280,
+        1440,
+        2392
+      ],
+      "componentLabel": "Drawer"
+    }
+  ]
+}

@@ -1,0 +1,410 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "android:id/action_bar_container",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            169,
+            84,
+            852,
+            252
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "text": "All Songs"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "org.iii.romulus.meridian:mi/search",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.android.internal.view.menu.ActionMenuItemView",
+          "bounds": [
+            852,
+            84,
+            1048,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "star",
+          "resource-id": "org.iii.romulus.meridian:id/music_menu_rating",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.android.internal.view.menu.ActionMenuItemView",
+          "bounds": [
+            1048,
+            84,
+            1244,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1244,
+            84,
+            1440,
+            252
+          ],
+          "clickable": true,
+          "class": "android.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "android:id/up",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            0,
+            140,
+            56,
+            196
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "android:id/home",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            43,
+            112,
+            155,
+            224
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.android.internal.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        252
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "music",
+      "resource-id": "org.iii.romulus.meridian:id/album",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        11,
+        432,
+        144,
+        498
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "music"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "org.iii.romulus.meridian:id/mp_albumart",
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        11,
+        520,
+        1429,
+        1765
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "android:id/progress",
+      "clickable": false,
+      "class": "android.widget.SeekBar",
+      "bounds": [
+        182,
+        1795,
+        1440,
+        1907
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "iconClass": "close",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "org.iii.romulus.meridian:id/shuffle",
+      "clickable": true,
+      "class": "android.widget.ImageButton",
+      "bounds": [
+        27,
+        1933,
+        304,
+        2210
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "av_rewind",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "org.iii.romulus.meridian:id/prev",
+      "clickable": true,
+      "class": "org.iii.romulus.meridian.RepeatingImageButton",
+      "bounds": [
+        304,
+        1933,
+        581,
+        2210
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "pause",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "org.iii.romulus.meridian:id/play_pause",
+      "clickable": true,
+      "class": "android.widget.ImageButton",
+      "bounds": [
+        581,
+        1933,
+        858,
+        2210
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "skip_next",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "org.iii.romulus.meridian:id/next",
+      "clickable": true,
+      "class": "org.iii.romulus.meridian.RepeatingImageButton",
+      "bounds": [
+        858,
+        1933,
+        1135,
+        2210
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "refresh",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "org.iii.romulus.meridian:id/repeat",
+      "clickable": true,
+      "class": "android.widget.ImageButton",
+      "bounds": [
+        1135,
+        1933,
+        1412,
+        2210
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "resource-id": "org.iii.romulus.meridian:id/adView",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.google.android.gms.ads.internal.webview.n",
+          "bounds": [
+            0,
+            2217,
+            1440,
+            2392
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.webkit.WebView",
+                "android.widget.AbsoluteLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                0,
+                2217,
+                1440,
+                2392
+              ],
+              "clickable": true,
+              "class": "com.google.android.gms.ads.internal.webview.o",
+              "componentLabel": "Web View"
+            }
+          ],
+          "componentLabel": "Web View"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.google.android.gms.ads.AdView",
+      "bounds": [
+        0,
+        2217,
+        1440,
+        2392
+      ],
+      "componentLabel": "Advertisement"
+    },
+    {
+      "text": "AdaraMusic",
+      "resource-id": "org.iii.romulus.meridian:id/trackname",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        11,
+        263,
+        1149,
+        366
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "<unknown>",
+      "resource-id": "org.iii.romulus.meridian:id/artist",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        11,
+        366,
+        260,
+        432
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "00:00",
+      "resource-id": "org.iii.romulus.meridian:id/currenttime",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        1783,
+        182,
+        1849
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "01:27",
+      "resource-id": "org.iii.romulus.meridian:id/totaltime",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        1853,
+        182,
+        1919
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

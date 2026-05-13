@@ -1,0 +1,653 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "android:id/action_bar_container",
+      "children": [
+        {
+          "iconClass": "email",
+          "clickable": false,
+          "children": [
+            {
+              "iconClass": "arrow_backward",
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "android:id/up",
+              "clickable": false,
+              "class": "android.widget.ImageView",
+              "bounds": [
+                0,
+                140,
+                56,
+                196
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "android:id/home",
+              "clickable": false,
+              "class": "android.widget.ImageView",
+              "bounds": [
+                43,
+                112,
+                155,
+                224
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.android.internal.widget.ActionBarView$HomeView",
+          "bounds": [
+            0,
+            84,
+            169,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "",
+          "resource-id": "com.microsoft.amp.apps.bingfinance:id/action_bar_search_box",
+          "ancestors": [
+            "android.widget.AutoCompleteTextView",
+            "android.widget.EditText",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.microsoft.amp.platform.uxcomponents.autosuggest.views.AutoSuggestView",
+          "bounds": [
+            187,
+            109,
+            1405,
+            227
+          ],
+          "componentLabel": "Input"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.android.internal.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        252
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "Tip Calculator",
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/tip_header",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.CommonFontTextView",
+      "bounds": [
+        35,
+        253,
+        1405,
+        395
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Check Amount",
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/tip_check_amount",
+      "ancestors": [
+        "com.microsoft.amp.platform.uxcomponents.text.CommonFontTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.AutoScaleTextView",
+      "bounds": [
+        35,
+        458,
+        438,
+        598
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "100",
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/tip_check_amount_edit_text",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.CommonFontEditText",
+      "bounds": [
+        561,
+        458,
+        1377,
+        598
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "$",
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/tip_check_amount_currency",
+      "ancestors": [
+        "com.microsoft.amp.platform.uxcomponents.text.CommonFontTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.AutoScaleTextView",
+      "bounds": [
+        421,
+        458,
+        561,
+        598
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Tip Percentage",
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/tip_percentage",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.CommonFontTextView",
+      "bounds": [
+        35,
+        658,
+        438,
+        798
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "10",
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/tip_percentage_edit_text",
+      "ancestors": [
+        "com.microsoft.amp.platform.uxcomponents.text.CommonFontEditText",
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.ExtendedEditText",
+      "bounds": [
+        561,
+        658,
+        771,
+        798
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "%",
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/tip_percentage_symbol",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.CommonFontTextView",
+      "bounds": [
+        792,
+        658,
+        862,
+        798
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Good!",
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/tip_quality",
+      "ancestors": [
+        "com.microsoft.amp.platform.uxcomponents.text.CommonFontTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.AutoScaleTextView",
+      "bounds": [
+        932,
+        658,
+        1405,
+        798
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/tip_seek_percentage",
+      "clickable": false,
+      "class": "android.widget.SeekBar",
+      "bounds": [
+        1,
+        830,
+        1439,
+        1002
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "text": "Split the check",
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/tip_split_check_label",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.CommonFontTextView",
+      "bounds": [
+        35,
+        1002,
+        438,
+        1142
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "2",
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/tip_split_check_edit_text",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.CommonFontEditText",
+      "bounds": [
+        561,
+        1002,
+        771,
+        1142
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "ways",
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/tip_ways_label",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.CommonFontTextView",
+      "bounds": [
+        792,
+        1002,
+        1195,
+        1142
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/tip_seek_split_count",
+      "clickable": false,
+      "class": "android.widget.SeekBar",
+      "bounds": [
+        1,
+        1227,
+        1439,
+        1399
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "text": "1",
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/tip_seek_label_1",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.CommonFontTextView",
+      "bounds": [
+        88,
+        1174,
+        293,
+        1237
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "2",
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/tip_seek_label_2",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.CommonFontTextView",
+      "bounds": [
+        293,
+        1174,
+        498,
+        1237
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "3",
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/tip_seek_label_3",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.CommonFontTextView",
+      "bounds": [
+        498,
+        1174,
+        703,
+        1237
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "4",
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/tip_seek_label_4",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.CommonFontTextView",
+      "bounds": [
+        703,
+        1174,
+        908,
+        1237
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "5",
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/tip_seek_label_5",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.CommonFontTextView",
+      "bounds": [
+        908,
+        1174,
+        1113,
+        1237
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Tip Per person",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.CommonFontTextView",
+      "bounds": [
+        35,
+        1399,
+        455,
+        1527
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "$ 5",
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/tip_per_person",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.CommonFontTextView",
+      "bounds": [
+        455,
+        1399,
+        840,
+        1527
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Tip Total",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.CommonFontTextView",
+      "bounds": [
+        35,
+        1562,
+        455,
+        1690
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "$ 10",
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/tip_total",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.CommonFontTextView",
+      "bounds": [
+        455,
+        1562,
+        840,
+        1690
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Check Total",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.CommonFontTextView",
+      "bounds": [
+        35,
+        1725,
+        455,
+        1853
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "$ 110",
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/tip_check_total",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.CommonFontTextView",
+      "bounds": [
+        455,
+        1725,
+        840,
+        1853
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Per Person",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.CommonFontTextView",
+      "bounds": [
+        35,
+        1888,
+        455,
+        2016
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "$ 55",
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/per_person",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.CommonFontTextView",
+      "bounds": [
+        455,
+        1888,
+        840,
+        2016
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "6",
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/tip_seek_label_6",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.CommonFontTextView",
+      "bounds": [
+        1113,
+        1174,
+        1134,
+        1237
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "More",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.microsoft.amp.platform.uxcomponents.text.CommonFontTextView",
+      "bounds": [
+        1277,
+        1174,
+        1369,
+        1237
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "com.microsoft.amp.apps.bingfinance:id/ad_view",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.microsoft.amp.apps.bingfinance:id/adControlPlaceholderImage",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            160,
+            2051,
+            1280,
+            2226
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.microsoft.amp.platform.uxcomponents.ads.views.AdView",
+      "bounds": [
+        35,
+        2051,
+        1405,
+        2226
+      ],
+      "componentLabel": "Advertisement"
+    }
+  ]
+}

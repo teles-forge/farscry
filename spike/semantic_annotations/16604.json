@@ -1,0 +1,415 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.dealdash:id/inner_action_bar",
+      "children": [
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "com.dealdash:id/action_search",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.internal.view.menu.ActionMenuItemView",
+          "bounds": [
+            1272,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.design.widget.TabLayout$SlidingTabStrip",
+      "bounds": [
+        3,
+        280,
+        1436,
+        448
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.design.widget.TabLayout$TabView",
+          "bounds": [
+            3,
+            280,
+            174,
+            448
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "textButtonClass": "all"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.design.widget.TabLayout$TabView",
+          "bounds": [
+            512,
+            280,
+            724,
+            448
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "textButtonClass": "open"
+        },
+        {
+          "text": "UPCOMING",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            216,
+            331,
+            470,
+            397
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "BOOKMARKED",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            766,
+            331,
+            1094,
+            397
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "WINNERS",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1178,
+            331,
+            1394,
+            397
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "ancestors": [
+        "com.dealdash.ui.components.PromoView",
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.dealdash.ui.components.PromoCardView",
+      "bounds": [
+        0,
+        448,
+        1440,
+        1347
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.v7.widget.CardView",
+          "bounds": [
+            28,
+            476,
+            1412,
+            1319
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.AbsoluteLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.dealdash:id/promo_webview",
+              "clickable": true,
+              "class": "android.webkit.WebView",
+              "bounds": [
+                28,
+                476,
+                1412,
+                1319
+              ],
+              "componentLabel": "Web View"
+            }
+          ],
+          "componentLabel": "Card"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "resource-id": "com.dealdash:id/auction_card",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.dealdash:id/auction_card_thumbnail_image",
+          "clickable": false,
+          "class": "com.dealdash.ui.components.WebImageView",
+          "bounds": [
+            28,
+            1375,
+            1412,
+            2250
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "star",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.dealdash:id/bookmark",
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "bounds": [
+            1272,
+            1403,
+            1384,
+            1515
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Bolvaint - Eanes Classic Minute, Men's Watch, White (Ships by 4/22)",
+          "resource-id": "com.dealdash:id/auction_card_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            84,
+            2036,
+            1131,
+            2194
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Retail price:",
+          "resource-id": "com.dealdash:id/retail_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            84,
+            2306,
+            1181,
+            2391
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "$1600",
+          "resource-id": "com.dealdash:id/auction_card_buy_now",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1181,
+            2306,
+            1356,
+            2391
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Current bid:",
+          "resource-id": "com.dealdash:id/auction_card_price_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            84,
+            2391,
+            1194,
+            2392
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "time",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1159,
+            2120,
+            1222,
+            2183
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "0:04",
+          "resource-id": "com.dealdash:id/auction_card_timer",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1236,
+            2109,
+            1356,
+            2194
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "$4.74",
+          "resource-id": "com.dealdash:id/auction_card_price",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1194,
+            2391,
+            1356,
+            2392
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        28,
+        1375,
+        1412,
+        2392
+      ],
+      "componentLabel": "Card"
+    }
+  ]
+}

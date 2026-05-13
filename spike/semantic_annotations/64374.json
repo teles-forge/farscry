@@ -1,0 +1,899 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.opera.browser:id/top_toolbar_container",
+      "children": [
+        {
+          "text": "",
+          "resource-id": "com.opera.browser:id/url_field",
+          "ancestors": [
+            "com.opera.android.custom_views.ObservableEditText",
+            "com.opera.android.custom_views.OperaEditText",
+            "android.widget.EditText",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.opera.android.UrlField",
+          "bounds": [
+            131,
+            107,
+            1421,
+            217
+          ],
+          "componentLabel": "Input"
+        },
+        {
+          "iconClass": "search",
+          "ancestors": [
+            "com.opera.android.custom_views.StylingImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.opera.browser:id/left_state_button",
+          "clickable": true,
+          "class": "com.opera.android.custom_views.StylingImageButton",
+          "bounds": [
+            19,
+            107,
+            131,
+            217
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.opera.android.bar.ToolbarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        242
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "iconClass": "arrow_backward",
+      "ancestors": [
+        "com.opera.android.custom_views.PrivateStateButton",
+        "com.opera.android.custom_views.StylingImageButton",
+        "com.opera.android.custom_views.StylingImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.opera.browser:id/bottom_navigation_bar_back_button",
+      "clickable": true,
+      "class": "com.opera.android.custom_views.OrientationButton",
+      "bounds": [
+        0,
+        2234,
+        158,
+        2392
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "arrow_forward",
+      "ancestors": [
+        "com.opera.android.custom_views.PrivateStateButton",
+        "com.opera.android.custom_views.StylingImageButton",
+        "com.opera.android.custom_views.StylingImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.opera.browser:id/bottom_navigation_bar_forward_button",
+      "clickable": true,
+      "class": "com.opera.android.custom_views.OrientationButton",
+      "bounds": [
+        320,
+        2234,
+        478,
+        2392
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "com.opera.android.custom_views.PrivateStateButton",
+        "com.opera.android.custom_views.StylingImageButton",
+        "com.opera.android.custom_views.StylingImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.opera.browser:id/bottom_navigation_bar_favorites_button",
+      "clickable": true,
+      "class": "com.opera.android.custom_views.OrientationButton",
+      "bounds": [
+        640,
+        2234,
+        798,
+        2392
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "com.opera.android.custom_views.PrivateStateButton",
+        "com.opera.android.custom_views.StylingImageButton",
+        "com.opera.android.custom_views.StylingImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.opera.browser:id/bottom_navigation_bar_opera_menu_button",
+      "clickable": true,
+      "class": "com.opera.android.custom_views.OrientationButton",
+      "bounds": [
+        1282,
+        2234,
+        1440,
+        2392
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "iconClass": "copy",
+      "ancestors": [
+        "com.opera.android.custom_views.OrientationButton",
+        "com.opera.android.custom_views.PrivateStateButton",
+        "com.opera.android.custom_views.StylingImageButton",
+        "com.opera.android.custom_views.StylingImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.opera.browser:id/bottom_navigation_bar_tab_count_button",
+      "clickable": true,
+      "class": "com.opera.android.custom_views.TabCountButton",
+      "bounds": [
+        961,
+        2234,
+        1119,
+        2392
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "History",
+      "bounds": [
+        35,
+        271,
+        217,
+        347
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "componentLabel": "Text Button",
+      "textButtonClass": "history"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "Speed Dial",
+      "bounds": [
+        586,
+        271,
+        854,
+        347
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "Discover",
+      "bounds": [
+        1186,
+        271,
+        1405,
+        347
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "componentLabel": "Text Button"
+    },
+    {
+      "resource-id": "com.opera.browser:id/favorite",
+      "children": [
+        {
+          "text": "Google",
+          "resource-id": "com.opera.browser:id/title",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            168,
+            715,
+            294,
+            769
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "refresh",
+          "ancestors": [
+            "bpp",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.opera.browser:id/grid_image",
+          "clickable": false,
+          "class": "com.opera.android.favorites.HeightExpandingImageView",
+          "bounds": [
+            103,
+            445,
+            359,
+            701
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        68,
+        410,
+        394,
+        780
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.opera.browser:id/favorite",
+      "children": [
+        {
+          "text": "Amazon",
+          "resource-id": "com.opera.browser:id/title",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            483,
+            715,
+            631,
+            769
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "cart",
+          "ancestors": [
+            "bpp",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.opera.browser:id/grid_image",
+          "clickable": false,
+          "class": "com.opera.android.favorites.HeightExpandingImageView",
+          "bounds": [
+            429,
+            445,
+            685,
+            701
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        394,
+        410,
+        720,
+        780
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.opera.browser:id/favorite",
+      "children": [
+        {
+          "text": "Booking.com",
+          "resource-id": "com.opera.browser:id/title",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            765,
+            715,
+            1000,
+            769
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "bpp",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.opera.browser:id/grid_image",
+          "clickable": false,
+          "class": "com.opera.android.favorites.HeightExpandingImageView",
+          "bounds": [
+            755,
+            445,
+            1011,
+            701
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        720,
+        410,
+        1046,
+        780
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.opera.browser:id/favorite",
+      "children": [
+        {
+          "text": "eBay",
+          "resource-id": "com.opera.browser:id/title",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            1165,
+            715,
+            1252,
+            769
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "bpp",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.opera.browser:id/grid_image",
+          "clickable": false,
+          "class": "com.opera.android.favorites.HeightExpandingImageView",
+          "bounds": [
+            1081,
+            445,
+            1337,
+            701
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        1046,
+        410,
+        1372,
+        780
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.opera.browser:id/favorite",
+      "children": [
+        {
+          "text": "Nordstrom",
+          "resource-id": "com.opera.browser:id/title",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            133,
+            1085,
+            328,
+            1139
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "bpp",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.opera.browser:id/grid_image",
+          "clickable": false,
+          "class": "com.opera.android.favorites.HeightExpandingImageView",
+          "bounds": [
+            103,
+            815,
+            359,
+            1071
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        68,
+        780,
+        394,
+        1150
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.opera.browser:id/favorite",
+      "children": [
+        {
+          "text": "Walmart",
+          "resource-id": "com.opera.browser:id/title",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            481,
+            1085,
+            632,
+            1139
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "bpp",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.opera.browser:id/grid_image",
+          "clickable": false,
+          "class": "com.opera.android.favorites.HeightExpandingImageView",
+          "bounds": [
+            429,
+            815,
+            685,
+            1071
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        394,
+        780,
+        720,
+        1150
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.opera.browser:id/favorite",
+      "children": [
+        {
+          "text": "Gmail",
+          "resource-id": "com.opera.browser:id/title",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            831,
+            1085,
+            935,
+            1139
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "email",
+          "ancestors": [
+            "bpp",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.opera.browser:id/grid_image",
+          "clickable": false,
+          "class": "com.opera.android.favorites.HeightExpandingImageView",
+          "bounds": [
+            755,
+            815,
+            1011,
+            1071
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        720,
+        780,
+        1046,
+        1150
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.opera.browser:id/favorite",
+      "children": [
+        {
+          "text": "Follow us",
+          "resource-id": "com.opera.browser:id/title",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            1123,
+            1085,
+            1294,
+            1139
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "avatar",
+          "ancestors": [
+            "bpp",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.opera.browser:id/grid_image",
+          "clickable": false,
+          "class": "com.opera.android.favorites.HeightExpandingImageView",
+          "bounds": [
+            1081,
+            815,
+            1337,
+            1071
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        1046,
+        780,
+        1372,
+        1150
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.opera.browser:id/favorite",
+      "children": [
+        {
+          "text": "YouTube",
+          "resource-id": "com.opera.browser:id/title",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            153,
+            1455,
+            308,
+            1509
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "date_range",
+          "ancestors": [
+            "bpp",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.opera.browser:id/grid_image",
+          "clickable": false,
+          "class": "com.opera.android.favorites.HeightExpandingImageView",
+          "bounds": [
+            103,
+            1185,
+            359,
+            1441
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        68,
+        1150,
+        394,
+        1520
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.opera.browser:id/folder",
+      "children": [
+        {
+          "text": "Bookmarks",
+          "resource-id": "com.opera.browser:id/title",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            455,
+            1455,
+            658,
+            1509
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "bookmark",
+          "ancestors": [
+            "bpp",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.opera.browser:id/folder_bg_image",
+          "clickable": false,
+          "class": "com.opera.android.favorites.HeightExpandingImageView",
+          "bounds": [
+            429,
+            1185,
+            685,
+            1441
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.opera.browser:id/folder_icon",
+          "clickable": false,
+          "class": "com.opera.android.custom_views.StylingImageView",
+          "bounds": [
+            509,
+            1237,
+            605,
+            1388
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.opera.browser:id/notification_icon",
+          "clickable": false,
+          "class": "com.opera.android.custom_views.StylingImageView",
+          "bounds": [
+            642,
+            1185,
+            685,
+            1228
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        394,
+        1150,
+        720,
+        1520
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.opera.browser:id/folder",
+      "children": [
+        {
+          "text": "Saved pages",
+          "resource-id": "com.opera.browser:id/title",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            769,
+            1455,
+            996,
+            1509
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "description",
+          "ancestors": [
+            "bpp",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.opera.browser:id/folder_bg_image",
+          "clickable": false,
+          "class": "com.opera.android.favorites.HeightExpandingImageView",
+          "bounds": [
+            755,
+            1185,
+            1011,
+            1441
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.opera.browser:id/folder_icon",
+          "clickable": false,
+          "class": "com.opera.android.custom_views.StylingImageView",
+          "bounds": [
+            822,
+            1237,
+            943,
+            1388
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        720,
+        1150,
+        1046,
+        1520
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.opera.browser:id/grid_plus_item",
+      "clickable": true,
+      "class": "com.opera.android.favorites.PlusButtonFavoriteView",
+      "bounds": [
+        1046,
+        1150,
+        1372,
+        1476
+      ],
+      "componentLabel": "Image"
+    }
+  ]
+}

@@ -1,0 +1,1399 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.g2a.marketplace:id/toolbar",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "share",
+          "resource-id": "com.g2a.marketplace:id/action_share",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1076,
+            98,
+            1244,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "cart",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.g2a.marketplace:id/image",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1286,
+            126,
+            1398,
+            238
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.g2a.marketplace:id/button_buy",
+      "children": [
+        {
+          "text": "Buy now",
+          "resource-id": "com.g2a.marketplace:id/button_buy_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.g2a.marketplace.utils.views.FontText",
+          "bounds": [
+            458,
+            2226,
+            981,
+            2389
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.g2a.marketplace.views.details.widget.BuyNowFloatingButton",
+      "bounds": [
+        0,
+        2224,
+        1440,
+        2392
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.g2a.marketplace:id/backdrop",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        0,
+        84,
+        1440,
+        572
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        18,
+        740,
+        1422,
+        817
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "favorite",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.g2a.marketplace:id/image_flag",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            46,
+            740,
+            137,
+            769
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.g2a.marketplace:id/type",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            905,
+            740,
+            964,
+            753
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "50.74 USD",
+          "resource-id": "com.g2a.marketplace:id/price",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.g2a.marketplace.utils.views.CurrencyPriceTextView",
+          "bounds": [
+            992,
+            740,
+            1236,
+            766
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.g2a.marketplace:id/basket_layout",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1264,
+            740,
+            1394,
+            789
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "99%",
+          "resource-id": "com.g2a.marketplace:id/percentage",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.g2a.marketplace.utils.views.FontText",
+          "bounds": [
+            165,
+            740,
+            256,
+            777
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "/ 63510 ratings",
+          "resource-id": "com.g2a.marketplace:id/rating",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.g2a.marketplace.utils.views.FontText",
+          "bounds": [
+            256,
+            740,
+            538,
+            777
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        18,
+        831,
+        1422,
+        1017
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "national_flag",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.g2a.marketplace:id/image_flag",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            46,
+            878,
+            137,
+            969
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.g2a.marketplace:id/type",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            905,
+            894,
+            964,
+            953
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "50.84 USD",
+          "resource-id": "com.g2a.marketplace:id/price",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.g2a.marketplace.utils.views.CurrencyPriceTextView",
+          "bounds": [
+            992,
+            881,
+            1236,
+            966
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "cart",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.g2a.marketplace:id/basket_layout",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1264,
+            859,
+            1394,
+            989
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "c***@***.com",
+          "resource-id": "com.g2a.marketplace:id/email",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.g2a.marketplace.utils.views.FontText",
+          "bounds": [
+            165,
+            871,
+            877,
+            924
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0%",
+          "resource-id": "com.g2a.marketplace:id/percentage",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.g2a.marketplace.utils.views.FontText",
+          "bounds": [
+            165,
+            924,
+            234,
+            977
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "/ 1 ratings",
+          "resource-id": "com.g2a.marketplace:id/rating",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.g2a.marketplace.utils.views.FontText",
+          "bounds": [
+            234,
+            925,
+            427,
+            977
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        18,
+        1031,
+        1422,
+        1217
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.g2a.marketplace:id/image_flag",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            46,
+            1078,
+            137,
+            1169
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "search",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.g2a.marketplace:id/type",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            906,
+            1094,
+            965,
+            1153
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "51.26 USD",
+          "resource-id": "com.g2a.marketplace:id/price",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.g2a.marketplace.utils.views.CurrencyPriceTextView",
+          "bounds": [
+            993,
+            1081,
+            1236,
+            1166
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "cart",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.g2a.marketplace:id/basket_layout",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1264,
+            1059,
+            1394,
+            1189
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "s***@***.com",
+          "resource-id": "com.g2a.marketplace:id/email",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.g2a.marketplace.utils.views.FontText",
+          "bounds": [
+            165,
+            1071,
+            878,
+            1124
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "99%",
+          "resource-id": "com.g2a.marketplace:id/percentage",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.g2a.marketplace.utils.views.FontText",
+          "bounds": [
+            165,
+            1124,
+            256,
+            1177
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "/ 131139 ratings",
+          "resource-id": "com.g2a.marketplace:id/rating",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.g2a.marketplace.utils.views.FontText",
+          "bounds": [
+            256,
+            1125,
+            559,
+            1177
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        18,
+        1231,
+        1422,
+        1417
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.g2a.marketplace:id/image_flag",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            46,
+            1278,
+            137,
+            1369
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "search",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.g2a.marketplace:id/type",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            904,
+            1294,
+            963,
+            1353
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "52.00 USD",
+          "resource-id": "com.g2a.marketplace:id/price",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.g2a.marketplace.utils.views.CurrencyPriceTextView",
+          "bounds": [
+            991,
+            1281,
+            1236,
+            1366
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "cart",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.g2a.marketplace:id/basket_layout",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1264,
+            1259,
+            1394,
+            1389
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "i***@***.cz",
+          "resource-id": "com.g2a.marketplace:id/email",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.g2a.marketplace.utils.views.FontText",
+          "bounds": [
+            165,
+            1271,
+            876,
+            1324
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "98%",
+          "resource-id": "com.g2a.marketplace:id/percentage",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.g2a.marketplace.utils.views.FontText",
+          "bounds": [
+            165,
+            1324,
+            256,
+            1377
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "/ 5602 ratings",
+          "resource-id": "com.g2a.marketplace:id/rating",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.g2a.marketplace.utils.views.FontText",
+          "bounds": [
+            256,
+            1325,
+            516,
+            1377
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        18,
+        1431,
+        1422,
+        1617
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "minus",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.g2a.marketplace:id/image_flag",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            46,
+            1478,
+            137,
+            1569
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.g2a.marketplace:id/type",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            906,
+            1494,
+            965,
+            1553
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "52.25 USD",
+          "resource-id": "com.g2a.marketplace:id/price",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.g2a.marketplace.utils.views.CurrencyPriceTextView",
+          "bounds": [
+            993,
+            1481,
+            1236,
+            1566
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "cart",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.g2a.marketplace:id/basket_layout",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1264,
+            1459,
+            1394,
+            1589
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "u***@***.com",
+          "resource-id": "com.g2a.marketplace:id/email",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.g2a.marketplace.utils.views.FontText",
+          "bounds": [
+            165,
+            1471,
+            878,
+            1524
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0%",
+          "resource-id": "com.g2a.marketplace:id/percentage",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.g2a.marketplace.utils.views.FontText",
+          "bounds": [
+            165,
+            1524,
+            234,
+            1577
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "/ 0 ratings",
+          "resource-id": "com.g2a.marketplace:id/rating",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.g2a.marketplace.utils.views.FontText",
+          "bounds": [
+            234,
+            1525,
+            428,
+            1577
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        18,
+        1631,
+        1422,
+        1817
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "minus",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.g2a.marketplace:id/image_flag",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            46,
+            1678,
+            137,
+            1769
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.g2a.marketplace:id/type",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            906,
+            1694,
+            965,
+            1753
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "52.92 USD",
+          "resource-id": "com.g2a.marketplace:id/price",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.g2a.marketplace.utils.views.CurrencyPriceTextView",
+          "bounds": [
+            993,
+            1681,
+            1236,
+            1766
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "cart",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.g2a.marketplace:id/basket_layout",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1264,
+            1659,
+            1394,
+            1789
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "g***@***.com",
+          "resource-id": "com.g2a.marketplace:id/email",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.g2a.marketplace.utils.views.FontText",
+          "bounds": [
+            165,
+            1671,
+            878,
+            1724
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "99%",
+          "resource-id": "com.g2a.marketplace:id/percentage",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.g2a.marketplace.utils.views.FontText",
+          "bounds": [
+            165,
+            1724,
+            256,
+            1777
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "/ 25324 ratings",
+          "resource-id": "com.g2a.marketplace:id/rating",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.g2a.marketplace.utils.views.FontText",
+          "bounds": [
+            256,
+            1725,
+            537,
+            1777
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        18,
+        1831,
+        1422,
+        2017
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "minus",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.g2a.marketplace:id/image_flag",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            46,
+            1878,
+            137,
+            1969
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.g2a.marketplace:id/type",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            906,
+            1894,
+            965,
+            1953
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "52.96 USD",
+          "resource-id": "com.g2a.marketplace:id/price",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.g2a.marketplace.utils.views.CurrencyPriceTextView",
+          "bounds": [
+            993,
+            1881,
+            1236,
+            1966
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "cart",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.g2a.marketplace:id/basket_layout",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1264,
+            1859,
+            1394,
+            1989
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "p***@***.com",
+          "resource-id": "com.g2a.marketplace:id/email",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.g2a.marketplace.utils.views.FontText",
+          "bounds": [
+            165,
+            1871,
+            878,
+            1924
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "99%",
+          "resource-id": "com.g2a.marketplace:id/percentage",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.g2a.marketplace.utils.views.FontText",
+          "bounds": [
+            165,
+            1924,
+            256,
+            1977
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "/ 94349 ratings",
+          "resource-id": "com.g2a.marketplace:id/rating",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.g2a.marketplace.utils.views.FontText",
+          "bounds": [
+            256,
+            1925,
+            537,
+            1977
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        18,
+        2031,
+        1422,
+        2217
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "globe",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.g2a.marketplace:id/image_flag",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            46,
+            2078,
+            137,
+            2169
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.g2a.marketplace:id/type",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            906,
+            2094,
+            965,
+            2153
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "52.96 USD",
+          "resource-id": "com.g2a.marketplace:id/price",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.g2a.marketplace.utils.views.CurrencyPriceTextView",
+          "bounds": [
+            993,
+            2081,
+            1236,
+            2166
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "cart",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.g2a.marketplace:id/basket_layout",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1264,
+            2059,
+            1394,
+            2189
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "l***@***.com",
+          "resource-id": "com.g2a.marketplace:id/email",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.g2a.marketplace.utils.views.FontText",
+          "bounds": [
+            165,
+            2071,
+            878,
+            2124
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "100%",
+          "resource-id": "com.g2a.marketplace:id/percentage",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.g2a.marketplace.utils.views.FontText",
+          "bounds": [
+            165,
+            2124,
+            278,
+            2177
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "/ 28408 ratings",
+          "resource-id": "com.g2a.marketplace:id/rating",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.g2a.marketplace.utils.views.FontText",
+          "bounds": [
+            278,
+            2125,
+            560,
+            2177
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.g2a.marketplace:id/image_cover",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        35,
+        252,
+        210,
+        544
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "G2A Selected offer",
+      "resource-id": "com.g2a.marketplace:id/selected_offer_title",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.g2a.marketplace.utils.views.FontText",
+      "bounds": [
+        238,
+        252,
+        1405,
+        305
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Tom Clancy's Ghost Recon Wildlands UPLAY CD-KEY GLOBAL",
+      "resource-id": "com.g2a.marketplace:id/title",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.g2a.marketplace.utils.views.FontText",
+      "bounds": [
+        238,
+        305,
+        1405,
+        432
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Product details",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        42,
+        629,
+        384,
+        682
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Marketplace offers",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        468,
+        629,
+        897,
+        682
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Video and gallery",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        981,
+        629,
+        1358,
+        682
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "55.61 USD",
+      "resource-id": "com.g2a.marketplace:id/price",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.g2a.marketplace.utils.views.CurrencyPriceTextView",
+      "bounds": [
+        238,
+        441,
+        1405,
+        544
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

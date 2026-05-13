@@ -1,0 +1,792 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.fivemobile.thescore:id/toolbar",
+      "children": [
+        {
+          "resource-id": "com.fivemobile.thescore:id/tab_spinner",
+          "ancestors": [
+            "android.widget.Spinner",
+            "android.widget.AbsSpinner",
+            "android.widget.AdapterView",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.fivemobile.thescore.view.ScoreSpinner",
+          "bounds": [
+            252,
+            107,
+            738,
+            256
+          ],
+          "componentLabel": "Text Button",
+          "text": "MYSCORE"
+        },
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "filter",
+          "resource-id": "com.fivemobile.thescore:id/menu_item_feed_add_filter",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            936,
+            98,
+            1104,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "wallpaper",
+          "resource-id": "com.fivemobile.thescore:id/menu_item_article_layout",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1104,
+            98,
+            1272,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "com.fivemobile.thescore:id/menu_search",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1272,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.fivemobile.thescore:id/indicator",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "All",
+          "bounds": [
+            28,
+            280,
+            199,
+            458
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "com.thescore.view.SlidingTabLayout",
+        "android.widget.HorizontalScrollView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.fivemobile.thescore.view.ScoreSlidingTabLayout",
+      "bounds": [
+        0,
+        280,
+        1440,
+        458
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "iconClass": "add",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.fivemobile.thescore:id/feed_fab_add_teams",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageButton",
+      "bounds": [
+        1188,
+        2140,
+        1384,
+        2336
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "add",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.fivemobile.thescore:id/feed_fab_add_players",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageButton",
+      "bounds": [
+        1188,
+        2140,
+        1384,
+        2336
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "add",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.fivemobile.thescore:id/feed_fab_add_leagues",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageButton",
+      "bounds": [
+        1188,
+        2140,
+        1384,
+        2336
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "add",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.fivemobile.thescore:id/feed_fab_add",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageButton",
+      "bounds": [
+        1188,
+        2140,
+        1384,
+        2336
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        458,
+        1440,
+        1427
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.v7.widget.CardView",
+          "bounds": [
+            28,
+            458,
+            1412,
+            1427
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.fivemobile.thescore:id/item_row_top_news_feature_image_gradient",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                28,
+                458,
+                1412,
+                1427
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.fivemobile.thescore:id/item_row_top_news_feature_image",
+              "clickable": false,
+              "class": "com.fivemobile.thescore.view.FeatureImageView",
+              "bounds": [
+                28,
+                458,
+                1412,
+                1427
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "2h ago",
+              "resource-id": "com.fivemobile.thescore:id/timestamp",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                1172,
+                458,
+                1356,
+                515
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Cashman calls Red Sox the 'Warriors of baseball' after Sale trade",
+              "resource-id": "com.fivemobile.thescore:id/item_row_top_news_article_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                84,
+                1048,
+                1356,
+                1241
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "iconClass": "share",
+              "ancestors": [
+                "android.widget.ImageButton",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.fivemobile.thescore:id/item_share_other",
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatImageButton",
+              "bounds": [
+                1254,
+                1278,
+                1394,
+                1418
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "iconClass": "chat",
+              "ancestors": [
+                "android.widget.ImageButton",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.fivemobile.thescore:id/item_sms",
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatImageButton",
+              "bounds": [
+                46,
+                1278,
+                186,
+                1418
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "iconClass": "facebook",
+              "ancestors": [
+                "android.widget.ImageButton",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.fivemobile.thescore:id/item_facebook",
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatImageButton",
+              "bounds": [
+                186,
+                1278,
+                326,
+                1418
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "iconClass": "twitter",
+              "ancestors": [
+                "android.widget.ImageButton",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.fivemobile.thescore:id/item_twitter",
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatImageButton",
+              "bounds": [
+                326,
+                1278,
+                466,
+                1418
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "componentLabel": "Card"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1427,
+        1440,
+        2011
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.v7.widget.CardView",
+          "bounds": [
+            28,
+            1455,
+            1412,
+            2011
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "text": "Cowboys' Randy Gregory: Will not practice Wednesday",
+              "resource-id": "com.fivemobile.thescore:id/headline",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                84,
+                1749,
+                1356,
+                1825
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "30m ago",
+              "resource-id": "com.fivemobile.thescore:id/timestamp",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                1134,
+                1511,
+                1356,
+                1581
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "R. Gregory",
+              "resource-id": "com.fivemobile.thescore:id/txt_player_name",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                357,
+                1511,
+                1134,
+                1587
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "DAL, DE",
+              "resource-id": "com.fivemobile.thescore:id/city_and_team",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                357,
+                1594,
+                529,
+                1660
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "iconClass": "share",
+              "ancestors": [
+                "android.widget.ImageButton",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.fivemobile.thescore:id/item_share_other",
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatImageButton",
+              "bounds": [
+                1254,
+                1862,
+                1394,
+                2002
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "iconClass": "star",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.fivemobile.thescore:id/img_player_team",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                84,
+                1609,
+                168,
+                1693
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "iconClass": "chat",
+              "ancestors": [
+                "android.widget.ImageButton",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.fivemobile.thescore:id/item_sms",
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatImageButton",
+              "bounds": [
+                46,
+                1862,
+                186,
+                2002
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "iconClass": "facebook",
+              "ancestors": [
+                "android.widget.ImageButton",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.fivemobile.thescore:id/item_facebook",
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatImageButton",
+              "bounds": [
+                186,
+                1862,
+                326,
+                2002
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "iconClass": "twitter",
+              "ancestors": [
+                "android.widget.ImageButton",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.fivemobile.thescore:id/item_twitter",
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatImageButton",
+              "bounds": [
+                326,
+                1862,
+                466,
+                2002
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "iconClass": "avatar",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                98,
+                1476,
+                301,
+                1679
+              ],
+              "clickable": false,
+              "class": "com.fivemobile.thescore.view.TransparentHeadshotView",
+              "componentLabel": "Icon"
+            }
+          ],
+          "componentLabel": "Card"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        2011,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.v7.widget.CardView",
+          "bounds": [
+            28,
+            2039,
+            1412,
+            2392
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "text": "Bulls' Doug McDermott: To meet with team doctors Wednesday",
+              "resource-id": "com.fivemobile.thescore:id/headline",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                84,
+                2333,
+                1356,
+                2392
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "57m ago",
+              "resource-id": "com.fivemobile.thescore:id/timestamp",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                1134,
+                2095,
+                1356,
+                2165
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "D. McDermott",
+              "resource-id": "com.fivemobile.thescore:id/txt_player_name",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                357,
+                2095,
+                1134,
+                2171
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "CHI, SF",
+              "resource-id": "com.fivemobile.thescore:id/city_and_team",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                357,
+                2178,
+                515,
+                2244
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.fivemobile.thescore:id/img_player_team",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                84,
+                2193,
+                168,
+                2277
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "iconClass": "avatar",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                98,
+                2060,
+                301,
+                2263
+              ],
+              "clickable": false,
+              "class": "com.fivemobile.thescore.view.TransparentHeadshotView",
+              "componentLabel": "Icon"
+            }
+          ],
+          "componentLabel": "Card"
+        }
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

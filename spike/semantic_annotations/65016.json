@@ -1,0 +1,373 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "org.wikipedia.beta:id/single_fragment_toolbar",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.wikipedia.beta:id/single_fragment_toolbar_wordmark",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            56,
+            130,
+            406,
+            234
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "org.wikipedia.beta:id/menu_feed_search",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            936,
+            98,
+            1104,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "",
+          "resource-id": "org.wikipedia.beta:id/menu_feed_tabs",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1104,
+            98,
+            1272,
+            266
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "more",
+          "resource-id": "org.wikipedia.beta:id/menu_overflow_button",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1272,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "org.wikipedia.feed.view.DefaultFeedCardView",
+        "android.support.v7.widget.CardView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "org.wikipedia.feed.image.FeaturedImageCardView",
+      "bounds": [
+        25,
+        84,
+        1415,
+        934
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "com.facebook.drawee.view.SimpleDraweeView",
+            "com.facebook.drawee.view.GenericDraweeView",
+            "com.facebook.drawee.view.DraweeView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.wikipedia.beta:id/view_featured_image_card_image",
+          "clickable": true,
+          "class": "org.wikipedia.views.FaceAndColorDetectImageView",
+          "bounds": [
+            25,
+            84,
+            1415,
+            766
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Tramway bridge at Weil am Rhein, Germany.",
+          "resource-id": "org.wikipedia.beta:id/featured_image_description_Text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            25,
+            630,
+            1415,
+            766
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "resource-id": "org.wikipedia.beta:id/view_card_action_footer_button",
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            25,
+            766,
+            482,
+            934
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "download"
+        },
+        {
+          "iconClass": "share",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.wikipedia.beta:id/view_card_action_footer_share_button",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1219,
+            766,
+            1415,
+            934
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "org.wikipedia.feed.view.DefaultFeedCardView",
+        "android.support.v7.widget.CardView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "org.wikipedia.feed.featured.FeaturedArticleCardView",
+      "bounds": [
+        25,
+        970,
+        1415,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "com.facebook.drawee.view.SimpleDraweeView",
+            "com.facebook.drawee.view.GenericDraweeView",
+            "com.facebook.drawee.view.DraweeView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.wikipedia.beta:id/view_featured_article_card_image",
+          "clickable": true,
+          "class": "org.wikipedia.views.FaceAndColorDetectImageView",
+          "bounds": [
+            25,
+            1142,
+            1415,
+            1814
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Eta Carinae",
+          "resource-id": "org.wikipedia.beta:id/view_featured_article_card_article_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            81,
+            1818,
+            1359,
+            1984
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Stellar system in the constellation Carina",
+          "resource-id": "org.wikipedia.beta:id/view_featured_article_card_article_subtitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "org.wikipedia.views.GoneIfEmptyTextView",
+          "bounds": [
+            81,
+            1984,
+            1359,
+            2069
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Eta Carinae (abbreviated to η Carinae or η Car), formerly known as Eta Argus, is a stellar system containing at least two stars with a combined luminosity greater than five million times that of the Sun, located around 7,500 light-years (2,300 parsecs) distant in the constellation Carina. First recorded as a 4th-magnitude star, it brightened considerably over the period 1837 to 1856 in an event known as the Great Eruption. Eta Carinae became the second-brightest star in the sky between 11 and 14 March 1843 before fading well below naked eye visibility. It has brightened consistently since about 1940, peaking above magnitude 4.5 in 2014. Eta Carinae is circumpolar south of latitude 30°S, so it is never visible north of about latitude 30°N.\nThe two main stars of the Eta Carinae system have an eccentric orbit with a period of 5.54 years.",
+          "resource-id": "org.wikipedia.beta:id/view_featured_article_card_extract",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            81,
+            2069,
+            1359,
+            2392
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "star",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.wikipedia.beta:id/view_card_header_image",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            81,
+            1012,
+            165,
+            1096
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Featured article",
+          "resource-id": "org.wikipedia.beta:id/view_card_header_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            193,
+            1021,
+            538,
+            1087
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Mar 12, 2017",
+          "resource-id": "org.wikipedia.beta:id/view_card_header_subtitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1029,
+            1025,
+            1275,
+            1082
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.wikipedia.beta:id/view_list_card_header_menu",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1275,
+            984,
+            1415,
+            1124
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "Card"
+    }
+  ]
+}

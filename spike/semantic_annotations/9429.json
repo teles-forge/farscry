@@ -1,0 +1,413 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "net.idt.um.android.bossrevapp:id/toolbar_layout",
+      "children": [
+        {
+          "text": "Verification",
+          "resource-id": "net.idt.um.android.bossrevapp:id/toolbar_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "me.grantland.widget.AutofitTextView",
+          "bounds": [
+            56,
+            120,
+            1384,
+            244
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "Let's create an account with your mobile number. We'll send an SMS with your verification code.",
+      "resource-id": "net.idt.um.android.bossrevapp:id/activity_sms_header",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.bp",
+      "bounds": [
+        112,
+        319,
+        1328,
+        455
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "net.idt.um.android.bossrevapp:id/activity_sms_phone_editor",
+      "children": [
+        {
+          "text": "+1",
+          "resource-id": "net.idt.um.android.bossrevapp:id/edittext_phone_country",
+          "ancestors": [
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.al",
+          "bounds": [
+            112,
+            494,
+            420,
+            662
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "4155791543",
+          "resource-id": "net.idt.um.android.bossrevapp:id/edittext_phone_phone",
+          "ancestors": [
+            "android.widget.EditText",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.au",
+          "bounds": [
+            420,
+            536,
+            1328,
+            620
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "net.idt.um.android.ui.widget.BaseRelativeLayout",
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "net.idt.um.android.ui.widget.PhoneEditText",
+      "bounds": [
+        112,
+        494,
+        1328,
+        662
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Send Code*",
+      "resource-id": "net.idt.um.android.bossrevapp:id/activity_sms_send",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.al",
+      "bounds": [
+        112,
+        701,
+        1328,
+        869
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "*SMS charges may apply",
+      "resource-id": "net.idt.um.android.bossrevapp:id/activity_sms_disclosure",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.bp",
+      "bounds": [
+        112,
+        2302,
+        1328,
+        2353
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Your Number: (415) 579-1543",
+      "resource-id": "net.idt.um.android.bossrevapp:id/activity_call_code_number",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.bp",
+      "bounds": [
+        112,
+        319,
+        1328,
+        386
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Please enter verification code below",
+      "resource-id": "net.idt.um.android.bossrevapp:id/activity_call_code_instruction",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.bp",
+      "bounds": [
+        112,
+        425,
+        1328,
+        492
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Continue",
+      "resource-id": "net.idt.um.android.bossrevapp:id/activity_verify_continue",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.al",
+      "bounds": [
+        112,
+        742,
+        1328,
+        910
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "continue"
+    },
+    {
+      "text": "*Please be patient. The SMS will arrive momentarily.",
+      "resource-id": "net.idt.um.android.bossrevapp:id/activity_verify_code_note3",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.bp",
+      "bounds": [
+        112,
+        963,
+        1328,
+        1014
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "*Don't want an SMS? Choose Call with Code and you will receive an automated call shortly.",
+      "resource-id": "net.idt.um.android.bossrevapp:id/activity_verify_code_dontwant",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.bp",
+      "bounds": [
+        112,
+        1260,
+        1328,
+        1363
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "net.idt.um.android.bossrevapp:id/activity_enter_code_editor_1",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.au",
+      "bounds": [
+        112,
+        531,
+        260,
+        703
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "",
+      "resource-id": "net.idt.um.android.bossrevapp:id/activity_enter_code_editor_2",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.au",
+      "bounds": [
+        264,
+        531,
+        412,
+        703
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "",
+      "resource-id": "net.idt.um.android.bossrevapp:id/activity_enter_code_editor_3",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.au",
+      "bounds": [
+        416,
+        531,
+        564,
+        703
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "",
+      "resource-id": "net.idt.um.android.bossrevapp:id/activity_enter_code_editor_4",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.au",
+      "bounds": [
+        568,
+        531,
+        716,
+        703
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "",
+      "resource-id": "net.idt.um.android.bossrevapp:id/activity_enter_code_editor_5",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.au",
+      "bounds": [
+        720,
+        531,
+        868,
+        703
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "",
+      "resource-id": "net.idt.um.android.bossrevapp:id/activity_enter_code_editor_6",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.au",
+      "bounds": [
+        872,
+        531,
+        1021,
+        703
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Resend SMS",
+      "resource-id": "net.idt.um.android.bossrevapp:id/button_re_sms",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.al",
+      "bounds": [
+        112,
+        1053,
+        718,
+        1221
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Call with Code",
+      "resource-id": "net.idt.um.android.bossrevapp:id/button_re_code",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.al",
+      "bounds": [
+        722,
+        1053,
+        1328,
+        1221
+      ],
+      "componentLabel": "Text Button"
+    }
+  ]
+}

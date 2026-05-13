@@ -1,0 +1,1169 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.tradehero.th:id/my_toolbar",
+      "children": [
+        {
+          "iconClass": "filter_list",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "com.tradehero.th:id/btn_search",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1244,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "resource-id": "com.tradehero.th:id/switch_stock_fx",
+          "children": [
+            {
+              "resource-id": "com.tradehero.th:id/off_on_view_switcher",
+              "children": [
+                {
+                  "text": "Stocks",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    259,
+                    135,
+                    487,
+                    228
+                  ],
+                  "componentLabel": "Text"
+                }
+              ],
+              "ancestors": [
+                "android.widget.ViewAnimator",
+                "android.widget.FrameLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.widget.ViewSwitcher",
+              "bounds": [
+                259,
+                135,
+                487,
+                228
+              ],
+              "componentLabel": "On/Off Switch"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                487,
+                154,
+                543,
+                210
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "componentLabel": "Image"
+            }
+          ],
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.androidth.general.widget.OffOnViewSwitcher",
+          "bounds": [
+            252,
+            84,
+            550,
+            280
+          ],
+          "componentLabel": "On/Off Switch"
+        },
+        {
+          "text": "NASDAQ",
+          "resource-id": "com.tradehero.th:id/trending_filter_spinner_item_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            550,
+            140,
+            779,
+            224
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.tradehero.th:id/tabs",
+      "children": [
+        {
+          "text": "Favourites",
+          "resource-id": "android:id/title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            0,
+            335,
+            28,
+            392
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Trending",
+          "resource-id": "android:id/title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            140,
+            335,
+            345,
+            392
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Price Action",
+          "resource-id": "android:id/title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            457,
+            335,
+            735,
+            392
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Unusual Volumes",
+          "resource-id": "android:id/title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            847,
+            335,
+            1242,
+            392
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "All",
+          "resource-id": "android:id/title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1354,
+            335,
+            1428,
+            392
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.HorizontalScrollView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.android.common.SlidingTabLayout",
+      "bounds": [
+        0,
+        280,
+        1440,
+        448
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "android:id/icon",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        91,
+        2255,
+        196,
+        2360
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "iconClass": "avatar",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "android:id/icon",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        379,
+        2260,
+        484,
+        2355
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "explore",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "android:id/icon",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        667,
+        2255,
+        772,
+        2360
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "android:id/icon",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        953,
+        2255,
+        1062,
+        2360
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "iconClass": "avatar",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "android:id/icon",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        1243,
+        2257,
+        1348,
+        2359
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "book",
+      "resource-id": "com.tradehero.th:id/security_view",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.tradehero.th:id/stock_logo",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            157,
+            530,
+            577,
+            670
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Coca-Cola Bottling Co. Consolid",
+          "resource-id": "com.tradehero.th:id/stock_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            698,
+            678,
+            774
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "NASDAQ:COKE",
+          "resource-id": "com.tradehero.th:id/exchange_symbol",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            226,
+            774,
+            508,
+            831
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "US$ 173",
+          "resource-id": "com.tradehero.th:id/last_price",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            834,
+            388,
+            891
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "▲0.377%",
+          "resource-id": "com.tradehero.th:id/tv_stock_roi",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            406,
+            831,
+            678,
+            894
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.androidth.general.fragments.security.SecurityItemView",
+      "bounds": [
+        28,
+        448,
+        706,
+        950
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.tradehero.th:id/security_view",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.tradehero.th:id/stock_logo",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            863,
+            530,
+            1283,
+            670
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Orexigen Therapeutics, Inc.",
+          "resource-id": "com.tradehero.th:id/stock_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            762,
+            698,
+            1384,
+            774
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "NASDAQ:OREX",
+          "resource-id": "com.tradehero.th:id/exchange_symbol",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            932,
+            774,
+            1213,
+            831
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "US$ 4.82",
+          "resource-id": "com.tradehero.th:id/last_price",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            762,
+            834,
+            1094,
+            891
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "▲5.24%",
+          "resource-id": "com.tradehero.th:id/tv_stock_roi",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1112,
+            831,
+            1384,
+            894
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.androidth.general.fragments.security.SecurityItemView",
+      "bounds": [
+        734,
+        448,
+        1412,
+        950
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.tradehero.th:id/security_view",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.tradehero.th:id/stock_logo",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            157,
+            1062,
+            577,
+            1202
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Cellect Biotechnology Ltd.",
+          "resource-id": "com.tradehero.th:id/stock_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            1230,
+            678,
+            1306
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "NASDAQ:APOP",
+          "resource-id": "com.tradehero.th:id/exchange_symbol",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            224,
+            1306,
+            510,
+            1363
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "US$ 4.96",
+          "resource-id": "com.tradehero.th:id/last_price",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            1366,
+            388,
+            1423
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "▲18.9%",
+          "resource-id": "com.tradehero.th:id/tv_stock_roi",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            406,
+            1363,
+            678,
+            1426
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.androidth.general.fragments.security.SecurityItemView",
+      "bounds": [
+        28,
+        978,
+        706,
+        1482
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "iconClass": "book",
+      "resource-id": "com.tradehero.th:id/security_view",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.tradehero.th:id/stock_logo",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            863,
+            1062,
+            1283,
+            1202
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "EnteroMedics Inc.",
+          "resource-id": "com.tradehero.th:id/stock_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            849,
+            1230,
+            1297,
+            1306
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "NASDAQ:ETRM",
+          "resource-id": "com.tradehero.th:id/exchange_symbol",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            929,
+            1306,
+            1217,
+            1363
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "US$ 7.12",
+          "resource-id": "com.tradehero.th:id/last_price",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            762,
+            1366,
+            1094,
+            1423
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "▼3%",
+          "resource-id": "com.tradehero.th:id/tv_stock_roi",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1112,
+            1363,
+            1384,
+            1426
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.androidth.general.fragments.security.SecurityItemView",
+      "bounds": [
+        734,
+        978,
+        1412,
+        1482
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.tradehero.th:id/security_view",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.tradehero.th:id/stock_logo",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            157,
+            1594,
+            577,
+            1734
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Globus Maritime Limited",
+          "resource-id": "com.tradehero.th:id/stock_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            60,
+            1762,
+            673,
+            1838
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "NASDAQ:GLBS",
+          "resource-id": "com.tradehero.th:id/exchange_symbol",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            227,
+            1838,
+            506,
+            1895
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "US$ 8.27",
+          "resource-id": "com.tradehero.th:id/last_price",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            1898,
+            388,
+            1955
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "▼1.19%",
+          "resource-id": "com.tradehero.th:id/tv_stock_roi",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            406,
+            1895,
+            678,
+            1958
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.androidth.general.fragments.security.SecurityItemView",
+      "bounds": [
+        28,
+        1510,
+        706,
+        2014
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.tradehero.th:id/security_view",
+      "children": [
+        {
+          "iconClass": "date_range",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.tradehero.th:id/stock_logo",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            863,
+            1594,
+            1283,
+            1734
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Ocera Therapeutics, Inc.",
+          "resource-id": "com.tradehero.th:id/stock_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            773,
+            1762,
+            1372,
+            1838
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "NASDAQ:OCRX",
+          "resource-id": "com.tradehero.th:id/exchange_symbol",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            931,
+            1838,
+            1215,
+            1895
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "US$ 0.729",
+          "resource-id": "com.tradehero.th:id/last_price",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            762,
+            1898,
+            1094,
+            1955
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "▲32.5%",
+          "resource-id": "com.tradehero.th:id/tv_stock_roi",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1112,
+            1895,
+            1384,
+            1958
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.androidth.general.fragments.security.SecurityItemView",
+      "bounds": [
+        734,
+        1510,
+        1412,
+        2014
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "iconClass": "more",
+      "resource-id": "com.tradehero.th:id/security_view",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.tradehero.th:id/stock_logo",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            157,
+            2126,
+            577,
+            2266
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Galena Biopharma, Inc.",
+          "resource-id": "com.tradehero.th:id/stock_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            80,
+            2294,
+            653,
+            2370
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "NASDAQ:GALE",
+          "resource-id": "com.tradehero.th:id/exchange_symbol",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            227,
+            2370,
+            506,
+            2392
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.androidth.general.fragments.security.SecurityItemView",
+      "bounds": [
+        28,
+        2042,
+        706,
+        2392
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.tradehero.th:id/security_view",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.tradehero.th:id/stock_logo",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            863,
+            2126,
+            1283,
+            2266
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "NAKED BRAND GRP, INC",
+          "resource-id": "com.tradehero.th:id/stock_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            770,
+            2294,
+            1376,
+            2370
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "NASDAQ:NAKD",
+          "resource-id": "com.tradehero.th:id/exchange_symbol",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            929,
+            2370,
+            1216,
+            2392
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.androidth.general.fragments.security.SecurityItemView",
+      "bounds": [
+        734,
+        2042,
+        1412,
+        2392
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

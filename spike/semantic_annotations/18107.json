@@ -1,0 +1,798 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.tradehero.th:id/my_toolbar",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "NASDAQ:AAPL",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            252,
+            135,
+            727,
+            228
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.tradehero.th:id/tabs",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.androidth.general.widget.THTabView",
+          "bounds": [
+            169,
+            793,
+            375,
+            961
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "textButtonClass": "info"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.androidth.general.widget.THTabView",
+          "bounds": [
+            756,
+            793,
+            985,
+            961
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "textButtonClass": "news"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.androidth.general.widget.THTabView",
+          "bounds": [
+            985,
+            793,
+            1271,
+            961
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "textButtonClass": "history"
+        },
+        {
+          "text": "Discussions",
+          "resource-id": "android:id/title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            431,
+            848,
+            700,
+            905
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.HorizontalScrollView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.android.common.SlidingTabLayout",
+      "bounds": [
+        169,
+        793,
+        1271,
+        961
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.tradehero.th:id/stock_image",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        56,
+        336,
+        319,
+        599
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "+0.388%",
+      "resource-id": "com.tradehero.th:id/tv_stock_roi",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        78,
+        655,
+        296,
+        737
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Apple Inc.",
+      "resource-id": "com.tradehero.th:id/stock_name",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        375,
+        371,
+        1160,
+        437
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "NASDAQ:AAPL",
+      "resource-id": "com.tradehero.th:id/exchange_name",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        375,
+        437,
+        1160,
+        503
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Buy @ US$ 132.1",
+      "resource-id": "com.tradehero.th:id/buy_price",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        375,
+        503,
+        1160,
+        569
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Sell @ US$ 132.1",
+      "resource-id": "com.tradehero.th:id/sell_price",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        375,
+        569,
+        1160,
+        635
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Last @ US$ 132",
+      "resource-id": "com.tradehero.th:id/last_price",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        375,
+        635,
+        1160,
+        701
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "star",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.tradehero.th:id/btn_watched",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageButton",
+      "bounds": [
+        1216,
+        336,
+        1384,
+        504
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "time",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.tradehero.th:id/btn_alerted",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageButton",
+      "bounds": [
+        1216,
+        504,
+        1384,
+        672
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Buy",
+      "resource-id": "com.tradehero.th:id/btn_buy",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        56,
+        2150,
+        1384,
+        2318
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "buy"
+    },
+    {
+      "ancestors": [
+        "com.squareup.widgets.AspectRatioImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.tradehero.th:id/chart_imageView",
+      "clickable": true,
+      "class": "com.androidth.general.fragments.security.ChartImageView",
+      "bounds": [
+        0,
+        961,
+        1440,
+        1804
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "1d",
+      "ancestors": [
+        "com.androidth.general.widget.news.TimeSpanButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.androidth.general.widget.news.yahoo.YahooTimeSpanButton",
+      "bounds": [
+        35,
+        1860,
+        202,
+        1986
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "5d",
+      "ancestors": [
+        "com.androidth.general.widget.news.TimeSpanButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.androidth.general.widget.news.yahoo.YahooTimeSpanButton",
+      "bounds": [
+        206,
+        1860,
+        373,
+        1986
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "3m",
+      "ancestors": [
+        "com.androidth.general.widget.news.TimeSpanButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.androidth.general.widget.news.yahoo.YahooTimeSpanButton",
+      "bounds": [
+        377,
+        1860,
+        545,
+        1986
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "6m",
+      "ancestors": [
+        "com.androidth.general.widget.news.TimeSpanButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.androidth.general.widget.news.yahoo.YahooTimeSpanButton",
+      "bounds": [
+        549,
+        1860,
+        717,
+        1986
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "1y",
+      "ancestors": [
+        "com.androidth.general.widget.news.TimeSpanButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.androidth.general.widget.news.yahoo.YahooTimeSpanButton",
+      "bounds": [
+        721,
+        1860,
+        889,
+        1986
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "2y",
+      "ancestors": [
+        "com.androidth.general.widget.news.TimeSpanButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.androidth.general.widget.news.yahoo.YahooTimeSpanButton",
+      "bounds": [
+        893,
+        1860,
+        1061,
+        1986
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "5y",
+      "ancestors": [
+        "com.androidth.general.widget.news.TimeSpanButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.androidth.general.widget.news.yahoo.YahooTimeSpanButton",
+      "bounds": [
+        1065,
+        1860,
+        1233,
+        1986
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "my",
+      "ancestors": [
+        "com.androidth.general.widget.news.TimeSpanButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.androidth.general.widget.news.yahoo.YahooTimeSpanButton",
+      "bounds": [
+        1237,
+        1860,
+        1405,
+        1986
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Open",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        70,
+        2056,
+        391,
+        2136
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "US$ 131.3",
+      "resource-id": "com.tradehero.th:id/vopen",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        391,
+        2056,
+        696,
+        2136
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "High",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        70,
+        2150,
+        391,
+        2230
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "US$ 132.2",
+      "resource-id": "com.tradehero.th:id/vdays_high",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        391,
+        2150,
+        696,
+        2230
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Low",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        70,
+        2244,
+        391,
+        2324
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "US$ 131.2",
+      "resource-id": "com.tradehero.th:id/vdays_low",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        391,
+        2244,
+        696,
+        2324
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Prev. Close",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        70,
+        2338,
+        391,
+        2392
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "US$ 131.5",
+      "resource-id": "com.tradehero.th:id/vprevious_close",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        391,
+        2338,
+        696,
+        2392
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Volume",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        696,
+        2056,
+        1047,
+        2136
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "23,003,522",
+      "resource-id": "com.tradehero.th:id/vvolume",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1047,
+        2056,
+        1370,
+        2136
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Avg. Volume",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        696,
+        2150,
+        1047,
+        2230
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "31,708,200",
+      "resource-id": "com.tradehero.th:id/vavg_volume",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1047,
+        2150,
+        1370,
+        2230
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "P/E Ratio",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        696,
+        2244,
+        1047,
+        2324
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "15.85",
+      "resource-id": "com.tradehero.th:id/vpe_ratio",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1047,
+        2244,
+        1370,
+        2324
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "EPS",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        696,
+        2338,
+        1047,
+        2392
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "8.33",
+      "resource-id": "com.tradehero.th:id/veps",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1047,
+        2338,
+        1370,
+        2392
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

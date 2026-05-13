@@ -1,0 +1,457 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "ancestors": [
+        "android.support.design.widget.VisibilityAwareImageButton",
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.engie:id/status_connect_button",
+      "clickable": true,
+      "class": "android.support.design.widget.FloatingActionButton",
+      "bounds": [
+        1160,
+        2070,
+        1440,
+        2392
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "resource-id": "com.engie:id/toolbar",
+      "children": [
+        {
+          "text": "Dashboard",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            252,
+            135,
+            592,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.engie:id/tabs",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            280,
+            480,
+            476
+          ],
+          "clickable": true,
+          "class": "engie.engie.ui.views.MainTabView",
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            480,
+            280,
+            960,
+            476
+          ],
+          "clickable": true,
+          "class": "engie.engie.ui.views.MainTabView",
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            960,
+            280,
+            1440,
+            476
+          ],
+          "clickable": true,
+          "class": "engie.engie.ui.views.MainTabView",
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.widget.HorizontalScrollView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "engie.engie.ui.SlidingTabLayout",
+      "bounds": [
+        0,
+        280,
+        1440,
+        476
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "ancestors": [
+        "engie.engie.ui.list.listviews.BaseTripItemView",
+        "com.engie.lib.sharedobjects.app.listitemviews.BaseItemView",
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "engie.engie.ui.list.listviews.EmptyTripItemView",
+      "bounds": [
+        14,
+        494,
+        1426,
+        1262
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.v7.widget.CardView",
+          "bounds": [
+            14,
+            494,
+            1426,
+            1262
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "Last Trip",
+              "resource-id": "com.engie:id/headline_text",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.engie.lib.ui.views.MyTextView",
+              "bounds": [
+                24,
+                507,
+                1360,
+                695
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Fuel Rate",
+              "resource-id": "com.engie:id/fuelrate_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "com.engie.lib.ui.views.MyTextView",
+              "bounds": [
+                80,
+                695,
+                454,
+                827
+              ],
+              "componentLabel": "Text Button"
+            },
+            {
+              "text": "Cost",
+              "resource-id": "com.engie:id/cost_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.engie.lib.ui.views.MyTextView",
+              "bounds": [
+                720,
+                751,
+                835,
+                827
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "0.0 MPG",
+              "resource-id": "com.engie:id/kpl",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.engie.lib.ui.views.MyTextView",
+              "bounds": [
+                80,
+                855,
+                396,
+                1001
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "0.0 $",
+              "resource-id": "com.engie:id/fuel_cost",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.engie.lib.ui.views.MyTextView",
+              "bounds": [
+                720,
+                855,
+                936,
+                1001
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "No trip found",
+              "resource-id": "com.engie:id/distance",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.engie.lib.ui.views.MyTextView",
+              "bounds": [
+                24,
+                1061,
+                1416,
+                1249
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "Card"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "com.engie.lib.sharedobjects.app.listitemviews.BaseItemView",
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "engie.engie.ui.list.listviews.CarStatusEmptyItemView",
+      "bounds": [
+        14,
+        1276,
+        1426,
+        1748
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.v7.widget.CardView",
+          "bounds": [
+            14,
+            1276,
+            1426,
+            1748
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "Car Status",
+              "resource-id": "com.engie:id/headline_text",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.engie.lib.ui.views.MyTextView",
+              "bounds": [
+                24,
+                1289,
+                524,
+                1477
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Perform your first scan to check your car's condition",
+              "resource-id": "com.engie:id/distance",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.engie.lib.ui.views.MyTextView",
+              "bounds": [
+                24,
+                1481,
+                1416,
+                1735
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "Card"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "com.engie.lib.sharedobjects.app.listitemviews.BaseItemView",
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "engie.engie.ui.list.listviews.ParkingEmptyItemView",
+      "bounds": [
+        14,
+        1762,
+        1426,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.v7.widget.CardView",
+          "bounds": [
+            14,
+            1762,
+            1426,
+            2392
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "Parking",
+              "resource-id": "com.engie:id/headline_text",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.engie.lib.ui.views.MyTextView",
+              "bounds": [
+                24,
+                1775,
+                419,
+                1963
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.engie:id/empty_img",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                24,
+                1963,
+                1416,
+                2392
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "componentLabel": "Card"
+        }
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

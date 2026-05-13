@@ -1,0 +1,607 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "videoplayer.mediaplayer.hdplayer:id/main_toolbar",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Equalizer",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            252,
+            135,
+            541,
+            228
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.google.android.gms.ads.AdView",
+      "bounds": [
+        0,
+        2217,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.google.android.gms.ads.internal.webview.n",
+          "bounds": [
+            0,
+            2217,
+            1440,
+            2392
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.webkit.WebView",
+                "android.widget.AbsoluteLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                0,
+                2217,
+                1440,
+                2392
+              ],
+              "clickable": true,
+              "class": "com.google.android.gms.ads.internal.webview.o",
+              "componentLabel": "Web View"
+            }
+          ],
+          "componentLabel": "Web View"
+        }
+      ],
+      "componentLabel": "Advertisement"
+    },
+    {
+      "ancestors": [
+        "android.widget.SeekBar",
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "videoplayer.mediaplayer.hdplayer:id/equalizer_preamp",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatSeekBar",
+      "bounds": [
+        0,
+        448,
+        1440,
+        508
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "text": "",
+      "resource-id": "videoplayer.mediaplayer.hdplayer:id/equalizer_button",
+      "ancestors": [
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.SwitchCompat",
+      "bounds": [
+        35,
+        316,
+        201,
+        411
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "resource-id": "videoplayer.mediaplayer.hdplayer:id/equalizer_presets",
+      "ancestors": [
+        "android.widget.Spinner",
+        "android.widget.AbsSpinner",
+        "android.widget.AdapterView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatSpinner",
+      "bounds": [
+        201,
+        280,
+        909,
+        448
+      ],
+      "componentLabel": "Text Button",
+      "text": "Flat"
+    },
+    {
+      "ancestors": [
+        "android.widget.SeekBar",
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "videoplayer.mediaplayer.hdplayer:id/equalizer_seek",
+      "clickable": false,
+      "class": "videoplayer.mediaplayer.hdplayer.widget.VerticalSeekBar",
+      "bounds": [
+        0,
+        508,
+        200,
+        2068
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "text": "31 Hz",
+      "resource-id": "videoplayer.mediaplayer.hdplayer:id/equalizer_band",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        45,
+        2068,
+        154,
+        2125
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "0.0 Db",
+      "resource-id": "videoplayer.mediaplayer.hdplayer:id/equalizer_value",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        39,
+        2125,
+        160,
+        2182
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.SeekBar",
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "videoplayer.mediaplayer.hdplayer:id/equalizer_seek",
+      "clickable": false,
+      "class": "videoplayer.mediaplayer.hdplayer.widget.VerticalSeekBar",
+      "bounds": [
+        200,
+        508,
+        400,
+        2068
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "text": "63 Hz",
+      "resource-id": "videoplayer.mediaplayer.hdplayer:id/equalizer_band",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        245,
+        2068,
+        354,
+        2125
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "0.0 Db",
+      "resource-id": "videoplayer.mediaplayer.hdplayer:id/equalizer_value",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        239,
+        2125,
+        360,
+        2182
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.SeekBar",
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "videoplayer.mediaplayer.hdplayer:id/equalizer_seek",
+      "clickable": false,
+      "class": "videoplayer.mediaplayer.hdplayer.widget.VerticalSeekBar",
+      "bounds": [
+        400,
+        508,
+        600,
+        2068
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "text": "125 Hz",
+      "resource-id": "videoplayer.mediaplayer.hdplayer:id/equalizer_band",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        433,
+        2068,
+        566,
+        2125
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "0.0 Db",
+      "resource-id": "videoplayer.mediaplayer.hdplayer:id/equalizer_value",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        439,
+        2125,
+        560,
+        2182
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.SeekBar",
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "videoplayer.mediaplayer.hdplayer:id/equalizer_seek",
+      "clickable": false,
+      "class": "videoplayer.mediaplayer.hdplayer.widget.VerticalSeekBar",
+      "bounds": [
+        600,
+        508,
+        800,
+        2068
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "text": "250 Hz",
+      "resource-id": "videoplayer.mediaplayer.hdplayer:id/equalizer_band",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        633,
+        2068,
+        766,
+        2125
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "0.0 Db",
+      "resource-id": "videoplayer.mediaplayer.hdplayer:id/equalizer_value",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        639,
+        2125,
+        760,
+        2182
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.SeekBar",
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "videoplayer.mediaplayer.hdplayer:id/equalizer_seek",
+      "clickable": false,
+      "class": "videoplayer.mediaplayer.hdplayer.widget.VerticalSeekBar",
+      "bounds": [
+        800,
+        508,
+        1000,
+        2068
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "text": "500 Hz",
+      "resource-id": "videoplayer.mediaplayer.hdplayer:id/equalizer_band",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        833,
+        2068,
+        966,
+        2125
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "0.0 Db",
+      "resource-id": "videoplayer.mediaplayer.hdplayer:id/equalizer_value",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        839,
+        2125,
+        960,
+        2182
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.SeekBar",
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "videoplayer.mediaplayer.hdplayer:id/equalizer_seek",
+      "clickable": false,
+      "class": "videoplayer.mediaplayer.hdplayer.widget.VerticalSeekBar",
+      "bounds": [
+        1000,
+        508,
+        1200,
+        2068
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "text": "1 kHz",
+      "resource-id": "videoplayer.mediaplayer.hdplayer:id/equalizer_band",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1047,
+        2068,
+        1153,
+        2125
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "0.0 Db",
+      "resource-id": "videoplayer.mediaplayer.hdplayer:id/equalizer_value",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1039,
+        2125,
+        1160,
+        2182
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.SeekBar",
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "videoplayer.mediaplayer.hdplayer:id/equalizer_seek",
+      "clickable": false,
+      "class": "videoplayer.mediaplayer.hdplayer.widget.VerticalSeekBar",
+      "bounds": [
+        1200,
+        508,
+        1400,
+        2068
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "text": "2 kHz",
+      "resource-id": "videoplayer.mediaplayer.hdplayer:id/equalizer_band",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1247,
+        2068,
+        1353,
+        2125
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "0.0 Db",
+      "resource-id": "videoplayer.mediaplayer.hdplayer:id/equalizer_value",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1239,
+        2125,
+        1360,
+        2182
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.SeekBar",
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "videoplayer.mediaplayer.hdplayer:id/equalizer_seek",
+      "clickable": false,
+      "class": "videoplayer.mediaplayer.hdplayer.widget.VerticalSeekBar",
+      "bounds": [
+        1400,
+        508,
+        1440,
+        2068
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "text": "0.0 Db",
+      "resource-id": "videoplayer.mediaplayer.hdplayer:id/equalizer_value",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1439,
+        2125,
+        1440,
+        2182
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

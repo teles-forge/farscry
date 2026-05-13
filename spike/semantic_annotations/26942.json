@@ -1,0 +1,884 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.jetradar:id/toolbar",
+      "children": [
+        {
+          "text": "Price calendar",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.devspark.robototextview.widget.RobotoTextView",
+          "bounds": [
+            252,
+            135,
+            705,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.support.v7.widget.Toolbar",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.aviasales.views.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.jetradar:id/btn_price_calendar_change_date",
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "ru.aviasales.views.ShadowButton",
+      "bounds": [
+        56,
+        2168,
+        1384,
+        2336
+      ],
+      "componentLabel": "Text Button",
+      "text": "show tickets"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "ru.aviasales.screen.pricecalendar.view.PriceCalenderHeaderView",
+      "bounds": [
+        0,
+        280,
+        1440,
+        1284
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "AVERAGE PRICE IN MAY : $67",
+          "resource-id": "com.jetradar:id/average_month_price",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.devspark.robototextview.widget.RobotoTextView",
+          "bounds": [
+            412,
+            333,
+            1027,
+            395
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Only direct flights",
+          "resource-id": "com.jetradar:id/switch_direct_flight",
+          "ancestors": [
+            "android.support.v7.widget.SwitchCompat",
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.devspark.robototextview.widget.RobotoSwitch",
+          "bounds": [
+            0,
+            1130,
+            1440,
+            1284
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.support.v7.widget.CardView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "ru.aviasales.views.CardView",
+      "bounds": [
+        28,
+        1312,
+        1412,
+        1748
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "starting from $53",
+          "resource-id": "com.jetradar:id/price",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.devspark.robototextview.widget.RobotoTextView",
+          "bounds": [
+            84,
+            1368,
+            635,
+            1461
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "direct flight available starting from $53",
+          "resource-id": "com.jetradar:id/tv_direct",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.devspark.robototextview.widget.RobotoTextView",
+          "bounds": [
+            84,
+            1461,
+            926,
+            1527
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "30 May",
+          "resource-id": "com.jetradar:id/tv_departure_date",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.devspark.robototextview.widget.RobotoTextView",
+          "bounds": [
+            84,
+            1545,
+            265,
+            1621
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Monday",
+          "resource-id": "com.jetradar:id/tv_departure_day_of_week",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.devspark.robototextview.widget.RobotoTextView",
+          "bounds": [
+            84,
+            1635,
+            235,
+            1692
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "resource-id": "com.jetradar:id/cv_results_item",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.AbsoluteLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            28,
+            504,
+            1412,
+            924
+          ],
+          "clickable": true,
+          "class": "android.webkit.WebView",
+          "componentLabel": "Web View"
+        }
+      ],
+      "ancestors": [
+        "android.support.v7.widget.CardView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.aviasales.views.CardView",
+      "bounds": [
+        28,
+        504,
+        1412,
+        924
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "resource-id": "com.jetradar:id/clear_filters_view",
+      "children": [
+        {
+          "text": "RESET FILTERS",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.devspark.robototextview.widget.RobotoTextView",
+          "bounds": [
+            84,
+            980,
+            401,
+            1042
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "176 out of 249 tickets",
+          "resource-id": "com.jetradar:id/text_tickets_count",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.devspark.robototextview.widget.RobotoTextView",
+          "bounds": [
+            84,
+            1046,
+            455,
+            1099
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.support.v7.widget.CardView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "ru.aviasales.views.CardView",
+      "bounds": [
+        28,
+        952,
+        1412,
+        1127
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "resource-id": "com.jetradar:id/cv_results_item",
+      "children": [
+        {
+          "iconClass": "minus",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.jetradar:id/airline",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1048,
+            1183,
+            1356,
+            1348
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "$52",
+          "resource-id": "com.jetradar:id/price",
+          "ancestors": [
+            "com.devspark.robototextview.widget.RobotoTextView",
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "ru.aviasales.views.AutoResizeTextView",
+          "bounds": [
+            84,
+            1200,
+            1048,
+            1331
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "LAS • LAX",
+          "resource-id": "com.jetradar:id/tv_cities",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.devspark.robototextview.widget.RobotoTextView",
+          "bounds": [
+            84,
+            1370,
+            269,
+            1427
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "08:28p - 09:50p",
+          "resource-id": "com.jetradar:id/tv_arrival_and_departure_time",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.devspark.robototextview.widget.RobotoTextView",
+          "bounds": [
+            84,
+            1427,
+            448,
+            1493
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Duration",
+          "resource-id": "com.jetradar:id/tv_flight_duration_title",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.devspark.robototextview.widget.RobotoTextView",
+          "bounds": [
+            594,
+            1370,
+            752,
+            1427
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "01h 22m",
+          "resource-id": "com.jetradar:id/tv_flight_duration",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.devspark.robototextview.widget.RobotoTextView",
+          "bounds": [
+            594,
+            1427,
+            788,
+            1493
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Stops",
+          "resource-id": "com.jetradar:id/tv_flight_transfers_title",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.devspark.robototextview.widget.RobotoTextView",
+          "bounds": [
+            989,
+            1370,
+            1097,
+            1427
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "-",
+          "resource-id": "com.jetradar:id/tv_flight_transfers",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.devspark.robototextview.widget.RobotoTextView",
+          "bounds": [
+            989,
+            1427,
+            1027,
+            1493
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "ru.aviasales.views.BaseProposalView",
+        "ru.aviasales.views.CardView",
+        "android.support.v7.widget.CardView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.aviasales.screen.results.view.ResultsItemView",
+      "bounds": [
+        28,
+        1155,
+        1412,
+        1549
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.jetradar:id/cv_results_item",
+      "children": [
+        {
+          "iconClass": "minus",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.jetradar:id/airline",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1048,
+            1605,
+            1356,
+            1770
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "$58",
+          "resource-id": "com.jetradar:id/price",
+          "ancestors": [
+            "com.devspark.robototextview.widget.RobotoTextView",
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "ru.aviasales.views.AutoResizeTextView",
+          "bounds": [
+            84,
+            1622,
+            1048,
+            1753
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "LAS • LGB",
+          "resource-id": "com.jetradar:id/tv_cities",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.devspark.robototextview.widget.RobotoTextView",
+          "bounds": [
+            84,
+            1792,
+            269,
+            1849
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "06:48p - 07:52p",
+          "resource-id": "com.jetradar:id/tv_arrival_and_departure_time",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.devspark.robototextview.widget.RobotoTextView",
+          "bounds": [
+            84,
+            1849,
+            448,
+            1915
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Duration",
+          "resource-id": "com.jetradar:id/tv_flight_duration_title",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.devspark.robototextview.widget.RobotoTextView",
+          "bounds": [
+            594,
+            1792,
+            752,
+            1849
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "01h 04m",
+          "resource-id": "com.jetradar:id/tv_flight_duration",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.devspark.robototextview.widget.RobotoTextView",
+          "bounds": [
+            594,
+            1849,
+            788,
+            1915
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Stops",
+          "resource-id": "com.jetradar:id/tv_flight_transfers_title",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.devspark.robototextview.widget.RobotoTextView",
+          "bounds": [
+            989,
+            1792,
+            1097,
+            1849
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "-",
+          "resource-id": "com.jetradar:id/tv_flight_transfers",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.devspark.robototextview.widget.RobotoTextView",
+          "bounds": [
+            989,
+            1849,
+            1027,
+            1915
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "ru.aviasales.views.BaseProposalView",
+        "ru.aviasales.views.CardView",
+        "android.support.v7.widget.CardView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.aviasales.screen.results.view.ResultsItemView",
+      "bounds": [
+        28,
+        1577,
+        1412,
+        1971
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "ru.aviasales.views.CardView",
+        "android.support.v7.widget.CardView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "ru.aviasales.views.SmartCardView",
+      "bounds": [
+        28,
+        1999,
+        1412,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Price calendar",
+          "resource-id": "com.jetradar:id/title",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.devspark.robototextview.widget.RobotoTextView",
+          "bounds": [
+            28,
+            2048,
+            1412,
+            2110
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "resource-id": "com.jetradar:id/btn_filters",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.jetradar:id/iv_tabbar_button",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            148,
+            2217,
+            211,
+            2315
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Filters",
+          "resource-id": "com.jetradar:id/tv_tabbar_button",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.devspark.robototextview.widget.RobotoTextView",
+          "bounds": [
+            129,
+            2315,
+            230,
+            2353
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "ru.aviasales.views.results_tabbar.TabbarButton",
+      "bounds": [
+        0,
+        2196,
+        359,
+        2392
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "resource-id": "com.jetradar:id/btn_sort",
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "ru.aviasales.views.results_tabbar.TabbarButton",
+      "bounds": [
+        359,
+        2196,
+        723,
+        2392
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "sort"
+    },
+    {
+      "resource-id": "com.jetradar:id/btn_favs",
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "ru.aviasales.views.results_tabbar.TabbarButton",
+      "bounds": [
+        723,
+        2196,
+        1082,
+        2392
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "subscribe"
+    },
+    {
+      "resource-id": "com.jetradar:id/btn_calendar",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.jetradar:id/iv_tabbar_button",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1229,
+            2217,
+            1292,
+            2315
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Price calendar",
+          "resource-id": "com.jetradar:id/tv_tabbar_button",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.devspark.robototextview.widget.RobotoTextView",
+          "bounds": [
+            1149,
+            2315,
+            1373,
+            2353
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "ru.aviasales.views.results_tabbar.TabbarButton",
+      "bounds": [
+        1082,
+        2196,
+        1440,
+        2392
+      ],
+      "componentLabel": "Image"
+    }
+  ]
+}

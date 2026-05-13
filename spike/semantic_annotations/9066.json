@@ -1,0 +1,881 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "co.peeksoft.stocks:id/toolbar_tabs",
+      "children": [
+        {
+          "text": "Increase (NASDAQ Composite)",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            252,
+            135,
+            1104,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "refresh",
+          "resource-id": "co.peeksoft.stocks:id/action_refresh",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1132,
+            98,
+            1300,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$d",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "co.peeksoft.stocks:id/indicator",
+      "clickable": false,
+      "class": "co.peeksoft.stocks.prod.framework.ui.view_pager.TitlePageIndicator",
+      "bounds": [
+        0,
+        280,
+        1440,
+        404
+      ],
+      "componentLabel": "Pager Indicator"
+    },
+    {
+      "text": "Last Trade: 4:15 PM",
+      "resource-id": "co.peeksoft.stocks:id/priceDate",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        32,
+        579,
+        454,
+        645
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Notes",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        14,
+        2153,
+        248,
+        2274
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "5,734.13",
+      "resource-id": "co.peeksoft.stocks:id/price",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        32,
+        439,
+        435,
+        579
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "+ 18.95",
+      "resource-id": "co.peeksoft.stocks:id/change",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        505,
+        476,
+        736,
+        569
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "(+ 0.33%)",
+      "resource-id": "co.peeksoft.stocks:id/changePercent",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        806,
+        476,
+        1097,
+        569
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        708,
+        720,
+        774
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Low",
+          "resource-id": "co.peeksoft.stocks:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            32,
+            708,
+            360,
+            774
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "5,717.42",
+          "resource-id": "co.peeksoft.stocks:id/value",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            360,
+            708,
+            688,
+            774
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        720,
+        708,
+        1440,
+        774
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "High",
+          "resource-id": "co.peeksoft.stocks:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            752,
+            708,
+            1080,
+            774
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "5,743.43",
+          "resource-id": "co.peeksoft.stocks:id/value",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1080,
+            708,
+            1408,
+            774
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        774,
+        720,
+        840
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "52wk Low",
+          "resource-id": "co.peeksoft.stocks:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            32,
+            774,
+            360,
+            840
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "4,209.76",
+          "resource-id": "co.peeksoft.stocks:id/value",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            360,
+            774,
+            688,
+            840
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        720,
+        774,
+        1440,
+        840
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "52wk High",
+          "resource-id": "co.peeksoft.stocks:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            752,
+            774,
+            1080,
+            840
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "5,743.43",
+          "resource-id": "co.peeksoft.stocks:id/value",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1080,
+            774,
+            1408,
+            840
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        840,
+        720,
+        906
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Open",
+          "resource-id": "co.peeksoft.stocks:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            32,
+            840,
+            360,
+            906
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "5,726.17",
+          "resource-id": "co.peeksoft.stocks:id/value",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            360,
+            840,
+            688,
+            906
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        720,
+        840,
+        1440,
+        906
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Mkt Cap",
+          "resource-id": "co.peeksoft.stocks:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            752,
+            840,
+            1080,
+            906
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        906,
+        720,
+        972
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "P/E",
+          "resource-id": "co.peeksoft.stocks:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            32,
+            906,
+            360,
+            972
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "-",
+          "resource-id": "co.peeksoft.stocks:id/value",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            360,
+            906,
+            688,
+            972
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        720,
+        906,
+        1440,
+        972
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "EPS",
+          "resource-id": "co.peeksoft.stocks:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            752,
+            906,
+            1080,
+            972
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "-",
+          "resource-id": "co.peeksoft.stocks:id/value",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1080,
+            906,
+            1408,
+            972
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        972,
+        720,
+        1038
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Volume",
+          "resource-id": "co.peeksoft.stocks:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            32,
+            972,
+            360,
+            1038
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        720,
+        972,
+        1440,
+        1038
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Avg Vol (3m)",
+          "resource-id": "co.peeksoft.stocks:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            752,
+            972,
+            1080,
+            1038
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1038,
+        720,
+        1104
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Beta",
+          "resource-id": "co.peeksoft.stocks:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            32,
+            1038,
+            360,
+            1104
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "-",
+          "resource-id": "co.peeksoft.stocks:id/value",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            360,
+            1038,
+            688,
+            1104
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        720,
+        1038,
+        1440,
+        1104
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Div/Yld",
+          "resource-id": "co.peeksoft.stocks:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            752,
+            1038,
+            1080,
+            1104
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "-/-%",
+          "resource-id": "co.peeksoft.stocks:id/value",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1080,
+            1038,
+            1408,
+            1104
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "text": "6 months",
+      "resource-id": "co.peeksoft.stocks:id/range_selection_btn",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        32,
+        1139,
+        688,
+        1265
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Area",
+      "resource-id": "co.peeksoft.stocks:id/technicials_btn",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        752,
+        1139,
+        1408,
+        1265
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "co.peeksoft.stocks:id/externalChart",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        0,
+        1300,
+        1440,
+        2090
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Tap to enter notes",
+      "resource-id": "co.peeksoft.stocks:id/notes",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        0,
+        2278,
+        1440,
+        2380
+      ],
+      "componentLabel": "Text Button"
+    }
+  ]
+}

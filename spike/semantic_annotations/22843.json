@@ -1,0 +1,111 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.verizon.familybase.parent:id/title_bar_id",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.verizon.familybase.parent:id/left_image",
+          "clickable": true,
+          "class": "com.locationlabs.finder.cni.ui.CNIImageView",
+          "bounds": [
+            0,
+            98,
+            168,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.verizon.familybase.parent:id/left_divider",
+          "clickable": false,
+          "class": "com.locationlabs.finder.cni.ui.CNIImageView",
+          "bounds": [
+            168,
+            84,
+            170,
+            280
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "VERIZON FAMILYBASE",
+          "resource-id": "com.verizon.familybase.parent:id/title_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.locationlabs.finder.cni.ui.FontedTextView",
+          "bounds": [
+            205,
+            135,
+            915,
+            228
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.support.v7.widget.Toolbar",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.locationlabs.finder.cni.ui.TitleBar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.widget.AbsoluteLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.verizon.familybase.parent:id/webview",
+      "clickable": true,
+      "class": "android.webkit.WebView",
+      "bounds": [
+        0,
+        280,
+        1440,
+        2392
+      ],
+      "componentLabel": "Web View"
+    }
+  ]
+}

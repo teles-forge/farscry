@@ -1,0 +1,151 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.carezone.caredroid.careapp.medications:id/content_toolbar",
+      "children": [
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Calendar",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            210,
+            140,
+            478,
+            224
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "notifications",
+          "resource-id": "com.carezone.caredroid.careapp.medications:id/menu_notifications",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1272,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.support.v7.widget.Toolbar",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.carezone.caredroid.careapp.ui.view.compat.PatchedToolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.carezone.caredroid.careapp.medications:id/module_calendar_selector",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatSpinner",
+        "android.widget.Spinner",
+        "android.widget.AbsSpinner",
+        "android.widget.AdapterView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.carezone.caredroid.careapp.ui.view.SpinnerPatch",
+      "bounds": [
+        0,
+        280,
+        1258,
+        504
+      ],
+      "componentLabel": "Text Button",
+      "text": "MONDAY"
+    },
+    {
+      "iconClass": "date_range",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.carezone.caredroid.careapp.medications:id/module_calendar_today",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageButton",
+      "bounds": [
+        1258,
+        280,
+        1440,
+        504
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "resource-id": "com.carezone.caredroid.careapp.medications:id/module_calendar_day_view_switcher",
+      "children": [],
+      "ancestors": [
+        "android.widget.ViewAnimator",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.ViewSwitcher",
+      "bounds": [
+        0,
+        508,
+        1440,
+        2392
+      ],
+      "componentLabel": "On/Off Switch"
+    }
+  ]
+}

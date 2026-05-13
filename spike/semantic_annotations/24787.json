@@ -1,0 +1,296 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "nu.tommie.inbrowser:id/toolbar",
+      "children": [
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            252
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "nu.tommie.inbrowser:id/opentabsbutton",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            1272,
+            84,
+            1440,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "",
+          "resource-id": "nu.tommie.inbrowser:id/urltext",
+          "ancestors": [
+            "com.devspark.robototextview.widget.RobotoEditText",
+            "android.widget.EditText",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "nu.tommie.inbrowser.lib.widget.UrlInputField",
+          "bounds": [
+            196,
+            84,
+            1244,
+            249
+          ],
+          "componentLabel": "Input"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        252
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "nu.tommie.inbrowser:id/tabsholder",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.RelativeLayout",
+          "bounds": [
+            224,
+            280,
+            1440,
+            454
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "text": "Waiting for:",
+              "resource-id": "nu.tommie.inbrowser:id/tab_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.devspark.robototextview.widget.RobotoTextView",
+              "bounds": [
+                476,
+                305,
+                751,
+                376
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "http://inbrowser",
+              "resource-id": "nu.tommie.inbrowser:id/tab_url",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.devspark.robototextview.widget.RobotoTextView",
+              "bounds": [
+                476,
+                363,
+                824,
+                429
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "iconClass": "more",
+              "ancestors": [
+                "android.widget.ImageButton",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "nu.tommie.inbrowser:id/tabsOverflowButton",
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatImageButton",
+              "bounds": [
+                1272,
+                283,
+                1440,
+                451
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "nu.tommie.inbrowser:id/tab_favicon",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                308,
+                325,
+                392,
+                409
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "nu.tommie.inbrowser:id/backbutton",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            266,
+            2056,
+            434,
+            2221
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "refresh",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "nu.tommie.inbrowser:id/reloadbutton",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            748,
+            2056,
+            916,
+            2221
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "arrow_forward",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "nu.tommie.inbrowser:id/forwardbutton",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            1230,
+            2056,
+            1398,
+            2221
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "New Tab",
+          "resource-id": "nu.tommie.inbrowser:id/newtab",
+          "ancestors": [
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.devspark.robototextview.widget.RobotoButton",
+          "bounds": [
+            259,
+            2236,
+            1405,
+            2383
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        224,
+        252,
+        1440,
+        2392
+      ],
+      "componentLabel": "Drawer"
+    },
+    {
+      "ancestors": [
+        "android.webkit.WebView",
+        "android.widget.AbsoluteLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        0,
+        252,
+        1440,
+        2392
+      ],
+      "clickable": true,
+      "class": "nu.tommie.inbrowser.lib.widget.InbrowserWebview",
+      "componentLabel": "Web View"
+    }
+  ]
+}

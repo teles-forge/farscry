@@ -1,0 +1,659 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.fiverr.fiverr:id/toolbar",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "chat",
+          "resource-id": "com.fiverr.fiverr:id/menu_contact",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            936,
+            98,
+            1104,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "share",
+          "resource-id": "com.fiverr.fiverr:id/menu_share",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1104,
+            98,
+            1272,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "favorite",
+          "resource-id": "com.fiverr.fiverr:id/menu_collect",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1272,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "Click Menu > Favorites to view your lists",
+      "resource-id": "com.fiverr.fiverr:id/snackbar_text",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        42,
+        2226,
+        1164,
+        2390
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Got It",
+      "resource-id": "com.fiverr.fiverr:id/snackbar_action",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        1164,
+        2224,
+        1398,
+        2392
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "ok"
+    },
+    {
+      "resource-id": "com.fiverr.fiverr:id/dataObjectFvrGigItem_relativeLayout",
+      "children": [
+        {
+          "text": "Delivers in 3 days on avg",
+          "resource-id": "com.fiverr.fiverr:id/deleveryDate",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fiverr.fiverr.Views.FVRTextView",
+          "bounds": [
+            42,
+            611,
+            488,
+            657
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Logo Design",
+          "resource-id": "com.fiverr.fiverr:id/gig_category_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.fiverr.fiverr.Views.FVRTextView",
+          "bounds": [
+            42,
+            1543,
+            277,
+            1589
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "Created last year",
+          "resource-id": "com.fiverr.fiverr:id/createdAt",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fiverr.fiverr.Views.FVRTextView",
+          "bounds": [
+            1093,
+            1543,
+            1398,
+            1589
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fiverr.fiverr:id/collectGrad",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            0,
+            890,
+            637,
+            1508
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "com.android.volley.toolbox.NetworkImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fiverr.fiverr:id/gig_seller_image",
+          "clickable": false,
+          "class": "com.fiverr.fiverr.Network.volley.VolleyImageView",
+          "bounds": [
+            39,
+            318,
+            249,
+            528
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Replicate your logo or text in this retro style",
+          "resource-id": "com.fiverr.fiverr:id/gig_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fiverr.fiverr.Views.FVRTextView",
+          "bounds": [
+            284,
+            322,
+            1387,
+            455
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "aldodel",
+          "resource-id": "com.fiverr.fiverr:id/seller_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fiverr.fiverr.Views.FVRTextView",
+          "bounds": [
+            284,
+            476,
+            416,
+            522
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "expand_more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fiverr.fiverr:id/greenArrow",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            430,
+            483,
+            465,
+            518
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "national_flag",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fiverr.fiverr:id/seller_flag_image",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            479,
+            480,
+            521,
+            522
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "add",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fiverr.fiverr:id/sellerLevel",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            535,
+            480,
+            581,
+            526
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "com.android.volley.toolbox.NetworkImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fiverr.fiverr:id/gigimage",
+          "clickable": false,
+          "class": "com.fiverr.fiverr.Network.volley.VolleyImageView",
+          "bounds": [
+            1,
+            693,
+            1439,
+            1507
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "star",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1105,
+            608,
+            1165,
+            657
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "star",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1165,
+            608,
+            1225,
+            657
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "star",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1225,
+            608,
+            1285,
+            657
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "star",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1285,
+            608,
+            1345,
+            657
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "star",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1345,
+            608,
+            1405,
+            657
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "ONLINE",
+          "resource-id": "com.fiverr.fiverr:id/onlineTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fiverr.fiverr.Views.FVRTextView",
+          "bounds": [
+            1276,
+            478,
+            1405,
+            520
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fiverr.fiverr:id/imageviewGrad",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1,
+            1318,
+            1439,
+            1507
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "1",
+          "resource-id": "com.fiverr.fiverr:id/currentPage",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            612,
+            1387,
+            648,
+            1472
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "of",
+          "resource-id": "com.fiverr.fiverr:id/galleryViewIndicatorOfText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            697,
+            1406,
+            742,
+            1472
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "13",
+          "resource-id": "com.fiverr.fiverr:id/totalNumber",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            791,
+            1387,
+            863,
+            1472
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "com.android.volley.toolbox.NetworkImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fiverr.fiverr:id/GalleryImageView",
+          "clickable": false,
+          "class": "com.fiverr.fiverr.Network.volley.VolleyImageView",
+          "bounds": [
+            1,
+            693,
+            1439,
+            1507
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fiverr.fiverr:id/galleryViewGrad",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1,
+            1391,
+            1439,
+            1507
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        280,
+        1440,
+        1625
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.fiverr.fiverr:id/orderButtonContainer",
+      "children": [],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1624,
+        1440,
+        1916
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1915,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "About",
+          "resource-id": "com.fiverr.fiverr:id/text_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fiverr.fiverr.Views.FVRTextView",
+          "bounds": [
+            42,
+            1957,
+            214,
+            2028
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "RETRO style\nreplicate your logo or text in this RETRO style\n\nWant to impress or advertising your logo or any text in a spectacular way? Here its a brand new eye-catching Gig. I will make it with realistic 80s RETRO effect. I will surely create awesome eye-catching effect. \nNow you can get a professional and cool retro effect like 80s movies, on your Brand or Text. Give your company or your text a very cool and realistic effect.\nYour delivery will be in a Very High Resolution JPEG File 2200 x 1500 px.\nIf you want to change the background wall for a different image that is not in my samples, or animate it as a flashing RETRO sign in gif format check out my extras :)\n:::::::IMPORTANT:::::: THIS IS NOT LOGO DESIGN, I ONLY REPLICATE ANY TEXT YOU WANT IN ANY FONT YOU WANT, AND YOUR EXISTING BRAND IN A RETRO EFFECT, FOR LOGO DESIGN PLEASE ASK RATES :)\n\nOrder NOW",
+          "resource-id": "com.fiverr.fiverr:id/expandable_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fiverr.fiverr.Views.FVRTextView",
+          "bounds": [
+            42,
+            2042,
+            1398,
+            2392
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fiverr.fiverr:id/white_grad",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            42,
+            2112,
+            1398,
+            2392
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

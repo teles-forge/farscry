@@ -1,0 +1,567 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.target.ui:id/toolbar",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "com.target.ui:id/action_search",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            936,
+            98,
+            1132,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "com.target.ui.view.common.BaseOverflowView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.target.ui:id/action_overflow",
+          "clickable": true,
+          "class": "com.target.ui.view.product.components.pdp.PdpOverflowView",
+          "bounds": [
+            1328,
+            126,
+            1440,
+            238
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "cart",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.target.ui:id/cart_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1174,
+            126,
+            1286,
+            238
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.target.ui:id/pdp_v2_image_carousel",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            513,
+            756,
+            1248
+          ],
+          "clickable": true,
+          "class": "com.target.ui.view.common.ScalableImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            756,
+            513,
+            1440,
+            1248
+          ],
+          "clickable": true,
+          "class": "com.target.ui.view.common.ScalableImageView",
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.support.v7.widget.RecyclerView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.target.ui.view.common.ExpandableImageViewPager",
+      "bounds": [
+        0,
+        513,
+        1440,
+        1248
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Samsung Galaxy S8 - Verizon",
+      "resource-id": "com.target.ui:id/pdp_v2_title_text",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.target.ui.view.common.TargetTextView",
+      "bounds": [
+        56,
+        1304,
+        1384,
+        1401
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Price Varies",
+      "resource-id": "com.target.ui:id/pdp_v2_current_price",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.target.ui.view.common.TargetTextView",
+      "bounds": [
+        56,
+        1443,
+        498,
+        1540
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "add to cart",
+      "resource-id": "com.target.ui:id/add_to_cart_button",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.target.ui.view.common.TargetButton",
+      "bounds": [
+        28,
+        2196,
+        1412,
+        2364
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "add"
+    },
+    {
+      "iconClass": "warning",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.target.ui:id/pdp_variations_component_color_warning",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        56,
+        1665,
+        105,
+        1714
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Color - 3 Options",
+      "resource-id": "com.target.ui:id/pdp_variations_component_color_title",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.target.ui.view.common.TargetTextView",
+      "bounds": [
+        119,
+        1656,
+        1384,
+        1723
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "com.target.ui:id/pdp_v2_color_item",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.target.ui:id/pdp_v2_grid_variation_image_view",
+          "clickable": false,
+          "class": "com.target.ui.view.common.BitmapImageView",
+          "bounds": [
+            62,
+            1769,
+            262,
+            1966
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.target.ui:id/pdp_v2_grid_variation_swatch",
+          "clickable": false,
+          "class": "com.github.manjunathc23.views.CircularImageView",
+          "bounds": [
+            192,
+            1896,
+            255,
+            1959
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.target.ui.view.product.components.pdp.PdpVariationColorsCardView",
+      "bounds": [
+        57,
+        1765,
+        267,
+        1975
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "resource-id": "com.target.ui:id/pdp_v2_color_item",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.target.ui:id/pdp_v2_grid_variation_image_view",
+          "clickable": false,
+          "class": "com.target.ui.view.common.BitmapImageView",
+          "bounds": [
+            294,
+            1769,
+            494,
+            1966
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.target.ui:id/pdp_v2_grid_variation_swatch",
+          "clickable": false,
+          "class": "com.github.manjunathc23.views.CircularImageView",
+          "bounds": [
+            424,
+            1896,
+            487,
+            1959
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.target.ui.view.product.components.pdp.PdpVariationColorsCardView",
+      "bounds": [
+        289,
+        1765,
+        499,
+        1975
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "resource-id": "com.target.ui:id/pdp_v2_color_item",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.target.ui:id/pdp_v2_grid_variation_image_view",
+          "clickable": false,
+          "class": "com.target.ui.view.common.BitmapImageView",
+          "bounds": [
+            526,
+            1769,
+            726,
+            1966
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.target.ui:id/pdp_v2_grid_variation_swatch",
+          "clickable": false,
+          "class": "com.github.manjunathc23.views.CircularImageView",
+          "bounds": [
+            656,
+            1896,
+            719,
+            1959
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.target.ui.view.product.components.pdp.PdpVariationColorsCardView",
+      "bounds": [
+        521,
+        1765,
+        731,
+        1975
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "text": "Located in aisle C3",
+      "resource-id": "com.target.ui:id/pdp_v2_map_header_title",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.target.ui.view.common.TargetTextView",
+      "bounds": [
+        56,
+        322,
+        620,
+        399
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "View a map of San Francisco Central",
+      "resource-id": "com.target.ui:id/pdp_v2_map_header_subtitle",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.target.ui.view.common.TargetTextView",
+      "bounds": [
+        56,
+        399,
+        847,
+        457
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.target.ui:id/pdp_v2_fulfillment_channel_image",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        56,
+        2087,
+        203,
+        2234
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.target.ui:id/pdp_v2_fulfillment_channel_image",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        56,
+        2377,
+        203,
+        2392
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "iconClass": "location",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.target.ui:id/badge_image",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        1272,
+        280,
+        1440,
+        457
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "C3",
+      "resource-id": "com.target.ui:id/text_overlay",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.target.ui.view.common.TargetTextView",
+      "bounds": [
+        1272,
+        280,
+        1440,
+        457
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "select color to see availability",
+      "resource-id": "com.target.ui:id/pdp_v2_fulfillment_inventory_status",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.target.ui.view.common.TargetTextView",
+      "bounds": [
+        252,
+        2208,
+        1440,
+        2296
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "delivery",
+      "resource-id": "com.target.ui:id/pdp_v2_fulfillment_display_text",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.target.ui.view.common.TargetTextView",
+      "bounds": [
+        252,
+        2122,
+        1440,
+        2208
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

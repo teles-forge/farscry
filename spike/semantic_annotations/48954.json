@@ -1,0 +1,252 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "streetdirectory.mobile:id/view_map",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "streetdirectory.mobile:id/MapViewCanvas",
+          "clickable": false,
+          "class": "streetdirectory.mobile.gis.maps.MapViewCanvas",
+          "bounds": [
+            0,
+            252,
+            1440,
+            2213
+          ],
+          "componentLabel": "Map View"
+        },
+        {
+          "text": "OFF",
+          "resource-id": "streetdirectory.mobile:id/FindMeButton",
+          "ancestors": [
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.ToggleButton",
+          "bounds": [
+            18,
+            1345,
+            186,
+            1513
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "iconClass": "add",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "streetdirectory.mobile:id/ZoomInButton",
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "bounds": [
+            18,
+            1632,
+            186,
+            1800
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "streetdirectory.mobile:id/ZoomOutButton",
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "bounds": [
+            18,
+            1800,
+            186,
+            1968
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "streetdirectory.mobile:id/pinButton",
+          "clickable": true,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            606,
+            1081,
+            834,
+            1232
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Washington Villa",
+          "resource-id": "streetdirectory.mobile:id/textViewDesc",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            440,
+            854,
+            877,
+            1011
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_forward",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "streetdirectory.mobile:id/tooltipArrow",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            877,
+            875,
+            1000,
+            998
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "streetdirectory.mobile.gis.maps.MapView",
+      "bounds": [
+        0,
+        252,
+        1440,
+        2213
+      ],
+      "componentLabel": "Map View"
+    },
+    {
+      "text": "Back",
+      "resource-id": "streetdirectory.mobile:id/button_back",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        21,
+        105,
+        234,
+        231
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "back"
+    },
+    {
+      "text": "Map",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        21,
+        91,
+        1419,
+        245
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.google.android.gms.ads.AdView",
+      "bounds": [
+        0,
+        2217,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.google.android.gms.ads.internal.webview.n",
+          "bounds": [
+            0,
+            2217,
+            1440,
+            2392
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.webkit.WebView",
+                "android.widget.AbsoluteLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                0,
+                2217,
+                1440,
+                2392
+              ],
+              "clickable": true,
+              "class": "com.google.android.gms.ads.internal.webview.o",
+              "componentLabel": "Web View"
+            }
+          ],
+          "componentLabel": "Web View"
+        }
+      ],
+      "componentLabel": "Advertisement"
+    }
+  ]
+}

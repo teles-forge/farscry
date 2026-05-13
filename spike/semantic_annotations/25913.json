@@ -1,0 +1,565 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.Slack:id/toolbar",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.Slack:id/avatar_button",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            5,
+            84,
+            201,
+            280
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Test",
+          "resource-id": "com.Slack:id/team_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            207,
+            134,
+            967,
+            229
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "",
+          "resource-id": "com.Slack:id/snooze_button",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.Slack.ui.widgets.FontIconView",
+          "bounds": [
+            967,
+            98,
+            1135,
+            266
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "",
+          "resource-id": "com.Slack:id/search_button",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.Slack.ui.widgets.FontIconView",
+          "bounds": [
+            1135,
+            98,
+            1303,
+            266
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "",
+          "resource-id": "com.Slack:id/overflow_button",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.Slack.ui.widgets.FontIconView",
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.support.v7.widget.Toolbar",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.Slack.ui.widgets.SlackToolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.Slack:id/overlay_avatar",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        77,
+        593,
+        301,
+        817
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Let’s try it out!",
+      "resource-id": "com.Slack:id/overlay_button",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        861,
+        1658,
+        1356,
+        1838
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Tap the top left icon to access your Channels and Direct Messages",
+      "resource-id": "com.Slack:id/overlay_title",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        84,
+        901,
+        1356,
+        1159
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Channels are chat rooms based around a project, a topic, or a team of co-workers such as “sales” or “music”. Channels can be public or private.\n\nDirect Messages are private conversations between you and your co-workers. These messages can be 1-to-1, or include up to 8 people.",
+      "resource-id": "com.Slack:id/overlay_description",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        84,
+        1159,
+        1356,
+        1574
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "com.Slack:id/channel_title_bar_info_button",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.Slack.ui.widgets.FontIconView",
+      "bounds": [
+        1305,
+        307,
+        1440,
+        375
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "com.Slack:id/header_container",
+      "children": [
+        {
+          "text": "Slack is a messaging app for groups of people who work together. You can send updates, share files, and organize conversations so that everyone is in the loop.",
+          "resource-id": "com.Slack:id/description",
+          "ancestors": [
+            "com.Slack.ui.controls.MaxWidthTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.Slack.ui.controls.ClickableLinkTextView",
+          "bounds": [
+            56,
+            1050,
+            1384,
+            1223
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "Welcome!",
+          "resource-id": "com.Slack:id/channel_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            889,
+            395,
+            994
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "",
+          "resource-id": "com.Slack:id/messages_header_action_icon",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.Slack.ui.widgets.FontIconView",
+          "bounds": [
+            0,
+            1295,
+            252,
+            1449
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Learn about Slack",
+          "resource-id": "com.Slack:id/messages_header_action_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            252,
+            1326,
+            684,
+            1403
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "",
+          "resource-id": "com.Slack:id/messages_header_action_icon",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.Slack.ui.widgets.FontIconView",
+          "bounds": [
+            0,
+            1465,
+            252,
+            1619
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Invite people",
+          "resource-id": "com.Slack:id/messages_header_action_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            252,
+            1496,
+            571,
+            1573
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "",
+          "resource-id": "com.Slack:id/messages_header_action_icon",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.Slack.ui.widgets.FontIconView",
+          "bounds": [
+            0,
+            1635,
+            252,
+            1789
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Connect apps",
+          "resource-id": "com.Slack:id/messages_header_action_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            252,
+            1666,
+            588,
+            1743
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        610,
+        1440,
+        1835
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1978,
+        1440,
+        2185
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "joined #general",
+          "resource-id": "com.Slack:id/msg_text",
+          "ancestors": [
+            "com.Slack.ui.controls.ClickableLinkTextView",
+            "com.Slack.ui.controls.MaxWidthTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.Slack.ui.controls.PinnableTextView",
+          "bounds": [
+            252,
+            2094,
+            587,
+            2167
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.Slack:id/avatar_view",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            56,
+            2028,
+            196,
+            2168
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "app.crawler",
+          "resource-id": "com.Slack:id/user_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            252,
+            2018,
+            531,
+            2094
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "3:13 AM",
+          "resource-id": "com.Slack:id/msg_time",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            566,
+            2028,
+            745,
+            2091
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "text": "general",
+      "resource-id": "com.Slack:id/channel_title_bar_title",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        46,
+        310,
+        261,
+        373
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "com.Slack:id/emoji_button",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.Slack.ui.widgets.FontIconView",
+      "bounds": [
+        7,
+        2224,
+        175,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "",
+      "resource-id": "com.Slack:id/message_input_field",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatMultiAutoCompleteTextView",
+        "android.widget.MultiAutoCompleteTextView",
+        "android.widget.AutoCompleteTextView",
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.Slack.ui.widgets.SlackMultiAutoCompleteTextView",
+      "bounds": [
+        196,
+        2224,
+        1244,
+        2392
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Message #general",
+      "resource-id": "com.Slack:id/message_input_field_hint",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        196,
+        2269,
+        1244,
+        2346
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "com.Slack:id/file_upload_btn",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.Slack.ui.widgets.FontIconView",
+      "bounds": [
+        1265,
+        2224,
+        1433,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    }
+  ]
+}

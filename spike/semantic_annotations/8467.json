@@ -1,0 +1,834 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "android:id/action_bar_container",
+      "children": [
+        {
+          "iconClass": "national_flag",
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "android:id/home",
+              "clickable": false,
+              "class": "android.widget.ImageView",
+              "bounds": [
+                43,
+                112,
+                155,
+                224
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.android.internal.widget.ActionBarView$HomeView",
+          "bounds": [
+            29,
+            84,
+            169,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "add",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.mhriley.spendingtracker:id/add",
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "bounds": [
+            1048,
+            84,
+            1244,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1244,
+            84,
+            1440,
+            252
+          ],
+          "clickable": true,
+          "class": "android.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.android.internal.widget.ScrollingTabContainerView$TabView",
+          "bounds": [
+            3,
+            252,
+            361,
+            420
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "text": "Spending"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.android.internal.widget.ScrollingTabContainerView$TabView",
+          "bounds": [
+            363,
+            252,
+            721,
+            420
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "text": "Transactions"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.android.internal.widget.ScrollingTabContainerView$TabView",
+          "bounds": [
+            723,
+            252,
+            1082,
+            420
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "textButtonClass": "categories"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.android.internal.widget.ScrollingTabContainerView$TabView",
+          "bounds": [
+            1084,
+            252,
+            1440,
+            420
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "text": "Accounts"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.android.internal.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        420
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "Now you have entered some Transactions, you can rotate the device sideways to view a set of Spending Reports.",
+      "resource-id": "com.mhriley.spendingtracker:id/hintText",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        300,
+        1014,
+        1210,
+        1714
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "close",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.mhriley.spendingtracker:id/close",
+      "clickable": true,
+      "class": "android.widget.ImageButton",
+      "bounds": [
+        1108,
+        1014,
+        1210,
+        1116
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Expense",
+      "resource-id": "com.mhriley.spendingtracker:id/expense",
+      "ancestors": [
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RadioButton",
+      "bounds": [
+        230,
+        455,
+        720,
+        557
+      ],
+      "componentLabel": "Radio Button"
+    },
+    {
+      "text": "Income",
+      "resource-id": "com.mhriley.spendingtracker:id/income",
+      "ancestors": [
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RadioButton",
+      "bounds": [
+        720,
+        455,
+        1210,
+        557
+      ],
+      "componentLabel": "Radio Button"
+    },
+    {
+      "resource-id": "com.mhriley.spendingtracker:id/categoryListItem",
+      "children": [
+        {
+          "text": "Clothes",
+          "resource-id": "com.mhriley.spendingtracker:id/categoryName",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            175,
+            596,
+            436,
+            750
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.mhriley.spendingtracker:id/categoryImage",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            0,
+            614,
+            175,
+            732
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        596,
+        1440,
+        750
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.mhriley.spendingtracker:id/categoryListItem",
+      "children": [
+        {
+          "text": "Eating Out",
+          "resource-id": "com.mhriley.spendingtracker:id/categoryName",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            175,
+            752,
+            529,
+            906
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.mhriley.spendingtracker:id/categoryImage",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            0,
+            770,
+            175,
+            888
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        752,
+        1440,
+        906
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.mhriley.spendingtracker:id/categoryListItem",
+      "children": [
+        {
+          "text": "Entertainment",
+          "resource-id": "com.mhriley.spendingtracker:id/categoryName",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            175,
+            908,
+            658,
+            1062
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "save",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.mhriley.spendingtracker:id/categoryImage",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            0,
+            926,
+            175,
+            1044
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        908,
+        1440,
+        1062
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.mhriley.spendingtracker:id/categoryListItem",
+      "children": [
+        {
+          "text": "Fuel",
+          "resource-id": "com.mhriley.spendingtracker:id/categoryName",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            175,
+            1064,
+            319,
+            1218
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.mhriley.spendingtracker:id/categoryImage",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            0,
+            1082,
+            175,
+            1200
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1064,
+        1440,
+        1218
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.mhriley.spendingtracker:id/categoryListItem",
+      "children": [
+        {
+          "text": "General",
+          "resource-id": "com.mhriley.spendingtracker:id/categoryName",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            175,
+            1220,
+            436,
+            1374
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "label",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.mhriley.spendingtracker:id/categoryImage",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            0,
+            1238,
+            175,
+            1356
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1220,
+        1440,
+        1374
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.mhriley.spendingtracker:id/categoryListItem",
+      "children": [
+        {
+          "text": "Gifts",
+          "resource-id": "com.mhriley.spendingtracker:id/categoryName",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            175,
+            1376,
+            338,
+            1530
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "gift",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.mhriley.spendingtracker:id/categoryImage",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            0,
+            1394,
+            175,
+            1512
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1376,
+        1440,
+        1530
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.mhriley.spendingtracker:id/categoryListItem",
+      "children": [
+        {
+          "text": "Holidays",
+          "resource-id": "com.mhriley.spendingtracker:id/categoryName",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            175,
+            1532,
+            472,
+            1686
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "shop",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.mhriley.spendingtracker:id/categoryImage",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            0,
+            1550,
+            175,
+            1668
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1532,
+        1440,
+        1686
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.mhriley.spendingtracker:id/categoryListItem",
+      "children": [
+        {
+          "text": "Kids",
+          "resource-id": "com.mhriley.spendingtracker:id/categoryName",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            175,
+            1688,
+            325,
+            1842
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.mhriley.spendingtracker:id/categoryImage",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            0,
+            1706,
+            175,
+            1824
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1688,
+        1440,
+        1842
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.mhriley.spendingtracker:id/categoryListItem",
+      "children": [
+        {
+          "text": "Shopping",
+          "resource-id": "com.mhriley.spendingtracker:id/categoryName",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            175,
+            1844,
+            497,
+            1998
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "cart",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.mhriley.spendingtracker:id/categoryImage",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            0,
+            1862,
+            175,
+            1980
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1844,
+        1440,
+        1998
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.mhriley.spendingtracker:id/categoryListItem",
+      "children": [
+        {
+          "text": "Sports",
+          "resource-id": "com.mhriley.spendingtracker:id/categoryName",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            175,
+            2000,
+            401,
+            2154
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.mhriley.spendingtracker:id/categoryImage",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            0,
+            2018,
+            175,
+            2136
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        2000,
+        1440,
+        2154
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.mhriley.spendingtracker:id/categoryListItem",
+      "children": [
+        {
+          "text": "Travel",
+          "resource-id": "com.mhriley.spendingtracker:id/categoryName",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            175,
+            2156,
+            380,
+            2310
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.mhriley.spendingtracker:id/categoryImage",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            0,
+            2174,
+            175,
+            2292
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        2156,
+        1440,
+        2310
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

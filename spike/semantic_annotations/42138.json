@@ -1,0 +1,281 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "ch.sbb.mobile.android.b2c:id/toolbar",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Connections",
+          "resource-id": "ch.sbb.mobile.android.b2c:id/toolbarTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            252,
+            124,
+            1230,
+            239
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "ch.sbb.mobile.android.b2c:id/homeIcon",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1230,
+            101,
+            1440,
+            262
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.design.widget.CollapsingToolbarLayout",
+      "bounds": [
+        0,
+        280,
+        1440,
+        816
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "refresh",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "ch.sbb.mobile.android.b2c:id/refreshButton",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            1216,
+            644,
+            1440,
+            816
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "sliders",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "ch.sbb.mobile.android.b2c:id/additionalOptionsButton",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            992,
+            644,
+            1216,
+            816
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Departure 05:31",
+          "resource-id": "ch.sbb.mobile.android.b2c:id/travelDateTimeButton",
+          "ancestors": [
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatButton",
+          "bounds": [
+            0,
+            644,
+            1440,
+            812
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "resource-id": "ch.sbb.mobile.android.b2c:id/departure",
+          "children": [
+            {
+              "text": "       My location",
+              "resource-id": "ch.sbb.mobile.android.b2c:id/text",
+              "ancestors": [
+                "android.widget.EditText",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatEditText",
+              "bounds": [
+                0,
+                336,
+                1244,
+                427
+              ],
+              "componentLabel": "Input"
+            }
+          ],
+          "ancestors": [
+            "android.support.design.widget.TextInputLayout",
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "ch.sbb.mobile.android.vnext.common.ui.MaterialEditText",
+          "bounds": [
+            0,
+            280,
+            1440,
+            462
+          ],
+          "componentLabel": "Input"
+        },
+        {
+          "iconClass": "location_crosshair",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "ch.sbb.mobile.android.b2c:id/departurePositionIcon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            0,
+            343,
+            140,
+            462
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "resource-id": "ch.sbb.mobile.android.b2c:id/destination",
+          "children": [
+            {
+              "text": "",
+              "resource-id": "ch.sbb.mobile.android.b2c:id/text",
+              "ancestors": [
+                "android.widget.EditText",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatEditText",
+              "bounds": [
+                0,
+                518,
+                1244,
+                609
+              ],
+              "componentLabel": "Input"
+            }
+          ],
+          "ancestors": [
+            "android.support.design.widget.TextInputLayout",
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "ch.sbb.mobile.android.vnext.common.ui.MaterialEditText",
+          "bounds": [
+            0,
+            462,
+            1440,
+            644
+          ],
+          "componentLabel": "Input"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "ch.sbb.mobile.android.b2c:id/reverseButton",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            1286,
+            420,
+            1370,
+            504
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "componentLabel": "Toolbar"
+    }
+  ]
+}

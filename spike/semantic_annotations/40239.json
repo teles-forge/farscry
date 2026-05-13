@@ -1,0 +1,372 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "android:id/action_bar_container",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Settings",
+          "resource-id": "com.disa:id/SettingsAdvancedTitle",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            196,
+            84,
+            455,
+            280
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.disa:id/AdvancedMargin",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1282,
+            84,
+            1300,
+            280
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Advanced",
+          "resource-id": "com.disa:id/Advanced",
+          "ancestors": [
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.CheckBox",
+          "bounds": [
+            952,
+            126,
+            1282,
+            238
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "advanced"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.android.internal.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.disa:id/indicator",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.FrameLayout",
+          "bounds": [
+            0,
+            280,
+            361,
+            448
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "text": "SERVICES"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.FrameLayout",
+          "bounds": [
+            361,
+            280,
+            835,
+            448
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "textButtonClass": "notifications"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.FrameLayout",
+          "bounds": [
+            835,
+            280,
+            1188,
+            448
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "text": "GENERAL"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.FrameLayout",
+          "bounds": [
+            1188,
+            280,
+            1440,
+            448
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "text": "CONVERSATIONS"
+        }
+      ],
+      "ancestors": [
+        "android.widget.HorizontalScrollView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "md5c7e6c9f134094c3c5b08d0252d45c9e0.PagerSlidingTabStrip",
+      "bounds": [
+        0,
+        280,
+        1440,
+        448
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "text": "Click a service for its settings",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        275,
+        2237,
+        1165,
+        2392
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "com.disa:id/ServiceItemLayout",
+      "children": [
+        {
+          "iconClass": "chat",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.disa:id/ServiceItemImage",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            71,
+            501,
+            176,
+            606
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Needs Settings",
+          "resource-id": "com.disa:id/ServiceItemErrorMessage",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            847,
+            520,
+            1177,
+            586
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Text",
+          "resource-id": "com.disa:id/ServiceItemName",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            211,
+            511,
+            812,
+            596
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.disa:id/ServiceItemOverflowImage",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1250,
+            504,
+            1348,
+            602
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        53,
+        466,
+        1387,
+        641
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.disa:id/ServiceItemLayout",
+      "children": [
+        {
+          "iconClass": "add",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.disa:id/ServiceItemImage",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            71,
+            680,
+            176,
+            785
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Add Service",
+          "resource-id": "com.disa:id/ServiceItemName",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            211,
+            690,
+            1212,
+            775
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        53,
+        645,
+        1387,
+        820
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

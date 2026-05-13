@@ -1,0 +1,199 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.carezone.caredroid.careapp.medications:id/content_toolbar",
+      "children": [
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Medications",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            210,
+            140,
+            575,
+            224
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "notifications",
+          "resource-id": "com.carezone.caredroid.careapp.medications:id/menu_notifications",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1272,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.support.v7.widget.Toolbar",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.carezone.caredroid.careapp.ui.view.compat.PatchedToolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "iconClass": "add",
+      "ancestors": [
+        "com.carezone.caredroid.careapp.ui.view.QuickReturnButton",
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.carezone.caredroid.careapp.medications:id/module_medications_fab",
+      "clickable": true,
+      "class": "com.carezone.caredroid.careapp.ui.view.QuickReturnAddButton",
+      "bounds": [
+        1104,
+        2056,
+        1384,
+        2336
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.carezone.caredroid.careapp.ui.view.DragLinearLayout",
+      "bounds": [
+        28,
+        308,
+        1412,
+        1670
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "resource-id": "com.carezone.caredroid.careapp.medications:id/empty_videoview",
+          "children": [
+            {
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                28,
+                308,
+                1412,
+                1239
+              ],
+              "clickable": false,
+              "class": "android.widget.ImageView",
+              "componentLabel": "Image"
+            }
+          ],
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.carezone.caredroid.careapp.ui.view.TextureVideoView",
+          "bounds": [
+            28,
+            308,
+            1412,
+            1239
+          ],
+          "componentLabel": "Video"
+        },
+        {
+          "text": "Scan your medications",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            323,
+            1295,
+            1117,
+            1393
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Use your phone's camera to scan medicines and supplements.",
+          "resource-id": "com.carezone.caredroid.careapp.medications:id/module_medication_empty_state_details_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            84,
+            1449,
+            1356,
+            1614
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

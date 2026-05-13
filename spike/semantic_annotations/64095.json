@@ -1,0 +1,621 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.imdb.mobile:id/toolbar",
+      "children": [
+        {
+          "text": "Showtimes & Tickets",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            210,
+            135,
+            868,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "com.imdb.mobile:id/search",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1132,
+            98,
+            1300,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        280,
+        1440,
+        869
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "resource-id": "com.imdb.mobile:id/showtimes_date_spinner",
+          "ancestors": [
+            "android.widget.Spinner",
+            "android.widget.AbsSpinner",
+            "android.widget.AdapterView",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.imdb.mobile.view.ShowtimesDateSpinner",
+          "bounds": [
+            0,
+            715,
+            1272,
+            855
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "today"
+        },
+        {
+          "iconClass": "location_crosshair",
+          "ancestors": [
+            "com.imdb.mobile.view.RefMarkerImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.imdb.mobile:id/image",
+          "clickable": false,
+          "class": "com.imdb.mobile.view.TintedImageView",
+          "bounds": [
+            1272,
+            701,
+            1440,
+            869
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "avatar",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.imdb.mobile:id/image",
+          "clickable": false,
+          "class": "com.imdb.mobile.view.AsyncImageView",
+          "bounds": [
+            56,
+            281,
+            336,
+            701
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Gifted",
+          "resource-id": "com.imdb.mobile:id/primaryText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            364,
+            389,
+            1398,
+            460
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Rated PG-13, 1 hr 41 mins\n7.7/10",
+          "resource-id": "com.imdb.mobile:id/secondaryText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            364,
+            460,
+            1398,
+            593
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.imdb.mobile:id/header_frame",
+      "children": [
+        {
+          "text": "Showtimes & Tickets",
+          "resource-id": "com.imdb.mobile:id/header",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            0,
+            885,
+            1440,
+            1030
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        870,
+        1440,
+        1030
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.imdb.mobile.view.RefMarkerLinearLayout",
+      "bounds": [
+        0,
+        1031,
+        1440,
+        1479
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Gifted\n11:05 AM, 1:25 PM, 3:15 PM, 4:50 PM, 6:35 PM",
+          "resource-id": "com.imdb.mobile:id/tertiaryText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            28,
+            1242,
+            1090,
+            1437
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Tickets",
+          "resource-id": "com.imdb.mobile:id/ticketsButton",
+          "ancestors": [
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatButton",
+          "bounds": [
+            1090,
+            1255,
+            1398,
+            1423
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "ArcLight Hollywood",
+          "resource-id": "com.imdb.mobile:id/primaryText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            28,
+            1045,
+            1230,
+            1116
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "6360 West Sunset Boulevard",
+          "resource-id": "com.imdb.mobile:id/secondaryText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            28,
+            1116,
+            1230,
+            1187
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "favorite",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.imdb.mobile:id/favorite_theater_icon_image",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1311,
+            1071,
+            1401,
+            1161
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.imdb.mobile.view.RefMarkerLinearLayout",
+      "bounds": [
+        0,
+        1480,
+        1440,
+        1866
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Gifted\n1:30 PM, 4:15 PM, 7:00 PM, 9:45 PM",
+          "resource-id": "com.imdb.mobile:id/tertiaryText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            28,
+            1691,
+            877,
+            1824
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Vintage Los Feliz Theatre",
+          "resource-id": "com.imdb.mobile:id/primaryText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            28,
+            1494,
+            1230,
+            1565
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "1822 Vermont Avenue",
+          "resource-id": "com.imdb.mobile:id/secondaryText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            28,
+            1565,
+            1230,
+            1636
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "favorite",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.imdb.mobile:id/favorite_theater_icon_image",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1311,
+            1520,
+            1401,
+            1610
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.imdb.mobile.view.RefMarkerLinearLayout",
+      "bounds": [
+        0,
+        1867,
+        1440,
+        2253
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Gifted\n2:30 PM, 5:00 PM",
+          "resource-id": "com.imdb.mobile:id/tertiaryText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            28,
+            2078,
+            441,
+            2211
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "AMC Dine-In Sunset 5",
+          "resource-id": "com.imdb.mobile:id/primaryText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            28,
+            1881,
+            1230,
+            1952
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "8000 West Sunset Boulevard",
+          "resource-id": "com.imdb.mobile:id/secondaryText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            28,
+            1952,
+            1230,
+            2023
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "favorite",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.imdb.mobile:id/favorite_theater_icon_image",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1311,
+            1907,
+            1401,
+            1997
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.imdb.mobile.view.RefMarkerLinearLayout",
+      "bounds": [
+        0,
+        2254,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Pacific's The Grove Stadium 14",
+          "resource-id": "com.imdb.mobile:id/primaryText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            28,
+            2268,
+            1230,
+            2339
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "189 The Grove Drive",
+          "resource-id": "com.imdb.mobile:id/secondaryText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            28,
+            2339,
+            1230,
+            2392
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "favorite",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.imdb.mobile:id/favorite_theater_icon_image",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1311,
+            2294,
+            1401,
+            2384
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

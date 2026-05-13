@@ -1,0 +1,142 @@
+{
+  "01.png": {
+    "question": "What is the error and which file + line caused it?",
+    "correct_element": "processor.py line 47",
+    "correct_action": "NoneType has no attribute 'run' in processor.py:47 \u2014 pipeline not initialized",
+    "category": "terminal",
+    "advantage": "tie"
+  },
+  "02.png": {
+    "question": "What is the compile error and which file and line?",
+    "correct_element": "src/pipeline.rs line 89",
+    "correct_action": "borrow of moved value 'output' at pipeline.rs:89 \u2014 E0382",
+    "category": "terminal",
+    "advantage": "tie"
+  },
+  "03.png": {
+    "question": "Why is the Save Payment button disabled? What field has an error?",
+    "correct_element": "Card Number field at top of form",
+    "correct_action": "Card number is invalid \u2014 fix the card number field to enable Save Payment button",
+    "category": "web_form",
+    "advantage": "farscry"
+  },
+  "04.png": {
+    "question": "Which file has the most errors and what is the first error on line 47?",
+    "correct_element": "src/components/ProductList.tsx \u2014 2 errors",
+    "correct_action": "ProductList.tsx has 2 errors; line 47: Type 'undefined' is not assignable to type 'Product[]'",
+    "category": "vscode",
+    "advantage": "farscry"
+  },
+  "05.png": {
+    "question": "Why is the Merge button disabled and what action is required?",
+    "correct_element": "Merge pull request button (disabled)",
+    "correct_action": "Review required \u2014 @arch-bot must approve before merging",
+    "category": "web_form",
+    "advantage": "tie"
+  },
+  "06.png": {
+    "question": "How many critical vulnerabilities are there and in which package?",
+    "correct_element": "semver \u2014 1 critical vulnerability",
+    "correct_action": "1 critical vulnerability in semver (<7.5.2) \u2014 run npm audit fix",
+    "category": "terminal",
+    "advantage": "tie"
+  },
+  "07.png": {
+    "question": "Which field has a validation error and what is the current invalid value?",
+    "correct_element": "Max Retries field",
+    "correct_action": "Max Retries has value 999 which is invalid (must be 1-10)",
+    "category": "config",
+    "advantage": "farscry"
+  },
+  "08.png": {
+    "question": "What URL is being blocked by CORS and from what origin?",
+    "correct_element": "https://api.internal.corp/v1/users",
+    "correct_action": "CORS blocks api.internal.corp/v1/users from localhost:3000 \u2014 server needs Access-Control-Allow-Origin header",
+    "category": "devtools",
+    "advantage": "tie"
+  },
+  "09.png": {
+    "question": "What is the TypeScript error on line 23 and how to fix it?",
+    "correct_element": "line 23 \u2014 interface Props definition",
+    "correct_action": "TS2345: undefined not assignable to Product[] \u2014 add null check or change type to Product[]",
+    "category": "vscode",
+    "advantage": "tie"
+  },
+  "10.png": {
+    "question": "Which container failed and why?",
+    "correct_element": "farscry-api container",
+    "correct_action": "farscry-api failed \u2014 port 8080 already in use, run lsof -i :8080 to find what's using it",
+    "category": "terminal",
+    "advantage": "tie"
+  },
+  "11.png": {
+    "question": "Which pod is failing and what is the root cause from the logs?",
+    "correct_element": "farscry-worker-7b4d2f-p9x1r",
+    "correct_action": "CrashLoopBackOff (47 restarts): REDIS_URL env var not set",
+    "category": "terminal",
+    "advantage": "farscry"
+  },
+  "12.png": {
+    "question": "What is the error and which component + line caused it?",
+    "correct_element": "ProductList.jsx line 47",
+    "correct_action": "TypeError: Cannot read properties of undefined (reading 'map') at ProductList.jsx:47",
+    "category": "browser",
+    "advantage": "tie"
+  },
+  "13.png": {
+    "question": "Which field is currently focused/highlighted and what must the user enter?",
+    "correct_element": "Address Line 1 field (highlighted in purple)",
+    "correct_action": "Address Line 1 is empty and required \u2014 user must enter their street address",
+    "category": "web_form",
+    "advantage": "farscry"
+  },
+  "14.png": {
+    "question": "Which file has a merge conflict and what are the two conflicting changes?",
+    "correct_element": "src/auth/middleware.js",
+    "correct_action": "HEAD uses authorization header with 401; feature/auth uses x-auth-token with 403",
+    "category": "terminal",
+    "advantage": "tie"
+  },
+  "15.png": {
+    "question": "Which test failed and what was the assertion failure?",
+    "correct_element": "Pipeline Tests \u203a process \u203a should extract text regions",
+    "correct_action": "Expected 5 text regions, received 3 \u2014 at pipeline.test.ts:47",
+    "category": "vscode",
+    "advantage": "tie"
+  },
+  "16.png": {
+    "question": "What is the Memory configuration and what button saves changes?",
+    "correct_element": "Memory 512MB; Save button at bottom right",
+    "correct_action": "Memory is 512 MB; click orange Save button to save configuration",
+    "category": "config",
+    "advantage": "farscry"
+  },
+  "17.png": {
+    "question": "What database error occurred and what is the fix?",
+    "correct_element": "orders.payment_status column missing",
+    "correct_action": "Column 'orders.payment_status' doesn't exist \u2014 run flask db migrate && flask db upgrade",
+    "category": "browser",
+    "advantage": "tie"
+  },
+  "18.png": {
+    "question": "What is the dangerous action button and what coordinates is it at?",
+    "correct_element": "Delete Environment button (red, far right)",
+    "correct_action": "Red 'Delete Environment' button at approximately (440, 322) \u2014 irreversible action",
+    "category": "web_form",
+    "advantage": "farscry"
+  },
+  "19.png": {
+    "question": "Which endpoint is returning 500 errors and what does the latency suggest?",
+    "correct_element": "POST /api/v1/extract \u2014 4 errors, 4000ms+ latency",
+    "correct_action": "/api/v1/extract is timing out (~4s) causing 500s \u2014 likely model loading issue",
+    "category": "terminal",
+    "advantage": "farscry"
+  },
+  "20.png": {
+    "question": "What settings are currently enabled and where is the Save button?",
+    "correct_element": "Require 2FA (ON) + SSH key access (ON); Save button at (576, 478)",
+    "correct_action": "2FA and SSH access are ON; SAML and IP allowlist OFF; Save button is blue at bottom right",
+    "category": "config",
+    "advantage": "farscry"
+  }
+}

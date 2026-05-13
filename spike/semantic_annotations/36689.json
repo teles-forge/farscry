@@ -1,0 +1,425 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.androidlab.gpsfix:id/action_bar_container",
+      "children": [
+        {
+          "text": "GpsFix",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            135,
+            270,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$d",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.androidlab.gpsfix:id/cvGPS",
+      "children": [
+        {
+          "text": "Android GPS Provider",
+          "resource-id": "com.androidlab.gpsfix:id/tvTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            10,
+            293,
+            1430,
+            396
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.androidlab.gpsfix:id/mapview",
+          "clickable": false,
+          "class": "com.androidlab.gpsfix.view.map.StaticMapView",
+          "bounds": [
+            10,
+            396,
+            1430,
+            1142
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Location fixed!",
+          "resource-id": "com.androidlab.gpsfix:id/textLastLocation",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            10,
+            396,
+            1430,
+            472
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": " lat=37.73912,lon=-122.44997,accuracy 2m",
+          "resource-id": "com.androidlab.gpsfix:id/textLastLocation1",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            10,
+            472,
+            1430,
+            548
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "location_crosshair",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.androidlab.gpsfix:id/buttonMap",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            1234,
+            548,
+            1430,
+            730
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Start fixing",
+          "resource-id": "com.androidlab.gpsfix:id/buttonStart",
+          "ancestors": [
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatButton",
+          "bounds": [
+            10,
+            898,
+            454,
+            1066
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "Stop fixing",
+          "resource-id": "com.androidlab.gpsfix:id/buttonStop",
+          "ancestors": [
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatButton",
+          "bounds": [
+            454,
+            898,
+            870,
+            1066
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "ancestors": [
+        "android.support.v7.widget.CardView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.androidlab.gpsfix.view.ProviderCardView",
+      "bounds": [
+        0,
+        280,
+        1440,
+        1155
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "resource-id": "com.androidlab.gpsfix:id/cvNetwork",
+      "children": [
+        {
+          "text": "Android Network Provider",
+          "resource-id": "com.androidlab.gpsfix:id/tvTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            10,
+            1168,
+            1430,
+            1271
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.androidlab.gpsfix:id/mapview",
+          "clickable": false,
+          "class": "com.androidlab.gpsfix.view.map.StaticMapView",
+          "bounds": [
+            10,
+            1271,
+            1430,
+            2017
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "No fix",
+          "resource-id": "com.androidlab.gpsfix:id/textLastLocation",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            10,
+            1271,
+            1430,
+            1347
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "location_crosshair",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.androidlab.gpsfix:id/buttonMap",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            1234,
+            1423,
+            1430,
+            1605
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.support.v7.widget.CardView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.androidlab.gpsfix.view.ProviderCardView",
+      "bounds": [
+        0,
+        1155,
+        1440,
+        2030
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "resource-id": "com.androidlab.gpsfix:id/cvService",
+      "children": [
+        {
+          "text": "Google Play Services",
+          "resource-id": "com.androidlab.gpsfix:id/tvTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            10,
+            2043,
+            1430,
+            2146
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.androidlab.gpsfix:id/mapview",
+          "clickable": false,
+          "class": "com.androidlab.gpsfix.view.map.StaticMapView",
+          "bounds": [
+            10,
+            2146,
+            1430,
+            2392
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Last fix: 0 seconds ago, 10:49 PM",
+          "resource-id": "com.androidlab.gpsfix:id/textLastLocation",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            10,
+            2146,
+            1430,
+            2222
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": " lat=37.73912,lon=-122.44997,accuracy 2m",
+          "resource-id": "com.androidlab.gpsfix:id/textLastLocation1",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            10,
+            2222,
+            1430,
+            2298
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.androidlab.gpsfix:id/buttonMap",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            1234,
+            2298,
+            1430,
+            2392
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.support.v7.widget.CardView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.androidlab.gpsfix.view.ProviderCardView",
+      "bounds": [
+        0,
+        2030,
+        1440,
+        2392
+      ],
+      "componentLabel": "Card"
+    }
+  ]
+}

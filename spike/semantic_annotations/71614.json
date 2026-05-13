@@ -1,0 +1,848 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.my.mail:id/toolbar",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            14,
+            126,
+            210,
+            238
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "1",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            308,
+            135,
+            348,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "refresh",
+          "resource-id": "com.my.mail:id/toolbar_action_read",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            607,
+            98,
+            775,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "bookmark",
+          "resource-id": "com.my.mail:id/toolbar_action_unflag",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            775,
+            98,
+            943,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "delete",
+          "resource-id": "com.my.mail:id/toolbar_action_delete",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            943,
+            98,
+            1111,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "folder",
+          "resource-id": "com.my.mail:id/toolbar_action_move",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1111,
+            98,
+            1279,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1279,
+            98,
+            1426,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "ru.mail.ui.CustomToolbar",
+        "android.support.v7.widget.Toolbar",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.ui.CustomTabletLandscapeToolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "iconClass": "check",
+      "ancestors": [
+        "ru.mail.fragments.view.RoundedImageView",
+        "ru.mail.fragments.view.FramedImageView",
+        "ru.mail.fragments.view.CropImageView",
+        "ru.mail.uikit.view.RecyclingImageView",
+        "android.support.v7.widget.AppCompatImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.my.mail:id/checkbox",
+      "clickable": true,
+      "class": "ru.mail.fragments.view.CheckedRoundedImageView",
+      "bounds": [
+        56,
+        336,
+        252,
+        532
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.my.mail:id/unread",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        308,
+        337,
+        357,
+        379
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "myMail team",
+      "resource-id": "com.my.mail:id/sender",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        378,
+        319,
+        1173,
+        395
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "8:37 AM",
+      "resource-id": "com.my.mail:id/date",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1201,
+        327,
+        1384,
+        393
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Welcome to myMail",
+      "resource-id": "com.my.mail:id/subject",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        308,
+        389,
+        1384,
+        465
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "myMail: one app to manage all your email accounts Like so many techies, we get really (and I mean, REALLY) tired of having to deal with a bunch of email accounts. We felt there should be an app for that. So we’ve developed myMail, an ",
+      "resource-id": "com.my.mail:id/snippet",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.SingleMeasureTextView",
+      "bounds": [
+        308,
+        469,
+        1384,
+        606
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "filter",
+      "ancestors": [
+        "ru.mail.fragments.view.RoundedImageView",
+        "ru.mail.fragments.view.FramedImageView",
+        "ru.mail.fragments.view.CropImageView",
+        "ru.mail.uikit.view.RecyclingImageView",
+        "android.support.v7.widget.AppCompatImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.my.mail:id/checkbox",
+      "clickable": true,
+      "class": "ru.mail.fragments.view.CheckedRoundedImageView",
+      "bounds": [
+        56,
+        718,
+        252,
+        914
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.my.mail:id/unread",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        308,
+        719,
+        357,
+        761
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Your Daily Job Alert | Neuvoo",
+      "resource-id": "com.my.mail:id/sender",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        378,
+        701,
+        1173,
+        777
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "8:35 AM",
+      "resource-id": "com.my.mail:id/date",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1201,
+        709,
+        1384,
+        775
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "91 Jobs : Retail Sales Representative Denver, Colorado",
+      "resource-id": "com.my.mail:id/subject",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        308,
+        771,
+        1384,
+        847
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Your Daily Job Alert You've requested to receive job alerts for Retail Sales Representative, Denver, Colorado. Retail Sales Representative Verizon, Littleton, Colorado 1d ago Retail Sales Representative Verizon, Aurora, Colorado ",
+      "resource-id": "com.my.mail:id/snippet",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.SingleMeasureTextView",
+      "bounds": [
+        308,
+        851,
+        1384,
+        988
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "skip_previous",
+      "ancestors": [
+        "ru.mail.fragments.view.RoundedImageView",
+        "ru.mail.fragments.view.FramedImageView",
+        "ru.mail.fragments.view.CropImageView",
+        "ru.mail.uikit.view.RecyclingImageView",
+        "android.support.v7.widget.AppCompatImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.my.mail:id/checkbox",
+      "clickable": true,
+      "class": "ru.mail.fragments.view.CheckedRoundedImageView",
+      "bounds": [
+        56,
+        1100,
+        252,
+        1296
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.my.mail:id/unread",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        308,
+        1101,
+        357,
+        1143
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Kobo",
+      "resource-id": "com.my.mail:id/sender",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        378,
+        1083,
+        1173,
+        1159
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "8:18 AM",
+      "resource-id": "com.my.mail:id/date",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1201,
+        1091,
+        1384,
+        1157
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Get the eBooks you've previewed",
+      "resource-id": "com.my.mail:id/subject",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        308,
+        1153,
+        1384,
+        1229
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Get them now and start reading in minutes Trouble viewing this email? View it in your web browser. We hope you enjoyed your free preview. Don't stop there, you never know where a great book will take you. The Battle of Hackham He",
+      "resource-id": "com.my.mail:id/snippet",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.SingleMeasureTextView",
+      "bounds": [
+        308,
+        1233,
+        1384,
+        1370
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "ru.mail.fragments.view.RoundedImageView",
+        "ru.mail.fragments.view.FramedImageView",
+        "ru.mail.fragments.view.CropImageView",
+        "ru.mail.uikit.view.RecyclingImageView",
+        "android.support.v7.widget.AppCompatImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.my.mail:id/checkbox",
+      "clickable": true,
+      "class": "ru.mail.fragments.view.CheckedRoundedImageView",
+      "bounds": [
+        56,
+        1482,
+        252,
+        1678
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.my.mail:id/unread",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        308,
+        1483,
+        357,
+        1525
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "The Houzz Team",
+      "resource-id": "com.my.mail:id/sender",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        378,
+        1465,
+        1173,
+        1541
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "8:10 AM",
+      "resource-id": "com.my.mail:id/date",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1201,
+        1473,
+        1384,
+        1539
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Get 10x more exposure on Houzz",
+      "resource-id": "com.my.mail:id/subject",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        308,
+        1535,
+        1384,
+        1611
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Add Photos to Attract Clients Get up to 10x more exposure to potential clients Showcase the quality of your work - and reach millions of homeowners who are looking for professionals to help with their projects. Add Photos Now Take Bet",
+      "resource-id": "com.my.mail:id/snippet",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.SingleMeasureTextView",
+      "bounds": [
+        308,
+        1615,
+        1384,
+        1752
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "ru.mail.fragments.view.RoundedImageView",
+        "ru.mail.fragments.view.FramedImageView",
+        "ru.mail.fragments.view.CropImageView",
+        "ru.mail.uikit.view.RecyclingImageView",
+        "android.support.v7.widget.AppCompatImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.my.mail:id/checkbox",
+      "clickable": true,
+      "class": "ru.mail.fragments.view.CheckedRoundedImageView",
+      "bounds": [
+        56,
+        1864,
+        252,
+        2060
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.my.mail:id/unread",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        308,
+        1865,
+        357,
+        1907
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "MapMyWalk",
+      "resource-id": "com.my.mail:id/sender",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        378,
+        1847,
+        1173,
+        1923
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "7:35 AM",
+      "resource-id": "com.my.mail:id/date",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1201,
+        1855,
+        1384,
+        1921
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Get Ready for Big Improvements",
+      "resource-id": "com.my.mail:id/subject",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        308,
+        1917,
+        1384,
+        1993
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Small changes lead to big improvements. Achieve your best with a goal. DASHBOARD GO PREMIUM SHOP Achieve Your Best We know that small changes can lead to big improvements. Commit to a weekly goal and we’ll help you stay on target. Rea",
+      "resource-id": "com.my.mail:id/snippet",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.SingleMeasureTextView",
+      "bounds": [
+        308,
+        1997,
+        1384,
+        2134
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "skip_previous",
+      "ancestors": [
+        "ru.mail.fragments.view.RoundedImageView",
+        "ru.mail.fragments.view.FramedImageView",
+        "ru.mail.fragments.view.CropImageView",
+        "ru.mail.uikit.view.RecyclingImageView",
+        "android.support.v7.widget.AppCompatImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.my.mail:id/checkbox",
+      "clickable": true,
+      "class": "ru.mail.fragments.view.CheckedRoundedImageView",
+      "bounds": [
+        56,
+        2246,
+        252,
+        2392
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.my.mail:id/unread",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        308,
+        2247,
+        357,
+        2289
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Kobo",
+      "resource-id": "com.my.mail:id/sender",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        378,
+        2229,
+        1173,
+        2305
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "7:22 AM",
+      "resource-id": "com.my.mail:id/date",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1201,
+        2237,
+        1384,
+        2303
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Get 40% off your first eBook!",
+      "resource-id": "com.my.mail:id/subject",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        308,
+        2299,
+        1384,
+        2375
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Limited time offer! 40% off Trouble viewing this email? View it in your web browser. Get 40% off your next great read. Use promo code: D6SR3 Offer ends: December 18, 2016 There's no better time to jump in and explore our library ",
+      "resource-id": "com.my.mail:id/snippet",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.SingleMeasureTextView",
+      "bounds": [
+        308,
+        2379,
+        1384,
+        2392
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

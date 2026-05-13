@@ -1,0 +1,939 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.hrs.b2c.android:id/hrs_toolbar",
+      "children": [
+        {
+          "text": "23 hotels available",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            252,
+            98,
+            838,
+            191
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Your current location",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            252,
+            191,
+            770,
+            266
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "",
+          "resource-id": "com.hrs.b2c.android:id/action_map",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1104,
+            98,
+            1300,
+            266
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$d",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.hrs.b2c.android:id/click_layer",
+      "children": [
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.hrs.b2c.android:id/result_row_overflow",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1275,
+            818,
+            1440,
+            979
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.hrs.b2c.android:id/result_row_hotel_image",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            49,
+            867,
+            406,
+            1224
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.hrs.b2c.android:id/resutl_row_category_view",
+          "clickable": false,
+          "class": "com.hrs.android.common.widget.CategoryView",
+          "bounds": [
+            434,
+            867,
+            629,
+            898
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Hampton Inn Champaign-Urbana-At Univ of Ill",
+          "resource-id": "com.hrs.b2c.android:id/result_row_hotel_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            434,
+            898,
+            1391,
+            964
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Urbana - IL",
+          "resource-id": "com.hrs.b2c.android:id/result_row_location_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            434,
+            964,
+            1391,
+            1013
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "327 m to Destination",
+          "resource-id": "com.hrs.b2c.android:id/result_row_location_disctance",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            434,
+            1013,
+            1198,
+            1069
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Hot Tariff",
+          "resource-id": "com.hrs.b2c.android:id/rate_label_main",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1198,
+            1037,
+            1391,
+            1098
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "100.57 USD",
+          "resource-id": "com.hrs.b2c.android:id/price_total_hotel",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1094,
+            1098,
+            1391,
+            1164
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1158,
+            1164,
+            1228,
+            1224
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Inclusive",
+          "resource-id": "com.hrs.b2c.android:id/price_breakfast_hotel",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1228,
+            1164,
+            1391,
+            1213
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        818,
+        1440,
+        1270
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.hrs.b2c.android:id/click_layer",
+      "children": [
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.hrs.b2c.android:id/result_row_overflow",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1275,
+            1270,
+            1440,
+            1431
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.hrs.b2c.android:id/result_row_hotel_image",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            49,
+            1319,
+            406,
+            1676
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.hrs.b2c.android:id/resutl_row_category_view",
+          "clickable": false,
+          "class": "com.hrs.android.common.widget.CategoryView",
+          "bounds": [
+            434,
+            1319,
+            629,
+            1350
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Lincoln Lodge",
+          "resource-id": "com.hrs.b2c.android:id/result_row_hotel_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            434,
+            1350,
+            1391,
+            1416
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "St Joseph",
+          "resource-id": "com.hrs.b2c.android:id/result_row_location_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            434,
+            1416,
+            1391,
+            1465
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "1.2 km to Destination",
+          "resource-id": "com.hrs.b2c.android:id/result_row_location_disctance",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            434,
+            1465,
+            1198,
+            1521
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Hot Tariff",
+          "resource-id": "com.hrs.b2c.android:id/rate_label_main",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1198,
+            1489,
+            1391,
+            1550
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "67.80 USD",
+          "resource-id": "com.hrs.b2c.android:id/price_total_hotel",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1126,
+            1550,
+            1391,
+            1616
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1147,
+            1616,
+            1217,
+            1676
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Exclusive",
+          "resource-id": "com.hrs.b2c.android:id/price_breakfast_hotel",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1217,
+            1616,
+            1391,
+            1665
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1270,
+        1440,
+        1722
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.hrs.b2c.android:id/click_layer",
+      "children": [
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.hrs.b2c.android:id/result_row_overflow",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1275,
+            1722,
+            1440,
+            1883
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.hrs.b2c.android:id/result_row_hotel_image",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            49,
+            1771,
+            406,
+            2128
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.hrs.b2c.android:id/resutl_row_category_view",
+          "clickable": false,
+          "class": "com.hrs.android.common.widget.CategoryView",
+          "bounds": [
+            434,
+            1771,
+            629,
+            1802
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "HYATT PLACE CHAMPAIGN",
+          "resource-id": "com.hrs.b2c.android:id/result_row_hotel_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            434,
+            1802,
+            1391,
+            1868
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Champaign - IL",
+          "resource-id": "com.hrs.b2c.android:id/result_row_location_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            434,
+            1868,
+            1391,
+            1917
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "1.6 km to Destination",
+          "resource-id": "com.hrs.b2c.android:id/result_row_location_disctance",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            434,
+            1917,
+            902,
+            1973
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "111.87 USD",
+          "resource-id": "com.hrs.b2c.android:id/price_total_hotel",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1094,
+            2002,
+            1391,
+            2068
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1147,
+            2068,
+            1217,
+            2128
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Exclusive",
+          "resource-id": "com.hrs.b2c.android:id/price_breakfast_hotel",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1217,
+            2068,
+            1391,
+            2117
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1722,
+        1440,
+        2174
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.hrs.b2c.android:id/click_layer",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.hrs.b2c.android:id/result_row_overflow",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1275,
+            2174,
+            1440,
+            2335
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.hrs.b2c.android:id/result_row_hotel_image",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            49,
+            2223,
+            406,
+            2392
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.hrs.b2c.android:id/resutl_row_category_view",
+          "clickable": false,
+          "class": "com.hrs.android.common.widget.CategoryView",
+          "bounds": [
+            434,
+            2223,
+            629,
+            2254
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "University Area Comfort Suites Urbana Champaign",
+          "resource-id": "com.hrs.b2c.android:id/result_row_hotel_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            434,
+            2254,
+            1391,
+            2320
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Urbana",
+          "resource-id": "com.hrs.b2c.android:id/result_row_location_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            434,
+            2320,
+            1391,
+            2369
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "1.9 km to Destination",
+          "resource-id": "com.hrs.b2c.android:id/result_row_location_disctance",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            434,
+            2369,
+            902,
+            2392
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        2174,
+        1440,
+        2392
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "iconClass": "search",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.hrs.b2c.android:id/filter_icon",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        456,
+        2231,
+        568,
+        2343
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Sort & Filter",
+      "resource-id": "com.hrs.b2c.android:id/filter_button_title",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        617,
+        2231,
+        983,
+        2343
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Price per night",
+      "resource-id": "com.hrs.b2c.android:id/price_info_header_text",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        0,
+        705,
+        413,
+        789
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "12/27 - 12/28/2016, 1 Single room ",
+      "resource-id": "com.hrs.b2c.android:id/result_header_date_search_merged",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        49,
+        298,
+        1391,
+        364
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Sort by: Distance from desired destination",
+      "resource-id": "com.hrs.b2c.android:id/result_header_sort_message",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        0,
+        603,
+        1440,
+        705
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "info",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        49,
+        454,
+        140,
+        531
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "The destination is in a different time zone to your current location",
+      "resource-id": "com.hrs.b2c.android:id/result_header_hint_message",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        189,
+        431,
+        1391,
+        554
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

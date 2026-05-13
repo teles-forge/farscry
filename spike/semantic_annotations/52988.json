@@ -1,0 +1,974 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.twitter.android:id/flow_header",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Follow 20",
+      "resource-id": "com.twitter.android:id/cta",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.twitter.ui.widget.TwitterButton",
+      "bounds": [
+        1054,
+        2231,
+        1405,
+        2357
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "resource-id": "android:id/list",
+      "children": [
+        {
+          "resource-id": "com.twitter.android:id/signup_header",
+          "children": [
+            {
+              "text": "Make your timeline yours.",
+              "resource-id": "com.twitter.android:id/header_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.twitter.ui.widget.TypefacesTextView",
+              "bounds": [
+                42,
+                280,
+                1398,
+                401
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Follow some of the accounts below, and you’ll see what they share in your timeline.",
+              "resource-id": "com.twitter.android:id/header_subtitle",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.twitter.ui.widget.TypefacesTextView",
+              "bounds": [
+                42,
+                436,
+                1398,
+                585
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            0,
+            280,
+            1440,
+            662
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.twitter.android.widget.SmartFollowHeaderView",
+          "bounds": [
+            0,
+            664,
+            1440,
+            790
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "text": "NBA",
+              "resource-id": "com.twitter.android:id/select_all_label",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.twitter.ui.widget.TypefacesTextView",
+              "bounds": [
+                42,
+                689,
+                1303,
+                765
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "",
+              "resource-id": "com.twitter.android:id/select_all_checkbox",
+              "ancestors": [
+                "android.widget.CheckBox",
+                "android.widget.CompoundButton",
+                "android.widget.Button",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatCheckBox",
+              "bounds": [
+                1303,
+                671,
+                1415,
+                783
+              ],
+              "componentLabel": "Input"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "com.twitter.library.widget.UserView",
+            "com.twitter.library.widget.BaseUserView",
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.twitter.library.widget.UserSocialView",
+          "bounds": [
+            0,
+            792,
+            1440,
+            1161
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "text": "",
+              "resource-id": "com.twitter.android:id/user_checkbox",
+              "ancestors": [
+                "android.widget.CheckBox",
+                "android.widget.CompoundButton",
+                "android.widget.Button",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatCheckBox",
+              "bounds": [
+                1303,
+                834,
+                1398,
+                946
+              ],
+              "componentLabel": "Input"
+            },
+            {
+              "iconClass": "avatar",
+              "resource-id": "com.twitter.android:id/user_image",
+              "children": [
+                {
+                  "iconClass": "avatar",
+                  "ancestors": [
+                    "com.twitter.media.ui.image.FixedSizeImageView",
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    42,
+                    841,
+                    231,
+                    1030
+                  ],
+                  "clickable": false,
+                  "class": "com.twitter.media.ui.image.RichImageView",
+                  "componentLabel": "Icon"
+                }
+              ],
+              "ancestors": [
+                "com.twitter.media.ui.image.MediaImageView",
+                "com.twitter.media.ui.image.BaseMediaImageView",
+                "com.twitter.media.ui.image.AspectRatioFrameLayout",
+                "android.widget.FrameLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.twitter.library.media.widget.UserImageView",
+              "bounds": [
+                42,
+                841,
+                231,
+                1030
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "text": "Believer. Husband to @ayeshacurry, father to Riley and Ryan, son, brother. Golden State Warriors guard. Davidson Wildcat.  Philippians 4:13 #IWILL",
+              "resource-id": "com.twitter.android:id/profile_description_item",
+              "ancestors": [
+                "com.twitter.ui.widget.TypefacesTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.twitter.ui.widget.UnpaddedTypefacesTextView",
+              "bounds": [
+                259,
+                973,
+                1398,
+                1119
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "@StephenCurry30",
+              "resource-id": "com.twitter.android:id/screenname_item",
+              "ancestors": [
+                "com.twitter.ui.widget.TypefacesTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.twitter.ui.widget.UnpaddedTypefacesTextView",
+              "bounds": [
+                259,
+                911,
+                595,
+                952
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Stephen Curry",
+              "resource-id": "com.twitter.android:id/name_item",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.twitter.ui.widget.TypefacesTextView",
+              "bounds": [
+                259,
+                834,
+                574,
+                900
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "iconClass": "check",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.twitter.android:id/verified_item",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                574,
+                843,
+                630,
+                890
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "com.twitter.library.widget.UserView",
+            "com.twitter.library.widget.BaseUserView",
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.twitter.library.widget.UserSocialView",
+          "bounds": [
+            0,
+            1163,
+            1440,
+            1443
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "text": "",
+              "resource-id": "com.twitter.android:id/user_checkbox",
+              "ancestors": [
+                "android.widget.CheckBox",
+                "android.widget.CompoundButton",
+                "android.widget.Button",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatCheckBox",
+              "bounds": [
+                1303,
+                1205,
+                1398,
+                1317
+              ],
+              "componentLabel": "Input"
+            },
+            {
+              "resource-id": "com.twitter.android:id/user_image",
+              "children": [
+                {
+                  "ancestors": [
+                    "com.twitter.media.ui.image.FixedSizeImageView",
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    42,
+                    1212,
+                    231,
+                    1401
+                  ],
+                  "clickable": false,
+                  "class": "com.twitter.media.ui.image.RichImageView",
+                  "componentLabel": "Image"
+                }
+              ],
+              "ancestors": [
+                "com.twitter.media.ui.image.MediaImageView",
+                "com.twitter.media.ui.image.BaseMediaImageView",
+                "com.twitter.media.ui.image.AspectRatioFrameLayout",
+                "android.widget.FrameLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.twitter.library.media.widget.UserImageView",
+              "bounds": [
+                42,
+                1212,
+                231,
+                1401
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "The one and only Truth",
+              "resource-id": "com.twitter.android:id/profile_description_item",
+              "ancestors": [
+                "com.twitter.ui.widget.TypefacesTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.twitter.ui.widget.UnpaddedTypefacesTextView",
+              "bounds": [
+                259,
+                1344,
+                680,
+                1392
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "@paulpierce34",
+              "resource-id": "com.twitter.android:id/screenname_item",
+              "ancestors": [
+                "com.twitter.ui.widget.TypefacesTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.twitter.ui.widget.UnpaddedTypefacesTextView",
+              "bounds": [
+                259,
+                1282,
+                535,
+                1323
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Paul Pierce",
+              "resource-id": "com.twitter.android:id/name_item",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.twitter.ui.widget.TypefacesTextView",
+              "bounds": [
+                259,
+                1205,
+                511,
+                1271
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "iconClass": "check",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.twitter.android:id/verified_item",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                511,
+                1214,
+                567,
+                1261
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "com.twitter.library.widget.UserView",
+            "com.twitter.library.widget.BaseUserView",
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.twitter.library.widget.UserSocialView",
+          "bounds": [
+            0,
+            1445,
+            1440,
+            1725
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "text": "",
+              "resource-id": "com.twitter.android:id/user_checkbox",
+              "ancestors": [
+                "android.widget.CheckBox",
+                "android.widget.CompoundButton",
+                "android.widget.Button",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatCheckBox",
+              "bounds": [
+                1303,
+                1487,
+                1398,
+                1599
+              ],
+              "componentLabel": "Input"
+            },
+            {
+              "resource-id": "com.twitter.android:id/user_image",
+              "children": [
+                {
+                  "iconClass": "settings",
+                  "ancestors": [
+                    "com.twitter.media.ui.image.FixedSizeImageView",
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    42,
+                    1494,
+                    231,
+                    1683
+                  ],
+                  "clickable": false,
+                  "class": "com.twitter.media.ui.image.RichImageView",
+                  "componentLabel": "Icon"
+                }
+              ],
+              "ancestors": [
+                "com.twitter.media.ui.image.MediaImageView",
+                "com.twitter.media.ui.image.BaseMediaImageView",
+                "com.twitter.media.ui.image.AspectRatioFrameLayout",
+                "android.widget.FrameLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.twitter.library.media.widget.UserImageView",
+              "bounds": [
+                42,
+                1494,
+                231,
+                1683
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "#DallasStrong",
+              "resource-id": "com.twitter.android:id/profile_description_item",
+              "ancestors": [
+                "com.twitter.ui.widget.TypefacesTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.twitter.ui.widget.UnpaddedTypefacesTextView",
+              "bounds": [
+                259,
+                1626,
+                522,
+                1674
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "@mcuban",
+              "resource-id": "com.twitter.android:id/screenname_item",
+              "ancestors": [
+                "com.twitter.ui.widget.TypefacesTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.twitter.ui.widget.UnpaddedTypefacesTextView",
+              "bounds": [
+                259,
+                1564,
+                448,
+                1605
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Mark Cuban",
+              "resource-id": "com.twitter.android:id/name_item",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.twitter.ui.widget.TypefacesTextView",
+              "bounds": [
+                259,
+                1487,
+                526,
+                1553
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "iconClass": "check",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.twitter.android:id/verified_item",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                526,
+                1496,
+                582,
+                1543
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "com.twitter.library.widget.UserView",
+            "com.twitter.library.widget.BaseUserView",
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.twitter.library.widget.UserSocialView",
+          "bounds": [
+            0,
+            1727,
+            1440,
+            2007
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "text": "",
+              "resource-id": "com.twitter.android:id/user_checkbox",
+              "ancestors": [
+                "android.widget.CheckBox",
+                "android.widget.CompoundButton",
+                "android.widget.Button",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatCheckBox",
+              "bounds": [
+                1303,
+                1769,
+                1398,
+                1881
+              ],
+              "componentLabel": "Input"
+            },
+            {
+              "resource-id": "com.twitter.android:id/user_image",
+              "children": [
+                {
+                  "ancestors": [
+                    "com.twitter.media.ui.image.FixedSizeImageView",
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    42,
+                    1776,
+                    231,
+                    1965
+                  ],
+                  "clickable": false,
+                  "class": "com.twitter.media.ui.image.RichImageView",
+                  "componentLabel": "Image"
+                }
+              ],
+              "ancestors": [
+                "com.twitter.media.ui.image.MediaImageView",
+                "com.twitter.media.ui.image.BaseMediaImageView",
+                "com.twitter.media.ui.image.AspectRatioFrameLayout",
+                "android.widget.FrameLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.twitter.library.media.widget.UserImageView",
+              "bounds": [
+                42,
+                1776,
+                231,
+                1965
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "WHY NOT ?",
+              "resource-id": "com.twitter.android:id/profile_description_item",
+              "ancestors": [
+                "com.twitter.ui.widget.TypefacesTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.twitter.ui.widget.UnpaddedTypefacesTextView",
+              "bounds": [
+                259,
+                1906,
+                473,
+                1943
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "@russwest44",
+              "resource-id": "com.twitter.android:id/screenname_item",
+              "ancestors": [
+                "com.twitter.ui.widget.TypefacesTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.twitter.ui.widget.UnpaddedTypefacesTextView",
+              "bounds": [
+                259,
+                1846,
+                511,
+                1885
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Russell Westbrook",
+              "resource-id": "com.twitter.android:id/name_item",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.twitter.ui.widget.TypefacesTextView",
+              "bounds": [
+                259,
+                1769,
+                670,
+                1835
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "iconClass": "check",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.twitter.android:id/verified_item",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                670,
+                1778,
+                726,
+                1825
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "com.twitter.library.widget.UserView",
+            "com.twitter.library.widget.BaseUserView",
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.twitter.library.widget.UserSocialView",
+          "bounds": [
+            0,
+            2009,
+            1440,
+            2196
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "text": "",
+              "resource-id": "com.twitter.android:id/user_checkbox",
+              "ancestors": [
+                "android.widget.CheckBox",
+                "android.widget.CompoundButton",
+                "android.widget.Button",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatCheckBox",
+              "bounds": [
+                1303,
+                2051,
+                1398,
+                2163
+              ],
+              "componentLabel": "Input"
+            },
+            {
+              "iconClass": "avatar",
+              "resource-id": "com.twitter.android:id/user_image",
+              "children": [
+                {
+                  "iconClass": "avatar",
+                  "ancestors": [
+                    "com.twitter.media.ui.image.FixedSizeImageView",
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    42,
+                    2058,
+                    231,
+                    2196
+                  ],
+                  "clickable": false,
+                  "class": "com.twitter.media.ui.image.RichImageView",
+                  "componentLabel": "Icon"
+                }
+              ],
+              "ancestors": [
+                "com.twitter.media.ui.image.MediaImageView",
+                "com.twitter.media.ui.image.BaseMediaImageView",
+                "com.twitter.media.ui.image.AspectRatioFrameLayout",
+                "android.widget.FrameLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.twitter.library.media.widget.UserImageView",
+              "bounds": [
+                42,
+                2058,
+                231,
+                2196
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "text": "Loving Father Of 3 Angels!!! Blessed & Thankful... IG @MrCbooz #cliq #holdat",
+              "resource-id": "com.twitter.android:id/profile_description_item",
+              "ancestors": [
+                "com.twitter.ui.widget.TypefacesTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.twitter.ui.widget.UnpaddedTypefacesTextView",
+              "bounds": [
+                259,
+                2190,
+                1398,
+                2196
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "@MisterCBooz",
+              "resource-id": "com.twitter.android:id/screenname_item",
+              "ancestors": [
+                "com.twitter.ui.widget.TypefacesTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.twitter.ui.widget.UnpaddedTypefacesTextView",
+              "bounds": [
+                259,
+                2128,
+                534,
+                2169
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Carlos Boozer",
+              "resource-id": "com.twitter.android:id/name_item",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.twitter.ui.widget.TypefacesTextView",
+              "bounds": [
+                259,
+                2051,
+                567,
+                2117
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "iconClass": "check",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.twitter.android:id/verified_item",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                567,
+                2060,
+                623,
+                2107
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "ancestors": [
+        "android.widget.ListView",
+        "android.widget.AbsListView",
+        "android.widget.AdapterView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.twitter.refresh.widget.RefreshableListView",
+      "bounds": [
+        0,
+        280,
+        1440,
+        2196
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

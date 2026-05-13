@@ -1,0 +1,678 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "android:id/action_bar_container",
+      "children": [
+        {
+          "iconClass": "cart",
+          "resource-id": "com.iconology.comics:id/StoreMenu_shoppingCart",
+          "children": [
+            {
+              "iconClass": "cart",
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                852,
+                84,
+                1048,
+                252
+              ],
+              "clickable": false,
+              "class": "android.widget.ImageView",
+              "componentLabel": "Icon"
+            }
+          ],
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.iconology.ui.store.cart.ShoppingCartActionItemView",
+          "bounds": [
+            852,
+            84,
+            1048,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "book",
+          "resource-id": "com.iconology.comics:id/StoreMenu_myBooks",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.android.internal.view.menu.ActionMenuItemView",
+          "bounds": [
+            1048,
+            84,
+            1244,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1244,
+            84,
+            1440,
+            252
+          ],
+          "clickable": true,
+          "class": "android.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "android:id/up",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            0,
+            140,
+            56,
+            196
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "android:id/home",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            43,
+            112,
+            155,
+            224
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Comics",
+          "resource-id": "android:id/action_bar_title",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            169,
+            125,
+            381,
+            210
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.android.internal.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        252
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.iconology.comics:id/NavigationActivity_drawer",
+      "children": [
+        {
+          "resource-id": "com.iconology.comics:id/sectionPageView",
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.LinearLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "com.iconology.ui.store.issues.IssueDetailHeaderView",
+              "bounds": [
+                0,
+                252,
+                1440,
+                1742
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.iconology.comics:id/thumbnail",
+                  "clickable": true,
+                  "class": "com.iconology.ui.widget.NetworkImageView",
+                  "bounds": [
+                    42,
+                    294,
+                    655,
+                    1215
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "text": "By: Can Yalcinkaya, Pat Grant",
+                  "resource-id": "com.iconology.comics:id/creator",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.iconology.ui.widget.CXTextView",
+                  "bounds": [
+                    42,
+                    1229,
+                    655,
+                    1352
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "iconClass": "date_range",
+                  "resource-id": "com.iconology.comics:id/releaseDate",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.iconology.ui.widget.CXTextView",
+                  "bounds": [
+                    42,
+                    1366,
+                    546,
+                    1432
+                  ],
+                  "componentLabel": "Icon"
+                },
+                {
+                  "text": "Publisher: Resist Comics",
+                  "resource-id": "com.iconology.comics:id/publisher",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.iconology.ui.widget.CXTextView",
+                  "bounds": [
+                    42,
+                    1446,
+                    587,
+                    1512
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "Sold by: comiXology",
+                  "resource-id": "com.iconology.comics:id/sellerOfRecord",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.iconology.ui.widget.CXTextView",
+                  "bounds": [
+                    42,
+                    1526,
+                    487,
+                    1592
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "Pages: 110",
+                  "resource-id": "com.iconology.comics:id/pageCount",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.iconology.ui.widget.CXTextView",
+                  "bounds": [
+                    42,
+                    1606,
+                    288,
+                    1672
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "#ResistComics Scenes From The Gezi Resistance",
+                  "resource-id": "com.iconology.comics:id/title",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.iconology.ui.widget.CXTextView",
+                  "bounds": [
+                    676,
+                    294,
+                    1398,
+                    452
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "resource-id": "com.iconology.comics:id/issueBadges",
+                  "children": [
+                    {
+                      "iconClass": "sliders",
+                      "ancestors": [
+                        "android.widget.ImageView",
+                        "android.view.View",
+                        "java.lang.Object"
+                      ],
+                      "resource-id": "com.iconology.comics:id/hd",
+                      "clickable": true,
+                      "class": "com.iconology.ui.widget.BadgeView",
+                      "bounds": [
+                        683,
+                        560,
+                        774,
+                        651
+                      ],
+                      "componentLabel": "Icon"
+                    },
+                    {
+                      "ancestors": [
+                        "android.widget.ImageView",
+                        "android.view.View",
+                        "java.lang.Object"
+                      ],
+                      "resource-id": "com.iconology.comics:id/ageRating",
+                      "clickable": true,
+                      "class": "com.iconology.ui.widget.BadgeView",
+                      "bounds": [
+                        781,
+                        560,
+                        872,
+                        651
+                      ],
+                      "componentLabel": "Image"
+                    }
+                  ],
+                  "ancestors": [
+                    "android.widget.LinearLayout",
+                    "android.view.ViewGroup",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.iconology.ui.widget.IssueBadgesView",
+                  "bounds": [
+                    676,
+                    560,
+                    872,
+                    651
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.RatingBar",
+                    "android.widget.AbsSeekBar",
+                    "android.widget.ProgressBar",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.iconology.comics:id/rating",
+                  "clickable": false,
+                  "class": "com.iconology.ui.widget.CXRatingView",
+                  "bounds": [
+                    676,
+                    478,
+                    956,
+                    534
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "text": "(2)",
+                  "resource-id": "com.iconology.comics:id/ratingCount",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.iconology.ui.widget.CXTextView",
+                  "bounds": [
+                    956,
+                    473,
+                    1016,
+                    539
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "resource-id": "com.iconology.comics:id/buttonsContainer",
+                  "children": [
+                    {
+                      "text": "$10.99",
+                      "resource-id": "com.iconology.comics:id/actionButton",
+                      "ancestors": [
+                        "android.widget.Button",
+                        "android.widget.TextView",
+                        "android.view.View",
+                        "java.lang.Object"
+                      ],
+                      "clickable": true,
+                      "class": "com.iconology.ui.store.IssueActionButton",
+                      "bounds": [
+                        676,
+                        672,
+                        1398,
+                        813
+                      ],
+                      "componentLabel": "Text Button"
+                    }
+                  ],
+                  "ancestors": [
+                    "android.widget.LinearLayout",
+                    "android.view.ViewGroup",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.iconology.ui.widget.IssueDetailButtonsView",
+                  "bounds": [
+                    676,
+                    672,
+                    1398,
+                    827
+                  ],
+                  "componentLabel": "Image"
+                }
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "ancestors": [
+                "android.widget.LinearLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "com.iconology.ui.store.issues.IssueDetailSummaryView",
+              "bounds": [
+                0,
+                1743,
+                1440,
+                2127
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "text": "Summary",
+                  "resource-id": "com.iconology.comics:id/IssueDetailSummaryView_title",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.iconology.ui.widget.CXTextView",
+                  "bounds": [
+                    42,
+                    1785,
+                    279,
+                    1870
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "#ResistComics is an anthology that collects comics, illustrations and other texts inspired by the Occupy Gezi movement in Turkey which took place during the summer of 2013.",
+                  "resource-id": "com.iconology.comics:id/IssueDetailSummaryView_summary",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.iconology.ui.widget.CXTextView",
+                  "bounds": [
+                    42,
+                    1905,
+                    1398,
+                    2085
+                  ],
+                  "componentLabel": "Text"
+                }
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "ancestors": [
+                "android.widget.LinearLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "com.iconology.ui.store.issues.IssueDetailCreditsView",
+              "bounds": [
+                0,
+                2128,
+                1440,
+                2392
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "text": "Credits",
+                  "resource-id": "com.iconology.comics:id/IssueDetailCreditsView_label",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.iconology.ui.widget.CXTextView",
+                  "bounds": [
+                    42,
+                    2170,
+                    219,
+                    2255
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "clickable": false,
+                  "children": [
+                    {
+                      "text": "Written by:",
+                      "resource-id": "com.iconology.comics:id/IssueDetailCreditsGroupView_groupTitle",
+                      "ancestors": [
+                        "android.widget.TextView",
+                        "android.view.View",
+                        "java.lang.Object"
+                      ],
+                      "clickable": false,
+                      "class": "com.iconology.ui.widget.CXTextView",
+                      "bounds": [
+                        42,
+                        2290,
+                        249,
+                        2384
+                      ],
+                      "componentLabel": "Text"
+                    },
+                    {
+                      "text": "Can Yalcinkaya",
+                      "ancestors": [
+                        "android.widget.TextView",
+                        "android.view.View",
+                        "java.lang.Object"
+                      ],
+                      "clickable": true,
+                      "class": "com.iconology.ui.widget.CXTextView",
+                      "bounds": [
+                        42,
+                        2384,
+                        398,
+                        2392
+                      ],
+                      "componentLabel": "Text Button"
+                    }
+                  ],
+                  "ancestors": [
+                    "android.widget.LinearLayout",
+                    "android.view.ViewGroup",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "class": "com.iconology.ui.store.issues.IssueDetailCreditsView$IssueDetailCreditsGroupView",
+                  "bounds": [
+                    42,
+                    2290,
+                    720,
+                    2392
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "clickable": false,
+                  "children": [
+                    {
+                      "text": "Translated by:",
+                      "resource-id": "com.iconology.comics:id/IssueDetailCreditsGroupView_groupTitle",
+                      "ancestors": [
+                        "android.widget.TextView",
+                        "android.view.View",
+                        "java.lang.Object"
+                      ],
+                      "clickable": false,
+                      "class": "com.iconology.ui.widget.CXTextView",
+                      "bounds": [
+                        720,
+                        2290,
+                        989,
+                        2384
+                      ],
+                      "componentLabel": "Text"
+                    },
+                    {
+                      "text": "Can Yalcinkaya",
+                      "ancestors": [
+                        "android.widget.TextView",
+                        "android.view.View",
+                        "java.lang.Object"
+                      ],
+                      "clickable": true,
+                      "class": "com.iconology.ui.widget.CXTextView",
+                      "bounds": [
+                        720,
+                        2384,
+                        1076,
+                        2392
+                      ],
+                      "componentLabel": "Text Button"
+                    }
+                  ],
+                  "ancestors": [
+                    "android.widget.LinearLayout",
+                    "android.view.ViewGroup",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "class": "com.iconology.ui.store.issues.IssueDetailCreditsView$IssueDetailCreditsGroupView",
+                  "bounds": [
+                    720,
+                    2290,
+                    1398,
+                    2392
+                  ],
+                  "componentLabel": "Image"
+                }
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "ancestors": [
+            "android.widget.ListView",
+            "android.widget.AbsListView",
+            "android.widget.AdapterView",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.iconology.ui.widget.sectionedpage.SectionedPageView",
+          "bounds": [
+            0,
+            252,
+            1440,
+            2392
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.support.v4.widget.DrawerLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.iconology.ui.widget.SafeDrawerLayout",
+      "bounds": [
+        0,
+        252,
+        1440,
+        2392
+      ],
+      "componentLabel": "Image"
+    }
+  ]
+}

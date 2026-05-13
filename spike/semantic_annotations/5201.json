@@ -1,0 +1,753 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "iconClass": "facebook",
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            154,
+            105,
+            354,
+            259
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            154,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "",
+          "resource-id": "com.nbcuniversal.droid.necnnews:id/action_search",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1188,
+            98,
+            1314,
+            266
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "",
+          "resource-id": "com.nbcuniversal.droid.necnnews:id/action_settings",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1314,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.support.v7.widget.Toolbar",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.nbc.news.view.NbcToolBar",
+      "bounds": [
+        0,
+        0,
+        168,
+        168
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "resource-id": "com.nbcuniversal.droid.necnnews:id/frame_layout",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            280,
+            1440,
+            298
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "resource-id": "com.nbcuniversal.droid.necnnews:id/radar_map_view",
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.FrameLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "com.google.android.gms.maps.MapView",
+              "bounds": [
+                0,
+                280,
+                1440,
+                2392
+              ],
+              "clickable": true,
+              "children": [
+                {
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    18,
+                    2297,
+                    228,
+                    2374
+                  ],
+                  "clickable": false,
+                  "class": "android.widget.ImageView",
+                  "componentLabel": "Image"
+                }
+              ],
+              "componentLabel": "Map View"
+            }
+          ],
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.wsi.android.framework.map.WSIMapView",
+          "bounds": [
+            0,
+            280,
+            1440,
+            2392
+          ],
+          "componentLabel": "Map View"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.v7.widget.RecyclerView",
+          "bounds": [
+            0,
+            280,
+            1440,
+            2392
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.RelativeLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "com.nbc.news.view.WeatherOverviewLayout",
+              "bounds": [
+                0,
+                280,
+                1440,
+                2392
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuniversal.droid.necnnews:id/weather_info_background",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "bounds": [
+                    0,
+                    280,
+                    1440,
+                    2392
+                  ],
+                  "componentLabel": "Background Image"
+                },
+                {
+                  "iconClass": "arrow_backward",
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuniversal.droid.necnnews:id/map_open_button",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "bounds": [
+                    588,
+                    928,
+                    693,
+                    1031
+                  ],
+                  "componentLabel": "Icon"
+                },
+                {
+                  "text": "San Francisco, CA",
+                  "resource-id": "com.nbcuniversal.droid.necnnews:id/selected_location_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": true,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    49,
+                    343,
+                    620,
+                    428
+                  ],
+                  "componentLabel": "Text Button"
+                },
+                {
+                  "text": "Updated 8:01 PM",
+                  "resource-id": "com.nbcuniversal.droid.necnnews:id/current_updated_time",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    49,
+                    447,
+                    373,
+                    504
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "iconClass": "weather",
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuniversal.droid.necnnews:id/current_weather_forecast_image",
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NetworkImageView",
+                  "bounds": [
+                    49,
+                    560,
+                    224,
+                    735
+                  ],
+                  "componentLabel": "Icon"
+                },
+                {
+                  "text": "64°",
+                  "resource-id": "com.nbcuniversal.droid.necnnews:id/current_temp_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": true,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    49,
+                    659,
+                    367,
+                    995
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "Clear",
+                  "resource-id": "com.nbcuniversal.droid.necnnews:id/current_forecast_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NbcTextView",
+                  "bounds": [
+                    49,
+                    957,
+                    574,
+                    1051
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "FEELS LIKE \n64°",
+                  "resource-id": "com.nbcuniversal.droid.necnnews:id/current_feels_like_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    49,
+                    1100,
+                    285,
+                    1219
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "CHANCE OF PRECIP \n0%",
+                  "resource-id": "com.nbcuniversal.droid.necnnews:id/current_precip_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    49,
+                    1268,
+                    451,
+                    1387
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "WIND W \n21 MPH",
+                  "resource-id": "com.nbcuniversal.droid.necnnews:id/current_wind_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    49,
+                    1436,
+                    239,
+                    1555
+                  ],
+                  "componentLabel": "Text"
+                }
+              ],
+              "componentLabel": "List Item"
+            }
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.nbc.news.view.NbcLayout",
+      "bounds": [
+        0,
+        280,
+        1440,
+        2392
+      ],
+      "componentLabel": "Drawer"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        280,
+        980,
+        419
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Set Your Start Screen",
+          "resource-id": "com.nbcuniversal.droid.necnnews:id/menuHeaderText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            455,
+            280,
+            980,
+            417
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        419,
+        980,
+        587
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Top Stories",
+          "resource-id": "com.nbcuniversal.droid.necnnews:id/menu_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            53,
+            419,
+            927,
+            587
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        587,
+        980,
+        755
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Submit Photos/Videos",
+          "resource-id": "com.nbcuniversal.droid.necnnews:id/menu_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            53,
+            587,
+            927,
+            755
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        755,
+        980,
+        923
+      ],
+      "clickable": true,
+      "componentLabel": "Text Button",
+      "textButtonClass": "news"
+    },
+    {
+      "text": "Top News",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        923,
+        980,
+        1057
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "New England",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        1057,
+        980,
+        1191
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Connecticut",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        1191,
+        980,
+        1325
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Maine",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        1325,
+        980,
+        1459
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Massachusetts",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        1459,
+        980,
+        1593
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "New Hampshire",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        1593,
+        980,
+        1727
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Rhode Island",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        1727,
+        980,
+        1861
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Vermont",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        1861,
+        980,
+        1995
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "US & World",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        1995,
+        980,
+        2129
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Sports",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        2129,
+        980,
+        2263
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        2263,
+        980,
+        2392
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Weather",
+          "resource-id": "com.nbcuniversal.droid.necnnews:id/menu_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            53,
+            2263,
+            815,
+            2392
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.nbcuniversal.droid.necnnews:id/sub_menu_indicator",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            843,
+            2333,
+            899,
+            2361
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

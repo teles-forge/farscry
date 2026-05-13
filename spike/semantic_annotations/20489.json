@@ -1,0 +1,376 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.goodbarber.aabigbookfree:id/main_background",
+      "clickable": false,
+      "class": "com.goodbarber.v2.core.common.views.AspectRatioImageView",
+      "bounds": [
+        0,
+        84,
+        1440,
+        2392
+      ],
+      "componentLabel": "Background Image"
+    },
+    {
+      "resource-id": "com.goodbarber.aabigbookfree:id/custom_view_pager",
+      "children": [
+        {
+          "resource-id": "com.goodbarber.aabigbookfree:id/pager_container",
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            0,
+            2308,
+            1440,
+            2392
+          ],
+          "componentLabel": "Pager Indicator"
+        }
+      ],
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.goodbarber.v2.core.articles.detail.views.ArticleDetailToolbarUpViewPager",
+      "bounds": [
+        0,
+        2308,
+        1440,
+        2392
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.goodbarber.aabigbookfree:id/template_navbar_banner",
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        0,
+        84,
+        1440,
+        252
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.webkit.WebView",
+        "android.widget.AbsoluteLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.goodbarber.aabigbookfree:id/article_webview",
+      "clickable": true,
+      "class": "com.goodbarber.v2.core.common.views.ObservableWebView",
+      "bounds": [
+        0,
+        84,
+        1440,
+        2308
+      ],
+      "componentLabel": "Web View"
+    },
+    {
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.goodbarber.v2.core.common.views.navbar.CommonNavbarButton",
+      "bounds": [
+        18,
+        115,
+        158,
+        220
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.goodbarber.aabigbookfree:id/navbar_button_icon",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            50,
+            115,
+            126,
+            220
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "com.goodbarber.v2.core.common.views.toolbars.AbstractToolbar",
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.goodbarber.v2.core.articles.detail.views.ArticleDetailToolbarUp",
+      "bounds": [
+        658,
+        115,
+        1422,
+        220
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "chat",
+          "clickable": false,
+          "children": [
+            {
+              "iconClass": "chat",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.goodbarber.aabigbookfree:id/toolbar_item",
+              "clickable": true,
+              "class": "android.widget.ImageButton",
+              "bounds": [
+                658,
+                115,
+                798,
+                220
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "text": "+99",
+              "resource-id": "com.goodbarber.aabigbookfree:id/badge",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.goodbarber.v2.core.common.views.NumericBadge",
+              "bounds": [
+                688,
+                119,
+                794,
+                176
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "com.goodbarber.v2.core.common.views.toolbars.CommonToolbarItem",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.goodbarber.v2.core.common.views.toolbars.UpToolbarItem",
+          "bounds": [
+            658,
+            115,
+            798,
+            220
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "share",
+          "clickable": false,
+          "children": [
+            {
+              "iconClass": "share",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.goodbarber.aabigbookfree:id/toolbar_item",
+              "clickable": true,
+              "class": "android.widget.ImageButton",
+              "bounds": [
+                802,
+                115,
+                942,
+                220
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "ancestors": [
+            "com.goodbarber.v2.core.common.views.toolbars.CommonToolbarItem",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.goodbarber.v2.core.common.views.toolbars.UpToolbarItem",
+          "bounds": [
+            802,
+            115,
+            942,
+            220
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "font",
+          "clickable": false,
+          "children": [
+            {
+              "iconClass": "font",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.goodbarber.aabigbookfree:id/toolbar_item",
+              "clickable": true,
+              "class": "android.widget.ImageButton",
+              "bounds": [
+                961,
+                115,
+                1101,
+                220
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "ancestors": [
+            "com.goodbarber.v2.core.common.views.toolbars.CommonToolbarItem",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.goodbarber.v2.core.common.views.toolbars.UpToolbarItem",
+          "bounds": [
+            961,
+            115,
+            1101,
+            220
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "font",
+          "clickable": false,
+          "children": [
+            {
+              "iconClass": "font",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.goodbarber.aabigbookfree:id/toolbar_item",
+              "clickable": true,
+              "class": "android.widget.ImageButton",
+              "bounds": [
+                1105,
+                115,
+                1245,
+                220
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "ancestors": [
+            "com.goodbarber.v2.core.common.views.toolbars.CommonToolbarItem",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.goodbarber.v2.core.common.views.toolbars.UpToolbarItem",
+          "bounds": [
+            1105,
+            115,
+            1245,
+            220
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "star",
+          "clickable": false,
+          "children": [
+            {
+              "iconClass": "star",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.goodbarber.aabigbookfree:id/toolbar_item",
+              "clickable": true,
+              "class": "android.widget.ImageButton",
+              "bounds": [
+                1264,
+                115,
+                1404,
+                220
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "ancestors": [
+            "com.goodbarber.v2.core.common.views.toolbars.CommonToolbarItem",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.goodbarber.v2.core.common.views.toolbars.UpToolbarItem",
+          "bounds": [
+            1264,
+            115,
+            1404,
+            220
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "Toolbar"
+    }
+  ]
+}

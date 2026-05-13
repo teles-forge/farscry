@@ -1,0 +1,937 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.application.zomato:id/toolbar",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Dinner",
+          "resource-id": "com.application.zomato:id/search_query",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zomato.ui.android.TextViews.ZTextView",
+          "bounds": [
+            207,
+            116,
+            332,
+            163
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "com.application.zomato:id/search_icon",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.zomato.ui.android.IconFonts.IconFont",
+          "bounds": [
+            1139,
+            84,
+            1272,
+            280
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "UIUC Campus",
+          "resource-id": "com.application.zomato:id/locality",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zomato.ui.android.TextViews.ZTextView",
+          "bounds": [
+            207,
+            163,
+            595,
+            248
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "",
+          "resource-id": "com.application.zomato:id/down_arrow_search_suggestion",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zomato.ui.android.IconFonts.IconFont",
+          "bounds": [
+            613,
+            203,
+            641,
+            235
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "",
+          "resource-id": "com.application.zomato:id/filter_icon",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zomato.ui.android.IconFonts.IconFont",
+          "bounds": [
+            1307,
+            84,
+            1405,
+            280
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.support.design.widget.VisibilityAwareImageButton",
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.application.zomato:id/map_list_fab_icon",
+      "clickable": true,
+      "class": "android.support.design.widget.FloatingActionButton",
+      "bounds": [
+        1195,
+        2161,
+        1391,
+        2357
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "resource-id": "com.application.zomato:id/restaurant_view",
+      "children": [
+        {
+          "text": "J. Gumbo's",
+          "resource-id": "com.application.zomato:id/restaurant_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zomato.ui.android.TextViews.ZTextView",
+          "bounds": [
+            49,
+            350,
+            1238,
+            435
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "3.7",
+          "resource-id": "com.application.zomato:id/rating_view",
+          "ancestors": [
+            "com.zomato.ui.android.TextViews.ZTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zomato.ui.android.CustomViews.ZRatingView",
+          "bounds": [
+            1287,
+            361,
+            1391,
+            427
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "UIUC Campus, Champaign",
+          "resource-id": "com.application.zomato:id/restaurant_locality",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zomato.ui.android.TextViews.ZTextView",
+          "bounds": [
+            49,
+            446,
+            1238,
+            498
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "< .1 mi",
+          "resource-id": "com.application.zomato:id/distance_friendly",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zomato.ui.android.TextViews.ZTextView",
+          "bounds": [
+            1281,
+            438,
+            1391,
+            490
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.application.zomato:id/image_2",
+          "clickable": true,
+          "class": "com.makeramen.roundedimageview.RoundedImageView",
+          "bounds": [
+            390,
+            858,
+            709,
+            1180
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.application.zomato:id/image_3",
+          "clickable": true,
+          "class": "com.makeramen.roundedimageview.RoundedImageView",
+          "bounds": [
+            731,
+            858,
+            1050,
+            1180
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "5 Reviews",
+          "resource-id": "com.application.zomato:id/review_count_textview",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zomato.ui.android.TextViews.ZTextView",
+          "bounds": [
+            49,
+            509,
+            218,
+            561
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "•",
+          "resource-id": "com.application.zomato:id/first_dot",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zomato.ui.android.TextViews.ZTextView",
+          "bounds": [
+            225,
+            515,
+            238,
+            565
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "10 Bookmarks",
+          "resource-id": "com.application.zomato:id/bookmark_count_textview",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zomato.ui.android.TextViews.ZTextView",
+          "bounds": [
+            245,
+            509,
+            489,
+            561
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "•",
+          "resource-id": "com.application.zomato:id/second_dot",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zomato.ui.android.TextViews.ZTextView",
+          "bounds": [
+            496,
+            515,
+            509,
+            565
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "20 Been There",
+          "resource-id": "com.application.zomato:id/been_there_count_textview",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zomato.ui.android.TextViews.ZTextView",
+          "bounds": [
+            516,
+            509,
+            758,
+            561
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Cuisines",
+          "resource-id": "com.application.zomato:id/establishment_type",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zomato.ui.android.TextViews.ZTextView",
+          "bounds": [
+            49,
+            611,
+            235,
+            677
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Average Cost",
+          "resource-id": "com.application.zomato:id/cost_for_two_key",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zomato.ui.android.TextViews.ZTextView",
+          "bounds": [
+            49,
+            684,
+            339,
+            750
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Opening Hours",
+          "resource-id": "com.application.zomato:id/timings_key",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zomato.ui.android.TextViews.ZTextView",
+          "bounds": [
+            49,
+            757,
+            373,
+            823
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Fast Food, Cajun",
+          "resource-id": "com.application.zomato:id/estab_new_tv",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zomato.ui.android.TextViews.ZTextView",
+          "bounds": [
+            426,
+            611,
+            790,
+            677
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Wed 11 AM to 8 PM",
+          "resource-id": "com.application.zomato:id/timings_new_tv",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zomato.ui.android.TextViews.ZTextView",
+          "bounds": [
+            426,
+            745,
+            859,
+            811
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.application.zomato:id/image_1",
+          "clickable": true,
+          "class": "com.makeramen.roundedimageview.RoundedImageView",
+          "bounds": [
+            49,
+            858,
+            333,
+            1180
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Menu",
+          "resource-id": "com.application.zomato:id/menu_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zomato.ui.android.TextViews.ZTextView",
+          "bounds": [
+            53,
+            1100,
+            329,
+            1180
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.application.zomato:id/image_4",
+          "clickable": true,
+          "class": "com.makeramen.roundedimageview.RoundedImageView",
+          "bounds": [
+            1072,
+            858,
+            1391,
+            1180
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "+4 Photos",
+          "resource-id": "com.application.zomato:id/photo_text_overlay",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zomato.ui.android.TextViews.ZTextView",
+          "bounds": [
+            1072,
+            1100,
+            1391,
+            1180
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "$",
+          "resource-id": "com.application.zomato:id/list_item_cost_iconview",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zomato.ui.android.IconFonts.IconFont",
+          "bounds": [
+            426,
+            684,
+            1391,
+            738
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        280,
+        1440,
+        1271
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.application.zomato:id/restaurant_view",
+      "children": [
+        {
+          "text": "Chipotle Mexican Grill",
+          "resource-id": "com.application.zomato:id/restaurant_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zomato.ui.android.TextViews.ZTextView",
+          "bounds": [
+            49,
+            1341,
+            1238,
+            1426
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "4.0",
+          "resource-id": "com.application.zomato:id/rating_view",
+          "ancestors": [
+            "com.zomato.ui.android.TextViews.ZTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zomato.ui.android.CustomViews.ZRatingView",
+          "bounds": [
+            1287,
+            1352,
+            1391,
+            1418
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "UIUC Campus, Champaign",
+          "resource-id": "com.application.zomato:id/restaurant_locality",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zomato.ui.android.TextViews.ZTextView",
+          "bounds": [
+            49,
+            1437,
+            1238,
+            1489
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "< .1 mi",
+          "resource-id": "com.application.zomato:id/distance_friendly",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zomato.ui.android.TextViews.ZTextView",
+          "bounds": [
+            1281,
+            1429,
+            1391,
+            1481
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.application.zomato:id/image_2",
+          "clickable": true,
+          "class": "com.makeramen.roundedimageview.RoundedImageView",
+          "bounds": [
+            390,
+            1849,
+            709,
+            2171
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "2 Reviews",
+          "resource-id": "com.application.zomato:id/review_count_textview",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zomato.ui.android.TextViews.ZTextView",
+          "bounds": [
+            49,
+            1500,
+            218,
+            1552
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "•",
+          "resource-id": "com.application.zomato:id/first_dot",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zomato.ui.android.TextViews.ZTextView",
+          "bounds": [
+            225,
+            1506,
+            238,
+            1556
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "7 Bookmarks",
+          "resource-id": "com.application.zomato:id/bookmark_count_textview",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zomato.ui.android.TextViews.ZTextView",
+          "bounds": [
+            245,
+            1500,
+            468,
+            1552
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "•",
+          "resource-id": "com.application.zomato:id/second_dot",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zomato.ui.android.TextViews.ZTextView",
+          "bounds": [
+            475,
+            1506,
+            488,
+            1556
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "60 Been There",
+          "resource-id": "com.application.zomato:id/been_there_count_textview",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zomato.ui.android.TextViews.ZTextView",
+          "bounds": [
+            495,
+            1500,
+            737,
+            1552
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Cuisines",
+          "resource-id": "com.application.zomato:id/establishment_type",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zomato.ui.android.TextViews.ZTextView",
+          "bounds": [
+            49,
+            1602,
+            235,
+            1668
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Average Cost",
+          "resource-id": "com.application.zomato:id/cost_for_two_key",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zomato.ui.android.TextViews.ZTextView",
+          "bounds": [
+            49,
+            1675,
+            339,
+            1741
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Opening Hours",
+          "resource-id": "com.application.zomato:id/timings_key",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zomato.ui.android.TextViews.ZTextView",
+          "bounds": [
+            49,
+            1748,
+            373,
+            1814
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Fast Food, Mexican",
+          "resource-id": "com.application.zomato:id/estab_new_tv",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zomato.ui.android.TextViews.ZTextView",
+          "bounds": [
+            426,
+            1602,
+            850,
+            1668
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Wed Lunch, Dinner",
+          "resource-id": "com.application.zomato:id/timings_new_tv",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zomato.ui.android.TextViews.ZTextView",
+          "bounds": [
+            426,
+            1736,
+            829,
+            1802
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.application.zomato:id/image_1",
+          "clickable": true,
+          "class": "com.makeramen.roundedimageview.RoundedImageView",
+          "bounds": [
+            49,
+            1849,
+            368,
+            2171
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "$",
+          "resource-id": "com.application.zomato:id/list_item_cost_iconview",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zomato.ui.android.IconFonts.IconFont",
+          "bounds": [
+            426,
+            1675,
+            1391,
+            1729
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1271,
+        1440,
+        2262
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.application.zomato:id/restaurant_view",
+      "children": [
+        {
+          "text": "Bombay Indian Grill",
+          "resource-id": "com.application.zomato:id/restaurant_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zomato.ui.android.TextViews.ZTextView",
+          "bounds": [
+            49,
+            2332,
+            1238,
+            2392
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "3.8",
+          "resource-id": "com.application.zomato:id/rating_view",
+          "ancestors": [
+            "com.zomato.ui.android.TextViews.ZTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zomato.ui.android.CustomViews.ZRatingView",
+          "bounds": [
+            1287,
+            2343,
+            1391,
+            2392
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        2262,
+        1440,
+        2392
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "text": "FAQ",
+      "resource-id": "com.codesector.speedview.free:id/help_screen_title",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        53,
+        95,
+        137,
+        157
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Back",
+      "resource-id": "com.codesector.speedview.free:id/faq_back_button",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        510,
+        2203,
+        930,
+        2371
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "back"
+    },
+    {
+      "text": "Can I use this app without a GPS connection?\n\nYes, you can review your saved data, use the compass and export your tracks as GPX files. Just tap on the startup screen to skip it.\n\nHow does the compass work?\n\nWhen you are moving slower than 3 mph (about 5 km/h) the phone's orientation sensor is used to determine your heading. If you are moving faster than that the GPS is used to determine your heading.\n\nWhat is HUD? How do I use it?\n\nHUD stands for \"head-up display\" and was initially developed for military aviation. In this app, the HUD mode allows you to put your phone on your car's dashboard and see the speed reflected in the front glass. This can be useful when driving at night.\n\nWhy does it take so long to get a GPS fix?\n\nThe time required to get a GPS fix is dependent on the number of satellites in view and reception strength of each GPS satellite. This process normally takes 1-2 minutes, however you should not worry if it takes up to 20 minutes on the first occasion. If the receiver in your phone will still not acquire a fix, you might want to restart your phone. Also note that GPS will not work through heated or heat reflective windscreens. This is due to a metal layer in them which stops the signal.\n\nThe app lags, off by a few mph, etc.\n\nGPS accuracy depends on a number of factors, most notably signal to noise ratio, satellite position, atmospheric conditions and obstructions of satellite signals. These factors can create errors in your perceived location. For example, objects such as buildings or mountains between the satellite and the receiver can produce an error up to 30 meters.\n\nIt drains the battery. Can you add a powersafe mode, only query GPS speed?\n\nNo, that is not how GPS works. In basic terms, GPS satellites send out an identifying signal, a GPS receiver picks up that signal and then the software can determine things such as longitude and latitude, direction, speed, etc.\n\nHow does the track logging feature work?\n\nIt generates a separate log file for each day that you use the app with the track logging option turned on. After a while, SpeedView erases the outdated log files, leaving only the most recent three. When exporting, you will be presented with a choice of which one to convert to the GPX format.",
+      "resource-id": "com.codesector.speedview.free:id/faq_text",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        53,
+        221,
+        1387,
+        2168
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

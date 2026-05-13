@@ -1,0 +1,423 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.nbcuni.telemundostation.houston:id/toolbar",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            154,
+            105,
+            410,
+            259
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            154,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "font",
+          "resource-id": "com.nbcuni.telemundostation.houston:id/text_size_chooser",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1167,
+            98,
+            1307,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "share",
+          "resource-id": "com.nbcuni.telemundostation.houston:id/share",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1307,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.support.v7.widget.Toolbar",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.nbc.news.view.NbcToolBar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.RecyclerView",
+      "bounds": [
+        0,
+        284,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "resource-id": "com.nbcuni.telemundostation.houston:id/image_layout",
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.nbcuni.telemundostation.houston:id/article_image",
+              "clickable": true,
+              "class": "com.nbc.news.view.NetworkImageView",
+              "bounds": [
+                0,
+                284,
+                1440,
+                1094
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.nbcuni.telemundostation.houston:id/article_type_image",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                0,
+                996,
+                179,
+                1094
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.RelativeLayout",
+          "bounds": [
+            0,
+            284,
+            1440,
+            1094
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.RelativeLayout",
+          "bounds": [
+            0,
+            1094,
+            1440,
+            1913
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.AbsoluteLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.nbcuni.telemundostation.houston:id/web_view",
+              "clickable": true,
+              "class": "android.webkit.WebView",
+              "bounds": [
+                0,
+                1143,
+                1440,
+                1913
+              ],
+              "componentLabel": "Web View"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            0,
+            1913,
+            1440,
+            2081
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "text": "Comentarios (0)",
+              "resource-id": "com.nbcuni.telemundostation.houston:id/headline",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "com.nbc.news.view.NbcTextView",
+              "bounds": [
+                0,
+                1917,
+                1440,
+                2081
+              ],
+              "componentLabel": "Text Button"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.RelativeLayout",
+          "bounds": [
+            0,
+            2081,
+            1440,
+            2392
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "TE PODRÍA GUSTAR",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                49,
+                2130,
+                691,
+                2206
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Enlaces patrocinados por Taboola",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                691,
+                2153,
+                1366,
+                2200
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.RelativeLayout",
+              "bounds": [
+                49,
+                2255,
+                745,
+                2392
+              ],
+              "clickable": true,
+              "componentLabel": "Text Button",
+              "text": "Recetas de cuaresma: las más fáciles y económicas"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.RelativeLayout",
+              "bounds": [
+                745,
+                2255,
+                1440,
+                2392
+              ],
+              "clickable": true,
+              "componentLabel": "Text Button",
+              "text": "Elimina La Flacidez En La Piel Con Este Poderoso Ingrediente"
+            }
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.nbcuni.telemundostation.houston:id/lead_image_view",
+      "clickable": true,
+      "class": "com.nbc.news.view.NetworkImageView",
+      "bounds": [
+        0,
+        284,
+        1440,
+        1094
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.nbcuni.telemundostation.houston:id/video_indicator_view",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        25,
+        971,
+        193,
+        1069
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.view.TextureView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        0,
+        284,
+        1440,
+        1094
+      ],
+      "clickable": false,
+      "class": "com.nbc.news.view.NbcVideoView",
+      "componentLabel": "Video"
+    },
+    {
+      "text": "Mira ahora",
+      "resource-id": "com.nbcuni.telemundostation.houston:id/watch_now",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        463,
+        323,
+        1422,
+        380
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Vidente acusa a integrante de Banda El Limón de darle nalgada",
+      "resource-id": "com.nbcuni.telemundostation.houston:id/video_title",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        463,
+        408,
+        1422,
+        514
+      ],
+      "componentLabel": "Text Button"
+    }
+  ]
+}

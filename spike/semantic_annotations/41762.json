@@ -1,0 +1,585 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.studioeleven.windfinder:id/windfinder_toolbar",
+      "children": [
+        {
+          "text": "Favorites",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            135,
+            344,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "iconClass": "search",
+      "ancestors": [
+        "android.support.design.widget.VisibilityAwareImageButton",
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.studioeleven.windfinder:id/search_actionbutton",
+      "clickable": true,
+      "class": "android.support.design.widget.FloatingActionButton",
+      "bounds": [
+        1188,
+        2140,
+        1384,
+        2336
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "com.google.android.gms.ads.BaseAdView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.google.android.gms.ads.AdView",
+      "bounds": [
+        0,
+        280,
+        1440,
+        455
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.google.android.gms.ads.internal.webview.l",
+          "bounds": [
+            160,
+            280,
+            1280,
+            455
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.webkit.WebView",
+                "android.widget.AbsoluteLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                160,
+                280,
+                1280,
+                455
+              ],
+              "clickable": true,
+              "class": "com.google.android.gms.ads.internal.webview.m",
+              "componentLabel": "Web View"
+            }
+          ],
+          "componentLabel": "Web View"
+        }
+      ],
+      "componentLabel": "Advertisement"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        455,
+        1440,
+        707
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "resource-id": "com.studioeleven.windfinder:id/view_switcher",
+          "children": [
+            {
+              "iconClass": "navigation",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.studioeleven.windfinder:id/wind_direction_image_view",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                28,
+                494,
+                112,
+                578
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "text": "8kts",
+              "resource-id": "com.studioeleven.windfinder:id/wind_speed_text_view",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                126,
+                494,
+                336,
+                597
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "6°C",
+              "resource-id": "com.studioeleven.windfinder:id/temperature_text_view",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                212,
+                599,
+                331,
+                664
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "iconClass": "weather",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.studioeleven.windfinder:id/cloud_image_view",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                126,
+                597,
+                212,
+                667
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "ancestors": [
+            "android.widget.ViewAnimator",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.ViewSwitcher",
+          "bounds": [
+            0,
+            455,
+            364,
+            707
+          ],
+          "componentLabel": "On/Off Switch"
+        },
+        {
+          "text": "Report",
+          "resource-id": "com.studioeleven.windfinder:id/data_source_text_view",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            392,
+            515,
+            484,
+            562
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Skt. Peter-Ording",
+          "resource-id": "com.studioeleven.windfinder:id/station_name_text_view",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            392,
+            562,
+            1412,
+            647
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        711,
+        1440,
+        963
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "resource-id": "com.studioeleven.windfinder:id/view_switcher",
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.studioeleven.windfinder:id/wind_direction_image_view",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                28,
+                750,
+                112,
+                834
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "11kts",
+              "resource-id": "com.studioeleven.windfinder:id/wind_speed_text_view",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                126,
+                750,
+                336,
+                853
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "19°C",
+              "resource-id": "com.studioeleven.windfinder:id/temperature_text_view",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                212,
+                855,
+                331,
+                920
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.widget.ViewAnimator",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.ViewSwitcher",
+          "bounds": [
+            0,
+            711,
+            364,
+            963
+          ],
+          "componentLabel": "On/Off Switch"
+        },
+        {
+          "text": "Report",
+          "resource-id": "com.studioeleven.windfinder:id/data_source_text_view",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            392,
+            771,
+            484,
+            818
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Tarifa Centro",
+          "resource-id": "com.studioeleven.windfinder:id/station_name_text_view",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            392,
+            818,
+            1412,
+            903
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        967,
+        1440,
+        1219
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "resource-id": "com.studioeleven.windfinder:id/view_switcher",
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.studioeleven.windfinder:id/wind_direction_image_view",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                28,
+                981,
+                112,
+                1065
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "19kts",
+              "resource-id": "com.studioeleven.windfinder:id/wind_speed_text_view",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                126,
+                981,
+                336,
+                1084
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "17°C",
+              "resource-id": "com.studioeleven.windfinder:id/temperature_text_view",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                212,
+                1112,
+                331,
+                1177
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.studioeleven.windfinder:id/cloud_image_view",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                126,
+                1084,
+                212,
+                1154
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.studioeleven.windfinder:id/precipitation_image_view",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                126,
+                1154,
+                212,
+                1205
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "ancestors": [
+            "android.widget.ViewAnimator",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.ViewSwitcher",
+          "bounds": [
+            0,
+            967,
+            364,
+            1219
+          ],
+          "componentLabel": "On/Off Switch"
+        },
+        {
+          "text": "Report",
+          "resource-id": "com.studioeleven.windfinder:id/data_source_text_view",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            392,
+            1027,
+            484,
+            1074
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Cape Hatteras Airport",
+          "resource-id": "com.studioeleven.windfinder:id/station_name_text_view",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            392,
+            1074,
+            1412,
+            1159
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

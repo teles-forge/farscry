@@ -1,0 +1,483 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.wkt.onetravel.android:id/base_top_toolbar",
+      "children": [
+        {
+          "text": "Hotel Search",
+          "resource-id": "com.wkt.onetravel.android:id/toolbar_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomTextView",
+          "bounds": [
+            231,
+            141,
+            632,
+            223
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.internal.widget.TintImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.wkt.onetravel.android:id/base_footer_layout",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        40,
+        2151,
+        1400,
+        2352
+      ],
+      "componentLabel": "Text Button",
+      "text": "Search Hotels"
+    },
+    {
+      "resource-id": "com.wkt.onetravel.android:id/hotel_search_card_view",
+      "children": [
+        {
+          "iconClass": "location",
+          "resource-id": "com.wkt.onetravel.android:id/hotel_search_segment_destination_image",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomImageView",
+          "bounds": [
+            69,
+            382,
+            185,
+            498
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Destination",
+          "resource-id": "com.wkt.onetravel.android:id/hotel_search_segment_destination_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomTextView",
+          "bounds": [
+            214,
+            357,
+            485,
+            419
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Enter a city, airport or landmark",
+          "resource-id": "com.wkt.onetravel.android:id/hotel_search_segment_destination_placeholder_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomTextViewLight",
+          "bounds": [
+            214,
+            419,
+            1371,
+            507
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "",
+          "resource-id": "com.wkt.onetravel.android:id/hotel_search_segment_room_tonight_image",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomImageView",
+          "bounds": [
+            69,
+            1068,
+            181,
+            1180
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Need a Room for Tonight?",
+          "resource-id": "com.wkt.onetravel.android:id/hotel_search_segment_room_tonight_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomTextView",
+          "bounds": [
+            210,
+            1093,
+            826,
+            1155
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_forward",
+          "resource-id": "com.wkt.onetravel.android:id/hotel_search_segment_room_tonight_right_arrow_image",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomImageView",
+          "bounds": [
+            1320,
+            1098,
+            1371,
+            1149
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "date_range",
+          "resource-id": "com.wkt.onetravel.android:id/hotel_search_segment_check_in_date_calendar_image",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomImageView",
+          "bounds": [
+            69,
+            622,
+            185,
+            738
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Check-in",
+          "resource-id": "com.wkt.onetravel.android:id/hotel_search_segment_check_in_date_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomTextView",
+          "bounds": [
+            214,
+            597,
+            419,
+            659
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Mar 31, 2017",
+          "resource-id": "com.wkt.onetravel.android:id/hotel_search_segment_check_in_date_text_view",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomTextViewLight",
+          "bounds": [
+            214,
+            686,
+            515,
+            747
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "date_range",
+          "resource-id": "com.wkt.onetravel.android:id/hotel_search_segment_check_out_date_calendar_image",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomImageView",
+          "bounds": [
+            751,
+            622,
+            867,
+            738
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Check-out",
+          "resource-id": "com.wkt.onetravel.android:id/hotel_search_segment_check_out_date_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomTextView",
+          "bounds": [
+            896,
+            597,
+            1135,
+            659
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Apr 01, 2017",
+          "resource-id": "com.wkt.onetravel.android:id/hotel_search_segment_check_out_date_text_view",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomTextViewLight",
+          "bounds": [
+            896,
+            686,
+            1186,
+            747
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "",
+          "resource-id": "com.wkt.onetravel.android:id/hotel_search_segment_room_selection_image",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomImageView",
+          "bounds": [
+            69,
+            841,
+            179,
+            951
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Room(s)",
+          "resource-id": "com.wkt.onetravel.android:id/hotel_search_segment_rooms_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomTextView",
+          "bounds": [
+            208,
+            813,
+            412,
+            875
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "1",
+          "resource-id": "com.wkt.onetravel.android:id/hotel_search_segment_rooms_number_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomTextViewMedium",
+          "bounds": [
+            208,
+            875,
+            258,
+            979
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            658,
+            930,
+            689,
+            979
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "text": "",
+          "resource-id": "com.wkt.onetravel.android:id/hotel_search_segment_guests_image",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomImageView",
+          "bounds": [
+            751,
+            837,
+            868,
+            954
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Guests",
+          "resource-id": "com.wkt.onetravel.android:id/hotel_search_segment_guests_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomTextView",
+          "bounds": [
+            887,
+            813,
+            1054,
+            875
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "2",
+          "resource-id": "com.wkt.onetravel.android:id/hotel_search_segment_guests_num_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomTextViewMedium",
+          "bounds": [
+            887,
+            875,
+            937,
+            979
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.wkt.onetravel.android:id/tempDropDown",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1340,
+            930,
+            1371,
+            979
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        33,
+        317,
+        1407,
+        1247
+      ],
+      "componentLabel": "Card"
+    }
+  ]
+}

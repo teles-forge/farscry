@@ -1,0 +1,92 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "net.drkappa.app.secretagent:id/adView",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.google.android.gms.ads.internal.webview.n",
+          "bounds": [
+            0,
+            2112,
+            1440,
+            2392
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.webkit.WebView",
+                "android.widget.AbsoluteLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                0,
+                2112,
+                1440,
+                2392
+              ],
+              "clickable": true,
+              "class": "com.google.android.gms.ads.internal.webview.o",
+              "componentLabel": "Web View"
+            }
+          ],
+          "componentLabel": "Web View"
+        }
+      ],
+      "ancestors": [
+        "com.google.android.gms.ads.BaseAdView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.google.android.gms.ads.NativeExpressAdView",
+      "bounds": [
+        0,
+        2112,
+        1440,
+        2392
+      ],
+      "componentLabel": "Advertisement"
+    },
+    {
+      "text": "\nHello Agent,\nthis is your manual. Read it carefully.\n\n\nDiagnostics\nThis shows your device information. CPU type, speed, supported instructions, memory, GPU, battery info.\n\nLocation\nThis shows your current location on a planar earth map. Current real satellite positions above earth are shown as well as their location around you on a radar. Each satellite is listed with the constellation it belongs to, its name and the date in which it was sent into orbit. Raw coordinates are shown and when possible also your location. The two use buttons can launch an external application supporting geolocation passing your coordinates. The first only sends the coordinates, the second also includes the address if available. Note the address is not supported by some programs.\n\nTorch\nOn devices supporting torch mode camera flash is turned on. On devices without flash a white screen is shown. An SOS mode is available in the first case, where the torch emits intermitting light to represent an SOS signal.\n\nCamera\nApplies realtime filters. Use the lamp icon to turn the torch mode on and off. Image save in HD feature is disabled in this version, but you can save a low resolution picture by clicking on the disk icon. Click on cam icon to switch between InfraRed, Thermal and Security cam effects.Images are saved in your storage space in secretagent folder.\n\nCompass\nMagnetic north pole compass.\n\nAudio\nOnce you press the button the application will start recording through a service visibile on the notification bar. The app will record everything even if you exit or put the phone in sleep mode. It will immediately stop recording once you press again the REC button. Audio is saved in your storage space in secretagent folder.\n\nSensors\nIt shows realtime magnetometer, gyroscope, accelerometer with realtime charts. Also displays proximity and light sensors according to your device capabilities. Now with temperature, relative and absolute humidity, dew point, air pressure. A wifi scanner is also included which will list frequency, signal strength and name of the surrounding wifi networks.\n\nSpectrum\nRecords the environmental sounds and generates their realtime spectrogram. Use the power button to pause and resume spectrogram, use the X button to clear it.\n\nReport\nPlease rate us!!!\n\n",
+      "resource-id": "net.drkappa.app.secretagent:id/ManualTemp",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        84,
+        1440,
+        2112
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

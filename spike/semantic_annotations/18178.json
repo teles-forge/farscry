@@ -1,0 +1,726 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.battlelancer.seriesguide:id/sgToolbar",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "",
+          "resource-id": "com.battlelancer.seriesguide:id/editTextSearchBar",
+          "ancestors": [
+            "android.widget.AutoCompleteTextView",
+            "android.widget.EditText",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatAutoCompleteTextView",
+          "bounds": [
+            252,
+            103,
+            1127,
+            261
+          ],
+          "componentLabel": "Input"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.battlelancer.seriesguide:id/tabsSearch",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            0,
+            280,
+            256,
+            448
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "text": "SHOWS"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            256,
+            280,
+            567,
+            448
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "text": "EPISODES"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            567,
+            280,
+            902,
+            448
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "text": "ADD SHOW"
+        }
+      ],
+      "ancestors": [
+        "android.widget.HorizontalScrollView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.battlelancer.seriesguide.widgets.SlidingTabLayout",
+      "bounds": [
+        0,
+        280,
+        1440,
+        448
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "resource-id": "com.battlelancer.seriesguide:id/spinnerAddTvdbLanguage",
+      "ancestors": [
+        "android.widget.Spinner",
+        "android.widget.AbsSpinner",
+        "android.widget.AdapterView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatSpinner",
+      "bounds": [
+        56,
+        476,
+        636,
+        560
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "english"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        28,
+        602,
+        1412,
+        910
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "check",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.battlelancer.seriesguide:id/imageViewAddedIndicator",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1244,
+            602,
+            1412,
+            910
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.battlelancer.seriesguide:id/imageViewAddPoster",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            28,
+            602,
+            235,
+            910
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Westworld",
+          "resource-id": "com.battlelancer.seriesguide:id/textViewAddTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            263,
+            602,
+            528,
+            706
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Westworld is a dark odyssey about the dawn of artificial consciousness and the evolution of sin. Set at the intersection of the near future and the reimagined past, it explores a world in which every human appetite, no matter how noble or depraved, can be indulged.",
+          "resource-id": "com.battlelancer.seriesguide:id/textViewAddDescription",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            263,
+            706,
+            1244,
+            871
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        28,
+        938,
+        1412,
+        1246
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "add",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.battlelancer.seriesguide:id/viewAddButton",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1244,
+            938,
+            1412,
+            1246
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "play",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.battlelancer.seriesguide:id/imageViewAddPoster",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            28,
+            938,
+            235,
+            1246
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "The Walking Dead",
+          "resource-id": "com.battlelancer.seriesguide:id/textViewAddTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            263,
+            938,
+            711,
+            1042
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "The world we knew is gone. An epidemic of apocalyptic proportions has swept the globe causing the dead to rise and feed on the living. In a matter of months society has crumbled. In a world ruled by the dead, we are forced to finally start living. Based on a comic book series of the same name by Robert Kirkman, this AMC project focuses on the world after a zombie apocalypse. The series follows a police officer, Rick Grimes, who wakes up from a coma to find the world ravaged with zombies. Looking for his family, he and a group of survivors attempt to battle against the zombies in order to stay alive.",
+          "resource-id": "com.battlelancer.seriesguide:id/textViewAddDescription",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            263,
+            1042,
+            1244,
+            1207
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        28,
+        1274,
+        1412,
+        1582
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "add",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.battlelancer.seriesguide:id/viewAddButton",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1244,
+            1274,
+            1412,
+            1582
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.battlelancer.seriesguide:id/imageViewAddPoster",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            28,
+            1274,
+            235,
+            1582
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Vikings",
+          "resource-id": "com.battlelancer.seriesguide:id/textViewAddTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            263,
+            1274,
+            446,
+            1378
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Vikings follows the adventures of Ragnar Lothbrok the greatest hero of his age. The series tells the sagas of Ragnar's band of Viking brothers and his family, as he rises to become King of the Viking tribes. As well as being a fearless warrior, Ragnar embodies the Norse traditions of devotion to the gods, legend has it that he was a direct descendant of Odin, the god of war and warriors.",
+          "resource-id": "com.battlelancer.seriesguide:id/textViewAddDescription",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            263,
+            1378,
+            1244,
+            1543
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        28,
+        1610,
+        1412,
+        1918
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "add",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.battlelancer.seriesguide:id/viewAddButton",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1244,
+            1610,
+            1412,
+            1918
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.battlelancer.seriesguide:id/imageViewAddPoster",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            28,
+            1610,
+            235,
+            1918
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Designated Survivor",
+          "resource-id": "com.battlelancer.seriesguide:id/textViewAddTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            263,
+            1610,
+            761,
+            1714
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Tom Kirkman, a low-level cabinet member is suddenly appointed President of the United States after a catastrophic attack during the State of the Union kills everyone above him in the Presidential line of succession. ",
+          "resource-id": "com.battlelancer.seriesguide:id/textViewAddDescription",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            263,
+            1714,
+            1244,
+            1879
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        28,
+        1946,
+        1412,
+        2254
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "add",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.battlelancer.seriesguide:id/viewAddButton",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1244,
+            1946,
+            1412,
+            2254
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.battlelancer.seriesguide:id/imageViewAddPoster",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            28,
+            1946,
+            235,
+            2254
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Modern Family",
+          "resource-id": "com.battlelancer.seriesguide:id/textViewAddTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            263,
+            1946,
+            634,
+            2050
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "This mockumentary explores the many different types of a modern family through the stories of a gay couple, comprised of Mitchell and Cameron, and their daughter Lily, a straight couple, comprised of Phil and Claire, and their three kids, Haley, Alex, and Luke, and a multi-ethnic couple, which is comprised of Jay and Gloria, and her son Manny.",
+          "resource-id": "com.battlelancer.seriesguide:id/textViewAddDescription",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            263,
+            2050,
+            1244,
+            2215
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        28,
+        2282,
+        1412,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.battlelancer.seriesguide:id/viewAddButton",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1244,
+            2282,
+            1412,
+            2392
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.battlelancer.seriesguide:id/imageViewAddPoster",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            28,
+            2282,
+            235,
+            2392
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Survivor",
+          "resource-id": "com.battlelancer.seriesguide:id/textViewAddTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            263,
+            2282,
+            465,
+            2386
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Sixteen or more castaways are split between two or more \"Tribes\", are taken to a remote isolated location and are forced to live off the land with meager supplies for roughly 39 days. Frequent physical challenges are used to pit the tribes against each other for Rewards, such as food or luxuries, or for \"Immunity\", forcing the other tribe to attend \"Tribal Council\", where they must vote off one of their players. Once about half the players are remaining, the tribes are merged into a single tribe, and competitions are on an individual basis; winning Immunity prevents that player from being voted out, while several that are voted out at this stage form the game's \"Jury\". Once down to two or three people, a Final Tribal Council is held where the remaining players plead their case to the jury members. The jury then votes for which player should be considered the \"Sole Survivor\" and win the $1 million prize. Survivor has introduced numerous modifications, or \"twists\", on the core rules in order to keep the players on their toes and to prevent players from relying on strategies that succeeded in prior seasons. These changes have included tribal switches, seasons starting with more than two tribes, the ability to exile a player from a tribe for a short time, Hidden Immunity Idols that players can use to save themselves at Tribal Council and a chance to return to regular gameplay after elimination through \"Redemption Island\".",
+          "resource-id": "com.battlelancer.seriesguide:id/textViewAddDescription",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            263,
+            2386,
+            1244,
+            2392
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    }
+  ]
+}

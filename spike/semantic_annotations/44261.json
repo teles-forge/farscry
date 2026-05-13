@@ -1,0 +1,369 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "chat.meet.date.me:id/toolbar",
+      "children": [
+        {
+          "text": "Popular Photos",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            210,
+            135,
+            693,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "filter_list",
+          "resource-id": "chat.meet.date.me:id/filter",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1272,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "chat.meet.date.me:id/pager_sliding_tab_strip",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "People nearby",
+          "bounds": [
+            0,
+            280,
+            720,
+            476
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "Popular",
+          "bounds": [
+            720,
+            280,
+            1440,
+            476
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button",
+          "textButtonClass": "popular"
+        }
+      ],
+      "ancestors": [
+        "android.widget.HorizontalScrollView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "vlmedia.core.view.PagerSlidingTabStrip",
+      "bounds": [
+        0,
+        280,
+        1440,
+        476
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "iconClass": "add",
+      "ancestors": [
+        "vlmedia.core.floatingactionbutton.AddFloatingActionButton",
+        "vlmedia.core.floatingactionbutton.FloatingActionButton",
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "chat.meet.date.me:id/fab_expand_menu_button",
+      "clickable": true,
+      "class": "vlmedia.core.floatingactionbutton.FloatingActionsMenu$1",
+      "bounds": [
+        1126,
+        2077,
+        1384,
+        2336
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        28,
+        0,
+        1412,
+        25
+      ],
+      "clickable": false,
+      "children": [],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        28,
+        53,
+        1412,
+        1775
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "vlmedia.core.view.NetworkImageView",
+            "com.android.volley.toolbox.NetworkImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "chat.meet.date.me:id/siv_uploaded_photo",
+          "clickable": false,
+          "class": "vlmedia.core.view.NetworkSquareImageView",
+          "bounds": [
+            28,
+            249,
+            1412,
+            1633
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "vlmedia.core.view.NetworkSquareImageView",
+            "vlmedia.core.view.NetworkImageView",
+            "com.android.volley.toolbox.NetworkImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "chat.meet.date.me:id/civ_profile_photo",
+          "clickable": true,
+          "class": "vlmedia.core.view.BezelImageView",
+          "bounds": [
+            56,
+            81,
+            196,
+            221
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "2 days",
+          "resource-id": "chat.meet.date.me:id/tv_added_time",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1261,
+            81,
+            1384,
+            221
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0",
+          "resource-id": "chat.meet.date.me:id/tv_like",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            1661,
+            191,
+            1747
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "0",
+          "resource-id": "chat.meet.date.me:id/tv_comment",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            219,
+            1661,
+            354,
+            1747
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "chat.meet.date.me:id/iv_report",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1298,
+            1661,
+            1384,
+            1747
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "samueljohnson62",
+          "resource-id": "chat.meet.date.me:id/tv_username",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            210,
+            81,
+            628,
+            221
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "android.support.v7.widget.CardView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "vlmedia.core.view.FixedPaddingCardView",
+      "bounds": [
+        17,
+        1789,
+        1423,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "resource-id": "chat.meet.date.me:id/vg_native_ad_fb",
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.RelativeLayout",
+          "bounds": [
+            27,
+            1802,
+            1413,
+            2392
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "install"
+        }
+      ],
+      "componentLabel": "Card"
+    }
+  ]
+}

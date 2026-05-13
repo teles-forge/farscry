@@ -1,0 +1,515 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.papajohns.android.view.ButtonBarView",
+      "bounds": [
+        0,
+        2252,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Cancel",
+          "resource-id": "com.papajohns.android:id/address_cancel",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.Button",
+          "bounds": [
+            14,
+            2266,
+            674,
+            2378
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "back"
+        },
+        {
+          "text": "Done",
+          "resource-id": "com.papajohns.android:id/address_save",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.Button",
+          "bounds": [
+            764,
+            2266,
+            1426,
+            2378
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "finish"
+        }
+      ],
+      "componentLabel": "Button Bar"
+    },
+    {
+      "text": "Address Information",
+      "resource-id": "com.papajohns.android:id/heading_label",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        35,
+        130,
+        1405,
+        206
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.papajohns.android:id/large_pj_logo",
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        1110,
+        109,
+        1387,
+        228
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "What type of address is this?",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        35,
+        288,
+        1405,
+        359
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Residence",
+      "resource-id": "android:id/text1",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        72,
+        398,
+        1225,
+        474
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Country:",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        59,
+        616,
+        409,
+        687
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "com.papajohns.android:id/country",
+      "ancestors": [
+        "android.widget.Spinner",
+        "android.widget.AbsSpinner",
+        "android.widget.AdapterView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.papajohns.android.view.CountrySpinner",
+      "bounds": [
+        409,
+        567,
+        1381,
+        737
+      ],
+      "componentLabel": "Text Button",
+      "text": "USA"
+    },
+    {
+      "text": "Street Address:",
+      "resource-id": "com.papajohns.android:id/street_address_label",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        59,
+        754,
+        409,
+        887
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "San Francisco",
+      "resource-id": "com.papajohns.android:id/street_address_1",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.papajohns.android.view.RestrictedEditText",
+      "bounds": [
+        409,
+        737,
+        1381,
+        905
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "City:",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        59,
+        1123,
+        409,
+        1194
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "com.papajohns.android:id/city",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.papajohns.android.view.RestrictedEditText",
+      "bounds": [
+        409,
+        1075,
+        1381,
+        1243
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "State:",
+      "resource-id": "com.papajohns.android:id/state_label",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        59,
+        1292,
+        409,
+        1363
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "com.papajohns.android:id/state",
+      "ancestors": [
+        "android.widget.Spinner",
+        "android.widget.AbsSpinner",
+        "android.widget.AdapterView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.papajohns.android.view.StateSpinner",
+      "bounds": [
+        409,
+        1243,
+        1381,
+        1413
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "select"
+    },
+    {
+      "text": "Zip Code:",
+      "resource-id": "com.papajohns.android:id/zip_label",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        59,
+        1461,
+        409,
+        1532
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "com.papajohns.android:id/zip",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.papajohns.android.view.RestrictedEditText",
+      "bounds": [
+        409,
+        1413,
+        1381,
+        1581
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Name Location:",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        59,
+        1598,
+        409,
+        1731
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "com.papajohns.android:id/location_name",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.papajohns.android.view.RestrictedEditText",
+      "bounds": [
+        409,
+        1581,
+        1381,
+        1749
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Driver Instructions:",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        59,
+        1766,
+        409,
+        1899
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "com.papajohns.android:id/driver_instructions",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.EditText",
+      "bounds": [
+        409,
+        1749,
+        1381,
+        1917
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Phone:",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        59,
+        2024,
+        409,
+        2095
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "com.papajohns.android:id/phone",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.EditText",
+      "bounds": [
+        409,
+        1976,
+        1381,
+        2144
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Mobile:",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        59,
+        2192,
+        409,
+        2252
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "com.papajohns.android:id/mobile",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.EditText",
+      "bounds": [
+        409,
+        2144,
+        1381,
+        2252
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Apt / Floor/ Suite:",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        59,
+        923,
+        409,
+        1056
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "com.papajohns.android:id/street_address_2_prefix",
+      "ancestors": [
+        "android.widget.AbsSpinner",
+        "android.widget.AdapterView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Spinner",
+      "bounds": [
+        409,
+        905,
+        759,
+        1075
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "select"
+    },
+    {
+      "text": "",
+      "resource-id": "com.papajohns.android:id/street_address_2",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.papajohns.android.view.RestrictedEditText",
+      "bounds": [
+        759,
+        906,
+        1381,
+        1074
+      ],
+      "componentLabel": "Input"
+    }
+  ]
+}

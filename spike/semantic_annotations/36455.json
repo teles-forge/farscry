@@ -1,0 +1,732 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.boatbrowser.free:id/toolbar",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            2245,
+            240,
+            2385
+          ],
+          "clickable": true,
+          "class": "com.boatbrowser.free.action.ImageViewAction",
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "play",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            240,
+            2245,
+            480,
+            2385
+          ],
+          "clickable": true,
+          "class": "com.boatbrowser.free.action.ImageViewAction",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "star",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            480,
+            2245,
+            720,
+            2385
+          ],
+          "clickable": true,
+          "class": "com.boatbrowser.free.action.ImageViewAction",
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            720,
+            2245,
+            960,
+            2385
+          ],
+          "clickable": true,
+          "class": "com.boatbrowser.free.action.ImageViewAction",
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "list",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            960,
+            2245,
+            1200,
+            2385
+          ],
+          "clickable": true,
+          "class": "com.boatbrowser.free.action.ImageViewAction",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "av_forward",
+          "ancestors": [
+            "com.boatbrowser.free.action.ImageViewAction",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.boatbrowser.free:id/more",
+          "clickable": true,
+          "class": "com.boatbrowser.free.view.MoreIconAction",
+          "bounds": [
+            1200,
+            2245,
+            1440,
+            2385
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.boatbrowser.free.view.Toolbar",
+      "bounds": [
+        0,
+        2238,
+        1440,
+        2392
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.boatbrowser.free.view.TitleBar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        371
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "resource-id": "com.boatbrowser.free:id/tabview",
+          "ancestors": [
+            "android.widget.HorizontalScrollView",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.boatbrowser.free.view.TabView",
+          "bounds": [
+            18,
+            84,
+            1310,
+            210
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "home"
+        },
+        {
+          "iconClass": "add",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.boatbrowser.free:id/addnew",
+          "clickable": true,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1310,
+            91,
+            1422,
+            203
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.boatbrowser.free:id/progress",
+          "clickable": false,
+          "class": "com.boatbrowser.free.view.PageProgressView",
+          "bounds": [
+            0,
+            362,
+            1440,
+            371
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "star",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.boatbrowser.free:id/add_bookmark",
+          "clickable": true,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            26,
+            236,
+            138,
+            348
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.boatbrowser.free:id/url_container_line",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            138,
+            247,
+            159,
+            336
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "",
+          "resource-id": "com.boatbrowser.free:id/address_bar",
+          "ancestors": [
+            "android.widget.AutoCompleteTextView",
+            "android.widget.EditText",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.boatbrowser.free.view.UrlInputView",
+          "bounds": [
+            236,
+            236,
+            1172,
+            348
+          ],
+          "componentLabel": "Input"
+        },
+        {
+          "iconClass": "refresh",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.boatbrowser.free:id/reload",
+          "clickable": true,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1172,
+            236,
+            1284,
+            348
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.boatbrowser.free:id/address_bar_line",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1284,
+            247,
+            1305,
+            336
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "search",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.boatbrowser.free:id/search",
+          "clickable": true,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1305,
+            236,
+            1417,
+            348
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "globe",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.boatbrowser.free:id/favicon",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            166,
+            257,
+            236,
+            327
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.boatbrowser.free:id/di_speedial_expand",
+      "clickable": true,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        39,
+        746,
+        1401,
+        787
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "clickable": false,
+      "children": [
+        {
+          "text": "Ask",
+          "resource-id": "com.boatbrowser.free:id/title",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            42,
+            658,
+            294,
+            711
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.boatbrowser.free:id/thumbnail",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            56,
+            418,
+            280,
+            642
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.boatbrowser.free.view.SpeedialItemView",
+      "bounds": [
+        42,
+        406,
+        294,
+        711
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "clickable": false,
+      "children": [
+        {
+          "text": "Guess Lucky",
+          "resource-id": "com.boatbrowser.free:id/title",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            318,
+            658,
+            570,
+            711
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "gift",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.boatbrowser.free:id/thumbnail",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            332,
+            418,
+            556,
+            642
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.boatbrowser.free.view.SpeedialItemView",
+      "bounds": [
+        318,
+        406,
+        570,
+        711
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "clickable": false,
+      "children": [
+        {
+          "text": "Bookmarks",
+          "resource-id": "com.boatbrowser.free:id/title",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            594,
+            658,
+            846,
+            711
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "book",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.boatbrowser.free:id/thumbnail",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            608,
+            418,
+            832,
+            642
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.boatbrowser.free.view.SpeedialItemView",
+      "bounds": [
+        594,
+        406,
+        846,
+        711
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "iconClass": "time",
+      "clickable": false,
+      "children": [
+        {
+          "text": "History",
+          "resource-id": "com.boatbrowser.free:id/title",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            870,
+            658,
+            1122,
+            711
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "time",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.boatbrowser.free:id/thumbnail",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            884,
+            418,
+            1108,
+            642
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.boatbrowser.free.view.SpeedialItemView",
+      "bounds": [
+        870,
+        406,
+        1122,
+        711
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "add",
+      "clickable": false,
+      "children": [
+        {
+          "text": "Add",
+          "resource-id": "com.boatbrowser.free:id/title",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            1146,
+            658,
+            1398,
+            711
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "add",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.boatbrowser.free:id/thumbnail",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1167,
+            418,
+            1380,
+            642
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.boatbrowser.free.view.SpeedialItemView",
+      "bounds": [
+        1146,
+        406,
+        1398,
+        711
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        42,
+        2121,
+        1398,
+        2125
+      ],
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Loading…",
+      "resource-id": "com.boatbrowser.free:id/hotwords_loading",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        42,
+        2125,
+        1398,
+        2238
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "com.boatbrowser.free:id/nativeAdContainer",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        28,
+        787,
+        1412,
+        1640
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "install"
+    },
+    {
+      "text": "",
+      "resource-id": "com.boatbrowser.free:id/searchbox",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        70,
+        1728,
+        1090,
+        1868
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "iconClass": "search",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.boatbrowser.free:id/searchbtn",
+      "clickable": true,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        1090,
+        1728,
+        1370,
+        1868
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "Trending Searches",
+      "bounds": [
+        60,
+        1981,
+        1296,
+        2121
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "refresh",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.boatbrowser.free:id/reload_trending_search",
+      "clickable": true,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        1296,
+        2009,
+        1380,
+        2093
+      ],
+      "componentLabel": "Icon"
+    }
+  ]
+}

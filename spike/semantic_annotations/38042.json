@@ -1,0 +1,893 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.rabugentom.chordfree:id/toolbar",
+      "children": [
+        {
+          "text": "Chord selection",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            252,
+            135,
+            745,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "",
+          "resource-id": "com.rabugentom.chordfree:id/reset",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1272,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.rabugentom.chordfree:id/chordSelectResultCardView",
+      "children": [
+        {
+          "text": "No fingering found with current settings",
+          "resource-id": "com.rabugentom.chordfree:id/resultPlaceholderTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1076,
+            413,
+            1412,
+            650
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        1076,
+        308,
+        1412,
+        756
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.design.widget.TabLayout$SlidingTabStrip",
+      "bounds": [
+        0,
+        616,
+        1048,
+        784
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.design.widget.TabLayout$TabView",
+          "bounds": [
+            524,
+            616,
+            1048,
+            784
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "textButtonClass": "normal"
+        },
+        {
+          "text": "Simple",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            175,
+            667,
+            348,
+            733
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "text": "C",
+      "resource-id": "com.rabugentom.chordfree:id/rootButton",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.rabugentom.chordcore.views.buttonwithled.ButtonWithLed",
+      "bounds": [
+        28,
+        812,
+        706,
+        1078
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "C#",
+      "resource-id": "com.rabugentom.chordfree:id/bassButton",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.rabugentom.chordcore.views.buttonwithled.ButtonWithLed",
+      "bounds": [
+        734,
+        812,
+        1412,
+        1078
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "(C) · D · E · G# · A · Bb · D + Db",
+      "resource-id": "com.rabugentom.chordfree:id/titledTextViewTextView",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.rabugentom.chordcore.widgets.autofit.AutofitTextView",
+      "bounds": [
+        28,
+        485,
+        1020,
+        578
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "com.rabugentom.chordfree:id/b_maj",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.rabugentom.chordcore.views.buttonwithled.ButtonWithLed",
+      "bounds": [
+        28,
+        1106,
+        489,
+        1427
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "",
+      "resource-id": "com.rabugentom.chordfree:id/b_sus",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.rabugentom.chordcore.views.buttonwithled.ButtonWithLed",
+      "bounds": [
+        489,
+        1106,
+        950,
+        1427
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "",
+      "resource-id": "com.rabugentom.chordfree:id/b_aug",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.rabugentom.chordcore.views.buttonwithled.ButtonWithLed",
+      "bounds": [
+        950,
+        1106,
+        1412,
+        1427
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "",
+      "resource-id": "com.rabugentom.chordfree:id/b_5th",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.rabugentom.chordcore.views.buttonwithled.ButtonWithLed",
+      "bounds": [
+        28,
+        1427,
+        304,
+        1909
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "",
+      "resource-id": "com.rabugentom.chordfree:id/b_7th",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.rabugentom.chordcore.views.buttonwithled.ButtonWithLed",
+      "bounds": [
+        304,
+        1427,
+        581,
+        1909
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "",
+      "resource-id": "com.rabugentom.chordfree:id/b_9th",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.rabugentom.chordcore.views.buttonwithled.ButtonWithLed",
+      "bounds": [
+        581,
+        1427,
+        858,
+        1909
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "",
+      "resource-id": "com.rabugentom.chordfree:id/b_11th",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.rabugentom.chordcore.views.buttonwithled.ButtonWithLed",
+      "bounds": [
+        858,
+        1427,
+        1135,
+        1909
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "",
+      "resource-id": "com.rabugentom.chordfree:id/b_13th",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.rabugentom.chordcore.views.buttonwithled.ButtonWithLed",
+      "bounds": [
+        1135,
+        1427,
+        1412,
+        1909
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "",
+      "resource-id": "com.rabugentom.chordfree:id/b_add2",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.rabugentom.chordcore.views.buttonwithled.ButtonWithLed",
+      "bounds": [
+        28,
+        1909,
+        489,
+        2231
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "",
+      "resource-id": "com.rabugentom.chordfree:id/b_add4",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.rabugentom.chordcore.views.buttonwithled.ButtonWithLed",
+      "bounds": [
+        489,
+        1909,
+        950,
+        2231
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "",
+      "resource-id": "com.rabugentom.chordfree:id/b_add6",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.rabugentom.chordcore.views.buttonwithled.ButtonWithLed",
+      "bounds": [
+        950,
+        1909,
+        1412,
+        2231
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "C9add2,6(#5)/C#",
+      "resource-id": "com.rabugentom.chordfree:id/titledTextViewTextView",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.rabugentom.chordcore.widgets.autofit.AutofitTextView",
+      "bounds": [
+        28,
+        312,
+        1020,
+        416
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "R",
+      "resource-id": "com.rabugentom.chordfree:id/chord_structure_0_0",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        0,
+        2231,
+        120,
+        2297
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "b2",
+      "resource-id": "com.rabugentom.chordfree:id/chord_structure_0_1",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        120,
+        2231,
+        240,
+        2297
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "2",
+      "resource-id": "com.rabugentom.chordfree:id/chord_structure_0_2",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        240,
+        2231,
+        360,
+        2297
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "3m",
+      "resource-id": "com.rabugentom.chordfree:id/chord_structure_0_3",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        360,
+        2231,
+        480,
+        2297
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "3M",
+      "resource-id": "com.rabugentom.chordfree:id/chord_structure_0_4",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        480,
+        2231,
+        600,
+        2297
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "4",
+      "resource-id": "com.rabugentom.chordfree:id/chord_structure_0_5",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        600,
+        2231,
+        720,
+        2297
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "b5",
+      "resource-id": "com.rabugentom.chordfree:id/chord_structure_0_6",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        720,
+        2231,
+        840,
+        2297
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "5",
+      "resource-id": "com.rabugentom.chordfree:id/chord_structure_0_7",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        840,
+        2231,
+        960,
+        2297
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "#5",
+      "resource-id": "com.rabugentom.chordfree:id/chord_structure_0_8",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        960,
+        2231,
+        1080,
+        2297
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "6",
+      "resource-id": "com.rabugentom.chordfree:id/chord_structure_0_9",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1080,
+        2231,
+        1200,
+        2297
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "7m",
+      "resource-id": "com.rabugentom.chordfree:id/chord_structure_0_10",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1200,
+        2231,
+        1320,
+        2297
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "7M",
+      "resource-id": "com.rabugentom.chordfree:id/chord_structure_0_11",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1320,
+        2231,
+        1440,
+        2297
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "8",
+      "resource-id": "com.rabugentom.chordfree:id/chord_structure_1_0",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        0,
+        2297,
+        120,
+        2363
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "b9",
+      "resource-id": "com.rabugentom.chordfree:id/chord_structure_1_1",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        120,
+        2297,
+        240,
+        2363
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "9",
+      "resource-id": "com.rabugentom.chordfree:id/chord_structure_1_2",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        240,
+        2297,
+        360,
+        2363
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "#9",
+      "resource-id": "com.rabugentom.chordfree:id/chord_structure_1_3",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        360,
+        2297,
+        480,
+        2363
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "b11",
+      "resource-id": "com.rabugentom.chordfree:id/chord_structure_1_4",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        480,
+        2297,
+        600,
+        2363
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "11",
+      "resource-id": "com.rabugentom.chordfree:id/chord_structure_1_5",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        600,
+        2297,
+        720,
+        2363
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "#11",
+      "resource-id": "com.rabugentom.chordfree:id/chord_structure_1_6",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        720,
+        2297,
+        840,
+        2363
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "12",
+      "resource-id": "com.rabugentom.chordfree:id/chord_structure_1_7",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        840,
+        2297,
+        960,
+        2363
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "b13",
+      "resource-id": "com.rabugentom.chordfree:id/chord_structure_1_8",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        960,
+        2297,
+        1080,
+        2363
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "13",
+      "resource-id": "com.rabugentom.chordfree:id/chord_structure_1_9",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1080,
+        2297,
+        1200,
+        2363
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "#13",
+      "resource-id": "com.rabugentom.chordfree:id/chord_structure_1_10",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1200,
+        2297,
+        1320,
+        2363
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

@@ -1,0 +1,447 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "ancestors": [
+        "android.support.v7.widget.Toolbar",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.nbc.news.view.NbcToolBar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            154,
+            105,
+            361,
+            259
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            154,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "San Francisco",
+          "resource-id": "com.nbcuni.nbcots.nbcchicago.android:id/title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.nbc.news.view.NbcTextView",
+          "bounds": [
+            546,
+            139,
+            893,
+            224
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "iconClass": "play",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.nbcuni.nbcots.nbcchicago.android:id/add_location_icon",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1337,
+            153,
+            1415,
+            209
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.nbcuni.nbcots.nbcchicago.android:id/frame_layout",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            280,
+            1440,
+            298
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.v7.widget.RecyclerView",
+          "bounds": [
+            0,
+            280,
+            1440,
+            2392
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "resource-id": "com.nbcuni.nbcots.nbcchicago.android:id/hourly_forecast_layout",
+              "children": [
+                {
+                  "text": "64°",
+                  "resource-id": "com.nbcuni.nbcots.nbcchicago.android:id/selected_temperature_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NbcTextView",
+                  "bounds": [
+                    49,
+                    280,
+                    344,
+                    483
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.nbcots.nbcchicago.android:id/selected_weather_image",
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NetworkImageView",
+                  "bounds": [
+                    344,
+                    280,
+                    519,
+                    392
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "text": "Sunny",
+                  "resource-id": "com.nbcuni.nbcots.nbcchicago.android:id/selected_climate_forecast_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NbcTextView",
+                  "bounds": [
+                    49,
+                    483,
+                    604,
+                    559
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "10 mph",
+                  "resource-id": "com.nbcuni.nbcots.nbcchicago.android:id/selected_wind_forecast_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NbcTextView",
+                  "bounds": [
+                    652,
+                    280,
+                    863,
+                    339
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "Wind",
+                  "resource-id": "com.nbcuni.nbcots.nbcchicago.android:id/selected_wind_forecast_label",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NbcTextView",
+                  "bounds": [
+                    652,
+                    346,
+                    752,
+                    399
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "0%",
+                  "resource-id": "com.nbcuni.nbcots.nbcchicago.android:id/selected_rain_forecast_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NbcTextView",
+                  "bounds": [
+                    652,
+                    406,
+                    733,
+                    491
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "Precip",
+                  "resource-id": "com.nbcuni.nbcots.nbcchicago.android:id/selected_rain_forecast_label",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NbcTextView",
+                  "bounds": [
+                    652,
+                    498,
+                    787,
+                    551
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.nbcots.nbcchicago.android:id/right_vertical_divider",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "bounds": [
+                    1189,
+                    280,
+                    1193,
+                    534
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.nbcots.nbcchicago.android:id/left_vertical_divider",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "bounds": [
+                    600,
+                    280,
+                    604,
+                    534
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "text": "Temp",
+                  "resource-id": "com.nbcuni.nbcots.nbcchicago.android:id/temperature_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NbcTextView",
+                  "bounds": [
+                    1256,
+                    324,
+                    1361,
+                    377
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "Precip",
+                  "resource-id": "com.nbcuni.nbcots.nbcchicago.android:id/percip_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NbcTextView",
+                  "bounds": [
+                    1256,
+                    486,
+                    1391,
+                    539
+                  ],
+                  "componentLabel": "Text"
+                }
+              ],
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.widget.RelativeLayout",
+              "bounds": [
+                0,
+                280,
+                1440,
+                1521
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "resource-id": "com.nbcuni.nbcots.nbcchicago.android:id/ad_view",
+              "children": [
+                {
+                  "ancestors": [
+                    "android.view.ViewGroup",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "class": "com.google.android.gms.ads.doubleclick.PublisherAdView",
+                  "bounds": [
+                    195,
+                    1591,
+                    1245,
+                    2392
+                  ],
+                  "clickable": false,
+                  "children": [
+                    {
+                      "ancestors": [
+                        "android.widget.FrameLayout",
+                        "android.view.ViewGroup",
+                        "android.view.View",
+                        "java.lang.Object"
+                      ],
+                      "class": "com.google.android.gms.ads.internal.webview.n",
+                      "bounds": [
+                        195,
+                        1591,
+                        1245,
+                        2392
+                      ],
+                      "clickable": false,
+                      "children": [
+                        {
+                          "ancestors": [
+                            "android.webkit.WebView",
+                            "android.widget.AbsoluteLayout",
+                            "android.view.ViewGroup",
+                            "android.view.View",
+                            "java.lang.Object"
+                          ],
+                          "bounds": [
+                            195,
+                            1591,
+                            1245,
+                            2392
+                          ],
+                          "clickable": true,
+                          "class": "com.google.android.gms.ads.internal.webview.o",
+                          "componentLabel": "Web View"
+                        }
+                      ],
+                      "componentLabel": "Web View"
+                    }
+                  ],
+                  "componentLabel": "Advertisement"
+                }
+              ],
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.widget.RelativeLayout",
+              "bounds": [
+                0,
+                1521,
+                1440,
+                2392
+              ],
+              "componentLabel": "List Item"
+            }
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.nbc.news.view.NbcLayout",
+      "bounds": [
+        0,
+        280,
+        1440,
+        2392
+      ],
+      "componentLabel": "Drawer"
+    }
+  ]
+}

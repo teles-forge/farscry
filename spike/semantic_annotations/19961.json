@@ -1,0 +1,164 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    160,
+    265,
+    1280,
+    2210
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        216,
+        321,
+        1224,
+        2154
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Print CPU usage in percentage.",
+          "resource-id": "com.inspiredandroid.linuxcommandbibliotheca:id/fragment_scriptdetail_tv_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            216,
+            321,
+            1224,
+            476
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            216,
+            476,
+            1224,
+            1414
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "HZ=`awk '/\\\\#define HZ/ {print $3}' /usr/include/asm-generic/param.h`; NUMCPUS=`grep ^proc /proc/cpuinfo | wc -l`; FIRST=`cat /proc/stat | awk '/^cpu / {print $5}'`; sleep 1; SECOND=`cat /proc/stat | awk '/^cpu / {print $5}'`; USED=`echo 4 k 100 $SECOND $FIRST - $NUMCPUS $HZ \\\\* / 100 \\\\* - p | dc`; echo ${USED}",
+              "resource-id": "com.inspiredandroid.linuxcommandbibliotheca:id/row_scriptdescription_child_tv_description",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "com.inspiredandroid.linuxcommandbibliotheca.view.CodeTextView",
+              "bounds": [
+                251,
+                511,
+                986,
+                1379
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "iconClass": "share",
+              "ancestors": [
+                "android.widget.ImageButton",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.inspiredandroid.linuxcommandbibliotheca:id/row_scriptdescription_child_iv_share",
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatImageButton",
+              "bounds": [
+                1021,
+                868,
+                1189,
+                1022
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            216,
+            1414,
+            1224,
+            2154
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "NUMCPUS=`grep ^proc /proc/cpuinfo | wc -l`; FIRST=`cat /proc/stat | awk '/^cpu / {print $5}'`; sleep 1; SECOND=`cat /proc/stat | awk '/^cpu / {print $5}'`; USED=`echo 2 k 100 $SECOND $FIRST - $NUMCPUS / - p | dc`; echo ${USED}%",
+              "resource-id": "com.inspiredandroid.linuxcommandbibliotheca:id/row_scriptdescription_child_tv_description",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "com.inspiredandroid.linuxcommandbibliotheca.view.CodeTextView",
+              "bounds": [
+                251,
+                1449,
+                986,
+                2119
+              ],
+              "componentLabel": "Text Button"
+            },
+            {
+              "iconClass": "share",
+              "ancestors": [
+                "android.widget.ImageButton",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.inspiredandroid.linuxcommandbibliotheca:id/row_scriptdescription_child_iv_share",
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatImageButton",
+              "bounds": [
+                1021,
+                1707,
+                1189,
+                1861
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "componentLabel": "Modal"
+    }
+  ]
+}

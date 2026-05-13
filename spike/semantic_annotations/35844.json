@@ -1,0 +1,831 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.triposo.droidguide.world:id/action_bar_container",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            56,
+            138,
+            172,
+            226
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "wallpaper",
+          "ancestors": [
+            "android.support.v7.widget.aa",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            964,
+            98,
+            1132,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "com.triposo.droidguide.world:id/search_menu_item",
+          "ancestors": [
+            "android.support.v7.widget.aa",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1132,
+            98,
+            1300,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.p",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$d",
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.triposo.droidguide.world:id/triangle",
+          "clickable": false,
+          "class": "android.support.v7.widget.p",
+          "bounds": [
+            461,
+            102,
+            496,
+            262
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Cities",
+          "resource-id": "android:id/text1",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.aa",
+          "bounds": [
+            200,
+            102,
+            379,
+            194
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Cambodia",
+          "resource-id": "android:id/text2",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.aa",
+          "bounds": [
+            200,
+            186,
+            454,
+            262
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        280,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "resource-id": "com.triposo.droidguide.world:id/sortToolbar",
+          "children": [
+            {
+              "text": "A-Z",
+              "resource-id": "com.triposo.droidguide.world:id/alpha_sort",
+              "ancestors": [
+                "android.widget.Button",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "com.triposo.droidguide.world.sort.SortButton",
+              "bounds": [
+                21,
+                312,
+                371,
+                416
+              ],
+              "componentLabel": "Text Button"
+            },
+            {
+              "text": "Popular",
+              "resource-id": "com.triposo.droidguide.world:id/score_sort",
+              "ancestors": [
+                "android.widget.Button",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "com.triposo.droidguide.world.sort.SortButton",
+              "bounds": [
+                371,
+                312,
+                721,
+                416
+              ],
+              "componentLabel": "Text Button",
+              "textButtonClass": "popular"
+            },
+            {
+              "text": "Distance",
+              "resource-id": "com.triposo.droidguide.world:id/distance_sort",
+              "ancestors": [
+                "android.widget.Button",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "com.triposo.droidguide.world.sort.SortButton",
+              "bounds": [
+                721,
+                312,
+                1070,
+                416
+              ],
+              "componentLabel": "Text Button",
+              "textButtonClass": "distance"
+            },
+            {
+              "text": "Region",
+              "resource-id": "com.triposo.droidguide.world:id/location_sort",
+              "ancestors": [
+                "android.widget.Button",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "com.triposo.droidguide.world.sort.SortButton",
+              "bounds": [
+                1070,
+                312,
+                1419,
+                416
+              ],
+              "componentLabel": "Text Button"
+            }
+          ],
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.triposo.droidguide.world.sort.SortToolbar",
+          "bounds": [
+            0,
+            280,
+            1440,
+            448
+          ],
+          "componentLabel": "Toolbar"
+        },
+        {
+          "text": "Distance is from Cambodia",
+          "resource-id": "com.triposo.droidguide.world:id/message",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.aa",
+          "bounds": [
+            0,
+            2284,
+            1440,
+            2392
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.RelativeLayout",
+          "bounds": [
+            0,
+            448,
+            1440,
+            770
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "Phnom Penh",
+              "resource-id": "com.triposo.droidguide.world:id/name",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.aa",
+              "bounds": [
+                406,
+                473,
+                1405,
+                549
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "A city striving to retain the name of \"The Pearl of Asia\", as it was known before 1970.",
+              "resource-id": "com.triposo.droidguide.world:id/byline",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.aa",
+              "bounds": [
+                406,
+                549,
+                1405,
+                606
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "5217 ft",
+              "resource-id": "com.triposo.droidguide.world:id/distance",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.aa",
+              "bounds": [
+                406,
+                606,
+                1405,
+                663
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.triposo.droidguide.world:id/thumbnail",
+              "clickable": false,
+              "class": "android.support.v7.widget.p",
+              "bounds": [
+                35,
+                483,
+                371,
+                735
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.RelativeLayout",
+          "bounds": [
+            0,
+            774,
+            1440,
+            1096
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "Ta Khmao",
+              "resource-id": "com.triposo.droidguide.world:id/name",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.aa",
+              "bounds": [
+                406,
+                799,
+                1405,
+                875
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Takhmao New Market, Wat Preak Pra, Wat Krapeu Ha.",
+              "resource-id": "com.triposo.droidguide.world:id/byline",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.aa",
+              "bounds": [
+                406,
+                875,
+                1405,
+                932
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "5 mi",
+              "resource-id": "com.triposo.droidguide.world:id/distance",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.aa",
+              "bounds": [
+                406,
+                932,
+                1405,
+                989
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.triposo.droidguide.world:id/thumbnail",
+              "clickable": false,
+              "class": "android.support.v7.widget.p",
+              "bounds": [
+                35,
+                809,
+                371,
+                1061
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.RelativeLayout",
+          "bounds": [
+            0,
+            1100,
+            1440,
+            1422
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "Kampong Cham",
+              "resource-id": "com.triposo.droidguide.world:id/name",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.aa",
+              "bounds": [
+                406,
+                1125,
+                1405,
+                1201
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Nice countryside village on the Mekong river and good place to meet real Cambodia.",
+              "resource-id": "com.triposo.droidguide.world:id/byline",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.aa",
+              "bounds": [
+                406,
+                1201,
+                1405,
+                1258
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "48 mi",
+              "resource-id": "com.triposo.droidguide.world:id/distance",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.aa",
+              "bounds": [
+                406,
+                1258,
+                1405,
+                1315
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "iconClass": "edit",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.triposo.droidguide.world:id/thumbnail",
+              "clickable": false,
+              "class": "android.support.v7.widget.p",
+              "bounds": [
+                35,
+                1135,
+                371,
+                1387
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.RelativeLayout",
+          "bounds": [
+            0,
+            1426,
+            1440,
+            1748
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "Kampong Chhnang",
+              "resource-id": "com.triposo.droidguide.world:id/name",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.aa",
+              "bounds": [
+                406,
+                1451,
+                1405,
+                1527
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "វិមានឯករាជ្យ, Domerey Sar, ពលរដ្ឋនៅជាយដែន.",
+              "resource-id": "com.triposo.droidguide.world:id/byline",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.aa",
+              "bounds": [
+                406,
+                1527,
+                1405,
+                1584
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "51 mi",
+              "resource-id": "com.triposo.droidguide.world:id/distance",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.aa",
+              "bounds": [
+                406,
+                1584,
+                1405,
+                1641
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.triposo.droidguide.world:id/thumbnail",
+              "clickable": false,
+              "class": "android.support.v7.widget.p",
+              "bounds": [
+                35,
+                1461,
+                371,
+                1713
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.RelativeLayout",
+          "bounds": [
+            0,
+            1752,
+            1440,
+            2074
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "Kampong Thom",
+              "resource-id": "com.triposo.droidguide.world:id/name",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.aa",
+              "bounds": [
+                406,
+                1777,
+                1405,
+                1853
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Provincial Museum, សួនសត្វ, Steung Sen City Hall.",
+              "resource-id": "com.triposo.droidguide.world:id/byline",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.aa",
+              "bounds": [
+                406,
+                1853,
+                1405,
+                1910
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "80 mi",
+              "resource-id": "com.triposo.droidguide.world:id/distance",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.aa",
+              "bounds": [
+                406,
+                1910,
+                1405,
+                1967
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.triposo.droidguide.world:id/thumbnail",
+              "clickable": false,
+              "class": "android.support.v7.widget.p",
+              "bounds": [
+                35,
+                1787,
+                371,
+                2039
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.RelativeLayout",
+          "bounds": [
+            0,
+            2078,
+            1440,
+            2284
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "Kampot",
+              "resource-id": "com.triposo.droidguide.world:id/name",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.aa",
+              "bounds": [
+                406,
+                2103,
+                1405,
+                2179
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Town between the capital and Sihanoukville and gateway to the Bokor National Park.",
+              "resource-id": "com.triposo.droidguide.world:id/byline",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.aa",
+              "bounds": [
+                406,
+                2179,
+                1405,
+                2236
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "82 mi",
+              "resource-id": "com.triposo.droidguide.world:id/distance",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.aa",
+              "bounds": [
+                406,
+                2236,
+                1405,
+                2284
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "iconClass": "more",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.triposo.droidguide.world:id/thumbnail",
+              "clickable": false,
+              "class": "android.support.v7.widget.p",
+              "bounds": [
+                35,
+                2113,
+                371,
+                2284
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

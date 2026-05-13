@@ -1,0 +1,915 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.andrewtretiakov.followers_assistant:id/toolbar",
+      "children": [
+        {
+          "iconClass": "avatar",
+          "ancestors": [
+            "com.facebook.drawee.view.GenericDraweeView",
+            "com.facebook.drawee.view.DraweeView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.andrewtretiakov.followers_assistant:id/avatar",
+          "clickable": true,
+          "class": "com.facebook.drawee.view.SimpleDraweeView",
+          "bounds": [
+            28,
+            105,
+            154,
+            231
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "swap",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.andrewtretiakov.followers_assistant:id/switchAccount",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            600,
+            84,
+            768,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.andrewtretiakov.followers_assistant:id/search",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            768,
+            84,
+            936,
+            252
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "info",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.andrewtretiakov.followers_assistant:id/info",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            936,
+            84,
+            1104,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "emoji",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.andrewtretiakov.followers_assistant:id/donate",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            1104,
+            84,
+            1272,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.andrewtretiakov.followers_assistant:id/mainMenu",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            1272,
+            84,
+            1440,
+            252
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.support.v7.widget.Toolbar",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.tretiakov.absframework.views.AbsToolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        252
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "appcrawler4",
+      "resource-id": "com.andrewtretiakov.followers_assistant:id/userName",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.tretiakov.absframework.views.text.AbsTextView",
+      "bounds": [
+        0,
+        252,
+        1440,
+        336
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "more",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.andrewtretiakov.followers_assistant:id/actionMenu",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageButton",
+      "bounds": [
+        479,
+        2224,
+        962,
+        2392
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.andrewtretiakov.followers_assistant:id/actionEngine",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageButton",
+      "bounds": [
+        962,
+        2224,
+        1440,
+        2392
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.andrewtretiakov.followers_assistant:id/actionPeople",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageButton",
+      "bounds": [
+        0,
+        2224,
+        479,
+        2392
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "resource-id": "com.andrewtretiakov.followers_assistant:id/dots",
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.andrewtretiakov.followers_assistant.ui.views.DotsView",
+      "bounds": [
+        0,
+        2359,
+        479,
+        2376
+      ],
+      "componentLabel": "Pager Indicator"
+    },
+    {
+      "text": "Unfollowed:",
+      "resource-id": "com.andrewtretiakov.followers_assistant:id/unfollowT",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.tretiakov.absframework.views.text.AbsTextView",
+      "bounds": [
+        721,
+        400,
+        1009,
+        463
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Auto-Follow:",
+      "resource-id": "com.andrewtretiakov.followers_assistant:id/followT",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.tretiakov.absframework.views.text.AbsTextView",
+      "bounds": [
+        721,
+        463,
+        1009,
+        526
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Auto-Likes:",
+      "resource-id": "com.andrewtretiakov.followers_assistant:id/likesT",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.tretiakov.absframework.views.text.AbsTextView",
+      "bounds": [
+        721,
+        526,
+        1009,
+        589
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "hour",
+      "resource-id": "com.andrewtretiakov.followers_assistant:id/hour",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.tretiakov.absframework.views.text.AbsTextView",
+      "bounds": [
+        1010,
+        337,
+        1226,
+        400
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "day",
+      "resource-id": "com.andrewtretiakov.followers_assistant:id/day",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.tretiakov.absframework.views.text.AbsTextView",
+      "bounds": [
+        1227,
+        337,
+        1440,
+        400
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "0",
+      "resource-id": "com.andrewtretiakov.followers_assistant:id/unfollowH",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.tretiakov.absframework.views.text.AbsTextView",
+      "bounds": [
+        1010,
+        400,
+        1226,
+        463
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "0",
+      "resource-id": "com.andrewtretiakov.followers_assistant:id/unfollowD",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.tretiakov.absframework.views.text.AbsTextView",
+      "bounds": [
+        1227,
+        400,
+        1440,
+        463
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "0",
+      "resource-id": "com.andrewtretiakov.followers_assistant:id/followH",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.tretiakov.absframework.views.text.AbsTextView",
+      "bounds": [
+        1010,
+        463,
+        1226,
+        526
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "0",
+      "resource-id": "com.andrewtretiakov.followers_assistant:id/followD",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.tretiakov.absframework.views.text.AbsTextView",
+      "bounds": [
+        1227,
+        463,
+        1440,
+        526
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "0",
+      "resource-id": "com.andrewtretiakov.followers_assistant:id/likesH",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.tretiakov.absframework.views.text.AbsTextView",
+      "bounds": [
+        1010,
+        526,
+        1226,
+        589
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "0",
+      "resource-id": "com.andrewtretiakov.followers_assistant:id/likesD",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.tretiakov.absframework.views.text.AbsTextView",
+      "bounds": [
+        1227,
+        526,
+        1440,
+        589
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Automation services",
+      "resource-id": "com.andrewtretiakov.followers_assistant:id/title",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.tretiakov.absframework.views.text.AbsTextView",
+      "bounds": [
+        0,
+        589,
+        1440,
+        736
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        740,
+        1440,
+        2224
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "search",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.andrewtretiakov.followers_assistant:id/searchForLike",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            0,
+            740,
+            168,
+            845
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "I want to try ($2/month)",
+          "resource-id": "com.andrewtretiakov.followers_assistant:id/enableLikeButton",
+          "ancestors": [
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatButton",
+          "bounds": [
+            358,
+            1056,
+            1081,
+            1224
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "iconClass": "search",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.andrewtretiakov.followers_assistant:id/searchForCreate",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            0,
+            1480,
+            168,
+            1606
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "I want to try ($2/month)",
+          "resource-id": "com.andrewtretiakov.followers_assistant:id/enableCreateButton",
+          "ancestors": [
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatButton",
+          "bounds": [
+            358,
+            1690,
+            1081,
+            1858
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "When in service, the app will receive a feed by the Tag and/or Location or receive followers and start following three people.",
+          "resource-id": "com.andrewtretiakov.followers_assistant:id/autoCreateDesc",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.tretiakov.absframework.views.text.AbsTextView",
+          "bounds": [
+            0,
+            1318,
+            1440,
+            1480
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Auto Follow",
+          "resource-id": "com.andrewtretiakov.followers_assistant:id/autoCreateTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.tretiakov.absframework.views.text.AbsTextView",
+          "bounds": [
+            0,
+            1224,
+            1440,
+            1318
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Auto Likes in Timeline",
+          "resource-id": "com.andrewtretiakov.followers_assistant:id/autoLikeTimelineTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.tretiakov.absframework.views.text.AbsTextView",
+          "bounds": [
+            0,
+            1858,
+            1440,
+            1952
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "When in service, the app will receive timeline and \"Like\" three publications of those accounts you follow. This is very useful to keep your activity of posts of those you follow.",
+          "resource-id": "com.andrewtretiakov.followers_assistant:id/autoLikeTimelineDesc",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.tretiakov.absframework.views.text.AbsTextView",
+          "bounds": [
+            0,
+            1952,
+            1440,
+            2163
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Interval:",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.tretiakov.absframework.views.text.AbsTextView",
+          "bounds": [
+            28,
+            864,
+            152,
+            911
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "minus",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.andrewtretiakov.followers_assistant:id/likeDurationMinus",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            208,
+            846,
+            292,
+            930
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "3 min.",
+          "resource-id": "com.andrewtretiakov.followers_assistant:id/likeDuration",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.tretiakov.absframework.views.text.AbsTextView",
+          "bounds": [
+            292,
+            855,
+            540,
+            921
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "add",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.andrewtretiakov.followers_assistant:id/likeDurationPlus",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            540,
+            846,
+            624,
+            930
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Like + Follow:",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.tretiakov.absframework.views.text.AbsTextView",
+          "bounds": [
+            28,
+            964,
+            281,
+            1021
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "I want to try ($2/month)",
+          "resource-id": "com.andrewtretiakov.followers_assistant:id/enableLikeAndCreateButton",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.tretiakov.absframework.views.text.AbsTextView",
+          "bounds": [
+            843,
+            951,
+            1412,
+            1035
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "Interval:",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.tretiakov.absframework.views.text.AbsTextView",
+          "bounds": [
+            28,
+            1624,
+            152,
+            1671
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "minus",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.andrewtretiakov.followers_assistant:id/createDurationMinus",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            208,
+            1606,
+            292,
+            1690
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "3 min.",
+          "resource-id": "com.andrewtretiakov.followers_assistant:id/createDuration",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.tretiakov.absframework.views.text.AbsTextView",
+          "bounds": [
+            292,
+            1615,
+            540,
+            1681
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "add",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.andrewtretiakov.followers_assistant:id/createDurationPlus",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            540,
+            1606,
+            624,
+            1690
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Interval:",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.tretiakov.absframework.views.text.AbsTextView",
+          "bounds": [
+            28,
+            2181,
+            152,
+            2224
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "minus",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.andrewtretiakov.followers_assistant:id/likeTimelineDurationMinus",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            208,
+            2163,
+            292,
+            2224
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "3 min.",
+          "resource-id": "com.andrewtretiakov.followers_assistant:id/likeTimelineDuration",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.tretiakov.absframework.views.text.AbsTextView",
+          "bounds": [
+            292,
+            2172,
+            540,
+            2224
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "add",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.andrewtretiakov.followers_assistant:id/likeTimelineDurationPlus",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            540,
+            2163,
+            624,
+            2224
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "text": "0\nFollowers",
+      "resource-id": "com.andrewtretiakov.followers_assistant:id/followersCount",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.tretiakov.absframework.views.text.AbsTextView",
+      "bounds": [
+        172,
+        337,
+        324,
+        453
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "0\nFollowing",
+      "resource-id": "com.andrewtretiakov.followers_assistant:id/followingCount",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.tretiakov.absframework.views.text.AbsTextView",
+      "bounds": [
+        396,
+        337,
+        547,
+        453
+      ],
+      "componentLabel": "Text Button"
+    }
+  ]
+}

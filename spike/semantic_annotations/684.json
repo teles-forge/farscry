@@ -1,0 +1,376 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.sololearn.python:id/toolbar",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Code Playground",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            210,
+            135,
+            747,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "share",
+          "resource-id": "com.sololearn.python:id/action_share",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1132,
+            98,
+            1300,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "'''\nPrint your name in Symbols\nauthor: Bogdanov Bogdan\n\nI chose the vertical output of character because it horizontally will not check correctly.\n\napdate 1.1: Add to function:\n            1. Lists for the formation of the letters.\n            2. Processing errors in text_input.\n\napdate 1.2: Change Z symbol.\napdate 1.3: Change Lists for the formation of the letters.\n\napdate 1.4: Print in a horizontal line.(in the phone does not display correctly).\n            if you want to try, to add a function parameter TRUE. an example of a function call:\n            \n            print_text_in_symbol(text_input, rand_ch, rand_bg, inline = True)\n            \n            At the bottom I commented this function\n\napdate 1.5: Change Lists for the formation of the letters.\n\napdate 1.6: Add to function output: 1 Space .\n                                    2 Numbers 0-9 .\n                                    3 Symbols ?!,.-+ .\n\nThanks for more than 1000 likes, and thanks for the comments.\n'''\n#Enter only your name in input bar\n\nfrom random import randrange\n\n#--------------Function print_text_in_symbol-----------------\ndef print_text_in_symbol(text_input, symbol_char = 'X', symbol_bg = '-', inline = False):\n    \n    #---------Lists for the formation of the letters----------\n    a = ['000000000000',\n         '000111111000',\n         '011000000110',\n         '011000000110',\n         '011111111110',\n         '011000000110',\n         '011000000110',\n         '011000000110']\n    \n    b = ['000000000000',\n         '011111111000',\n         '011000000110',\n         '011000000110',\n         '011111111000',\n         '011000000110',\n         '011000000110',\n         '011111111000']\n    \n    c = ['000000000000',\n         '000111111000',\n         '011000000110',\n         '011000000000',\n         '011000000000',\n         '011000000000',\n         '011000000110',\n         '000111111000']\n    \n    d = ['000000000000',\n         '011111111000',\n         '011000000110',\n         '011000000110',\n         '011000000110',\n         '011000000110',\n         '011000000110',\n         '011111111000']\n    \n    e = ['000000000000',\n         '011111111110',\n         '011000000000',\n         '011000000000',\n         '011111111100',\n         '011000000000',\n         '011000000000',\n         '011111111110']\n    \n    f = ['000000000000',\n         '011111111110',\n         '011000000000',\n         '011000000000',\n         '011111111100',\n         '011000000000',\n         '011000000000',\n         '011000000000']\n    \n    g = ['000000000000',\n         '000111111000',\n         '011000000110',\n         '011000000000',\n         '011000000000',\n         '011000011110',\n         '011000000110',\n         '000111111000']\n    \n    h = ['000000000000',\n         '011000000110',\n         '011000000110',\n         '011000000110',\n         '011111111110',\n         '011000000110',\n         '011000000110',\n         '011000000110']\n    \n    i = ['000000000000',\n         '000111111000',\n         '000001100000',\n         '000001100000',\n         '000001100000',\n         '000001100000',\n         '000001100000',\n         '000111111000']\n         \n    j = ['000000000000',\n         '000001111110',\n         '000000011000',\n         '000000011000',\n         '000000011000',\n         '000000011000',\n         '011000011000',\n         '000111100000']\n    \n    k = ['000000000000',\n         '011000000110',\n         '011000011000',\n         '011001100000',\n         '011110000000',\n         '011001100000',\n         '011000011000',\n         '011000000110']\n    \n    l = ['000000000000',\n         '011000000000',\n         '011000000000',\n         '011000000000',\n         '011000000000',\n         '011000000000',\n         '011000000000',\n         '011111111110']\n    \n    m = ['000000000000',\n         '011000000110',\n         '011110011110',\n         '011001100110',\n         '011001100110',\n         '011000000110',\n         '011000000110',\n         '011000000110']\n    \n    n = ['000000000000',\n         '011000000110',\n         '011000000110',\n         '011110000110',\n         '011001100110',\n         '011000011110',\n         '011000000110',\n         '011000000110']\n    \n    o = ['000000000000',\n         '000111111000',\n         '011000000110',\n         '011000000110',\n         '011000000110',\n         '011000000110',\n         '011000000110',\n         '000111111000']\n    \n    p = ['000000000000',\n         '011111111000',\n         '011000000110',\n         '011000000110',\n         '011111111000',\n         '011000000000',\n         '011000000000',\n         '011000000000']\n    \n    q = ['000000000000',\n         '000111111000',\n         '011000000110',\n         '011000000110',\n         '011000000110',\n         '011001100110',\n         '011000011000',\n         '000111100110']\n    \n    r = ['000000000000',\n         '011111111000',\n         '011000000110',\n         '011000000110',\n         '011111111000',\n         '011001100000',\n         '011000011000',\n         '011000000110']\n    \n    s = ['000000000000',\n         '000111111110',\n         '011000000000',\n         '011000000000',\n         '000111111000',\n         '000000000110',\n         '000000000110',\n         '011111111000']\n    \n    t = ['000000000000',\n         '011111111110',\n         '000001100000',\n         '000001100000',\n         '000001100000',\n         '000001100000',\n         '000001100000',\n         '000001100000']\n    \n    u = ['000000000000',\n         '011000000110',\n         '011000000110',\n         '011000000110',\n         '011000000110',\n         '011000000110',\n         '011000000110',\n         '000111111000']\n    \n    v = ['000000000000',\n         '011000000110',\n         '011000000110',\n         '011000000110',\n         '011000000110',\n         '000110011000',\n         '000110011000',\n         '000001100000']\n    \n    w = ['000000000000',\n         '011000000110',\n         '011000000110',\n         '011000000110',\n         '011001100110',\n         '011001100110',\n         '011001100110',\n         '000110011000']\n    \n    x = ['000000000000',\n         '011000000110',\n         '011000000110',\n         '000110011000',\n         '000001100000',\n         '000110011000',\n         '011000000110',\n         '011000000110']\n         \n    y = ['000000000000',\n         '011000000110',\n         '011000000110',\n         '000110011000',\n         '000001100000',\n         '000001100000',\n         '000001100000',\n         '000001100000']\n         \n    z = ['000000000000',\n         '011111111110',\n         '000000000110',\n         '000000011000',\n         '000001100000',\n         '000110000000',\n         '011000000000',\n         '011111111110']\n         \n    sp = ['000000000000',\n          '000000000000',\n          '000000000000',\n          '000000000000',\n          '000000000000',\n          '000000000000',\n          '000000000000',\n          '000000000000']\n    \n    n0 = ['000000000000',\n          '000111111000',\n          '011000000110',\n          '011000011110',\n          '011001100110',\n          '011110000110',\n          '011000000110',\n          '000111111000']\n    \n    n1 = ['000000000000',\n          '000001100000',\n          '000111100000',\n          '000001100000',\n          '000001100000',\n          '000001100000',\n          '000001100000',\n          '000111111000']\n          \n    n2 = ['000000000000',\n          '000111111000',\n          '011000000110',\n          '000000000110',\n          '000000011000',\n          '000001100000',\n          '000110000000',\n          '011111111110']\n    \n    n3 = ['000000000000',\n          '011111111110',\n          '000000011000',\n          '000001100000',\n          '000000011000',\n          '000000000110',\n          '011000000110',\n          '000111111000']\n    \n    n4 = ['000000000000',\n          '000000011000',\n          '000001111000',\n          '000110011000',\n          '011000011000',\n          '011111111110',\n          '000000011000',\n          '000000011000']\n                      \n    n5 = ['000000000000',\n          '011111111110',\n          '011000000000',\n          '011111111000',\n          '000000000110',\n          '000000000110',\n          '011000000110',\n          '000111111000']\n                      \n    n6 = ['000000000000',\n          '000001111000',\n          '000110000000',\n          '011000000000',\n          '011111111000',\n          '011000000110',\n          '011000000110',\n          '000111111000']\n                      \n    n7 = ['000000000000',\n          '011111111110',\n          '000000000110',\n          '000000011000',\n          '000001100000',\n          '000110000000',\n          '000110000000',\n          '000110000000']\n                      \n    n8 = ['000000000000',\n          '000111111000',\n          '011000000110',\n          '011000000110',\n          '000111111000',\n          '011000000110',\n          '011000000110',\n          '000111111000']\n                      \n    n9 = ['000000000000',\n          '000111111000',\n          '011000000110',\n          '011000000110',\n          '000111111110',\n          '000000000110',\n          '000000011000',\n          '000111100000']\n    \n    s0 = ['000000000000',\n          '000111111000',\n          '011000000110',\n          '000000000110',\n          '000000011000',\n          '000001100000',\n          '000000000000',\n          '000001100000']\n    \n    s1 = ['000000000000',\n          '000001100000',\n          '000001100000',\n          '000001100000',\n          '000001100000',\n          '000001100000',\n          '000000000000',\n          '000001100000']      \n    \n    s2 = ['000000000000',\n          '000000000000',\n          '000000000000',\n          '000000000000',\n          '000000000000',\n          '000000000000',\n          '000001100000',\n          '000001100000']                  \n    \n    s3 = ['000000000000',\n          '000000000000',\n          '000000000000',\n          '000000000000',\n          '000000000000',\n          '000000000000',\n          '000000000000',\n          '000001100000']\n    \n    s4 = ['000000000000',\n          '000000000000',\n          '000000000000',\n          '000000000000',\n          '001111111100',\n          '000000000000',\n          '000000000000',\n          '000000000000']\n    \n    s5 = ['000000000000',\n          '000000000000',\n          '000001100000',\n          '000001100000',\n          '011111111110',\n          '000001100000',\n          '000001100000',\n          '000000000000']\n          \n    \n    ascii_alph = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z,\n                 sp, n0, n1, n2, n3, n4, n5, n6, n7, n8, n9,\n                 s0, s1, s2, s3, s4, s5, s5]\n    \n    #---END------Lists for the formation of the letters----------------\n    \n    res = ''\n    dont_use =''\n    alph = 'abcdefghijklmnopqrstuvwxyz 0123456789?!,.-+'\n    text_error = 'Print Successful.\\n Your text :'\n    \n    text_input = text_input.lower()\n    your_text = text_input\n    \n    #-----------Processing errors in text_input-----------------\n    # 1. If nothing is entered\n    if text_input == '':\n        text_input = 'none text'\n        your_text = \"You don't input text.\"\n        \n    # 2. Checking for a character in the alphabet\n    try:\n        for char in text_input.lower():\n            # 3. if there is no character in the alphabet function returns an error(ValueError)    \n            alph.index(char)\n          \n    #------error Processing(ValueError)---- \n    except ValueError:\n        text_error = '''\nError input. \n1. Use A-Z a-z, 0-9, ?!,.-+, for your input.\nYour text: '''\n        # changing text_input\n        text_input = 'error'\n    #---END---error Processing(ValueError)------   \n    \n    finally:\n        # Outputs the generated string\n        print(text_error+your_text+dont_use)\n        \n        if inline:\n            res = ''\n            print_res = ''\n            for i in range(0, 8):\n                for char in text_input:\n                    ch_ascii = ascii_alph[alph.index(char)]\n                    res += ch_ascii[i]\n                res += '\\n'\n            for char in res:\n                if char == '0':\n                    print_res += symbol_bg\n                elif char == '1':    \n                    print_res += symbol_char\n                elif char == '\\n':\n                    print_res += '\\n'\n            print(print_res)    \n        else:    \n            for char in text_input:\n                ch_ascii = ascii_alph[alph.index(char)]\n                for i in ch_ascii:\n                    for t in i:\n                        for char in t:\n                            if char == '0':\n                                res += symbol_bg\n                            elif char == '1':    \n                                res += symbol_char\n                    print(res)\n                    res = ''\n    #---END-----Processing errors in input-----------------\n    \n#-----END---------Function print_text_in_symbol------------  \n    \n#---Set for select characters-------------------------------\nch ='XO#@'\nch_bg = '.`'\n#---Random selection of a set of characters----------------\nrand_ch = ch[randrange(len(ch))]\nrand_bg = ch_bg[randrange(len(ch_bg))]\n\n\n#User input----------------------------------------\ntext_input = input()\n\nprint(\"Please leave a like if you enjoyed!\\n\")\n\n# print(\"print in a horizontal line\".upper())\n#print_text_in_symbol(text_input, rand_ch, rand_bg, inline = True)\n\nprint(\"print in a vertical line\".upper())\nprint_text_in_symbol(text_input, rand_ch, rand_bg, inline = False)",
+      "resource-id": "com.sololearn.python:id/code_editor",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatEditText",
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.sololearn.app.views.playground.AdvancedEditText",
+      "bounds": [
+        0,
+        550,
+        1440,
+        2217
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "resource-id": "com.sololearn.python:id/run_code",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        1205,
+        2217,
+        1440,
+        2392
+      ],
+      "componentLabel": "Text Button",
+      "text": "RUN"
+    },
+    {
+      "iconClass": "avatar",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.sololearn.python:id/code_avatar",
+      "clickable": true,
+      "class": "com.sololearn.app.views.CircleImageView",
+      "bounds": [
+        35,
+        315,
+        158,
+        438
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Print your name in Symbols v1.6",
+      "resource-id": "com.sololearn.python:id/code_name",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        193,
+        315,
+        893,
+        381
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Bogdan Bogdanov",
+      "resource-id": "com.sololearn.python:id/code_user",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        193,
+        385,
+        535,
+        442
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "thumbs_up",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.sololearn.python:id/vote_up",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageButton",
+      "bounds": [
+        166,
+        456,
+        289,
+        522
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "+1366",
+      "resource-id": "com.sololearn.python:id/vote_number",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        296,
+        456,
+        436,
+        522
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "thumbs_down",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.sololearn.python:id/vote_down",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageButton",
+      "bounds": [
+        443,
+        456,
+        566,
+        522
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Tab",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        0,
+        2221,
+        175,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "(",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        175,
+        2217,
+        350,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": ")",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        350,
+        2217,
+        525,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "\"",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        525,
+        2217,
+        700,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "'",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        700,
+        2217,
+        875,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "{",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        875,
+        2217,
+        1050,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "}",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        1050,
+        2217,
+        1205,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    }
+  ]
+}

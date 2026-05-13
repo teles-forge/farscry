@@ -1,0 +1,410 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.sololearn.java:id/toolbar",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Code Playground",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            210,
+            135,
+            747,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "share",
+          "resource-id": "com.sololearn.java:id/action_share",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1132,
+            98,
+            1300,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "import java.util.Scanner;\nimport java.util.Random;\n\n/**********************************************\nSimple game made by Frekvens1\n- Self explaining code\n\nWritten 19.07.2016 (DDMMYYYY)\n**********************************************/\n\npublic class Program {\n    /*\n        Valid user input: \n        rock, paper, scissors\n    */\n    public static void main(String[] args) {\n        \n            try {\n                Scanner sc = \n                new Scanner(System.in);\n                \n                String userInput =   \n                sc.next();                      \n                if (isValid( userInput )) {\n                    game( userInput );\n                    \n                } else {\n                   print(\"Invalid user input!\\nWrite rock, paper or scissors!\");\n                }\n            } catch (Exception e) {\n                e.printStackTrace();\n            }\n    }\n    \n    public static void print(String text) {\n       System.out.println( text );\n    }\n    \n    public static boolean isValid(String input) {\n        \n        if (input.equalsIgnoreCase(\"rock\")) {\n           return true; \n        } \n        \n        if (input.equalsIgnoreCase(\"paper\")) {\n           return true; \n        }\n        \n         if (input.equalsIgnoreCase(\"scissors\")) {                             \n             return true; \n         }\n        \n        return false;\n    }\n    \n    public static void game(String user) {\n        String computer = computerResults();\n        \n        print( user + \" vs \" + computer + \"\\n\");\n        \n        if (user.equalsIgnoreCase(computer)) {\n            print(\"Stalemate! No winners.\");\n        } else {\n        \n            if (checkWin(user, computer)) {\n               print(\"You won against the computer!\");\n            } else {\n               print(\"You lost against the computer!\");\n            }\n        }\n    }\n    \n    public static String computerResults() {\n        \n        String types[] = \n        {\"rock\", \"paper\", \"scissors\"};\n        \n        Random rand = new Random(); \n        int computerChoice = rand.nextInt(3);;\n        \n        return types[computerChoice];\n    }\n    \n    public static boolean checkWin(String user, String opponent) {\n        \n        if ( (!isValid( user )) && (!isValid( opponent )) ) {\n            return false;\n        }\n        \n        String rock = \"rock\", paper = \"paper\", scissors = \"scissors\";\n        \n        if ( (user.equalsIgnoreCase( rock )) && (opponent.equalsIgnoreCase( scissors )) ) {\n           return true; \n        }\n        \n         if ( (user.equalsIgnoreCase( scissors)) && (opponent.equalsIgnoreCase( paper )) ) {\n           return true; \n        }\n        \n         if ( (user.equalsIgnoreCase( paper )) && (opponent.equalsIgnoreCase( rock  )) ) {\n           return true; \n        }\n        \n        return false; \n        //If no possible win, assume loss.\n    }\n}",
+      "resource-id": "com.sololearn.java:id/code_editor",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatEditText",
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.sololearn.app.views.playground.AdvancedEditText",
+      "bounds": [
+        0,
+        550,
+        1440,
+        1692
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "resource-id": "com.sololearn.java:id/run_code",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        1205,
+        2217,
+        1440,
+        2392
+      ],
+      "componentLabel": "Text Button",
+      "text": "RUN"
+    },
+    {
+      "iconClass": "avatar",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.sololearn.java:id/code_avatar",
+      "clickable": true,
+      "class": "com.sololearn.app.views.CircleImageView",
+      "bounds": [
+        35,
+        315,
+        158,
+        438
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Simple rock, paper, scissors game",
+      "resource-id": "com.sololearn.java:id/code_name",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        193,
+        315,
+        933,
+        381
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Thomas Alme",
+      "resource-id": "com.sololearn.java:id/code_user",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        193,
+        385,
+        453,
+        442
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.sololearn.java:id/vote_up",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageButton",
+      "bounds": [
+        166,
+        456,
+        289,
+        522
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "+1122",
+      "resource-id": "com.sololearn.java:id/vote_number",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        296,
+        456,
+        436,
+        522
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.sololearn.java:id/vote_down",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageButton",
+      "bounds": [
+        443,
+        456,
+        566,
+        522
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Tab",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        0,
+        2221,
+        175,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "{",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        175,
+        2217,
+        350,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "}",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        350,
+        2217,
+        525,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": ";",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        525,
+        2217,
+        700,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "\"",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        700,
+        2217,
+        875,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "=",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        875,
+        2217,
+        1050,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "(",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        1050,
+        2217,
+        1205,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "OUTPUT",
+      "resource-id": "com.sololearn.java:id/output_title",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        0,
+        1692,
+        1440,
+        1798
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "\njava.util.NoSuchElementException\r\n\tat java.util.Scanner.throwFor(Unknown Source)\r\n\tat java.util.Scanner.next(Unknown Source)\r\n\tat Program.main(Program.java:15)\r\n",
+      "resource-id": "com.sololearn.java:id/output_text",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        14,
+        1812,
+        1426,
+        2165
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

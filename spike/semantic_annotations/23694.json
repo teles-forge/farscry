@@ -1,0 +1,845 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "text": "Search/Browse",
+      "resource-id": "com.live365.mobile.android:id/text_title",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.live365.mobile.android.player.ui.component.LiveTextView",
+      "bounds": [
+        193,
+        84,
+        1247,
+        259
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "date_range",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        1254,
+        84,
+        1422,
+        259
+      ],
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "componentLabel": "Icon"
+    },
+    {
+      "resource-id": "com.live365.mobile.android:id/tabMyPresets",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        350,
+        2042,
+        730,
+        2252
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "favorites"
+    },
+    {
+      "resource-id": "com.live365.mobile.android:id/tabSearch",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        710,
+        2042,
+        1090,
+        2252
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "search"
+    },
+    {
+      "resource-id": "com.live365.mobile.android:id/tabMore",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        1070,
+        2042,
+        1440,
+        2252
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "more"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        35,
+        2252,
+        105,
+        2392
+      ],
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Last played: ",
+      "resource-id": "com.live365.mobile.android:id/text_playing_status",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.live365.mobile.android.player.ui.component.LiveTextView",
+      "bounds": [
+        140,
+        2252,
+        1440,
+        2392
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "star",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        101,
+        2042,
+        259,
+        2200
+      ],
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "Featured",
+      "bounds": [
+        102,
+        2192,
+        257,
+        2252
+      ],
+      "clickable": false,
+      "class": "com.live365.mobile.android.player.ui.component.LiveTextView",
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Find stations that play…",
+      "resource-id": "com.live365.mobile.android:id/searchHint",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.live365.mobile.android.player.ui.component.LiveTextView",
+      "bounds": [
+        53,
+        329,
+        1405,
+        432
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "(Type any genre or artist, e.g. 80s, Dave Matthews, Talk.)",
+      "bounds": [
+        70,
+        600,
+        1370,
+        758
+      ],
+      "clickable": false,
+      "class": "com.live365.mobile.android.player.ui.component.LiveTextView",
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "or browse by genre",
+      "bounds": [
+        53,
+        828,
+        1387,
+        931
+      ],
+      "clickable": false,
+      "class": "com.live365.mobile.android.player.ui.component.LiveTextView",
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "com.live365.mobile.android:id/searchBox",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.EditText",
+      "bounds": [
+        70,
+        432,
+        1168,
+        600
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "GO",
+      "resource-id": "com.live365.mobile.android:id/searchBtn",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.live365.mobile.android.player.ui.component.LiveButton",
+      "bounds": [
+        1221,
+        435,
+        1387,
+        575
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "go"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        35,
+        931,
+        491,
+        1264
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.live365.mobile.android:id/stationImg",
+          "clickable": false,
+          "class": "com.live365.mobile.android.player.ui.widget.ScaledFitImageView",
+          "bounds": [
+            77,
+            949,
+            449,
+            1159
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Alternative",
+          "resource-id": "com.live365.mobile.android:id/stationTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.live365.mobile.android.player.ui.component.LiveTextView",
+          "bounds": [
+            70,
+            1159,
+            456,
+            1264
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        491,
+        931,
+        947,
+        1264
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.live365.mobile.android:id/stationImg",
+          "clickable": false,
+          "class": "com.live365.mobile.android.player.ui.widget.ScaledFitImageView",
+          "bounds": [
+            533,
+            949,
+            905,
+            1159
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Blues",
+          "resource-id": "com.live365.mobile.android:id/stationTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.live365.mobile.android.player.ui.component.LiveTextView",
+          "bounds": [
+            526,
+            1159,
+            912,
+            1264
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        947,
+        931,
+        1403,
+        1264
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.live365.mobile.android:id/stationImg",
+          "clickable": false,
+          "class": "com.live365.mobile.android.player.ui.widget.ScaledFitImageView",
+          "bounds": [
+            989,
+            949,
+            1361,
+            1159
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Classical",
+          "resource-id": "com.live365.mobile.android:id/stationTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.live365.mobile.android.player.ui.component.LiveTextView",
+          "bounds": [
+            982,
+            1159,
+            1368,
+            1264
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        35,
+        1264,
+        491,
+        1597
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.live365.mobile.android:id/stationImg",
+          "clickable": false,
+          "class": "com.live365.mobile.android.player.ui.widget.ScaledFitImageView",
+          "bounds": [
+            77,
+            1282,
+            449,
+            1492
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Country",
+          "resource-id": "com.live365.mobile.android:id/stationTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.live365.mobile.android.player.ui.component.LiveTextView",
+          "bounds": [
+            70,
+            1492,
+            456,
+            1597
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        491,
+        1264,
+        947,
+        1597
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.live365.mobile.android:id/stationImg",
+          "clickable": false,
+          "class": "com.live365.mobile.android.player.ui.widget.ScaledFitImageView",
+          "bounds": [
+            533,
+            1282,
+            905,
+            1492
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Easy Listening",
+          "resource-id": "com.live365.mobile.android:id/stationTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.live365.mobile.android.player.ui.component.LiveTextView",
+          "bounds": [
+            526,
+            1492,
+            912,
+            1597
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        947,
+        1264,
+        1403,
+        1597
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.live365.mobile.android:id/stationImg",
+          "clickable": false,
+          "class": "com.live365.mobile.android.player.ui.widget.ScaledFitImageView",
+          "bounds": [
+            989,
+            1282,
+            1361,
+            1492
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Electronic/Dance",
+          "resource-id": "com.live365.mobile.android:id/stationTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.live365.mobile.android.player.ui.component.LiveTextView",
+          "bounds": [
+            982,
+            1492,
+            1368,
+            1597
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        35,
+        1597,
+        491,
+        1930
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.live365.mobile.android:id/stationImg",
+          "clickable": false,
+          "class": "com.live365.mobile.android.player.ui.widget.ScaledFitImageView",
+          "bounds": [
+            77,
+            1615,
+            449,
+            1825
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Folk",
+          "resource-id": "com.live365.mobile.android:id/stationTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.live365.mobile.android.player.ui.component.LiveTextView",
+          "bounds": [
+            70,
+            1825,
+            456,
+            1930
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        491,
+        1597,
+        947,
+        1930
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.live365.mobile.android:id/stationImg",
+          "clickable": false,
+          "class": "com.live365.mobile.android.player.ui.widget.ScaledFitImageView",
+          "bounds": [
+            533,
+            1615,
+            905,
+            1825
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Freeform",
+          "resource-id": "com.live365.mobile.android:id/stationTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.live365.mobile.android.player.ui.component.LiveTextView",
+          "bounds": [
+            526,
+            1825,
+            912,
+            1930
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        947,
+        1597,
+        1403,
+        1930
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.live365.mobile.android:id/stationImg",
+          "clickable": false,
+          "class": "com.live365.mobile.android.player.ui.widget.ScaledFitImageView",
+          "bounds": [
+            989,
+            1615,
+            1361,
+            1825
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Hip-Hop/Rap",
+          "resource-id": "com.live365.mobile.android:id/stationTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.live365.mobile.android.player.ui.component.LiveTextView",
+          "bounds": [
+            982,
+            1825,
+            1368,
+            1930
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        35,
+        1930,
+        491,
+        2042
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.live365.mobile.android:id/stationImg",
+          "clickable": false,
+          "class": "com.live365.mobile.android.player.ui.widget.ScaledFitImageView",
+          "bounds": [
+            77,
+            1948,
+            449,
+            2042
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        491,
+        1930,
+        947,
+        2042
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.live365.mobile.android:id/stationImg",
+          "clickable": false,
+          "class": "com.live365.mobile.android.player.ui.widget.ScaledFitImageView",
+          "bounds": [
+            533,
+            1948,
+            905,
+            2042
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        947,
+        1930,
+        1403,
+        2042
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "explore",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.live365.mobile.android:id/stationImg",
+          "clickable": false,
+          "class": "com.live365.mobile.android.player.ui.widget.ScaledFitImageView",
+          "bounds": [
+            989,
+            1948,
+            1361,
+            2042
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

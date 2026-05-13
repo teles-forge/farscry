@@ -1,0 +1,455 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.riliclabs.countriesbeen:id/toolbar",
+      "children": [
+        {
+          "text": "Countries Been",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            210,
+            135,
+            690,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "share",
+          "resource-id": "com.riliclabs.countriesbeen:id/action_share_map",
+          "ancestors": [
+            "android.support.v7.widget.aa",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1132,
+            98,
+            1300,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.p",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$d",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.riliclabs.countriesbeen:id/adView",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.google.android.gms.ads.internal.webview.n",
+          "bounds": [
+            0,
+            2217,
+            1440,
+            2392
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.webkit.WebView",
+                "android.widget.AbsoluteLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                0,
+                2217,
+                1440,
+                2392
+              ],
+              "clickable": true,
+              "class": "com.google.android.gms.ads.internal.webview.o",
+              "componentLabel": "Web View"
+            }
+          ],
+          "componentLabel": "Web View"
+        }
+      ],
+      "ancestors": [
+        "com.google.android.gms.ads.BaseAdView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.google.android.gms.ads.AdView",
+      "bounds": [
+        0,
+        2217,
+        1440,
+        2392
+      ],
+      "componentLabel": "Advertisement"
+    },
+    {
+      "iconClass": "close",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.riliclabs.countriesbeen:id/cancel_view",
+      "clickable": true,
+      "class": "android.support.v7.widget.p",
+      "bounds": [
+        1321,
+        302,
+        1405,
+        386
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "New States available!",
+      "resource-id": "com.riliclabs.countriesbeen:id/new_states_view",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.aa",
+      "bounds": [
+        35,
+        298,
+        1286,
+        391
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "resource-id": "com.riliclabs.countriesbeen:id/main_map_image",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.riliclabs.countriesbeen:id/async_image_view",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            0,
+            280,
+            1440,
+            1000
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.riliclabs.countriesbeen.AsyncBitmapView",
+      "bounds": [
+        0,
+        280,
+        1440,
+        1000
+      ],
+      "componentLabel": "Map View"
+    },
+    {
+      "resource-id": "com.riliclabs.countriesbeen:id/main_state_spinner",
+      "ancestors": [
+        "android.widget.Spinner",
+        "android.widget.AbsSpinner",
+        "android.widget.AdapterView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.x",
+      "bounds": [
+        39,
+        1039,
+        1401,
+        1182
+      ],
+      "componentLabel": "Text Button",
+      "text": "World"
+    },
+    {
+      "iconClass": "expand_more",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.riliclabs.countriesbeen:id/visited_expand_icon",
+      "clickable": false,
+      "class": "android.support.v7.widget.p",
+      "bounds": [
+        67,
+        1264,
+        151,
+        1348
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Been",
+      "resource-id": "com.riliclabs.countriesbeen:id/visited_bar_title",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.aa",
+      "bounds": [
+        207,
+        1260,
+        364,
+        1353
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "1 (1%)",
+      "resource-id": "com.riliclabs.countriesbeen:id/visited_bar_values",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.aa",
+      "bounds": [
+        364,
+        1268,
+        1373,
+        1344
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "expand_more",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.riliclabs.countriesbeen:id/lived_expand_icon",
+      "clickable": false,
+      "class": "android.support.v7.widget.p",
+      "bounds": [
+        67,
+        1463,
+        151,
+        1547
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Lived",
+      "resource-id": "com.riliclabs.countriesbeen:id/lived_bar_title",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.aa",
+      "bounds": [
+        207,
+        1459,
+        372,
+        1552
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "2 (1%)",
+      "resource-id": "com.riliclabs.countriesbeen:id/lived_bar_values",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.aa",
+      "bounds": [
+        372,
+        1467,
+        1373,
+        1543
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "expand_more",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.riliclabs.countriesbeen:id/want_expand_icon",
+      "clickable": false,
+      "class": "android.support.v7.widget.p",
+      "bounds": [
+        67,
+        1662,
+        151,
+        1746
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Want",
+      "resource-id": "com.riliclabs.countriesbeen:id/want_bar_title",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.aa",
+      "bounds": [
+        207,
+        1658,
+        368,
+        1751
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "3 (1%)",
+      "resource-id": "com.riliclabs.countriesbeen:id/want_bar_values",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.aa",
+      "bounds": [
+        368,
+        1666,
+        1373,
+        1742
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "expand_more",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.riliclabs.countriesbeen:id/other_expand_icon",
+      "clickable": false,
+      "class": "android.support.v7.widget.p",
+      "bounds": [
+        67,
+        1861,
+        151,
+        1945
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Explore",
+      "resource-id": "com.riliclabs.countriesbeen:id/other_bar_title",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.aa",
+      "bounds": [
+        207,
+        1857,
+        438,
+        1950
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

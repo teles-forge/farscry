@@ -1,0 +1,733 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "tv.cinetrailer.mobile.b:id/action_bar_container",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            595,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "avatar",
+          "resource-id": "tv.cinetrailer.mobile.b:id/mnu_unlogged",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            992,
+            98,
+            1160,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "tv.cinetrailer.mobile.b:id/mnu_search",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1160,
+            98,
+            1328,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1328,
+            126,
+            1440,
+            238
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "Newest Trailers",
+      "resource-id": "tv.cinetrailer.mobile.b:id/btn_trailers_novita",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        14,
+        280,
+        367,
+        420
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Now in Cinemas",
+      "resource-id": "tv.cinetrailer.mobile.b:id/btn_trailers_cinema",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        367,
+        280,
+        720,
+        420
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Coming Soon",
+      "resource-id": "tv.cinetrailer.mobile.b:id/btn_trailers_prossimamente",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        720,
+        280,
+        1073,
+        420
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Home Video",
+      "resource-id": "tv.cinetrailer.mobile.b:id/btn_trailers_homevideo",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        1073,
+        280,
+        1426,
+        420
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Last updated: Tuesday, 18 April",
+      "resource-id": "tv.cinetrailer.mobile.b:id/trailers_update_date",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        0,
+        571,
+        1440,
+        656
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "tv.cinetrailer.mobile.b:id/movieItemContainer",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.v7.widget.CardView",
+          "bounds": [
+            14,
+            670,
+            1426,
+            1111
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "tv.cinetrailer.mobile.b:id/video_still",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                56,
+                716,
+                308,
+                1065
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "tv.cinetrailer.mobile.b:id/new_movie_sign",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                56,
+                716,
+                263,
+                821
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "Fast & Furious 8",
+              "resource-id": "tv.cinetrailer.mobile.b:id/region_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                326,
+                744,
+                1352,
+                829
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Action",
+              "resource-id": "tv.cinetrailer.mobile.b:id/genres",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                326,
+                850,
+                1352,
+                912
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Scott Eastwood, Dwayne Johnson, Charlize Theron, Jason Statham, Vin Diesel, Jordana Brewster",
+              "resource-id": "tv.cinetrailer.mobile.b:id/cast",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                326,
+                912,
+                1352,
+                974
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "UK Release Date: 14/04/2017",
+              "resource-id": "tv.cinetrailer.mobile.b:id/premiere_date",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                326,
+                974,
+                1352,
+                1036
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "Card"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        656,
+        1440,
+        1125
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "tv.cinetrailer.mobile.b:id/movieItemContainer",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.v7.widget.CardView",
+          "bounds": [
+            14,
+            1138,
+            1426,
+            1579
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "tv.cinetrailer.mobile.b:id/video_still",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                56,
+                1184,
+                308,
+                1533
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "Beauty and the Beast",
+              "resource-id": "tv.cinetrailer.mobile.b:id/region_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                326,
+                1212,
+                1352,
+                1297
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Musical Romance Fantasy",
+              "resource-id": "tv.cinetrailer.mobile.b:id/genres",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                326,
+                1318,
+                1352,
+                1380
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Emma Watson, Dan Stevens, Luke Evans, Ewan McGregor, Gugu Mbatha-Raw, Stanley Tucci",
+              "resource-id": "tv.cinetrailer.mobile.b:id/cast",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                326,
+                1380,
+                1352,
+                1442
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "UK Release Date: 17/03/2017",
+              "resource-id": "tv.cinetrailer.mobile.b:id/premiere_date",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                326,
+                1442,
+                1352,
+                1504
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "Card"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1124,
+        1440,
+        1593
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "tv.cinetrailer.mobile.b:id/movieItemContainer",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.v7.widget.CardView",
+          "bounds": [
+            14,
+            1606,
+            1426,
+            2047
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "tv.cinetrailer.mobile.b:id/video_still",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                56,
+                1652,
+                308,
+                2001
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "The Boss Baby",
+              "resource-id": "tv.cinetrailer.mobile.b:id/region_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                326,
+                1680,
+                1352,
+                1765
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Animation Comedy Family",
+              "resource-id": "tv.cinetrailer.mobile.b:id/genres",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                326,
+                1786,
+                1352,
+                1848
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "UK Release Date: 07/04/2017",
+              "resource-id": "tv.cinetrailer.mobile.b:id/premiere_date",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                326,
+                1910,
+                1352,
+                1972
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "Card"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1592,
+        1440,
+        2061
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "tv.cinetrailer.mobile.b:id/movieItemContainer",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.v7.widget.CardView",
+          "bounds": [
+            14,
+            2074,
+            1426,
+            2217
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "iconClass": "settings",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "tv.cinetrailer.mobile.b:id/video_still",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                56,
+                2120,
+                308,
+                2217
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "text": "Peppa Pig : My First Cinema Experience",
+              "resource-id": "tv.cinetrailer.mobile.b:id/region_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                326,
+                2148,
+                1352,
+                2217
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "Card"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        2060,
+        1440,
+        2217
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.facebook.ads.AdView",
+      "bounds": [
+        160,
+        2217,
+        1280,
+        2392
+      ],
+      "clickable": false,
+      "children": [],
+      "componentLabel": "Advertisement"
+    },
+    {
+      "text": "Top movies",
+      "resource-id": "tv.cinetrailer.mobile.b:id/btn_trailers_1_top",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        0,
+        420,
+        480,
+        560
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "UK Release Date",
+      "resource-id": "tv.cinetrailer.mobile.b:id/btn_trailers_1_premiere_date",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        480,
+        420,
+        960,
+        560
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "A-Z",
+      "resource-id": "tv.cinetrailer.mobile.b:id/btn_trailers_1_az",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        960,
+        420,
+        1440,
+        560
+      ],
+      "componentLabel": "Text Button"
+    }
+  ]
+}

@@ -1,0 +1,503 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.zeoxy:id/toolbar",
+      "children": [
+        {
+          "text": "Trim",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            135,
+            200,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "",
+          "resource-id": "com.zeoxy:id/option_trim_video",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1132,
+            98,
+            1300,
+            266
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "com.google.android.gms.ads.BaseAdView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.google.android.gms.ads.NativeExpressAdView",
+      "bounds": [
+        0,
+        280,
+        1440,
+        1155
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.google.android.gms.ads.internal.webview.l",
+          "bounds": [
+            0,
+            280,
+            1440,
+            1155
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.webkit.WebView",
+                "android.widget.AbsoluteLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                0,
+                280,
+                1440,
+                1155
+              ],
+              "clickable": true,
+              "class": "com.google.android.gms.ads.internal.webview.m",
+              "componentLabel": "Web View"
+            }
+          ],
+          "componentLabel": "Web View"
+        }
+      ],
+      "componentLabel": "Advertisement"
+    },
+    {
+      "resource-id": "com.zeoxy:id/rangeseekbar_with_buttons",
+      "children": [
+        {
+          "resource-id": "com.zeoxy:id/scrollView",
+          "children": [
+            {
+              "ancestors": [
+                "com.zeoxy.gui.CompoundDrawing",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.zeoxy:id/rangeseekbar",
+              "clickable": false,
+              "class": "com.zeoxy.gui.RangeSeekBar",
+              "bounds": [
+                0,
+                1919,
+                1440,
+                2199
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "ancestors": [
+            "android.widget.HorizontalScrollView",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.zeoxy.videokit.SeekBarScrollView",
+          "bounds": [
+            0,
+            1919,
+            1440,
+            2199
+          ],
+          "componentLabel": "Slider"
+        },
+        {
+          "iconClass": "zoom_out",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.zeoxy:id/buttonZoomDown",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            0,
+            1789,
+            112,
+            1901
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.zeoxy:id/buttonResetZoom",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            112,
+            1789,
+            1328,
+            1901
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.zeoxy:id/buttonZoomUp",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            1328,
+            1789,
+            1440,
+            1901
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.zeoxy:id/buttonLeftScroll",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            0,
+            2217,
+            168,
+            2385
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.zeoxy:id/buttonPausePlay",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            168,
+            2217,
+            1272,
+            2385
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "arrow_forward",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.zeoxy:id/buttonRightScroll",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            1272,
+            2217,
+            1440,
+            2385
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.zeoxy.gui.RangeSeekBarWithButtons",
+      "bounds": [
+        0,
+        1754,
+        1440,
+        2385
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "text": "00",
+      "resource-id": "com.zeoxy:id/startTimeMin",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatEditText",
+      "bounds": [
+        28,
+        1587,
+        168,
+        1726
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": ":",
+      "resource-id": "com.zeoxy:id/column_sep1",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        168,
+        1622,
+        182,
+        1688
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "00",
+      "resource-id": "com.zeoxy:id/startTimeSec",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatEditText",
+      "bounds": [
+        182,
+        1587,
+        322,
+        1726
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": ".",
+      "resource-id": "com.zeoxy:id/column_sep11",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        322,
+        1622,
+        336,
+        1688
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "000",
+      "resource-id": "com.zeoxy:id/startTimeMillis",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatEditText",
+      "bounds": [
+        336,
+        1587,
+        504,
+        1726
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "00",
+      "resource-id": "com.zeoxy:id/endTimeMin",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatEditText",
+      "bounds": [
+        936,
+        1587,
+        1076,
+        1726
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": ":",
+      "resource-id": "com.zeoxy:id/column_sep3",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1076,
+        1622,
+        1090,
+        1726
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "01",
+      "resource-id": "com.zeoxy:id/endTimeSec",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatEditText",
+      "bounds": [
+        1090,
+        1587,
+        1230,
+        1726
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": ".",
+      "resource-id": "com.zeoxy:id/column_sep31",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1230,
+        1622,
+        1244,
+        1726
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "634632",
+      "resource-id": "com.zeoxy:id/endTimeMillis",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatEditText",
+      "bounds": [
+        1244,
+        1587,
+        1412,
+        1726
+      ],
+      "componentLabel": "Input"
+    }
+  ]
+}

@@ -1,0 +1,414 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "co.thefabulous.app:id/headerBackgroundImage",
+      "clickable": false,
+      "class": "co.thefabulous.app.ui.views.TintableImageView",
+      "bounds": [
+        0,
+        0,
+        1440,
+        452
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "resource-id": "co.thefabulous.app:id/toolbar",
+      "children": [
+        {
+          "text": "Fabulous",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            252,
+            143,
+            510,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            88,
+            196,
+            284
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "add",
+          "resource-id": "co.thefabulous.app:id/action_add_ritual",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1272,
+            102,
+            1440,
+            270
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        88,
+        1440,
+        284
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "co.thefabulous.app:id/sliding_tabs",
+      "children": [
+        {
+          "iconClass": "home",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "co.thefabulous.app:id/tabIcon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            198,
+            326,
+            282,
+            410
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "co.thefabulous.app:id/tabIcon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            678,
+            326,
+            762,
+            410
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "fullscreen",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "co.thefabulous.app:id/tabIcon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1158,
+            326,
+            1242,
+            410
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.HorizontalScrollView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "co.thefabulous.app.ui.views.SlidingTabLayout",
+      "bounds": [
+        0,
+        284,
+        1440,
+        452
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "resource-id": "co.thefabulous.app:id/timelineContainer",
+      "ancestors": [
+        "android.support.v7.widget.CardView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "co.thefabulous.app.ui.views.CompatCardView",
+      "bounds": [
+        21,
+        452,
+        1419,
+        576
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "today"
+    },
+    {
+      "resource-id": "co.thefabulous.app:id/succesRateContainer",
+      "children": [
+        {
+          "text": "Success Rate",
+          "resource-id": "co.thefabulous.app:id/succesRateLabel",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.devspark.robototextview.widget.RobotoTextView",
+          "bounds": [
+            28,
+            650,
+            509,
+            743
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "resource-id": "co.thefabulous.app:id/periodSpinner",
+          "ancestors": [
+            "android.widget.Spinner",
+            "android.widget.AbsSpinner",
+            "android.widget.AdapterView",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatSpinner",
+          "bounds": [
+            982,
+            663,
+            1356,
+            747
+          ],
+          "componentLabel": "Text Button",
+          "text": "1 week"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "co.thefabulous.app.ui.views.foreground.ForegroundLinearLayout",
+          "bounds": [
+            28,
+            772,
+            1412,
+            940
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "text": "Morning Ritual",
+              "resource-id": "co.thefabulous.app:id/ritualTitle",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.devspark.robototextview.widget.RobotoTextView",
+              "bounds": [
+                84,
+                823,
+                567,
+                889
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "ancestors": [
+        "android.support.v7.widget.CardView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "co.thefabulous.app.ui.views.CompatCardView",
+      "bounds": [
+        21,
+        583,
+        1419,
+        1007
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "resource-id": "co.thefabulous.app:id/monthlyViewContainer",
+      "children": [
+        {
+          "text": "Month View",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.devspark.robototextview.widget.RobotoTextView",
+          "bounds": [
+            84,
+            1085,
+            456,
+            1178
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Dec 2016",
+          "resource-id": "co.thefabulous.app:id/monthlyViewMonth",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.devspark.robototextview.widget.RobotoTextView",
+          "bounds": [
+            84,
+            1196,
+            292,
+            1262
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "co.thefabulous.app.ui.views.foreground.ForegroundRelativeLayout",
+          "bounds": [
+            84,
+            1355,
+            1356,
+            2206
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "co.thefabulous.app:id/calendarRitualImage",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                102,
+                1373,
+                263,
+                1534
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "Morning Ritual",
+              "resource-id": "co.thefabulous.app:id/calendarRitualName",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.devspark.robototextview.widget.RobotoTextView",
+              "bounds": [
+                354,
+                1373,
+                1356,
+                1534
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "ancestors": [
+        "android.support.v7.widget.CardView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "co.thefabulous.app.ui.views.CompatCardView",
+      "bounds": [
+        21,
+        1018,
+        1419,
+        2329
+      ],
+      "componentLabel": "Card"
+    }
+  ]
+}

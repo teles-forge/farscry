@@ -1,0 +1,507 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "iconClass": "menu",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.protrade.sportacular:id/yactionbar_mainmenu",
+      "clickable": true,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        0,
+        84,
+        168,
+        252
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "search",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        1040,
+        84,
+        1240,
+        252
+      ],
+      "clickable": true,
+      "class": "android.widget.ImageView",
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "refresh",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        1240,
+        84,
+        1440,
+        252
+      ],
+      "clickable": true,
+      "class": "android.widget.ImageView",
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "NFL",
+      "resource-id": "com.protrade.sportacular:id/yab_upper_title",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        224,
+        125,
+        338,
+        210
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "com.protrade.sportacular:id/sliding_tabs",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "SCORES",
+          "bounds": [
+            0,
+            252,
+            294,
+            430
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "NEWS",
+          "bounds": [
+            294,
+            252,
+            541,
+            430
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button",
+          "textButtonClass": "news"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "VIDEO",
+          "bounds": [
+            541,
+            252,
+            791,
+            430
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button",
+          "textButtonClass": "video"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "STANDINGS",
+          "bounds": [
+            791,
+            252,
+            1168,
+            430
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "PLAYERS",
+          "bounds": [
+            1168,
+            252,
+            1440,
+            430
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button"
+        }
+      ],
+      "ancestors": [
+        "android.widget.HorizontalScrollView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.yahoo.mobile.ysports.view.SlidingTabLayout",
+      "bounds": [
+        0,
+        252,
+        1440,
+        430
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "resource-id": "com.protrade.sportacular:id/all_matchups",
+      "children": [
+        {
+          "resource-id": "com.protrade.sportacular:id/all_matchups",
+          "children": [
+            {
+              "resource-id": "com.protrade.sportacular:id/sportslanding_scoresnavview",
+              "children": [
+                {
+                  "resource-id": "com.protrade.sportacular:id/scores_nav_label_btn",
+                  "ancestors": [
+                    "android.view.ViewGroup",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": true,
+                  "class": "android.widget.FrameLayout",
+                  "bounds": [
+                    435,
+                    430,
+                    1004,
+                    626
+                  ],
+                  "componentLabel": "Text Button",
+                  "text": "Super Bowl"
+                },
+                {
+                  "iconClass": "arrow_backward",
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.protrade.sportacular:id/scores_nav_prev",
+                  "clickable": false,
+                  "class": "android.widget.ImageView",
+                  "bounds": [
+                    56,
+                    486,
+                    140,
+                    570
+                  ],
+                  "componentLabel": "Icon"
+                },
+                {
+                  "iconClass": "arrow_forward",
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.protrade.sportacular:id/scores_nav_next",
+                  "clickable": false,
+                  "class": "android.widget.ImageView",
+                  "bounds": [
+                    1300,
+                    486,
+                    1384,
+                    570
+                  ],
+                  "componentLabel": "Icon"
+                }
+              ],
+              "ancestors": [
+                "com.yahoo.mobile.ysports.view.BaseLinearLayout",
+                "android.widget.LinearLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.yahoo.mobile.ysports.view.scores.ScoresNavView",
+              "bounds": [
+                0,
+                430,
+                1440,
+                626
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.RelativeLayout",
+              "bounds": [
+                0,
+                627,
+                1440,
+                740
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "text": "Final",
+                  "resource-id": "com.protrade.sportacular:id/header_text",
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.widget.TextView",
+                  "bounds": [
+                    56,
+                    655,
+                    145,
+                    712
+                  ],
+                  "componentLabel": "Text"
+                }
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.RelativeLayout",
+              "bounds": [
+                0,
+                741,
+                1440,
+                993
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "text": "34",
+                  "resource-id": "com.protrade.sportacular:id/scoresTeam1Score",
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.widget.TextView",
+                  "bounds": [
+                    923,
+                    769,
+                    985,
+                    845
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "28",
+                  "resource-id": "com.protrade.sportacular:id/scoresTeam2Score",
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.widget.TextView",
+                  "bounds": [
+                    923,
+                    889,
+                    985,
+                    965
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.protrade.sportacular:id/scoresTeam1WinArrow",
+                  "clickable": false,
+                  "class": "android.widget.ImageView",
+                  "bounds": [
+                    992,
+                    769,
+                    1020,
+                    819
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "text": "Final OT",
+                  "resource-id": "com.protrade.sportacular:id/scoresDate",
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.widget.TextView",
+                  "bounds": [
+                    1020,
+                    777,
+                    1384,
+                    853
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "NE -3",
+                  "resource-id": "com.protrade.sportacular:id/scoresLine",
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.widget.TextView",
+                  "bounds": [
+                    1020,
+                    899,
+                    1384,
+                    965
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "iconClass": "menu",
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.protrade.sportacular:id/scoresTeam1Image",
+                  "clickable": false,
+                  "class": "android.widget.ImageView",
+                  "bounds": [
+                    56,
+                    769,
+                    140,
+                    853
+                  ],
+                  "componentLabel": "Icon"
+                },
+                {
+                  "text": "New England",
+                  "resource-id": "com.protrade.sportacular:id/scoresTeam1Name",
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.widget.TextView",
+                  "bounds": [
+                    168,
+                    777,
+                    495,
+                    853
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "iconClass": "weather",
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.protrade.sportacular:id/scoresTeam2Image",
+                  "clickable": false,
+                  "class": "android.widget.ImageView",
+                  "bounds": [
+                    56,
+                    881,
+                    140,
+                    965
+                  ],
+                  "componentLabel": "Icon"
+                },
+                {
+                  "text": "Atlanta",
+                  "resource-id": "com.protrade.sportacular:id/scoresTeam2Name",
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.widget.TextView",
+                  "bounds": [
+                    168,
+                    889,
+                    346,
+                    965
+                  ],
+                  "componentLabel": "Text"
+                }
+              ],
+              "componentLabel": "List Item"
+            }
+          ],
+          "ancestors": [
+            "android.widget.AbsListView",
+            "android.widget.AdapterView",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.ListView",
+          "bounds": [
+            0,
+            430,
+            1440,
+            2392
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "ancestors": [
+        "com.yahoo.mobile.ysports.view.BaseRefreshingLayout",
+        "android.support.v4.widget.SwipeRefreshLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.yahoo.mobile.ysports.view.RefreshingListView",
+      "bounds": [
+        0,
+        430,
+        1440,
+        2392
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

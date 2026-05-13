@@ -1,0 +1,941 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.okramuf.musikteori:id/toolbar",
+      "children": [
+        {
+          "text": "Chords",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            210,
+            135,
+            435,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.internal.widget.TintImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.okramuf.musikteori:id/tabs",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "Triads",
+          "bounds": [
+            0,
+            280,
+            254,
+            449
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "Four-Voice",
+          "bounds": [
+            254,
+            280,
+            601,
+            449
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "Extended",
+          "bounds": [
+            601,
+            280,
+            922,
+            449
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button"
+        }
+      ],
+      "ancestors": [
+        "android.widget.HorizontalScrollView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.okramuf.musikteori.tabs.SlidingTabLayout",
+      "bounds": [
+        0,
+        280,
+        1440,
+        449
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        449,
+        1440,
+        869
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "play",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.okramuf.musikteori:id/playsign",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1321,
+            627,
+            1384,
+            690
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.okramuf.musikteori:id/imageViewChords",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            56,
+            505,
+            364,
+            813
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Major",
+          "resource-id": "com.okramuf.musikteori:id/textViewChordsTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            364,
+            505,
+            563,
+            581
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "(1) Root\n(3) Major third\n(5) Perfect Fifth",
+          "resource-id": "com.okramuf.musikteori:id/textViewChordsStructure",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            364,
+            581,
+            994,
+            761
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "C\nE\nG",
+          "resource-id": "com.okramuf.musikteori:id/textViewChordsExample",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            994,
+            581,
+            1041,
+            761
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        872,
+        1440,
+        1292
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "play",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.okramuf.musikteori:id/playsign",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1321,
+            1050,
+            1384,
+            1113
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.okramuf.musikteori:id/imageViewChords",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            56,
+            928,
+            364,
+            1236
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Minor",
+          "resource-id": "com.okramuf.musikteori:id/textViewChordsTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            364,
+            928,
+            565,
+            1004
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "(1) Root\n(b3) Minor third\n(5) Perfect fifth",
+          "resource-id": "com.okramuf.musikteori:id/textViewChordsStructure",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            364,
+            1004,
+            994,
+            1184
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "C\nEb\nG",
+          "resource-id": "com.okramuf.musikteori:id/textViewChordsExample",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            994,
+            1004,
+            1064,
+            1184
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1295,
+        1440,
+        1715
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "play",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.okramuf.musikteori:id/playsign",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1321,
+            1473,
+            1384,
+            1536
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.okramuf.musikteori:id/imageViewChords",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            56,
+            1351,
+            364,
+            1659
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Augmented",
+          "resource-id": "com.okramuf.musikteori:id/textViewChordsTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            364,
+            1351,
+            709,
+            1427
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "(1) Root\n(3) Major third\n(#5) Augmented fifth",
+          "resource-id": "com.okramuf.musikteori:id/textViewChordsStructure",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            364,
+            1427,
+            994,
+            1607
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "C\nE\nG#",
+          "resource-id": "com.okramuf.musikteori:id/textViewChordsExample",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            994,
+            1427,
+            1057,
+            1607
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1718,
+        1440,
+        2138
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "play",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.okramuf.musikteori:id/playsign",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1321,
+            1896,
+            1384,
+            1959
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.okramuf.musikteori:id/imageViewChords",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            56,
+            1774,
+            364,
+            2082
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Diminished",
+          "resource-id": "com.okramuf.musikteori:id/textViewChordsTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            364,
+            1774,
+            701,
+            1850
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "(1) Root\n(b3) Minor third\n(b5) Diminished fifth",
+          "resource-id": "com.okramuf.musikteori:id/textViewChordsStructure",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            364,
+            1850,
+            994,
+            2030
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "C\nEb\nGb",
+          "resource-id": "com.okramuf.musikteori:id/textViewChordsExample",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            994,
+            1850,
+            1064,
+            2030
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        2141,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "play",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.okramuf.musikteori:id/playsign",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1321,
+            2319,
+            1384,
+            2382
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "pause",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.okramuf.musikteori:id/imageViewChords",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            56,
+            2197,
+            364,
+            2392
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "sus2",
+          "resource-id": "com.okramuf.musikteori:id/textViewChordsTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            364,
+            2197,
+            540,
+            2273
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "(1) Root\n(2) Major second\n(5) Perfect fifth",
+          "resource-id": "com.okramuf.musikteori:id/textViewChordsStructure",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            364,
+            2273,
+            994,
+            2392
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "C\nD\nG",
+          "resource-id": "com.okramuf.musikteori:id/textViewChordsExample",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            994,
+            2273,
+            1041,
+            2392
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "iconClass": "pause",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        251,
+        428,
+        475,
+        680
+      ],
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Chords",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        274,
+        711,
+        452,
+        787
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        964,
+        428,
+        1188,
+        680
+      ],
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Intervals",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        970,
+        711,
+        1183,
+        787
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "pause",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        251,
+        956,
+        475,
+        1208
+      ],
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Note Values",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        212,
+        1232,
+        515,
+        1308
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        964,
+        956,
+        1188,
+        1208
+      ],
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Rests",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1006,
+        1232,
+        1146,
+        1308
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        251,
+        1477,
+        475,
+        1729
+      ],
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Circle of Fifths",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        182,
+        1753,
+        544,
+        1829
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        964,
+        1477,
+        1188,
+        1729
+      ],
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Scales",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        994,
+        1753,
+        1159,
+        1829
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        251,
+        1998,
+        475,
+        2250
+      ],
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Octaves",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        262,
+        2274,
+        464,
+        2350
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        957,
+        2005,
+        1195,
+        2243
+      ],
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Symbols",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        969,
+        2274,
+        1184,
+        2350
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

@@ -1,0 +1,613 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.cmcm.indianews_us:id/ll_bottom_home",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        2220,
+        480,
+        2392
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "home"
+    },
+    {
+      "resource-id": "com.cmcm.indianews_us:id/ll_bottom_video",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        480,
+        2220,
+        960,
+        2392
+      ],
+      "componentLabel": "Text Button",
+      "text": ""
+    },
+    {
+      "resource-id": "com.cmcm.indianews_us:id/ll_bottom_me",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        960,
+        2220,
+        1440,
+        2392
+      ],
+      "componentLabel": "Text Button",
+      "text": ""
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.cmcm.indianews_us:id/iv_top_logo",
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        0,
+        84,
+        231,
+        224
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "resource-id": "com.cmcm.indianews_us:id/news_indicator",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "For You",
+          "bounds": [
+            266,
+            84,
+            579,
+            224
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "Society",
+          "bounds": [
+            579,
+            84,
+            835,
+            224
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "Reddit",
+          "bounds": [
+            835,
+            84,
+            1161,
+            224
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "Politics",
+          "bounds": [
+            1161,
+            84,
+            1335,
+            224
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button"
+        }
+      ],
+      "ancestors": [
+        "android.widget.HorizontalScrollView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.cmcm.onews.ui.indicator.PagerSlidingTabStrip",
+      "bounds": [
+        231,
+        84,
+        1335,
+        224
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "text": "",
+      "resource-id": "com.cmcm.indianews_us:id/tab_edit_enter",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        1272,
+        84,
+        1440,
+        224
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        224,
+        1440,
+        382
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "iconClass": "search",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.cmcm.indianews_us:id/iv_search_icon",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            517,
+            267,
+            591,
+            341
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Search news",
+          "resource-id": "com.cmcm.indianews_us:id/et_search_content",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            591,
+            266,
+            922,
+            342
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.cmcm.indianews_us:id/item_container",
+      "children": [
+        {
+          "ancestors": [
+            "com.android.volley.toolbox.NetworkImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.cmcm.indianews_us:id/item_img",
+          "clickable": false,
+          "class": "com.cmcm.onews.bitmapcache.AsyncImageView",
+          "bounds": [
+            42,
+            426,
+            410,
+            703
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Drunk woman left her car at a restaurant, notices a note on her windshield the next day",
+          "resource-id": "com.cmcm.indianews_us:id/item_title",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            445,
+            426,
+            1412,
+            649
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "close",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.cmcm.indianews_us:id/item_dislike",
+          "clickable": true,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1342,
+            633,
+            1412,
+            703
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Biglike Food",
+          "resource-id": "com.cmcm.indianews_us:id/item_source",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            445,
+            644,
+            685,
+            703
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "  6",
+          "resource-id": "com.cmcm.indianews_us:id/item_comment",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            685,
+            651,
+            798,
+            696
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0m",
+          "resource-id": "com.cmcm.indianews_us:id/item_time_tv",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            826,
+            653,
+            921,
+            693
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "com.cmcm.onews.ui.wave.RectClickRelativeLayout",
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.cmcm.onews.ui.wave.NewsItemRootLayout",
+      "bounds": [
+        0,
+        384,
+        1440,
+        745
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.cmcm.indianews_us:id/item_container",
+      "children": [
+        {
+          "iconClass": "close",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.cmcm.indianews_us:id/item_dislike",
+          "clickable": true,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1342,
+            1487,
+            1412,
+            1557
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "We Love Facts",
+          "resource-id": "com.cmcm.indianews_us:id/item_video_source",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            42,
+            1490,
+            352,
+            1555
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "  83",
+          "resource-id": "com.cmcm.indianews_us:id/item_comment",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            352,
+            1498,
+            502,
+            1547
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "1m",
+          "resource-id": "com.cmcm.indianews_us:id/item_time_tv",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            530,
+            1500,
+            638,
+            1545
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "An error occurred while initializing the YouTube player.",
+          "bounds": [
+            11,
+            1029,
+            1428,
+            1175
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "com.cmcm.onews.ui.wave.RectClickRelativeLayout",
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.cmcm.onews.ui.wave.NewsItemRootLayout",
+      "bounds": [
+        0,
+        747,
+        1440,
+        1587
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "com.cmcm.onews.ui.wave.RectClickRelativeLayout",
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.cmcm.onews.ui.wave.NewsItemRootLayout",
+      "bounds": [
+        0,
+        1589,
+        1440,
+        2034
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.cmcm.indianews_us:id/item_icon",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            42,
+            1612,
+            373,
+            2034
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "",
+          "resource-id": "com.cmcm.indianews_us:id/item_close",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "bounds": [
+            1307,
+            1600,
+            1429,
+            1719
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "New feature: Lock screen news",
+          "resource-id": "com.cmcm.indianews_us:id/item_title",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            426,
+            1605,
+            1359,
+            1763
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Read breaking news without unlocking your phone",
+          "resource-id": "com.cmcm.indianews_us:id/item_desc",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            426,
+            1763,
+            1359,
+            1899
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "TRY NOW",
+          "resource-id": "com.cmcm.indianews_us:id/item_try_now",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "bounds": [
+            426,
+            1920,
+            1161,
+            2018
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.cmcm.indianews_us:id/item_container",
+      "children": [
+        {
+          "text": "Dogs & cats available for adoption at Cumberland County SPCA",
+          "resource-id": "com.cmcm.indianews_us:id/item_title",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            42,
+            2078,
+            1412,
+            2220
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "com.cmcm.onews.ui.wave.RectClickRelativeLayout",
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.cmcm.onews.ui.wave.NewsItemRootLayout",
+      "bounds": [
+        0,
+        2036,
+        1440,
+        2220
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

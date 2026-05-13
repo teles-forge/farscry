@@ -1,0 +1,142 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    36,
+    84,
+    1404,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        36,
+        84,
+        1404,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Close",
+          "resource-id": "android:id/button2",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.Button",
+          "bounds": [
+            92,
+            2196,
+            509,
+            2364
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "close"
+        },
+        {
+          "text": "Buy Full",
+          "resource-id": "android:id/button3",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.Button",
+          "bounds": [
+            511,
+            2196,
+            928,
+            2364
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "Help",
+          "resource-id": "android:id/button1",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.Button",
+          "bounds": [
+            930,
+            2196,
+            1348,
+            2364
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "help"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "About",
+          "bounds": [
+            120,
+            112,
+            355,
+            231
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button",
+          "textButtonClass": "about"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "History",
+          "bounds": [
+            579,
+            112,
+            862,
+            231
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "V1.80: \n\n• Android 5.0 support \n• Autocrop is now adjustable \n• Added \"Home\" button to folder selector to quickly navigate to some default locations \n• Fixed update of values in list after changes in the information dialog \n• Fixed constant refresh if read-only directory is selected \n• Fixed selecting read only folder on secondary sd cards (4.4+) \n• Fixed uploading cover images in tweets (adaption to twitter changes) \n\nV1.79: \n\n• New immersive mode in the reader (4.4+) \n• New books widget (3.0+) \n• Added close button to reader navigation \n• Added compact view mode toggle to list menu \n• Added high resolution covers for widgets on devices with enough memory \n• Changed comic info dialog to dark theme \n• Changed look of live wallpaper preference \n• Removed Hide navigation bar option for devices with hardware menu key \n• Fixed height of comic information dialog on high resolution tablets \n• Fixed scrolling in about/Eula dialogs \n• Fixed file delete on KitKat \n• Dropped compatibility with Android 2.1 \n• Added interstitial ads to the reader \n\nV1.78: \n\n• Option in preferences to not flip the touch mappings for RtL \n• Fixed first/last page position for double page display in RtL mode \n• Fixed opening comic on single cover page in double page display \n• Fixed visible caption update when changing comics in the reader \n• Fixed native WebP image format support for manually copied comics (4.0+) \n\nV1.77: \n\n• True right to left reading \n• Added support for WebP image format in comics (4.0+) \n• Added Scan Information field to the details view \n• Better scaling of About dialog on tablets \n• Fixed sorting of some issue numbering schemes (1/2, 10UA, 10.1 etc) \n\nV1.76: \n\n• New navigation button layout (removed next/previous page buttons) \n• New command to check/uncheck comics in the list (useful for syncing only checked books) \n• Reworked Bookmarks dialog \n• Page is dimmed when controls are displayed \n• Fixed Twitter (they phased out API 1.0 support) \n• Fixed some casing in texts \n• Fixed missing update if contrast was changed \n• Fixed customizing navigation button actions \n• Fixed calculation of ratings for stacks with mixed own/community ratings \n• Fixed visibility of double page button \n\nV1.75: \n\n• Improved visual quality of small thumbnails on some devices \n• Added \"Reading\" filter to wallpaper and widget \n• Fixed possible FC during database initialization \n• Fixed possible FC when disabling auto change in wallpaper \n• Fixed possible FC when switching to non existing next comic in reader \n• Fixed some possible FCs in reader with invalid comics \n• Fixed changing preferences with running life wallpaper on pre Honeycomb devices \n• Fixed animations/transitions for right to left reading mode \n\nV1.74: \n\n• Added shadow effect to deck transition \n• Better display quality during transition effects \n• Further swipe optimizations \n• Display current list in actionbar (3.0+ devices) \n• Optimized refreshing of library from file system \n• ComicRack now always does a full library refresh on startup (removed option in preferences) \n• Next/Previous book toasts now show covers \n• Some UI tweaks \n• Fixed some page animations \n• Fixed page caching when resuming reader \n• Fixed background color estimation \n\nV1.73: \n\n• Swipe paging can now be disabled \n• Better detection of the swipe gesture \n\nV1.72: \n\n• True swipe paging \n• Removed the fling shortcuts \n• Added more direct links to comic information \n• Fixed some page animations \n• Fixed update of small covers in library list \n• Fixed possible corrupt thumbnail cache after system clear cache \n\nV1.71: \n\n• Added new cover widget \n• Added new \"Recently opened\" list \n• Switched layout to an overlay sidebar (except small screen devices) \n• Sidebar is displayed/hidden with left border swipes \n• Sidebar can be pinned (on large devices) \n• Moved Wifi/Refresh buttons to sidebar (on large devices) \n• Lists in sidebar show small sample covers \n• Added keyword selection to live wallpaper \n• Widget/Wallpaper now uses all covers in a comic (and not only the first) \n• Long Touch on the style button (Cover/Details etc) toggles the new compact mode \n• New Deck Transition animation \n• When opening a comic the cover page is briefly shown \n• New mode that adjusts the background color to the current page (default) \n• Nicer handling of cropped pages \n• Moved page number to the bottom center \n• Fixed various color adjustment bugs \n• Fixed fading transition \n• Fixed updates for dynamic lists \n• Fixed some double page animations \n• Fixed buttons in reader ads \n\nV1.70: \n\n• Added navigation to ComicRack icon on small devices (4.0+) \n• Added build number to about box \n• Fixed empty series names if embedded comicinfo set it to empty \n• Fixed display of volume in detail mode \n• Fixed Show List search suggestion \n• Fixed comic search in Google Now (4.1+) \n• Fixed possible search exceptions \n\nV1.69: \n\n• New setting in preferences to turn volume usage for groups/stacks off \n• If needed display volume for comic list entries \n• Option to dim down the live wallpaper \n• User interface enhancements \n• Fixed sorting of series with volumes in the side bar \n• Fixed live wallpaper preview \n\nV1.68: \n\n• All buttons on the navigation panel are now assignable with actions \n• New bookmark navigation commands \n• Support for the new Day field from ComicRack for Windows \n• Refinements of some texts/icons etc. \n• Fixed missing display of Volume identifier for lists and stacks \n• Fixed bookmark navigation in double page mode \n• Fixed fling scrolling speed in reader \n• Fixed keeping current list open after refresh library \n• Fixed ad display \n• Introduced 100 eComics USB sync limit \n\nV1.67: \n\n• New setting to always force splitting of double pages (and not only in portrait) \n• Fixed incompatibility with Android 2.1 \n• Various bug fixes \n\nV1.66: \n\n• Some bug fixes \n\nV1.65: \n\n• Snapshot sharing now works with most common applications \n• Reader is now registered as a view intent for eComics \n• Better display of open stack captions \n• Better implementation of swiping between lists \n• Better library layout for 7 inch devices \n• Better and faster thumbnail caching (across devices) \n• On 3.0+ devices \"Continue Reading\" command has now an icon in the action bar \n• On 3.0+ tablet devices the ComicRack icon the action bar is now used to toggle the sidebar \n• Fixed possible exception in book cache \n• Fixed following links in the information dialog if category did not exist in the library \n\nV1.64: \n\n• Some visual tweaks \n• Use new share action on 4.0+ devices \n• Use zoom animation on 4.1+ devices when opening eComics \n• Story line sorting now also uses the published date \n• Support for embedded thumbnails (ComicRack for Windows 0.9.156+) \n• Fixed non working scrolling to next page part for some screen/page sizes \n• Fixed full page zoom out option for double pages \n• Fixed possible exception with invalid ComicInfo.xml \n• Fixed possible crash when opening comic context menu \n• Fixed possible exception when fast scrolling \n• Fixed automatic ratings dialog when reaching end of lists \n• Fixed saving snapshots on 2.1 devices \n• Fixed visibility of newly selected list items \n• Fixed missing letterer in artists list \n• Fixed system bar dimming issues \n\nV1.63: \n\n• Changed how automatic opening of next/previous book in list is handled \n• Added new \"Stacking\" animation for page transitions \n• Option to zoom out to show full pages during page transitions \n• Hide \"Show story line\" if story line for book is empty \n• Fixed some issues with fast scrolling in the comic list \n\nV1.62: \n\n• Added a secondary library path for manually added eComics (can be read only) \n• Replaced rating star in twitter with '*' \n• Fixed rename file when target name already exists \n• Made the quality of the twitter thumbnail device independent \n\nV1.61: \n\n• Reviews can now be shared on Twitter (including cover thumbnail) \n• Snapshots can be tweeted \n• Added review command to comic list \n• Fixed doublespread paging for right to left comics \n• Double tap zoom now tries to keep the zooming area visible \n• Added option to turn on/off automatic opening of next eComic \n• Fixed possible crashes when displaying ads \n• Fixed frequency of ads display \n\nV1.60: \n\n• New splash screen with reworked logo \n• Lists now also remember the stack level \n• Double page mode now correctly sets the last page read \n• Volumes are only added to series captions if needed \n• Added letters to fast scroll thumbnail in comic list (for 3.0+) \n• Various bug fixes \n• Fixed ad in reader if \"show clock\" is turned on \n\nV1.59: \n\n• Live wallpaper is now hardware accelerated \n• Fixed volume keys (no longer beep) \n• Fixed bug in generating list of artists \n• Improved handling of corrupt images \n\nV1.58: \n\n• Live wallpaper to show covers from the library \n• Ignore articles when sorting series \n\nV1.57: \n\n• Added multi select for the comic list on 3.0+ devices \n• Added renaming of non synced files \n• Name parsing enhancements \n• Raised the memory limit of pre 2.2 devices \n• Fixed missing \"Sort by published date\" menu entry \n• Fixed resume on phone devices after process kill in comics list \n\nV1.56: \n\n• Various fixes for bugs introduced with V1.55 \n\nV1.55: \n\n• Added multi level stacking by series, story, folder, publisher \n• Added Rating command to reader \n• Removed \"Single eComic Stack\", \"List Settings\" and \"Hide scrollbars\" option \n• Changed meaning of \"Unread\" to \"not finished\" \n• Better progress update during library scan \n• Enhanced file name parser \n• Some layout refinements \n• Fixed thumbnails for missing eComics \n• Fixed various smaller bugs \n\nV1.54: \n\n• Fixed possible FC when deleting eComic \n\nV1.53: \n\n• Added support for \"Story Arc\", \"Series Group\", \"Main Character or Team\" and \"Review\" \n• Added small cover thumbnails to Library activity on phones \n• Much smoother thumbnail scrolling \n• Fixed update of thumbnail cache for modified files \n• Fixed various use scenarios for the splash activity \n• Fixed \"Refresh Library\" on non tablets in the comic list \n• Fixed update of counts for dynamic lists \n• Fixed Wifi menu only available if Wifi is connected \n• Fixed turning off Wifi service when disabled in preferences \n• Fixed some spelling errors \n\nV1.52: \n\n• Better eComic list detail tile display \n• Fixed restoring correct comic list in reader after process relaunch \n• Fixed possible crash in reader on configuration change \n• Fixed availability (and possible crashes) for \"show story\" and \"show series\" context menu \n• Fixed possible crash in bitmap handling \n\nV1.51: \n\n• Fixed crash when an external search query resumed ComicRack after process relaunch \n• Fixed startup problem on Android 4.0 \n\nV1.50: \n\n• Enabled caching of previous page on high memory devices \n• Optimized page caching \n• Reworked the preferences \n• Now tries to restore reading state when library is refreshed with modified eComics \n• Fixed screen rotation on Android 3.0+ devices (introduced with 4.0+ upgrade) \n• Fixed restoring reader to correct book in list after process relaunch \n• Fixed crash when moving ComicRack to background during refresh dialog \n• Fixed some possible crashes on resume \n\nV1.49: \n\n• Fixed initial input delay after displaying a new page \n\nV1.48: \n\n• Two pass library refresh progress bar \n• Reader has to be used a little bit before user feedback question is asked \n• Fixed opening market on devices where market is not installed \n• Show replacement ad when admob ad failed to loaded \n\nV1.47: \n\n• New About dialog \n• Optional sending of anonymous usage statistic (if enabled by user) \n• Tweaked border removal \n• Keep device awake during library refresh \n• Fixed Android 4.0+ menu bug \n• Fixed options menu display in splash on Android 4.0+ \n• Fixed display of cover thumbnails when page type changed \n• Fixed size of context menu icon on low density displays \n• Fixed ads on high density displays \n\nV1.46: \n\n• Fixed possible startup error with old database entries (no series information) \n• Fixed possible crash resuming Preferences on Android 3.0+ devices \n\n• On tablets the library list view to the left now scrolls to the selected list \n• Some list scrolling tuning \n\nV1.45: \n\n• Some text adjustments \n\nV1.44: \n\n• Startup now defaults to only load the database (and not search the file system) \n• Option to turn on/off searching the file system for manually copied eComics on startup \n• Volume Up/Down keys can now be mapped to actions \n\n• Fixed last page read if pages are filtered out \n\nV1.43: \n\n• Some file listing optimizations \n\nV1.42: \n\n• Some layout tweaks for Android 4.0+ \n\nV1.41: \n\n• Solid CBRs are no longer filtered out, but display an error message when opened in the reader \n• Comics with no series name (e.g. \"01.cbz\") are now getting named after the folder they are in \n• Added icon to comics context menu \n• Extended caption text to 2 lines in cover thumbnail view \n• Added small page bow effect to cover thumbnails \n• Non 3/2 cover thumbnails are scaled in a wider range to fit the view \n• Screen Brightness now always visible in landscape mode \n• Fixed ads placement in landscape mode \n\nV1.40: \n\n• You can change the type of a page with a long click on a page thumbnail \n• Optional display of ratings dialog when closing finished eComics \n• Better display of eula \n• Fixed editing of ratings in comic details \n• Fixed sync updates of bookmarks \n\nV1.39: \n\n• Fixed keeping correct book in reader after process restart \n• Fixed some possible crashes in preferences \n\nV1.38: \n\n• Added optional time display to the reader \n• Some layout polish in the reader \n• Preferences on Android 3.0+ devices remember last selected header \n• Preferences values now display their values instead of a generic text \n• Switch rotation command now displays a dialog \n• Added menu item for switching rotation \n• Fixed part scrolling for not synced eComics \n• Fixed deleting of CBR comics with delete command \n• Fixed refresh of list when comics are deleted \n• Fixed some spelling errors \n\nV1.37: \n\n• Fixed new folder display \n\nV1.36: \n\n• Redesigned interface for reader \n• Back key closes stacks on tablets \n• Fixed page sequence for multi directory eComics \n• Folder list now displays full path (and not only direct parent folder) \n• Stacks display now the average rating of all eComics in the stack \n\nV1.34: \n\n• Show eComic ratings in lists \n\nV1.33: \n\n• Fixed rescale bug when toggling frame cropping \n\nV1.32: \n\n• Sometimes scroll position was not restored in the reader \n• Sometimes reading list and current comic where not restored in the reader \n• Snapshots can now be shared with other applications \n• Added \"share via\" command to eComics \n• Fixed display of scrollbars in the reader (if turned on) \n• Further optimized frame cropping \n• Upped the thumbnail quality on smaller devices \n\nV1.31: \n\n• Scrollbars are also displayed with automatic zooming/scrolling \n• There is now an option to turn scrollbars off \n• Nicer button layout in reader \n• Tuned edge removal \n\nV1.30: \n\n• Added caption to context menus \n• Show Info command is now also available for stacks \n• Fixed deleting of non synchronized eComics \n• It is now possible to reverse the sort direction for lists. Simply tap the same sort option again. \n• Ratings are now in half star steps \n• Fixed some typos \n\nV1.29: \n\n• Fixed sorting of stacks \n• Fixed syncing of open count \n• Fixed syncing reading state back to device if desktop opened book AFTER the device \n• Solid CBR/RAR eComics are now simply ignored during initial scan \n• You now can set the single tap center action \n• Fixed German translation for long tap center preferences \n• Comic details dialog on tablet is now always the same size \n\nV1.28: \n\n• Optimized comic list scrolling (much smoother when thumbnails have to be loaded) \n• Various bug fixes in reader, library and search provider \n\nV1.27: \n\n• Forgot to remove the debug message in the library activity \n\nV1.26: \n\n• You can now delete search lists \n• Fixed mark read/unread \n• Summary is now at the top in the details view \n• Adjusted rating stars to the general look \n\nV1.25: \n\n• Hopefully fixed the last crazy bug introduced in in V1.22 \n\nV1.24: \n\n• You can now set the default reading direction for untagged eComics \n\nV1.23: \n\n• Fixed stupid force close bug introduced in V1.22 \n\nV1.22: \n\n• All lists (and not only smartlists) remember sorting, stacking etc. \n• Sorting now defaults to \"sort by series\" \n• All empty lists are now removed \n• Added page filtering based on type \n\nV1.21: \n\n\nV1.20: \n\n• Fixed fling bug on double pages \n\nV1.19: \n\n• Allow install on sd card \n• Enabled page caching and page transitions on smaller devices (much faster browsing) \n• Upped the thumbnail cache size \n• Stacks also have each their own sort/filter/display settings now \n\nV1.18: \n\n• Lists can now have each their own display setting (turn on in preferences) \n• Added sort by filename \n• Snapshot action can now be bound to flings/taps etc. \n• Optimized preferences for small devices (texts and categories) \n• Fixed various stacking bugs \n• Comic Information dialog now also shows file name and size \n\nV1.17: \n\n• The actions for flings can now be set in preferences \n• New action \"Toggle Landscape/Portrait\". Only works if reader rotation setup is landscape or portrait \n• Fixed recurring bug from V1.04 when failing to create a folder in the folder selection dialog on pre Honeycomb devices \n\nV1.16: \n\n• Fixed reading eComics with some unusual internal file names \n• Fixed touch commands after overlay was shown \n\nV1.15: \n\n• Support for multiple storylines for each eComic \n• Stacks have now visual indicators \n• Single issues are no longer stacks by default (but can be changed in preferences) \n• Added snapshot function \n• Imported reading lists with no issues are no longer displayed \n• Fixed a flicker problem with sliding page transitions \n• Fixed a flicker problem with cover slide in the reader \n\nV1.14: \n\n• Better handling of missing eComic folders \n• Initial folder selection dialog if default eComic folder is empty \n• Added quit command \n• Nicer page number overlay \n• Some small visual adjustments \n• Correct handling of eComics with wrong extensions (cbz files with cbr extension etc.) \n• added rar and zip files as supported formats \n• upped the quality of thumbnails on low memory devices a little bit \n\nV1.13: \n\n• Fixed force close during wireless sync on pre gingerbread (2.3) devices \n\nV1.12: \n\n• Lots of fixes and optimizations for synchronization \n• Upped page size limit for smaller devices \n• Fixed colors for texts on some devices \n• Added Back tapping action to reader \n• Fixed possible recurse errors for eComic scanning \n\nV1.11: \n\n• fixed wrong message when changing books in reader \n\nV1.10: \n\n• Don't animate double page display changes if in portrait mode \n• New screen rotation preference (user, portrait, landscape, autorotate) \n• Reworked page number display \n• Unread list now shows all eComics not finished reading \n• Added some missing German translations \n\nV1.09: \n\n• Added Auto-Rotation feature for double spreads (this also locks the device into portrait/landscape) \n• Added publisher lists \n• Added optional display of page numbers \n• \"Continue Reading\" now also opens the stack (if any) where the last eComic was found \n\nV1.08: \n\n• possible exception when opening eComics \n\nV1.07: \n\n• First issue was missing in stacks \n\nV1.06: \n\n• Added series stacking \n• Added folder lists \n• Removed the limit for books added to the database \n• Sidecar information files are now only created/managed for synchronized files \n• Fixed added date for non synced eComics \n• Small fixes here and there \n\nV1.05: \n\n• Ramped up the maximum image size for tablets (makes sharper images for high resolution scans) \n\nV1.04: \n\n• Fixed crash on pre-honeycomb devices when create directory in preferences failed \n• Better handling of cbr files in low memory situations (albeit slower) \n• Fixed crashes when selecting Searches with no stored search list \n• Option to dim the status bar on tablets in the reader \n• Removed any restrictions in the directory selection in preferences \n• You now have to press Back two times to leave ComicRack \n\nV1.03: \n\n• Fixed possible crash on configuration changes \n\nV1.02: \n\n• Any folder below /mnt/ can now be selected as a comics folder \n• Fixed stupid error where cbz thumbnails where created with full size \n• Fixed double page thumbnail size issues in reader \n\nV1.01: \n\n• Subfolders of the eComic folder are now also scanned for comics \n• Folders are now sorted when selecting the eComics folder \n• \"Not Sorted\" for lists now works as advertised \n\nV1.0: \n• Initial Release \n",
+          "bounds": [
+            120,
+            259,
+            1320,
+            2194
+          ],
+          "clickable": true,
+          "class": "com.cyo.comicrack.viewer.i",
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Modal"
+    }
+  ]
+}

@@ -1,0 +1,354 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "org.wikipedia:id/single_fragment_toolbar",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.wikipedia:id/single_fragment_toolbar_wordmark",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            56,
+            130,
+            406,
+            234
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "org.wikipedia:id/menu_feed_search",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1104,
+            98,
+            1272,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "resource-id": "org.wikipedia:id/menu_overflow_button",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1272,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "org.wikipedia.feed.view.DefaultFeedCardView",
+        "android.support.v7.widget.CardView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "org.wikipedia.feed.image.FeaturedImageCardView",
+      "bounds": [
+        25,
+        84,
+        1415,
+        905
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "com.facebook.drawee.view.SimpleDraweeView",
+            "com.facebook.drawee.view.GenericDraweeView",
+            "com.facebook.drawee.view.DraweeView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.wikipedia:id/view_featured_image_card_image",
+          "clickable": true,
+          "class": "org.wikipedia.views.FaceAndColorDetectImageView",
+          "bounds": [
+            25,
+            84,
+            1415,
+            737
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Junonia iphita.",
+          "resource-id": "org.wikipedia:id/featured_image_description_Text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            25,
+            601,
+            1415,
+            737
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "resource-id": "org.wikipedia:id/view_card_action_footer_button",
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            25,
+            737,
+            482,
+            905
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "download"
+        },
+        {
+          "iconClass": "share",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.wikipedia:id/view_card_action_footer_share_button",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1219,
+            737,
+            1415,
+            905
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "org.wikipedia.feed.view.DefaultFeedCardView",
+        "android.support.v7.widget.CardView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "org.wikipedia.feed.featured.FeaturedArticleCardView",
+      "bounds": [
+        25,
+        941,
+        1415,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "com.facebook.drawee.view.SimpleDraweeView",
+            "com.facebook.drawee.view.GenericDraweeView",
+            "com.facebook.drawee.view.DraweeView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.wikipedia:id/view_featured_article_card_image",
+          "clickable": true,
+          "class": "org.wikipedia.views.FaceAndColorDetectImageView",
+          "bounds": [
+            25,
+            1113,
+            1415,
+            1785
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Noel Park",
+          "resource-id": "org.wikipedia:id/view_featured_article_card_article_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            81,
+            1789,
+            1359,
+            1955
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Planned community in north London",
+          "resource-id": "org.wikipedia:id/view_featured_article_card_article_subtitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "org.wikipedia.views.GoneIfEmptyTextView",
+          "bounds": [
+            81,
+            1955,
+            1359,
+            2040
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Noel Park in north London is a planned community developed in the late 19th and early 20th centuries consisting of 2,200 model dwellings, designed by Rowland Plumbe. It was developed in open countryside to the north of London in the valley of the River Moselle, about halfway between the historic villages of Highgate and Tottenham. It is one of four developments on the outskirts of London built by the Artizans, Labourers & General Dwellings Company (Artizans Company). From 2003 to sometime in 2009, the name was also given to a small park near the southern edge of Noel Park, formerly known - and now known again - as Russell Park.\nOne of the earliest garden suburbs in the world, Noel Park was designed to provide affordable housing for working-class families wishing to leave the inner city; every property had both a front and back garden.",
+          "resource-id": "org.wikipedia:id/view_featured_article_card_extract",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            81,
+            2040,
+            1359,
+            2392
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "star",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.wikipedia:id/view_card_header_image",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            81,
+            983,
+            165,
+            1067
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Featured article",
+          "resource-id": "org.wikipedia:id/view_card_header_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            193,
+            992,
+            538,
+            1058
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Apr 10, 2017",
+          "resource-id": "org.wikipedia:id/view_card_header_subtitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1038,
+            996,
+            1275,
+            1053
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.wikipedia:id/view_list_card_header_menu",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1275,
+            955,
+            1415,
+            1095
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "Card"
+    }
+  ]
+}

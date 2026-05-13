@@ -1,0 +1,707 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.trulia.android.rentals:id/universal_toolbar",
+      "children": [
+        {
+          "text": "Filter",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            210,
+            139,
+            372,
+            225
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "CANCEL",
+      "resource-id": "com.trulia.android.rentals:id/filter_cancel_btn",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.bs",
+      "bounds": [
+        56,
+        2250,
+        302,
+        2366
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "back"
+    },
+    {
+      "text": "RESET",
+      "resource-id": "com.trulia.android.rentals:id/filter_reset_btn",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.bs",
+      "bounds": [
+        618,
+        2250,
+        821,
+        2366
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "default"
+    },
+    {
+      "text": "Search",
+      "resource-id": "com.trulia.android.rentals:id/filter_ok_btn",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.bs",
+      "bounds": [
+        1137,
+        2250,
+        1384,
+        2366
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "search"
+    },
+    {
+      "text": "SHOW MORE",
+      "resource-id": "com.trulia.android.rentals:id/filter_more_btn",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.bs",
+      "bounds": [
+        515,
+        2055,
+        924,
+        2223
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Price Range",
+      "resource-id": "com.trulia.android.rentals:id/filter_price_label",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.bs",
+      "bounds": [
+        70,
+        315,
+        1370,
+        402
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Beds",
+      "resource-id": "com.trulia.android.rentals:id/filter_beds_label",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.bs",
+      "bounds": [
+        70,
+        886,
+        1370,
+        973
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Baths",
+      "resource-id": "com.trulia.android.rentals:id/filter_baths_label",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.bs",
+      "bounds": [
+        70,
+        1188,
+        1370,
+        1275
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Pets",
+      "resource-id": "com.trulia.android.rentals:id/filter_pets_label",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.bs",
+      "bounds": [
+        70,
+        1490,
+        1370,
+        1577
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "com.trulia.android.rentals:id/filter_min_price",
+      "ancestors": [
+        "android.widget.Spinner",
+        "android.widget.AbsSpinner",
+        "android.widget.AdapterView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.bj",
+      "bounds": [
+        70,
+        427,
+        658,
+        567
+      ],
+      "componentLabel": "Text Button",
+      "text": "Any"
+    },
+    {
+      "resource-id": "com.trulia.android.rentals:id/filter_max_price",
+      "ancestors": [
+        "android.widget.Spinner",
+        "android.widget.AbsSpinner",
+        "android.widget.AdapterView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.bj",
+      "bounds": [
+        782,
+        427,
+        1370,
+        567
+      ],
+      "componentLabel": "Text Button",
+      "text": "Any"
+    },
+    {
+      "text": "Property Type",
+      "resource-id": "com.trulia.android.rentals:id/filter_header_label",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.bs",
+      "bounds": [
+        70,
+        623,
+        1370,
+        710
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "com.trulia.android.rentals:id/filter_button_layout",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        70,
+        724,
+        1370,
+        828
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "all"
+    },
+    {
+      "text": "Any",
+      "resource-id": "com.trulia.android.rentals:id/beds_any",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.bf",
+      "bounds": [
+        70,
+        998,
+        305,
+        1132
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "1+",
+      "resource-id": "com.trulia.android.rentals:id/beds_one_more",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.bf",
+      "bounds": [
+        305,
+        998,
+        518,
+        1132
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "2+",
+      "resource-id": "com.trulia.android.rentals:id/beds_two_more",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.bf",
+      "bounds": [
+        518,
+        998,
+        731,
+        1132
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "3+",
+      "resource-id": "com.trulia.android.rentals:id/beds_three_more",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.bf",
+      "bounds": [
+        731,
+        998,
+        944,
+        1132
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "4+",
+      "resource-id": "com.trulia.android.rentals:id/beds_four_more",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.bf",
+      "bounds": [
+        944,
+        998,
+        1157,
+        1132
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "5+",
+      "resource-id": "com.trulia.android.rentals:id/beds_five_more",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.bf",
+      "bounds": [
+        1157,
+        998,
+        1370,
+        1132
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Any",
+      "resource-id": "com.trulia.android.rentals:id/baths_any",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.bf",
+      "bounds": [
+        70,
+        1300,
+        305,
+        1434
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "1+",
+      "resource-id": "com.trulia.android.rentals:id/baths_one_more",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.bf",
+      "bounds": [
+        305,
+        1300,
+        518,
+        1434
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "2+",
+      "resource-id": "com.trulia.android.rentals:id/baths_two_more",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.bf",
+      "bounds": [
+        518,
+        1300,
+        731,
+        1434
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "3+",
+      "resource-id": "com.trulia.android.rentals:id/baths_three_more",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.bf",
+      "bounds": [
+        731,
+        1300,
+        944,
+        1434
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "4+",
+      "resource-id": "com.trulia.android.rentals:id/baths_four_more",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.bf",
+      "bounds": [
+        944,
+        1300,
+        1157,
+        1434
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "5+",
+      "resource-id": "com.trulia.android.rentals:id/baths_five_more",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.bf",
+      "bounds": [
+        1157,
+        1300,
+        1370,
+        1434
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "None",
+      "resource-id": "com.trulia.android.rentals:id/filter_pets_none",
+      "ancestors": [
+        "android.widget.CheckBox",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.ao",
+      "bounds": [
+        70,
+        1602,
+        292,
+        1736
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "none"
+    },
+    {
+      "text": "Cat",
+      "resource-id": "com.trulia.android.rentals:id/filter_pets_cat",
+      "ancestors": [
+        "android.widget.CheckBox",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.ao",
+      "bounds": [
+        292,
+        1602,
+        470,
+        1736
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Small Dog",
+      "resource-id": "com.trulia.android.rentals:id/filter_pets_small_dog",
+      "ancestors": [
+        "android.widget.CheckBox",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.ao",
+      "bounds": [
+        470,
+        1602,
+        805,
+        1736
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Large Dog",
+      "resource-id": "com.trulia.android.rentals:id/filter_pets_large_dog",
+      "ancestors": [
+        "android.widget.CheckBox",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.ao",
+      "bounds": [
+        805,
+        1602,
+        1138,
+        1736
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Other",
+      "resource-id": "com.trulia.android.rentals:id/filter_pets_other",
+      "ancestors": [
+        "android.widget.CheckBox",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.ao",
+      "bounds": [
+        1138,
+        1602,
+        1370,
+        1736
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "other"
+    },
+    {
+      "text": "Listing Features",
+      "resource-id": "com.trulia.android.rentals:id/filter_header_label",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.bs",
+      "bounds": [
+        70,
+        1792,
+        1370,
+        1879
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Any",
+      "resource-id": "com.trulia.android.rentals:id/filter_button_label",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.bs",
+      "bounds": [
+        70,
+        1921,
+        1170,
+        1980
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "chat",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        1242,
+        1904,
+        1335,
+        1997
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.ba",
+      "componentLabel": "Icon"
+    }
+  ]
+}

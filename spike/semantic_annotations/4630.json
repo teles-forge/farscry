@@ -1,0 +1,725 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "android:id/action_bar_container",
+      "children": [
+        {
+          "iconClass": "group",
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "android:id/home",
+              "clickable": false,
+              "class": "android.widget.ImageView",
+              "bounds": [
+                43,
+                112,
+                155,
+                224
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.android.internal.widget.ActionBarView$HomeView",
+          "bounds": [
+            29,
+            84,
+            169,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "refresh",
+          "resource-id": "aws.apps.networkInfoIi:id/menu_refresh",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.android.internal.view.menu.ActionMenuItemView",
+          "bounds": [
+            852,
+            84,
+            1048,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "",
+          "resource-id": "aws.apps.networkInfoIi:id/menu_get_info",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.android.internal.view.menu.ActionMenuItemView",
+          "bounds": [
+            1048,
+            84,
+            1244,
+            252
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1244,
+            84,
+            1440,
+            252
+          ],
+          "clickable": true,
+          "class": "android.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Network Info II",
+          "resource-id": "android:id/action_bar_title",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            169,
+            125,
+            580,
+            210
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.android.internal.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        252
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "aws.apps.networkInfoIi:id/indicator",
+      "ancestors": [
+        "android.widget.HorizontalScrollView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.viewpagerindicator.TabPageIndicator",
+      "bounds": [
+        0,
+        450,
+        1440,
+        591
+      ],
+      "componentLabel": "Pager Indicator"
+    },
+    {
+      "text": "External IP:",
+      "resource-id": "aws.apps.networkInfoIi:id/main_lblExternalIP",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        252,
+        408,
+        318
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "130.126.255.37",
+      "resource-id": "aws.apps.networkInfoIi:id/viewExternalIP",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        443,
+        252,
+        1440,
+        318
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Ext. Hostname (L):",
+      "resource-id": "aws.apps.networkInfoIi:id/main_lblDeviceHostname",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        318,
+        408,
+        384
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "mobile-130-126-255-37.near.illinois.edu",
+      "resource-id": "aws.apps.networkInfoIi:id/main_viewDeviceExternalHostname",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        443,
+        318,
+        1440,
+        384
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Ext. Hostname (R):",
+      "resource-id": "aws.apps.networkInfoIi:id/main_lblDeviceExtHostname",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        384,
+        408,
+        450
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "mobile-130-126-255-37.near.illinois.edu",
+      "resource-id": "aws.apps.networkInfoIi:id/main_viewDeviceRemoteHostname",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        443,
+        384,
+        1440,
+        450
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Method:",
+      "resource-id": "aws.apps.networkInfoIi:id/title",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        591,
+        210,
+        657
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "ip -o -f inet6 addr",
+      "resource-id": "aws.apps.networkInfoIi:id/data",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        210,
+        591,
+        1440,
+        657
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "",
+      "resource-id": "aws.apps.networkInfoIi:id/data",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        210,
+        661,
+        1440,
+        727
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "dummy0",
+      "resource-id": "aws.apps.networkInfoIi:id/title",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        731,
+        210,
+        797
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "aws.apps.networkInfoIi:id/data",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        210,
+        731,
+        1440,
+        797
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "IP:",
+      "resource-id": "aws.apps.networkInfoIi:id/title",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        801,
+        210,
+        867
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "fe80::e020:4cff:fe4c:89ef",
+      "resource-id": "aws.apps.networkInfoIi:id/data",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        210,
+        801,
+        1440,
+        867
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Prefix:",
+      "resource-id": "aws.apps.networkInfoIi:id/title",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        871,
+        210,
+        937
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "/64",
+      "resource-id": "aws.apps.networkInfoIi:id/data",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        210,
+        871,
+        1440,
+        937
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Scope:",
+      "resource-id": "aws.apps.networkInfoIi:id/title",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        941,
+        210,
+        1007
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "link",
+      "resource-id": "aws.apps.networkInfoIi:id/data",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        210,
+        941,
+        1440,
+        1007
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "^",
+      "resource-id": "aws.apps.networkInfoIi:id/title",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        1011,
+        210,
+        1077
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "No IPv6 gateway found on device",
+      "resource-id": "aws.apps.networkInfoIi:id/data",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        210,
+        1011,
+        1440,
+        1077
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Info: ",
+      "resource-id": "aws.apps.networkInfoIi:id/title",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        1081,
+        210,
+        1147
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "'ip -o -f inet6 route show' returned null.",
+      "resource-id": "aws.apps.networkInfoIi:id/data",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        210,
+        1081,
+        1440,
+        1147
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "wlan0",
+      "resource-id": "aws.apps.networkInfoIi:id/title",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        1151,
+        210,
+        1217
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "aws.apps.networkInfoIi:id/data",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        210,
+        1151,
+        1440,
+        1217
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "IP:",
+      "resource-id": "aws.apps.networkInfoIi:id/title",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        1221,
+        210,
+        1287
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "fe80::facf:c5ff:fe8a:dd6a",
+      "resource-id": "aws.apps.networkInfoIi:id/data",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        210,
+        1221,
+        1440,
+        1287
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Prefix:",
+      "resource-id": "aws.apps.networkInfoIi:id/title",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        1291,
+        210,
+        1357
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "/64",
+      "resource-id": "aws.apps.networkInfoIi:id/data",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        210,
+        1291,
+        1440,
+        1357
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Scope:",
+      "resource-id": "aws.apps.networkInfoIi:id/title",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        1361,
+        210,
+        1427
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "link",
+      "resource-id": "aws.apps.networkInfoIi:id/data",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        210,
+        1361,
+        1440,
+        1427
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "^",
+      "resource-id": "aws.apps.networkInfoIi:id/title",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        1431,
+        210,
+        1497
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "No IPv6 gateway found on device",
+      "resource-id": "aws.apps.networkInfoIi:id/data",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        210,
+        1431,
+        1440,
+        1497
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Info: ",
+      "resource-id": "aws.apps.networkInfoIi:id/title",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        1501,
+        210,
+        1567
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "'ip -o -f inet6 route show' returned null.",
+      "resource-id": "aws.apps.networkInfoIi:id/data",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        210,
+        1501,
+        1440,
+        1567
+      ],
+      "componentLabel": "Text Button"
+    }
+  ]
+}

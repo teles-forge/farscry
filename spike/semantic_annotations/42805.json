@@ -1,0 +1,569 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "net.slickdeals.android:id/search_toolbar",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "net.slickdeals.android:id/search_home_icon",
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "bounds": [
+            35,
+            106,
+            200,
+            271
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "list",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "net.slickdeals.android:id/tools_icon",
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "bounds": [
+            1278,
+            84,
+            1405,
+            294
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "android:id/search_mag_icon",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            256,
+            159,
+            368,
+            219
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "",
+          "resource-id": "android:id/search_src_text",
+          "ancestors": [
+            "android.widget.AutoCompleteTextView",
+            "android.widget.EditText",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.SearchView$SearchAutoComplete",
+          "bounds": [
+            373,
+            124,
+            1245,
+            249
+          ],
+          "componentLabel": "Input"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        294
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "net.slickdeals.android:id/deals_tab",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        305,
+        288,
+        462
+      ],
+      "componentLabel": "Text Button",
+      "text": "Deals"
+    },
+    {
+      "resource-id": "net.slickdeals.android:id/coupons_tab",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        288,
+        305,
+        576,
+        462
+      ],
+      "componentLabel": "Text Button",
+      "text": "Coupons"
+    },
+    {
+      "resource-id": "net.slickdeals.android:id/forums_tab",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        576,
+        305,
+        864,
+        462
+      ],
+      "componentLabel": "Text Button",
+      "text": "Forums"
+    },
+    {
+      "resource-id": "net.slickdeals.android:id/deal_alerts_tab",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        864,
+        305,
+        1152,
+        462
+      ],
+      "componentLabel": "Text Button",
+      "text": "Deal Alerts"
+    },
+    {
+      "resource-id": "net.slickdeals.android:id/more_tab",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        1152,
+        305,
+        1440,
+        462
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "more"
+    },
+    {
+      "text": "Details",
+      "resource-id": "net.slickdeals.android:id/deal_details_description_header",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        941,
+        221,
+        1122
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Posted 10 Days Ago",
+      "resource-id": "net.slickdeals.android:id/deal_details_posted_date",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        954,
+        941,
+        1440,
+        1067
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.AbsoluteLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "net.slickdeals.android:id/deal_details_description",
+      "clickable": true,
+      "class": "android.webkit.WebView",
+      "bounds": [
+        0,
+        1126,
+        1440,
+        1581
+      ],
+      "componentLabel": "Web View"
+    },
+    {
+      "text": "$110",
+      "resource-id": "net.slickdeals.android:id/detail_deal_price",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        482,
+        463,
+        690,
+        491
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": " at BuyDig",
+      "resource-id": "net.slickdeals.android:id/detail_deal_extra",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        690,
+        463,
+        957,
+        481
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Vote Up",
+      "resource-id": "net.slickdeals.android:id/detail_deal_vote_up_button",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        35,
+        733,
+        377,
+        891
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Vote Down",
+      "resource-id": "net.slickdeals.android:id/detail_deal_vote_down_button",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        377,
+        733,
+        719,
+        891
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Save",
+      "resource-id": "net.slickdeals.android:id/detail_deal_save_button",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        719,
+        733,
+        1062,
+        891
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "save"
+    },
+    {
+      "text": "Share",
+      "resource-id": "net.slickdeals.android:id/detail_deal_share_button",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        1062,
+        733,
+        1405,
+        891
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "share"
+    },
+    {
+      "text": "Buy Now",
+      "resource-id": "net.slickdeals.android:id/buy_now_button",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        35,
+        509,
+        1405,
+        677
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "buy"
+    },
+    {
+      "iconClass": "avatar",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "net.slickdeals.android:id/detail_deal_editor_thumbnail",
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        35,
+        1788,
+        189,
+        1942
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Original Poster",
+      "resource-id": "net.slickdeals.android:id/detail_deal_editor_badge",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        224,
+        1788,
+        484,
+        1835
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "fun21",
+      "resource-id": "net.slickdeals.android:id/detail_deal_editor_username",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        224,
+        1835,
+        342,
+        1897
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "57.7K reputation points",
+      "resource-id": "net.slickdeals.android:id/detail_deal_editor_reputation",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        224,
+        1897,
+        700,
+        1959
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Give Rep",
+      "resource-id": "net.slickdeals.android:id/detail_deal_give_rep",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        1117,
+        1788,
+        1405,
+        1963
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Community Wiki",
+      "resource-id": "net.slickdeals.android:id/deal_details_community_wiki_header",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        2048,
+        1440,
+        2158
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.AbsoluteLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "net.slickdeals.android:id/deal_details_community_wiki_post",
+      "clickable": true,
+      "class": "android.webkit.WebView",
+      "bounds": [
+        0,
+        2162,
+        1440,
+        2284
+      ],
+      "componentLabel": "Web View"
+    },
+    {
+      "iconClass": "info",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "net.slickdeals.android:id/disclosure_icon",
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        35,
+        1640,
+        88,
+        1693
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "If you purchase something through a post on our site, Slickdeals may get a small share of the sale.",
+      "resource-id": "net.slickdeals.android:id/disclosure_text",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        123,
+        1620,
+        1405,
+        1714
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "407 Comments",
+      "resource-id": "net.slickdeals.android:id/deal_details_comments_count",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        2369,
+        441,
+        2392
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Add a Comment",
+      "resource-id": "net.slickdeals.android:id/deal_details_add_comment_label",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        1005,
+        2369,
+        1440,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    }
+  ]
+}

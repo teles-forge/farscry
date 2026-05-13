@@ -1,0 +1,582 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "co.inbox.messenger:id/chat_toolbar",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "# Atlanta ",
+          "resource-id": "co.inbox.messenger:id/chat_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.rockerhieu.emojicon.EmojiconTextView",
+          "bounds": [
+            252,
+            84,
+            746,
+            280
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "star",
+          "resource-id": "co.inbox.messenger:id/action_chatroom_unsubscribe",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1104,
+            98,
+            1272,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "info",
+          "resource-id": "co.inbox.messenger:id/action_chatroom_info",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1272,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "co.inbox.messenger.ui.view.event.ChatEventView",
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "co.inbox.messenger.ui.view.event.MultiAttachmentChatEventView",
+      "bounds": [
+        0,
+        717,
+        1440,
+        2093
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "iconClass": "navigation",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "co.inbox.messenger:id/message_tail",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1345,
+            724,
+            1408,
+            766
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "co.inbox.messenger:id/img_data",
+          "clickable": true,
+          "class": "com.makeramen.roundedimageview.RoundedImageView",
+          "bounds": [
+            446,
+            738,
+            1363,
+            1960
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "co.inbox.messenger:id/forward",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            446,
+            1960,
+            530,
+            2044
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "edit",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "co.inbox.messenger:id/copy",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            628,
+            1960,
+            712,
+            2044
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "7:17 AM",
+          "resource-id": "co.inbox.messenger:id/tv_timestamp",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1117,
+            1969,
+            1274,
+            2026
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "check",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "co.inbox.messenger:id/message_status",
+          "clickable": false,
+          "class": "co.inbox.inbox_views.MessageStatusView",
+          "bounds": [
+            1288,
+            1976,
+            1355,
+            2018
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "co.inbox.messenger.ui.view.event.ChatEventView",
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "co.inbox.messenger.ui.view.event.MultiAttachmentChatEventView",
+      "bounds": [
+        0,
+        487,
+        1440,
+        717
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "co.inbox.messenger:id/avatar",
+          "clickable": true,
+          "class": "co.inbox.messenger.ui.view.AvatarView",
+          "bounds": [
+            14,
+            487,
+            168,
+            641
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "co.inbox.messenger:id/message_tail",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            151,
+            494,
+            214,
+            536
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "6:56 AM",
+          "resource-id": "co.inbox.messenger:id/tv_timestamp",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            423,
+            593,
+            608,
+            650
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Javier  Chiquito",
+          "resource-id": "co.inbox.messenger:id/tv_username",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.rockerhieu.emojicon.EmojiconTextView",
+          "bounds": [
+            224,
+            505,
+            566,
+            571
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Hoka",
+          "resource-id": "co.inbox.messenger:id/tv_message_data",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.rockerhieu.emojicon.EmojiconTextView",
+          "bounds": [
+            182,
+            565,
+            412,
+            668
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "co.inbox.messenger.ui.view.event.ChatEventView",
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "co.inbox.messenger.ui.view.event.MultiAttachmentChatEventView",
+      "bounds": [
+        0,
+        280,
+        1440,
+        487
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "iconClass": "microphone",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "co.inbox.messenger:id/avatar",
+          "clickable": true,
+          "class": "co.inbox.messenger.ui.view.AvatarView",
+          "bounds": [
+            14,
+            280,
+            168,
+            411
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "co.inbox.messenger:id/message_tail",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            151,
+            280,
+            214,
+            306
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "6:17 AM",
+          "resource-id": "co.inbox.messenger:id/tv_timestamp",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            376,
+            363,
+            561,
+            420
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Osama Imam",
+          "resource-id": "co.inbox.messenger:id/tv_username",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.rockerhieu.emojicon.EmojiconTextView",
+          "bounds": [
+            224,
+            280,
+            519,
+            341
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "sliders",
+          "text": "Hi",
+          "resource-id": "co.inbox.messenger:id/tv_message_data",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.rockerhieu.emojicon.EmojiconTextView",
+          "bounds": [
+            182,
+            335,
+            334,
+            438
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "iconClass": "microphone",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "co.inbox.messenger:id/inbox_view_media_audio_fab",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        1244,
+        2224,
+        1384,
+        2364
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "emoji",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "co.inbox.messenger:id/inbox_view_emoji",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        35,
+        2113,
+        126,
+        2204
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "",
+      "resource-id": "co.inbox.messenger:id/inbox_view_message_bar",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatEditText",
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.rockerhieu.emojicon.EmojiconEditText",
+      "bounds": [
+        133,
+        2093,
+        1440,
+        2224
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "iconClass": "photo",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "co.inbox.messenger:id/inbox_view_media_camera",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        112,
+        2224,
+        280,
+        2392
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "wallpaper",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "co.inbox.messenger:id/inbox_view_media_gallery",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        308,
+        2224,
+        476,
+        2392
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "co.inbox.messenger:id/inbox_view_media_activity_book",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        504,
+        2224,
+        672,
+        2392
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "iconClass": "edit",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "co.inbox.messenger:id/inbox_view_media_drawing",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        672,
+        2224,
+        840,
+        2392
+      ],
+      "componentLabel": "Icon"
+    }
+  ]
+}

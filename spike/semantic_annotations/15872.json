@@ -1,0 +1,130 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "ancestors": [
+        "android.support.v7.widget.Toolbar",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.vinted.view.toolbars.SearchToolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.vinted:id/actionbar_search_back",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            0,
+            84,
+            168,
+            280
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "notifications",
+          "resource-id": "com.vinted:id/action_menu_subscribe_search",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1272,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "",
+          "resource-id": "com.vinted:id/actionbar_search_input",
+          "ancestors": [
+            "android.widget.EditText",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatEditText",
+          "bounds": [
+            230,
+            116,
+            1203,
+            244
+          ],
+          "componentLabel": "Input"
+        }
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "Sort",
+      "resource-id": "com.vinted:id/catalog_sorting",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.vinted.view.CatalogSortingView",
+      "bounds": [
+        0,
+        280,
+        718,
+        440
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "sort"
+    },
+    {
+      "resource-id": "com.vinted:id/catalog_filtering_layout",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        722,
+        280,
+        1440,
+        440
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "filter"
+    }
+  ]
+}

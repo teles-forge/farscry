@@ -1,0 +1,1497 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "iconClass": "edit",
+      "ancestors": [
+        "android.support.design.widget.VisibilityAwareImageButton",
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.sololearn:id/fab",
+      "clickable": true,
+      "class": "android.support.design.widget.FloatingActionButton",
+      "bounds": [
+        1188,
+        2140,
+        1384,
+        2336
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "resource-id": "com.sololearn:id/toolbar",
+      "children": [
+        {
+          "text": "Q&A Discussions",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            135,
+            594,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "avatar",
+          "resource-id": "com.sololearn:id/action_profile",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            964,
+            98,
+            1132,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "notifications",
+          "resource-id": "com.sololearn:id/action_notifications",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.sololearn.app.views.ActionMenuItemBadgeView",
+          "bounds": [
+            1132,
+            98,
+            1300,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.design.widget.TabLayout$SlidingTabStrip",
+      "bounds": [
+        0,
+        280,
+        1440,
+        476
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.design.widget.TabLayout$TabView",
+          "bounds": [
+            288,
+            280,
+            576,
+            476
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "textButtonClass": "play"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.sololearn:id/tab_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            102,
+            336,
+            186,
+            420
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "home",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.sololearn:id/tab_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            678,
+            336,
+            762,
+            420
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.sololearn:id/tab_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            966,
+            336,
+            1050,
+            420
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "chat",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.sololearn:id/tab_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1254,
+            336,
+            1338,
+            420
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "resource-id": "com.sololearn:id/filter_spinner",
+      "ancestors": [
+        "android.widget.Spinner",
+        "android.widget.AbsSpinner",
+        "android.widget.AdapterView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatSpinner",
+      "bounds": [
+        930,
+        476,
+        1440,
+        637
+      ],
+      "componentLabel": "Text Button",
+      "text": "Trending"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        644,
+        1440,
+        952
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "I enjoy learning to code more than my job, should I change my career?",
+          "resource-id": "com.sololearn:id/post_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            168,
+            672,
+            1412,
+            795
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "+84",
+          "resource-id": "com.sololearn:id/vote_number",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            35,
+            672,
+            119,
+            738
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "87",
+          "resource-id": "com.sololearn:id/post_replies",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            28,
+            738,
+            126,
+            822
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "14 hrs",
+          "resource-id": "com.sololearn:id/post_date",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1120,
+            871,
+            1228,
+            924
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "by",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1242,
+            871,
+            1282,
+            924
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Chris",
+          "resource-id": "com.sololearn:id/post_user",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1296,
+            871,
+            1384,
+            924
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "new",
+          "resource-id": "com.sololearn:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            168,
+            802,
+            260,
+            860
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "career",
+          "resource-id": "com.sololearn:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            271,
+            802,
+            398,
+            860
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "advice",
+          "resource-id": "com.sololearn:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            409,
+            802,
+            539,
+            860
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        953,
+        1440,
+        1204
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Do you prefer working alone or in a team?",
+          "resource-id": "com.sololearn:id/post_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            168,
+            981,
+            1070,
+            1047
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "+23",
+          "resource-id": "com.sololearn:id/vote_number",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            35,
+            981,
+            119,
+            1047
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "47",
+          "resource-id": "com.sololearn:id/post_replies",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            28,
+            1047,
+            126,
+            1131
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "3/12/2017",
+          "resource-id": "com.sololearn:id/post_date",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            885,
+            1123,
+            1071,
+            1176
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "by",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1085,
+            1123,
+            1125,
+            1176
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Igor Makarsky",
+          "resource-id": "com.sololearn:id/post_user",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1139,
+            1123,
+            1384,
+            1176
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "work",
+          "resource-id": "com.sololearn:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            168,
+            1054,
+            272,
+            1112
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1205,
+        1440,
+        1456
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "What's your opinion about Pascal? ",
+          "resource-id": "com.sololearn:id/post_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            168,
+            1233,
+            925,
+            1299
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "+11",
+          "resource-id": "com.sololearn:id/vote_number",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            35,
+            1233,
+            119,
+            1299
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "18",
+          "resource-id": "com.sololearn:id/post_replies",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            28,
+            1299,
+            126,
+            1383
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "3/12/2017",
+          "resource-id": "com.sololearn:id/post_date",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            793,
+            1375,
+            979,
+            1428
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "by",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            993,
+            1375,
+            1033,
+            1428
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Elizabeth Espíndola",
+          "resource-id": "com.sololearn:id/post_user",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1047,
+            1375,
+            1384,
+            1428
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "programming",
+          "resource-id": "com.sololearn:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            168,
+            1306,
+            408,
+            1364
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "pascal",
+          "resource-id": "com.sololearn:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            419,
+            1306,
+            550,
+            1364
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "university",
+          "resource-id": "com.sololearn:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            561,
+            1306,
+            739,
+            1364
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "lenguage",
+          "resource-id": "com.sololearn:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            750,
+            1306,
+            922,
+            1364
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1457,
+        1440,
+        1708
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Why should you make a method static?",
+          "resource-id": "com.sololearn:id/post_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            168,
+            1485,
+            1019,
+            1551
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "+13",
+          "resource-id": "com.sololearn:id/vote_number",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            35,
+            1485,
+            119,
+            1551
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "18",
+          "resource-id": "com.sololearn:id/post_replies",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            28,
+            1551,
+            126,
+            1635
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "3/6/2017",
+          "resource-id": "com.sololearn:id/post_date",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            865,
+            1627,
+            1029,
+            1680
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "by",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1043,
+            1627,
+            1083,
+            1680
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Andreas Wagner",
+          "resource-id": "com.sololearn:id/post_user",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1097,
+            1627,
+            1384,
+            1680
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "java",
+          "resource-id": "com.sololearn:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            168,
+            1558,
+            259,
+            1616
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "static",
+          "resource-id": "com.sololearn:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            270,
+            1558,
+            384,
+            1616
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1709,
+        1440,
+        2017
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Which version of .net framework should we write programs?",
+          "resource-id": "com.sololearn:id/post_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            168,
+            1737,
+            1412,
+            1860
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "+10",
+          "resource-id": "com.sololearn:id/vote_number",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            35,
+            1737,
+            119,
+            1803
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "11",
+          "resource-id": "com.sololearn:id/post_replies",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            28,
+            1803,
+            126,
+            1887
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "3/12/2017",
+          "resource-id": "com.sololearn:id/post_date",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1058,
+            1936,
+            1244,
+            1989
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "by",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1258,
+            1936,
+            1298,
+            1989
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "luka",
+          "resource-id": "com.sololearn:id/post_user",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1312,
+            1936,
+            1384,
+            1989
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "c#",
+          "resource-id": "com.sololearn:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            168,
+            1867,
+            236,
+            1925
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "c++",
+          "resource-id": "com.sololearn:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            247,
+            1867,
+            333,
+            1925
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "framework",
+          "resource-id": "com.sololearn:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            344,
+            1867,
+            540,
+            1925
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "windows",
+          "resource-id": "com.sololearn:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            551,
+            1867,
+            717,
+            1925
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".net",
+          "resource-id": "com.sololearn:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            728,
+            1867,
+            814,
+            1925
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "updates",
+          "resource-id": "com.sololearn:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            825,
+            1867,
+            979,
+            1925
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "setup",
+          "resource-id": "com.sololearn:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            990,
+            1867,
+            1105,
+            1925
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        2018,
+        1440,
+        2269
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "How to I submit data of my html program?",
+          "resource-id": "com.sololearn:id/post_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            168,
+            2046,
+            1086,
+            2112
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "+17",
+          "resource-id": "com.sololearn:id/vote_number",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            35,
+            2046,
+            119,
+            2112
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "28",
+          "resource-id": "com.sololearn:id/post_replies",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            28,
+            2112,
+            126,
+            2196
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "3/8/2017",
+          "resource-id": "com.sololearn:id/post_date",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            792,
+            2188,
+            956,
+            2241
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "by",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            970,
+            2188,
+            1010,
+            2241
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Ajay : The Freelancer",
+          "resource-id": "com.sololearn:id/post_user",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1024,
+            2188,
+            1384,
+            2241
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "html",
+          "resource-id": "com.sololearn:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            168,
+            2119,
+            266,
+            2177
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "data",
+          "resource-id": "com.sololearn:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            277,
+            2119,
+            374,
+            2177
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "submit",
+          "resource-id": "com.sololearn:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            385,
+            2119,
+            521,
+            2177
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        2270,
+        1440,
+        2392
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "What was the most insane code you ever wrote?",
+          "resource-id": "com.sololearn:id/post_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            168,
+            2298,
+            1217,
+            2364
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "+11",
+          "resource-id": "com.sololearn:id/vote_number",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            35,
+            2298,
+            119,
+            2364
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "20",
+          "resource-id": "com.sololearn:id/post_replies",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            28,
+            2364,
+            126,
+            2392
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "code",
+          "resource-id": "com.sololearn:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            168,
+            2371,
+            273,
+            2392
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "iconClass": "search",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.sololearn:id/search_mag_icon",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        29,
+        518,
+        141,
+        602
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "",
+      "resource-id": "com.sololearn:id/search_src_text",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatAutoCompleteTextView",
+        "android.widget.AutoCompleteTextView",
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.SearchView$SearchAutoComplete",
+      "bounds": [
+        141,
+        495,
+        902,
+        621
+      ],
+      "componentLabel": "Input"
+    }
+  ]
+}

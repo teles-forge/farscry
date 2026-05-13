@@ -1,0 +1,113 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.azumio.android.sleeptime:id/checkable_flash_light",
+      "clickable": true,
+      "class": "hell.views.ImageToggleButton",
+      "bounds": [
+        1272,
+        263,
+        1440,
+        431
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "resource-id": "com.azumio.android.sleeptime:id/view_switcher_timer_and_snooze",
+      "children": [
+        {
+          "text": "Wake up in",
+          "resource-id": "com.azumio.android.sleeptime:id/a_night_description",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.azumio.android.argus.view.XMLTypefaceTextView",
+          "bounds": [
+            0,
+            1953,
+            1440,
+            2024
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "11:04 H",
+          "resource-id": "com.azumio.android.sleeptime:id/a_night_time",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.azumio.android.argus.view.XMLTypefaceTextView",
+          "bounds": [
+            0,
+            2024,
+            1440,
+            2175
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.ViewSwitcher",
+        "android.widget.ViewAnimator",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "hell.views.ExtendedViewSwitcher",
+      "bounds": [
+        0,
+        1953,
+        1440,
+        2199
+      ],
+      "componentLabel": "On/Off Switch"
+    },
+    {
+      "text": "HOLD TO STOP",
+      "resource-id": "com.azumio.android.sleeptime:id/a_night_done",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.azumio.android.argus.view.XMLTypefaceButton",
+      "bounds": [
+        0,
+        2199,
+        1440,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    }
+  ]
+}

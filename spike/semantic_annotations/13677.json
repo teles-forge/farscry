@@ -1,0 +1,611 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "my.elevenstreet.app:id/tabs",
+      "children": [
+        {
+          "text": "HOME",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "bounds": [
+            0,
+            272,
+            292,
+            419
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "home"
+        },
+        {
+          "text": "DEALS",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "bounds": [
+            292,
+            272,
+            612,
+            419
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "HOT SELLING",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "bounds": [
+            612,
+            272,
+            1100,
+            419
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "PROMO",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "bounds": [
+            1100,
+            272,
+            1440,
+            419
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "ancestors": [
+        "android.widget.HorizontalScrollView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.astuetz.PagerSlidingTabStrip",
+      "bounds": [
+        0,
+        272,
+        1440,
+        419
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "iconClass": "menu",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "my.elevenstreet.app:id/searchbar_btn_menu",
+      "clickable": true,
+      "class": "android.widget.ImageButton",
+      "bounds": [
+        0,
+        113,
+        137,
+        236
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "my.elevenstreet.app:id/searchbar_btn_home",
+      "clickable": true,
+      "class": "android.widget.ImageButton",
+      "bounds": [
+        165,
+        115,
+        375,
+        234
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "iconClass": "cart",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "my.elevenstreet.app:id/searchbar_btn_cart",
+      "clickable": true,
+      "class": "android.widget.ImageButton",
+      "bounds": [
+        1184,
+        113,
+        1303,
+        236
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "avatar",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "my.elevenstreet.app:id/searchbar_btn_code",
+      "clickable": true,
+      "class": "android.widget.ImageButton",
+      "bounds": [
+        1303,
+        113,
+        1440,
+        236
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "resource-id": "my.elevenstreet.app:id/frameBillboard",
+      "children": [
+        {
+          "resource-id": "my.elevenstreet.app:id/pager",
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "my.elevenstreet.app:id/ivImage",
+              "clickable": true,
+              "class": "my.elevenstreet.app.view.RippleImageView",
+              "bounds": [
+                0,
+                419,
+                1440,
+                1139
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "ancestors": [
+            "android.support.v4.view.ViewPager",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "my.elevenstreet.app.view.CustomImageViewPager",
+          "bounds": [
+            0,
+            419,
+            1440,
+            1139
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "my.elevenstreet.app:id/prev",
+          "clickable": true,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            0,
+            419,
+            91,
+            1139
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "my.elevenstreet.app:id/next",
+          "clickable": true,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1349,
+            419,
+            1440,
+            1139
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "5",
+          "resource-id": "my.elevenstreet.app:id/tv_home_banner_count",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            1194,
+            1047,
+            1232,
+            1118
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "/ 14",
+          "resource-id": "my.elevenstreet.app:id/tv_home_banner_total",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            1232,
+            1047,
+            1321,
+            1118
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "add",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "my.elevenstreet.app:id/flBillboardBannerExpand",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1328,
+            1027,
+            1440,
+            1139
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.percent.PercentFrameLayout",
+      "bounds": [
+        0,
+        419,
+        1440,
+        1139
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1139,
+        1440,
+        1423
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "close",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "my.elevenstreet.app:id/eventItem01",
+          "clickable": true,
+          "class": "my.elevenstreet.app.view.MenuNetworkImageView",
+          "bounds": [
+            177,
+            1174,
+            422,
+            1384
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "close",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "my.elevenstreet.app:id/eventItem02",
+          "clickable": true,
+          "class": "my.elevenstreet.app.view.MenuNetworkImageView",
+          "bounds": [
+            457,
+            1174,
+            702,
+            1384
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "close",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "my.elevenstreet.app:id/eventItem03",
+          "clickable": true,
+          "class": "my.elevenstreet.app.view.MenuNetworkImageView",
+          "bounds": [
+            737,
+            1174,
+            982,
+            1384
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "close",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "my.elevenstreet.app:id/eventItem04",
+          "clickable": true,
+          "class": "my.elevenstreet.app.view.MenuNetworkImageView",
+          "bounds": [
+            1017,
+            1174,
+            1262,
+            1384
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "my.elevenstreet.app:id/layoutHomeView",
+      "children": [
+        {
+          "text": "App Exclusive",
+          "resource-id": "my.elevenstreet.app:id/txtMobilePicksTitle",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            42,
+            1494,
+            446,
+            1560
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "my.elevenstreet.app:id/baselineImage",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            0,
+            1542,
+            4,
+            1546
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "my.elevenstreet.app:id/shockingDeals",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            527,
+            2209,
+            912,
+            2356
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "resource-id": "my.elevenstreet.app:id/layoutShockingMore",
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            1268,
+            2317,
+            1440,
+            2356
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "more"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "my.elevenstreet.app:id/img",
+          "clickable": false,
+          "class": "my.elevenstreet.app.view.RippleImageView",
+          "bounds": [
+            21,
+            1581,
+            582,
+            2181
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "my.elevenstreet.app:id/img",
+          "clickable": false,
+          "class": "my.elevenstreet.app.view.RippleImageView",
+          "bounds": [
+            603,
+            1581,
+            1164,
+            2181
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "my.elevenstreet.app:id/img",
+          "clickable": false,
+          "class": "my.elevenstreet.app.view.RippleImageView",
+          "bounds": [
+            1185,
+            1581,
+            1440,
+            2181
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1423,
+        1440,
+        2391
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        2391,
+        1440,
+        2392
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "my.elevenstreet.app:id/ivShockingImg",
+          "clickable": true,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            0,
+            2391,
+            1440,
+            2392
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "text": "",
+      "resource-id": "my.elevenstreet.app:id/searchbar_btn_input",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        409,
+        122,
+        1066,
+        229
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "iconClass": "search",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "my.elevenstreet.app:id/searchbar_btn_search",
+      "clickable": true,
+      "class": "android.widget.ImageButton",
+      "bounds": [
+        1070,
+        147,
+        1126,
+        203
+      ],
+      "componentLabel": "Icon"
+    }
+  ]
+}

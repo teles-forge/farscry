@@ -1,0 +1,131 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    243,
+    1440,
+    2232
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        56,
+        299,
+        1384,
+        2176
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "resource-id": "com.gn.android.compass:id/buttonPanel",
+          "children": [
+            {
+              "text": "Calibrate",
+              "resource-id": "android:id/button3",
+              "ancestors": [
+                "android.widget.Button",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatButton",
+              "bounds": [
+                98,
+                1994,
+                438,
+                2162
+              ],
+              "componentLabel": "Text Button"
+            },
+            {
+              "text": "OK",
+              "resource-id": "android:id/button1",
+              "ancestors": [
+                "android.widget.Button",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatButton",
+              "bounds": [
+                1118,
+                1994,
+                1342,
+                2162
+              ],
+              "componentLabel": "Text Button",
+              "textButtonClass": "ok"
+            }
+          ],
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.ButtonBarLayout",
+          "bounds": [
+            56,
+            1980,
+            1384,
+            2176
+          ],
+          "componentLabel": "Button Bar"
+        },
+        {
+          "text": "Low Sensor Accuracy",
+          "resource-id": "com.gn.android.compass:id/alertTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.DialogTitle",
+          "bounds": [
+            140,
+            362,
+            1300,
+            455
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "The magnetometer sensor in your device currently delivers sensor data with low accuracy. This could be due to magnetic field interferences near your device. Here are some possible solutions:\n\nCalibrate your device.\n\nKeep your device away from magnets. Note some smartphone cases have a magnetic clip.\n\nDon't hold your device to close to other electrical devices.\n\nDon't hold your device to close to objects made of metal.\n\nDon't hold your device to close to your body, because your body has a magnetic field, too.\n\nMake sure your device is not too hot, because heat can interfere with the sensors.",
+          "resource-id": "android:id/message",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            455,
+            1384,
+            1980
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Modal"
+    }
+  ]
+}

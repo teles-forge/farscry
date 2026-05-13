@@ -1,0 +1,384 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.bigroad.ttb.android:id/custom_title_bar",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.bigroad.ttb.android:id/customTitle_appIcon",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            36,
+            115,
+            148,
+            227
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Hours of service rules",
+          "resource-id": "com.bigroad.ttb.android:id/customTitle_title",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            184,
+            129,
+            1404,
+            214
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.bigroad.ttb.android.widget.CustomTitleBar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        259
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "Selected cycle:",
+      "bounds": [
+        18,
+        259,
+        449,
+        344
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "com.bigroad.ttb.android:id/cycle_spinner",
+      "ancestors": [
+        "android.widget.Spinner",
+        "android.widget.AbsSpinner",
+        "android.widget.AdapterView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.bigroad.ttb.android.widget.OurSpinner",
+      "bounds": [
+        35,
+        344,
+        1116,
+        519
+      ],
+      "componentLabel": "Text Button",
+      "text": "U.S. 70hr/8day"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "Vehicle type:",
+      "bounds": [
+        18,
+        537,
+        384,
+        622
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "U.S. exceptions:",
+      "bounds": [
+        18,
+        864,
+        476,
+        949
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "componentLabel": "Text"
+    },
+    {
+      "text": "30-minute break exempt under a current state or federal waiver (e.g. livestock haulers)",
+      "resource-id": "com.bigroad.ttb.android:id/hosChooser_restBreakExempt",
+      "ancestors": [
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.CheckBox",
+      "bounds": [
+        18,
+        949,
+        1422,
+        1091
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "24-hour cycle reset for oilfield operations, ground water drilling, construction materials and equipment §395.1 (d)(1), (l), (m)",
+      "resource-id": "com.bigroad.ttb.android:id/hosChooser_24HrReset",
+      "ancestors": [
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.CheckBox",
+      "bounds": [
+        18,
+        1109,
+        1422,
+        1317
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Oilfield waiting time §395.1 (d)(2)",
+      "resource-id": "com.bigroad.ttb.android:id/hosChooser_oilfieldSpecialist",
+      "ancestors": [
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.CheckBox",
+      "bounds": [
+        18,
+        1335,
+        963,
+        1447
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "U.S. short-haul exceptions:",
+      "bounds": [
+        18,
+        1465,
+        786,
+        1550
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "You may only select a maximum of one short-haul exception.",
+      "bounds": [
+        18,
+        1568,
+        1340,
+        1634
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Short-haul operations, 100 air-mile radius driver §395.1 (e)(1)",
+      "resource-id": "com.bigroad.ttb.android:id/hosChooser_100AirMileShortHaul",
+      "ancestors": [
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.CheckBox",
+      "bounds": [
+        18,
+        1652,
+        1422,
+        1794
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "16-Hour “Big Day” Short-Haul Exception §395.1 (o)",
+      "resource-id": "com.bigroad.ttb.android:id/hosChooser_bigDay",
+      "ancestors": [
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.CheckBox",
+      "bounds": [
+        18,
+        1812,
+        1378,
+        1924
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Motion picture, 100 air-mile radius driver §395.1 (p)",
+      "resource-id": "com.bigroad.ttb.android:id/hosChooser_motionPicture",
+      "ancestors": [
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.CheckBox",
+      "bounds": [
+        18,
+        1942,
+        1401,
+        2054
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "California intrastate exceptions:",
+      "bounds": [
+        18,
+        2072,
+        924,
+        2157
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Tank vehicle with a capacity of more than 500 gallons transporting flammable liquid",
+      "resource-id": "com.bigroad.ttb.android:id/hosChooser_california500Gallon",
+      "ancestors": [
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.CheckBox",
+      "bounds": [
+        18,
+        2157,
+        1422,
+        2299
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "Texas intrastate exceptions:",
+      "bounds": [
+        18,
+        2317,
+        815,
+        2392
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Property-carrying",
+      "resource-id": "com.bigroad.ttb.android:id/hosChooser_propertyButton",
+      "ancestors": [
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RadioButton",
+      "bounds": [
+        18,
+        622,
+        556,
+        734
+      ],
+      "componentLabel": "Radio Button"
+    },
+    {
+      "text": "Passenger-carrying",
+      "resource-id": "com.bigroad.ttb.android:id/hosChooser_passengerButton",
+      "ancestors": [
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RadioButton",
+      "bounds": [
+        18,
+        734,
+        609,
+        846
+      ],
+      "componentLabel": "Radio Button"
+    }
+  ]
+}

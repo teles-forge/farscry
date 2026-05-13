@@ -1,0 +1,652 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.ovuline.fertility:id/toolbar",
+      "children": [
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "",
+          "resource-id": "com.ovuline.fertility:id/tb_title",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.ovuline.ovia.ui.view.TextView",
+          "bounds": [
+            196,
+            139,
+            936,
+            225
+          ],
+          "componentLabel": "Input"
+        },
+        {
+          "iconClass": "home",
+          "resource-id": "com.ovuline.fertility:id/action_home",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            936,
+            98,
+            1104,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "date_range",
+          "resource-id": "com.ovuline.fertility:id/action_calendar",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1104,
+            98,
+            1272,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "chat",
+          "resource-id": "com.ovuline.fertility:id/action_community",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1272,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "iconClass": "add",
+      "ancestors": [
+        "android.support.design.widget.FloatingActionButton",
+        "android.support.design.widget.VisibilityAwareImageButton",
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.ovuline.fertility:id/fab",
+      "clickable": true,
+      "class": "com.ovuline.ovia.ui.view.fab.FloatingActionButton",
+      "bounds": [
+        1188,
+        2140,
+        1384,
+        2336
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "resource-id": "com.ovuline.fertility:id/timeline_header",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            280,
+            1440,
+            1367
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.ovuline.fertility:id/dashboard_indicator",
+          "clickable": false,
+          "class": "com.ovuline.fertility.ui.view.ViewPagerIndicator",
+          "bounds": [
+            632,
+            1296,
+            807,
+            1367
+          ],
+          "componentLabel": "Pager Indicator"
+        },
+        {
+          "text": "Alert : Have sex today, you are fertile!",
+          "resource-id": "com.ovuline.fertility:id/alert",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.ovuline.ovia.ui.view.TextView",
+          "bounds": [
+            0,
+            280,
+            1440,
+            377
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "resource-id": "com.ovuline.fertility:id/fertileWindowContainer",
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            0,
+            866,
+            719,
+            1278
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "today"
+        },
+        {
+          "text": "9.0",
+          "resource-id": "com.ovuline.fertility:id/fertilityScore",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.ovuline.ovia.ui.view.TextView",
+          "bounds": [
+            201,
+            477,
+            518,
+            753
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "fertility score",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.ovuline.ovia.ui.view.TextView",
+          "bounds": [
+            128,
+            753,
+            590,
+            852
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "cycle day",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.ovuline.ovia.ui.view.TextView",
+          "bounds": [
+            935,
+            391,
+            1225,
+            477
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "20",
+          "resource-id": "com.ovuline.fertility:id/cycleDay",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.ovuline.ovia.ui.view.TextView",
+          "bounds": [
+            953,
+            477,
+            1207,
+            753
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "fertile window",
+          "resource-id": "com.ovuline.fertility:id/cyclePhase",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.ovuline.ovia.ui.view.TextView",
+          "bounds": [
+            859,
+            771,
+            1300,
+            852
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "15",
+          "resource-id": "com.ovuline.fertility:id/daysUntilPregnancyTest",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.ovuline.ovia.ui.view.TextView",
+          "bounds": [
+            1002,
+            901,
+            1158,
+            1071
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "days until",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.ovuline.ovia.ui.view.TextView",
+          "bounds": [
+            931,
+            1071,
+            1228,
+            1157
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "pregnancy test",
+          "resource-id": "com.ovuline.fertility:id/pregnancy_period",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.ovuline.ovia.ui.view.TextView",
+          "bounds": [
+            848,
+            1157,
+            1311,
+            1243
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        280,
+        1440,
+        1381
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        1381,
+        1440,
+        1914
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.v7.widget.CardView",
+          "bounds": [
+            35,
+            1381,
+            1405,
+            1914
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "",
+              "resource-id": "com.ovuline.fertility:id/icon",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.ovuline.ovia.ui.view.TextView",
+              "bounds": [
+                119,
+                1465,
+                287,
+                1633
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Cycle science",
+              "resource-id": "com.ovuline.fertility:id/type_title",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.ovuline.ovia.ui.view.TextView",
+              "bounds": [
+                322,
+                1465,
+                1237,
+                1561
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Today at 10:28 AM",
+              "resource-id": "com.ovuline.fertility:id/date",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.ovuline.ovia.ui.view.TextView",
+              "bounds": [
+                322,
+                1561,
+                736,
+                1622
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "",
+              "resource-id": "com.ovuline.fertility:id/actions",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "com.ovuline.ovia.ui.view.TextView",
+              "bounds": [
+                1237,
+                1423,
+                1377,
+                1563
+              ],
+              "componentLabel": "Text Button"
+            },
+            {
+              "text": "Luteinizing hormone (LH) spikes about 12-24 hours before an egg is released, beginning ovulation.",
+              "resource-id": "com.ovuline.fertility:id/text",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.ovuline.ovia.ui.view.TextView",
+              "bounds": [
+                63,
+                1650,
+                1377,
+                1837
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "Card"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        1914,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.v7.widget.CardView",
+          "bounds": [
+            35,
+            1914,
+            1405,
+            2392
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "9.0",
+              "resource-id": "com.ovuline.fertility:id/icon",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.ovuline.ovia.ui.view.TextView",
+              "bounds": [
+                119,
+                1998,
+                287,
+                2166
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Fertility score update",
+              "resource-id": "com.ovuline.fertility:id/type_title",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.ovuline.ovia.ui.view.TextView",
+              "bounds": [
+                322,
+                1998,
+                1237,
+                2094
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Today at 10:28 AM",
+              "resource-id": "com.ovuline.fertility:id/date",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.ovuline.ovia.ui.view.TextView",
+              "bounds": [
+                322,
+                2094,
+                736,
+                2155
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "",
+              "resource-id": "com.ovuline.fertility:id/actions",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "com.ovuline.ovia.ui.view.TextView",
+              "bounds": [
+                1237,
+                1956,
+                1377,
+                2096
+              ],
+              "componentLabel": "Text Button"
+            },
+            {
+              "text": "Ovia has updated your Fertility Score and fertile window predictions based on data you entered. Navigate to your Calendar to see your updated projections!",
+              "resource-id": "com.ovuline.fertility:id/text",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.ovuline.ovia.ui.view.TextView",
+              "bounds": [
+                63,
+                2183,
+                1377,
+                2392
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "Card"
+        }
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

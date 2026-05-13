@@ -1,0 +1,597 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.droid27.digitalclockweather:id/imgSwitcher",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            0,
+            1440,
+            2392
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Background Image"
+        }
+      ],
+      "ancestors": [
+        "android.widget.ViewSwitcher",
+        "android.widget.ViewAnimator",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.ImageSwitcher",
+      "bounds": [
+        0,
+        0,
+        1440,
+        2392
+      ],
+      "componentLabel": "On/Off Switch"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.droid27.digitalclockweather:id/imgBackgroundOverlay",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        0,
+        0,
+        1440,
+        2392
+      ],
+      "componentLabel": "Background Image"
+    },
+    {
+      "resource-id": "com.droid27.digitalclockweather:id/actionbar",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            252
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "San Francisco",
+          "resource-id": "com.droid27.digitalclockweather:id/wfTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            252,
+            130,
+            609,
+            206
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.droid27.digitalclockweather:id/btn_menu",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1236,
+            84,
+            1440,
+            252
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        252
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "com.google.android.gms.ads.BaseAdView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.google.android.gms.ads.AdView",
+      "bounds": [
+        0,
+        2199,
+        1440,
+        2374
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.google.android.gms.ads.internal.webview.l",
+          "bounds": [
+            0,
+            2199,
+            1440,
+            2374
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.webkit.WebView",
+                "android.widget.AbsoluteLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                0,
+                2199,
+                1440,
+                2374
+              ],
+              "clickable": true,
+              "class": "com.google.android.gms.ads.internal.webview.m",
+              "componentLabel": "Web View"
+            }
+          ],
+          "componentLabel": "Web View"
+        }
+      ],
+      "componentLabel": "Advertisement"
+    },
+    {
+      "text": "THU, Dec 22",
+      "resource-id": "com.droid27.digitalclockweather:id/fcDayDate",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        35,
+        445,
+        1247,
+        539
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "avatar",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.droid27.digitalclockweather:id/imgMoon",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        1195,
+        445,
+        1370,
+        620
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Clear",
+      "resource-id": "com.droid27.digitalclockweather:id/fccCondition",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        35,
+        595,
+        214,
+        698
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Wind:",
+      "resource-id": "com.droid27.digitalclockweather:id/lblWind",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        35,
+        1404,
+        168,
+        1476
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "6.8 mph",
+      "resource-id": "com.droid27.digitalclockweather:id/fccWind",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        204,
+        1407,
+        384,
+        1473
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Humidity:",
+      "resource-id": "com.droid27.digitalclockweather:id/lblHumidity",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        35,
+        1476,
+        259,
+        1548
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "67%",
+      "resource-id": "com.droid27.digitalclockweather:id/fccHumidity",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        295,
+        1479,
+        387,
+        1545
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Precipitation:",
+      "resource-id": "com.droid27.digitalclockweather:id/lblPrecipitation",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        35,
+        1548,
+        350,
+        1620
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "2%",
+      "resource-id": "com.droid27.digitalclockweather:id/fccChanceOfRain",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        386,
+        1551,
+        450,
+        1617
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Dew point:",
+      "resource-id": "com.droid27.digitalclockweather:id/lblDewPoint",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        35,
+        1620,
+        285,
+        1692
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "39°F",
+      "resource-id": "com.droid27.digitalclockweather:id/fccDewPoint",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        321,
+        1623,
+        424,
+        1689
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Pressure:",
+      "resource-id": "com.droid27.digitalclockweather:id/lblPressure",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        35,
+        1692,
+        260,
+        1764
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "1016 mBar",
+      "resource-id": "com.droid27.digitalclockweather:id/fccPressure",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        296,
+        1695,
+        538,
+        1761
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "High:",
+      "resource-id": "com.droid27.digitalclockweather:id/fccHiLabel",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        35,
+        723,
+        167,
+        799
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "59°",
+      "resource-id": "com.droid27.digitalclockweather:id/fccHi",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        185,
+        723,
+        270,
+        799
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Low:",
+      "resource-id": "com.droid27.digitalclockweather:id/fccLoLabel",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        323,
+        723,
+        438,
+        799
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "44°",
+      "resource-id": "com.droid27.digitalclockweather:id/fccLo",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        456,
+        723,
+        541,
+        799
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Sunrise:",
+      "resource-id": "com.droid27.digitalclockweather:id/lblSunrise",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        35,
+        1852,
+        228,
+        1924
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "7:22 AM",
+      "resource-id": "com.droid27.digitalclockweather:id/fccSunrise",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        264,
+        1855,
+        447,
+        1921
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Sunset:",
+      "resource-id": "com.droid27.digitalclockweather:id/lblSunset",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        35,
+        1924,
+        215,
+        1996
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "4:55 PM",
+      "resource-id": "com.droid27.digitalclockweather:id/fccSunset",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        251,
+        1927,
+        433,
+        1993
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Duration of day: 9 h, 33 m",
+      "resource-id": "com.droid27.digitalclockweather:id/fccSizeOfDay",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        35,
+        2021,
+        635,
+        2093
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

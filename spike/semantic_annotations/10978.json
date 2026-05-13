@@ -1,0 +1,455 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.edreams.travel:id/action_bar_container",
+      "children": [
+        {
+          "text": "Flights",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            210,
+            135,
+            422,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.support.v7.widget.LinearLayoutCompat",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.v7.internal.widget.ScrollingTabContainerView$TabView",
+          "bounds": [
+            4,
+            280,
+            481,
+            448
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "textButtonClass": "back"
+        },
+        {
+          "ancestors": [
+            "android.support.v7.widget.LinearLayoutCompat",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.v7.internal.widget.ScrollingTabContainerView$TabView",
+          "bounds": [
+            485,
+            280,
+            962,
+            448
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "textButtonClass": "one way"
+        },
+        {
+          "ancestors": [
+            "android.support.v7.widget.LinearLayoutCompat",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.v7.internal.widget.ScrollingTabContainerView$TabView",
+          "bounds": [
+            966,
+            280,
+            1440,
+            448
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "text": "MULTI-STOP"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.internal.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        448
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "Add another flight",
+      "resource-id": "com.edreams.travel:id/btnAddAnotherLeg",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        106,
+        1741,
+        1334,
+        1923
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "resource-id": "com.edreams.travel:id/cell_passengers",
+      "children": [
+        {
+          "text": "Passengers",
+          "resource-id": "com.edreams.travel:id/txtButtonWithHint_hint",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.odigeo.app.android.lib.ui.widgets.CustomTextView",
+          "bounds": [
+            54,
+            2108,
+            1397,
+            2174
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "1 Adult, 0 Children, 0 Infants",
+          "resource-id": "com.edreams.travel:id/txtButtonWithHint_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.odigeo.app.android.lib.ui.widgets.CustomTextView",
+          "bounds": [
+            54,
+            2174,
+            1397,
+            2245
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "com.odigeo.app.android.lib.ui.widgets.base.ButtonWithHint",
+        "com.odigeo.app.android.lib.ui.widgets.base.CustomField",
+        "com.odigeo.app.android.lib.ui.widgets.base.PressableWidget",
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.odigeo.app.android.lib.ui.widgets.ButtonPassengers",
+      "bounds": [
+        18,
+        2063,
+        1422,
+        2291
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Only direct flights",
+      "resource-id": "com.edreams.travel:id/cehck_flightsDirect_only",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatCheckBox",
+        "android.widget.CheckBox",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.odigeo.app.android.lib.ui.widgets.CustomCheckBox",
+      "bounds": [
+        54,
+        2380,
+        695,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Class",
+      "resource-id": "com.edreams.travel:id/hint",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        762,
+        2344,
+        1380,
+        2392
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "com.edreams.travel:id/panelDeparture",
+      "ancestors": [
+        "com.odigeo.app.android.lib.ui.widgets.base.ButtonWithAndWithoutHint",
+        "com.odigeo.app.android.lib.ui.widgets.base.ButtonWithHint",
+        "com.odigeo.app.android.lib.ui.widgets.base.CustomField",
+        "com.odigeo.app.android.lib.ui.widgets.base.PressableWidget",
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.odigeo.app.android.lib.ui.widgets.ButtonSearchDestination",
+      "bounds": [
+        18,
+        599,
+        720,
+        827
+      ],
+      "componentLabel": "Text Button",
+      "text": "Origin"
+    },
+    {
+      "resource-id": "com.edreams.travel:id/panelDestination",
+      "ancestors": [
+        "com.odigeo.app.android.lib.ui.widgets.base.ButtonWithAndWithoutHint",
+        "com.odigeo.app.android.lib.ui.widgets.base.ButtonWithHint",
+        "com.odigeo.app.android.lib.ui.widgets.base.CustomField",
+        "com.odigeo.app.android.lib.ui.widgets.base.PressableWidget",
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.odigeo.app.android.lib.ui.widgets.ButtonSearchDestination",
+      "bounds": [
+        720,
+        599,
+        1422,
+        827
+      ],
+      "componentLabel": "Text Button",
+      "text": "Destination"
+    },
+    {
+      "resource-id": "com.edreams.travel:id/panelDepartureDate",
+      "children": [
+        {
+          "text": "Departure date",
+          "resource-id": "com.edreams.travel:id/txtButtonWithHint_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.odigeo.app.android.lib.ui.widgets.CustomTextView",
+          "bounds": [
+            54,
+            912,
+            1397,
+            992
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "com.odigeo.app.android.lib.ui.widgets.base.ButtonWithAndWithoutHint",
+        "com.odigeo.app.android.lib.ui.widgets.base.ButtonWithHint",
+        "com.odigeo.app.android.lib.ui.widgets.base.CustomField",
+        "com.odigeo.app.android.lib.ui.widgets.base.PressableWidget",
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.odigeo.app.android.lib.ui.widgets.ButtonSearchDate",
+      "bounds": [
+        18,
+        838,
+        1422,
+        1066
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "resource-id": "com.edreams.travel:id/panelDeparture",
+      "ancestors": [
+        "com.odigeo.app.android.lib.ui.widgets.base.ButtonWithAndWithoutHint",
+        "com.odigeo.app.android.lib.ui.widgets.base.ButtonWithHint",
+        "com.odigeo.app.android.lib.ui.widgets.base.CustomField",
+        "com.odigeo.app.android.lib.ui.widgets.base.PressableWidget",
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.odigeo.app.android.lib.ui.widgets.ButtonSearchDestination",
+      "bounds": [
+        18,
+        1210,
+        720,
+        1438
+      ],
+      "componentLabel": "Text Button",
+      "text": "Origin"
+    },
+    {
+      "resource-id": "com.edreams.travel:id/panelDestination",
+      "ancestors": [
+        "com.odigeo.app.android.lib.ui.widgets.base.ButtonWithAndWithoutHint",
+        "com.odigeo.app.android.lib.ui.widgets.base.ButtonWithHint",
+        "com.odigeo.app.android.lib.ui.widgets.base.CustomField",
+        "com.odigeo.app.android.lib.ui.widgets.base.PressableWidget",
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.odigeo.app.android.lib.ui.widgets.ButtonSearchDestination",
+      "bounds": [
+        720,
+        1210,
+        1422,
+        1438
+      ],
+      "componentLabel": "Text Button",
+      "text": "Destination"
+    },
+    {
+      "resource-id": "com.edreams.travel:id/panelDepartureDate",
+      "children": [
+        {
+          "text": "Departure date",
+          "resource-id": "com.edreams.travel:id/txtButtonWithHint_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.odigeo.app.android.lib.ui.widgets.CustomTextView",
+          "bounds": [
+            54,
+            1523,
+            1397,
+            1603
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "com.odigeo.app.android.lib.ui.widgets.base.ButtonWithAndWithoutHint",
+        "com.odigeo.app.android.lib.ui.widgets.base.ButtonWithHint",
+        "com.odigeo.app.android.lib.ui.widgets.base.CustomField",
+        "com.odigeo.app.android.lib.ui.widgets.base.PressableWidget",
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.odigeo.app.android.lib.ui.widgets.ButtonSearchDate",
+      "bounds": [
+        18,
+        1449,
+        1422,
+        1677
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Flight 1",
+      "resource-id": "com.edreams.travel:id/txtLegNumber",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.odigeo.app.android.lib.ui.widgets.CustomTextView",
+      "bounds": [
+        18,
+        466,
+        1422,
+        588
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Flight 2",
+      "resource-id": "com.edreams.travel:id/txtLegNumber",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.odigeo.app.android.lib.ui.widgets.CustomTextView",
+      "bounds": [
+        18,
+        1077,
+        1422,
+        1199
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

@@ -1,0 +1,413 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.amber.weather:id/layout_container",
+      "children": [
+        {
+          "resource-id": "com.amber.weather:id/toolbar",
+          "children": [
+            {
+              "iconClass": "menu",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                0,
+                84,
+                196,
+                259
+              ],
+              "clickable": true,
+              "class": "android.widget.ImageButton",
+              "componentLabel": "Icon"
+            },
+            {
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                1111,
+                87,
+                1272,
+                255
+              ],
+              "clickable": true,
+              "class": "android.widget.ImageView",
+              "componentLabel": "Image"
+            },
+            {
+              "iconClass": "add",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.internal.view.menu.ActionMenuItemView",
+              "bounds": [
+                1272,
+                87,
+                1440,
+                255
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.Toolbar",
+          "bounds": [
+            0,
+            84,
+            1440,
+            259
+          ],
+          "componentLabel": "Toolbar"
+        },
+        {
+          "resource-id": "com.amber.weather:id/main_tab_strip",
+          "children": [
+            {
+              "text": "DAY",
+              "resource-id": "com.amber.weather:id/psts_tab_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                0,
+                259,
+                212,
+                340
+              ],
+              "componentLabel": "Text Button",
+              "textButtonClass": "day"
+            },
+            {
+              "text": "PRECIPITATION",
+              "resource-id": "com.amber.weather:id/psts_tab_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                212,
+                259,
+                724,
+                340
+              ],
+              "componentLabel": "Text Button"
+            },
+            {
+              "text": "DAYTIME & LUNAR PHASE",
+              "resource-id": "com.amber.weather:id/psts_tab_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                724,
+                259,
+                1440,
+                340
+              ],
+              "componentLabel": "Text Button"
+            }
+          ],
+          "ancestors": [
+            "android.widget.HorizontalScrollView",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.astuetz.PagerSlidingTabStrip",
+          "bounds": [
+            0,
+            259,
+            1440,
+            347
+          ],
+          "componentLabel": "Multi-Tab"
+        },
+        {
+          "text": "DAYTIME",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "mobi.infolife.card.view.style.AmberTextView",
+          "bounds": [
+            56,
+            445,
+            249,
+            516
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            305,
+            479,
+            1440,
+            481
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "text": "LUNAR PHASE",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "mobi.infolife.card.view.style.AmberTextView",
+          "bounds": [
+            56,
+            1464,
+            360,
+            1535
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            416,
+            1498,
+            1440,
+            1500
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.amber.weather:id/img_today_moon",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            70,
+            1591,
+            420,
+            1941
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "6%",
+          "resource-id": "com.amber.weather:id/text_today_moon",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "mobi.infolife.card.view.style.AmberTextView",
+          "bounds": [
+            211,
+            1955,
+            279,
+            2024
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Today",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "mobi.infolife.card.view.style.AmberTextView",
+          "bounds": [
+            190,
+            2031,
+            300,
+            2096
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            625,
+            1591,
+            877,
+            1941
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "text": "27/03",
+          "resource-id": "com.amber.weather:id/text_next_new_moon_date",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "mobi.infolife.card.view.style.AmberTextView",
+          "bounds": [
+            697,
+            1955,
+            804,
+            2024
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "NEXT NEW MOON",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "mobi.infolife.card.view.style.AmberTextView",
+          "bounds": [
+            608,
+            2031,
+            894,
+            2096
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1100,
+            1591,
+            1352,
+            1941
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "text": "12/04",
+          "resource-id": "com.amber.weather:id/text_next_full_moon_date",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "mobi.infolife.card.view.style.AmberTextView",
+          "bounds": [
+            1170,
+            1955,
+            1282,
+            2024
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "NEXT FULL MOON",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "mobi.infolife.card.view.style.AmberTextView",
+          "bounds": [
+            1082,
+            2031,
+            1370,
+            2096
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        0,
+        1440,
+        2392
+      ],
+      "componentLabel": "Drawer"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.amber.weather:id/blurredview_blurred_img",
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        0,
+        0,
+        1440,
+        2392
+      ],
+      "componentLabel": "Background Image"
+    }
+  ]
+}

@@ -1,0 +1,3768 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.atlasappco.fanduellineups:id/action_bar_container",
+      "children": [
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Lineups >",
+          "resource-id": "com.atlasappco.fanduellineups:id/action_generateLineups",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.internal.view.menu.ActionMenuItemView",
+          "bounds": [
+            1083,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "Daily Matchup",
+          "resource-id": "com.atlasappco.fanduellineups:id/custom_action_bar_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            336,
+            135,
+            879,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "info",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.atlasappco.fanduellineups:id/ivInfo",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            879,
+            135,
+            942,
+            198
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.internal.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.atlasappco.fanduellineups:id/my_awesome_toolbar",
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        280,
+        1440,
+        476
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "",
+      "resource-id": "com.atlasappco.fanduellineups:id/etPlayerName",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatEditText",
+      "bounds": [
+        409,
+        308,
+        929,
+        411
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "resource-id": "com.atlasappco.fanduellineups:id/llGamesFilter",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        323,
+        2171,
+        640,
+        2385
+      ],
+      "componentLabel": "Text Button",
+      "text": "Slates"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        443,
+        1440,
+        784
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Hitter Matchup",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            7,
+            655,
+            642,
+            777
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "POS",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            642,
+            655,
+            769,
+            777
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Park Rank",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvParkFactor",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            776,
+            655,
+            903,
+            777
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "FP Week Avg",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvWeekAvg",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            910,
+            655,
+            1037,
+            777
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "FP Season Avg",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvSeasonAvg",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1044,
+            655,
+            1171,
+            777
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Matchup Overview",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvRatingView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1178,
+            655,
+            1433,
+            777
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            18,
+            496,
+            106,
+            584
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Additional data is provided here for Premium LineStar Users. Click here to view subscription options.",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPremium",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            113,
+            496,
+            1422,
+            595
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        788,
+        1440,
+        1058
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "1B",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPositionName",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            637,
+            795,
+            759,
+            900
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "21",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvParkFactor",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            766,
+            795,
+            888,
+            900
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0.00",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvWeekAvg",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            895,
+            795,
+            1017,
+            900
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0.00",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvSeasonAvg",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1024,
+            795,
+            1147,
+            900
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "M. Cabrera vs J. Quintana",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvPHeader",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            25,
+            914,
+            479,
+            961
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "M. Cabrera vs Lefties",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvPSplitsHeader",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            493,
+            914,
+            947,
+            961
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "J. Quintana vs Righties",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPvBHeader",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            961,
+            914,
+            1415,
+            961
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "(R)",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvHitterBats",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            25,
+            807,
+            63,
+            845
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "M. Cabrera, DET",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvHitterName",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            70,
+            795,
+            404,
+            857
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "(L)",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPitcherThrows",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            25,
+            859,
+            60,
+            897
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "J. Quintana, CHW",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPitcherName",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            67,
+            857,
+            319,
+            900
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "PA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            25,
+            961,
+            115,
+            999
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "AVG",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            115,
+            961,
+            206,
+            999
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "wOBA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            206,
+            961,
+            297,
+            999
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "ISO",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            297,
+            961,
+            388,
+            999
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "HR/PA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            388,
+            961,
+            479,
+            999
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "44",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvP_PA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            32,
+            1006,
+            120,
+            1044
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".368",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvP_AVG",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            120,
+            1006,
+            208,
+            1044
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".464",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvP_wOBA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            208,
+            1006,
+            296,
+            1044
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".263",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvP_ISO",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            296,
+            1006,
+            384,
+            1044
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".045",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvP_HRPPA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            384,
+            1006,
+            472,
+            1044
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "PA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            493,
+            961,
+            583,
+            999
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "AVG",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            583,
+            961,
+            674,
+            999
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "wOBA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            674,
+            961,
+            765,
+            999
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "ISO",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            765,
+            961,
+            856,
+            999
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "HR/PA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            856,
+            961,
+            947,
+            999
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "608",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvPSplit_PA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            500,
+            1006,
+            588,
+            1044
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".323",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvPSplit_AVG",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            588,
+            1006,
+            676,
+            1044
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".435",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvPSplit_wOBA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            676,
+            1006,
+            764,
+            1044
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".266",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvPSplit_ISO",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            764,
+            1006,
+            852,
+            1044
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".054",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvPSplit_HRPPA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            852,
+            1006,
+            940,
+            1044
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "PA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            961,
+            961,
+            1051,
+            999
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "AVG",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1051,
+            961,
+            1142,
+            999
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "wOBA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1142,
+            961,
+            1233,
+            999
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "ISO",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1233,
+            961,
+            1324,
+            999
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "HR/PA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1324,
+            961,
+            1415,
+            999
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "2494",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPvBSplit_PA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            968,
+            1006,
+            1056,
+            1044
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".257",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPvBSplit_AVG",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1056,
+            1006,
+            1144,
+            1044
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".304",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPvBSplit_wOBA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1144,
+            1006,
+            1232,
+            1044
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".134",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPvBSplit_ISO",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1232,
+            1006,
+            1320,
+            1044
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".022",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPvBSplit_HRPPA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1320,
+            1006,
+            1408,
+            1044
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1062,
+        1440,
+        1332
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "OF",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPositionName",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            637,
+            1069,
+            759,
+            1174
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "29",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvParkFactor",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            766,
+            1069,
+            888,
+            1174
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0.00",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvWeekAvg",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            895,
+            1069,
+            1017,
+            1174
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0.00",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvSeasonAvg",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1024,
+            1069,
+            1147,
+            1174
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "H. Renfroe vs C. Kershaw",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvPHeader",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            25,
+            1188,
+            479,
+            1235
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "H. Renfroe vs Lefties",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvPSplitsHeader",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            493,
+            1188,
+            947,
+            1235
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "C. Kershaw vs Righties",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPvBHeader",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            961,
+            1188,
+            1415,
+            1235
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "(R)",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvHitterBats",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            25,
+            1081,
+            63,
+            1119
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "H. Renfroe, SD",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvHitterName",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            70,
+            1069,
+            370,
+            1131
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "(L)",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPitcherThrows",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            25,
+            1133,
+            60,
+            1171
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "C. Kershaw, LAD",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPitcherName",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            67,
+            1131,
+            303,
+            1174
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "PA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            25,
+            1235,
+            115,
+            1273
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "AVG",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            115,
+            1235,
+            206,
+            1273
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "wOBA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            206,
+            1235,
+            297,
+            1273
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "ISO",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            297,
+            1235,
+            388,
+            1273
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "HR/PA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            388,
+            1235,
+            479,
+            1273
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvP_PA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            32,
+            1280,
+            120,
+            1318
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".000",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvP_AVG",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            120,
+            1280,
+            208,
+            1318
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".000",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvP_wOBA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            208,
+            1280,
+            296,
+            1318
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".000",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvP_ISO",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            296,
+            1280,
+            384,
+            1318
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".000",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvP_HRPPA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            384,
+            1280,
+            472,
+            1318
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "PA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            493,
+            1235,
+            583,
+            1273
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "AVG",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            583,
+            1235,
+            674,
+            1273
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "wOBA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            674,
+            1235,
+            765,
+            1273
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "ISO",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            765,
+            1235,
+            856,
+            1273
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "HR/PA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            856,
+            1235,
+            947,
+            1273
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "10",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvPSplit_PA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            500,
+            1280,
+            588,
+            1318
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".333",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvPSplit_AVG",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            588,
+            1280,
+            676,
+            1318
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".481",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvPSplit_wOBA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            676,
+            1280,
+            764,
+            1318
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".444",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvPSplit_ISO",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            764,
+            1280,
+            852,
+            1318
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".100",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvPSplit_HRPPA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            852,
+            1280,
+            940,
+            1318
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "PA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            961,
+            1235,
+            1051,
+            1273
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "AVG",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1051,
+            1235,
+            1142,
+            1273
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "wOBA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1142,
+            1235,
+            1233,
+            1273
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "ISO",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1233,
+            1235,
+            1324,
+            1273
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "HR/PA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1324,
+            1235,
+            1415,
+            1273
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "2357",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPvBSplit_PA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            968,
+            1280,
+            1056,
+            1318
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".198",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPvBSplit_AVG",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1056,
+            1280,
+            1144,
+            1318
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".233",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPvBSplit_wOBA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1144,
+            1280,
+            1232,
+            1318
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".092",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPvBSplit_ISO",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1232,
+            1280,
+            1320,
+            1318
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".015",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPvBSplit_HRPPA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1320,
+            1280,
+            1408,
+            1318
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1336,
+        1440,
+        1606
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "C",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPositionName",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            637,
+            1343,
+            759,
+            1448
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "21",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvParkFactor",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            766,
+            1343,
+            888,
+            1448
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0.00",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvWeekAvg",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            895,
+            1343,
+            1017,
+            1448
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0.00",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvSeasonAvg",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1024,
+            1343,
+            1147,
+            1448
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "V. Martínez vs J. Quintana",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvPHeader",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            25,
+            1462,
+            479,
+            1509
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "V. Martínez vs Lefties",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvPSplitsHeader",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            493,
+            1462,
+            947,
+            1509
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "J. Quintana vs Righties",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPvBHeader",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            961,
+            1462,
+            1415,
+            1509
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "(S)",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvHitterBats",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            25,
+            1355,
+            62,
+            1393
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "V. Martínez, DET",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvHitterName",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            69,
+            1343,
+            410,
+            1405
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "(L)",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPitcherThrows",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            25,
+            1407,
+            60,
+            1445
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "J. Quintana, CHW",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPitcherName",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            67,
+            1405,
+            319,
+            1448
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "PA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            25,
+            1509,
+            115,
+            1547
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "AVG",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            115,
+            1509,
+            206,
+            1547
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "wOBA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            206,
+            1509,
+            297,
+            1547
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "ISO",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            297,
+            1509,
+            388,
+            1547
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "HR/PA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            388,
+            1509,
+            479,
+            1547
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "39",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvP_PA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            32,
+            1554,
+            120,
+            1592
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".436",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvP_AVG",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            120,
+            1554,
+            208,
+            1592
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".410",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvP_wOBA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            208,
+            1554,
+            296,
+            1592
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".051",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvP_ISO",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            296,
+            1554,
+            384,
+            1592
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".000",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvP_HRPPA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            384,
+            1554,
+            472,
+            1592
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "PA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            493,
+            1509,
+            583,
+            1547
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "AVG",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            583,
+            1509,
+            674,
+            1547
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "wOBA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            674,
+            1509,
+            765,
+            1547
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "ISO",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            765,
+            1509,
+            856,
+            1547
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "HR/PA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            856,
+            1509,
+            947,
+            1547
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "643",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvPSplit_PA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            500,
+            1554,
+            588,
+            1592
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".315",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvPSplit_AVG",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            588,
+            1554,
+            676,
+            1592
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".376",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvPSplit_wOBA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            676,
+            1554,
+            764,
+            1592
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".188",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvPSplit_ISO",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            764,
+            1554,
+            852,
+            1592
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".039",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvPSplit_HRPPA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            852,
+            1554,
+            940,
+            1592
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "PA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            961,
+            1509,
+            1051,
+            1547
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "AVG",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1051,
+            1509,
+            1142,
+            1547
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "wOBA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1142,
+            1509,
+            1233,
+            1547
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "ISO",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1233,
+            1509,
+            1324,
+            1547
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "HR/PA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1324,
+            1509,
+            1415,
+            1547
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "2494",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPvBSplit_PA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            968,
+            1554,
+            1056,
+            1592
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".257",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPvBSplit_AVG",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1056,
+            1554,
+            1144,
+            1592
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".304",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPvBSplit_wOBA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1144,
+            1554,
+            1232,
+            1592
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".134",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPvBSplit_ISO",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1232,
+            1554,
+            1320,
+            1592
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".022",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPvBSplit_HRPPA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1320,
+            1554,
+            1408,
+            1592
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1610,
+        1440,
+        1729
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "OF",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPositionName",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            637,
+            1617,
+            759,
+            1722
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "21",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvParkFactor",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            766,
+            1617,
+            888,
+            1722
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0.00",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvWeekAvg",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            895,
+            1617,
+            1017,
+            1722
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0.00",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvSeasonAvg",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1024,
+            1617,
+            1147,
+            1722
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "(L)",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvHitterBats",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            25,
+            1629,
+            60,
+            1667
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "S. Moyà, DET",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvHitterName",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            67,
+            1617,
+            339,
+            1679
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "(L)",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPitcherThrows",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            25,
+            1681,
+            60,
+            1719
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "J. Quintana, CHW",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPitcherName",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            67,
+            1679,
+            319,
+            1722
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1733,
+        1440,
+        2003
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "OF",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPositionName",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            637,
+            1740,
+            759,
+            1845
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "21",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvParkFactor",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            766,
+            1740,
+            888,
+            1845
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0.00",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvWeekAvg",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            895,
+            1740,
+            1017,
+            1845
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0.00",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvSeasonAvg",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1024,
+            1740,
+            1147,
+            1845
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "J. Upton vs J. Quintana",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvPHeader",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            25,
+            1859,
+            479,
+            1906
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "J. Upton vs Lefties",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvPSplitsHeader",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            493,
+            1859,
+            947,
+            1906
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "J. Quintana vs Righties",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPvBHeader",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            961,
+            1859,
+            1415,
+            1906
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "(R)",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvHitterBats",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            25,
+            1752,
+            63,
+            1790
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "J. Upton, DET",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvHitterName",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            70,
+            1740,
+            349,
+            1802
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "(L)",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPitcherThrows",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            25,
+            1804,
+            60,
+            1842
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "J. Quintana, CHW",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPitcherName",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            67,
+            1802,
+            319,
+            1845
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "PA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            25,
+            1906,
+            115,
+            1944
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "AVG",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            115,
+            1906,
+            206,
+            1944
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "wOBA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            206,
+            1906,
+            297,
+            1944
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "ISO",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            297,
+            1906,
+            388,
+            1944
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "HR/PA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            388,
+            1906,
+            479,
+            1944
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "15",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvP_PA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            32,
+            1951,
+            120,
+            1989
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".357",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvP_AVG",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            120,
+            1951,
+            208,
+            1989
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".441",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvP_wOBA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            208,
+            1951,
+            296,
+            1989
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".286",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvP_ISO",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            296,
+            1951,
+            384,
+            1989
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".067",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvP_HRPPA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            384,
+            1951,
+            472,
+            1989
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "PA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            493,
+            1906,
+            583,
+            1944
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "AVG",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            583,
+            1906,
+            674,
+            1944
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "wOBA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            674,
+            1906,
+            765,
+            1944
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "ISO",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            765,
+            1906,
+            856,
+            1944
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "HR/PA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            856,
+            1906,
+            947,
+            1944
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "582",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvPSplit_PA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            500,
+            1951,
+            588,
+            1989
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".244",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvPSplit_AVG",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            588,
+            1951,
+            676,
+            1989
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".352",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvPSplit_wOBA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            676,
+            1951,
+            764,
+            1989
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".224",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvPSplit_ISO",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            764,
+            1951,
+            852,
+            1989
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".052",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvPSplit_HRPPA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            852,
+            1951,
+            940,
+            1989
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "PA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            961,
+            1906,
+            1051,
+            1944
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "AVG",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1051,
+            1906,
+            1142,
+            1944
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "wOBA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1142,
+            1906,
+            1233,
+            1944
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "ISO",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1233,
+            1906,
+            1324,
+            1944
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "HR/PA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1324,
+            1906,
+            1415,
+            1944
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "2494",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPvBSplit_PA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            968,
+            1951,
+            1056,
+            1989
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".257",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPvBSplit_AVG",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1056,
+            1951,
+            1144,
+            1989
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".304",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPvBSplit_wOBA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1144,
+            1951,
+            1232,
+            1989
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".134",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPvBSplit_ISO",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1232,
+            1951,
+            1320,
+            1989
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": ".022",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPvBSplit_HRPPA",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1320,
+            1951,
+            1408,
+            1989
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        2007,
+        1440,
+        2164
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "C",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPositionName",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            637,
+            2014,
+            759,
+            2119
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "21",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvParkFactor",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            766,
+            2014,
+            888,
+            2119
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0.00",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvWeekAvg",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            895,
+            2014,
+            1017,
+            2119
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0.00",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvSeasonAvg",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1024,
+            2014,
+            1147,
+            2119
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "J. McCann vs J. Quintana",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvPHeader",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            25,
+            2133,
+            479,
+            2164
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "J. McCann vs Lefties",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvBvPSplitsHeader",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            493,
+            2133,
+            947,
+            2164
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "J. Quintana vs Righties",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPvBHeader",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            961,
+            2133,
+            1415,
+            2164
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "(R)",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvHitterBats",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            25,
+            2026,
+            63,
+            2064
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "J. McCann, DET",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvHitterName",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            70,
+            2014,
+            397,
+            2076
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "(L)",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPitcherThrows",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            25,
+            2078,
+            60,
+            2116
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "J. Quintana, CHW",
+          "resource-id": "com.atlasappco.fanduellineups:id/tvPitcherName",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            67,
+            2076,
+            319,
+            2119
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "text": "Sport",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        42,
+        2171,
+        323,
+        2229
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "MLB",
+      "resource-id": "com.atlasappco.fanduellineups:id/tvSportFilter",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        42,
+        2229,
+        323,
+        2385
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Period",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        640,
+        2171,
+        1115,
+        2229
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Apr 3, 2017\r\nUpdated 1 day ago",
+      "resource-id": "com.atlasappco.fanduellineups:id/tvPeriodFilter",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        640,
+        2229,
+        1115,
+        2385
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Position",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1115,
+        2171,
+        1433,
+        2229
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "ALL",
+      "resource-id": "com.atlasappco.fanduellineups:id/tvPositionFilter",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1115,
+        2229,
+        1433,
+        2385
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "all"
+    }
+  ]
+}

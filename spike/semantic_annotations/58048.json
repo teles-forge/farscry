@@ -1,0 +1,538 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.boondoggle.autocalc:id/action_bar_container",
+      "children": [
+        {
+          "text": "Car Loan Calculator",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            135,
+            675,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "Sticker Price ($)",
+      "resource-id": "com.boondoggle.autocalc:id/S_amount",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        18,
+        330,
+        650,
+        396
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "20000",
+      "resource-id": "com.boondoggle.autocalc:id/var_amount",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatEditText",
+      "bounds": [
+        650,
+        280,
+        1422,
+        438
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Term (months)",
+      "resource-id": "com.boondoggle.autocalc:id/S_months",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        18,
+        488,
+        650,
+        554
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "48",
+      "resource-id": "com.boondoggle.autocalc:id/var_months",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatEditText",
+      "bounds": [
+        650,
+        438,
+        1422,
+        596
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Interest Rate (%)",
+      "resource-id": "com.boondoggle.autocalc:id/S_interest",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        18,
+        646,
+        650,
+        712
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "4.5",
+      "resource-id": "com.boondoggle.autocalc:id/var_interest",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatEditText",
+      "bounds": [
+        650,
+        596,
+        1422,
+        754
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Calculate",
+      "resource-id": "com.boondoggle.autocalc:id/buttoncalc",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        1069,
+        754,
+        1422,
+        922
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "calculate"
+    },
+    {
+      "text": "Sales Tax (%)",
+      "resource-id": "com.boondoggle.autocalc:id/S_tax",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        18,
+        972,
+        650,
+        1038
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "com.boondoggle.autocalc:id/var_tax",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatEditText",
+      "bounds": [
+        650,
+        922,
+        1422,
+        1080
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Down Payment + Trade-in ($)",
+      "resource-id": "com.boondoggle.autocalc:id/S_downpayment",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        18,
+        1130,
+        650,
+        1196
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "com.boondoggle.autocalc:id/var_downpayment",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatEditText",
+      "bounds": [
+        650,
+        1080,
+        1422,
+        1238
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Fees/Registration ($)",
+      "resource-id": "com.boondoggle.autocalc:id/S_dealerfees",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        18,
+        1288,
+        650,
+        1354
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "com.boondoggle.autocalc:id/var_dealerfees",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatEditText",
+      "bounds": [
+        650,
+        1238,
+        1422,
+        1396
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Monthly Payment",
+      "resource-id": "com.boondoggle.autocalc:id/S_payment",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        18,
+        1462,
+        650,
+        1528
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "$456.07",
+      "resource-id": "com.boondoggle.autocalc:id/var_payment",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        650,
+        1432,
+        1422,
+        1535
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Total Loan Payments",
+      "resource-id": "com.boondoggle.autocalc:id/S_totalpayments",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        18,
+        1535,
+        650,
+        1601
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "$21,891.35",
+      "resource-id": "com.boondoggle.autocalc:id/var_totalpayments",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        650,
+        1535,
+        1422,
+        1601
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Interest Paid",
+      "resource-id": "com.boondoggle.autocalc:id/S_interestpaid",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        18,
+        1601,
+        650,
+        1667
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "$1,891.35",
+      "resource-id": "com.boondoggle.autocalc:id/var_interestpaid",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        650,
+        1601,
+        1422,
+        1667
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Insurance (6 month term)",
+      "resource-id": "com.boondoggle.autocalc:id/S_insurance",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        18,
+        1717,
+        650,
+        1783
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "com.boondoggle.autocalc:id/var_insurance",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatEditText",
+      "bounds": [
+        650,
+        1667,
+        1422,
+        1825
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Monthly Cost of Ownership",
+      "resource-id": "com.boondoggle.autocalc:id/S_payment2",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        18,
+        1825,
+        650,
+        1891
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "N/A",
+      "resource-id": "com.boondoggle.autocalc:id/var_payment2",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        650,
+        1825,
+        1422,
+        1891
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Sales Tax on full purchase price",
+      "resource-id": "com.boondoggle.autocalc:id/option1",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatRadioButton",
+      "bounds": [
+        0,
+        1891,
+        608,
+        2003
+      ],
+      "componentLabel": "Radio Button"
+    },
+    {
+      "text": "Sales Tax only on difference between new vehicle and trade in",
+      "resource-id": "com.boondoggle.autocalc:id/option2",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatRadioButton",
+      "bounds": [
+        0,
+        2003,
+        1079,
+        2115
+      ],
+      "componentLabel": "Radio Button"
+    }
+  ]
+}

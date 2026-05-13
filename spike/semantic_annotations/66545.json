@@ -1,0 +1,1680 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "me.lwwd.mealplan:id/toolbar",
+      "children": [
+        {
+          "iconClass": "filter",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "me.lwwd.mealplan:id/recipe_list_filter",
+          "clickable": true,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1265,
+            129,
+            1405,
+            234
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "me.lwwd.mealplan:id/recipe_list_search",
+          "clickable": true,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1090,
+            129,
+            1230,
+            234
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Recipes",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            210,
+            135,
+            460,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        28,
+        308,
+        706,
+        994
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_image",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            35,
+            319,
+            699,
+            983
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_time",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            35,
+            319,
+            245,
+            529
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "15",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_minutes",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            35,
+            337,
+            245,
+            440
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "min",
+          "bounds": [
+            35,
+            337,
+            245,
+            492
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Breakfast Blueberry-Oatmeal Cakes",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            35,
+            619,
+            699,
+            812
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Servings:",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_portions_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            53,
+            812,
+            252,
+            878
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "6",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_portions",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            259,
+            812,
+            287,
+            878
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "127",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_likes",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            597,
+            897,
+            681,
+            963
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "favorite",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_likes_image",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            509,
+            896,
+            597,
+            965
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "avatar",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_icon",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            53,
+            896,
+            123,
+            965
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "6",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_portions_weight",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            130,
+            896,
+            158,
+            962
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "oz/",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_portions_weight_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            165,
+            896,
+            237,
+            962
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "150",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_portions_energy",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            244,
+            896,
+            328,
+            962
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "kcal",
+          "bounds": [
+            335,
+            896,
+            425,
+            962
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        734,
+        308,
+        1412,
+        994
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_image",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            741,
+            319,
+            1405,
+            983
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_time",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            741,
+            319,
+            951,
+            529
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "180",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_minutes",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            741,
+            337,
+            951,
+            440
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "min",
+          "bounds": [
+            741,
+            337,
+            951,
+            492
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "componentLabel": "Text"
+        },
+        {
+          "text": "THM Chili",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            741,
+            619,
+            1405,
+            812
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Servings:",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_portions_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            759,
+            812,
+            958,
+            878
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "8",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_portions",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            965,
+            812,
+            993,
+            878
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_likes",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1359,
+            897,
+            1387,
+            963
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "favorite",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_likes_image",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1271,
+            896,
+            1359,
+            965
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "avatar",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_icon",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            759,
+            896,
+            829,
+            965
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "19",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_portions_weight",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            836,
+            896,
+            892,
+            962
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "oz/",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_portions_weight_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            899,
+            896,
+            971,
+            962
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "511",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_portions_energy",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            978,
+            896,
+            1062,
+            962
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "kcal",
+          "bounds": [
+            1069,
+            896,
+            1159,
+            962
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        28,
+        1022,
+        706,
+        1708
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_image",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            35,
+            1033,
+            699,
+            1697
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_time",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            35,
+            1033,
+            245,
+            1243
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "15",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_minutes",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            35,
+            1051,
+            245,
+            1154
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "min",
+          "bounds": [
+            35,
+            1051,
+            245,
+            1206
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Veggie Omelette",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            35,
+            1333,
+            699,
+            1526
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Servings:",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_portions_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            53,
+            1526,
+            252,
+            1592
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "1",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_portions",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            259,
+            1526,
+            287,
+            1592
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_likes",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            653,
+            1611,
+            681,
+            1677
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "favorite",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_likes_image",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            565,
+            1610,
+            653,
+            1679
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_icon",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            53,
+            1610,
+            123,
+            1679
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "25",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_portions_weight",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            130,
+            1610,
+            186,
+            1676
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "oz/",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_portions_weight_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            193,
+            1610,
+            265,
+            1676
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "459",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_portions_energy",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            272,
+            1610,
+            356,
+            1676
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "kcal",
+          "bounds": [
+            363,
+            1610,
+            453,
+            1676
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        734,
+        1022,
+        1412,
+        1708
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_image",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            741,
+            1033,
+            1405,
+            1697
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_time",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            741,
+            1033,
+            951,
+            1243
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "6",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_minutes",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            741,
+            1051,
+            951,
+            1154
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "min",
+          "bounds": [
+            741,
+            1051,
+            951,
+            1206
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Bacon, Egg, and Cheese Sandwich",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            741,
+            1333,
+            1405,
+            1526
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Servings:",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_portions_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            759,
+            1526,
+            958,
+            1592
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "2",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_portions",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            965,
+            1526,
+            993,
+            1592
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "214",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_likes",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1303,
+            1611,
+            1387,
+            1677
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "favorite",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_likes_image",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1215,
+            1610,
+            1303,
+            1679
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_icon",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            759,
+            1610,
+            829,
+            1679
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "5",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_portions_weight",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            836,
+            1610,
+            864,
+            1676
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "oz/",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_portions_weight_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            871,
+            1610,
+            943,
+            1676
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "443",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_portions_energy",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            950,
+            1610,
+            1034,
+            1676
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "kcal",
+          "bounds": [
+            1041,
+            1610,
+            1131,
+            1676
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        28,
+        1736,
+        706,
+        2392
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_image",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            35,
+            1747,
+            699,
+            2392
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_time",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            35,
+            1747,
+            245,
+            1957
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "0",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_minutes",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            35,
+            1765,
+            245,
+            1868
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "min",
+          "bounds": [
+            35,
+            1765,
+            245,
+            1920
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Shredded Chicken Tacos",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            35,
+            2047,
+            699,
+            2240
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Servings:",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_portions_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            53,
+            2240,
+            252,
+            2306
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "4",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_portions",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            259,
+            2240,
+            287,
+            2306
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "344",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_likes",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            597,
+            2325,
+            681,
+            2391
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "favorite",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_likes_image",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            509,
+            2324,
+            597,
+            2392
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "avatar",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_icon",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            53,
+            2324,
+            123,
+            2392
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "5",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_portions_weight",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            130,
+            2324,
+            158,
+            2390
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "oz/",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_portions_weight_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            165,
+            2324,
+            237,
+            2390
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "295",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_portions_energy",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            244,
+            2324,
+            328,
+            2390
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "kcal",
+          "bounds": [
+            335,
+            2324,
+            425,
+            2390
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        734,
+        1736,
+        1412,
+        2392
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_image",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            741,
+            1747,
+            1405,
+            2392
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_time",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            741,
+            1747,
+            951,
+            1957
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "1",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_minutes",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            741,
+            1765,
+            951,
+            1868
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "min",
+          "bounds": [
+            741,
+            1765,
+            951,
+            1920
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Snack 5",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            741,
+            2047,
+            1405,
+            2240
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Servings:",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_portions_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            759,
+            2240,
+            958,
+            2306
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "1",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_portions",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            965,
+            2240,
+            993,
+            2306
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_likes",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1359,
+            2325,
+            1387,
+            2391
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "favorite",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_likes_image",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1271,
+            2324,
+            1359,
+            2392
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "avatar",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_icon",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            759,
+            2324,
+            829,
+            2392
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "7",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_portions_weight",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            836,
+            2324,
+            864,
+            2390
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "oz/",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_portions_weight_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            871,
+            2324,
+            943,
+            2390
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "70",
+          "resource-id": "me.lwwd.mealplan:id/view_recipe_in_list_portions_energy",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            950,
+            2324,
+            1006,
+            2390
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "kcal",
+          "bounds": [
+            1013,
+            2324,
+            1103,
+            2390
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    }
+  ]
+}

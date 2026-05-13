@@ -1,0 +1,675 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.virtualmaze.gpsdrivingroute:id/cardView_ChooseOption",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.virtualmaze.gpsdrivingroute:id/iv_ChooseOption_YourLocation",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            14,
+            252,
+            210,
+            336
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Choose your location",
+          "resource-id": "com.virtualmaze.gpsdrivingroute:id/tv_ChooseOption_YourLocation",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            210,
+            210,
+            1426,
+            378
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.virtualmaze.gpsdrivingroute:id/iv_ChooseOption_FromMap",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            14,
+            420,
+            210,
+            504
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Choose on map",
+          "resource-id": "com.virtualmaze.gpsdrivingroute:id/tv_ChooseOption_FromMap",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            210,
+            378,
+            1426,
+            546
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        14,
+        210,
+        1426,
+        546
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "resource-id": "com.virtualmaze.gpsdrivingroute:id/cardView_recent_search_layout",
+      "children": [
+        {
+          "text": "There is no recent search places",
+          "resource-id": "com.virtualmaze.gpsdrivingroute:id/no_recent_search_view",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            14,
+            727,
+            1426,
+            905
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "resource-id": "com.virtualmaze.gpsdrivingroute:id/ll_recent_search",
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            14,
+            574,
+            718,
+            727
+          ],
+          "componentLabel": "Text Button",
+          "text": "Recent Search"
+        },
+        {
+          "resource-id": "com.virtualmaze.gpsdrivingroute:id/ll_saved_places",
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            722,
+            574,
+            1426,
+            727
+          ],
+          "componentLabel": "Text Button",
+          "text": "Saved Location"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        14,
+        574,
+        1426,
+        905
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "iconClass": "arrow_backward",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.virtualmaze.gpsdrivingroute:id/search_back_button",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageButton",
+      "bounds": [
+        0,
+        0,
+        196,
+        196
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "search",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.virtualmaze.gpsdrivingroute:id/iv_search_icon",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        196,
+        56,
+        280,
+        140
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "",
+      "resource-id": "com.virtualmaze.gpsdrivingroute:id/search_field_editable",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatEditText",
+      "bounds": [
+        280,
+        0,
+        1244,
+        196
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "iconClass": "close",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.virtualmaze.gpsdrivingroute:id/search_clear",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageButton",
+      "bounds": [
+        1244,
+        0,
+        1440,
+        196
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.support.design.widget.ad",
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.virtualmaze.gpsdrivingroute:id/position_me_fab",
+      "clickable": true,
+      "class": "android.support.design.widget.FloatingActionButton",
+      "bounds": [
+        0,
+        196,
+        280,
+        518
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.virtualmaze.gpsdrivingroute:id/iv_routeSettings",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        1287,
+        380,
+        1413,
+        506
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.virtualmaze.gpsdrivingroute:id/iv_driving",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        180,
+        690,
+        300,
+        810
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.virtualmaze.gpsdrivingroute:id/iv_walking",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        660,
+        690,
+        780,
+        810
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.virtualmaze.gpsdrivingroute:id/iv_bicycling",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        1140,
+        690,
+        1260,
+        810
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        14,
+        210,
+        1246,
+        365
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.virtualmaze.gpsdrivingroute:id/iv_place_delete",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1120,
+            228,
+            1239,
+            347
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.virtualmaze.gpsdrivingroute:id/iv_handle",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            149,
+            228,
+            268,
+            343
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Your Location",
+          "resource-id": "com.virtualmaze.gpsdrivingroute:id/tv_place_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            268,
+            233,
+            1111,
+            333
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.virtualmaze.gpsdrivingroute:id/iv_place_type",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            49,
+            256,
+            112,
+            319
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        14,
+        365,
+        1246,
+        520
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.virtualmaze.gpsdrivingroute:id/iv_handle",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            149,
+            383,
+            268,
+            498
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Add waypoint",
+          "resource-id": "com.virtualmaze.gpsdrivingroute:id/tv_place_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            268,
+            388,
+            1111,
+            488
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.virtualmaze.gpsdrivingroute:id/iv_place_type",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            49,
+            411,
+            112,
+            474
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        14,
+        520,
+        1246,
+        675
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.virtualmaze.gpsdrivingroute:id/iv_handle",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            149,
+            538,
+            268,
+            653
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Choose destination",
+          "resource-id": "com.virtualmaze.gpsdrivingroute:id/tv_place_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            268,
+            543,
+            1111,
+            643
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.virtualmaze.gpsdrivingroute:id/iv_place_type",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            49,
+            566,
+            112,
+            629
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.virtualmaze.gpsdrivingroute:id/map_surface_holder",
+      "children": [
+        {
+          "text": "Powered by Scout",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "bounds": [
+            1023,
+            2310,
+            1305,
+            2357
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": " | ",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            1305,
+            2313,
+            1329,
+            2356
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "OSM",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "bounds": [
+            1329,
+            2310,
+            1405,
+            2357
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.skobbler.ngx.map.SKMapViewHolder",
+      "bounds": [
+        0,
+        196,
+        1440,
+        2392
+      ],
+      "componentLabel": "Map View"
+    },
+    {
+      "iconClass": "home",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.virtualmaze.gpsdrivingroute:id/iv_magnetic_compass",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        35,
+        1926,
+        203,
+        2094
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "0\nkm/h",
+      "resource-id": "com.virtualmaze.gpsdrivingroute:id/tv_speed_display",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1242,
+        1196,
+        1440,
+        1392
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

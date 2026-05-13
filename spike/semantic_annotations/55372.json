@@ -1,0 +1,843 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.fineapp.yogiyo:id/action_bar_container",
+      "children": [
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            252,
+            181,
+            253,
+            182
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "avatar",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fineapp.yogiyo:id/acbtn_logo",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            573,
+            112,
+            923,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "cart",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fineapp.yogiyo:id/btn_cart",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            1244,
+            112,
+            1440,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "0",
+          "resource-id": "com.fineapp.yogiyo:id/tv_cart_count",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1366,
+            124,
+            1388,
+            177
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.fineapp.yogiyo:id/left_drawer",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            0,
+            280,
+            1022,
+            889
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.fineapp.yogiyo:id/drawer_header_image",
+              "clickable": true,
+              "class": "com.fineapp.yogiyo.customview.FitWidthImageView",
+              "bounds": [
+                0,
+                616,
+                1022,
+                889
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.fineapp.yogiyo:id/logoutIv",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                56,
+                336,
+                280,
+                560
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "로그인 후 포인트를 적립하세요!",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                322,
+                355,
+                994,
+                421
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "로그인",
+              "resource-id": "com.fineapp.yogiyo:id/loginTv",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                322,
+                442,
+                540,
+                540
+              ],
+              "componentLabel": "Text Button"
+            },
+            {
+              "text": "회원가입",
+              "resource-id": "com.fineapp.yogiyo:id/joinMemberTv",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                568,
+                442,
+                828,
+                540
+              ],
+              "componentLabel": "Text Button"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "resource-id": "com.fineapp.yogiyo:id/ll_menu",
+          "children": [
+            {
+              "text": "요기요 홈",
+              "resource-id": "com.fineapp.yogiyo:id/tv_name",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                0,
+                953,
+                430,
+                1038
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            0,
+            889,
+            1022,
+            1101
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "resource-id": "com.fineapp.yogiyo:id/ll_menu",
+          "children": [
+            {
+              "text": "요기요 혜택 알림함",
+              "resource-id": "com.fineapp.yogiyo:id/tv_name",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                0,
+                1165,
+                678,
+                1250
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "iconClass": "skip_previous",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.fineapp.yogiyo:id/iv_newicon_v2",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                706,
+                1175,
+                771,
+                1240
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            0,
+            1101,
+            1022,
+            1313
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "resource-id": "com.fineapp.yogiyo:id/ll_menu",
+          "children": [
+            {
+              "text": "비회원 주문내역",
+              "resource-id": "com.fineapp.yogiyo:id/tv_name",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                0,
+                1377,
+                604,
+                1462
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            0,
+            1313,
+            1022,
+            1525
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "resource-id": "com.fineapp.yogiyo:id/ll_menu",
+          "children": [
+            {
+              "text": "요기요 추천하기",
+              "resource-id": "com.fineapp.yogiyo:id/tv_name",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                0,
+                1589,
+                604,
+                1674
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            0,
+            1525,
+            1022,
+            1737
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "resource-id": "com.fineapp.yogiyo:id/ll_menu",
+          "children": [
+            {
+              "text": "이벤트 및 공지사항",
+              "resource-id": "com.fineapp.yogiyo:id/tv_name",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                0,
+                1801,
+                678,
+                1886
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.fineapp.yogiyo:id/iv_newicon_v2",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                706,
+                1811,
+                771,
+                1876
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            0,
+            1737,
+            1022,
+            1949
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "resource-id": "com.fineapp.yogiyo:id/ll_menu",
+          "children": [
+            {
+              "text": "요기요 안내",
+              "resource-id": "com.fineapp.yogiyo:id/tv_name",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                0,
+                2013,
+                488,
+                2098
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            0,
+            1949,
+            1022,
+            2161
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "resource-id": "com.fineapp.yogiyo:id/ll_menu",
+          "children": [
+            {
+              "text": "고객만족센터",
+              "resource-id": "com.fineapp.yogiyo:id/tv_name",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                0,
+                2225,
+                530,
+                2310
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            0,
+            2161,
+            1022,
+            2373
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "resource-id": "com.fineapp.yogiyo:id/ll_menu",
+          "children": [],
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            0,
+            2373,
+            1022,
+            2392
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "ancestors": [
+        "android.widget.AbsListView",
+        "android.widget.AdapterView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.ListView",
+      "bounds": [
+        0,
+        280,
+        1022,
+        2392
+      ],
+      "componentLabel": "Drawer"
+    },
+    {
+      "ancestors": [
+        "com.fineapp.yogiyo.v2.ui.bannercontrol.indicator.CirclePageIndicator",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.fineapp.yogiyo:id/bannerIndicator",
+      "clickable": false,
+      "class": "com.fineapp.yogiyo.v2.ui.bannercontrol.CustomCirclePageIndicator",
+      "bounds": [
+        0,
+        2356,
+        1440,
+        2371
+      ],
+      "componentLabel": "Pager Indicator"
+    },
+    {
+      "iconClass": "close",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.fineapp.yogiyo:id/bannerCloseBtn",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        1328,
+        2072,
+        1440,
+        2184
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.fineapp.yogiyo:id/findCurrentLocIv",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        28,
+        308,
+        140,
+        420
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "",
+      "resource-id": "com.fineapp.yogiyo:id/tv_address",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        168,
+        308,
+        1295,
+        420
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "iconClass": "location",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.fineapp.yogiyo:id/openMap_Iv",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        1295,
+        308,
+        1412,
+        420
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        0,
+        2072,
+        1440,
+        2392
+      ],
+      "clickable": true,
+      "class": "com.fineapp.yogiyo.customview.FitWidthImageView",
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.fineapp.yogiyo:id/btn_category_0",
+      "clickable": true,
+      "class": "com.fineapp.yogiyo.customview.SquareImageView",
+      "bounds": [
+        56,
+        504,
+        706,
+        1154
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "전체보기",
+      "resource-id": "com.fineapp.yogiyo:id/tv_category_0",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        56,
+        1042,
+        706,
+        1154
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.fineapp.yogiyo:id/btn_category_9",
+      "clickable": true,
+      "class": "com.fineapp.yogiyo.customview.SquareImageView",
+      "bounds": [
+        734,
+        504,
+        1384,
+        1154
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "프랜차이즈",
+      "resource-id": "com.fineapp.yogiyo:id/tv_category_1",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        734,
+        1042,
+        1384,
+        1154
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.fineapp.yogiyo:id/btn_category_1",
+      "clickable": true,
+      "class": "com.fineapp.yogiyo.customview.SquareImageView",
+      "bounds": [
+        56,
+        1182,
+        706,
+        1832
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "치킨",
+      "resource-id": "com.fineapp.yogiyo:id/tv_category_0",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        56,
+        1720,
+        706,
+        1832
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.fineapp.yogiyo:id/btn_category_3",
+      "clickable": true,
+      "class": "com.fineapp.yogiyo.customview.SquareImageView",
+      "bounds": [
+        734,
+        1182,
+        1384,
+        1832
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "중국집",
+      "resource-id": "com.fineapp.yogiyo:id/tv_category_1",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        734,
+        1720,
+        1384,
+        1832
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.fineapp.yogiyo:id/btn_category_8",
+      "clickable": true,
+      "class": "com.fineapp.yogiyo.customview.SquareImageView",
+      "bounds": [
+        56,
+        1860,
+        706,
+        2392
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.fineapp.yogiyo:id/btn_category_4",
+      "clickable": true,
+      "class": "com.fineapp.yogiyo.customview.SquareImageView",
+      "bounds": [
+        734,
+        1860,
+        1384,
+        2392
+      ],
+      "componentLabel": "Image"
+    }
+  ]
+}

@@ -1,0 +1,274 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.zumobi.msnbc:id/toolbar",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            894,
+            196,
+            1090
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Image"
+        },
+        {
+          "resource-id": "com.zumobi.msnbc:id/searchContainer",
+          "children": [
+            {
+              "text": "U.S. news",
+              "resource-id": "com.zumobi.msnbc:id/title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "com.nbcnews.newsappcommon.views.NBCTextView",
+              "bounds": [
+                196,
+                894,
+                503,
+                1090
+              ],
+              "componentLabel": "Text Button"
+            }
+          ],
+          "ancestors": [
+            "android.widget.ViewAnimator",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.ViewSwitcher",
+          "bounds": [
+            196,
+            894,
+            964,
+            1090
+          ],
+          "componentLabel": "On/Off Switch"
+        },
+        {
+          "text": "",
+          "resource-id": "com.zumobi.msnbc:id/menu_save_item",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            964,
+            908,
+            1132,
+            1076
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "",
+          "resource-id": "com.zumobi.msnbc:id/menu_share",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1132,
+            908,
+            1300,
+            1076
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            908,
+            1440,
+            1076
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        894,
+        1440,
+        1090
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.zumobi.msnbc:id/ad",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.zumobi.msnbc:id/play_pause",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            0,
+            84,
+            1440,
+            894
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Ad Remaining Time: 14s",
+          "resource-id": "com.zumobi.msnbc:id/time_remaining",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            0,
+            828,
+            544,
+            894
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Visit Advertiser",
+          "resource-id": "com.zumobi.msnbc:id/visit_ad_button",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            0,
+            84,
+            1440,
+            280
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "android.view.SurfaceView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            1440,
+            894
+          ],
+          "clickable": true,
+          "class": "tv.freewheel.renderers.temporal.VideoAdView",
+          "componentLabel": "Advertisement"
+        }
+      ],
+      "ancestors": [
+        "com.nbcnews.newsappcommon.views.FreewheelAdView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.nbcnews.newsappui.views.MobileFreewheelAdView",
+      "bounds": [
+        0,
+        84,
+        1440,
+        894
+      ],
+      "componentLabel": "Advertisement"
+    },
+    {
+      "iconClass": "font",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.zumobi.msnbc:id/close",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        1272,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.webkit.WebView",
+        "android.widget.AbsoluteLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.zumobi.msnbc:id/webView",
+      "clickable": true,
+      "class": "com.nbcnews.newsappui.web.NBCWebView",
+      "bounds": [
+        0,
+        1090,
+        1440,
+        2392
+      ],
+      "componentLabel": "Web View"
+    }
+  ]
+}

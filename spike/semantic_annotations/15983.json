@@ -1,0 +1,494 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "de.schildbach.oeffi:id/action_bar",
+      "children": [
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "de.schildbach.oeffi:id/action_bar_menu_button",
+          "clickable": true,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            0,
+            84,
+            168,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "resource-id": "de.schildbach.oeffi:id/action_bar_titles",
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            168,
+            84,
+            936,
+            252
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "directions"
+        },
+        {
+          "iconClass": "star",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            936,
+            84,
+            1104,
+            252
+          ],
+          "clickable": true,
+          "class": "de.schildbach.oeffi.util.ToggleImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "close",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1104,
+            84,
+            1272,
+            252
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "expand_less",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1272,
+            84,
+            1440,
+            252
+          ],
+          "clickable": true,
+          "class": "de.schildbach.oeffi.util.ToggleImageButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "de.schildbach.oeffi.MyActionBar",
+      "bounds": [
+        0,
+        0,
+        1440,
+        252
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "bicycle carriage (beta)",
+      "resource-id": "de.schildbach.oeffi:id/directions_option_bike",
+      "ancestors": [
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.CheckBox",
+      "bounds": [
+        28,
+        942,
+        1412,
+        1054
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1237,
+        1440,
+        1486
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "today\n7:46 PM",
+          "resource-id": "de.schildbach.oeffi:id/directions_query_history_entry_trip",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.Button",
+          "bounds": [
+            864,
+            1237,
+            1440,
+            1486
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "Orsay,\nRacine",
+          "resource-id": "de.schildbach.oeffi:id/directions_query_history_entry_from",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "bounds": [
+            0,
+            1237,
+            863,
+            1381
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "Garches",
+          "resource-id": "de.schildbach.oeffi:id/directions_query_history_entry_to",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "bounds": [
+            0,
+            1381,
+            863,
+            1486
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "text": "Racine",
+      "ancestors": [
+        "android.widget.AutoCompleteTextView",
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "de.schildbach.oeffi.directions.LocationView$1",
+      "bounds": [
+        0,
+        287,
+        1440,
+        385
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "ancestors": [
+        "android.widget.AutoCompleteTextView",
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "de.schildbach.oeffi.directions.LocationView$1",
+      "bounds": [
+        0,
+        456,
+        1440,
+        554
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Garches",
+      "ancestors": [
+        "android.widget.AutoCompleteTextView",
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "de.schildbach.oeffi.directions.LocationView$1",
+      "bounds": [
+        0,
+        625,
+        1440,
+        723
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "label",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "de.schildbach.oeffi:id/directions_products_i",
+      "clickable": true,
+      "class": "de.schildbach.oeffi.util.ToggleImageButton",
+      "bounds": [
+        0,
+        759,
+        168,
+        927
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "group",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "de.schildbach.oeffi:id/directions_products_r",
+      "clickable": true,
+      "class": "de.schildbach.oeffi.util.ToggleImageButton",
+      "bounds": [
+        168,
+        759,
+        336,
+        927
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "refresh",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "de.schildbach.oeffi:id/directions_products_s",
+      "clickable": true,
+      "class": "de.schildbach.oeffi.util.ToggleImageButton",
+      "bounds": [
+        336,
+        759,
+        504,
+        927
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "de.schildbach.oeffi:id/directions_products_u",
+      "clickable": true,
+      "class": "de.schildbach.oeffi.util.ToggleImageButton",
+      "bounds": [
+        504,
+        759,
+        672,
+        927
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "de.schildbach.oeffi:id/directions_products_t",
+      "clickable": true,
+      "class": "de.schildbach.oeffi.util.ToggleImageButton",
+      "bounds": [
+        672,
+        759,
+        840,
+        927
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "iconClass": "emoji",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "de.schildbach.oeffi:id/directions_products_b",
+      "clickable": true,
+      "class": "de.schildbach.oeffi.util.ToggleImageButton",
+      "bounds": [
+        840,
+        759,
+        1008,
+        927
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "call",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "de.schildbach.oeffi:id/directions_products_p",
+      "clickable": true,
+      "class": "de.schildbach.oeffi.util.ToggleImageButton",
+      "bounds": [
+        1008,
+        759,
+        1176,
+        927
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "de.schildbach.oeffi:id/directions_products_f",
+      "clickable": true,
+      "class": "de.schildbach.oeffi.util.ToggleImageButton",
+      "bounds": [
+        1176,
+        759,
+        1344,
+        927
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "de.schildbach.oeffi:id/directions_products_c",
+      "clickable": true,
+      "class": "de.schildbach.oeffi.util.ToggleImageButton",
+      "bounds": [
+        1344,
+        759,
+        1440,
+        927
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Dep ↦",
+      "resource-id": "de.schildbach.oeffi:id/directions_time_dep_arr",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        0,
+        1069,
+        224,
+        1237
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "now",
+      "resource-id": "de.schildbach.oeffi:id/directions_time_1",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        225,
+        1069,
+        449,
+        1237
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Go ->",
+      "resource-id": "de.schildbach.oeffi:id/directions_go",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        1104,
+        1069,
+        1440,
+        1237
+      ],
+      "componentLabel": "Text Button"
+    }
+  ]
+}

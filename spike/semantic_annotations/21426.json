@@ -1,0 +1,315 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "org.torproject.android:id/toolbar",
+      "children": [
+        {
+          "text": "Orbot",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            210,
+            135,
+            385,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "org.torproject.android:id/left_drawer",
+      "children": [
+        {
+          "text": "Apps VPN Mode",
+          "resource-id": "org.torproject.android:id/btnVPN",
+          "ancestors": [
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.SwitchCompat",
+          "bounds": [
+            53,
+            333,
+            753,
+            428
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "Bridges",
+          "resource-id": "org.torproject.android:id/btnBridges",
+          "ancestors": [
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.SwitchCompat",
+          "bounds": [
+            53,
+            512,
+            753,
+            607
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "resource-id": "org.torproject.android:id/spinnerCountry",
+          "ancestors": [
+            "android.widget.Spinner",
+            "android.widget.AbsSpinner",
+            "android.widget.AdapterView",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatSpinner",
+          "bounds": [
+            53,
+            691,
+            823,
+            775
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "united states"
+        },
+        {
+          "text": "Connected to the Tor network",
+          "resource-id": "org.torproject.android:id/lblStatus",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            53,
+            1180,
+            822,
+            1303
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Download",
+          "resource-id": "org.torproject.android:id/trafficLabelDown",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            64,
+            859,
+            297,
+            930
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0kbps / 27KB",
+          "resource-id": "org.torproject.android:id/trafficDown",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            501,
+            859,
+            811,
+            930
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Upload",
+          "resource-id": "org.torproject.android:id/trafficLabelUp",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            64,
+            1014,
+            227,
+            1085
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0kbps / 26KB",
+          "resource-id": "org.torproject.android:id/trafficUp",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            501,
+            1014,
+            811,
+            1085
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        280,
+        875,
+        2392
+      ],
+      "componentLabel": "Drawer"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "org.torproject.android:id/imgStatus",
+      "clickable": false,
+      "class": "org.torproject.android.ui.ImageProgressView",
+      "bounds": [
+        0,
+        636,
+        1440,
+        1599
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Stop",
+      "resource-id": "org.torproject.android:id/btnStart",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        394,
+        1599,
+        702,
+        1739
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "stop"
+    },
+    {
+      "text": "Browse",
+      "resource-id": "org.torproject.android:id/btnBrowser",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        737,
+        1599,
+        1045,
+        1739
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "browse"
+    }
+  ]
+}

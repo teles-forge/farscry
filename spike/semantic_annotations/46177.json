@@ -1,0 +1,354 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.atlasappco.draftkingsdailyfootball:id/action_bar_container",
+      "children": [
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Lineups >",
+          "resource-id": "com.atlasappco.draftkingsdailyfootball:id/action_generateLineups",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.internal.view.menu.ActionMenuItemView",
+          "bounds": [
+            1083,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "Ownership *NEW*",
+          "resource-id": "com.atlasappco.draftkingsdailyfootball:id/custom_action_bar_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            278,
+            135,
+            938,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "info",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.atlasappco.draftkingsdailyfootball:id/ivInfo",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            938,
+            135,
+            1001,
+            198
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.internal.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.atlasappco.draftkingsdailyfootball:id/my_awesome_toolbar",
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        280,
+        1440,
+        476
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        28,
+        300,
+        476,
+        408
+      ],
+      "clickable": true,
+      "componentLabel": "Text Button",
+      "text": "Projected Ownership"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        496,
+        300,
+        944,
+        408
+      ],
+      "clickable": true,
+      "componentLabel": "Text Button",
+      "text": "Actual Ownership\nDouble Up"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        964,
+        300,
+        1412,
+        408
+      ],
+      "clickable": true,
+      "componentLabel": "Text Button",
+      "text": "Actual Ownership\nTournament"
+    },
+    {
+      "resource-id": "com.atlasappco.draftkingsdailyfootball:id/llGamesFilter",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        323,
+        2171,
+        640,
+        2385
+      ],
+      "componentLabel": "Text Button",
+      "text": "Slates"
+    },
+    {
+      "resource-id": "com.atlasappco.draftkingsdailyfootball:id/llEmpty",
+      "children": [
+        {
+          "iconClass": "warning",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            18,
+            450,
+            106,
+            538
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "There is no ownership data available currently.\n\nActual ownership data generally becomes available less than an hour after a contest ends. You can view previous ownership data by selecting a previous period in the filter bar below.",
+          "resource-id": "com.atlasappco.draftkingsdailyfootball:id/tvEmptyText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            106,
+            450,
+            1422,
+            703
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        432,
+        1440,
+        721
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "text": "Sport",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        42,
+        2171,
+        323,
+        2229
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "NBA",
+      "resource-id": "com.atlasappco.draftkingsdailyfootball:id/tvSportFilter",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        42,
+        2229,
+        323,
+        2385
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Period",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        640,
+        2171,
+        1115,
+        2229
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Mar 27, 2017\r\nUpdated 1 hour ago",
+      "resource-id": "com.atlasappco.draftkingsdailyfootball:id/tvPeriodFilter",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        640,
+        2229,
+        1115,
+        2385
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Position",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1115,
+        2171,
+        1433,
+        2229
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "ALL",
+      "resource-id": "com.atlasappco.draftkingsdailyfootball:id/tvPositionFilter",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1115,
+        2229,
+        1433,
+        2385
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "all"
+    }
+  ]
+}

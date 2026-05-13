@@ -1,0 +1,664 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.citymapper.app.release:id/toolbar",
+      "children": [
+        {
+          "iconClass": "close",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.o",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Edit Commute",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.ab",
+          "bounds": [
+            210,
+            140,
+            664,
+            224
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "resource-id": "com.citymapper.app.release:id/menu_save",
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.FrameLayout",
+          "bounds": [
+            1123,
+            84,
+            1440,
+            280
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "save"
+        }
+      ],
+      "ancestors": [
+        "android.support.v7.widget.Toolbar",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.citymapper.app.views.CitymapperToolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.citymapper.app.release:id/text",
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.citymapper.app.views.segmented.StyleableSegmentedFrameLayout",
+      "bounds": [
+        49,
+        280,
+        1391,
+        296
+      ],
+      "componentLabel": "Text Button",
+      "text": "Notification: ON"
+    },
+    {
+      "text": "Saved Commutes",
+      "resource-id": "com.citymapper.app.release:id/text",
+      "ancestors": [
+        "android.support.v7.widget.ab",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.citymapper.app.views.ProximaNovaTextView",
+      "bounds": [
+        0,
+        366,
+        1440,
+        489
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "com.citymapper.app.release:id/pill_toggle",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "to Work",
+          "bounds": [
+            49,
+            503,
+            720,
+            657
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ab",
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "to Home",
+          "bounds": [
+            720,
+            503,
+            1391,
+            657
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ab",
+          "componentLabel": "Text Button"
+        }
+      ],
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.citymapper.app.views.PillToggleView",
+      "bounds": [
+        49,
+        503,
+        1391,
+        657
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.citymapper.app.views.segmented.StyleableSegmentedFrameLayout",
+      "bounds": [
+        49,
+        713,
+        1391,
+        1126
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.citymapper.app.release:id/icons",
+          "clickable": false,
+          "class": "com.citymapper.app.common.views.RouteStepIconsView",
+          "bounds": [
+            105,
+            713,
+            1002,
+            885
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "close",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.citymapper.app.release:id/trip_edit",
+          "clickable": true,
+          "class": "android.support.v7.widget.q",
+          "bounds": [
+            1195,
+            769,
+            1335,
+            909
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "From Farsta",
+          "resource-id": "com.citymapper.app.release:id/additional_info_left",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.ab",
+          "bounds": [
+            105,
+            885,
+            1055,
+            951
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Notification",
+          "resource-id": "com.citymapper.app.release:id/commute_notification",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ab",
+          "bounds": [
+            105,
+            979,
+            479,
+            1080
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.citymapper.app.views.segmented.StyleableSegmentedFrameLayout",
+      "bounds": [
+        49,
+        1126,
+        1391,
+        1388
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.citymapper.app.release:id/icons",
+          "clickable": false,
+          "class": "com.citymapper.app.common.views.RouteStepIconsView",
+          "bounds": [
+            105,
+            1126,
+            482,
+            1290
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "arrow_upward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.citymapper.app.release:id/trip_move_up",
+          "clickable": true,
+          "class": "android.support.v7.widget.q",
+          "bounds": [
+            1055,
+            1178,
+            1195,
+            1318
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "close",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.citymapper.app.release:id/trip_edit",
+          "clickable": true,
+          "class": "android.support.v7.widget.q",
+          "bounds": [
+            1195,
+            1178,
+            1335,
+            1318
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "From Farsta",
+          "resource-id": "com.citymapper.app.release:id/additional_info_left",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.ab",
+          "bounds": [
+            105,
+            1290,
+            1055,
+            1356
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.citymapper.app.views.segmented.StyleableSegmentedFrameLayout",
+      "bounds": [
+        49,
+        1388,
+        1391,
+        1650
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.citymapper.app.release:id/icons",
+          "clickable": false,
+          "class": "com.citymapper.app.common.views.RouteStepIconsView",
+          "bounds": [
+            105,
+            1388,
+            602,
+            1552
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "arrow_upward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.citymapper.app.release:id/trip_move_up",
+          "clickable": true,
+          "class": "android.support.v7.widget.q",
+          "bounds": [
+            1055,
+            1440,
+            1195,
+            1580
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "close",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.citymapper.app.release:id/trip_edit",
+          "clickable": true,
+          "class": "android.support.v7.widget.q",
+          "bounds": [
+            1195,
+            1440,
+            1335,
+            1580
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "From Farsta",
+          "resource-id": "com.citymapper.app.release:id/additional_info_left",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.ab",
+          "bounds": [
+            105,
+            1552,
+            1055,
+            1618
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.citymapper.app.views.segmented.StyleableSegmentedFrameLayout",
+      "bounds": [
+        49,
+        1650,
+        1391,
+        1912
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.citymapper.app.release:id/icons",
+          "clickable": false,
+          "class": "com.citymapper.app.common.views.RouteStepIconsView",
+          "bounds": [
+            105,
+            1650,
+            228,
+            1814
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "arrow_upward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.citymapper.app.release:id/trip_move_up",
+          "clickable": true,
+          "class": "android.support.v7.widget.q",
+          "bounds": [
+            1055,
+            1702,
+            1195,
+            1842
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "close",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.citymapper.app.release:id/trip_edit",
+          "clickable": true,
+          "class": "android.support.v7.widget.q",
+          "bounds": [
+            1195,
+            1702,
+            1335,
+            1842
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Walk",
+          "resource-id": "com.citymapper.app.release:id/additional_info_left",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.ab",
+          "bounds": [
+            105,
+            1814,
+            1055,
+            1880
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "text": "Add Others",
+      "resource-id": "com.citymapper.app.release:id/text",
+      "ancestors": [
+        "android.support.v7.widget.ab",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.citymapper.app.views.ProximaNovaTextView",
+      "bounds": [
+        0,
+        1982,
+        1440,
+        2105
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.citymapper.app.views.segmented.StyleableSegmentedFrameLayout",
+      "bounds": [
+        49,
+        2105,
+        1391,
+        2367
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.citymapper.app.release:id/icons",
+          "clickable": false,
+          "class": "com.citymapper.app.common.views.RouteStepIconsView",
+          "bounds": [
+            105,
+            2105,
+            221,
+            2269
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "add",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.citymapper.app.release:id/trip_edit",
+          "clickable": true,
+          "class": "android.support.v7.widget.q",
+          "bounds": [
+            1195,
+            2157,
+            1335,
+            2297
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Uber",
+          "resource-id": "com.citymapper.app.release:id/additional_info_left",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.ab",
+          "bounds": [
+            105,
+            2269,
+            1055,
+            2335
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.citymapper.app.views.segmented.StyleableSegmentedFrameLayout",
+      "bounds": [
+        49,
+        2367,
+        1391,
+        2392
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.citymapper.app.release:id/icons",
+          "clickable": false,
+          "class": "com.citymapper.app.common.views.RouteStepIconsView",
+          "bounds": [
+            105,
+            2367,
+            1002,
+            2392
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

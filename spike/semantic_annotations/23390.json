@@ -1,0 +1,632 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.wtva.android.weather:id/application_root_view_background_holder_1",
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        0,
+        84,
+        1440,
+        2392
+      ],
+      "componentLabel": "Background Image"
+    },
+    {
+      "resource-id": "com.wtva.android.weather:id/ad_view_id",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.google.android.gms.ads.internal.webview.n",
+          "bounds": [
+            160,
+            84,
+            1280,
+            259
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.webkit.WebView",
+                "android.widget.AbsoluteLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                160,
+                84,
+                1280,
+                259
+              ],
+              "clickable": true,
+              "class": "com.google.android.gms.ads.internal.webview.o",
+              "componentLabel": "Web View"
+            }
+          ],
+          "componentLabel": "Web View"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.google.android.gms.ads.doubleclick.PublisherAdView",
+      "bounds": [
+        0,
+        84,
+        1440,
+        259
+      ],
+      "componentLabel": "Advertisement"
+    },
+    {
+      "iconClass": "arrow_backward",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.wtva.android.weather:id/configuration_screen_header_close_button",
+      "clickable": true,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        35,
+        129,
+        119,
+        213
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Settings",
+      "resource-id": "com.wtva.android.weather:id/configuration_screen_header_title",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        119,
+        84,
+        1440,
+        259
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Weather Notifications",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        0,
+        263,
+        1440,
+        357
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Alert Location",
+      "resource-id": "com.wtva.android.weather:id/selected_alert_location_title",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        0,
+        392,
+        453,
+        482
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Tupelo, MS",
+      "resource-id": "com.wtva.android.weather:id/selected_alert_location",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        0,
+        496,
+        276,
+        562
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Severe Weather Alerts",
+      "resource-id": "com.wtva.android.weather:id/severe_weather_alerts_title",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        0,
+        632,
+        700,
+        722
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Issued by the US National Weather Service.",
+      "resource-id": "com.wtva.android.weather:id/severe_weather_alerts",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        0,
+        736,
+        985,
+        802
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "",
+      "resource-id": "com.wtva.android.weather:id/settings_severe_weather_alerts_switch",
+      "ancestors": [
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.wsi.android.weather.ui.widget.switchbutton.SwitchButton",
+      "bounds": [
+        1205,
+        631,
+        1440,
+        803
+      ],
+      "componentLabel": "On/Off Switch"
+    },
+    {
+      "text": "Station Alerts",
+      "resource-id": "com.wtva.android.weather:id/station_alerts_title",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        0,
+        872,
+        438,
+        962
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Weather alerts issued by your local TV station.",
+      "resource-id": "com.wtva.android.weather:id/station_alerts",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        0,
+        976,
+        1052,
+        1042
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "com.wtva.android.weather:id/settings_station_alerts_switch",
+      "ancestors": [
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.wsi.android.weather.ui.widget.switchbutton.SwitchButton",
+      "bounds": [
+        1205,
+        871,
+        1440,
+        1043
+      ],
+      "componentLabel": "On/Off Switch"
+    },
+    {
+      "text": "Temperature Display",
+      "resource-id": "com.wtva.android.weather:id/temperature_display_title",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        0,
+        1112,
+        659,
+        1202
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Display the current temperature for your selected Alert Location in the status bar and notifications drawer.",
+      "resource-id": "com.wtva.android.weather:id/temperature_display_description",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        0,
+        1216,
+        1230,
+        1396
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "",
+      "resource-id": "com.wtva.android.weather:id/settings_temperature_display_switch",
+      "ancestors": [
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.wsi.android.weather.ui.widget.switchbutton.SwitchButton",
+      "bounds": [
+        1205,
+        1168,
+        1440,
+        1340
+      ],
+      "componentLabel": "On/Off Switch"
+    },
+    {
+      "text": "Lock Screen Weather Banner",
+      "resource-id": "com.wtva.android.weather:id/lock_screen_weather_banner_title",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        0,
+        1466,
+        900,
+        1556
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "lock screen weather banner"
+    },
+    {
+      "text": "Displays weather for your selected Alert Location on the lock screen.",
+      "resource-id": "com.wtva.android.weather:id/lock_screen_weather_banner_description",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        0,
+        1570,
+        1230,
+        1693
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "",
+      "resource-id": "com.wtva.android.weather:id/settings_lock_screen_weather_banner_switch",
+      "ancestors": [
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.wsi.android.weather.ui.widget.switchbutton.SwitchButton",
+      "bounds": [
+        1205,
+        1493,
+        1440,
+        1665
+      ],
+      "componentLabel": "On/Off Switch"
+    },
+    {
+      "text": "Show Alerts in Status Bar",
+      "resource-id": "com.wtva.android.weather:id/show_alerts_int_status_bar_title",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        0,
+        1763,
+        787,
+        1853
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "",
+      "resource-id": "com.wtva.android.weather:id/settings_show_alerts_in_status_bar_switch",
+      "ancestors": [
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.wsi.android.weather.ui.widget.switchbutton.SwitchButton",
+      "bounds": [
+        1205,
+        1728,
+        1440,
+        1900
+      ],
+      "componentLabel": "On/Off Switch"
+    },
+    {
+      "resource-id": "com.wtva.android.weather:id/settings_other_checkbox_use_sounds",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            105,
+            1902,
+            175,
+            1972
+          ],
+          "clickable": false,
+          "class": "com.wsi.android.weather.ui.widget.checkbox.CheckBox$Check",
+          "componentLabel": "Checkbox"
+        },
+        {
+          "text": "Sounds",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            205,
+            1894,
+            413,
+            1979
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "com.wsi.android.weather.ui.widget.checkbox.CustomView",
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.wsi.android.weather.ui.widget.checkbox.CheckBox",
+      "bounds": [
+        105,
+        1853,
+        413,
+        2021
+      ],
+      "componentLabel": "Checkbox"
+    },
+    {
+      "resource-id": "com.wtva.android.weather:id/settings_other_checkbox_use_lights",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            105,
+            2070,
+            175,
+            2140
+          ],
+          "clickable": false,
+          "class": "com.wsi.android.weather.ui.widget.checkbox.CheckBox$Check",
+          "componentLabel": "Checkbox"
+        },
+        {
+          "text": "Lights",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            205,
+            2062,
+            371,
+            2147
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "com.wsi.android.weather.ui.widget.checkbox.CustomView",
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.wsi.android.weather.ui.widget.checkbox.CheckBox",
+      "bounds": [
+        105,
+        2021,
+        371,
+        2189
+      ],
+      "componentLabel": "Checkbox"
+    },
+    {
+      "resource-id": "com.wtva.android.weather:id/settings_other_checkbox_use_vibration",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            105,
+            2238,
+            175,
+            2308
+          ],
+          "clickable": false,
+          "class": "com.wsi.android.weather.ui.widget.checkbox.CheckBox$Check",
+          "componentLabel": "Checkbox"
+        },
+        {
+          "text": "Vibration",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            205,
+            2230,
+            461,
+            2315
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "com.wsi.android.weather.ui.widget.checkbox.CustomView",
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.wsi.android.weather.ui.widget.checkbox.CheckBox",
+      "bounds": [
+        105,
+        2189,
+        461,
+        2357
+      ],
+      "componentLabel": "Checkbox"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.wtva.android.weather:id/station_logo",
+      "clickable": true,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        0,
+        259,
+        350,
+        382
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "resource-id": "com.wtva.android.weather:id/menu_button",
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.wsi.android.framework.app.ui.widget.MenuButton",
+      "bounds": [
+        1299,
+        259,
+        1440,
+        382
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "menu"
+    }
+  ]
+}

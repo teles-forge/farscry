@@ -1,0 +1,251 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "android:id/action_bar_container",
+      "children": [
+        {
+          "text": "AquaMail",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            56,
+            135,
+            355,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "refresh",
+          "resource-id": "org.kman.AquaMail:id/account_list_menu_sync_all",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.android.internal.view.menu.ActionMenuItemView",
+          "bounds": [
+            964,
+            98,
+            1132,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "org.kman.AquaMail:id/account_list_menu_global_search",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.android.internal.view.menu.ActionMenuItemView",
+          "bounds": [
+            1132,
+            98,
+            1300,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.android.internal.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "org.kman.AquaMail.view.FloatingActionButton",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        1167,
+        2077,
+        1405,
+        2315
+      ],
+      "clickable": true,
+      "class": "org.kman.AquaMail.view.FloatingComposeButton",
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "org.kman.AquaMail.view.CheckableLinearLayout",
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "org.kman.AquaMail.view.AccountListSmartItemLayout",
+      "bounds": [
+        0,
+        280,
+        1440,
+        448
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Smart Folder",
+          "resource-id": "org.kman.AquaMail:id/folder_name",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            140,
+            280,
+            1328,
+            448
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0",
+          "resource-id": "org.kman.AquaMail:id/folder_msg_count",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "org.kman.AquaMail.view.FolderMessageCountView",
+          "bounds": [
+            1356,
+            321,
+            1391,
+            406
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "org.kman.AquaMail:id/account_root",
+      "children": [
+        {
+          "iconClass": "refresh",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.kman.AquaMail:id/account_refresh_button",
+          "clickable": true,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1272,
+            456,
+            1440,
+            624
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "appcrawler2@gmail.com",
+          "resource-id": "org.kman.AquaMail:id/account_name",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            140,
+            471,
+            1272,
+            556
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "---",
+          "resource-id": "org.kman.AquaMail:id/account_last_sync",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            140,
+            556,
+            1272,
+            609
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "org.kman.AquaMail.view.CheckableRelativeLayout",
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "org.kman.AquaMail.view.AccountListAccountItemLayout",
+      "bounds": [
+        0,
+        452,
+        1440,
+        624
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

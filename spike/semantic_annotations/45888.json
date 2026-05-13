@@ -1,0 +1,991 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.eumlab.android.prometronome:id/downPanelBg",
+      "clickable": false,
+      "class": "com.eumlab.prometronome.downpanel.DownPanelBg",
+      "bounds": [
+        0,
+        84,
+        135,
+        2392
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.eumlab.android.prometronome:id/upPanel",
+      "clickable": false,
+      "class": "com.eumlab.prometronome.uppanel.UpPanelBg",
+      "bounds": [
+        0,
+        84,
+        1440,
+        2067
+      ],
+      "componentLabel": "Background Image"
+    },
+    {
+      "text": "",
+      "resource-id": "com.eumlab.android.prometronome:id/presets_button",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.eumlab.prometronome.downpanel.PresetsButton",
+      "bounds": [
+        0,
+        963,
+        90,
+        1167
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "TAP",
+      "resource-id": "com.eumlab.android.prometronome:id/tappingButton",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.eumlab.prometronome.downpanel.TapButton",
+      "bounds": [
+        0,
+        2091,
+        79,
+        2324
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.eumlab.android.prometronome:id/presets_panel_bg",
+      "clickable": false,
+      "class": "com.eumlab.prometronome.presets.PSBackground",
+      "bounds": [
+        135,
+        892,
+        1440,
+        2391
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        135,
+        2237,
+        1440,
+        2391
+      ],
+      "clickable": true,
+      "componentLabel": "Text Button",
+      "text": "Auto Switch"
+    },
+    {
+      "iconClass": "info",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.eumlab.android.prometronome:id/ibtn",
+      "clickable": true,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        635,
+        84,
+        780,
+        225
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "help",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.eumlab.android.prometronome:id/qbtn",
+      "clickable": true,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        817,
+        84,
+        962,
+        225
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "3",
+      "resource-id": "com.eumlab.android.prometronome:id/tempoNoteIndicator",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.eumlab.prometronome.uppanel.TempoNoteIndicator",
+      "bounds": [
+        158,
+        345,
+        214,
+        487
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "126",
+      "resource-id": "com.eumlab.android.prometronome:id/tempoText",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.eumlab.prometronome.uppanel.TempoTextView",
+      "bounds": [
+        228,
+        352,
+        415,
+        483
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Allegro",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.eumlab.prometronome.uppanel.TempoNameView",
+      "bounds": [
+        415,
+        367,
+        545,
+        472
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "7/4",
+      "resource-id": "com.eumlab.android.prometronome:id/tsText",
+      "ancestors": [
+        "com.eumlab.prometronome.ui.l",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.eumlab.prometronome.uppanel.UPTimeSignature",
+      "bounds": [
+        693,
+        352,
+        988,
+        483
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "3",
+      "resource-id": "com.eumlab.android.prometronome:id/subdivText",
+      "ancestors": [
+        "com.eumlab.prometronome.ui.k",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.eumlab.prometronome.uppanel.SubdivTextView",
+      "bounds": [
+        1015,
+        356,
+        1355,
+        498
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        220,
+        277,
+        1301,
+        363
+      ],
+      "clickable": false,
+      "class": "com.eumlab.prometronome.uppanel.Signs",
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        422,
+        914,
+        1153,
+        1068
+      ],
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Default",
+      "resource-id": "com.eumlab.android.prometronome:id/presets_title",
+      "ancestors": [
+        "com.eumlab.prometronome.presets.PSTitleText",
+        "com.eumlab.prometronome.blackpixels.BPTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.eumlab.prometronome.presets.PSLTitleText",
+      "bounds": [
+        633,
+        927,
+        942,
+        1055
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "default"
+    },
+    {
+      "ancestors": [
+        "com.eumlab.prometronome.ui.b",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        942,
+        961,
+        1069,
+        1020
+      ],
+      "clickable": false,
+      "class": "com.eumlab.prometronome.presets.PSProFlag",
+      "componentLabel": "Image"
+    },
+    {
+      "iconClass": "thumbs_up",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        245,
+        903,
+        422,
+        1080
+      ],
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "file_download",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        272,
+        930,
+        395,
+        1053
+      ],
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "edit",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        1153,
+        903,
+        1330,
+        1080
+      ],
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        1180,
+        930,
+        1303,
+        1053
+      ],
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        1003,
+        104,
+        1261,
+        203
+      ],
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "componentLabel": "Image"
+    },
+    {
+      "text": "20:48",
+      "ancestors": [
+        "com.eumlab.prometronome.blackpixels.BPTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.eumlab.prometronome.timer.TMClock",
+      "bounds": [
+        1041,
+        113,
+        1223,
+        194
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.eumlab.android.prometronome:id/rotateScreenBtnBg",
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        1286,
+        104,
+        1397,
+        203
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.eumlab.android.prometronome:id/rotateScreenBtn",
+      "clickable": true,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        1271,
+        84,
+        1416,
+        225
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.eumlab.prometronome.presets.PSListItem",
+      "bounds": [
+        144,
+        1090,
+        1440,
+        1358
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "3",
+          "resource-id": "com.eumlab.android.prometronome:id/preset_li_note_sym",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.eumlab.prometronome.blackpixels.BPTextView",
+          "bounds": [
+            144,
+            1153,
+            231,
+            1294
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "126",
+          "resource-id": "com.eumlab.android.prometronome:id/preset_li_tempo",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.eumlab.prometronome.blackpixels.BPTextView",
+          "bounds": [
+            231,
+            1155,
+            443,
+            1293
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "7/4",
+          "resource-id": "com.eumlab.android.prometronome:id/preset_li_ts",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.eumlab.prometronome.blackpixels.BPTextView",
+          "bounds": [
+            443,
+            1090,
+            561,
+            1224
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Money - Pink Floyd",
+          "resource-id": "com.eumlab.android.prometronome:id/preset_li_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.eumlab.prometronome.blackpixels.BPTextView",
+          "bounds": [
+            443,
+            1224,
+            1156,
+            1358
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "4x",
+          "resource-id": "com.eumlab.android.prometronome:id/preset_li_bars",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.eumlab.prometronome.blackpixels.BPTextView",
+          "bounds": [
+            1346,
+            1090,
+            1440,
+            1208
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.eumlab.prometronome.presets.PSListItem",
+      "bounds": [
+        144,
+        1362,
+        1440,
+        1630
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "3",
+          "resource-id": "com.eumlab.android.prometronome:id/preset_li_note_sym",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.eumlab.prometronome.blackpixels.BPTextView",
+          "bounds": [
+            144,
+            1425,
+            231,
+            1566
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "74",
+          "resource-id": "com.eumlab.android.prometronome:id/preset_li_tempo",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.eumlab.prometronome.blackpixels.BPTextView",
+          "bounds": [
+            231,
+            1427,
+            427,
+            1565
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "4/4",
+          "resource-id": "com.eumlab.android.prometronome:id/preset_li_ts",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.eumlab.prometronome.blackpixels.BPTextView",
+          "bounds": [
+            427,
+            1362,
+            545,
+            1496
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Hey Jude - Beatles",
+          "resource-id": "com.eumlab.android.prometronome:id/preset_li_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.eumlab.prometronome.blackpixels.BPTextView",
+          "bounds": [
+            427,
+            1496,
+            1134,
+            1630
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "4x",
+          "resource-id": "com.eumlab.android.prometronome:id/preset_li_bars",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.eumlab.prometronome.blackpixels.BPTextView",
+          "bounds": [
+            1346,
+            1362,
+            1440,
+            1480
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.eumlab.prometronome.presets.PSListItem",
+      "bounds": [
+        144,
+        1634,
+        1440,
+        1902
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "3",
+          "resource-id": "com.eumlab.android.prometronome:id/preset_li_note_sym",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.eumlab.prometronome.blackpixels.BPTextView",
+          "bounds": [
+            144,
+            1697,
+            231,
+            1838
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "300",
+          "resource-id": "com.eumlab.android.prometronome:id/preset_li_tempo",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.eumlab.prometronome.blackpixels.BPTextView",
+          "bounds": [
+            231,
+            1699,
+            443,
+            1837
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "8/4",
+          "resource-id": "com.eumlab.android.prometronome:id/preset_li_ts",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.eumlab.prometronome.blackpixels.BPTextView",
+          "bounds": [
+            443,
+            1634,
+            561,
+            1768
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Cajon Rhythm",
+          "resource-id": "com.eumlab.android.prometronome:id/preset_li_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.eumlab.prometronome.blackpixels.BPTextView",
+          "bounds": [
+            443,
+            1768,
+            971,
+            1902
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "4x",
+          "resource-id": "com.eumlab.android.prometronome:id/preset_li_bars",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.eumlab.prometronome.blackpixels.BPTextView",
+          "bounds": [
+            1346,
+            1634,
+            1440,
+            1752
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.eumlab.prometronome.presets.PSListItem",
+      "bounds": [
+        144,
+        1906,
+        1440,
+        2174
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "3",
+          "resource-id": "com.eumlab.android.prometronome:id/preset_li_note_sym",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.eumlab.prometronome.blackpixels.BPTextView",
+          "bounds": [
+            144,
+            1969,
+            231,
+            2110
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "120",
+          "resource-id": "com.eumlab.android.prometronome:id/preset_li_tempo",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.eumlab.prometronome.blackpixels.BPTextView",
+          "bounds": [
+            231,
+            1971,
+            443,
+            2109
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "4/4",
+          "resource-id": "com.eumlab.android.prometronome:id/preset_li_ts",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.eumlab.prometronome.blackpixels.BPTextView",
+          "bounds": [
+            443,
+            1906,
+            561,
+            2040
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Sub Divsion Example",
+          "resource-id": "com.eumlab.android.prometronome:id/preset_li_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.eumlab.prometronome.blackpixels.BPTextView",
+          "bounds": [
+            443,
+            2040,
+            1228,
+            2174
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "4x",
+          "resource-id": "com.eumlab.android.prometronome:id/preset_li_bars",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.eumlab.prometronome.blackpixels.BPTextView",
+          "bounds": [
+            1346,
+            1906,
+            1440,
+            2024
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.eumlab.prometronome.presets.PSListItem",
+      "bounds": [
+        144,
+        2178,
+        1440,
+        2391
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "3",
+          "resource-id": "com.eumlab.android.prometronome:id/preset_li_note_sym",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.eumlab.prometronome.blackpixels.BPTextView",
+          "bounds": [
+            144,
+            2241,
+            231,
+            2382
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "120",
+          "resource-id": "com.eumlab.android.prometronome:id/preset_li_tempo",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.eumlab.prometronome.blackpixels.BPTextView",
+          "bounds": [
+            231,
+            2243,
+            443,
+            2381
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "4/4",
+          "resource-id": "com.eumlab.android.prometronome:id/preset_li_ts",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.eumlab.prometronome.blackpixels.BPTextView",
+          "bounds": [
+            443,
+            2178,
+            561,
+            2312
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Polyrhythm Example",
+          "resource-id": "com.eumlab.android.prometronome:id/preset_li_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.eumlab.prometronome.blackpixels.BPTextView",
+          "bounds": [
+            443,
+            2312,
+            1222,
+            2391
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "4x",
+          "resource-id": "com.eumlab.android.prometronome:id/preset_li_bars",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.eumlab.prometronome.blackpixels.BPTextView",
+          "bounds": [
+            1346,
+            2178,
+            1440,
+            2296
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

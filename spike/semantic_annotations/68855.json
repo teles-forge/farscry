@@ -1,0 +1,879 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.hundred.qibla:id/toolbar",
+      "children": [
+        {
+          "text": "Quran",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            210,
+            135,
+            398,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "book",
+          "resource-id": "com.hundred.qibla:id/last_page",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            963,
+            98,
+            1131,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "com.hundred.qibla:id/search",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1131,
+            98,
+            1300,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.hundred.qibla:id/indicator",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "Surahs",
+          "bounds": [
+            0,
+            280,
+            480,
+            449
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "Juz'",
+          "bounds": [
+            480,
+            280,
+            960,
+            449
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "Bookmarks",
+          "bounds": [
+            960,
+            280,
+            1440,
+            449
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button"
+        }
+      ],
+      "ancestors": [
+        "android.widget.HorizontalScrollView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.hundred.qibla.quran.widgets.SlidingTabLayout",
+      "bounds": [
+        0,
+        280,
+        1440,
+        449
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.hundred.qibla.quran.widgets.QuranHeaderView",
+      "bounds": [
+        0,
+        449,
+        1440,
+        617
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Juz' 1",
+          "resource-id": "com.hundred.qibla:id/title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            495,
+            201,
+            571
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "1",
+          "resource-id": "com.hundred.qibla:id/pageNumber",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1353,
+            495,
+            1384,
+            571
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        617,
+        1440,
+        869
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "1",
+          "resource-id": "com.hundred.qibla:id/suraNumber",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            687,
+            252,
+            799
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "1",
+          "resource-id": "com.hundred.qibla:id/pageNumber",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1356,
+            710,
+            1384,
+            776
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Surat Al-Fatihah",
+          "resource-id": "com.hundred.qibla:id/title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            252,
+            665,
+            646,
+            741
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Makki - 7 verses",
+          "resource-id": "com.hundred.qibla:id/metadata",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            252,
+            755,
+            605,
+            821
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        869,
+        1440,
+        1121
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "2",
+          "resource-id": "com.hundred.qibla:id/suraNumber",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            939,
+            252,
+            1051
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "2",
+          "resource-id": "com.hundred.qibla:id/pageNumber",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1356,
+            962,
+            1384,
+            1028
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Surat Al-Baqarah",
+          "resource-id": "com.hundred.qibla:id/title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            252,
+            917,
+            668,
+            993
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Madani - 286 verses",
+          "resource-id": "com.hundred.qibla:id/metadata",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            252,
+            1007,
+            693,
+            1073
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.hundred.qibla.quran.widgets.QuranHeaderView",
+      "bounds": [
+        0,
+        1121,
+        1440,
+        1289
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Juz' 2",
+          "resource-id": "com.hundred.qibla:id/title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            1167,
+            201,
+            1243
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "22",
+          "resource-id": "com.hundred.qibla:id/pageNumber",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1322,
+            1167,
+            1384,
+            1243
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.hundred.qibla.quran.widgets.QuranHeaderView",
+      "bounds": [
+        0,
+        1289,
+        1440,
+        1457
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Juz' 3",
+          "resource-id": "com.hundred.qibla:id/title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            1335,
+            201,
+            1411
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "42",
+          "resource-id": "com.hundred.qibla:id/pageNumber",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1322,
+            1335,
+            1384,
+            1411
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1457,
+        1440,
+        1709
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "3",
+          "resource-id": "com.hundred.qibla:id/suraNumber",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            1527,
+            252,
+            1639
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "50",
+          "resource-id": "com.hundred.qibla:id/pageNumber",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1328,
+            1550,
+            1384,
+            1616
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Surat Aal-E-Imran",
+          "resource-id": "com.hundred.qibla:id/title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            252,
+            1505,
+            682,
+            1581
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Madani - 200 verses",
+          "resource-id": "com.hundred.qibla:id/metadata",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            252,
+            1595,
+            693,
+            1661
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.hundred.qibla.quran.widgets.QuranHeaderView",
+      "bounds": [
+        0,
+        1709,
+        1440,
+        1877
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Juz' 4",
+          "resource-id": "com.hundred.qibla:id/title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            1755,
+            201,
+            1831
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "62",
+          "resource-id": "com.hundred.qibla:id/pageNumber",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1322,
+            1755,
+            1384,
+            1831
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1877,
+        1440,
+        2129
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "4",
+          "resource-id": "com.hundred.qibla:id/suraNumber",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            1947,
+            252,
+            2059
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "77",
+          "resource-id": "com.hundred.qibla:id/pageNumber",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1328,
+            1970,
+            1384,
+            2036
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Surat An-Nisa'",
+          "resource-id": "com.hundred.qibla:id/title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            252,
+            1925,
+            600,
+            2001
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Madani - 176 verses",
+          "resource-id": "com.hundred.qibla:id/metadata",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            252,
+            2015,
+            693,
+            2081
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.hundred.qibla.quran.widgets.QuranHeaderView",
+      "bounds": [
+        0,
+        2129,
+        1440,
+        2297
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Juz' 5",
+          "resource-id": "com.hundred.qibla:id/title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            2175,
+            201,
+            2251
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "82",
+          "resource-id": "com.hundred.qibla:id/pageNumber",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1322,
+            2175,
+            1384,
+            2251
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.hundred.qibla.quran.widgets.QuranHeaderView",
+      "bounds": [
+        0,
+        2297,
+        1440,
+        2392
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Juz' 6",
+          "resource-id": "com.hundred.qibla:id/title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            2343,
+            201,
+            2392
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "102",
+          "resource-id": "com.hundred.qibla:id/pageNumber",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1291,
+            2343,
+            1384,
+            2392
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

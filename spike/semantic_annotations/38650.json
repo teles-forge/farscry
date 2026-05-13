@@ -1,0 +1,562 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "android:id/action_bar_container",
+      "children": [
+        {
+          "iconClass": "star",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.tvshowfavs:id/fav_btn",
+          "clickable": true,
+          "class": "com.tvshowfavs.ui.widget.ListButton",
+          "bounds": [
+            1258,
+            98,
+            1426,
+            238
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "android:id/home",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            43,
+            112,
+            176,
+            224
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Game of Thrones",
+          "resource-id": "android:id/action_bar_title",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            190,
+            125,
+            616,
+            210
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.android.internal.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        252
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "android:id/split_action_bar",
+      "children": [
+        {
+          "iconClass": "share",
+          "resource-id": "com.tvshowfavs:id/menu_share",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.android.internal.view.menu.ActionMenuItemView",
+          "bounds": [
+            0,
+            2224,
+            205,
+            2392
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "launch",
+          "resource-id": "com.tvshowfavs:id/menu_export_upcoming_episodes",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.android.internal.view.menu.ActionMenuItemView",
+          "bounds": [
+            411,
+            2224,
+            616,
+            2392
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "sliders",
+          "resource-id": "com.tvshowfavs:id/menu_show_preferences",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.android.internal.view.menu.ActionMenuItemView",
+          "bounds": [
+            822,
+            2224,
+            1027,
+            2392
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1235,
+            2224,
+            1440,
+            2392
+          ],
+          "clickable": true,
+          "class": "android.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.android.internal.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        2224,
+        1440,
+        2392
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.tvshowfavs:id/ad",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.google.android.gms.ads.internal.webview.n",
+          "bounds": [
+            0,
+            2049,
+            1440,
+            2224
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.webkit.WebView",
+                "android.widget.AbsoluteLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                0,
+                2049,
+                1440,
+                2224
+              ],
+              "clickable": true,
+              "class": "com.google.android.gms.ads.internal.webview.o",
+              "componentLabel": "Web View"
+            }
+          ],
+          "componentLabel": "Web View"
+        }
+      ],
+      "ancestors": [
+        "com.google.android.gms.ads.BaseAdView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.google.android.gms.ads.AdView",
+      "bounds": [
+        0,
+        2049,
+        1440,
+        2224
+      ],
+      "componentLabel": "Advertisement"
+    },
+    {
+      "resource-id": "com.tvshowfavs:id/indicator",
+      "ancestors": [
+        "android.widget.HorizontalScrollView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.viewpagerindicator.TabPageIndicator",
+      "bounds": [
+        0,
+        252,
+        1440,
+        393
+      ],
+      "componentLabel": "Pager Indicator"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "Next Unwatched",
+      "bounds": [
+        28,
+        1710,
+        459,
+        1776
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "expand_less",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.tvshowfavs:id/expand_collapse_icon",
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        1349,
+        1711,
+        1412,
+        1774
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Returning Series",
+      "resource-id": "com.tvshowfavs:id/status",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        294,
+        393,
+        644,
+        414
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and the icy horrors beyond.",
+      "resource-id": "com.tvshowfavs:id/description",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        28,
+        647,
+        1412,
+        1026
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "Rating",
+      "bounds": [
+        28,
+        1026,
+        201,
+        1092
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "Genres",
+      "bounds": [
+        28,
+        1204,
+        213,
+        1270
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Adventure, Drama, Fantasy",
+      "resource-id": "com.tvshowfavs:id/genres",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        28,
+        1270,
+        611,
+        1364
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "Classification",
+      "bounds": [
+        28,
+        1364,
+        410,
+        1430
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Scripted",
+      "resource-id": "com.tvshowfavs:id/classification",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        28,
+        1430,
+        209,
+        1524
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "Content Rating",
+      "bounds": [
+        28,
+        1524,
+        435,
+        1590
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "componentLabel": "Text"
+    },
+    {
+      "text": "TV-MA",
+      "resource-id": "com.tvshowfavs:id/content_rating",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        28,
+        1590,
+        176,
+        1682
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "(1-1) Winter Is Coming",
+      "resource-id": "com.tvshowfavs:id/text1",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        14,
+        1818,
+        640,
+        1903
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Aired Apr 18, 2011 ",
+      "resource-id": "com.tvshowfavs:id/text2",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        14,
+        1903,
+        417,
+        1969
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "com.android.volley.toolbox.NetworkImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.tvshowfavs:id/poster",
+      "clickable": true,
+      "class": "com.tvshowfavs.ui.widget.AnimatedNetworkImageView",
+      "bounds": [
+        28,
+        393,
+        266,
+        414
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "",
+      "resource-id": "com.tvshowfavs:id/poster_btn",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        28,
+        393,
+        266,
+        414
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "No tags",
+      "resource-id": "android:id/empty",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        610,
+        488,
+        829,
+        573
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "9.5/10",
+      "resource-id": "com.tvshowfavs:id/rating_value",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        616,
+        1092,
+        761,
+        1165
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "label",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.tvshowfavs:id/add_tag_btn",
+      "clickable": true,
+      "class": "android.widget.ImageButton",
+      "bounds": [
+        0,
+        443,
+        168,
+        611
+      ],
+      "componentLabel": "Icon"
+    }
+  ]
+}

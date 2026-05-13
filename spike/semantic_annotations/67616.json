@@ -1,0 +1,469 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.guardian:id/toolbar",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.guardian:id/actionbar_item_add_to_home_button",
+          "clickable": true,
+          "class": "com.guardian.ui.views.IconImageView",
+          "bounds": [
+            196,
+            105,
+            336,
+            245
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "us politics",
+          "resource-id": "com.guardian:id/actionbar_item_text_center",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            350,
+            84,
+            1440,
+            266
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.guardian:id/actionbar_home_button",
+          "clickable": true,
+          "class": "com.guardian.ui.views.IconImageView",
+          "bounds": [
+            28,
+            105,
+            168,
+            245
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        266
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.widget.GridLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.guardian.ui.layout.BlockGridLayout",
+      "bounds": [
+        0,
+        266,
+        1440,
+        988
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "com.guardian.ui.views.cards.BaseArticleView",
+            "com.guardian.ui.views.cards.BaseContentView",
+            "com.guardian.ui.views.cards.BaseCardView",
+            "com.guardian.ui.views.cards.CardLinearLayout",
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.guardian.ui.views.cards.ArticleCardView",
+          "bounds": [
+            59,
+            266,
+            1382,
+            931
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.guardian:id/card_image",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                59,
+                266,
+                1382,
+                927
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "componentLabel": "Card"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.GridLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.guardian.ui.layout.BlockGridLayout",
+      "bounds": [
+        0,
+        988,
+        1440,
+        2030
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "com.guardian.ui.views.cards.BaseCardView",
+            "com.guardian.ui.views.cards.CardLinearLayout",
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.guardian.ui.views.cards.AdvertCardView",
+          "bounds": [
+            0,
+            988,
+            1440,
+            2030
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "text": "Advertisement",
+              "ancestors": [
+                "com.guardian.ui.views.AntiAliasingTextView",
+                "com.guardian.ui.views.EllipsizingTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.guardian.ui.views.GuardianTextView",
+              "bounds": [
+                57,
+                995,
+                392,
+                1098
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Hide",
+              "resource-id": "com.guardian:id/advert_hide",
+              "ancestors": [
+                "com.guardian.ui.views.AntiAliasingTextView",
+                "com.guardian.ui.views.EllipsizingTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "com.guardian.ui.views.GuardianTextView",
+              "bounds": [
+                1223,
+                1016,
+                1328,
+                1077
+              ],
+              "componentLabel": "Text Button",
+              "textButtonClass": "hide"
+            },
+            {
+              "iconClass": "close",
+              "resource-id": "com.guardian:id/advert_hide_button",
+              "ancestors": [
+                "com.guardian.ui.views.AntiAliasingTextView",
+                "com.guardian.ui.views.EllipsizingTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "com.guardian.ui.views.IconTextView",
+              "bounds": [
+                1328,
+                1013,
+                1383,
+                1080
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "com.google.android.gms.ads.doubleclick.PublisherAdView",
+              "bounds": [
+                0,
+                1098,
+                1440,
+                1973
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "android.widget.FrameLayout",
+                    "android.view.ViewGroup",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "class": "com.google.android.gms.ads.internal.webview.n",
+                  "bounds": [
+                    195,
+                    1098,
+                    1245,
+                    1973
+                  ],
+                  "clickable": false,
+                  "children": [
+                    {
+                      "ancestors": [
+                        "android.webkit.WebView",
+                        "android.widget.AbsoluteLayout",
+                        "android.view.ViewGroup",
+                        "android.view.View",
+                        "java.lang.Object"
+                      ],
+                      "bounds": [
+                        195,
+                        1098,
+                        1245,
+                        1973
+                      ],
+                      "clickable": true,
+                      "class": "com.google.android.gms.ads.internal.webview.o",
+                      "componentLabel": "Web View"
+                    }
+                  ],
+                  "componentLabel": "Web View"
+                }
+              ],
+              "componentLabel": "Advertisement"
+            }
+          ],
+          "componentLabel": "Card"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.GridLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.guardian.ui.layout.BlockGridLayout",
+      "bounds": [
+        0,
+        2030,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "com.guardian.ui.views.cards.BaseArticleView",
+            "com.guardian.ui.views.cards.BaseContentView",
+            "com.guardian.ui.views.cards.BaseCardView",
+            "com.guardian.ui.views.cards.CardLinearLayout",
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.guardian.ui.views.cards.ArticleCardView",
+          "bounds": [
+            59,
+            2030,
+            692,
+            2392
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "text": "Sean Spicer muddles answer when pressed on Trump and Russia investigation",
+              "resource-id": "com.guardian:id/card_headline",
+              "ancestors": [
+                "com.guardian.ui.views.AntiAliasingTextView",
+                "com.guardian.ui.views.EllipsizingTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.guardian.ui.views.GuardianTextView",
+              "bounds": [
+                80,
+                2051,
+                671,
+                2321
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "1d",
+              "resource-id": "com.guardian:id/card_time",
+              "ancestors": [
+                "com.guardian.ui.views.AntiAliasingTextView",
+                "com.guardian.ui.views.EllipsizingTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.guardian.ui.views.GuardianTextView",
+              "bounds": [
+                59,
+                2370,
+                206,
+                2392
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "Card"
+        },
+        {
+          "ancestors": [
+            "com.guardian.ui.views.cards.BaseArticleView",
+            "com.guardian.ui.views.cards.BaseContentView",
+            "com.guardian.ui.views.cards.BaseCardView",
+            "com.guardian.ui.views.cards.CardLinearLayout",
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.guardian.ui.views.cards.ArticleCardView",
+          "bounds": [
+            749,
+            2030,
+            1382,
+            2392
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "text": "Replacement healthcare bill clears first big hurdle in House of Representatives",
+              "resource-id": "com.guardian:id/card_headline",
+              "ancestors": [
+                "com.guardian.ui.views.AntiAliasingTextView",
+                "com.guardian.ui.views.EllipsizingTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.guardian.ui.views.GuardianTextView",
+              "bounds": [
+                770,
+                2051,
+                1361,
+                2321
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "1d",
+              "resource-id": "com.guardian:id/card_time",
+              "ancestors": [
+                "com.guardian.ui.views.AntiAliasingTextView",
+                "com.guardian.ui.views.EllipsizingTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.guardian.ui.views.GuardianTextView",
+              "bounds": [
+                749,
+                2370,
+                896,
+                2392
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "486",
+              "resource-id": "com.guardian:id/card_comments",
+              "ancestors": [
+                "com.guardian.ui.views.AntiAliasingTextView",
+                "com.guardian.ui.views.EllipsizingTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.guardian.ui.views.GuardianTextView",
+              "bounds": [
+                898,
+                2370,
+                1074,
+                2392
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "Card"
+        }
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

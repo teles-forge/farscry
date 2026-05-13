@@ -1,0 +1,165 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.verizon.fiosmobile:id/background_view",
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        0,
+        84,
+        1440,
+        2324
+      ],
+      "componentLabel": "Background Image"
+    },
+    {
+      "resource-id": "com.verizon.fiosmobile:id/view_switcher",
+      "children": [
+        {
+          "resource-id": "com.verizon.fiosmobile:id/eula_switcher",
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.AbsoluteLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.verizon.fiosmobile:id/webview_eula",
+              "clickable": true,
+              "class": "android.webkit.WebView",
+              "bounds": [
+                53,
+                137,
+                1387,
+                2015
+              ],
+              "componentLabel": "Web View"
+            },
+            {
+              "iconClass": "check",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.verizon.fiosmobile:id/eula_button_agree",
+              "clickable": true,
+              "class": "android.widget.ImageButton",
+              "bounds": [
+                489,
+                2068,
+                685,
+                2264
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "text": "Agree",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.verizon.fiosmobile.ui.view.FIOSTextView",
+              "bounds": [
+                523,
+                2282,
+                650,
+                2339
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "iconClass": "close",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.verizon.fiosmobile:id/eula_button_decline",
+              "clickable": true,
+              "class": "android.widget.ImageButton",
+              "bounds": [
+                755,
+                2068,
+                951,
+                2264
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "text": "Decline",
+              "resource-id": "com.verizon.fiosmobile:id/decline_text",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.verizon.fiosmobile.ui.view.FIOSTextView",
+              "bounds": [
+                773,
+                2282,
+                932,
+                2339
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.widget.ViewAnimator",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.ViewSwitcher",
+          "bounds": [
+            0,
+            84,
+            1440,
+            2392
+          ],
+          "componentLabel": "On/Off Switch"
+        }
+      ],
+      "ancestors": [
+        "android.widget.ViewAnimator",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.ViewSwitcher",
+      "bounds": [
+        0,
+        84,
+        1440,
+        2392
+      ],
+      "componentLabel": "On/Off Switch"
+    }
+  ]
+}

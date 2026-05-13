@@ -1,0 +1,420 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "android:id/action_bar_container",
+      "children": [
+        {
+          "iconClass": "home",
+          "clickable": false,
+          "children": [
+            {
+              "iconClass": "arrow_backward",
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "android:id/up",
+              "clickable": false,
+              "class": "android.widget.ImageView",
+              "bounds": [
+                0,
+                140,
+                56,
+                196
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "iconClass": "home",
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "android:id/home",
+              "clickable": false,
+              "class": "android.widget.ImageView",
+              "bounds": [
+                43,
+                112,
+                155,
+                224
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.android.internal.widget.ActionBarView$HomeView",
+          "bounds": [
+            0,
+            84,
+            169,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": " Trains(All days of week)",
+          "resource-id": "android:id/action_bar_title",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            169,
+            125,
+            855,
+            210
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.android.internal.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        252
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.indiatravel.apps:id/findtrains_adView",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.google.android.gms.ads.internal.webview.l",
+          "bounds": [
+            160,
+            252,
+            1280,
+            427
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.webkit.WebView",
+                "android.widget.AbsoluteLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                160,
+                252,
+                1280,
+                427
+              ],
+              "clickable": true,
+              "class": "com.google.android.gms.ads.internal.webview.m",
+              "componentLabel": "Web View"
+            }
+          ],
+          "componentLabel": "Web View"
+        }
+      ],
+      "ancestors": [
+        "com.google.android.gms.ads.BaseAdView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.google.android.gms.ads.AdView",
+      "bounds": [
+        0,
+        252,
+        1440,
+        427
+      ],
+      "componentLabel": "Advertisement"
+    },
+    {
+      "text": "Search trains only on specified date",
+      "resource-id": "com.indiatravel.apps:id/findtrains_checkbox",
+      "ancestors": [
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.CheckBox",
+      "bounds": [
+        35,
+        1528,
+        1031,
+        1640
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Source: ",
+      "resource-id": "com.indiatravel.apps:id/findtrains_textview_sourcestation",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        35,
+        503,
+        377,
+        569
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "com.indiatravel.apps:id/findtrains_autocomplete_sourcestation",
+      "ancestors": [
+        "android.widget.AutoCompleteTextView",
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.indiatravel.apps.ClearableEditText",
+      "bounds": [
+        377,
+        455,
+        1405,
+        594
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Destn: ",
+      "resource-id": "com.indiatravel.apps:id/findtrains_textview_deststation",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        35,
+        677,
+        377,
+        743
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "com.indiatravel.apps:id/findtrains_autocomplete_deststation",
+      "ancestors": [
+        "android.widget.AutoCompleteTextView",
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.indiatravel.apps.ClearableEditText",
+      "bounds": [
+        377,
+        629,
+        1405,
+        768
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Via Stn: ",
+      "resource-id": "com.indiatravel.apps:id/findtrains_textview_viastation",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        35,
+        851,
+        375,
+        917
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "com.indiatravel.apps:id/findtrains_autocomplete_viastation",
+      "ancestors": [
+        "android.widget.AutoCompleteTextView",
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.indiatravel.apps.ClearableEditText",
+      "bounds": [
+        375,
+        803,
+        1057,
+        942
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "(Optional)",
+      "resource-id": "com.indiatravel.apps:id/findtrains_textview_optional",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        1064,
+        839,
+        1405,
+        905
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Travel Class",
+      "resource-id": "com.indiatravel.apps:id/findtrains_textview_class",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        35,
+        977,
+        685,
+        1043
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Travel Date",
+      "resource-id": "com.indiatravel.apps:id/findtrains_textview_date",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        755,
+        977,
+        1405,
+        1043
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "All Class",
+      "resource-id": "com.indiatravel.apps:id/findtrains_button_class",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        46,
+        1054,
+        657,
+        1222
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "19/12/2016 ",
+      "resource-id": "com.indiatravel.apps:id/findtrains_button_date",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        679,
+        1054,
+        1394,
+        1222
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Show Trains",
+      "resource-id": "com.indiatravel.apps:id/findtrains_button_getstatus",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        46,
+        1279,
+        693,
+        1447
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Return Trains",
+      "resource-id": "com.indiatravel.apps:id/findtrains_button_returnstatus",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        715,
+        1279,
+        1394,
+        1447
+      ],
+      "componentLabel": "Text Button"
+    }
+  ]
+}

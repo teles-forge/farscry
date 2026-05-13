@@ -1,0 +1,146 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "ru.yandex.taxi:id/map",
+      "children": [],
+      "ancestors": [
+        "com.yandex.mapkit.mapview.MapView",
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.yandex.taxi.map.TaxiMapView",
+      "bounds": [
+        0,
+        84,
+        1440,
+        2392
+      ],
+      "componentLabel": "Map View"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "ru.yandex.taxi:id/map_cover",
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        0,
+        84,
+        1440,
+        2392
+      ],
+      "componentLabel": "Background Image"
+    },
+    {
+      "text": "",
+      "resource-id": "ru.yandex.taxi:id/pin",
+      "ancestors": [
+        "ru.yandex.taxi.widget.RobotoTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "ru.yandex.taxi.widget.PinView",
+      "bounds": [
+        657,
+        1175,
+        783,
+        1385
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "iconClass": "menu",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "ru.yandex.taxi:id/settings_button",
+      "clickable": true,
+      "class": "android.widget.ImageButton",
+      "bounds": [
+        0,
+        84,
+        182,
+        266
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "navigation",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "ru.yandex.taxi:id/autolocate",
+      "clickable": true,
+      "class": "android.widget.ImageButton",
+      "bounds": [
+        1252,
+        84,
+        1440,
+        272
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Unfortunately, our service does not operate in San Francisco yet.",
+      "resource-id": "ru.yandex.taxi:id/short_text",
+      "ancestors": [
+        "ru.yandex.taxi.widget.RobotoTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.yandex.taxi.widget.AutoResizeTextView",
+      "bounds": [
+        53,
+        445,
+        1387,
+        723
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Change address",
+      "resource-id": "ru.yandex.taxi:id/another_address",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.yandex.taxi.widget.RobotoTextView",
+      "bounds": [
+        482,
+        723,
+        957,
+        789
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

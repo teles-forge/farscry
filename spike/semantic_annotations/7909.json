@@ -1,0 +1,935 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.supersport.android.phone:id/toolbar",
+      "children": [
+        {
+          "text": "Home",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            364,
+            135,
+            553,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            252,
+            126,
+            364,
+            238
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.supersport.android.phone:id/fragment_supersport_tabstrip",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "Match Centre",
+          "bounds": [
+            0,
+            280,
+            480,
+            476
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "Videos",
+          "bounds": [
+            480,
+            280,
+            793,
+            476
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button",
+          "textButtonClass": "video"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "News",
+          "bounds": [
+            793,
+            280,
+            1078,
+            476
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button",
+          "textButtonClass": "news"
+        }
+      ],
+      "ancestors": [
+        "android.widget.HorizontalScrollView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.astuetz.PagerSlidingTabStrip",
+      "bounds": [
+        0,
+        280,
+        1440,
+        476
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        14,
+        476,
+        1426,
+        751
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Tennis: General",
+          "resource-id": "com.supersport.android.phone:id/card_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            14,
+            476,
+            1182,
+            541
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Highlights",
+          "resource-id": "com.supersport.android.phone:id/card_status",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1203,
+            476,
+            1426,
+            541
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.supersport.android.phone:id/list_item_video_img",
+          "clickable": false,
+          "class": "com.supersport.android.phone.viewholder.TopCropImageView",
+          "bounds": [
+            14,
+            541,
+            294,
+            751
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "play",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.supersport.android.phone:id/list_item_play",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            92,
+            584,
+            215,
+            707
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "IPTL, Japan: Warriors v Slammers",
+          "resource-id": "com.supersport.android.phone:id/list_item_video_headline",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            294,
+            541,
+            1426,
+            612
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Sun, 04 Dec 2016 | 07:22",
+          "resource-id": "com.supersport.android.phone:id/list_item_video_date",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            294,
+            612,
+            1426,
+            751
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        14,
+        779,
+        1426,
+        1079
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Tennis: General",
+          "resource-id": "com.supersport.android.phone:id/card_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            14,
+            779,
+            1182,
+            869
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Highlights",
+          "resource-id": "com.supersport.android.phone:id/card_status",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1203,
+            779,
+            1426,
+            869
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "play",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.supersport.android.phone:id/list_item_video_img",
+          "clickable": false,
+          "class": "com.supersport.android.phone.viewholder.TopCropImageView",
+          "bounds": [
+            14,
+            869,
+            294,
+            1079
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "play",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.supersport.android.phone:id/list_item_play",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            92,
+            912,
+            215,
+            1035
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "IPTL, Japan: Warriors v Royals",
+          "resource-id": "com.supersport.android.phone:id/list_item_video_headline",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            294,
+            869,
+            1426,
+            940
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Sat, 03 Dec 2016 | 06:54",
+          "resource-id": "com.supersport.android.phone:id/list_item_video_date",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            294,
+            940,
+            1426,
+            1079
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        14,
+        1107,
+        1426,
+        1407
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Tennis: General",
+          "resource-id": "com.supersport.android.phone:id/card_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            14,
+            1107,
+            1182,
+            1197
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Highlights",
+          "resource-id": "com.supersport.android.phone:id/card_status",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1203,
+            1107,
+            1426,
+            1197
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.supersport.android.phone:id/list_item_video_img",
+          "clickable": false,
+          "class": "com.supersport.android.phone.viewholder.TopCropImageView",
+          "bounds": [
+            14,
+            1197,
+            294,
+            1407
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "play",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.supersport.android.phone:id/list_item_play",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            92,
+            1240,
+            215,
+            1363
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "IPTL, Japan: Warriors v Aces",
+          "resource-id": "com.supersport.android.phone:id/list_item_video_headline",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            294,
+            1197,
+            1426,
+            1268
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Sat, 03 Dec 2016 | 05:10",
+          "resource-id": "com.supersport.android.phone:id/list_item_video_date",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            294,
+            1268,
+            1426,
+            1407
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        14,
+        1435,
+        1426,
+        1735
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Tennis: ATP",
+          "resource-id": "com.supersport.android.phone:id/card_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            14,
+            1435,
+            1182,
+            1525
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Highlights",
+          "resource-id": "com.supersport.android.phone:id/card_status",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1203,
+            1435,
+            1426,
+            1525
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.supersport.android.phone:id/list_item_video_img",
+          "clickable": false,
+          "class": "com.supersport.android.phone.viewholder.TopCropImageView",
+          "bounds": [
+            14,
+            1525,
+            294,
+            1735
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "play",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.supersport.android.phone:id/list_item_play",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            92,
+            1568,
+            215,
+            1691
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Murray reigns supreme",
+          "resource-id": "com.supersport.android.phone:id/list_item_video_headline",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            294,
+            1525,
+            1426,
+            1596
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Mon, 21 Nov 2016 | 11:32",
+          "resource-id": "com.supersport.android.phone:id/list_item_video_date",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            294,
+            1596,
+            1426,
+            1735
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        14,
+        1763,
+        1426,
+        2063
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Tennis: ATP",
+          "resource-id": "com.supersport.android.phone:id/card_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            14,
+            1763,
+            1182,
+            1853
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Highlights",
+          "resource-id": "com.supersport.android.phone:id/card_status",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1203,
+            1763,
+            1426,
+            1853
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.supersport.android.phone:id/list_item_video_img",
+          "clickable": false,
+          "class": "com.supersport.android.phone.viewholder.TopCropImageView",
+          "bounds": [
+            14,
+            1853,
+            294,
+            2063
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "play",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.supersport.android.phone:id/list_item_play",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            92,
+            1896,
+            215,
+            2019
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "ATP World Tour Finals: Final - Murray v Djokovic",
+          "resource-id": "com.supersport.android.phone:id/list_item_video_headline",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            294,
+            1853,
+            1426,
+            1986
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Sun, 20 Nov 2016 | 23:57",
+          "resource-id": "com.supersport.android.phone:id/list_item_video_date",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            294,
+            1986,
+            1426,
+            2063
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        14,
+        2091,
+        1426,
+        2391
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Tennis: ATP",
+          "resource-id": "com.supersport.android.phone:id/card_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            14,
+            2091,
+            1182,
+            2181
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Highlights",
+          "resource-id": "com.supersport.android.phone:id/card_status",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1203,
+            2091,
+            1426,
+            2181
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "play",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.supersport.android.phone:id/list_item_video_img",
+          "clickable": false,
+          "class": "com.supersport.android.phone.viewholder.TopCropImageView",
+          "bounds": [
+            14,
+            2181,
+            294,
+            2391
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "play",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.supersport.android.phone:id/list_item_play",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            92,
+            2224,
+            215,
+            2347
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "ATP World Tour Finals: Nishikori v Cilic",
+          "resource-id": "com.supersport.android.phone:id/list_item_video_headline",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            294,
+            2181,
+            1426,
+            2252
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Sat, 19 Nov 2016 | 04:33",
+          "resource-id": "com.supersport.android.phone:id/list_item_video_date",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            294,
+            2252,
+            1426,
+            2391
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    }
+  ]
+}

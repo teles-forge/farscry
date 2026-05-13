@@ -1,0 +1,831 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.ninechat.android.chat:id/toolbar",
+      "children": [
+        {
+          "iconClass": "search",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.ninechat.android.chat:id/search_mag_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            77,
+            126,
+            189,
+            210
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "",
+          "resource-id": "com.ninechat.android.chat:id/search_src_text",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatAutoCompleteTextView",
+            "android.widget.AutoCompleteTextView",
+            "android.widget.EditText",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.SearchView$SearchAutoComplete",
+          "bounds": [
+            189,
+            105,
+            1412,
+            231
+          ],
+          "componentLabel": "Input"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        252
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.ninechat.android.chat:id/bb_bottom_bar_shadow",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        0,
+        2182,
+        1440,
+        2196
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "resource-id": "com.ninechat.android.chat:id/pager",
+      "children": [
+        {
+          "ancestors": [
+            "com.under9.android.lib.widget.FixedRatioFrameLayout",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.ninegag.android.chat.component.promo.PromoBannerView",
+          "bounds": [
+            0,
+            252,
+            1440,
+            726
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.ninechat.android.chat:id/indicator",
+              "clickable": false,
+              "class": "com.viewpagerindicator.CirclePageIndicator",
+              "bounds": [
+                0,
+                627,
+                1440,
+                726
+              ],
+              "componentLabel": "Pager Indicator"
+            },
+            {
+              "ancestors": [
+                "com.facebook.drawee.view.GenericDraweeView",
+                "com.facebook.drawee.view.DraweeView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.ninechat.android.chat:id/banner_cover_imageview",
+              "clickable": true,
+              "class": "com.facebook.drawee.view.SimpleDraweeView",
+              "bounds": [
+                0,
+                252,
+                1440,
+                726
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "MY GROUPS",
+          "bounds": [
+            0,
+            726,
+            266,
+            804
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.ninegag.android.chat.component.group.GroupItemView",
+          "bounds": [
+            0,
+            804,
+            1440,
+            1014
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "com.facebook.drawee.view.GenericDraweeView",
+                "com.facebook.drawee.view.DraweeView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.ninechat.android.chat:id/group_cover",
+              "clickable": false,
+              "class": "com.facebook.drawee.view.SimpleDraweeView",
+              "bounds": [
+                32,
+                825,
+                200,
+                993
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "I Have A Question",
+              "resource-id": "com.ninechat.android.chat:id/group_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                232,
+                833,
+                731,
+                918
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "499 posts today",
+              "resource-id": "com.ninechat.android.chat:id/group_post_meta",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                232,
+                918,
+                583,
+                984
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.ninegag.android.chat.component.group.GroupItemView",
+          "bounds": [
+            0,
+            1014,
+            1440,
+            1224
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "com.facebook.drawee.view.GenericDraweeView",
+                "com.facebook.drawee.view.DraweeView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.ninechat.android.chat:id/group_cover",
+              "clickable": false,
+              "class": "com.facebook.drawee.view.SimpleDraweeView",
+              "bounds": [
+                32,
+                1035,
+                200,
+                1203
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "Pic Of The Day",
+              "resource-id": "com.ninechat.android.chat:id/group_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                232,
+                1043,
+                644,
+                1128
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "144 posts today",
+              "resource-id": "com.ninechat.android.chat:id/group_post_meta",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                232,
+                1128,
+                583,
+                1194
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.ninegag.android.chat.component.group.GroupItemView",
+          "bounds": [
+            0,
+            1224,
+            1440,
+            1434
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "com.facebook.drawee.view.GenericDraweeView",
+                "com.facebook.drawee.view.DraweeView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.ninechat.android.chat:id/group_cover",
+              "clickable": false,
+              "class": "com.facebook.drawee.view.SimpleDraweeView",
+              "bounds": [
+                32,
+                1245,
+                200,
+                1413
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "Funny",
+              "resource-id": "com.ninechat.android.chat:id/group_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                232,
+                1253,
+                401,
+                1338
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "136 posts today",
+              "resource-id": "com.ninechat.android.chat:id/group_post_meta",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                232,
+                1338,
+                583,
+                1404
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.ninegag.android.chat.component.group.GroupItemView",
+          "bounds": [
+            0,
+            1434,
+            1440,
+            1644
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "com.facebook.drawee.view.GenericDraweeView",
+                "com.facebook.drawee.view.DraweeView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.ninechat.android.chat:id/group_cover",
+              "clickable": false,
+              "class": "com.facebook.drawee.view.SimpleDraweeView",
+              "bounds": [
+                32,
+                1455,
+                200,
+                1623
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "Dank Meme",
+              "resource-id": "com.ninechat.android.chat:id/group_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                232,
+                1463,
+                566,
+                1548
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "134 posts today",
+              "resource-id": "com.ninechat.android.chat:id/group_post_meta",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                232,
+                1548,
+                583,
+                1614
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.ninegag.android.chat.component.group.GroupItemView",
+          "bounds": [
+            0,
+            1644,
+            1440,
+            1854
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "iconClass": "avatar",
+              "ancestors": [
+                "com.facebook.drawee.view.GenericDraweeView",
+                "com.facebook.drawee.view.DraweeView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.ninechat.android.chat:id/group_cover",
+              "clickable": false,
+              "class": "com.facebook.drawee.view.SimpleDraweeView",
+              "bounds": [
+                32,
+                1665,
+                200,
+                1833
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "text": "Food Porn",
+              "resource-id": "com.ninechat.android.chat:id/group_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                232,
+                1673,
+                522,
+                1758
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "132 posts today",
+              "resource-id": "com.ninechat.android.chat:id/group_post_meta",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                232,
+                1758,
+                583,
+                1824
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.ninegag.android.chat.component.group.GroupItemView",
+          "bounds": [
+            0,
+            1854,
+            1440,
+            2064
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "com.facebook.drawee.view.GenericDraweeView",
+                "com.facebook.drawee.view.DraweeView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.ninechat.android.chat:id/group_cover",
+              "clickable": false,
+              "class": "com.facebook.drawee.view.SimpleDraweeView",
+              "bounds": [
+                32,
+                1875,
+                200,
+                2043
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "Shower Thoughts",
+              "resource-id": "com.ninechat.android.chat:id/group_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                232,
+                1883,
+                724,
+                1968
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "125 posts today",
+              "resource-id": "com.ninechat.android.chat:id/group_post_meta",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                232,
+                1968,
+                583,
+                2034
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.ninegag.android.chat.component.group.GroupItemView",
+          "bounds": [
+            0,
+            2064,
+            1440,
+            2196
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "com.facebook.drawee.view.GenericDraweeView",
+                "com.facebook.drawee.view.DraweeView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.ninechat.android.chat:id/group_cover",
+              "clickable": false,
+              "class": "com.facebook.drawee.view.SimpleDraweeView",
+              "bounds": [
+                32,
+                2085,
+                200,
+                2196
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "Joke",
+              "resource-id": "com.ninechat.android.chat:id/group_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                232,
+                2093,
+                367,
+                2178
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "118 posts today",
+              "resource-id": "com.ninechat.android.chat:id/group_post_meta",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                232,
+                2178,
+                583,
+                2196
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "ancestors": [
+        "com.under9.android.lib.widget.HackyViewPager",
+        "android.support.v4.view.ViewPager",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.ninegag.android.chat.ui.NoSwipePagerSlidingTabStripWithState",
+      "bounds": [
+        0,
+        252,
+        1440,
+        2196
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "resource-id": "com.ninechat.android.chat:id/bottom_bar_live",
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.roughike.bottombar.BottomBarTab",
+      "bounds": [
+        6,
+        2196,
+        363,
+        2392
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "home"
+    },
+    {
+      "iconClass": "explore",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.ninechat.android.chat:id/bb_bottom_bar_icon",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        499,
+        2196,
+        583,
+        2301
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Explore",
+      "resource-id": "com.ninechat.android.chat:id/bb_bottom_bar_title",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        472,
+        2301,
+        611,
+        2381
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "notifications",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.ninechat.android.chat:id/bb_bottom_bar_icon",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        856,
+        2196,
+        940,
+        2308
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Activities",
+      "resource-id": "com.ninechat.android.chat:id/bb_bottom_bar_title",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        825,
+        2314,
+        972,
+        2382
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "avatar",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.ninechat.android.chat:id/bb_bottom_bar_icon",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        1213,
+        2196,
+        1297,
+        2308
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Me",
+      "resource-id": "com.ninechat.android.chat:id/bb_bottom_bar_title",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1230,
+        2314,
+        1281,
+        2382
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

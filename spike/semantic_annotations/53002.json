@@ -1,0 +1,418 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "video.audio.mp3.player.editor:id/main_toolbar",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Equalizer",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            252,
+            135,
+            541,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "",
+          "resource-id": "video.audio.mp3.player.editor:id/btn_togle",
+          "ancestors": [
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.ToggleButton",
+          "bounds": [
+            1125,
+            112,
+            1440,
+            252
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "video.audio.mp3.player.editor:id/equalizer_presets",
+      "ancestors": [
+        "android.widget.AbsSpinner",
+        "android.widget.AdapterView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Spinner",
+      "bounds": [
+        0,
+        280,
+        708,
+        448
+      ],
+      "componentLabel": "Text Button",
+      "text": "Flat"
+    },
+    {
+      "ancestors": [
+        "android.widget.SeekBar",
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "video.audio.mp3.player.editor:id/equalizer_preamp",
+      "clickable": false,
+      "class": "video.audio.mp3.player.editor.widget.VerticalSeekBar",
+      "bounds": [
+        0,
+        448,
+        168,
+        1661
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "text": "Bass",
+      "resource-id": "video.audio.mp3.player.editor:id/txt_center",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        370,
+        1731,
+        478,
+        1797
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Treble",
+      "resource-id": "video.audio.mp3.player.editor:id/txt_treble",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        755,
+        1731,
+        890,
+        1797
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "com.google.android.gms.ads.BaseAdView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.google.android.gms.ads.AdView",
+      "bounds": [
+        0,
+        2217,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.google.android.gms.ads.internal.webview.l",
+          "bounds": [
+            0,
+            2217,
+            1440,
+            2392
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.webkit.WebView",
+                "android.widget.AbsoluteLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                0,
+                2217,
+                1440,
+                2392
+              ],
+              "clickable": true,
+              "class": "com.google.android.gms.ads.internal.webview.m",
+              "componentLabel": "Web View"
+            }
+          ],
+          "componentLabel": "Web View"
+        }
+      ],
+      "componentLabel": "Advertisement"
+    },
+    {
+      "ancestors": [
+        "android.widget.SeekBar",
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "video.audio.mp3.player.editor:id/equalizer_seek",
+      "clickable": false,
+      "class": "video.audio.mp3.player.editor.widget.VerticalSeekBar",
+      "bounds": [
+        203,
+        940,
+        438,
+        1569
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "text": "31 Hz",
+      "resource-id": "video.audio.mp3.player.editor:id/equalizer_band",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        266,
+        1569,
+        375,
+        1626
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.SeekBar",
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "video.audio.mp3.player.editor:id/equalizer_seek",
+      "clickable": false,
+      "class": "video.audio.mp3.player.editor.widget.VerticalSeekBar",
+      "bounds": [
+        438,
+        940,
+        673,
+        1569
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "text": "63 Hz",
+      "resource-id": "video.audio.mp3.player.editor:id/equalizer_band",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        501,
+        1569,
+        610,
+        1626
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.SeekBar",
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "video.audio.mp3.player.editor:id/equalizer_seek",
+      "clickable": false,
+      "class": "video.audio.mp3.player.editor.widget.VerticalSeekBar",
+      "bounds": [
+        673,
+        940,
+        908,
+        1569
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "text": "125 Hz",
+      "resource-id": "video.audio.mp3.player.editor:id/equalizer_band",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        724,
+        1569,
+        857,
+        1626
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.SeekBar",
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "video.audio.mp3.player.editor:id/equalizer_seek",
+      "clickable": false,
+      "class": "video.audio.mp3.player.editor.widget.VerticalSeekBar",
+      "bounds": [
+        908,
+        940,
+        1143,
+        1569
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "text": "250 Hz",
+      "resource-id": "video.audio.mp3.player.editor:id/equalizer_band",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        959,
+        1569,
+        1092,
+        1626
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.SeekBar",
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "video.audio.mp3.player.editor:id/equalizer_seek",
+      "clickable": false,
+      "class": "video.audio.mp3.player.editor.widget.VerticalSeekBar",
+      "bounds": [
+        1143,
+        940,
+        1378,
+        1569
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "text": "500 Hz",
+      "resource-id": "video.audio.mp3.player.editor:id/equalizer_band",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        1194,
+        1569,
+        1327,
+        1626
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.SeekBar",
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "video.audio.mp3.player.editor:id/equalizer_seek",
+      "clickable": false,
+      "class": "video.audio.mp3.player.editor.widget.VerticalSeekBar",
+      "bounds": [
+        1378,
+        940,
+        1405,
+        1569
+      ],
+      "componentLabel": "Slider"
+    }
+  ]
+}

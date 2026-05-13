@@ -1,0 +1,893 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.softissimo.reverso.context:id/toolbar",
+      "children": [
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "refresh",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.softissimo.reverso.context:id/button_reverse_direction",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            748,
+            135,
+            888,
+            247
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "English",
+          "resource-id": "com.softissimo.reverso.context:id/button_source_language",
+          "ancestors": [
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatButton",
+          "bounds": [
+            214,
+            135,
+            730,
+            247
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "english"
+        },
+        {
+          "text": "French",
+          "resource-id": "com.softissimo.reverso.context:id/button_target_language",
+          "ancestors": [
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatButton",
+          "bounds": [
+            906,
+            135,
+            1422,
+            247
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.softissimo.reverso.context:id/ad_view",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.facebook.ads.AdView",
+          "bounds": [
+            0,
+            2217,
+            1440,
+            2392
+          ],
+          "clickable": false,
+          "children": [],
+          "componentLabel": "Advertisement"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.google.android.gms.ads.doubleclick.PublisherAdView",
+      "bounds": [
+        0,
+        2217,
+        1440,
+        2392
+      ],
+      "componentLabel": "Advertisement"
+    },
+    {
+      "resource-id": "com.softissimo.reverso.context:id/view_list_item_search_result",
+      "children": [
+        {
+          "iconClass": "star",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.softissimo.reverso.context:id/image_plus",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1245,
+            526,
+            1405,
+            677
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "volume",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.softissimo.reverso.context:id/image_voice",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1299,
+            695,
+            1387,
+            772
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Tell him hello... and congratulations.",
+          "resource-id": "com.softissimo.reverso.context:id/text_source",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.softissimo.reverso.context.widget.CTXTextView",
+          "bounds": [
+            70,
+            544,
+            1210,
+            610
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.softissimo.reverso.context:id/iv_from_to",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            88,
+            610,
+            130,
+            677
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Je lui dis bonjour et je le félicite.",
+          "resource-id": "com.softissimo.reverso.context:id/text_target",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.softissimo.reverso.context.widget.CTXTextView",
+          "bounds": [
+            165,
+            628,
+            1210,
+            694
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.softissimo.reverso.context.widget.SwipeLayout",
+      "bounds": [
+        0,
+        508,
+        1440,
+        807
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.softissimo.reverso.context:id/view_list_item_search_result",
+      "children": [
+        {
+          "iconClass": "star",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.softissimo.reverso.context:id/image_plus",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1245,
+            825,
+            1405,
+            976
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "volume",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.softissimo.reverso.context:id/image_voice",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1299,
+            994,
+            1387,
+            1071
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Tell Agnis hello... from Cousin Nolan.",
+          "resource-id": "com.softissimo.reverso.context:id/text_source",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.softissimo.reverso.context.widget.CTXTextView",
+          "bounds": [
+            70,
+            843,
+            1210,
+            909
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.softissimo.reverso.context:id/iv_from_to",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            88,
+            909,
+            130,
+            976
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Dis... bonjour à Agnis de la part... du cousin Nolan.",
+          "resource-id": "com.softissimo.reverso.context:id/text_target",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.softissimo.reverso.context.widget.CTXTextView",
+          "bounds": [
+            165,
+            927,
+            1210,
+            1050
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.softissimo.reverso.context.widget.SwipeLayout",
+      "bounds": [
+        0,
+        807,
+        1440,
+        1106
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.softissimo.reverso.context:id/view_list_item_search_result",
+      "children": [
+        {
+          "iconClass": "star",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.softissimo.reverso.context:id/image_plus",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1245,
+            1124,
+            1405,
+            1275
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "volume",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.softissimo.reverso.context:id/image_voice",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1299,
+            1293,
+            1387,
+            1370
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Yes, hello. Jackson speaking.",
+          "resource-id": "com.softissimo.reverso.context:id/text_source",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.softissimo.reverso.context.widget.CTXTextView",
+          "bounds": [
+            70,
+            1142,
+            1210,
+            1208
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.softissimo.reverso.context:id/iv_from_to",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            88,
+            1208,
+            130,
+            1275
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Oui, allô, Jackson à l'appareil.",
+          "resource-id": "com.softissimo.reverso.context:id/text_target",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.softissimo.reverso.context.widget.CTXTextView",
+          "bounds": [
+            165,
+            1226,
+            1210,
+            1292
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.softissimo.reverso.context.widget.SwipeLayout",
+      "bounds": [
+        0,
+        1106,
+        1440,
+        1405
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.softissimo.reverso.context:id/view_list_item_search_result",
+      "children": [
+        {
+          "iconClass": "star",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.softissimo.reverso.context:id/image_plus",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1245,
+            1423,
+            1405,
+            1574
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "volume",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.softissimo.reverso.context:id/image_voice",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1299,
+            1592,
+            1387,
+            1669
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "I say, hello, Father.",
+          "resource-id": "com.softissimo.reverso.context:id/text_source",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.softissimo.reverso.context.widget.CTXTextView",
+          "bounds": [
+            70,
+            1441,
+            1210,
+            1507
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.softissimo.reverso.context:id/iv_from_to",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            88,
+            1507,
+            130,
+            1574
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "J'ai dit allô, papa.",
+          "resource-id": "com.softissimo.reverso.context:id/text_target",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.softissimo.reverso.context.widget.CTXTextView",
+          "bounds": [
+            165,
+            1525,
+            1210,
+            1591
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.softissimo.reverso.context.widget.SwipeLayout",
+      "bounds": [
+        0,
+        1405,
+        1440,
+        1704
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.softissimo.reverso.context:id/view_list_item_search_result",
+      "children": [
+        {
+          "iconClass": "star",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.softissimo.reverso.context:id/image_plus",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1245,
+            1722,
+            1405,
+            1873
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "volume",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.softissimo.reverso.context:id/image_voice",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1299,
+            1891,
+            1387,
+            1968
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Well, hello there, game-changer.",
+          "resource-id": "com.softissimo.reverso.context:id/text_source",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.softissimo.reverso.context.widget.CTXTextView",
+          "bounds": [
+            70,
+            1740,
+            1210,
+            1806
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.softissimo.reverso.context:id/iv_from_to",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            88,
+            1806,
+            130,
+            1873
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Alors, salut vous, changeur de donne.",
+          "resource-id": "com.softissimo.reverso.context:id/text_target",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.softissimo.reverso.context.widget.CTXTextView",
+          "bounds": [
+            165,
+            1824,
+            1210,
+            1890
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.softissimo.reverso.context.widget.SwipeLayout",
+      "bounds": [
+        0,
+        1704,
+        1440,
+        2003
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.softissimo.reverso.context:id/view_list_item_search_result",
+      "children": [
+        {
+          "iconClass": "star",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.softissimo.reverso.context:id/image_plus",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1245,
+            2021,
+            1405,
+            2172
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "pause",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.softissimo.reverso.context:id/image_voice",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1299,
+            2190,
+            1387,
+            2217
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "KIM, give us a big hello.",
+          "resource-id": "com.softissimo.reverso.context:id/text_source",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.softissimo.reverso.context.widget.CTXTextView",
+          "bounds": [
+            70,
+            2039,
+            1210,
+            2105
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.softissimo.reverso.context:id/iv_from_to",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            88,
+            2105,
+            130,
+            2172
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "KIM, Fais nous un gros salut.",
+          "resource-id": "com.softissimo.reverso.context:id/text_target",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.softissimo.reverso.context.widget.CTXTextView",
+          "bounds": [
+            165,
+            2123,
+            1210,
+            2189
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.softissimo.reverso.context.widget.SwipeLayout",
+      "bounds": [
+        0,
+        2003,
+        1440,
+        2217
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "iconClass": "book",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.softissimo.reverso.context:id/image_dictionary",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        1088,
+        352,
+        1158,
+        436
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.softissimo.reverso.context:id/image_conjugate_dictionary",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        1211,
+        352,
+        1278,
+        440
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "iconClass": "volume",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.softissimo.reverso.context:id/image_pronunciation_dictionary",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        1331,
+        352,
+        1405,
+        436
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "hello",
+      "resource-id": "com.softissimo.reverso.context:id/edit_search",
+      "ancestors": [
+        "android.widget.AutoCompleteTextView",
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.softissimo.reverso.context.widget.CTXAutoCompleteTextView",
+      "bounds": [
+        35,
+        340,
+        1060,
+        452
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "close",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.softissimo.reverso.context:id/button_clear_search",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        948,
+        340,
+        1060,
+        452
+      ],
+      "componentLabel": "Icon"
+    }
+  ]
+}

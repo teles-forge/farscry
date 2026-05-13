@@ -1,0 +1,546 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "text": "Add to Favorites",
+      "resource-id": "com.greenleaf.android.translator.enes.c:id/title",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        715,
+        1216,
+        1220,
+        1309
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Save a translation for future. You can access all your favorites using the Favorites button.\nTap here to continue.",
+      "resource-id": "com.greenleaf.android.translator.enes.c:id/description",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        543,
+        1309,
+        1393,
+        1546
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "com.greenleaf.android.translator.enes.c:id/toolbar",
+      "children": [
+        {
+          "resource-id": "com.greenleaf.android.translator.enes.c:id/spinnerLangFrom",
+          "ancestors": [
+            "android.widget.Spinner",
+            "android.widget.AbsSpinner",
+            "android.widget.AdapterView",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatSpinner",
+          "bounds": [
+            56,
+            84,
+            484,
+            242
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "english"
+        },
+        {
+          "iconClass": "swap",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.greenleaf.android.translator.enes.c:id/buttonLanguageSwitcher",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            509,
+            119,
+            593,
+            203
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "resource-id": "com.greenleaf.android.translator.enes.c:id/spinnerLangTo",
+          "ancestors": [
+            "android.widget.Spinner",
+            "android.widget.AbsSpinner",
+            "android.widget.AdapterView",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatSpinner",
+          "bounds": [
+            618,
+            84,
+            1061,
+            242
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "spanish"
+        },
+        {
+          "iconClass": "more",
+          "resource-id": "com.greenleaf.android.translator.enes.c:id/context_menu",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1272,
+            84,
+            1440,
+            242
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        242
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.greenleaf.android.translator.enes.c:id/sliding_tabs",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "Translator",
+          "bounds": [
+            70,
+            242,
+            449,
+            400
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "Daily Word",
+          "bounds": [
+            449,
+            242,
+            801,
+            400
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "Phrasebook",
+          "bounds": [
+            801,
+            242,
+            1187,
+            400
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "Flashcards",
+          "bounds": [
+            1187,
+            242,
+            1440,
+            400
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button"
+        }
+      ],
+      "ancestors": [
+        "android.widget.HorizontalScrollView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.greenleaf.android.material.SlidingTabLayout",
+      "bounds": [
+        0,
+        242,
+        1440,
+        400
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "text": "saranghae",
+      "resource-id": "com.greenleaf.android.translator.enes.c:id/text",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatEditText",
+      "bounds": [
+        70,
+        470,
+        1321,
+        543
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "",
+      "resource-id": "com.greenleaf.android.translator.enes.c:id/btnClearText",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        1286,
+        505,
+        1370,
+        589
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Saranghae",
+      "resource-id": "com.greenleaf.android.translator.enes.c:id/translation",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        70,
+        596,
+        1370,
+        746
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.greenleaf.android.translator.enes.c:id/btnKeyboard",
+      "clickable": true,
+      "class": "com.github.clans.fab.FloatingActionButton",
+      "bounds": [
+        70,
+        2132,
+        246,
+        2322
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "iconClass": "photo",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.greenleaf.android.translator.enes.c:id/btnOCR",
+      "clickable": true,
+      "class": "com.github.clans.fab.FloatingActionButton",
+      "bounds": [
+        274,
+        2132,
+        450,
+        2322
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "favorite",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.greenleaf.android.translator.enes.c:id/btnFavorites",
+      "clickable": true,
+      "class": "com.github.clans.fab.FloatingActionButton",
+      "bounds": [
+        478,
+        2132,
+        654,
+        2322
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "history",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.greenleaf.android.translator.enes.c:id/btnHistory",
+      "clickable": true,
+      "class": "com.github.clans.fab.FloatingActionButton",
+      "bounds": [
+        682,
+        2132,
+        858,
+        2322
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.greenleaf.android.translator.enes.c:id/menu_item_listen_input",
+      "clickable": true,
+      "class": "com.github.clans.fab.FloatingActionButton",
+      "bounds": [
+        1133,
+        1250,
+        1309,
+        1440
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "iconClass": "volume",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.greenleaf.android.translator.enes.c:id/menu_item_listen_translation",
+      "clickable": true,
+      "class": "com.github.clans.fab.FloatingActionButton",
+      "bounds": [
+        1133,
+        1440,
+        1309,
+        1630
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "favorite",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.greenleaf.android.translator.enes.c:id/menu_item_add_favorite",
+      "clickable": true,
+      "class": "com.github.clans.fab.FloatingActionButton",
+      "bounds": [
+        1133,
+        1630,
+        1309,
+        1820
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "share",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.greenleaf.android.translator.enes.c:id/menu_item_share",
+      "clickable": true,
+      "class": "com.github.clans.fab.FloatingActionButton",
+      "bounds": [
+        1133,
+        1820,
+        1309,
+        2010
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        1090,
+        2010,
+        1352,
+        2322
+      ],
+      "clickable": true,
+      "class": "com.github.clans.fab.FloatingActionButton",
+      "componentLabel": "Image"
+    },
+    {
+      "iconClass": "close",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        1162,
+        2107,
+        1280,
+        2225
+      ],
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Listen input",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.github.clans.fab.Label",
+      "bounds": [
+        830,
+        1280,
+        1133,
+        1410
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Listen translation / long press",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.github.clans.fab.Label",
+      "bounds": [
+        436,
+        1470,
+        1133,
+        1600
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Add to Favorites",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.github.clans.fab.Label",
+      "bounds": [
+        726,
+        1660,
+        1133,
+        1790
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Share",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.github.clans.fab.Label",
+      "bounds": [
+        957,
+        1850,
+        1133,
+        1980
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "share"
+    }
+  ]
+}

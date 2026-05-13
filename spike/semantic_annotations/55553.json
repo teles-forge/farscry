@@ -1,0 +1,718 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "iconClass": "filter_list",
+      "ancestors": [
+        "android.support.design.widget.z",
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "de.koloch.evaluator.free:id/fab",
+      "clickable": true,
+      "class": "android.support.design.widget.FloatingActionButton",
+      "bounds": [
+        1202,
+        2154,
+        1398,
+        2350
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "resource-id": "de.koloch.evaluator.free:id/toolbar",
+      "children": [
+        {
+          "text": "What's it worth?",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.ab",
+          "bounds": [
+            56,
+            98,
+            553,
+            191
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "bag",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.ab",
+          "bounds": [
+            56,
+            191,
+            148,
+            267
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "more",
+          "resource-id": "de.koloch.evaluator.free:id/a_more",
+          "ancestors": [
+            "android.support.v7.widget.ab",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1272,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "de.koloch.evaluator.free:id/search_button",
+          "clickable": true,
+          "class": "android.support.v7.widget.q",
+          "bounds": [
+            1104,
+            98,
+            1272,
+            266
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "de.koloch.evaluator.free:id/ad_viewswitcher",
+      "children": [
+        {
+          "resource-id": "de.koloch.evaluator.free:id/admobView",
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.FrameLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "com.google.android.gms.ads.internal.webview.n",
+              "bounds": [
+                0,
+                280,
+                1440,
+                455
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "android.webkit.WebView",
+                    "android.widget.AbsoluteLayout",
+                    "android.view.ViewGroup",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    0,
+                    280,
+                    1440,
+                    455
+                  ],
+                  "clickable": true,
+                  "class": "com.google.android.gms.ads.internal.webview.o",
+                  "componentLabel": "Web View"
+                }
+              ],
+              "componentLabel": "Web View"
+            }
+          ],
+          "ancestors": [
+            "com.google.android.gms.ads.e",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.google.android.gms.ads.AdView",
+          "bounds": [
+            0,
+            280,
+            1440,
+            455
+          ],
+          "componentLabel": "Advertisement"
+        }
+      ],
+      "ancestors": [
+        "android.widget.ViewAnimator",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.ViewSwitcher",
+      "bounds": [
+        0,
+        280,
+        1440,
+        455
+      ],
+      "componentLabel": "On/Off Switch"
+    },
+    {
+      "text": "Condition:",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.ab",
+      "bounds": [
+        56,
+        455,
+        310,
+        595
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "de.koloch.evaluator.free:id/condition",
+      "ancestors": [
+        "android.widget.Spinner",
+        "android.widget.AbsSpinner",
+        "android.widget.AdapterView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.y",
+      "bounds": [
+        338,
+        455,
+        1384,
+        595
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "all"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        14,
+        609,
+        1426,
+        1512
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "resource-id": "de.koloch.evaluator.free:id/result_switcher",
+          "children": [
+            {
+              "text": "Auction (14)",
+              "resource-id": "de.koloch.evaluator.free:id/auction_label",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.ab",
+              "bounds": [
+                524,
+                779,
+                797,
+                845
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Buy it now (14)",
+              "resource-id": "de.koloch.evaluator.free:id/buy_now_label",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.ab",
+              "bounds": [
+                825,
+                779,
+                1155,
+                845
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "15 % sold",
+              "resource-id": "de.koloch.evaluator.free:id/auction_percent_sold",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.ab",
+              "bounds": [
+                524,
+                845,
+                814,
+                900
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "12 % sold",
+              "resource-id": "de.koloch.evaluator.free:id/buy_now_percent_sold",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.ab",
+              "bounds": [
+                825,
+                845,
+                1158,
+                900
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Ø-Price",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.ab",
+              "bounds": [
+                271,
+                908,
+                506,
+                988
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "$4.03",
+              "resource-id": "de.koloch.evaluator.free:id/result_median_auction",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.ab",
+              "bounds": [
+                524,
+                900,
+                814,
+                990
+              ],
+              "componentLabel": "Text Button"
+            },
+            {
+              "text": "$22.47",
+              "resource-id": "de.koloch.evaluator.free:id/result_median_buy_now",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.ab",
+              "bounds": [
+                825,
+                900,
+                1158,
+                990
+              ],
+              "componentLabel": "Text Button"
+            },
+            {
+              "text": "+Shipping",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.ab",
+              "bounds": [
+                271,
+                990,
+                506,
+                1070
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "$4.03",
+              "resource-id": "de.koloch.evaluator.free:id/result_median2_auction",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.ab",
+              "bounds": [
+                524,
+                990,
+                814,
+                1070
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "$22.47",
+              "resource-id": "de.koloch.evaluator.free:id/result_median2_buy_now",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.ab",
+              "bounds": [
+                825,
+                990,
+                1158,
+                1070
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Net",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.ab",
+              "bounds": [
+                271,
+                1070,
+                506,
+                1150
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "$3.62",
+              "resource-id": "de.koloch.evaluator.free:id/result_netto_auction",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.ab",
+              "bounds": [
+                524,
+                1070,
+                814,
+                1150
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "$20.22",
+              "resource-id": "de.koloch.evaluator.free:id/result_netto_buy_now",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.ab",
+              "bounds": [
+                825,
+                1070,
+                1158,
+                1150
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Min/Max",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.ab",
+              "bounds": [
+                271,
+                1150,
+                506,
+                1230
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "0.40 - 48.98",
+              "resource-id": "de.koloch.evaluator.free:id/result_variance_auction",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.ab",
+              "bounds": [
+                524,
+                1150,
+                814,
+                1230
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "4.99 - 259.98",
+              "resource-id": "de.koloch.evaluator.free:id/result_variance_buy_now",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.ab",
+              "bounds": [
+                825,
+                1150,
+                1158,
+                1230
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.widget.ViewAnimator",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.ViewSwitcher",
+          "bounds": [
+            271,
+            779,
+            1169,
+            1230
+          ],
+          "componentLabel": "On/Off Switch"
+        },
+        {
+          "text": "Category",
+          "resource-id": "de.koloch.evaluator.free:id/category_label_top",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.ab",
+          "bounds": [
+            53,
+            653,
+            249,
+            719
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "All",
+          "resource-id": "de.koloch.evaluator.free:id/category",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ab",
+          "bounds": [
+            305,
+            653,
+            361,
+            719
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "list",
+          "ancestors": [
+            "android.support.design.widget.z",
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "de.koloch.evaluator.free:id/browse_result_button",
+          "clickable": true,
+          "class": "android.support.design.widget.FloatingActionButton",
+          "bounds": [
+            328,
+            1230,
+            552,
+            1496
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.support.design.widget.z",
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "de.koloch.evaluator.free:id/analytics_button",
+          "clickable": true,
+          "class": "android.support.design.widget.FloatingActionButton",
+          "bounds": [
+            608,
+            1230,
+            832,
+            1496
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "star",
+          "ancestors": [
+            "android.support.design.widget.z",
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "de.koloch.evaluator.free:id/bookmark_button",
+          "clickable": true,
+          "class": "android.support.design.widget.FloatingActionButton",
+          "bounds": [
+            888,
+            1230,
+            1112,
+            1496
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "resource-id": "de.koloch.evaluator.free:id/sub_cat_container",
+      "children": [
+        {
+          "text": "Select category",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.ab",
+          "bounds": [
+            53,
+            1570,
+            1387,
+            1636
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Clothing, Shoes & Accessories (1,739,170)\n\t\tWomen's Handbags & Purses (1,184,050)\n\t\tMen's Backpacks, Bags & Briefcases (119,364)\n\t\tUnisex Bags & Backpacks (90,001)\n\t\tWomen's Wallets (50,155)\n\t\tWomen's Backpacks & Bookbags (46,786)\nHome & Garden (443,117)\n\t\tGift Bags (33,506)\n\t\tHome Storage Bags (28,066)\n\t\tParty Bags (26,972)\n\t\tTea (26,346)\n\t\tParty Favors & Bag Fillers (25,283)\n\t\tWedding Favors (20,531)\n\t\tVacuum Cleaner Bags (18,969)\n\t\tLunch Containers (18,497)\nCollectibles (247,336)\n\t\tCollectible Modern Keychains (1970-Now) (27,011)\n\t\tModern Age Superhero Comics (1992-Now) (22,772)\n\t\tContemporary Disney Collectibles (1968-Now) (18,245)\n\t\tCollectible Japanese Anime Items (17,943)\n\t\tCollectible Advertising (17,748)\n\t\tMilitaria (15,847)\n\t\tBronze Age Comics (1970-1983) (10,735)\n\t\tDecorative Collectibles (9,534)\nSporting Goods (243,882)\n\t\tGolf Club Bags (26,781)\n\t\tHunting (23,862)\n\t\tTeam Sports (16,509)\n\t\tHiking Day Packs (15,932)\n\t\tCamping Sleeping Bags (14,563)\n\t\tFitness, Running & Yoga (14,131)\n\t\tBicycle Bags & Panniers (13,313)\nHealth & Beauty (163,610)\n\t\teBay Motors (123,235)\n\t\tToys & Hobbies (100,157)\n\t\tBusiness & Industrial (91,508)\n\t\tComputers/Tablets & Networking (88,708)\n\t\tJewelry & Watches (76,024)\n\t\tCell Phones & Accessories (68,376)\n\t\tCrafts (68,282)\n\t\tTravel (58,753)\n\t\tCameras & Photo (44,670)\n\t\tSports Mem, Cards & Fan Shop (43,550)\n\t\tBaby (42,270)\n\t\tMusical Instruments & Gear (35,349)\n\t\tPet Supplies (30,626)\n\t\tDolls & Bears (22,031)\n\t\tConsumer Electronics (18,905)\n\t\tAntiques (8,112)\n\t\tEntertainment Memorabilia (7,690)\n\t\tVideo Games & Consoles (7,418)\n\t\tMusic (7,066)\n\t\tCoins & Paper Money (6,926)\n\t\tBooks (5,581)\n\t\tEverything Else (3,562)\n\t\tPottery & Glass (2,087)\n\t\tStamps (1,379)\n\t\tArt (1,020)\n\t\tDVDs & Movies (830)\n\t\tGift Cards & Coupons (318)\n\t\tSpecialty Services (162)\n",
+          "resource-id": "de.koloch.evaluator.free:id/further_categories",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ab",
+          "bounds": [
+            99,
+            1696,
+            1340,
+            2392
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        14,
+        1526,
+        1426,
+        2392
+      ],
+      "componentLabel": "Card"
+    }
+  ]
+}

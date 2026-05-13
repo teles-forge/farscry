@@ -1,0 +1,917 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.touchsurgery:id/action_bar_container",
+      "children": [
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "com.touchsurgery:id/search",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1104,
+            98,
+            1272,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "filter",
+          "resource-id": "com.touchsurgery:id/filterbutton",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1272,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.touchsurgery:id/spinnerSort",
+      "ancestors": [
+        "android.widget.Spinner",
+        "android.widget.AbsSpinner",
+        "android.widget.AdapterView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.touchsurgery.uiutils.CFSpinner",
+      "bounds": [
+        0,
+        298,
+        952,
+        412
+      ],
+      "componentLabel": "Text Button",
+      "text": "Sort by: Category A-Z"
+    },
+    {
+      "text": "G",
+      "resource-id": "com.touchsurgery:id/tvList",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.touchsurgery.tsui.views.TSTextView",
+      "bounds": [
+        1164,
+        298,
+        1293,
+        412
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "h",
+      "resource-id": "com.touchsurgery:id/tvGrid",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.touchsurgery.tsui.views.TSTextView",
+      "bounds": [
+        1293,
+        298,
+        1422,
+        412
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "resource-id": "com.touchsurgery:id/cardLayout",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.touchsurgery:id/ivIcon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            35,
+            430,
+            315,
+            710
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "resource-id": "com.touchsurgery:id/downloadButton",
+          "children": [
+            {
+              "text": "Y",
+              "resource-id": "com.touchsurgery:id/actionIcon",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.touchsurgery.tsui.views.TSTextView",
+              "bounds": [
+                1188,
+                503,
+                1349,
+                664
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "com.touchsurgery.uiutils.CFDownloadButton",
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.touchsurgery.uiutils.library.LibraryDownloadButton",
+          "bounds": [
+            1188,
+            503,
+            1349,
+            664
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Mastectomy Phase 1: Removal of the Breast",
+          "resource-id": "com.touchsurgery:id/tvTitle",
+          "ancestors": [
+            "com.touchsurgery.tsui.views.TSTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.touchsurgery.uiutils.CFTitleView",
+          "bounds": [
+            350,
+            458,
+            1153,
+            568
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "BREAST",
+          "resource-id": "com.touchsurgery:id/tvTagCategory1",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.touchsurgery.tsui.views.TSTextView",
+          "bounds": [
+            350,
+            616,
+            530,
+            675
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        430,
+        1440,
+        738
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.touchsurgery:id/cardLayout",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.touchsurgery:id/ivIcon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            35,
+            738,
+            315,
+            1018
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "resource-id": "com.touchsurgery:id/downloadButton",
+          "children": [
+            {
+              "text": "Y",
+              "resource-id": "com.touchsurgery:id/actionIcon",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.touchsurgery.tsui.views.TSTextView",
+              "bounds": [
+                1188,
+                811,
+                1349,
+                972
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "com.touchsurgery.uiutils.CFDownloadButton",
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.touchsurgery.uiutils.library.LibraryDownloadButton",
+          "bounds": [
+            1188,
+            811,
+            1349,
+            972
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Mastectomy Phase 2: Closure",
+          "resource-id": "com.touchsurgery:id/tvTitle",
+          "ancestors": [
+            "com.touchsurgery.tsui.views.TSTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.touchsurgery.uiutils.CFTitleView",
+          "bounds": [
+            350,
+            766,
+            1153,
+            824
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "BREAST",
+          "resource-id": "com.touchsurgery:id/tvTagCategory1",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.touchsurgery.tsui.views.TSTextView",
+          "bounds": [
+            350,
+            924,
+            530,
+            983
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        738,
+        1440,
+        1046
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.touchsurgery:id/cardLayout",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.touchsurgery:id/ivIcon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            35,
+            1046,
+            315,
+            1326
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "resource-id": "com.touchsurgery:id/downloadButton",
+          "children": [
+            {
+              "text": "Y",
+              "resource-id": "com.touchsurgery:id/actionIcon",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.touchsurgery.tsui.views.TSTextView",
+              "bounds": [
+                1188,
+                1119,
+                1349,
+                1280
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "com.touchsurgery.uiutils.CFDownloadButton",
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.touchsurgery.uiutils.library.LibraryDownloadButton",
+          "bounds": [
+            1188,
+            1119,
+            1349,
+            1280
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Sentinel Lymph Node Biopsy Phase 1: Patient Preparation",
+          "resource-id": "com.touchsurgery:id/tvTitle",
+          "ancestors": [
+            "com.touchsurgery.tsui.views.TSTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.touchsurgery.uiutils.CFTitleView",
+          "bounds": [
+            350,
+            1074,
+            1153,
+            1184
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "BREAST",
+          "resource-id": "com.touchsurgery:id/tvTagCategory1",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.touchsurgery.tsui.views.TSTextView",
+          "bounds": [
+            350,
+            1232,
+            530,
+            1291
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1046,
+        1440,
+        1354
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.touchsurgery:id/cardLayout",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.touchsurgery:id/ivIcon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            35,
+            1354,
+            315,
+            1634
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "resource-id": "com.touchsurgery:id/downloadButton",
+          "children": [
+            {
+              "text": "Y",
+              "resource-id": "com.touchsurgery:id/actionIcon",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.touchsurgery.tsui.views.TSTextView",
+              "bounds": [
+                1188,
+                1427,
+                1349,
+                1588
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "com.touchsurgery.uiutils.CFDownloadButton",
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.touchsurgery.uiutils.library.LibraryDownloadButton",
+          "bounds": [
+            1188,
+            1427,
+            1349,
+            1588
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Sentinel Lymph Node Biopsy Phase 2: Biopsy",
+          "resource-id": "com.touchsurgery:id/tvTitle",
+          "ancestors": [
+            "com.touchsurgery.tsui.views.TSTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.touchsurgery.uiutils.CFTitleView",
+          "bounds": [
+            350,
+            1382,
+            1153,
+            1492
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "BREAST",
+          "resource-id": "com.touchsurgery:id/tvTagCategory1",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.touchsurgery.tsui.views.TSTextView",
+          "bounds": [
+            350,
+            1540,
+            530,
+            1599
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1354,
+        1440,
+        1662
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.touchsurgery:id/cardLayout",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.touchsurgery:id/ivIcon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            35,
+            1662,
+            315,
+            1942
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "resource-id": "com.touchsurgery:id/downloadButton",
+          "children": [
+            {
+              "text": "Y",
+              "resource-id": "com.touchsurgery:id/actionIcon",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.touchsurgery.tsui.views.TSTextView",
+              "bounds": [
+                1188,
+                1735,
+                1349,
+                1896
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "com.touchsurgery.uiutils.CFDownloadButton",
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.touchsurgery.uiutils.library.LibraryDownloadButton",
+          "bounds": [
+            1188,
+            1735,
+            1349,
+            1896
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "IMA Harvesting",
+          "resource-id": "com.touchsurgery:id/tvTitle",
+          "ancestors": [
+            "com.touchsurgery.tsui.views.TSTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.touchsurgery.uiutils.CFTitleView",
+          "bounds": [
+            350,
+            1690,
+            1153,
+            1748
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "CARDIOTHORACIC",
+          "resource-id": "com.touchsurgery:id/tvTagCategory1",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.touchsurgery.tsui.views.TSTextView",
+          "bounds": [
+            350,
+            1848,
+            676,
+            1907
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1662,
+        1440,
+        1970
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.touchsurgery:id/cardLayout",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.touchsurgery:id/ivIcon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            35,
+            1970,
+            315,
+            2250
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "resource-id": "com.touchsurgery:id/downloadButton",
+          "children": [
+            {
+              "text": "Y",
+              "resource-id": "com.touchsurgery:id/actionIcon",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.touchsurgery.tsui.views.TSTextView",
+              "bounds": [
+                1188,
+                2043,
+                1349,
+                2204
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "com.touchsurgery.uiutils.CFDownloadButton",
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.touchsurgery.uiutils.library.LibraryDownloadButton",
+          "bounds": [
+            1188,
+            2043,
+            1349,
+            2204
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Sternotomy and CPB Phase 1: Median Sternotomy",
+          "resource-id": "com.touchsurgery:id/tvTitle",
+          "ancestors": [
+            "com.touchsurgery.tsui.views.TSTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.touchsurgery.uiutils.CFTitleView",
+          "bounds": [
+            350,
+            1998,
+            1153,
+            2108
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "CARDIOTHORACIC",
+          "resource-id": "com.touchsurgery:id/tvTagCategory1",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.touchsurgery.tsui.views.TSTextView",
+          "bounds": [
+            350,
+            2156,
+            676,
+            2215
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1970,
+        1440,
+        2278
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.touchsurgery:id/cardLayout",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.touchsurgery:id/ivIcon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            35,
+            2278,
+            315,
+            2392
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "resource-id": "com.touchsurgery:id/downloadButton",
+          "children": [
+            {
+              "text": "Y",
+              "resource-id": "com.touchsurgery:id/actionIcon",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.touchsurgery.tsui.views.TSTextView",
+              "bounds": [
+                1188,
+                2351,
+                1349,
+                2392
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "com.touchsurgery.uiutils.CFDownloadButton",
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.touchsurgery.uiutils.library.LibraryDownloadButton",
+          "bounds": [
+            1188,
+            2351,
+            1349,
+            2392
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Sternotomy and CPB Phase 2: Cannulation for CPB and Cardiac Arrest",
+          "resource-id": "com.touchsurgery:id/tvTitle",
+          "ancestors": [
+            "com.touchsurgery.tsui.views.TSTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.touchsurgery.uiutils.CFTitleView",
+          "bounds": [
+            350,
+            2306,
+            1153,
+            2392
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        2278,
+        1440,
+        2392
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

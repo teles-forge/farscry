@@ -1,0 +1,271 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "may.movie.maker:id/maintoolbar",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "may.movie.maker:id/ivBtnBack",
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "bounds": [
+            0,
+            0,
+            168,
+            196
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Share Video",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "may.movie.maker.view.CustomTextView",
+          "bounds": [
+            168,
+            51,
+            542,
+            144
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "share",
+          "resource-id": "may.movie.maker:id/action_share",
+          "ancestors": [
+            "android.support.v7.internal.widget.CompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.internal.view.menu.ActionMenuItemView",
+          "bounds": [
+            1104,
+            14,
+            1272,
+            182
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "delete",
+          "resource-id": "may.movie.maker:id/action_delete",
+          "ancestors": [
+            "android.support.v7.internal.widget.CompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.internal.view.menu.ActionMenuItemView",
+          "bounds": [
+            1272,
+            14,
+            1440,
+            182
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        0,
+        1440,
+        196
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.view.SurfaceView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "may.movie.maker:id/vvScreen",
+      "clickable": false,
+      "class": "android.widget.VideoView",
+      "bounds": [
+        0,
+        196,
+        1440,
+        1636
+      ],
+      "componentLabel": "Video"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "may.movie.maker:id/iv_screen",
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        0,
+        196,
+        1440,
+        1636
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "iconClass": "play",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "may.movie.maker:id/ivbtn_preview",
+      "clickable": true,
+      "class": "android.widget.ImageButton",
+      "bounds": [
+        56,
+        1706,
+        168,
+        1818
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "resource-id": "may.movie.maker:id/adView",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.google.android.gms.ads.internal.webview.n",
+          "bounds": [
+            0,
+            2217,
+            1440,
+            2392
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.webkit.WebView",
+                "android.widget.AbsoluteLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                0,
+                2217,
+                1440,
+                2392
+              ],
+              "clickable": true,
+              "class": "com.google.android.gms.ads.internal.webview.o",
+              "componentLabel": "Web View"
+            }
+          ],
+          "componentLabel": "Web View"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.google.android.gms.ads.AdView",
+      "bounds": [
+        0,
+        2217,
+        1440,
+        2392
+      ],
+      "componentLabel": "Advertisement"
+    },
+    {
+      "text": "00:00",
+      "resource-id": "may.movie.maker:id/tvSeekLeft",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "may.movie.maker.view.CustomTextView",
+      "bounds": [
+        252,
+        1782,
+        358,
+        1839
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "may.movie.maker:id/seekVideo",
+      "clickable": false,
+      "class": "android.widget.SeekBar",
+      "bounds": [
+        196,
+        1713,
+        1384,
+        1762
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "text": "00:04",
+      "resource-id": "may.movie.maker:id/tvSeekRight",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "may.movie.maker.view.CustomTextView",
+      "bounds": [
+        1222,
+        1782,
+        1328,
+        1839
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

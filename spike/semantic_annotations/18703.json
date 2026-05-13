@@ -1,0 +1,749 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.apalon.weatherlive.free:id/imgAppIcon",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        282,
+        2235,
+        420,
+        2373
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Weather Live",
+      "resource-id": "com.apalon.weatherlive.free:id/txtAppName",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        462,
+        2264,
+        794,
+        2344
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "UPGRADE",
+      "resource-id": "com.apalon.weatherlive.free:id/btnUpgrade",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        850,
+        2250,
+        1158,
+        2358
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "update"
+    },
+    {
+      "resource-id": "com.apalon.weatherlive.free:id/infiniteViewPager",
+      "children": [
+        {
+          "text": "Hour",
+          "resource-id": "com.apalon.weatherlive.free:id/forecastHourBtn",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.Button",
+          "bounds": [
+            32,
+            1671,
+            282,
+            1877
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "Day",
+          "resource-id": "com.apalon.weatherlive.free:id/forecastDayBtn",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.Button",
+          "bounds": [
+            32,
+            1877,
+            282,
+            2083
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "day"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.apalon.weatherlive.free:id/forecastIndicator",
+          "clickable": false,
+          "class": "com.viewpagerindicator.CirclePageIndicator",
+          "bounds": [
+            16,
+            2031,
+            1424,
+            2065
+          ],
+          "componentLabel": "Pager Indicator"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.apalon.weatherlive.free:id/imgWeatherIcon",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            288,
+            706,
+            1152,
+            1248
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "resource-id": "com.apalon.weatherlive.free:id/ltElemTextDayForecast0",
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.RelativeLayout",
+          "bounds": [
+            282,
+            1739,
+            571,
+            1987
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "today"
+        },
+        {
+          "text": "Feels like 61°",
+          "resource-id": "com.apalon.weatherlive.free:id/feelLikeTempParam",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.apalon.weatherlive.layout.TempParamView",
+          "bounds": [
+            548,
+            654,
+            891,
+            722
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Min 55°",
+          "resource-id": "com.apalon.weatherlive.free:id/highLowTempParam1",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.apalon.weatherlive.layout.TempParamView",
+          "bounds": [
+            210,
+            802,
+            383,
+            870
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Max 64°",
+          "resource-id": "com.apalon.weatherlive.free:id/highLowTempParam2",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.apalon.weatherlive.layout.TempParamView",
+          "bounds": [
+            1051,
+            802,
+            1234,
+            870
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Cloudy",
+          "resource-id": "com.apalon.weatherlive.free:id/txtWeatherText",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            240,
+            1136,
+            1200,
+            1213
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "resource-id": "com.apalon.weatherlive.free:id/widgetClock",
+          "ancestors": [
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.apalon.weatherlive.layout.PanelLayoutClock",
+          "bounds": [
+            529,
+            1309,
+            910,
+            1423
+          ],
+          "componentLabel": "Text Button",
+          "text": ":​​"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.apalon.weatherlive.free:id/imgHourWeatherIcon",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            665,
+            1739,
+            765,
+            1839
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Fri",
+          "resource-id": "com.apalon.weatherlive.free:id/txtWeekdayName",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            680,
+            1849,
+            750,
+            1916
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "50°",
+          "resource-id": "com.apalon.weatherlive.free:id/highLowTempParam1",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            598,
+            1916,
+            688,
+            1987
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "66°",
+          "resource-id": "com.apalon.weatherlive.free:id/highLowTempParam2",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            742,
+            1916,
+            832,
+            1987
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.apalon.weatherlive.free:id/imgCenter",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            713,
+            1929,
+            717,
+            1972
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.apalon.weatherlive.free:id/imgHourWeatherIcon",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            954,
+            1739,
+            1054,
+            1839
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Sat",
+          "resource-id": "com.apalon.weatherlive.free:id/txtWeekdayName",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            962,
+            1849,
+            1047,
+            1916
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "51°",
+          "resource-id": "com.apalon.weatherlive.free:id/highLowTempParam1",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            887,
+            1916,
+            977,
+            1987
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "68°",
+          "resource-id": "com.apalon.weatherlive.free:id/highLowTempParam2",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            1031,
+            1916,
+            1121,
+            1987
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "minus",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.apalon.weatherlive.free:id/imgCenter",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1002,
+            1929,
+            1006,
+            1972
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.apalon.weatherlive.free:id/imgHourWeatherIcon",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1243,
+            1739,
+            1343,
+            1839
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Sun",
+          "resource-id": "com.apalon.weatherlive.free:id/txtWeekdayName",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            1245,
+            1849,
+            1342,
+            1916
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "51°",
+          "resource-id": "com.apalon.weatherlive.free:id/highLowTempParam1",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            1176,
+            1916,
+            1266,
+            1987
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "72°",
+          "resource-id": "com.apalon.weatherlive.free:id/highLowTempParam2",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            1320,
+            1916,
+            1410,
+            1987
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.apalon.weatherlive.free:id/imgCenter",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1291,
+            1929,
+            1295,
+            1972
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "61",
+          "resource-id": "com.apalon.weatherlive.free:id/txtTemp",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            521,
+            359,
+            849,
+            710
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "°F",
+          "resource-id": "com.apalon.weatherlive.free:id/txtTempUnit",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            849,
+            410,
+            918,
+            495
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.apalon.weatherlive.free:id/imgShare",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            849,
+            495,
+            918,
+            564
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Humidity \n75 %",
+          "resource-id": "com.apalon.weatherlive.free:id/ltWeatherParamElem2",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.apalon.weatherlive.layout.PanelWidgetParamElem",
+          "bounds": [
+            195,
+            942,
+            398,
+            1078
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Precipit. \n0 in",
+          "resource-id": "com.apalon.weatherlive.free:id/ltWeatherParamElem2",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.apalon.weatherlive.layout.PanelWidgetParamElem",
+          "bounds": [
+            1050,
+            942,
+            1236,
+            1078
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Wind​​",
+          "resource-id": "com.apalon.weatherlive.free:id/txtWindSpeedTitle",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            580,
+            1228,
+            677,
+            1286
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "17",
+          "resource-id": "com.apalon.weatherlive.free:id/txtWindSpeedValue",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            692,
+            1213,
+            758,
+            1290
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "mph",
+          "resource-id": "com.apalon.weatherlive.free:id/txtWindSpeedSymbol",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            773,
+            1228,
+            859,
+            1286
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "com.apalon.view.SafeViewPager",
+        "android.support.v4.view.ViewPager",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.apalon.view.InfiniteViewPager",
+      "bounds": [
+        0,
+        151,
+        1440,
+        2083
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "iconClass": "close",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.apalon.weatherlive.free:id/topbar_radar",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageButton",
+      "bounds": [
+        0,
+        0,
+        151,
+        151
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Civic Center, California, United States",
+      "resource-id": "com.apalon.weatherlive.free:id/topbar_location",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.apalon.weatherlive.layout.PanelLayoutTopbarLocation",
+      "bounds": [
+        151,
+        0,
+        1138,
+        151
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.apalon.weatherlive.free:id/topbar_settings",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageButton",
+      "bounds": [
+        1138,
+        0,
+        1289,
+        151
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.webkit.WebView",
+        "android.widget.AbsoluteLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        160,
+        2217,
+        1280,
+        2392
+      ],
+      "clickable": true,
+      "class": "com.millennialmedia.internal.MMWebView",
+      "componentLabel": "Web View"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.apalon.weatherlive.free:id/topbar_info",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageButton",
+      "bounds": [
+        1289,
+        0,
+        1440,
+        151
+      ],
+      "componentLabel": "Image"
+    }
+  ]
+}

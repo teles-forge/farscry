@@ -1,0 +1,366 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.ixigo.train.ixitrain:id/toolbar",
+      "children": [
+        {
+          "text": "Search trains",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            210,
+            135,
+            623,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "Sun, 26 Feb 17",
+      "resource-id": "com.ixigo.train.ixitrain:id/search_date",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.ixigo.train.ixitrain.ui.widget.CleareableEditTextViewWithCalendar",
+      "bounds": [
+        28,
+        736,
+        1412,
+        911
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Show Trains",
+      "resource-id": "com.ixigo.train.ixitrain:id/show_trains",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        28,
+        929,
+        1412,
+        1104
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "My Recent Searches (1)",
+      "resource-id": "com.ixigo.train.ixitrain:id/recent_search_lbl",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        28,
+        1146,
+        1235,
+        1212
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Clear all",
+      "resource-id": "com.ixigo.train.ixitrain:id/remove_all",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1235,
+        1146,
+        1412,
+        1212
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "all"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        28,
+        1247,
+        1412,
+        1551
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "iconClass": "delete",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.ixigo.train.ixitrain:id/close_recent_org_dest",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            1310,
+            1357,
+            1394,
+            1441
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "From",
+          "resource-id": "com.ixigo.train.ixitrain:id/from_station_txt",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            46,
+            1265,
+            159,
+            1331
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Hyderabad - All stations",
+          "resource-id": "com.ixigo.train.ixitrain:id/recent_org",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            177,
+            1265,
+            696,
+            1331
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "To",
+          "resource-id": "com.ixigo.train.ixitrain:id/to_station_txt",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            46,
+            1366,
+            100,
+            1432
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Pune - All stations",
+          "resource-id": "com.ixigo.train.ixitrain:id/recent_dest",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            118,
+            1366,
+            511,
+            1432
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Search Date",
+          "resource-id": "com.ixigo.train.ixitrain:id/search_date_txt",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            46,
+            1467,
+            305,
+            1533
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Sun, 26 Feb 17",
+          "resource-id": "com.ixigo.train.ixitrain:id/search_date_val",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            323,
+            1467,
+            644,
+            1533
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "text": "Hyderabad - All stations",
+      "resource-id": "com.ixigo.train.ixitrain:id/from_station",
+      "ancestors": [
+        "android.widget.AutoCompleteTextView",
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.ixigo.train.ixitrain.ui.widget.CleareableAutoCompleteTextView",
+      "bounds": [
+        28,
+        350,
+        1412,
+        525
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Pune - All stations",
+      "resource-id": "com.ixigo.train.ixitrain:id/to_station",
+      "ancestors": [
+        "android.widget.AutoCompleteTextView",
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.ixigo.train.ixitrain.ui.widget.CleareableAutoCompleteTextView",
+      "bounds": [
+        28,
+        543,
+        1412,
+        718
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.ixigo.train.ixitrain:id/iv_swap",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        1143,
+        469,
+        1272,
+        598
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "com.mopub.mobileads.BaseWebView",
+        "android.webkit.WebView",
+        "android.widget.AbsoluteLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        160,
+        2217,
+        1280,
+        2392
+      ],
+      "clickable": true,
+      "class": "com.mopub.mraid.MraidBridge$MraidWebView",
+      "componentLabel": "Web View"
+    }
+  ]
+}

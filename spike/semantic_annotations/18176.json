@@ -1,0 +1,438 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.battlelancer.seriesguide:id/sgToolbar",
+      "children": [
+        {
+          "text": "Westworld",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            252,
+            135,
+            585,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "com.battlelancer.seriesguide:id/menu_overview_search",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1132,
+            98,
+            1300,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.battlelancer.seriesguide:id/tabsOverview",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            0,
+            280,
+            226,
+            448
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "textButtonClass": "show"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            226,
+            280,
+            551,
+            448
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "text": "OVERVIEW"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            551,
+            280,
+            855,
+            448
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "text": "SEASONS"
+        }
+      ],
+      "ancestors": [
+        "android.widget.HorizontalScrollView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.battlelancer.seriesguide.widgets.SlidingTabLayout",
+      "bounds": [
+        0,
+        280,
+        1440,
+        448
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        56,
+        504,
+        1384,
+        1036
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.battlelancer.seriesguide:id/imageViewShowPosterBackground",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            410,
+            504,
+            1384,
+            1036
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Continuing",
+          "resource-id": "com.battlelancer.seriesguide:id/textViewShowStatus",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            438,
+            504,
+            779,
+            625
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Mon 2:00 AM",
+          "resource-id": "com.battlelancer.seriesguide:id/textViewShowReleaseTime",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            438,
+            625,
+            859,
+            746
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "HBO",
+          "resource-id": "com.battlelancer.seriesguide:id/textViewShowNetwork",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            438,
+            746,
+            580,
+            867
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "60 min",
+          "resource-id": "com.battlelancer.seriesguide:id/textViewShowRuntime",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            438,
+            867,
+            653,
+            988
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.battlelancer.seriesguide:id/imageViewShowPoster",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            56,
+            504,
+            410,
+            1036
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "resource-id": "com.battlelancer.seriesguide:id/containerRatings",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        463,
+        1286,
+        976,
+        1714
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "rate"
+    },
+    {
+      "text": "English",
+      "resource-id": "com.battlelancer.seriesguide:id/buttonShowLanguage",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        56,
+        1732,
+        1384,
+        1900
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "english"
+    },
+    {
+      "text": "Westworld is a dark odyssey about the dawn of artificial consciousness and the evolution of sin. Set at the intersection of the near future and the reimagined past, it explores a world in which every human appetite, no matter how noble or depraved, can be indulged.",
+      "resource-id": "com.battlelancer.seriesguide:id/textViewShowOverview",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        84,
+        1900,
+        1356,
+        2250
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Cast",
+      "resource-id": "com.battlelancer.seriesguide:id/labelCast",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        84,
+        2366,
+        184,
+        2392
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Remove from favorites",
+      "resource-id": "com.battlelancer.seriesguide:id/buttonShowFavorite",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        0,
+        1036,
+        480,
+        1282
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Share",
+      "resource-id": "com.battlelancer.seriesguide:id/buttonShowShare",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        480,
+        1036,
+        960,
+        1282
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "share"
+    },
+    {
+      "text": "Shortcut",
+      "resource-id": "com.battlelancer.seriesguide:id/buttonShowShortcut",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        960,
+        1036,
+        1440,
+        1282
+      ],
+      "componentLabel": "Text Button"
+    }
+  ]
+}

@@ -1,0 +1,883 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.banfield.bpht:id/my_awesome_toolbar",
+      "children": [
+        {
+          "text": "Locations & Appointments",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            252,
+            138,
+            1062,
+            225
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.banfield.bpht:id/layout_btn_unselected_map",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        711,
+        315,
+        1027,
+        420
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "map"
+    },
+    {
+      "text": "",
+      "resource-id": "com.banfield.bpht:id/txt_search_address",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatEditText",
+      "bounds": [
+        36,
+        456,
+        1246,
+        607
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "iconClass": "location_crosshair",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.banfield.bpht:id/btn_current_location",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        1299,
+        487,
+        1387,
+        575
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "list",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.banfield.bpht:id/iv_btn_selected_list",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        482,
+        332,
+        552,
+        402
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "List",
+      "resource-id": "com.banfield.bpht:id/tv_btn_selected_list",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.banfield.bpht.base.CustomTextView",
+      "bounds": [
+        563,
+        336,
+        641,
+        399
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        643,
+        1440,
+        859
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "2024 Lombard St, San Francisco, CA",
+          "resource-id": "com.banfield.bpht:id/location_address",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.banfield.bpht.base.CustomTextView",
+          "bounds": [
+            25,
+            728,
+            791,
+            788
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "415-921-0410",
+          "resource-id": "com.banfield.bpht:id/location_phone",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.banfield.bpht.base.CustomTextView",
+          "bounds": [
+            25,
+            788,
+            293,
+            841
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "Marina ",
+          "resource-id": "com.banfield.bpht:id/location_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.banfield.bpht.base.CustomTextView",
+          "bounds": [
+            25,
+            661,
+            951,
+            728
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "3.08 miles",
+          "resource-id": "com.banfield.bpht:id/location_distance",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.banfield.bpht.base.CustomTextView",
+          "bounds": [
+            951,
+            671,
+            1415,
+            724
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        863,
+        1440,
+        1079
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "315 Gellert Blvd, Daly City, CA",
+          "resource-id": "com.banfield.bpht:id/location_address",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.banfield.bpht.base.CustomTextView",
+          "bounds": [
+            25,
+            948,
+            655,
+            1008
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "650-758-4915",
+          "resource-id": "com.banfield.bpht:id/location_phone",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.banfield.bpht.base.CustomTextView",
+          "bounds": [
+            25,
+            1008,
+            293,
+            1061
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "Daly City",
+          "resource-id": "com.banfield.bpht:id/location_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.banfield.bpht.base.CustomTextView",
+          "bounds": [
+            25,
+            881,
+            951,
+            948
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "6.26 miles",
+          "resource-id": "com.banfield.bpht:id/location_distance",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.banfield.bpht.base.CustomTextView",
+          "bounds": [
+            951,
+            891,
+            1415,
+            944
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1083,
+        1440,
+        1299
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "3520 S El Camino Real, San Mateo, CA",
+          "resource-id": "com.banfield.bpht:id/location_address",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.banfield.bpht.base.CustomTextView",
+          "bounds": [
+            25,
+            1168,
+            834,
+            1228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "650-577-0115",
+          "resource-id": "com.banfield.bpht:id/location_phone",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.banfield.bpht.base.CustomTextView",
+          "bounds": [
+            25,
+            1228,
+            293,
+            1281
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "San Mateo",
+          "resource-id": "com.banfield.bpht:id/location_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.banfield.bpht.base.CustomTextView",
+          "bounds": [
+            25,
+            1101,
+            951,
+            1168
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "17.26 miles",
+          "resource-id": "com.banfield.bpht:id/location_distance",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.banfield.bpht.base.CustomTextView",
+          "bounds": [
+            951,
+            1111,
+            1415,
+            1164
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1303,
+        1440,
+        1519
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "1380 Fitzgerald Dr, Richmond, CA",
+          "resource-id": "com.banfield.bpht:id/location_address",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.banfield.bpht.base.CustomTextView",
+          "bounds": [
+            25,
+            1388,
+            733,
+            1448
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "510-223-3884",
+          "resource-id": "com.banfield.bpht:id/location_phone",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.banfield.bpht.base.CustomTextView",
+          "bounds": [
+            25,
+            1448,
+            293,
+            1501
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "Pinole",
+          "resource-id": "com.banfield.bpht:id/location_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.banfield.bpht.base.CustomTextView",
+          "bounds": [
+            25,
+            1321,
+            951,
+            1388
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "17.55 miles",
+          "resource-id": "com.banfield.bpht:id/location_distance",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.banfield.bpht.base.CustomTextView",
+          "bounds": [
+            951,
+            1331,
+            1415,
+            1384
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1523,
+        1440,
+        1739
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "15555 E 14th St, San Leandro, CA",
+          "resource-id": "com.banfield.bpht:id/location_address",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.banfield.bpht.base.CustomTextView",
+          "bounds": [
+            25,
+            1608,
+            739,
+            1668
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "510-276-0355",
+          "resource-id": "com.banfield.bpht:id/location_phone",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.banfield.bpht.base.CustomTextView",
+          "bounds": [
+            25,
+            1668,
+            293,
+            1721
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "San Leandro",
+          "resource-id": "com.banfield.bpht:id/location_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.banfield.bpht.base.CustomTextView",
+          "bounds": [
+            25,
+            1541,
+            951,
+            1608
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "17.70 miles",
+          "resource-id": "com.banfield.bpht:id/location_distance",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.banfield.bpht.base.CustomTextView",
+          "bounds": [
+            951,
+            1551,
+            1415,
+            1604
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1743,
+        1440,
+        1959
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "1225 Industrial Rd, San Carlos, CA",
+          "resource-id": "com.banfield.bpht:id/location_address",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.banfield.bpht.base.CustomTextView",
+          "bounds": [
+            25,
+            1828,
+            750,
+            1888
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "650-802-0213",
+          "resource-id": "com.banfield.bpht:id/location_phone",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.banfield.bpht.base.CustomTextView",
+          "bounds": [
+            25,
+            1888,
+            293,
+            1941
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "San Carlos",
+          "resource-id": "com.banfield.bpht:id/location_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.banfield.bpht.base.CustomTextView",
+          "bounds": [
+            25,
+            1761,
+            951,
+            1828
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "20.67 miles",
+          "resource-id": "com.banfield.bpht:id/location_distance",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.banfield.bpht.base.CustomTextView",
+          "bounds": [
+            951,
+            1771,
+            1415,
+            1824
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1963,
+        1440,
+        2179
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "1780 Ygnacio Valley Rd, Walnut Creek, CA",
+          "resource-id": "com.banfield.bpht:id/location_address",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.banfield.bpht.base.CustomTextView",
+          "bounds": [
+            25,
+            2048,
+            907,
+            2108
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "925-932-2420",
+          "resource-id": "com.banfield.bpht:id/location_phone",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.banfield.bpht.base.CustomTextView",
+          "bounds": [
+            25,
+            2108,
+            293,
+            2161
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "Valley",
+          "resource-id": "com.banfield.bpht:id/location_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.banfield.bpht.base.CustomTextView",
+          "bounds": [
+            25,
+            1981,
+            951,
+            2048
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "24.70 miles",
+          "resource-id": "com.banfield.bpht:id/location_distance",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.banfield.bpht.base.CustomTextView",
+          "bounds": [
+            951,
+            1991,
+            1415,
+            2044
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        2183,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "812 Camino Ramon Rd, Danville, CA",
+          "resource-id": "com.banfield.bpht:id/location_address",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.banfield.bpht.base.CustomTextView",
+          "bounds": [
+            25,
+            2268,
+            784,
+            2328
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "925-837-4264",
+          "resource-id": "com.banfield.bpht:id/location_phone",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.banfield.bpht.base.CustomTextView",
+          "bounds": [
+            25,
+            2328,
+            293,
+            2381
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "Danville ",
+          "resource-id": "com.banfield.bpht:id/location_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.banfield.bpht.base.CustomTextView",
+          "bounds": [
+            25,
+            2201,
+            951,
+            2268
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "25.03 miles",
+          "resource-id": "com.banfield.bpht:id/location_distance",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.banfield.bpht.base.CustomTextView",
+          "bounds": [
+            951,
+            2211,
+            1415,
+            2264
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

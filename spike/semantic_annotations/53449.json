@@ -1,0 +1,777 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "org.wikipedia:id/single_fragment_toolbar",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.wikipedia:id/single_fragment_toolbar_wordmark",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            56,
+            130,
+            406,
+            234
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "org.wikipedia:id/menu_feed_search",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1104,
+            98,
+            1272,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "resource-id": "org.wikipedia:id/menu_overflow_button",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1272,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.design.widget.TabLayout$SlidingTabStrip",
+      "bounds": [
+        0,
+        2196,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.design.widget.TabLayout$TabView",
+          "bounds": [
+            720,
+            2196,
+            1080,
+            2392
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "textButtonClass": "history"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.design.widget.TabLayout$TabView",
+          "bounds": [
+            1080,
+            2196,
+            1440,
+            2392
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "textButtonClass": "nearby"
+        },
+        {
+          "text": "Explore",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "org.wikipedia.navtab.NavTabView",
+          "bounds": [
+            42,
+            2215,
+            318,
+            2372
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "My lists",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "org.wikipedia.navtab.NavTabView",
+          "bounds": [
+            402,
+            2220,
+            678,
+            2368
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "ancestors": [
+        "org.wikipedia.feed.view.ListCardView",
+        "org.wikipedia.feed.view.DefaultFeedCardView",
+        "android.support.v7.widget.CardView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "org.wikipedia.feed.mostread.MostReadCardView",
+      "bounds": [
+        25,
+        280,
+        1415,
+        1539
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "org.wikipedia.feed.view.PageTitleListCardItemView",
+          "bounds": [
+            25,
+            280,
+            1415,
+            475
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "iconClass": "more",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "org.wikipedia:id/view_list_card_item_menu",
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                1275,
+                280,
+                1415,
+                391
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "ancestors": [
+                "com.facebook.drawee.view.GenericDraweeView",
+                "com.facebook.drawee.view.DraweeView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "org.wikipedia:id/view_list_card_item_image",
+              "clickable": false,
+              "class": "com.facebook.drawee.view.SimpleDraweeView",
+              "bounds": [
+                81,
+                280,
+                221,
+                419
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "GBU-43/B Massive Ordnance Air Blast",
+              "resource-id": "org.wikipedia:id/view_list_card_item_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                277,
+                280,
+                1221,
+                340
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "United States large-yield thermobaric bomb",
+              "resource-id": "org.wikipedia:id/view_list_card_item_subtitle",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "org.wikipedia.views.GoneIfEmptyTextView",
+              "bounds": [
+                277,
+                347,
+                1220,
+                413
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "org.wikipedia.feed.view.PageTitleListCardItemView",
+          "bounds": [
+            25,
+            475,
+            1415,
+            727
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "iconClass": "more",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "org.wikipedia:id/view_list_card_item_menu",
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                1275,
+                503,
+                1415,
+                643
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "ancestors": [
+                "com.facebook.drawee.view.GenericDraweeView",
+                "com.facebook.drawee.view.DraweeView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "org.wikipedia:id/view_list_card_item_image",
+              "clickable": false,
+              "class": "com.facebook.drawee.view.SimpleDraweeView",
+              "bounds": [
+                81,
+                531,
+                221,
+                671
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "Charlie Murphy",
+              "resource-id": "org.wikipedia:id/view_list_card_item_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                277,
+                516,
+                653,
+                592
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "American actor",
+              "resource-id": "org.wikipedia:id/view_list_card_item_subtitle",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "org.wikipedia.views.GoneIfEmptyTextView",
+              "bounds": [
+                277,
+                599,
+                613,
+                665
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "org.wikipedia.feed.view.PageTitleListCardItemView",
+          "bounds": [
+            25,
+            727,
+            1415,
+            979
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "iconClass": "more",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "org.wikipedia:id/view_list_card_item_menu",
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                1275,
+                755,
+                1415,
+                895
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "iconClass": "minus",
+              "ancestors": [
+                "com.facebook.drawee.view.GenericDraweeView",
+                "com.facebook.drawee.view.DraweeView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "org.wikipedia:id/view_list_card_item_image",
+              "clickable": false,
+              "class": "com.facebook.drawee.view.SimpleDraweeView",
+              "bounds": [
+                81,
+                783,
+                221,
+                923
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "text": "13 Reasons Why",
+              "resource-id": "org.wikipedia:id/view_list_card_item_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                277,
+                768,
+                690,
+                844
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "American television series",
+              "resource-id": "org.wikipedia:id/view_list_card_item_subtitle",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "org.wikipedia.views.GoneIfEmptyTextView",
+              "bounds": [
+                277,
+                851,
+                850,
+                917
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "org.wikipedia.feed.view.PageTitleListCardItemView",
+          "bounds": [
+            25,
+            979,
+            1415,
+            1231
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "iconClass": "more",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "org.wikipedia:id/view_list_card_item_menu",
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                1275,
+                1007,
+                1415,
+                1147
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "ancestors": [
+                "com.facebook.drawee.view.GenericDraweeView",
+                "com.facebook.drawee.view.DraweeView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "org.wikipedia:id/view_list_card_item_image",
+              "clickable": false,
+              "class": "com.facebook.drawee.view.SimpleDraweeView",
+              "bounds": [
+                81,
+                1035,
+                221,
+                1175
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "North Korea",
+              "resource-id": "org.wikipedia:id/view_list_card_item_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                277,
+                1020,
+                576,
+                1096
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Country in East Asia",
+              "resource-id": "org.wikipedia:id/view_list_card_item_subtitle",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "org.wikipedia.views.GoneIfEmptyTextView",
+              "bounds": [
+                277,
+                1103,
+                714,
+                1169
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "org.wikipedia.feed.view.PageTitleListCardItemView",
+          "bounds": [
+            25,
+            1231,
+            1415,
+            1539
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "iconClass": "more",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "org.wikipedia:id/view_list_card_item_menu",
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                1275,
+                1259,
+                1415,
+                1399
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "ancestors": [
+                "com.facebook.drawee.view.GenericDraweeView",
+                "com.facebook.drawee.view.DraweeView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "org.wikipedia:id/view_list_card_item_image",
+              "clickable": false,
+              "class": "com.facebook.drawee.view.SimpleDraweeView",
+              "bounds": [
+                81,
+                1287,
+                221,
+                1427
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "Father of All Bombs",
+              "resource-id": "org.wikipedia:id/view_list_card_item_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                277,
+                1266,
+                769,
+                1342
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Russian-designed, bomber-delivered thermobaric weapon",
+              "resource-id": "org.wikipedia:id/view_list_card_item_subtitle",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "org.wikipedia.views.GoneIfEmptyTextView",
+              "bounds": [
+                277,
+                1349,
+                1303,
+                1483
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "org.wikipedia.feed.view.DefaultFeedCardView",
+        "android.support.v7.widget.CardView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "org.wikipedia.feed.image.FeaturedImageCardView",
+      "bounds": [
+        25,
+        1575,
+        1415,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "com.facebook.drawee.view.SimpleDraweeView",
+            "com.facebook.drawee.view.GenericDraweeView",
+            "com.facebook.drawee.view.DraweeView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.wikipedia:id/view_featured_image_card_image",
+          "clickable": true,
+          "class": "org.wikipedia.views.FaceAndColorDetectImageView",
+          "bounds": [
+            25,
+            1743,
+            1415,
+            2392
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "photo",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.wikipedia:id/view_card_header_image",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            81,
+            1617,
+            165,
+            1701
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Picture of the day",
+          "resource-id": "org.wikipedia:id/view_card_header_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            193,
+            1626,
+            578,
+            1692
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Apr 14, 2017",
+          "resource-id": "org.wikipedia:id/view_card_header_subtitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1038,
+            1630,
+            1275,
+            1687
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.wikipedia:id/view_list_card_header_menu",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1275,
+            1589,
+            1415,
+            1729
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "Card"
+    }
+  ]
+}

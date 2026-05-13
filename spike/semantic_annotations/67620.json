@@ -1,0 +1,153 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.guardian:id/long_press_view",
+      "clickable": false,
+      "class": "com.theguardian.ui.RadialActionMenuView",
+      "bounds": [
+        0,
+        0,
+        1440,
+        2392
+      ],
+      "componentLabel": "Drawer"
+    },
+    {
+      "resource-id": "com.guardian:id/webview_container",
+      "children": [
+        {
+          "resource-id": "com.guardian:id/webview",
+          "children": [
+            {
+              "ancestors": [
+                "com.guardian.ui.views.cards.AdvertCardView",
+                "com.guardian.ui.views.cards.BaseCardView",
+                "com.guardian.ui.views.cards.CardLinearLayout",
+                "android.widget.LinearLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "com.guardian.ui.views.cards.ArticleAdvertCardView",
+              "bounds": [
+                0,
+                740,
+                1440,
+                1672
+              ],
+              "clickable": true,
+              "children": [
+                {
+                  "ancestors": [
+                    "android.view.ViewGroup",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "class": "com.google.android.gms.ads.doubleclick.PublisherAdView",
+                  "bounds": [
+                    0,
+                    740,
+                    1440,
+                    1615
+                  ],
+                  "clickable": false,
+                  "children": [
+                    {
+                      "ancestors": [
+                        "android.widget.FrameLayout",
+                        "android.view.ViewGroup",
+                        "android.view.View",
+                        "java.lang.Object"
+                      ],
+                      "class": "com.google.android.gms.ads.internal.webview.n",
+                      "bounds": [
+                        196,
+                        740,
+                        1246,
+                        1615
+                      ],
+                      "clickable": false,
+                      "children": [
+                        {
+                          "ancestors": [
+                            "android.webkit.WebView",
+                            "android.widget.AbsoluteLayout",
+                            "android.view.ViewGroup",
+                            "android.view.View",
+                            "java.lang.Object"
+                          ],
+                          "bounds": [
+                            196,
+                            740,
+                            1246,
+                            1615
+                          ],
+                          "clickable": true,
+                          "class": "com.google.android.gms.ads.internal.webview.o",
+                          "componentLabel": "Web View"
+                        }
+                      ],
+                      "componentLabel": "Web View"
+                    }
+                  ],
+                  "componentLabel": "Advertisement"
+                }
+              ],
+              "componentLabel": "Card"
+            }
+          ],
+          "ancestors": [
+            "android.webkit.WebView",
+            "android.widget.AbsoluteLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.guardian.ui.views.GuardianWebView",
+          "bounds": [
+            0,
+            0,
+            1440,
+            2392
+          ],
+          "componentLabel": "Web View"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        0,
+        1440,
+        2392
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

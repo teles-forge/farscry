@@ -1,0 +1,476 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.seatguru:id/action_bar_container",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            252,
+            121,
+            777,
+            242
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.seatguru:id/seat",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            850,
+            119,
+            1010,
+            245
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1010,
+            119,
+            1014,
+            245
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.seatguru:id/flight_status",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            1014,
+            119,
+            1206,
+            245
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1206,
+            119,
+            1210,
+            245
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "flight",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.seatguru:id/flights",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            1210,
+            119,
+            1384,
+            245
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.webkit.WebView",
+        "android.widget.AbsoluteLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.seatguru:id/seatWebview",
+      "clickable": true,
+      "class": "com.seatguru.webview.CustomWebview",
+      "bounds": [
+        0,
+        280,
+        1440,
+        2392
+      ],
+      "componentLabel": "Web View"
+    },
+    {
+      "text": "Flight #",
+      "resource-id": "com.seatguru:id/tab_1",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        0,
+        280,
+        480,
+        455
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Route",
+      "resource-id": "com.seatguru:id/tab_2",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        480,
+        280,
+        960,
+        455
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "route"
+    },
+    {
+      "text": "Airline",
+      "resource-id": "com.seatguru:id/tab_3",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        960,
+        280,
+        1440,
+        455
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Airline",
+      "resource-id": "com.seatguru:id/AirlineByRouteTextView",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        53,
+        518,
+        265,
+        620
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "From",
+      "resource-id": "com.seatguru:id/FromLocationTextView",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        53,
+        846,
+        229,
+        948
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "To",
+      "resource-id": "com.seatguru:id/ToLocationTextView",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        53,
+        1174,
+        137,
+        1276
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Departure Date",
+      "resource-id": "com.seatguru:id/DepartureRouteTextView",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        53,
+        1502,
+        562,
+        1604
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "5/21/2017",
+      "resource-id": "com.seatguru:id/DatePickerRouteBtn",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatEditText",
+      "bounds": [
+        53,
+        1639,
+        463,
+        1831
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Find Seatmap",
+      "resource-id": "com.seatguru:id/FindSeatMapRouteBtn",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        88,
+        1936,
+        1352,
+        2144
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Recent Searches",
+      "resource-id": "com.seatguru:id/RecentSearchesTextViewAtSeatByRoute",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        53,
+        2179,
+        618,
+        2281
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "com.seatguru:id/SearchItemContainer",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        57,
+        2320,
+        1383,
+        2392
+      ],
+      "componentLabel": "Text Button",
+      "text": "SFO"
+    },
+    {
+      "text": "United",
+      "resource-id": "com.seatguru:id/autocomplete",
+      "ancestors": [
+        "android.widget.AutoCompleteTextView",
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatAutoCompleteTextView",
+      "bounds": [
+        53,
+        655,
+        1387,
+        811
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.seatguru:id/icon",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        1271,
+        1003,
+        1387,
+        1119
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "San Francisco, CA - SFO International Airport (SFO)",
+      "resource-id": "com.seatguru:id/autocomplete",
+      "ancestors": [
+        "android.widget.AutoCompleteTextView",
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatAutoCompleteTextView",
+      "bounds": [
+        53,
+        983,
+        1259,
+        1139
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.seatguru:id/icon",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        1271,
+        1331,
+        1387,
+        1447
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "New York City, NY - All Airports (NYC)",
+      "resource-id": "com.seatguru:id/autocomplete",
+      "ancestors": [
+        "android.widget.AutoCompleteTextView",
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatAutoCompleteTextView",
+      "bounds": [
+        53,
+        1311,
+        1259,
+        1467
+      ],
+      "componentLabel": "Input"
+    }
+  ]
+}

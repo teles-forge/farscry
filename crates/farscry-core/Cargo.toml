@@ -1,0 +1,19 @@
+[package]
+name = "farscry-core"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+publish = true
+
+[dependencies]
+image = { workspace = true }
+serde = { workspace = true }
+thiserror = { workspace = true }
+rayon = { workspace = true }
+rustdct = { workspace = true }
+hex = { workspace = true }
+
+[dev-dependencies]
+serde_json = "1"

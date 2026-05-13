@@ -62,14 +62,6 @@ jobs:
             ort_lib_glob: "libonnxruntime*.dylib"
             sha_cmd: shasum -a 256
 
-          - os: macos-13
-            target: x86_64-apple-darwin
-            asset_name: farscry-x86_64-apple-darwin
-            binary: farscry
-            archive_ext: tar.gz
-            ort_lib_glob: "libonnxruntime*.dylib"
-            sha_cmd: shasum -a 256
-
           - os: ubuntu-latest
             target: x86_64-unknown-linux-gnu
             asset_name: farscry-x86_64-unknown-linux-gnu
@@ -173,62 +165,25 @@ jobs:
           $assetName = "${{ matrix.asset_name }}"
           $releaseDir = "target\$target\release"
 
-          # ort-sys copy-dylibs places onnxruntime.dll directly in the release dir.
-          # Use -Include (not -Filter) to avoid Win32 wildcard edge-cases, and also
-          # check the exact known path first to short-circuit the recursive search.
-          Write-Host "=== Searching for ORT DLL in $releaseDir ==="
           $ortDll = $null
-
-          # 1. Direct check — fastest, most reliable
           $knownPath = "$releaseDir\onnxruntime.dll"
           if (Test-Path $knownPath) {
             $ortDll = Get-Item $knownPath
-            Write-Host "Found at known path: $knownPath"
-          }
-
-          # 2. Fallback: recursive -Include search across release dir
-          if (-not $ortDll) {
+          } else {
             $ortDll = Get-ChildItem -Path $releaseDir -Recurse -Include "onnxruntime*.dll" `
               -ErrorAction SilentlyContinue |
               Sort-Object LastWriteTime -Descending |
               Select-Object -First 1
-            if ($ortDll) { Write-Host "Found via recursive search: $($ortDll.FullName)" }
-          }
-
-          # 3. Diagnostics if still not found
-          if (-not $ortDll) {
-            Write-Host "=== All DLLs under $releaseDir ==="
-            Get-ChildItem -Path $releaseDir -Recurse -Include "*.dll" -ErrorAction SilentlyContinue |
-              Select-Object -ExpandProperty FullName
-            Write-Host "=== Files directly in $releaseDir ==="
-            Get-ChildItem -Path $releaseDir -File -ErrorAction SilentlyContinue |
-              Select-Object Name, Length | Format-Table -AutoSize
           }
 
           New-Item -ItemType Directory -Force -Path "dist\$assetName" | Out-Null
           Copy-Item $binary "dist\$assetName\"
+          if ($ortDll) { Copy-Item $ortDll.FullName "dist\$assetName\" }
 
-          if ($ortDll) {
-            Write-Host "Bundling ORT DLL: $($ortDll.FullName)"
-            Copy-Item $ortDll.FullName "dist\$assetName\"
-          } else {
-            Write-Warning "onnxruntime.dll not found - binary ships without it. Users may need to install ONNX Runtime separately."
-          }
-
-          # Compress-Archive with the directory (not \*) so extraction preserves the subdir.
-          Compress-Archive `
-            -Path "dist\$assetName" `
-            -DestinationPath "${assetName}.zip" `
-            -Force
+          Compress-Archive -Path "dist\$assetName" -DestinationPath "${assetName}.zip" -Force
 
           $hash = (Get-FileHash $binary -Algorithm SHA256).Hash.ToLower()
           $hash | Out-File -FilePath "${assetName}.sha256" -NoNewline -Encoding ascii
-
-          Write-Host "=== Archive contents ==="
-          Expand-Archive -Path "${assetName}.zip" -DestinationPath "dist_verify" -Force
-          Get-ChildItem "dist_verify\$assetName" | Format-Table Name, Length
-          Write-Host "=== SHA256 ==="
-          Get-Content "${assetName}.sha256"
 
       - name: Upload to GitHub Release
         env:

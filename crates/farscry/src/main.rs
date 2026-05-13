@@ -386,9 +386,9 @@ fn setup() -> Result<()> {
 
     let agents: &[(&str, &str)] = &[
         ("Claude Code", ".claude/mcp.json"),
-        ("Cursor",      ".cursor/mcp.json"),
-        ("Windsurf",    ".windsurf/mcp.json"),
-        ("Zed",         ".config/zed/settings.json"),
+        ("Cursor", ".cursor/mcp.json"),
+        ("Windsurf", ".windsurf/mcp.json"),
+        ("Zed", ".config/zed/settings.json"),
     ];
 
     let mut detected: Vec<&str> = Vec::new();

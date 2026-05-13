@@ -1,7 +1,7 @@
 # farscry
 
-> See through any image. Converts screenshots into structured context
-> that any AI agent can understand. No vision API. No cloud. One binary.
+> Converts screenshots into structured context that AI agents can act on.
+> No vision API. No cloud. One binary.
 
 *farscry (n.) a magical artifact that reveals what is hidden at a distance.*
 
@@ -12,18 +12,20 @@ Give them a screenshot, they guess. Give them farscry output, they understand.
 
 | Tool | Time | Cost/image | Works offline |
 |------|------|------------|---------------|
-| **farscry** | **~80ms** | **$0** | **✅** |
-| Mistral OCR | ~1.2s | $0.001 | ❌ |
-| Claude Vision | ~1.8s | $0.003 | ❌ |
-| Tesseract | ~300ms | $0 | ✅ |
+| **farscry (warm)** | **38ms** | **$0** | **✅** |
+| **farscry (cold)** | **~350ms** | **$0** | **✅** |
+| Tesseract 5.5.2 (4K) | ~2,500ms | $0 | ✅ |
+| Cloud Vision | ~2-5s | $0.0047 | ❌ |
 
-*farscry wins on cost + agent-readiness. Tesseract wins on nothing useful for agents.*
+N=223 screenshots (ScreenSpot-Pro, MIT). Warm daemon measured independently on M4 Pro (CoreML).
+
+*farscry wins on speed, cost, and agent-readiness.*
 
 ## Install
 
 ```bash
-# npm
-npm install farscry
+# npm (global)
+npm install -g farscry
 
 # pip
 pip install farscry
@@ -34,42 +36,52 @@ curl -fsSL https://farscry.dev/install | sh
 
 ## Quick start
 
-```typescript
-import { extract } from 'farscry'
+```bash
+# Describe any image — returns coordinates
+farscry screen.png
 
-const context = await extract('screenshot.png')
-// → structured TOON context, ready for any agent
-console.log(context)
+# Diff before/after an action
+farscry diff before.png after.png
+
+# Pipe from clipboard (Cmd+Shift+4 on macOS)
+farscry --from-clipboard | your-agent "fix this"
+
+# Run as MCP server
+farscry serve --mcp
 ```
 
 ## How it works
 
 ```
-[image] → [binarize] → [layout detect] → [OCR per region] → [classify] → [TOON output]
+[image] → [binarize] → [layout detect] → [OCR per region] → [classify] → [VASP output]
 ```
 
 Detects: error messages · UI fields + values · terminal output · conversations · config screens
 
-## Output (TOON format)
+## Output (VASP format)
 
-TOON uses 40% fewer tokens than JSON with higher LLM accuracy.
+~175 tokens average. Typed elements with exact pixel coordinates — not descriptions.
 
 ```
-screen_type: error_screenshot
-error: "Payment limit exceeded"
-fields:
-  max_value | 1500
-  status    | Active
-  period    | Monthly
+=== farscry visual context ===
+screen_type: config
+---
+
+[mid-right]  button  "Save Changes"  enabled:true
+[mid-center] input   value="1500"    editable:true
+[bottom]     error   "Value must be ≤ 10000"
+
+affordances:
+  click → "Save Changes"  at (400,300)
+  type  → "Max Value"     at (200,120)  current:"1500"
 ```
 
 ## Integrations
 
 Works with any agent that accepts text:
 
-- **Devin CLI**: pipe output into your message
-- **Claude Code**: `farscry screenshot.png | claude`
-- **Zendesk / Intercom**: inject into ticket body before AI reads it
+- **Devin CLI**: `farscry screen.png | devin "fix this"`
+- **Claude Code**: `farscry screen.png | claude`
 - **MCP server**: `farscry serve --mcp`
 
 ## License

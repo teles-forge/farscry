@@ -483,6 +483,18 @@ fn setup() -> Result<()> {
     println!("\nThen: screenshot → fp → done.\n");
 
     println!("─────────────────────────────────────────");
+    println!("Smart paste — Cmd+V auto-detects images\n");
+    println!("Configure Cmd+V to run farscry automatically");
+    println!("when clipboard contains an image?\n");
+    println!("  y = create script + show terminal instructions");
+    println!("  n = skip\n");
+
+    let sp = readline_prompt("Configure smart paste? [y/N]: ");
+    if sp.eq_ignore_ascii_case("y") {
+        setup_smart_paste(&home)?;
+    }
+
+    println!("\n─────────────────────────────────────────");
     println!("MCP integration (automatic, no alias needed):\n");
     println!("{mcp_snippet}\n");
 
@@ -499,10 +511,124 @@ fn setup() -> Result<()> {
     }
     println!("\nfarscry never modifies your config files automatically.\n");
 
+    println!("─────────────────────────────────────────");
+    println!("Setup complete.\n");
+    println!("Summary:");
+    println!("  ffix  → farscry + your agent (one command)");
+    println!("  fp    → farscry paste (smart, uses saved config)");
+    println!("  Cmd+V → auto-detects images (if configured above)\n");
+
     let open = readline_prompt(&format!("Open {} in your editor? (y/N) ", zshrc.display()));
     if open.eq_ignore_ascii_case("y") {
         let editor = std::env::var("EDITOR").unwrap_or_else(|_| "open".to_string());
         let _ = std::process::Command::new(&editor).arg(&zshrc).spawn();
+    }
+
+    Ok(())
+}
+
+fn setup_smart_paste(home: &Path) -> Result<()> {
+    let farscry_dir = home.join(".farscry");
+    std::fs::create_dir_all(&farscry_dir)?;
+
+    #[cfg(target_os = "macos")]
+    {
+        let script_path = farscry_dir.join("smart-paste.sh");
+        let script = r#"#!/bin/bash
+HAS_IMAGE=$(osascript -e '
+  try
+    set img to the clipboard as «class PNGf»
+    return "yes"
+  end try
+  try
+    set img to the clipboard as TIFF picture
+    return "yes"
+  end try
+  return "no"
+')
+if [ "$HAS_IMAGE" = "yes" ]; then
+    farscry paste
+else
+    pbpaste
+fi
+"#;
+        std::fs::write(&script_path, script)?;
+        use std::os::unix::fs::PermissionsExt;
+        std::fs::set_permissions(&script_path, std::fs::Permissions::from_mode(0o755))?;
+        println!("\nCreated: {}\n", script_path.display());
+        println!("Terminal instructions:\n");
+        println!("  iTerm2:");
+        println!("    Preferences → Keys → Key Bindings → +");
+        println!("    Shortcut: Cmd+V");
+        println!("    Action: Run Command");
+        println!("    Command: {}\n", script_path.display());
+        println!("  Warp:");
+        println!("    Settings → Features → Custom Key Bindings");
+        println!("    Key: Cmd+V");
+        println!("    Action: Run Command: {}\n", script_path.display());
+        println!("  Terminal.app:");
+        println!("    Not supported natively. Use fp alias instead.\n");
+    }
+
+    #[cfg(target_os = "linux")]
+    {
+        let script_path = farscry_dir.join("smart-paste.sh");
+        let script = r#"#!/bin/bash
+if command -v xclip &>/dev/null; then
+    HAS_IMAGE=$(xclip -selection clipboard -t TARGETS -o 2>/dev/null | grep -c "image/")
+    if [ "$HAS_IMAGE" -gt 0 ]; then
+        farscry paste
+    else
+        xclip -selection clipboard -o
+    fi
+elif command -v wl-paste &>/dev/null; then
+    HAS_IMAGE=$(wl-paste --list-types 2>/dev/null | grep -c "image/")
+    if [ "$HAS_IMAGE" -gt 0 ]; then
+        farscry paste
+    else
+        wl-paste
+    fi
+else
+    echo "Install xclip or wl-clipboard for smart paste"
+fi
+"#;
+        std::fs::write(&script_path, script)?;
+        use std::os::unix::fs::PermissionsExt;
+        std::fs::set_permissions(&script_path, std::fs::Permissions::from_mode(0o755))?;
+        println!("\nCreated: {}\n", script_path.display());
+        println!("Terminal instructions:\n");
+        println!("  Gnome Terminal:");
+        println!("    Add to ~/.bashrc:");
+        println!("    bind -x '\"\\C-v\": {}'", script_path.display());
+        println!("    Then: source ~/.bashrc\n");
+        println!("  Kitty (~/.config/kitty/kitty.conf):");
+        println!("    map ctrl+v launch --stdin-source=@last_cmd_output {}\n", script_path.display());
+        println!("  Other terminals: check your terminal's key binding preferences.\n");
+    }
+
+    #[cfg(target_os = "windows")]
+    {
+        let script_path = farscry_dir.join("smart-paste.ps1");
+        let script = r#"$formats = [System.Windows.Forms.Clipboard]::GetDataObject().GetFormats()
+$hasImage = $formats | Where-Object { $_ -match "Bitmap|PNG|image" }
+if ($hasImage) {
+    farscry paste
+} else {
+    Get-Clipboard
+}
+"#;
+        std::fs::write(&script_path, script)?;
+        println!("\nCreated: {}\n", script_path.display());
+        println!("Terminal instructions:\n");
+        println!("  Windows Terminal:");
+        println!("    Settings → Actions → Add new");
+        println!("    Command: wt.exe new-tab powershell -Command {}", script_path.display());
+        println!("    Keys: ctrl+v\n");
+    }
+
+    #[cfg(not(any(target_os = "macos", target_os = "linux", target_os = "windows")))]
+    {
+        println!("Smart paste scripts not available on this platform.");
     }
 
     Ok(())

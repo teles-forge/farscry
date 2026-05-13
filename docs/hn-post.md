@@ -1,16 +1,26 @@
-# Show HN: farscry – I was tired of agents guessing where to click
+# Show HN: farscry – typed pixel coordinates from any screenshot, local, 38ms
 
 ---
 
 ## Title
 
-Show HN: farscry – I was tired of agents guessing where to click
-
-vision APIs describe. farscry gives coordinates.
+Show HN: farscry – typed pixel coordinates from any screenshot, local, 38ms
 
 ---
 
 ## Body
+
+I was tired of agents guessing where to click.
+Claude Code sees a screenshot and says "there's a blue Save button somewhere".
+farscry says: button "Save" at (400,300) enabled:true
+
+---
+
+Vision APIs return prose. Agents guess where to click.
+They fail 58% of the time (OSWorld, arXiv:2404.07972, GPT-4V baseline, Table 2).
+
+farscry gives exact typed coordinates from any image.
+Local. Free. Deterministic. No API key. No GPU.
 
 ```
 farscry screenshot.png
@@ -28,14 +38,6 @@ affordances:
   click -> "Save Changes" at (400,300)
   type  -> "Max Value"    at (200,120)  current:"1500"
 ```
-
----
-
-Vision APIs return prose. Agents guess where to click.
-They fail 58% of the time (OSWorld, arXiv:2404.07972, GPT-4V baseline, Table 2).
-
-farscry gives exact typed coordinates from any image.
-Local. Free. Deterministic. No API key. No GPU.
 
 ---
 

@@ -10,16 +10,14 @@ Give them a screenshot, they guess. Give them farscry output, they understand.
 
 ## Benchmark
 
-| Tool | Time | Cost/image | Works offline |
-|------|------|------------|---------------|
-| **farscry (warm)** | **38ms** | **$0** | **✅** |
-| **farscry (cold)** | **~350ms** | **$0** | **✅** |
-| Tesseract 5.5.2 (4K) | ~2,500ms | $0 | ✅ |
-| Cloud Vision | ~2-5s | $0.0047 | ❌ |
+| Tool | Time | Cost/image | Offline | Coordinates |
+|---|---|---|---|---|
+| **farscry (warm)** | **38ms** | **$0** | **✅** | **✅** |
+| **farscry (cold)** | **~350ms** | **$0** | **✅** | **✅** |
+| Tesseract 5.5.2 (4K) | ~2,500ms | $0 | ✅ | ❌ |
+| Cloud Vision | ~2-5s | $0.0047 | ❌ | ❌ |
 
 N=223 screenshots (ScreenSpot-Pro, MIT). Warm daemon measured independently on M4 Pro (CoreML).
-
-*farscry wins on speed, cost, and agent-readiness.*
 
 ## Install
 

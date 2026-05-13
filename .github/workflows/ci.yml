@@ -46,17 +46,6 @@ jobs:
         with:
           components: clippy
 
-      - name: Cache Cargo
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.cargo/registry/index/
-            ~/.cargo/registry/cache/
-            ~/.cargo/git/db/
-            target/
-          key: cargo-clippy-${{ hashFiles('**/Cargo.lock') }}
-          restore-keys: cargo-clippy-
-
       - name: Run clippy
         run: cargo clippy --workspace --all-targets -- -D warnings
 
@@ -67,17 +56,6 @@ jobs:
       - uses: actions/checkout@v4
 
       - uses: dtolnay/rust-toolchain@stable
-
-      - name: Cache Cargo
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.cargo/registry/index/
-            ~/.cargo/registry/cache/
-            ~/.cargo/git/db/
-            target/
-          key: cargo-check-${{ hashFiles('**/Cargo.lock') }}
-          restore-keys: cargo-check-
 
       - name: cargo check
         run: cargo check --workspace
@@ -105,17 +83,6 @@ jobs:
       - name: Install MSVC dev tools (Windows)
         if: runner.os == 'Windows'
         uses: ilammy/msvc-dev-cmd@v1
-
-      - name: Cache Cargo (includes ORT download)
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.cargo/registry/index/
-            ~/.cargo/registry/cache/
-            ~/.cargo/git/db/
-            target/
-          key: cargo-test-${{ matrix.os }}-${{ hashFiles('**/Cargo.lock') }}
-          restore-keys: cargo-test-${{ matrix.os }}-
 
       - name: Run tests
         run: cargo test ${{ matrix.test_flags }}

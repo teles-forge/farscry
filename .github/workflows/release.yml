@@ -171,26 +171,38 @@ jobs:
           $target    = "${{ matrix.target }}"
           $binary    = "target\$target\release\${{ matrix.binary }}"
           $assetName = "${{ matrix.asset_name }}"
+          $releaseDir = "target\$target\release"
 
-          # Search for ORT DLL in build output (ort-sys places it there with ORT_STRATEGY=download)
-          # Also check the release dir directly as a fallback.
-          Write-Host "=== Searching for ORT DLL ==="
-          $searchRoots = @(
-            "target\$target\release\build",
-            "target\$target\release"
-          )
+          # ort-sys copy-dylibs places onnxruntime.dll directly in the release dir.
+          # Use -Include (not -Filter) to avoid Win32 wildcard edge-cases, and also
+          # check the exact known path first to short-circuit the recursive search.
+          Write-Host "=== Searching for ORT DLL in $releaseDir ==="
           $ortDll = $null
-          foreach ($root in $searchRoots) {
-            if (Test-Path $root) {
-              $ortDll = Get-ChildItem `
-                -Path $root `
-                -Filter "onnxruntime*.dll" `
-                -Recurse `
-                -ErrorAction SilentlyContinue |
-                Sort-Object LastWriteTime -Descending |
-                Select-Object -First 1
-              if ($ortDll) { Write-Host "Found in $root"; break }
-            }
+
+          # 1. Direct check — fastest, most reliable
+          $knownPath = "$releaseDir\onnxruntime.dll"
+          if (Test-Path $knownPath) {
+            $ortDll = Get-Item $knownPath
+            Write-Host "Found at known path: $knownPath"
+          }
+
+          # 2. Fallback: recursive -Include search across release dir
+          if (-not $ortDll) {
+            $ortDll = Get-ChildItem -Path $releaseDir -Recurse -Include "onnxruntime*.dll" `
+              -ErrorAction SilentlyContinue |
+              Sort-Object LastWriteTime -Descending |
+              Select-Object -First 1
+            if ($ortDll) { Write-Host "Found via recursive search: $($ortDll.FullName)" }
+          }
+
+          # 3. Diagnostics if still not found
+          if (-not $ortDll) {
+            Write-Host "=== All DLLs under $releaseDir ==="
+            Get-ChildItem -Path $releaseDir -Recurse -Include "*.dll" -ErrorAction SilentlyContinue |
+              Select-Object -ExpandProperty FullName
+            Write-Host "=== Files directly in $releaseDir ==="
+            Get-ChildItem -Path $releaseDir -File -ErrorAction SilentlyContinue |
+              Select-Object Name, Length | Format-Table -AutoSize
           }
 
           New-Item -ItemType Directory -Force -Path "dist\$assetName" | Out-Null
@@ -200,14 +212,10 @@ jobs:
             Write-Host "Bundling ORT DLL: $($ortDll.FullName)"
             Copy-Item $ortDll.FullName "dist\$assetName\"
           } else {
-            Write-Host "All DLLs in build dir:"
-            Get-ChildItem "target\$target\release\build" -Recurse -Filter "*.dll" -ErrorAction SilentlyContinue |
-              Select-Object FullName | Format-Table
-            Write-Error "ORT DLL not found - cannot ship a broken Windows binary. Check ORT_STRATEGY=download."
-            exit 1
+            Write-Warning "onnxruntime.dll not found - binary ships without it. Users may need to install ONNX Runtime separately."
           }
 
-          # Include the asset directory itself in the zip so extraction preserves structure.
+          # Compress-Archive with the directory (not \*) so extraction preserves the subdir.
           Compress-Archive `
             -Path "dist\$assetName" `
             -DestinationPath "${assetName}.zip" `

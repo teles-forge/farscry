@@ -1,0 +1,23 @@
+[package]
+name = "farscry-ocr-ort"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+publish = false
+
+[features]
+integration-tests = []
+
+[dependencies]
+farscry-core = { path = "../farscry-core" }
+oar-ocr = { version = "0.6", features = ["default"] }
+image = { workspace = true }
+sha2 = { workspace = true }
+dirs = { workspace = true }
+serde_json = { workspace = true }
+
+[dev-dependencies]
+farscry-classifier = { path = "../farscry-classifier" }
+farscry-diff = { path = "../farscry-diff" }

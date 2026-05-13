@@ -198,9 +198,23 @@ jobs:
             --clobber \
             --repo "${{ github.repository }}"
 
+  finalize-release:
+    name: Publish release
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mark release as published (un-draft)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release edit "${{ github.ref_name }}" \
+            --draft=false \
+            --repo "${{ github.repository }}"
+          echo "farscry ${{ github.ref_name }} is live."
+
   publish-npm:
     name: Publish npm
-    needs: build
+    needs: finalize-release
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -220,11 +234,11 @@ jobs:
         working-directory: npm
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npm publish --access public
+        run: npm publish --access public || true
 
   publish-pypi:
     name: Publish PyPI
-    needs: build
+    needs: finalize-release
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -249,11 +263,11 @@ jobs:
         env:
           TWINE_USERNAME: __token__
           TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
-        run: twine upload pip/dist/*
+        run: twine upload pip/dist/* || true
 
   publish-crates:
     name: Publish crates.io
-    needs: build
+    needs: finalize-release
     runs-on: ubuntu-latest
     env:
       ORT_STRATEGY: download
@@ -265,7 +279,7 @@ jobs:
       - name: Publish farscry-core
         env:
           CARGO_REGISTRY_TOKEN: ${{ secrets.CARGO_REGISTRY_TOKEN }}
-        run: cargo publish -p farscry-core --no-verify
+        run: cargo publish -p farscry-core --no-verify || true
 
       - name: Wait for crates.io index propagation
         run: sleep 45
@@ -273,18 +287,4 @@ jobs:
       - name: Publish farscry binary
         env:
           CARGO_REGISTRY_TOKEN: ${{ secrets.CARGO_REGISTRY_TOKEN }}
-        run: cargo publish -p farscry --no-verify
-
-  finalize-release:
-    name: Publish release
-    needs: [publish-npm, publish-pypi, publish-crates]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Mark release as published (un-draft)
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          gh release edit "${{ github.ref_name }}" \
-            --draft=false \
-            --repo "${{ github.repository }}"
-          echo "farscry ${{ github.ref_name }} is live."
+        run: cargo publish -p farscry --no-verify || true

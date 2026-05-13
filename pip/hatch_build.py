@@ -21,6 +21,7 @@ import stat
 import sys
 import tarfile
 import tempfile
+import time
 import urllib.request
 import zipfile
 from pathlib import Path
@@ -137,8 +138,17 @@ class FarscryBuildHook(BuildHookInterface):
             archive_path = tmp_path / f"{asset_name}.{archive_ext}"
             sha256_path  = tmp_path / f"{asset_name}.sha256"
 
-            _download(archive_url, archive_path)
-            _download(sha256_url,  sha256_path)
+            for attempt in range(5):
+                try:
+                    _download(archive_url, archive_path)
+                    _download(sha256_url, sha256_path)
+                    break
+                except Exception as exc:
+                    if attempt < 4:
+                        print(f"[farscry] Download attempt {attempt + 1} failed: {exc}. Retrying in 30s...", flush=True)
+                        time.sleep(30)
+                    else:
+                        raise
 
             expected = sha256_path.read_text().strip().split()[0].lower()
 

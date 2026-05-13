@@ -43,8 +43,12 @@ affordances:
 
 **Why I built this:**
 
-Devin and Claude Code struggle with images.
-Give them a screenshot, they describe it in prose.
+Built while working on kiosk payment support. Agents couldn't understand
+error screenshots from customers. The support engineer would paste a screenshot
+in the chat and the agent would describe it instead of acting on it.
+
+That's when I realized: Devin and Claude Code don't lack intelligence.
+They lack coordinates. Give them a screenshot, they describe it in prose.
 Give them farscry output, they know exactly what to click.
 
 I wanted to pipe screenshots directly into my agent

@@ -3,7 +3,7 @@
 > See through any image. Converts screenshots into structured context
 > that any AI agent can understand. No vision API. No cloud. One binary.
 
-*farscry (n.) — a magical artifact that reveals what is hidden at a distance.*
+*farscry (n.) a magical artifact that reveals what is hidden at a distance.*
 
 **Problem**: Devin CLI, Claude Code, and Cursor struggle with images.
 Give them a screenshot, they guess. Give them farscry output, they understand.

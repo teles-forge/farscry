@@ -1,0 +1,29 @@
+[package]
+name = "farscry-spike-native-coreml"
+version = "0.1.0"
+edition = "2021"
+
+
+[dependencies]
+objc2             = "0.6"
+objc2-foundation  = { version = "0.3", features = [
+    "NSArray",
+    "NSDictionary",
+    "NSError",
+    "NSString",
+    "NSURL",
+    "NSValue",
+] }
+objc2-core-ml = { version = "0.3", features = [
+    "MLDictionaryFeatureProvider",
+    "MLFeatureProvider",
+    "MLFeatureType",
+    "MLFeatureValue",
+    "MLModel",
+    "MLModelConfiguration",
+    "MLMultiArray",
+    "MLPredictionOptions",
+    "MLSpecializationStrategy",
+] }
+
+

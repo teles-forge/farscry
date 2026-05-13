@@ -50,7 +50,7 @@ The baseline scales them down before inference, so the actual charge is always t
 
 Connection to the 8.9x claim
 
-Our earlier 1080p benchmark (N=40, real Anthropic API calls) reported **8.9x token reduction**.
+Our earlier 1080p benchmark (N=20 screenshots, 2 runs each, real Anthropic API calls) reported **8.9x token reduction**.
 
 Verification: `min(1920x1080 / 750, 1568) = 1,568 t`.
 Spike VASP output averaged **175 tokens** -> `1,568 / 175 = 9.0x`.
@@ -86,7 +86,7 @@ All times are **cold-start CLI** (binary load + model init + OCR + output per ca
 | Fastest | ~260 ms |
 
 **Daemon mode** (`farscry serve --mcp`): models stay warm in memory.
-Measured independently on M4 Pro: **~21 ms** per image (CoreML ANE, batch=32 rec).
+Measured independently on M4 Pro: **38ms** per image (CoreML ANE, warm daemon).
 
 ---
 

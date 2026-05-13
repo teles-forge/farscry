@@ -1,3 +1,5 @@
+#![cfg(target_os = "macos")]
+
 use farscry_core::traits::OcrEngine;
 use farscry_ocr_coreml::CoreMlOcrEngine;
 use std::path::PathBuf;

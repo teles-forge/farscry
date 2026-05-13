@@ -106,8 +106,6 @@ class FarscryBuildHook(BuildHookInterface):
     PLUGIN_NAME = "farscry"
 
     def initialize(self, version: str, build_data: Dict[str, Any]) -> None:
-        # sdist is pure Python source — binary is fetched at wheel-build or install time.
-        # Skipping here also avoids a 404 when the GitHub Release is still a draft.
         if getattr(self, "target_name", None) == "sdist":
             return
 

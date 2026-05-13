@@ -1,0 +1,112 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.everbum.lnl:id/buttonPanel",
+      "children": [
+        {
+          "text": "Close",
+          "resource-id": "android:id/button2",
+          "ancestors": [
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatButton",
+          "bounds": [
+            1165,
+            2210,
+            1398,
+            2378
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "close"
+        }
+      ],
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.ButtonBarLayout",
+      "bounds": [
+        0,
+        2196,
+        1440,
+        2392
+      ],
+      "componentLabel": "Button Bar"
+    },
+    {
+      "iconClass": "help",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.everbum.lnl:id/actionIcon",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        0,
+        84,
+        196,
+        280
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Baby Care Log Help",
+      "resource-id": "com.everbum.lnl:id/actionTitle",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        196,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "\n\n[[conf]] Configuration\n\nStart using the app by configuring it! Setting the date of birth is important to aid the navigation and the different computations.\nYou can do this from Prefrences/Baby settings or by tapping the main page left icon and going directly to Baby settings. You can also introduce here your baby's picture by pressing the picture square, so you have your baby's image as the icon in the app title bar.\n\nMain page\n\nStart using the app by pressing one of the action buttons bellow the title, in the page top bar. Below there is the date navigator, the next and previous day buttons and, on the right, the calendar allowing you to pick any date. Bellow the navigator, there is a list with all the actions recorded in the active day: time, title and description.\n\nCommon actions functionality\nFor each action, you can set the date and time, by tapping the blue rectangles from the top of the page: first rectangle for time, and second for date. Also, you can add notes (e.g. Took the vitamin, but spat out most of it). Two buttons are placed on the bottom of the page: Cancel - to abort current action and Save & Exit - to add the action and go back to main page. Each action is optimized to work both vertically and horizontally. For Nursing and Sleep actions, changing page orientation is not possible.\n\nPersistence functionality\nFor actions involving a timer (sleep and breast feeding), a special button exists, Exit & Continue, allowing you to leave the action page or even the app while the counter goes on. The action button flashes to signal a persistent action.\n\nEdit & Delete an action\nBy long pressing an item from the daily list (main page), you can choose to edit or delete an existing recorded action.\n\nActions functionality\n\n\n[[bottle]] Bottle feeding\n\nYou can change the measuring unit between oz and ml. After change, the max and current values will be changed accordingly. After Mom milk is checked, you can slide the bar to select a value between 0 and maximum. Also, you can change the max value by tapping the blue box on the right. The same functionality for Formula milk.\n\n\n[[nurse]] Breast feeding\n\nOn top, after date and time, you have an info box about the last used breast. It indicates the breast you used in the previous action, not now. Two big blue boxes come next, one marked left and one right. By tapping the play button accordingly you'll start recording the feeding time, and the box becomes green. Tapping play on the other box automatically stops the previous one. Also, you can manually change the time by tapping in the blue box, but outside the play/pause button. The button bellow is a general stop, stopping both timers.\n\n\n[[diaper]] Changing diapers\n\nYou can select if there was a pee or not, if there was a poop or not, and three degrees of pooping.\n\n\n[[sleep]] Sleeping\n\nLike in Breast feeding you have a big blue box for counting the sleeping time. The sleeping time can also be changed manually.\n\n\n[[med]] Take medicine\n\nBy using the Medicine selector you can choose which medicine to record. Using the button Edit medicine list, you can add, modify or delete every medicine to/from the list. Each line is a medicine.\n\n\n[[bath]] Bath time!\n\nNothing specific here.\n\n\n[[gener]] Generic action\n\nYou can introduce here new actions you find useful to track in relation to your baby. As in Take medicine, you have a selector to see an action name, and a button Edit title list to manage the generic actions list.\n\n\n[[solid]] Solid food\n\nVery similar in functionality with \"Take medicine\" action. You can also rate how much the baby likes a food.\n\n\n[[pump]] Breast pumping\n\nIt allows you to record the quantity of breast milk you pumped. There are separate measurements for each breast. Also, you can set the last breast you pumped. You can change the measuring unit between oz and ml. \n\n\n[[meas]] Measuring\n\nYou are able now to measure and check the progress for length, weight and head circumference of your baby. You can change the measuring unit between cm/kg and inches/pounds. \n\n\n\n[[stat]] Statistics\n\nYou can follow your baby's progress by going to the statistics, the first button after the action ones in the action bar. You can choose between seven types of statistics: daily digest, bottle progress, diapers usage, breast feeding progress, breast pumping progress, sleep progress and last event (telling you how much time has lapsed since the last action in each category). In daily digest page, you can go to a specific day by long tapping the corresponding list element. In the last action page, you will see just the actions you selected to be used in actions bar. In bottle progress page, you have the graph of quantities in magenta and a graph of average values in gray.\n\n\n\n[[gstat]] Growth Statistics\n\nSimilar with statistics.\n\nShacking gesture\nYou can configure a shortcut for the last event statistics, accessible by shacking the phone/tablet.\n\nApp Help\nEach page has a question mark icon on the right of the title bar. When you first tap it you'll have to choose between local help and online help. After that, it always will open the one you first selected. If you want to change the selection, long tap the question mark icon.\n\nAction bar customization\nBy long tapping an action in the action bar, you can change the visibility and place for each action.\n\nExport feature\nYou can also export data. From the main window, you can export the current day by tapping the export button from the title.\nIn the statistics window you will also find an export button for daily digest and for bottle progress.\n\nLast event widget\nYou have the possibility to add this important information to your main page. You can have maximum 6 last actions.\nThey will appear in the same order as in the action bar.\n\nSync functionality\nYou can auto synchronize (via net) the log between many devices. The action can be activated from the drawer. \n\n\n[[alert]] Alerts & Notifications\n\nThere is the possibility to add, for an action, four types of notifications or alerts: fixed time, since last action, action count today, action count overall. For each event you can add sound, flash signals or vibrations.",
+      "resource-id": "com.everbum.lnl:id/text",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        56,
+        336,
+        1384,
+        2196
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

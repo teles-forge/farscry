@@ -1,0 +1,696 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.wonggordon.bgmonitor:id/toolbar",
+      "children": [
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "resource-id": "com.wonggordon.bgmonitor:id/stats_spinner_view",
+          "ancestors": [
+            "android.widget.Spinner",
+            "android.widget.AbsSpinner",
+            "android.widget.AdapterView",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatSpinner",
+          "bounds": [
+            252,
+            84,
+            964,
+            280
+          ],
+          "componentLabel": "Text Button",
+          "text": "1 week"
+        },
+        {
+          "iconClass": "date_range",
+          "resource-id": "com.wonggordon.bgmonitor:id/menu_stats_today",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            964,
+            98,
+            1132,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "filter_list",
+          "resource-id": "com.wonggordon.bgmonitor:id/menu_stats_filter",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1132,
+            98,
+            1300,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "iconClass": "arrow_backward",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatImageButton",
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.wonggordon.bgmonitor:id/stats_button_prev",
+      "clickable": true,
+      "class": "com.wonggordon.bgmonitor.views.buttons.HintedImageButton",
+      "bounds": [
+        0,
+        2224,
+        182,
+        2392
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Wed, Apr 5",
+      "resource-id": "com.wonggordon.bgmonitor:id/stats_button_fromdate",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.wonggordon.bgmonitor.views.buttons.StyledButton",
+      "bounds": [
+        182,
+        2224,
+        720,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Tue, Apr 11",
+      "resource-id": "com.wonggordon.bgmonitor:id/stats_button_todate",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.wonggordon.bgmonitor.views.buttons.StyledButton",
+      "bounds": [
+        720,
+        2224,
+        1258,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "iconClass": "arrow_forward",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatImageButton",
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.wonggordon.bgmonitor:id/stats_button_next",
+      "clickable": true,
+      "class": "com.wonggordon.bgmonitor.views.buttons.HintedImageButton",
+      "bounds": [
+        1258,
+        2224,
+        1440,
+        2392
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.support.v7.widget.AppCompatImageButton",
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.wonggordon.bgmonitor:id/stats_button_graphprev",
+      "clickable": true,
+      "class": "com.wonggordon.bgmonitor.views.buttons.HintedImageButton",
+      "bounds": [
+        0,
+        280,
+        126,
+        1296
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.support.v7.widget.AppCompatImageButton",
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.wonggordon.bgmonitor:id/stats_button_graphnext",
+      "clickable": true,
+      "class": "com.wonggordon.bgmonitor.views.buttons.HintedImageButton",
+      "bounds": [
+        1314,
+        280,
+        1440,
+        1296
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "0 ",
+      "resource-id": "com.wonggordon.bgmonitor:id/stats_text_avgglucose",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.wonggordon.bgmonitor.views.text.StyledTextView",
+      "bounds": [
+        56,
+        1352,
+        101,
+        1428
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "average mg/dL from",
+      "resource-id": "com.wonggordon.bgmonitor:id/stats_text_bgunits",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.wonggordon.bgmonitor.views.text.StyledTextView",
+      "bounds": [
+        101,
+        1360,
+        547,
+        1426
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": " 0 ",
+      "resource-id": "com.wonggordon.bgmonitor:id/stats_text_numbgentries",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.wonggordon.bgmonitor.views.text.StyledTextView",
+      "bounds": [
+        547,
+        1352,
+        606,
+        1428
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "entries",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.wonggordon.bgmonitor.views.text.StyledTextView",
+      "bounds": [
+        606,
+        1360,
+        755,
+        1426
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "1.6% ",
+      "resource-id": "com.wonggordon.bgmonitor:id/stats_text_a1c",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.wonggordon.bgmonitor.views.text.StyledTextView",
+      "bounds": [
+        56,
+        1428,
+        188,
+        1504
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "estimated A1C",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.wonggordon.bgmonitor.views.text.StyledTextView",
+      "bounds": [
+        188,
+        1436,
+        511,
+        1502
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "0.0U ",
+      "resource-id": "com.wonggordon.bgmonitor:id/stats_text_bolustotal",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.wonggordon.bgmonitor.views.text.StyledTextView",
+      "bounds": [
+        56,
+        1760,
+        183,
+        1836
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "total boluses",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.wonggordon.bgmonitor.views.text.StyledTextView",
+      "bounds": [
+        183,
+        1768,
+        464,
+        1834
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "0g ",
+      "resource-id": "com.wonggordon.bgmonitor:id/stats_text_carbstotal",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.wonggordon.bgmonitor.views.text.StyledTextView",
+      "bounds": [
+        56,
+        2092,
+        132,
+        2168
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "carbohydrates",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.wonggordon.bgmonitor.views.text.StyledTextView",
+      "bounds": [
+        132,
+        2100,
+        445,
+        2166
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "0% (0) ",
+      "resource-id": "com.wonggordon.bgmonitor:id/stats_text_normalglucose",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.wonggordon.bgmonitor.views.text.StyledTextView",
+      "bounds": [
+        112,
+        1504,
+        281,
+        1580
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "in range",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.wonggordon.bgmonitor.views.text.StyledTextView",
+      "bounds": [
+        281,
+        1512,
+        455,
+        1578
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "0% (0) ",
+      "resource-id": "com.wonggordon.bgmonitor:id/stats_text_lowglucose",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.wonggordon.bgmonitor.views.text.StyledTextView",
+      "bounds": [
+        112,
+        1580,
+        281,
+        1656
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "lows",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.wonggordon.bgmonitor.views.text.StyledTextView",
+      "bounds": [
+        281,
+        1588,
+        383,
+        1654
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "0% (0) ",
+      "resource-id": "com.wonggordon.bgmonitor:id/stats_text_highglucose",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.wonggordon.bgmonitor.views.text.StyledTextView",
+      "bounds": [
+        112,
+        1656,
+        281,
+        1732
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "highs",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.wonggordon.bgmonitor.views.text.StyledTextView",
+      "bounds": [
+        281,
+        1664,
+        399,
+        1730
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "0% (0.0U) ",
+      "resource-id": "com.wonggordon.bgmonitor:id/stats_text_gbolustotal",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.wonggordon.bgmonitor.views.text.StyledTextView",
+      "bounds": [
+        112,
+        1836,
+        363,
+        1912
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "BG boluses",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.wonggordon.bgmonitor.views.text.StyledTextView",
+      "bounds": [
+        363,
+        1844,
+        609,
+        1910
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "0%",
+      "resource-id": "com.wonggordon.bgmonitor:id/stats_text_cboluspercent",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.wonggordon.bgmonitor.views.text.StyledTextView",
+      "bounds": [
+        112,
+        1912,
+        184,
+        1988
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": " (0.0U) ",
+      "resource-id": "com.wonggordon.bgmonitor:id/stats_text_cbolustotal",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.wonggordon.bgmonitor.views.text.StyledTextView",
+      "bounds": [
+        184,
+        1912,
+        363,
+        1988
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "carbs boluses",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.wonggordon.bgmonitor.views.text.StyledTextView",
+      "bounds": [
+        363,
+        1920,
+        667,
+        1986
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "0%",
+      "resource-id": "com.wonggordon.bgmonitor:id/stats_text_otherbolus_percent",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.wonggordon.bgmonitor.views.text.StyledTextView",
+      "bounds": [
+        112,
+        1988,
+        184,
+        2064
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": " (0.0U) ",
+      "resource-id": "com.wonggordon.bgmonitor:id/stats_text_otherbolus_total",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.wonggordon.bgmonitor.views.text.StyledTextView",
+      "bounds": [
+        184,
+        1988,
+        363,
+        2064
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "other boluses",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.wonggordon.bgmonitor.views.text.StyledTextView",
+      "bounds": [
+        363,
+        1996,
+        659,
+        2062
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

@@ -1,0 +1,2269 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.curse.futheadmobile:id/toolbar",
+      "children": [
+        {
+          "text": "Player List",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            210,
+            135,
+            539,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "",
+      "resource-id": "com.curse.futheadmobile:id/filterText",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatEditText",
+      "bounds": [
+        0,
+        281,
+        1258,
+        477
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "iconClass": "sliders",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.curse.futheadmobile:id/buttonFilter",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageButton",
+      "bounds": [
+        1258,
+        281,
+        1440,
+        477
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "resource-id": "com.curse.futheadmobile:id/playerListItemLayout",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/leftLevelImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            0,
+            478,
+            35,
+            653
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "avatar",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/portraitImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            35,
+            478,
+            210,
+            653
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Pelé",
+          "resource-id": "com.curse.futheadmobile:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            210,
+            478,
+            331,
+            581
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/clubImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            210,
+            581,
+            263,
+            634
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Legends",
+          "resource-id": "com.curse.futheadmobile:id/club",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            281,
+            581,
+            631,
+            622
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/nationImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            631,
+            581,
+            684,
+            634
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Brazil",
+          "resource-id": "com.curse.futheadmobile:id/nation",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            702,
+            581,
+            789,
+            622
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/rightLevelImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1265,
+            478,
+            1440,
+            653
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "95",
+          "resource-id": "com.curse.futheadmobile:id/rating",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            1301,
+            478,
+            1403,
+            600
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "CF",
+          "resource-id": "com.curse.futheadmobile:id/position",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            1323,
+            600,
+            1382,
+            653
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        478,
+        1440,
+        653
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.curse.futheadmobile:id/playerListItemLayout",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/leftLevelImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            0,
+            654,
+            35,
+            829
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "avatar",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/portraitImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            35,
+            654,
+            210,
+            829
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Lionel Messi",
+          "resource-id": "com.curse.futheadmobile:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            210,
+            654,
+            561,
+            757
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/clubImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            210,
+            757,
+            263,
+            810
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "FC Barcelona",
+          "resource-id": "com.curse.futheadmobile:id/club",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            281,
+            757,
+            631,
+            798
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/nationImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            631,
+            757,
+            684,
+            810
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Argentina",
+          "resource-id": "com.curse.futheadmobile:id/nation",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            702,
+            757,
+            853,
+            798
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/rightLevelImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1265,
+            654,
+            1440,
+            829
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "94",
+          "resource-id": "com.curse.futheadmobile:id/rating",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            1301,
+            654,
+            1403,
+            776
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "RW",
+          "resource-id": "com.curse.futheadmobile:id/position",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            1316,
+            776,
+            1389,
+            829
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        654,
+        1440,
+        829
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.curse.futheadmobile:id/playerListItemLayout",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/leftLevelImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            0,
+            830,
+            35,
+            1005
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "avatar",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/portraitImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            35,
+            830,
+            210,
+            1005
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Cristiano Ronaldo",
+          "resource-id": "com.curse.futheadmobile:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            210,
+            830,
+            707,
+            933
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/clubImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            210,
+            933,
+            263,
+            986
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Real Madrid",
+          "resource-id": "com.curse.futheadmobile:id/club",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            281,
+            933,
+            631,
+            974
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/nationImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            631,
+            933,
+            684,
+            986
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Portugal",
+          "resource-id": "com.curse.futheadmobile:id/nation",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            702,
+            933,
+            835,
+            974
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/rightLevelImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1265,
+            830,
+            1440,
+            1005
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "94",
+          "resource-id": "com.curse.futheadmobile:id/rating",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            1301,
+            830,
+            1403,
+            952
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "LW",
+          "resource-id": "com.curse.futheadmobile:id/position",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            1319,
+            952,
+            1385,
+            1005
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        830,
+        1440,
+        1005
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.curse.futheadmobile:id/playerListItemLayout",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/leftLevelImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            0,
+            1006,
+            35,
+            1181
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "avatar",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/portraitImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            35,
+            1006,
+            210,
+            1181
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Cristiano Ronaldo",
+          "resource-id": "com.curse.futheadmobile:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            210,
+            1006,
+            707,
+            1109
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/clubImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            210,
+            1109,
+            263,
+            1162
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Real Madrid",
+          "resource-id": "com.curse.futheadmobile:id/club",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            281,
+            1109,
+            631,
+            1150
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/nationImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            631,
+            1109,
+            684,
+            1162
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Portugal",
+          "resource-id": "com.curse.futheadmobile:id/nation",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            702,
+            1109,
+            835,
+            1150
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/rightLevelImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1265,
+            1006,
+            1440,
+            1181
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "93",
+          "resource-id": "com.curse.futheadmobile:id/rating",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            1301,
+            1006,
+            1403,
+            1128
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "LW",
+          "resource-id": "com.curse.futheadmobile:id/position",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            1319,
+            1128,
+            1385,
+            1181
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1006,
+        1440,
+        1181
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.curse.futheadmobile:id/playerListItemLayout",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/leftLevelImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            0,
+            1182,
+            35,
+            1357
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/portraitImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            35,
+            1182,
+            210,
+            1357
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Franz Beckenbauer",
+          "resource-id": "com.curse.futheadmobile:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            210,
+            1182,
+            742,
+            1285
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/clubImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            210,
+            1285,
+            263,
+            1338
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Legends",
+          "resource-id": "com.curse.futheadmobile:id/club",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            281,
+            1285,
+            631,
+            1326
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/nationImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            631,
+            1285,
+            684,
+            1338
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Germany",
+          "resource-id": "com.curse.futheadmobile:id/nation",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            702,
+            1285,
+            843,
+            1326
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/rightLevelImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1265,
+            1182,
+            1440,
+            1357
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "93",
+          "resource-id": "com.curse.futheadmobile:id/rating",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            1301,
+            1182,
+            1403,
+            1304
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "CB",
+          "resource-id": "com.curse.futheadmobile:id/position",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            1321,
+            1304,
+            1384,
+            1357
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1182,
+        1440,
+        1357
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.curse.futheadmobile:id/playerListItemLayout",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/leftLevelImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            0,
+            1359,
+            35,
+            1534
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "avatar",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/portraitImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            35,
+            1359,
+            210,
+            1534
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Paolo Maldini",
+          "resource-id": "com.curse.futheadmobile:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            210,
+            1359,
+            592,
+            1462
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/clubImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            210,
+            1462,
+            263,
+            1515
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Legends",
+          "resource-id": "com.curse.futheadmobile:id/club",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            281,
+            1462,
+            631,
+            1503
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/nationImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            631,
+            1462,
+            684,
+            1515
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Italy",
+          "resource-id": "com.curse.futheadmobile:id/nation",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            702,
+            1462,
+            768,
+            1503
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/rightLevelImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1265,
+            1359,
+            1440,
+            1534
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "92",
+          "resource-id": "com.curse.futheadmobile:id/rating",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            1301,
+            1359,
+            1403,
+            1481
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "CB",
+          "resource-id": "com.curse.futheadmobile:id/position",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            1321,
+            1481,
+            1384,
+            1534
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1359,
+        1440,
+        1534
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.curse.futheadmobile:id/playerListItemLayout",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/leftLevelImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            0,
+            1535,
+            35,
+            1710
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "avatar",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/portraitImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            35,
+            1535,
+            210,
+            1710
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Franco Baresi",
+          "resource-id": "com.curse.futheadmobile:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            210,
+            1535,
+            591,
+            1638
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/clubImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            210,
+            1638,
+            263,
+            1691
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Legends",
+          "resource-id": "com.curse.futheadmobile:id/club",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            281,
+            1638,
+            631,
+            1679
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/nationImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            631,
+            1638,
+            684,
+            1691
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Italy",
+          "resource-id": "com.curse.futheadmobile:id/nation",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            702,
+            1638,
+            768,
+            1679
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/rightLevelImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1265,
+            1535,
+            1440,
+            1710
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "92",
+          "resource-id": "com.curse.futheadmobile:id/rating",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            1301,
+            1535,
+            1403,
+            1657
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "CB",
+          "resource-id": "com.curse.futheadmobile:id/position",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            1321,
+            1657,
+            1384,
+            1710
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1535,
+        1440,
+        1710
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.curse.futheadmobile:id/playerListItemLayout",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/leftLevelImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            0,
+            1711,
+            35,
+            1886
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/portraitImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            35,
+            1711,
+            210,
+            1886
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Chu Boi",
+          "resource-id": "com.curse.futheadmobile:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            210,
+            1711,
+            427,
+            1814
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/clubImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            210,
+            1814,
+            263,
+            1867
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Manchester United",
+          "resource-id": "com.curse.futheadmobile:id/club",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            281,
+            1814,
+            631,
+            1855
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/nationImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            631,
+            1814,
+            684,
+            1867
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Nigeria",
+          "resource-id": "com.curse.futheadmobile:id/nation",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            702,
+            1814,
+            815,
+            1855
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/rightLevelImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1265,
+            1711,
+            1440,
+            1886
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "92",
+          "resource-id": "com.curse.futheadmobile:id/rating",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            1301,
+            1711,
+            1403,
+            1833
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "ST",
+          "resource-id": "com.curse.futheadmobile:id/position",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            1323,
+            1833,
+            1381,
+            1886
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1711,
+        1440,
+        1886
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.curse.futheadmobile:id/playerListItemLayout",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/leftLevelImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            0,
+            1887,
+            35,
+            2062
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "avatar",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/portraitImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            35,
+            1887,
+            210,
+            2062
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Lothar Matthäus",
+          "resource-id": "com.curse.futheadmobile:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            210,
+            1887,
+            674,
+            1990
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/clubImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            210,
+            1990,
+            263,
+            2043
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Legends",
+          "resource-id": "com.curse.futheadmobile:id/club",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            281,
+            1990,
+            631,
+            2031
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/nationImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            631,
+            1990,
+            684,
+            2043
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Germany",
+          "resource-id": "com.curse.futheadmobile:id/nation",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            702,
+            1990,
+            843,
+            2031
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "avatar",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/rightLevelImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1265,
+            1887,
+            1440,
+            2062
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "91",
+          "resource-id": "com.curse.futheadmobile:id/rating",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            1301,
+            1887,
+            1403,
+            2009
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "CDM",
+          "resource-id": "com.curse.futheadmobile:id/position",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            1299,
+            2009,
+            1406,
+            2062
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1887,
+        1440,
+        2062
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.curse.futheadmobile:id/playerListItemLayout",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/leftLevelImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            0,
+            2063,
+            35,
+            2238
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/portraitImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            35,
+            2063,
+            210,
+            2238
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Marco van Basten",
+          "resource-id": "com.curse.futheadmobile:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            210,
+            2063,
+            714,
+            2166
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/clubImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            210,
+            2166,
+            263,
+            2219
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Legends",
+          "resource-id": "com.curse.futheadmobile:id/club",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            281,
+            2166,
+            631,
+            2207
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/nationImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            631,
+            2166,
+            684,
+            2219
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Netherlands",
+          "resource-id": "com.curse.futheadmobile:id/nation",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            702,
+            2166,
+            892,
+            2207
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/rightLevelImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1265,
+            2063,
+            1440,
+            2238
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "91",
+          "resource-id": "com.curse.futheadmobile:id/rating",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            1301,
+            2063,
+            1403,
+            2185
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "ST",
+          "resource-id": "com.curse.futheadmobile:id/position",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            1323,
+            2185,
+            1381,
+            2238
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        2063,
+        1440,
+        2238
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.curse.futheadmobile:id/playerListItemLayout",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/leftLevelImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            0,
+            2239,
+            35,
+            2392
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "avatar",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/portraitImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            35,
+            2239,
+            210,
+            2392
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Alessandro Nesta",
+          "resource-id": "com.curse.futheadmobile:id/name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            210,
+            2239,
+            705,
+            2342
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/clubImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            210,
+            2342,
+            263,
+            2392
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Legends",
+          "resource-id": "com.curse.futheadmobile:id/club",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            281,
+            2342,
+            631,
+            2383
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/nationImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            631,
+            2342,
+            684,
+            2392
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Italy",
+          "resource-id": "com.curse.futheadmobile:id/nation",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            702,
+            2342,
+            768,
+            2383
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.curse.futheadmobile:id/rightLevelImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1265,
+            2239,
+            1440,
+            2392
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "90",
+          "resource-id": "com.curse.futheadmobile:id/rating",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            1301,
+            2239,
+            1403,
+            2361
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "CB",
+          "resource-id": "com.curse.futheadmobile:id/position",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "md5b458cc81312dcbd199d3a1508d254dfe.FontedTextView",
+          "bounds": [
+            1321,
+            2361,
+            1384,
+            2392
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        2239,
+        1440,
+        2392
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

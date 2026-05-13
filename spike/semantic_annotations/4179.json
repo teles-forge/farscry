@@ -1,0 +1,784 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.retale.android:id/toolbar",
+      "children": [
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "com.retale.android:id/menu_search",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1272,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.design.widget.TabLayout$SlidingTabStrip",
+      "bounds": [
+        0,
+        280,
+        1440,
+        448
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.design.widget.TabLayout$TabView",
+          "bounds": [
+            371,
+            280,
+            706,
+            448
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "textButtonClass": "favorites"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.design.widget.TabLayout$TabView",
+          "bounds": [
+            1018,
+            280,
+            1392,
+            448
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "textButtonClass": "categories"
+        },
+        {
+          "text": "WEEKLY ADS",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            42,
+            331,
+            329,
+            397
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "COUPONS",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            748,
+            331,
+            976,
+            397
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "RETAILERS",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1434,
+            331,
+            1440,
+            397
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        56,
+        504,
+        1384,
+        672
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "MORE",
+          "resource-id": "com.retale.android:id/categoryMoreButton",
+          "ancestors": [
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatButton",
+          "bounds": [
+            1076,
+            504,
+            1384,
+            672
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "more"
+        },
+        {
+          "text": "Grocery & Drug",
+          "resource-id": "com.retale.android:id/categoryHeaderItemTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            210,
+            504,
+            1076,
+            658
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "",
+          "resource-id": "com.retale.android:id/categoryHeaderItemAddButton",
+          "ancestors": [
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.bonial.kaufda.favorites.StarButton",
+          "bounds": [
+            56,
+            504,
+            210,
+            658
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.retale.android:id/gridBrochureItemContainer",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.retale.android:id/gridBrochureItemReadStatusImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            63,
+            738,
+            81,
+            756
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.retale.android:id/gridBrochureItemNewStatusImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            542,
+            713,
+            710,
+            881
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Valid 14 more days",
+          "resource-id": "com.retale.android:id/gridBrochureItemValidity",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            38,
+            1273,
+            710,
+            1358
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.retale.android:id/gridBrochureItemImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            122,
+            741,
+            626,
+            1245
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Walmart",
+          "resource-id": "com.retale.android:id/gridBrochureItemTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            94,
+            1418,
+            556,
+            1494
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "22mi",
+          "resource-id": "com.retale.android:id/gridBrochureItemLocationButton",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            94,
+            1494,
+            556,
+            1570
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "",
+          "resource-id": "com.retale.android:id/gridBrochureItemFavouriteAddButton",
+          "ancestors": [
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.bonial.kaufda.favorites.StarButton",
+          "bounds": [
+            556,
+            1362,
+            710,
+            1626
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        28,
+        700,
+        720,
+        1639
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "resource-id": "com.retale.android:id/gridBrochureItemContainer",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.retale.android:id/gridBrochureItemReadStatusImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            755,
+            738,
+            773,
+            756
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "close",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.retale.android:id/gridBrochureItemNewStatusImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1234,
+            713,
+            1402,
+            881
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Expires today",
+          "resource-id": "com.retale.android:id/gridBrochureItemValidity",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            730,
+            1273,
+            1402,
+            1358
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.retale.android:id/gridBrochureItemImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            814,
+            741,
+            1318,
+            1245
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Big Lots",
+          "resource-id": "com.retale.android:id/gridBrochureItemTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            786,
+            1418,
+            1248,
+            1494
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "3.53mi",
+          "resource-id": "com.retale.android:id/gridBrochureItemLocationButton",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            786,
+            1494,
+            1248,
+            1570
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "",
+          "resource-id": "com.retale.android:id/gridBrochureItemFavouriteAddButton",
+          "ancestors": [
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.bonial.kaufda.favorites.StarButton",
+          "bounds": [
+            1248,
+            1362,
+            1402,
+            1626
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        720,
+        700,
+        1412,
+        1639
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        56,
+        1667,
+        1384,
+        1835
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "MORE",
+          "resource-id": "com.retale.android:id/categoryMoreButton",
+          "ancestors": [
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatButton",
+          "bounds": [
+            1076,
+            1667,
+            1384,
+            1835
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "more"
+        },
+        {
+          "text": "Department Stores",
+          "resource-id": "com.retale.android:id/categoryHeaderItemTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            210,
+            1667,
+            1076,
+            1821
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "",
+          "resource-id": "com.retale.android:id/categoryHeaderItemAddButton",
+          "ancestors": [
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.bonial.kaufda.favorites.StarButton",
+          "bounds": [
+            56,
+            1667,
+            210,
+            1821
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.retale.android:id/gridBrochureItemContainer",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.retale.android:id/gridBrochureItemReadStatusImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            63,
+            1901,
+            81,
+            1919
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "close",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.retale.android:id/gridBrochureItemNewStatusImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            542,
+            1876,
+            710,
+            2044
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.retale.android:id/gridBrochureItemImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            122,
+            1904,
+            626,
+            2392
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        28,
+        1863,
+        720,
+        2392
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "resource-id": "com.retale.android:id/gridBrochureItemContainer",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.retale.android:id/gridBrochureItemReadStatusImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            755,
+            1901,
+            773,
+            1919
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "close",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.retale.android:id/gridBrochureItemNewStatusImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1234,
+            1876,
+            1402,
+            2044
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "sliders",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.retale.android:id/gridBrochureItemCouponIndicator",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1258,
+            2366,
+            1346,
+            2392
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.retale.android:id/gridBrochureItemImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            814,
+            1904,
+            1318,
+            2392
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        720,
+        1863,
+        1412,
+        2392
+      ],
+      "componentLabel": "Card"
+    }
+  ]
+}

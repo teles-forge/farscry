@@ -1,0 +1,1626 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.ilmeteo.android.ilmeteo:id/adView",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.google.android.gms.ads.doubleclick.PublisherAdView",
+          "bounds": [
+            160,
+            2217,
+            1280,
+            2392
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.FrameLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "com.google.android.gms.ads.internal.webview.l",
+              "bounds": [
+                160,
+                2217,
+                1280,
+                2392
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "android.webkit.WebView",
+                    "android.widget.AbsoluteLayout",
+                    "android.view.ViewGroup",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    160,
+                    2217,
+                    1280,
+                    2392
+                  ],
+                  "clickable": true,
+                  "class": "com.google.android.gms.ads.internal.webview.m",
+                  "componentLabel": "Web View"
+                }
+              ],
+              "componentLabel": "Web View"
+            }
+          ],
+          "componentLabel": "Advertisement"
+        }
+      ],
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.ilmeteo.android.ilmeteo.adv.MeteoBannerAdView",
+      "bounds": [
+        0,
+        2217,
+        1440,
+        2392
+      ],
+      "componentLabel": "Advertisement"
+    },
+    {
+      "resource-id": "com.ilmeteo.android.ilmeteo:id/toolbar",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Treasure Island",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            210,
+            191,
+            592,
+            266
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Sunday 18",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            210,
+            98,
+            538,
+            191
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_button",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            1172,
+            134,
+            1405,
+            229
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.view.SurfaceView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.ilmeteo.android.ilmeteo:id/video_bg_weather",
+      "clickable": false,
+      "class": "android.widget.VideoView",
+      "bounds": [
+        0,
+        84,
+        1440,
+        2392
+      ],
+      "componentLabel": "Video"
+    },
+    {
+      "resource-id": "com.ilmeteo.android.ilmeteo:id/background_weather",
+      "children": [],
+      "ancestors": [
+        "android.widget.ViewSwitcher",
+        "android.widget.ViewAnimator",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.ImageSwitcher",
+      "bounds": [
+        0,
+        84,
+        1440,
+        2217
+      ],
+      "componentLabel": "On/Off Switch"
+    },
+    {
+      "text": "Time",
+      "resource-id": "com.ilmeteo.android.ilmeteo:id/day_subtitle_hour",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        18,
+        480,
+        123,
+        537
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Weather",
+      "resource-id": "com.ilmeteo.android.ilmeteo:id/day_subtitle_weather",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        141,
+        480,
+        316,
+        537
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "T °C",
+      "resource-id": "com.ilmeteo.android.ilmeteo:id/day_subtitle_temp",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        334,
+        480,
+        425,
+        537
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Wind (km/h)",
+      "resource-id": "com.ilmeteo.android.ilmeteo:id/day_subtitle_wind",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1124,
+        480,
+        1404,
+        537
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Precipitation",
+      "resource-id": "com.ilmeteo.android.ilmeteo:id/day_subtitle_prec",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        443,
+        480,
+        1106,
+        537
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.ilmeteo.android.ilmeteo:id/news_thumb",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        35,
+        298,
+        245,
+        451
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "METEO - pioggia e neve su Adriatiche, nebbia al Nord [VIDEO]",
+      "resource-id": "com.ilmeteo.android.ilmeteo:id/news_text",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        280,
+        298,
+        1405,
+        414
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        548,
+        1440,
+        724
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "1",
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            35,
+            607,
+            105,
+            664
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_w_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            105,
+            566,
+            245,
+            706
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_f_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            245,
+            566,
+            298,
+            706
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "3.1°",
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_temp_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            316,
+            607,
+            456,
+            664
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_wind_ico",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1341,
+            595,
+            1422,
+            676
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "5/10 NE ",
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_wind_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1124,
+            607,
+            1334,
+            664
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "- absent -",
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_prec_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            456,
+            607,
+            1106,
+            664
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        726,
+        1440,
+        902
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "4",
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            35,
+            785,
+            105,
+            842
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_w_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            105,
+            744,
+            245,
+            884
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_f_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            245,
+            744,
+            298,
+            884
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "2.1°",
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_temp_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            316,
+            785,
+            456,
+            842
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_wind_ico",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1341,
+            773,
+            1422,
+            854
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "8/15 NNE ",
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_wind_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1124,
+            785,
+            1334,
+            842
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "- absent -",
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_prec_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            456,
+            785,
+            1106,
+            842
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        904,
+        1440,
+        1080
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "7",
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            35,
+            963,
+            105,
+            1020
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_w_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            105,
+            922,
+            245,
+            1062
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_f_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            245,
+            922,
+            298,
+            1062
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "1.4°",
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_temp_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            316,
+            963,
+            456,
+            1020
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_wind_ico",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1341,
+            951,
+            1422,
+            1032
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "9/16 NNE ",
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_wind_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1124,
+            963,
+            1334,
+            1020
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "- absent -",
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_prec_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            456,
+            963,
+            1106,
+            1020
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1082,
+        1440,
+        1258
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "10",
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            35,
+            1141,
+            105,
+            1198
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_w_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            105,
+            1100,
+            245,
+            1240
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_f_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            245,
+            1100,
+            298,
+            1240
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "5.1°",
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_temp_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            316,
+            1141,
+            456,
+            1198
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_wind_ico",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1341,
+            1129,
+            1422,
+            1210
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "9/15 NNE ",
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_wind_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1124,
+            1141,
+            1334,
+            1198
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "- absent -",
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_prec_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            456,
+            1141,
+            1106,
+            1198
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1260,
+        1440,
+        1436
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "13",
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            35,
+            1319,
+            105,
+            1376
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_w_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            105,
+            1278,
+            245,
+            1418
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_f_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            245,
+            1278,
+            298,
+            1418
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "7°",
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_temp_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            316,
+            1319,
+            456,
+            1376
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_wind_ico",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1341,
+            1307,
+            1422,
+            1388
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "8/14 NNE ",
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_wind_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1124,
+            1319,
+            1334,
+            1376
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "- absent -",
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_prec_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            456,
+            1319,
+            1106,
+            1376
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1438,
+        1440,
+        1614
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "16",
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            35,
+            1497,
+            105,
+            1554
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_w_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            105,
+            1456,
+            245,
+            1596
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_f_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            245,
+            1456,
+            298,
+            1596
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "8.1°",
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_temp_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            316,
+            1497,
+            456,
+            1554
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_wind_ico",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1341,
+            1485,
+            1422,
+            1566
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "9/15 N ",
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_wind_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1124,
+            1497,
+            1334,
+            1554
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "- absent -",
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_prec_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            456,
+            1497,
+            1106,
+            1554
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1616,
+        1440,
+        1792
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "19",
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            35,
+            1675,
+            105,
+            1732
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_w_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            105,
+            1634,
+            245,
+            1774
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_f_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            245,
+            1634,
+            298,
+            1774
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "9.2°",
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_temp_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            316,
+            1675,
+            456,
+            1732
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_wind_ico",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1341,
+            1663,
+            1422,
+            1744
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "10/16 NNW ",
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_wind_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1124,
+            1651,
+            1334,
+            1757
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "- absent -",
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_prec_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            456,
+            1675,
+            1106,
+            1732
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1794,
+        1440,
+        1970
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "22",
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            35,
+            1853,
+            105,
+            1910
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_w_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            105,
+            1812,
+            245,
+            1952
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_f_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            245,
+            1812,
+            298,
+            1952
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "5.4°",
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_temp_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            316,
+            1853,
+            456,
+            1910
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_wind_ico",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1341,
+            1841,
+            1422,
+            1922
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "10/16 NNW ",
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_wind_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1124,
+            1829,
+            1334,
+            1935
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "- absent -",
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_prec_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            456,
+            1853,
+            1106,
+            1910
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1972,
+        1440,
+        2148
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "1",
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            35,
+            2031,
+            105,
+            2088
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_w_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            105,
+            1990,
+            245,
+            2130
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_f_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            245,
+            1990,
+            298,
+            2130
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "3.5°",
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_temp_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            316,
+            2031,
+            456,
+            2088
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_wind_ico",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1341,
+            2019,
+            1422,
+            2100
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "5 E ",
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_wind_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1124,
+            2031,
+            1334,
+            2088
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "- absent -",
+          "resource-id": "com.ilmeteo.android.ilmeteo:id/hour_prec_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            456,
+            2031,
+            1106,
+            2088
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        0,
+        2150,
+        1440,
+        2217
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "componentLabel": "List Item"
+    }
+  ]
+}

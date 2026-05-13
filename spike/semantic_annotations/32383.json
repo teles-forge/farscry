@@ -1,0 +1,156 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "iconClass": "help",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.squareup.cash:id/help",
+      "clickable": true,
+      "class": "com.squareup.cash.ui.blockers.HelpButton",
+      "bounds": [
+        1244,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Help",
+      "resource-id": "com.squareup.cash:id/left_button",
+      "ancestors": [
+        "com.squareup.marketfont.MarketButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.squareup.cash.ui.blockers.BlockersButton",
+      "bounds": [
+        0,
+        2182,
+        719,
+        2392
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "help"
+    },
+    {
+      "text": "Next",
+      "resource-id": "com.squareup.cash:id/right_button",
+      "ancestors": [
+        "com.squareup.marketfont.MarketButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.squareup.cash.ui.blockers.BlockersButton",
+      "bounds": [
+        720,
+        2182,
+        1440,
+        2392
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "next"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.squareup.cash:id/keypad",
+      "clickable": false,
+      "class": "com.squareup.cash.ui.widget.keypad.KeypadView",
+      "bounds": [
+        112,
+        1230,
+        1328,
+        2070
+      ],
+      "componentLabel": "Advertisement"
+    },
+    {
+      "resource-id": "com.squareup.cash:id/title",
+      "children": [
+        {
+          "text": "Please enter the code sent to appcrawler2@gmail.com",
+          "ancestors": [
+            "com.squareup.marketfont.MarketTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.squareup.cash.ui.widget.BalancedLineTextView",
+          "bounds": [
+            112,
+            280,
+            1328,
+            433
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.TextSwitcher",
+        "android.widget.ViewSwitcher",
+        "android.widget.ViewAnimator",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.squareup.cash.ui.widget.MarketTextSwitcher",
+      "bounds": [
+        112,
+        280,
+        1328,
+        433
+      ],
+      "componentLabel": "On/Off Switch"
+    },
+    {
+      "text": "5 4 5 4 2 2",
+      "resource-id": "com.squareup.cash:id/verification_number",
+      "ancestors": [
+        "com.squareup.cash.ui.widget.CrashlessMarketEditText",
+        "com.squareup.marketfont.MarketEditText",
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.squareup.cash.ui.widget.KeyboardlessEditText",
+      "bounds": [
+        112,
+        733,
+        1328,
+        929
+      ],
+      "componentLabel": "Input"
+    }
+  ]
+}

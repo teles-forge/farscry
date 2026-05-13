@@ -1,0 +1,739 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.amber.weather:id/layout_container",
+      "children": [
+        {
+          "resource-id": "com.amber.weather:id/toolbar",
+          "children": [
+            {
+              "iconClass": "menu",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                0,
+                84,
+                196,
+                259
+              ],
+              "clickable": true,
+              "class": "android.widget.ImageButton",
+              "componentLabel": "Icon"
+            },
+            {
+              "iconClass": "edit",
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                1111,
+                87,
+                1272,
+                255
+              ],
+              "clickable": true,
+              "class": "android.widget.ImageView",
+              "componentLabel": "Icon"
+            },
+            {
+              "iconClass": "add",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.internal.view.menu.ActionMenuItemView",
+              "bounds": [
+                1272,
+                87,
+                1440,
+                255
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.Toolbar",
+          "bounds": [
+            0,
+            84,
+            1440,
+            259
+          ],
+          "componentLabel": "Toolbar"
+        },
+        {
+          "resource-id": "com.amber.weather:id/main_tab_strip",
+          "children": [
+            {
+              "text": "NOW",
+              "resource-id": "com.amber.weather:id/psts_tab_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                0,
+                259,
+                306,
+                340
+              ],
+              "componentLabel": "Text Button"
+            },
+            {
+              "text": "HOUR",
+              "resource-id": "com.amber.weather:id/psts_tab_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                306,
+                259,
+                630,
+                340
+              ],
+              "componentLabel": "Text Button"
+            },
+            {
+              "text": "DAY",
+              "resource-id": "com.amber.weather:id/psts_tab_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                630,
+                259,
+                918,
+                340
+              ],
+              "componentLabel": "Text Button",
+              "textButtonClass": "day"
+            },
+            {
+              "text": "PRECIPITATION",
+              "resource-id": "com.amber.weather:id/psts_tab_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                918,
+                259,
+                1430,
+                340
+              ],
+              "componentLabel": "Text Button"
+            },
+            {
+              "text": "DAYTIME & LUNAR PHASE",
+              "resource-id": "com.amber.weather:id/psts_tab_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                1430,
+                259,
+                1440,
+                340
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.widget.HorizontalScrollView",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.astuetz.PagerSlidingTabStrip",
+          "bounds": [
+            0,
+            259,
+            1440,
+            347
+          ],
+          "componentLabel": "Multi-Tab"
+        },
+        {
+          "text": "Wind",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "mobi.infolife.card.view.style.AmberTextView",
+          "bounds": [
+            0,
+            2029,
+            1440,
+            2226
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "12°",
+          "resource-id": "com.amber.weather:id/text_now_temp",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "mobi.infolife.card.view.style.AmberTextView",
+          "bounds": [
+            70,
+            1020,
+            393,
+            1343
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Overcast",
+          "resource-id": "com.amber.weather:id/text_now_condition",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "mobi.infolife.card.view.style.AmberTextView",
+          "bounds": [
+            70,
+            1343,
+            314,
+            1436
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "SW2.1m/s",
+          "resource-id": "com.amber.weather:id/text_wind_card_wind",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "mobi.infolife.card.view.style.AmberTextView",
+          "bounds": [
+            992,
+            2362,
+            1237,
+            2392
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            70,
+            1485,
+            100,
+            1531
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "text": "10°",
+          "resource-id": "com.amber.weather:id/text_now_low_temp",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "mobi.infolife.card.view.style.AmberTextView",
+          "bounds": [
+            114,
+            1471,
+            189,
+            1546
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            217,
+            1485,
+            247,
+            1531
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "text": "15°",
+          "resource-id": "com.amber.weather:id/text_now_high_temp",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "mobi.infolife.card.view.style.AmberTextView",
+          "bounds": [
+            261,
+            1471,
+            335,
+            1546
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Feels: 13°",
+          "resource-id": "com.amber.weather:id/text_now_feels_temp",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "mobi.infolife.card.view.style.AmberTextView",
+          "bounds": [
+            370,
+            1471,
+            563,
+            1546
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "star",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            207,
+            1700,
+            270,
+            1763
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "SW2.1m/s",
+          "resource-id": "com.amber.weather:id/text_now_detail_wind",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "mobi.infolife.card.view.style.AmberTextView",
+          "bounds": [
+            160,
+            1770,
+            316,
+            1839
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Wind",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "mobi.infolife.card.view.style.AmberTextView",
+          "bounds": [
+            190,
+            1846,
+            286,
+            1912
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            688,
+            1700,
+            751,
+            1763
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "text": "77%",
+          "resource-id": "com.amber.weather:id/text_now_detail_humidity",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "mobi.infolife.card.view.style.AmberTextView",
+          "bounds": [
+            687,
+            1770,
+            752,
+            1839
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Humidity",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "mobi.infolife.card.view.style.AmberTextView",
+          "bounds": [
+            634,
+            1846,
+            805,
+            1912
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1169,
+            1700,
+            1232,
+            1763
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "text": "16KM",
+          "resource-id": "com.amber.weather:id/text_now_detail_visibility",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "mobi.infolife.card.view.style.AmberTextView",
+          "bounds": [
+            1160,
+            1770,
+            1242,
+            1839
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Visibility",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "mobi.infolife.card.view.style.AmberTextView",
+          "bounds": [
+            1120,
+            1846,
+            1282,
+            1912
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            207,
+            1944,
+            270,
+            2007
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "text": "1019.0hPa",
+          "resource-id": "com.amber.weather:id/text_now_detail_pressure",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "mobi.infolife.card.view.style.AmberTextView",
+          "bounds": [
+            155,
+            2014,
+            322,
+            2083
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Pressure",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "mobi.infolife.card.view.style.AmberTextView",
+          "bounds": [
+            153,
+            2090,
+            324,
+            2156
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            688,
+            1944,
+            751,
+            2007
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Low",
+          "resource-id": "com.amber.weather:id/text_now_detail_uv",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "mobi.infolife.card.view.style.AmberTextView",
+          "bounds": [
+            685,
+            2014,
+            754,
+            2083
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "UV",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "mobi.infolife.card.view.style.AmberTextView",
+          "bounds": [
+            692,
+            2090,
+            747,
+            2156
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1169,
+            1944,
+            1232,
+            2007
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "text": "07:04/19:27",
+          "resource-id": "com.amber.weather:id/text_now_detail_sun",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "mobi.infolife.card.view.style.AmberTextView",
+          "bounds": [
+            1092,
+            2014,
+            1310,
+            2083
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Sunrise/Sunset",
+          "resource-id": "com.amber.weather:id/text_now_detail_sun_desc",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "mobi.infolife.card.view.style.AmberTextView",
+          "bounds": [
+            1054,
+            1900,
+            1348,
+            1966
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            202,
+            2299,
+            356,
+            2392
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.amber.weather:id/img_wind_card_fengshan",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            202,
+            2299,
+            356,
+            2392
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.amber.weather:id/img_wind_card_direction",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            560,
+            2295,
+            787,
+            2392
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        0,
+        1440,
+        2392
+      ],
+      "componentLabel": "Drawer"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.amber.weather:id/blurredview_blurred_img",
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        0,
+        0,
+        1440,
+        2392
+      ],
+      "componentLabel": "Background Image"
+    }
+  ]
+}

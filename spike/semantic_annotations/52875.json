@@ -1,0 +1,902 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.my.mail:id/toolbar",
+      "children": [
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            14,
+            126,
+            210,
+            238
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Unread",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            308,
+            135,
+            533,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "com.my.mail:id/toolbar_action_search",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1090,
+            98,
+            1258,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "attach_file",
+          "resource-id": "com.my.mail:id/toolbar_action_new",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1258,
+            98,
+            1426,
+            266
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "ru.mail.ui.CustomToolbar",
+        "android.support.v7.widget.Toolbar",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.ui.CustomTabletLandscapeToolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "ru.mail.fragments.view.RoundedImageView",
+        "ru.mail.fragments.view.FramedImageView",
+        "ru.mail.fragments.view.CropImageView",
+        "ru.mail.uikit.view.RecyclingImageView",
+        "android.support.v7.widget.AppCompatImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.my.mail:id/checkbox",
+      "clickable": true,
+      "class": "ru.mail.fragments.view.CheckedRoundedImageView",
+      "bounds": [
+        56,
+        336,
+        252,
+        532
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "iconClass": "globe",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.my.mail:id/unread",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        308,
+        337,
+        357,
+        379
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "40404 <14153402067.40404.9mkgPdgR54@txt.voice.google.com>",
+      "resource-id": "com.my.mail:id/sender",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        378,
+        319,
+        1005,
+        395
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Inbox",
+      "resource-id": "com.my.mail:id/folder",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1033,
+        327,
+        1173,
+        398
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "6:19 AM",
+      "resource-id": "com.my.mail:id/date",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1201,
+        327,
+        1384,
+        393
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "SMS from 40404",
+      "resource-id": "com.my.mail:id/subject",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        308,
+        389,
+        1384,
+        465
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Your phone is activated! Reply HELP to learn more. Reply OFF to stop receiving notifications. Std msg&data rates may apply.",
+      "resource-id": "com.my.mail:id/snippet",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.SingleMeasureTextView",
+      "bounds": [
+        308,
+        469,
+        1384,
+        606
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "avatar",
+      "ancestors": [
+        "ru.mail.fragments.view.RoundedImageView",
+        "ru.mail.fragments.view.FramedImageView",
+        "ru.mail.fragments.view.CropImageView",
+        "ru.mail.uikit.view.RecyclingImageView",
+        "android.support.v7.widget.AppCompatImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.my.mail:id/checkbox",
+      "clickable": true,
+      "class": "ru.mail.fragments.view.CheckedRoundedImageView",
+      "bounds": [
+        56,
+        718,
+        252,
+        914
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.my.mail:id/unread",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        308,
+        719,
+        357,
+        761
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "40404 <14153402067.40404.9mkgPdgR54@txt.voice.google.com>",
+      "resource-id": "com.my.mail:id/sender",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        378,
+        701,
+        1005,
+        777
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Inbox",
+      "resource-id": "com.my.mail:id/folder",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1033,
+        709,
+        1173,
+        780
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "6:18 AM",
+      "resource-id": "com.my.mail:id/date",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1201,
+        709,
+        1384,
+        775
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "SMS from 40404",
+      "resource-id": "com.my.mail:id/subject",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        308,
+        771,
+        1384,
+        847
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Your Twitter confirmation code is 380878. -- Sent using SMS-to-email. Reply to this email to text the sender back and save on SMS fees. https://www.google.com/voice/",
+      "resource-id": "com.my.mail:id/snippet",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.SingleMeasureTextView",
+      "bounds": [
+        308,
+        851,
+        1384,
+        988
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "skip_previous",
+      "ancestors": [
+        "ru.mail.fragments.view.RoundedImageView",
+        "ru.mail.fragments.view.FramedImageView",
+        "ru.mail.fragments.view.CropImageView",
+        "ru.mail.uikit.view.RecyclingImageView",
+        "android.support.v7.widget.AppCompatImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.my.mail:id/checkbox",
+      "clickable": true,
+      "class": "ru.mail.fragments.view.CheckedRoundedImageView",
+      "bounds": [
+        56,
+        1100,
+        252,
+        1296
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.my.mail:id/unread",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        308,
+        1101,
+        357,
+        1143
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Kobo <news@shop.kobo.com>",
+      "resource-id": "com.my.mail:id/sender",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        378,
+        1083,
+        1005,
+        1159
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Inbox",
+      "resource-id": "com.my.mail:id/folder",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1033,
+        1091,
+        1173,
+        1162
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "5:47 AM",
+      "resource-id": "com.my.mail:id/date",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1201,
+        1091,
+        1384,
+        1157
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Welcome to Kobo!",
+      "resource-id": "com.my.mail:id/subject",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        308,
+        1153,
+        1384,
+        1229
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "To ensure delivery to your inbox, add to your address book Trouble viewing this email? View it in your web browser. Laura, we love reading as much as you do. Because every book opens up our minds to infinite adventures, endless perspe",
+      "resource-id": "com.my.mail:id/snippet",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.SingleMeasureTextView",
+      "bounds": [
+        308,
+        1233,
+        1384,
+        1370
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "ru.mail.fragments.view.RoundedImageView",
+        "ru.mail.fragments.view.FramedImageView",
+        "ru.mail.fragments.view.CropImageView",
+        "ru.mail.uikit.view.RecyclingImageView",
+        "android.support.v7.widget.AppCompatImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.my.mail:id/checkbox",
+      "clickable": true,
+      "class": "ru.mail.fragments.view.CheckedRoundedImageView",
+      "bounds": [
+        56,
+        1482,
+        252,
+        1678
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "iconClass": "avatar",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.my.mail:id/unread",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        308,
+        1483,
+        357,
+        1525
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Ibotta <users@ibotta.com>",
+      "resource-id": "com.my.mail:id/sender",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        378,
+        1465,
+        1005,
+        1541
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Inbox",
+      "resource-id": "com.my.mail:id/folder",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1033,
+        1473,
+        1173,
+        1544
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "5:47 AM",
+      "resource-id": "com.my.mail:id/date",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1201,
+        1473,
+        1384,
+        1539
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Get your $10 welcome bonus",
+      "resource-id": "com.my.mail:id/subject",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        308,
+        1535,
+        1384,
+        1611
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Connect with us: Unlock your favorite rebates Purchase the products Verify purchases & get cash! Get an extra $10.00 when you redeem within 7 days! Just follow the steps above to get started. Your Referral Code: yfswsvt Interested",
+      "resource-id": "com.my.mail:id/snippet",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.SingleMeasureTextView",
+      "bounds": [
+        308,
+        1615,
+        1384,
+        1752
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "save",
+      "ancestors": [
+        "ru.mail.fragments.view.RoundedImageView",
+        "ru.mail.fragments.view.FramedImageView",
+        "ru.mail.fragments.view.CropImageView",
+        "ru.mail.uikit.view.RecyclingImageView",
+        "android.support.v7.widget.AppCompatImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.my.mail:id/checkbox",
+      "clickable": true,
+      "class": "ru.mail.fragments.view.CheckedRoundedImageView",
+      "bounds": [
+        56,
+        1864,
+        252,
+        2060
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.my.mail:id/unread",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        308,
+        1865,
+        357,
+        1907
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Bryan Leach <ceo@ibotta.com>",
+      "resource-id": "com.my.mail:id/sender",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        378,
+        1847,
+        1005,
+        1923
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Inbox",
+      "resource-id": "com.my.mail:id/folder",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1033,
+        1855,
+        1173,
+        1926
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "5:32 AM",
+      "resource-id": "com.my.mail:id/date",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1201,
+        1855,
+        1384,
+        1921
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "A warm welcome from Ibotta's CEO",
+      "resource-id": "com.my.mail:id/subject",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        308,
+        1917,
+        1384,
+        1993
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Hi Laura, Thanks for joining Ibotta! Our mission is to make it fun and easy for you to discover great brands and put away a little extra cash in the process. Ibotta is super easy to use and offers exclusive rebates you can’t find anyw",
+      "resource-id": "com.my.mail:id/snippet",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.SingleMeasureTextView",
+      "bounds": [
+        308,
+        1997,
+        1384,
+        2134
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "avatar",
+      "ancestors": [
+        "ru.mail.fragments.view.RoundedImageView",
+        "ru.mail.fragments.view.FramedImageView",
+        "ru.mail.fragments.view.CropImageView",
+        "ru.mail.uikit.view.RecyclingImageView",
+        "android.support.v7.widget.AppCompatImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.my.mail:id/checkbox",
+      "clickable": true,
+      "class": "ru.mail.fragments.view.CheckedRoundedImageView",
+      "bounds": [
+        56,
+        2246,
+        252,
+        2392
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.my.mail:id/unread",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        308,
+        2247,
+        357,
+        2289
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Alba from 8fit <alba@8fit.com>",
+      "resource-id": "com.my.mail:id/sender",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        378,
+        2229,
+        1005,
+        2305
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Inbox",
+      "resource-id": "com.my.mail:id/folder",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1033,
+        2237,
+        1173,
+        2308
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "4:39 AM",
+      "resource-id": "com.my.mail:id/date",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1201,
+        2237,
+        1384,
+        2303
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Welcome to 8fit: The change begins ",
+      "resource-id": "com.my.mail:id/subject",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        308,
+        2299,
+        1384,
+        2375
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Welcome to 8fit. Hey Laura Lee! 92% of our users lose 1 pound of fat (or more!) after their first week's training. Are you ready to get fit with 8fit? It's time to workout As with any new resolution, it's important that",
+      "resource-id": "com.my.mail:id/snippet",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.SingleMeasureTextView",
+      "bounds": [
+        308,
+        2379,
+        1384,
+        2392
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

@@ -1,0 +1,438 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.gn.android.compass:id/activity_compass_toolbar",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            56,
+            140,
+            404,
+            224
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "text": "",
+          "resource-id": "com.gn.android.compass:id/menu_item_activity_circle_compass_display_rotation",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            796,
+            98,
+            964,
+            266
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "",
+          "resource-id": "com.gn.android.compass:id/menu_item_activity_circle_compass_calibration",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            964,
+            98,
+            1132,
+            266
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "",
+          "resource-id": "com.gn.android.compass:id/menu_item_fragment_circle_compass_needle_type_toggle",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1132,
+            98,
+            1300,
+            266
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.gn.android.compass:id/view_circle_compass_background",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        0,
+        356,
+        1440,
+        1796
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "com.gn.android.compass.controller.circle.needle.CircleCompassNeedleView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.gn.android.compass:id/view_circle_compass_magnetic_north_needle",
+      "clickable": true,
+      "class": "com.gn.android.compass.controller.circle.needle.MagneticNorthCircleCompassNeedleView",
+      "bounds": [
+        106,
+        462,
+        1334,
+        1690
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "ADVERTISEMENT",
+      "resource-id": "com.gn.android.compass:id/view_ad_banner_text_view_placeholder",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        0,
+        2217,
+        1440,
+        2392
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.gn.android.compass:id/view_circle_compass_center_background",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        365,
+        721,
+        1075,
+        1431
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "TRUE HEADING IN °",
+      "resource-id": "com.gn.android.compass:id/view_circle_compass_center_textview_true_heading_header",
+      "ancestors": [
+        "com.gn.android.compass.controller.EfficientTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.gn.android.compass.controller.circle.text.CircleCompassHeaderTextView",
+      "bounds": [
+        573,
+        776,
+        866,
+        815
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "276",
+      "resource-id": "com.gn.android.compass:id/view_circle_compass_center_true_heading_value",
+      "ancestors": [
+        "com.gn.android.compass.controller.circle.text.CircleCompassValueTextView",
+        "com.gn.android.compass.controller.EfficientTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.gn.android.compass.controller.circle.text.CompassValueTextView",
+      "bounds": [
+        655,
+        820,
+        785,
+        904
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "MAGNETIC HEADING IN °",
+      "resource-id": "com.gn.android.compass:id/view_circle_compass_center_magnetic_heading_header",
+      "ancestors": [
+        "com.gn.android.compass.controller.EfficientTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.gn.android.compass.controller.circle.text.CircleCompassHeaderTextView",
+      "bounds": [
+        535,
+        938,
+        905,
+        977
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "262",
+      "resource-id": "com.gn.android.compass:id/view_circle_compass_center_magnetic_heading_value",
+      "ancestors": [
+        "com.gn.android.compass.controller.circle.text.CircleCompassValueTextView",
+        "com.gn.android.compass.controller.EfficientTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.gn.android.compass.controller.circle.text.CompassValueTextView",
+      "bounds": [
+        598,
+        985,
+        842,
+        1139
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "W by S",
+      "resource-id": "com.gn.android.compass:id/view_circle_compass_center_magnetic_heading_cardinal_point",
+      "ancestors": [
+        "com.gn.android.compass.controller.circle.text.CircleCompassValueTextView",
+        "com.gn.android.compass.controller.EfficientTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.gn.android.compass.controller.circle.text.CardinalPointTextView",
+      "bounds": [
+        590,
+        1134,
+        850,
+        1219
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "MAGNETIC FIELD IN µT",
+      "resource-id": "com.gn.android.compass:id/view_circle_compass_center_magnetic_field_strength_header",
+      "ancestors": [
+        "com.gn.android.compass.controller.EfficientTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.gn.android.compass.controller.circle.text.CircleCompassHeaderTextView",
+      "bounds": [
+        552,
+        1257,
+        888,
+        1296
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "78",
+      "resource-id": "com.gn.android.compass:id/view_circle_compass_center_magnetic_field_strength_value",
+      "ancestors": [
+        "com.gn.android.compass.controller.circle.text.CircleCompassValueTextView",
+        "com.gn.android.compass.controller.EfficientTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.gn.android.compass.controller.circle.text.MagneticFieldStrengthTextView",
+      "bounds": [
+        677,
+        1303,
+        763,
+        1387
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "iconClass": "location",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.gn.android.compass:id/view_info_box_icon",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        112,
+        1932,
+        172,
+        1992
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "N 37°44'17.293'' W -122°27'0.394''",
+      "resource-id": "com.gn.android.compass:id/view_info_box_text",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        207,
+        1927,
+        1328,
+        1998
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "ADVERTISEMENT",
+      "resource-id": "com.gn.android.compass:id/view_ad_banner_text_view_placeholder",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        0,
+        2217,
+        1440,
+        2392
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        0,
+        2217,
+        1440,
+        2392
+      ],
+      "clickable": true,
+      "class": "android.widget.ImageView",
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.gn.android.compass:id/view_info_box_icon",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        112,
+        2097,
+        172,
+        2157
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "GET PRO",
+      "resource-id": "com.gn.android.compass:id/view_info_box_text",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        207,
+        2092,
+        1328,
+        2163
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

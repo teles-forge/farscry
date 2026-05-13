@@ -1,0 +1,621 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.quickenloans.mortgagecalculator:id/toolbar",
+      "children": [
+        {
+          "text": "Purchase",
+          "resource-id": "com.quickenloans.mortgagecalculator:id/toolbar_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            196,
+            84,
+            1440,
+            280
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "Monthly Payment:",
+      "resource-id": "com.quickenloans.mortgagecalculator:id/lblFixtureTitle",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.quickenloans.mortgagecalculator.customview.TypefaceCustomizableTextView",
+      "bounds": [
+        84,
+        294,
+        695,
+        379
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "$969.30",
+      "resource-id": "com.quickenloans.mortgagecalculator:id/txvFixtureAmount",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.quickenloans.mortgagecalculator.customview.TypefaceCustomizableTextView",
+      "bounds": [
+        84,
+        379,
+        409,
+        480
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "expand_less",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.quickenloans.mortgagecalculator:id/monthly_payment_arrow_up",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        1244,
+        317,
+        1384,
+        457
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Loan Amount",
+      "resource-id": "com.quickenloans.mortgagecalculator:id/lblLoanAmount",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.quickenloans.mortgagecalculator.customview.TypefaceCustomizableTextView",
+      "bounds": [
+        84,
+        508,
+        444,
+        584
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "$200,000.00",
+      "resource-id": "com.quickenloans.mortgagecalculator:id/txvLoanAmount",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.quickenloans.mortgagecalculator.customview.TypefaceCustomizableTextView",
+      "bounds": [
+        1042,
+        508,
+        1356,
+        584
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "PMI",
+      "resource-id": "com.quickenloans.mortgagecalculator:id/lblPMIAmount",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.quickenloans.mortgagecalculator.customview.TypefaceCustomizableTextView",
+      "bounds": [
+        84,
+        584,
+        183,
+        667
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "$0.00",
+      "resource-id": "com.quickenloans.mortgagecalculator:id/txvPMIAmount",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.quickenloans.mortgagecalculator.customview.TypefaceCustomizableTextView",
+      "bounds": [
+        1215,
+        584,
+        1356,
+        667
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Payment with PMI",
+      "resource-id": "com.quickenloans.mortgagecalculator:id/lblPaymentPMI",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.quickenloans.mortgagecalculator.customview.TypefaceCustomizableTextView",
+      "bounds": [
+        84,
+        667,
+        558,
+        750
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "$969.30",
+      "resource-id": "com.quickenloans.mortgagecalculator:id/txvPaymentPMI",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.quickenloans.mortgagecalculator.customview.TypefaceCustomizableTextView",
+      "bounds": [
+        1151,
+        667,
+        1356,
+        750
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "com.quickenloans.mortgagecalculator:id/txvDownPayment",
+      "children": [
+        {
+          "text": "$50,000.00",
+          "resource-id": "com.quickenloans.mortgagecalculator:id/fieldValue",
+          "ancestors": [
+            "android.widget.EditText",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatEditText",
+          "bounds": [
+            56,
+            778,
+            906,
+            856
+          ],
+          "componentLabel": "Input"
+        },
+        {
+          "text": "$",
+          "resource-id": "com.quickenloans.mortgagecalculator:id/button1",
+          "ancestors": [
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatButton",
+          "bounds": [
+            934,
+            778,
+            1162,
+            855
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "%",
+          "resource-id": "com.quickenloans.mortgagecalculator:id/button2",
+          "ancestors": [
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatButton",
+          "bounds": [
+            1156,
+            778,
+            1384,
+            855
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "ancestors": [
+        "com.quickenloans.mortgagecalculator.customview.ValidationFieldBase",
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.quickenloans.mortgagecalculator.customview.ValidationEditTextWithToggleButtonsField",
+      "bounds": [
+        56,
+        778,
+        1384,
+        961
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "resource-id": "com.quickenloans.mortgagecalculator:id/txvPurchaseInterestRate",
+      "children": [
+        {
+          "text": "Interest Rate",
+          "resource-id": "com.quickenloans.mortgagecalculator:id/upperFieldNameLabel",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            84,
+            961,
+            1384,
+            1031
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "View QL Rates",
+          "resource-id": "com.quickenloans.mortgagecalculator:id/actionButton",
+          "ancestors": [
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatButton",
+          "bounds": [
+            929,
+            1031,
+            1384,
+            1164
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "4.125%",
+          "resource-id": "com.quickenloans.mortgagecalculator:id/fieldValue",
+          "ancestors": [
+            "android.widget.EditText",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatEditText",
+          "bounds": [
+            56,
+            1031,
+            901,
+            1164
+          ],
+          "componentLabel": "Input"
+        }
+      ],
+      "ancestors": [
+        "com.quickenloans.mortgagecalculator.customview.ValidationFieldBase",
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.quickenloans.mortgagecalculator.customview.ValidationEditTextWithActionButtonField",
+      "bounds": [
+        56,
+        961,
+        1384,
+        1276
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "resource-id": "com.quickenloans.mortgagecalculator:id/txvPurchaseTermYears",
+      "children": [
+        {
+          "text": "Term (years)",
+          "resource-id": "com.quickenloans.mortgagecalculator:id/upperFieldNameLabel",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            84,
+            1276,
+            1384,
+            1346
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "30",
+          "resource-id": "com.quickenloans.mortgagecalculator:id/fieldValue",
+          "ancestors": [
+            "android.widget.EditText",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatEditText",
+          "bounds": [
+            56,
+            1360,
+            1384,
+            1500
+          ],
+          "componentLabel": "Input"
+        }
+      ],
+      "ancestors": [
+        "com.quickenloans.mortgagecalculator.customview.ValidationFieldBase",
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.quickenloans.mortgagecalculator.customview.ValidationEditTextField",
+      "bounds": [
+        56,
+        1276,
+        1384,
+        1591
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "resource-id": "com.quickenloans.mortgagecalculator:id/txvPurchaseAnnualTaxes",
+      "children": [
+        {
+          "text": "Annual Taxes",
+          "resource-id": "com.quickenloans.mortgagecalculator:id/upperFieldNameLabel",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            84,
+            1591,
+            1384,
+            1661
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "$0.00",
+          "resource-id": "com.quickenloans.mortgagecalculator:id/fieldValue",
+          "ancestors": [
+            "android.widget.EditText",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatEditText",
+          "bounds": [
+            56,
+            1675,
+            1384,
+            1815
+          ],
+          "componentLabel": "Input"
+        }
+      ],
+      "ancestors": [
+        "com.quickenloans.mortgagecalculator.customview.ValidationFieldBase",
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.quickenloans.mortgagecalculator.customview.ValidationEditTextField",
+      "bounds": [
+        56,
+        1591,
+        1384,
+        1906
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "resource-id": "com.quickenloans.mortgagecalculator:id/txvPurchaseAnnualInsurance",
+      "children": [
+        {
+          "text": "Annual Insurance",
+          "resource-id": "com.quickenloans.mortgagecalculator:id/upperFieldNameLabel",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            84,
+            1906,
+            1384,
+            1976
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "$0.00",
+          "resource-id": "com.quickenloans.mortgagecalculator:id/fieldValue",
+          "ancestors": [
+            "android.widget.EditText",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatEditText",
+          "bounds": [
+            56,
+            1990,
+            1384,
+            2130
+          ],
+          "componentLabel": "Input"
+        }
+      ],
+      "ancestors": [
+        "com.quickenloans.mortgagecalculator.customview.ValidationFieldBase",
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.quickenloans.mortgagecalculator.customview.ValidationEditTextField",
+      "bounds": [
+        56,
+        1906,
+        1384,
+        2221
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "resource-id": "com.quickenloans.mortgagecalculator:id/txvPurchaseAnnualAssocFee",
+      "children": [
+        {
+          "text": "Monthly HOA Dues",
+          "resource-id": "com.quickenloans.mortgagecalculator:id/upperFieldNameLabel",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            84,
+            2221,
+            1384,
+            2291
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "$0.00",
+          "resource-id": "com.quickenloans.mortgagecalculator:id/fieldValue",
+          "ancestors": [
+            "android.widget.EditText",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatEditText",
+          "bounds": [
+            56,
+            2305,
+            1384,
+            2392
+          ],
+          "componentLabel": "Input"
+        }
+      ],
+      "ancestors": [
+        "com.quickenloans.mortgagecalculator.customview.ValidationFieldBase",
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.quickenloans.mortgagecalculator.customview.ValidationEditTextField",
+      "bounds": [
+        56,
+        2221,
+        1384,
+        2392
+      ],
+      "componentLabel": "Input"
+    }
+  ]
+}

@@ -1,0 +1,952 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.yinzcam.nfl.cardinals:id/yinz_menu_activity_titlebar",
+      "children": [
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            440,
+            105,
+            1000,
+            259
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "refresh",
+          "clickable": true,
+          "children": [
+            {
+              "iconClass": "refresh",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.yinzcam.nfl.cardinals:id/view_button_titlebar_icon",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                1307,
+                126,
+                1419,
+                238
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "ancestors": [
+            "com.yinzcam.common.android.ui.IconButton",
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.yinzcam.common.android.ui.IconLayoutButton",
+          "bounds": [
+            1286,
+            105,
+            1440,
+            259
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.support.v7.widget.Toolbar",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.yinzcam.common.android.ui.menu.YinzToolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "",
+      "resource-id": "com.yinzcam.nfl.cardinals:id/yinz_menu_activity_ad_button_close",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        0,
+        2154,
+        112,
+        2266
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.google.android.gms.ads.AdView",
+      "bounds": [
+        0,
+        2217,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.google.android.gms.ads.internal.webview.n",
+          "bounds": [
+            0,
+            2217,
+            1440,
+            2392
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.webkit.WebView",
+                "android.widget.AbsoluteLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                0,
+                2217,
+                1440,
+                2392
+              ],
+              "clickable": true,
+              "class": "com.google.android.gms.ads.internal.webview.o",
+              "componentLabel": "Web View"
+            }
+          ],
+          "componentLabel": "Web View"
+        }
+      ],
+      "componentLabel": "Advertisement"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        0,
+        1292,
+        1440,
+        1747
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "RAIDERS",
+          "resource-id": "com.yinzcam.nfl.cardinals:id/schedule_item_left_team",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            45,
+            1305,
+            720,
+            1425
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "CARDINALS",
+          "resource-id": "com.yinzcam.nfl.cardinals:id/schedule_item_right_team",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            720,
+            1305,
+            1395,
+            1425
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "31",
+          "resource-id": "com.yinzcam.nfl.cardinals:id/schedule_item_left_team_score",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            45,
+            1425,
+            187,
+            1594
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Fri, Aug 12",
+          "resource-id": "com.yinzcam.nfl.cardinals:id/schedule_item_left_time",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            45,
+            1594,
+            276,
+            1730
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.yinzcam.nfl.cardinals:id/schedule_item_logo_left",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            467,
+            1425,
+            635,
+            1593
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "@",
+          "resource-id": "com.yinzcam.nfl.cardinals:id/schedule_item_logo_divider",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            635,
+            1425,
+            805,
+            1575
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.yinzcam.nfl.cardinals:id/schedule_item_logo_right",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            805,
+            1425,
+            973,
+            1593
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "10",
+          "resource-id": "com.yinzcam.nfl.cardinals:id/schedule_item_right_team_score",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1253,
+            1425,
+            1395,
+            1594
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Final",
+          "resource-id": "com.yinzcam.nfl.cardinals:id/schedule_item_right_time",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1253,
+            1594,
+            1358,
+            1730
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        0,
+        1747,
+        1440,
+        2202
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "CARDINALS",
+          "resource-id": "com.yinzcam.nfl.cardinals:id/schedule_item_left_team",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            45,
+            1760,
+            720,
+            1880
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "CHARGERS",
+          "resource-id": "com.yinzcam.nfl.cardinals:id/schedule_item_right_team",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            720,
+            1760,
+            1395,
+            1880
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "3",
+          "resource-id": "com.yinzcam.nfl.cardinals:id/schedule_item_left_team_score",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            45,
+            1880,
+            116,
+            2049
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Fri, Aug 19",
+          "resource-id": "com.yinzcam.nfl.cardinals:id/schedule_item_left_time",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            45,
+            2049,
+            276,
+            2185
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "label",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.yinzcam.nfl.cardinals:id/schedule_item_logo_left",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            467,
+            1880,
+            635,
+            2048
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "@",
+          "resource-id": "com.yinzcam.nfl.cardinals:id/schedule_item_logo_divider",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            635,
+            1880,
+            805,
+            2030
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.yinzcam.nfl.cardinals:id/schedule_item_logo_right",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            805,
+            1880,
+            973,
+            2048
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "19",
+          "resource-id": "com.yinzcam.nfl.cardinals:id/schedule_item_right_team_score",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1253,
+            1880,
+            1395,
+            2049
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Final",
+          "resource-id": "com.yinzcam.nfl.cardinals:id/schedule_item_right_time",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1253,
+            2049,
+            1358,
+            2185
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        0,
+        2202,
+        1440,
+        2392
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "CARDINALS",
+          "resource-id": "com.yinzcam.nfl.cardinals:id/schedule_item_left_team",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            45,
+            2215,
+            720,
+            2335
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "TEXANS",
+          "resource-id": "com.yinzcam.nfl.cardinals:id/schedule_item_right_team",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            720,
+            2215,
+            1395,
+            2335
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "24",
+          "resource-id": "com.yinzcam.nfl.cardinals:id/schedule_item_left_team_score",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            45,
+            2335,
+            187,
+            2392
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.yinzcam.nfl.cardinals:id/schedule_item_logo_left",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            467,
+            2335,
+            635,
+            2392
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "@",
+          "resource-id": "com.yinzcam.nfl.cardinals:id/schedule_item_logo_divider",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            635,
+            2335,
+            805,
+            2392
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.yinzcam.nfl.cardinals:id/schedule_item_logo_right",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            805,
+            2335,
+            973,
+            2392
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "34",
+          "resource-id": "com.yinzcam.nfl.cardinals:id/schedule_item_right_team_score",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1253,
+            2335,
+            1395,
+            2392
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.yinzcam.nfl.cardinals:id/headline_scroll_background_image",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        0,
+        280,
+        1440,
+        1120
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.design.widget.TabLayout$SlidingTabStrip",
+      "bounds": [
+        0,
+        1120,
+        1440,
+        1288
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.design.widget.TabLayout$TabView",
+          "bounds": [
+            0,
+            1120,
+            360,
+            1288
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "textButtonClass": "news"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.design.widget.TabLayout$TabView",
+          "bounds": [
+            720,
+            1120,
+            1080,
+            1288
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "textButtonClass": "schedule"
+        },
+        {
+          "text": "NOW",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            492,
+            1175,
+            588,
+            1232
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "TICKETS",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1178,
+            1175,
+            1342,
+            1232
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "text": "OFFSEASON DATES",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        531,
+        419,
+        908,
+        529
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "NFL Scouting Combine",
+      "resource-id": "com.yinzcam.nfl.cardinals:id/offseason_title",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        70,
+        564,
+        504,
+        621
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Feb 28",
+      "resource-id": "com.yinzcam.nfl.cardinals:id/offseason_date",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1242,
+        564,
+        1370,
+        621
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Start of free agent negotiations",
+      "resource-id": "com.yinzcam.nfl.cardinals:id/offseason_title",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        70,
+        656,
+        664,
+        713
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Mar 7",
+      "resource-id": "com.yinzcam.nfl.cardinals:id/offseason_date",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1261,
+        656,
+        1370,
+        713
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "New league year begins at 2PM",
+      "resource-id": "com.yinzcam.nfl.cardinals:id/offseason_title",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        70,
+        748,
+        667,
+        805
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Mar 9",
+      "resource-id": "com.yinzcam.nfl.cardinals:id/offseason_date",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1261,
+        748,
+        1370,
+        805
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "NFL Draft Day 1",
+      "resource-id": "com.yinzcam.nfl.cardinals:id/offseason_title",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        70,
+        840,
+        364,
+        897
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Apr 27",
+      "resource-id": "com.yinzcam.nfl.cardinals:id/offseason_date",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1246,
+        840,
+        1370,
+        897
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

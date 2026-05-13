@@ -1,0 +1,1165 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "iconClass": "fullscreen",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.wunderground.android.storm:id/map_to_fullscreen_btn",
+      "clickable": false,
+      "class": "com.wunderground.android.weather.commons.view.FilteredImageView",
+      "bounds": [
+        28,
+        336,
+        154,
+        462
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "resource-id": "com.wunderground.android.storm:id/toolbar",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.wunderground.android.storm:id/toolbar_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            28,
+            126,
+            140,
+            238
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "location_crosshair",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.wunderground.android.storm:id/gps_location_icon",
+          "clickable": false,
+          "class": "com.wunderground.android.weather.commons.view.FilteredImageView",
+          "bounds": [
+            210,
+            157,
+            259,
+            206
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Urbana, IL",
+          "resource-id": "com.wunderground.android.storm:id/toolbar_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "me.grantland.widget.AutofitTextView",
+          "bounds": [
+            277,
+            138,
+            725,
+            225
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "expand_more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.wunderground.android.storm:id/choose_location",
+          "clickable": false,
+          "class": "com.wunderground.android.weather.commons.view.FilteredImageView",
+          "bounds": [
+            642,
+            140,
+            726,
+            224
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "location_crosshair",
+          "resource-id": "com.wunderground.android.storm:id/action_gps_location",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1132,
+            98,
+            1300,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        14,
+        1615,
+        517,
+        2203
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.v7.widget.CardView",
+          "bounds": [
+            14,
+            1615,
+            517,
+            2203
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "Current",
+              "resource-id": "com.wunderground.android.storm:id/tab_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                24,
+                1628,
+                507,
+                1712
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "iconClass": "weather",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.wunderground.android.storm:id/cc_weather_icon",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                143,
+                1766,
+                245,
+                1868
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "text": "40°",
+              "resource-id": "com.wunderground.android.storm:id/cc_temperature",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "me.grantland.widget.AutofitTextView",
+              "bounds": [
+                267,
+                1754,
+                451,
+                1881
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "CALM",
+              "resource-id": "com.wunderground.android.storm:id/cc_wind_speed",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                194,
+                2077,
+                318,
+                2134
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Feels Like",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                80,
+                1927,
+                291,
+                1984
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "40°",
+              "resource-id": "com.wunderground.android.storm:id/cc_feels_like",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                361,
+                1927,
+                451,
+                1984
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Humidity",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                80,
+                1995,
+                291,
+                2052
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "61%",
+              "resource-id": "com.wunderground.android.storm:id/cc_humidity",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                361,
+                1995,
+                451,
+                2052
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "Card"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        517,
+        1615,
+        1048,
+        2203
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "resource-id": "com.wunderground.android.storm:id/hourly_tab",
+          "children": [
+            {
+              "text": "Hourly",
+              "resource-id": "com.wunderground.android.storm:id/tab_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                527,
+                1628,
+                1038,
+                1712
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "resource-id": "com.wunderground.android.storm:id/hour_data_container",
+              "children": [
+                {
+                  "text": "11PM",
+                  "resource-id": "com.wunderground.android.storm:id/hour_value",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    583,
+                    1765,
+                    716,
+                    1822
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.wunderground.android.storm:id/sky_conditions",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "bounds": [
+                    716,
+                    1765,
+                    898,
+                    1828
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "text": "39°",
+                  "resource-id": "com.wunderground.android.storm:id/temp_value",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    898,
+                    1765,
+                    982,
+                    1823
+                  ],
+                  "componentLabel": "Text"
+                }
+              ],
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.widget.RelativeLayout",
+              "bounds": [
+                583,
+                1765,
+                982,
+                1828
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "resource-id": "com.wunderground.android.storm:id/hour_data_container",
+              "children": [
+                {
+                  "text": "2AM",
+                  "resource-id": "com.wunderground.android.storm:id/hour_value",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    583,
+                    1865,
+                    716,
+                    1922
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.wunderground.android.storm:id/sky_conditions",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "bounds": [
+                    716,
+                    1865,
+                    898,
+                    1928
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "text": "33°",
+                  "resource-id": "com.wunderground.android.storm:id/temp_value",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    898,
+                    1865,
+                    982,
+                    1923
+                  ],
+                  "componentLabel": "Text"
+                }
+              ],
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.widget.RelativeLayout",
+              "bounds": [
+                583,
+                1865,
+                982,
+                1928
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "resource-id": "com.wunderground.android.storm:id/hour_data_container",
+              "children": [
+                {
+                  "text": "5AM",
+                  "resource-id": "com.wunderground.android.storm:id/hour_value",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    583,
+                    1965,
+                    716,
+                    2022
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "iconClass": "call",
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.wunderground.android.storm:id/sky_conditions",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "bounds": [
+                    716,
+                    1965,
+                    898,
+                    2028
+                  ],
+                  "componentLabel": "Icon"
+                },
+                {
+                  "text": "29°",
+                  "resource-id": "com.wunderground.android.storm:id/temp_value",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    898,
+                    1965,
+                    982,
+                    2023
+                  ],
+                  "componentLabel": "Text"
+                }
+              ],
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.widget.RelativeLayout",
+              "bounds": [
+                583,
+                1965,
+                982,
+                2028
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "resource-id": "com.wunderground.android.storm:id/hour_data_container",
+              "children": [
+                {
+                  "text": "8AM",
+                  "resource-id": "com.wunderground.android.storm:id/hour_value",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    583,
+                    2065,
+                    716,
+                    2122
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.wunderground.android.storm:id/sky_conditions",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "bounds": [
+                    716,
+                    2065,
+                    898,
+                    2128
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "text": "28°",
+                  "resource-id": "com.wunderground.android.storm:id/temp_value",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    898,
+                    2065,
+                    982,
+                    2123
+                  ],
+                  "componentLabel": "Text"
+                }
+              ],
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.widget.RelativeLayout",
+              "bounds": [
+                583,
+                2065,
+                982,
+                2128
+              ],
+              "componentLabel": "List Item"
+            }
+          ],
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.CardView",
+          "bounds": [
+            517,
+            1615,
+            1048,
+            2203
+          ],
+          "componentLabel": "Card"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        1048,
+        1615,
+        1440,
+        2203
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.v7.widget.CardView",
+          "bounds": [
+            1048,
+            1615,
+            1440,
+            2203
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "Daily",
+              "resource-id": "com.wunderground.android.storm:id/tab_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                1058,
+                1628,
+                1440,
+                1712
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.RelativeLayout",
+              "bounds": [
+                1114,
+                1765,
+                1440,
+                1828
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "text": "Tue",
+                  "resource-id": "com.wunderground.android.storm:id/week_day_text_view",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    1114,
+                    1765,
+                    1212,
+                    1822
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.wunderground.android.storm:id/weather_conditions_image_view",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "bounds": [
+                    1212,
+                    1765,
+                    1387,
+                    1828
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "text": "55°",
+                  "resource-id": "com.wunderground.android.storm:id/max_temp_text_view",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    1393,
+                    1765,
+                    1440,
+                    1823
+                  ],
+                  "componentLabel": "Text"
+                }
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.RelativeLayout",
+              "bounds": [
+                1114,
+                1865,
+                1440,
+                1928
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "text": "Wed",
+                  "resource-id": "com.wunderground.android.storm:id/week_day_text_view",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    1114,
+                    1865,
+                    1216,
+                    1922
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.wunderground.android.storm:id/weather_conditions_image_view",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "bounds": [
+                    1216,
+                    1865,
+                    1387,
+                    1928
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "text": "38°",
+                  "resource-id": "com.wunderground.android.storm:id/max_temp_text_view",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    1390,
+                    1865,
+                    1440,
+                    1923
+                  ],
+                  "componentLabel": "Text"
+                }
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.RelativeLayout",
+              "bounds": [
+                1114,
+                1965,
+                1440,
+                2028
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "text": "Thu",
+                  "resource-id": "com.wunderground.android.storm:id/week_day_text_view",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    1114,
+                    1965,
+                    1212,
+                    2022
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.wunderground.android.storm:id/weather_conditions_image_view",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "bounds": [
+                    1212,
+                    1965,
+                    1387,
+                    2028
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "text": "49°",
+                  "resource-id": "com.wunderground.android.storm:id/max_temp_text_view",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    1390,
+                    1965,
+                    1440,
+                    2023
+                  ],
+                  "componentLabel": "Text"
+                }
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.RelativeLayout",
+              "bounds": [
+                1114,
+                2065,
+                1440,
+                2128
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "text": "Fri",
+                  "resource-id": "com.wunderground.android.storm:id/week_day_text_view",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    1114,
+                    2065,
+                    1212,
+                    2122
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.wunderground.android.storm:id/weather_conditions_image_view",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "bounds": [
+                    1212,
+                    2065,
+                    1387,
+                    2128
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "text": "61°",
+                  "resource-id": "com.wunderground.android.storm:id/max_temp_text_view",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    1399,
+                    2065,
+                    1440,
+                    2123
+                  ],
+                  "componentLabel": "Text"
+                }
+              ],
+              "componentLabel": "List Item"
+            }
+          ],
+          "componentLabel": "Card"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.google.android.gms.ads.doubleclick.PublisherAdView",
+      "bounds": [
+        0,
+        2217,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [],
+      "componentLabel": "Advertisement"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        1244,
+        1125,
+        1384,
+        1265
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.wunderground.android.storm:id/quick_pick_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1272,
+            1153,
+            1356,
+            1237
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        1244,
+        1265,
+        1384,
+        1405
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.wunderground.android.storm:id/quick_pick_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1272,
+            1294,
+            1356,
+            1378
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        1244,
+        1405,
+        1384,
+        1545
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "iconClass": "power",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.wunderground.android.storm:id/quick_pick_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1272,
+            1434,
+            1356,
+            1518
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "iconClass": "sliders",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        18,
+        1506,
+        228,
+        1583
+      ],
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "componentLabel": "Icon"
+    }
+  ]
+}

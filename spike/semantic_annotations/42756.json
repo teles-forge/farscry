@@ -1,0 +1,986 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "android:id/action_bar_container",
+      "children": [
+        {
+          "text": "",
+          "resource-id": "com.fifa.fifaapp.android:id/action_favourites",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.android.internal.view.menu.ActionMenuItemView",
+          "bounds": [
+            1048,
+            84,
+            1244,
+            252
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1244,
+            84,
+            1440,
+            252
+          ],
+          "clickable": true,
+          "class": "android.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "android:id/up",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            0,
+            140,
+            56,
+            196
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "font",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "android:id/home",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            43,
+            112,
+            155,
+            224
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Live Scores",
+          "resource-id": "android:id/action_bar_title",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            169,
+            134,
+            393,
+            202
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.android.internal.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        252
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "Search for national teams, clubs, competitions",
+      "resource-id": "com.fifa.fifaapp.android:id/tooltip_add_your_fav_teams",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.grapplemobile.fifa.view.SimpleTextView",
+      "bounds": [
+        502,
+        679,
+        1423,
+        851
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "FAVOURITES",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.grapplemobile.fifa.view.SimpleTextView",
+      "bounds": [
+        516,
+        308,
+        831,
+        398
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        252,
+        1440,
+        531
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Championnat Mobilis de Ligue 1 (ALG)",
+          "resource-id": "com.fifa.fifaapp.android:id/txtHeader",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grapplemobile.fifa.view.SimpleTextView",
+          "bounds": [
+            56,
+            385,
+            1147,
+            475
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "LIVE",
+          "resource-id": "com.fifa.fifaapp.android:id/txtIsLive",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grapplemobile.fifa.view.SimpleTextView",
+          "bounds": [
+            1175,
+            409,
+            1285,
+            475
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "ALL",
+          "resource-id": "com.fifa.fifaapp.android:id/txtNextAll",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grapplemobile.fifa.view.SimpleTextView",
+          "bounds": [
+            1313,
+            407,
+            1384,
+            475
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.fifa.fifaapp.android:id/match_schedule_adapter",
+      "children": [
+        {
+          "text": "TODAY",
+          "resource-id": "com.fifa.fifaapp.android:id/txtDate",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grapplemobile.fifa.view.SimpleTextView",
+          "bounds": [
+            0,
+            531,
+            1440,
+            625
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0 : 2",
+          "resource-id": "com.fifa.fifaapp.android:id/txtScore",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grapplemobile.fifa.view.SimpleTextView",
+          "bounds": [
+            633,
+            691,
+            807,
+            783
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "favorite",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fifa.fifaapp.android:id/imgHome",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            56,
+            653,
+            224,
+            821
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fifa.fifaapp.android:id/imgAway",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1216,
+            653,
+            1384,
+            821
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "CA Batna",
+          "resource-id": "com.fifa.fifaapp.android:id/txtHomeTeam",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grapplemobile.fifa.view.SimpleTextView",
+          "bounds": [
+            224,
+            689,
+            633,
+            785
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "ES Sétif",
+          "resource-id": "com.fifa.fifaapp.android:id/txtAwayTeam",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grapplemobile.fifa.view.SimpleTextView",
+          "bounds": [
+            807,
+            689,
+            1216,
+            785
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        531,
+        1440,
+        881
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.fifa.fifaapp.android:id/match_schedule_adapter",
+      "children": [
+        {
+          "text": "2 : 0",
+          "resource-id": "com.fifa.fifaapp.android:id/txtScore",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grapplemobile.fifa.view.SimpleTextView",
+          "bounds": [
+            633,
+            947,
+            807,
+            1039
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fifa.fifaapp.android:id/imgHome",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            56,
+            909,
+            224,
+            1077
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fifa.fifaapp.android:id/imgAway",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1216,
+            909,
+            1384,
+            1077
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "RC Relizane",
+          "resource-id": "com.fifa.fifaapp.android:id/txtHomeTeam",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grapplemobile.fifa.view.SimpleTextView",
+          "bounds": [
+            224,
+            945,
+            633,
+            1041
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "CS Constantine",
+          "resource-id": "com.fifa.fifaapp.android:id/txtAwayTeam",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grapplemobile.fifa.view.SimpleTextView",
+          "bounds": [
+            807,
+            945,
+            1216,
+            1041
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "63'",
+          "resource-id": "com.fifa.fifaapp.android:id/txtTime",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grapplemobile.fifa.view.SimpleTextView",
+          "bounds": [
+            674,
+            1105,
+            766,
+            1201
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        881,
+        1440,
+        1233
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.fifa.fifaapp.android:id/match_schedule_adapter",
+      "children": [
+        {
+          "text": "1 : 0",
+          "resource-id": "com.fifa.fifaapp.android:id/txtScore",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grapplemobile.fifa.view.SimpleTextView",
+          "bounds": [
+            633,
+            1299,
+            807,
+            1391
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fifa.fifaapp.android:id/imgHome",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            56,
+            1261,
+            224,
+            1429
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fifa.fifaapp.android:id/imgAway",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1216,
+            1261,
+            1384,
+            1429
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "O Médéa",
+          "resource-id": "com.fifa.fifaapp.android:id/txtHomeTeam",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grapplemobile.fifa.view.SimpleTextView",
+          "bounds": [
+            224,
+            1297,
+            633,
+            1393
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "DRB Tadjenanet",
+          "resource-id": "com.fifa.fifaapp.android:id/txtAwayTeam",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grapplemobile.fifa.view.SimpleTextView",
+          "bounds": [
+            807,
+            1297,
+            1216,
+            1393
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "63'",
+          "resource-id": "com.fifa.fifaapp.android:id/txtTime",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grapplemobile.fifa.view.SimpleTextView",
+          "bounds": [
+            674,
+            1457,
+            766,
+            1553
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1233,
+        1440,
+        1585
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.fifa.fifaapp.android:id/match_schedule_adapter",
+      "children": [
+        {
+          "text": "SAT 11/03/2017",
+          "resource-id": "com.fifa.fifaapp.android:id/txtDate",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grapplemobile.fifa.view.SimpleTextView",
+          "bounds": [
+            0,
+            1585,
+            1440,
+            1679
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "14:00",
+          "resource-id": "com.fifa.fifaapp.android:id/txtScore",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grapplemobile.fifa.view.SimpleTextView",
+          "bounds": [
+            634,
+            1757,
+            806,
+            1825
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fifa.fifaapp.android:id/imgHome",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            56,
+            1707,
+            224,
+            1875
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fifa.fifaapp.android:id/imgAway",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1216,
+            1707,
+            1384,
+            1875
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "NA Hussein Dey",
+          "resource-id": "com.fifa.fifaapp.android:id/txtHomeTeam",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grapplemobile.fifa.view.SimpleTextView",
+          "bounds": [
+            224,
+            1743,
+            634,
+            1839
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "MC Oran",
+          "resource-id": "com.fifa.fifaapp.android:id/txtAwayTeam",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grapplemobile.fifa.view.SimpleTextView",
+          "bounds": [
+            806,
+            1743,
+            1216,
+            1839
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1585,
+        1440,
+        1935
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.fifa.fifaapp.android:id/match_schedule_adapter",
+      "children": [
+        {
+          "text": "14:00",
+          "resource-id": "com.fifa.fifaapp.android:id/txtScore",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grapplemobile.fifa.view.SimpleTextView",
+          "bounds": [
+            634,
+            2013,
+            806,
+            2081
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fifa.fifaapp.android:id/imgHome",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            56,
+            1963,
+            224,
+            2131
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fifa.fifaapp.android:id/imgAway",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1216,
+            1963,
+            1384,
+            2131
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "USM El Harrach",
+          "resource-id": "com.fifa.fifaapp.android:id/txtHomeTeam",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grapplemobile.fifa.view.SimpleTextView",
+          "bounds": [
+            224,
+            1999,
+            634,
+            2095
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "JS Saoura",
+          "resource-id": "com.fifa.fifaapp.android:id/txtAwayTeam",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grapplemobile.fifa.view.SimpleTextView",
+          "bounds": [
+            806,
+            1999,
+            1216,
+            2095
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1935,
+        1440,
+        2191
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.fifa.fifaapp.android:id/match_schedule_adapter",
+      "children": [
+        {
+          "text": "15:00",
+          "resource-id": "com.fifa.fifaapp.android:id/txtScore",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grapplemobile.fifa.view.SimpleTextView",
+          "bounds": [
+            634,
+            2269,
+            806,
+            2337
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fifa.fifaapp.android:id/imgHome",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            56,
+            2219,
+            224,
+            2387
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.fifa.fifaapp.android:id/imgAway",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1216,
+            2219,
+            1384,
+            2387
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "USM Bel-Abbès",
+          "resource-id": "com.fifa.fifaapp.android:id/txtHomeTeam",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grapplemobile.fifa.view.SimpleTextView",
+          "bounds": [
+            224,
+            2255,
+            634,
+            2351
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "CR Bélouizdad",
+          "resource-id": "com.fifa.fifaapp.android:id/txtAwayTeam",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grapplemobile.fifa.view.SimpleTextView",
+          "bounds": [
+            806,
+            2255,
+            1216,
+            2351
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        2191,
+        1440,
+        2392
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "iconClass": "search",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        558,
+        480,
+        670,
+        592
+      ],
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Search for national teams, clubs, competitions",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.grapplemobile.fifa.view.SimpleTextView",
+      "bounds": [
+        670,
+        502,
+        1342,
+        570
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "com.fifa.fifaapp.android:id/rlWorldMatchCentre",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        460,
+        678,
+        1440,
+        902
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "live"
+    }
+  ]
+}

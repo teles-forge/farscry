@@ -1,0 +1,110 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    36,
+    111,
+    1404,
+    2364
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        92,
+        167,
+        1348,
+        2308
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "resource-id": "android:id/buttonPanel",
+          "children": [
+            {
+              "text": "OK",
+              "resource-id": "android:id/button1",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.widget.Button",
+              "bounds": [
+                1082,
+                2126,
+                1306,
+                2294
+              ],
+              "componentLabel": "Text Button",
+              "textButtonClass": "ok"
+            }
+          ],
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.android.internal.widget.ButtonBarLayout",
+          "bounds": [
+            92,
+            2112,
+            1348,
+            2308
+          ],
+          "componentLabel": "Button Bar"
+        },
+        {
+          "text": "Detailed information",
+          "resource-id": "android:id/alertTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.android.internal.widget.DialogTitle",
+          "bounds": [
+            176,
+            230,
+            1264,
+            323
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "This application is an OBDII ECU diagnostics tool that uses a bluetooth ELM327 adapter to connect to your car.\n\nNowadays all available car parameters are monitorized (see http://en.wikipedia.org/wiki/OBD-II_PIDs for a detailed description).\n\nUsing a bluetooth ELM327 device and our Android mobile or tablet, we can check the car sensor values.\n\nMain window shows speed and RPM. Also, if GPS is present, that window will show current GPS position and GPS-speed.\n\nAt the bottom, detailed sensor information is shown (and updated every second).\n\nCompatible ELM327 adaptors can be found at any automobile shop and online webs, i.e. http://s.dealextreme.com/search/elm327 \n\nThis application stores all data in the SD, in a folder called OBDii_ELM327. ",
+          "resource-id": "android:id/message",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            92,
+            386,
+            1348,
+            2112
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Modal"
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "iconClass": "help",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.squareup.cash:id/help",
+      "clickable": true,
+      "class": "com.squareup.cash.ui.blockers.HelpButton",
+      "bounds": [
+        1244,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Skip",
+      "resource-id": "com.squareup.cash:id/left_button",
+      "ancestors": [
+        "com.squareup.marketfont.MarketButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.squareup.cash.ui.blockers.BlockersButton",
+      "bounds": [
+        0,
+        2182,
+        719,
+        2392
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "skip"
+    },
+    {
+      "text": "Next",
+      "resource-id": "com.squareup.cash:id/right_button",
+      "ancestors": [
+        "com.squareup.marketfont.MarketButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.squareup.cash.ui.blockers.BlockersButton",
+      "bounds": [
+        720,
+        2182,
+        1440,
+        2392
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "next"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.squareup.cash:id/keypad",
+      "clickable": false,
+      "class": "com.squareup.cash.ui.widget.keypad.KeypadView",
+      "bounds": [
+        112,
+        1230,
+        1328,
+        2070
+      ],
+      "componentLabel": "Advertisement"
+    },
+    {
+      "ancestors": [
+        "com.squareup.cash.ui.blockers.LoadingView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.squareup.cash.ui.blockers.LinkCardView",
+      "bounds": [
+        0,
+        84,
+        1440,
+        1230
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Add a bank using your debit card",
+          "resource-id": "com.squareup.cash:id/title",
+          "ancestors": [
+            "com.squareup.marketfont.MarketTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.squareup.cash.ui.widget.BalancedLineTextView",
+          "bounds": [
+            112,
+            280,
+            1328,
+            356
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "lock",
+          "resource-id": "com.squareup.cash:id/card_icon",
+          "children": [
+            {
+              "iconClass": "lock",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                1132,
+                751,
+                1258,
+                835
+              ],
+              "clickable": false,
+              "class": "com.squareup.cash.ui.widget.CardOutlineImageView",
+              "componentLabel": "Icon"
+            }
+          ],
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.squareup.cash.ui.widget.CardIconView",
+          "bounds": [
+            1132,
+            751,
+            1258,
+            835
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "",
+          "ancestors": [
+            "com.squareup.cash.ui.widget.CrashlessMarketEditText",
+            "com.squareup.marketfont.MarketEditText",
+            "android.widget.EditText",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.squareup.cash.ui.widget.KeyboardlessEditText",
+          "bounds": [
+            182,
+            755,
+            809,
+            831
+          ],
+          "componentLabel": "Input"
+        },
+        {
+          "text": "",
+          "resource-id": "com.squareup.cash:id/card_number",
+          "ancestors": [
+            "com.squareup.cash.ui.widget.CrashlessMarketEditText",
+            "com.squareup.marketfont.MarketEditText",
+            "android.widget.EditText",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.squareup.cash.ui.widget.KeyboardlessEditText",
+          "bounds": [
+            182,
+            755,
+            1097,
+            831
+          ],
+          "componentLabel": "Input"
+        }
+      ],
+      "componentLabel": "Card"
+    }
+  ]
+}

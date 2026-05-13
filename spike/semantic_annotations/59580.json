@@ -1,0 +1,667 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "android:id/action_bar_container",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "android:id/home",
+              "clickable": false,
+              "class": "android.widget.ImageView",
+              "bounds": [
+                43,
+                112,
+                94,
+                224
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.android.internal.widget.ActionBarView$HomeView",
+          "bounds": [
+            29,
+            84,
+            108,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "list",
+          "resource-id": "com.zmobile.calendarfree:id/action_menu",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.android.internal.view.menu.ActionMenuItemView",
+          "bounds": [
+            852,
+            84,
+            1048,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "date_range",
+          "resource-id": "com.zmobile.calendarfree:id/action_calendar",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.android.internal.view.menu.ActionMenuItemView",
+          "bounds": [
+            1048,
+            84,
+            1244,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1244,
+            84,
+            1440,
+            252
+          ],
+          "clickable": true,
+          "class": "android.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "My cycle",
+          "resource-id": "android:id/action_bar_title",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            108,
+            125,
+            353,
+            210
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.android.internal.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        252
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "First day of menstruation",
+      "resource-id": "com.zmobile.calendarfree:id/textView5",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        70,
+        270,
+        657,
+        341
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Sunday",
+      "resource-id": "com.zmobile.calendarfree:id/tvDayOfWeek",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        605,
+        341,
+        834,
+        434
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "com.zmobile.calendarfree:id/datePicker1",
+      "children": [
+        {
+          "resource-id": "android:id/month",
+          "children": [
+            {
+              "iconClass": "add",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "android:id/increment",
+              "clickable": true,
+              "class": "android.widget.ImageButton",
+              "bounds": [
+                302,
+                434,
+                575,
+                588
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "text": "Feb",
+              "resource-id": "android:id/numberpicker_input",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.widget.EditText",
+              "bounds": [
+                302,
+                588,
+                575,
+                726
+              ],
+              "componentLabel": "Input"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "android:id/decrement",
+              "clickable": true,
+              "class": "android.widget.ImageButton",
+              "bounds": [
+                302,
+                726,
+                575,
+                880
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.NumberPicker",
+          "bounds": [
+            302,
+            434,
+            575,
+            880
+          ],
+          "componentLabel": "Number Stepper"
+        },
+        {
+          "resource-id": "android:id/day",
+          "children": [
+            {
+              "iconClass": "add",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "android:id/increment",
+              "clickable": true,
+              "class": "android.widget.ImageButton",
+              "bounds": [
+                583,
+                434,
+                856,
+                588
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "text": "05",
+              "resource-id": "android:id/numberpicker_input",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.widget.EditText",
+              "bounds": [
+                583,
+                588,
+                856,
+                726
+              ],
+              "componentLabel": "Input"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "android:id/decrement",
+              "clickable": true,
+              "class": "android.widget.ImageButton",
+              "bounds": [
+                583,
+                726,
+                856,
+                880
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.NumberPicker",
+          "bounds": [
+            583,
+            434,
+            856,
+            880
+          ],
+          "componentLabel": "Number Stepper"
+        },
+        {
+          "resource-id": "android:id/year",
+          "children": [
+            {
+              "iconClass": "add",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "android:id/increment",
+              "clickable": true,
+              "class": "android.widget.ImageButton",
+              "bounds": [
+                864,
+                434,
+                1137,
+                588
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "text": "2017",
+              "resource-id": "android:id/numberpicker_input",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.widget.EditText",
+              "bounds": [
+                864,
+                588,
+                1137,
+                726
+              ],
+              "componentLabel": "Input"
+            },
+            {
+              "iconClass": "minus",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "android:id/decrement",
+              "clickable": true,
+              "class": "android.widget.ImageButton",
+              "bounds": [
+                864,
+                726,
+                1137,
+                880
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.NumberPicker",
+          "bounds": [
+            864,
+            434,
+            1137,
+            880
+          ],
+          "componentLabel": "Number Stepper"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.DatePicker",
+      "bounds": [
+        298,
+        434,
+        1141,
+        880
+      ],
+      "componentLabel": "Date Picker"
+    },
+    {
+      "text": "Duration of your cycle",
+      "resource-id": "com.zmobile.calendarfree:id/textView1",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        70,
+        1078,
+        580,
+        1149
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.zmobile.calendarfree:id/seekBarPeriod",
+      "clickable": false,
+      "class": "android.widget.SeekBar",
+      "bounds": [
+        18,
+        1289,
+        1422,
+        1392
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "text": "Duration of menstruation",
+      "resource-id": "com.zmobile.calendarfree:id/textView3",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        70,
+        1428,
+        655,
+        1499
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.zmobile.calendarfree:id/seekBarBlood",
+      "clickable": false,
+      "class": "android.widget.SeekBar",
+      "bounds": [
+        18,
+        1639,
+        1422,
+        1742
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "text": "Advanced settings",
+      "resource-id": "com.zmobile.calendarfree:id/textViewAdvanced",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        70,
+        1778,
+        1298,
+        1849
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "expand_more",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.zmobile.calendarfree:id/btOpenPanel",
+      "clickable": true,
+      "class": "android.widget.ImageButton",
+      "bounds": [
+        1298,
+        1760,
+        1440,
+        1894
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Add date",
+      "resource-id": "com.zmobile.calendarfree:id/bAdd",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        18,
+        884,
+        703,
+        1046
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Calendar",
+      "resource-id": "com.zmobile.calendarfree:id/bShowCalendar",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        739,
+        884,
+        1422,
+        1046
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "calendar"
+    },
+    {
+      "iconClass": "arrow_backward",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.zmobile.calendarfree:id/btPeriodMin",
+      "clickable": true,
+      "class": "android.widget.ImageButton",
+      "bounds": [
+        425,
+        1149,
+        565,
+        1289
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "30 days",
+      "resource-id": "com.zmobile.calendarfree:id/tvPeriod",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        600,
+        1172,
+        840,
+        1265
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "arrow_forward",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.zmobile.calendarfree:id/btPeriodPlus",
+      "clickable": true,
+      "class": "android.widget.ImageButton",
+      "bounds": [
+        875,
+        1149,
+        1015,
+        1289
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "arrow_backward",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.zmobile.calendarfree:id/btBloodMin",
+      "clickable": true,
+      "class": "android.widget.ImageButton",
+      "bounds": [
+        444,
+        1499,
+        584,
+        1639
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "4 days",
+      "resource-id": "com.zmobile.calendarfree:id/tvBleeding",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        619,
+        1522,
+        820,
+        1615
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "arrow_forward",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.zmobile.calendarfree:id/btBloodPlus",
+      "clickable": true,
+      "class": "android.widget.ImageButton",
+      "bounds": [
+        855,
+        1499,
+        995,
+        1639
+      ],
+      "componentLabel": "Icon"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    36,
+    162,
+    1404,
+    2314
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        92,
+        218,
+        1348,
+        2258
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "resource-id": "android:id/buttonPanel",
+          "children": [
+            {
+              "text": "OK",
+              "resource-id": "android:id/button1",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.widget.Button",
+              "bounds": [
+                1082,
+                2076,
+                1306,
+                2244
+              ],
+              "componentLabel": "Text Button",
+              "textButtonClass": "ok"
+            }
+          ],
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.android.internal.widget.ButtonBarLayout",
+          "bounds": [
+            92,
+            2062,
+            1348,
+            2258
+          ],
+          "componentLabel": "Button Bar"
+        },
+        {
+          "text": "Video Issues?",
+          "resource-id": "android:id/alertTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.android.internal.widget.DialogTitle",
+          "bounds": [
+            176,
+            281,
+            1264,
+            374
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "APP NOT CREATING VIDEO:\nIf your app no longer creates videos properly, open up your File Manager app (My Files, File Manager, etc). Then open up your internal storage folder. Find the folder named 'VideoWhiz' & DELETE it. After this VideoWhiz folder is deleted, restart your phone & try to repost video again.\n\nSOUND SLOW OR TOO FAST:\nInstagram's app currently has a bug messing up video repost sound on certain devices. There is NOTHING we can do abut this. Instagram must fix this issue.\nPlay your videos from your Photo/Video Gallery. If sound works properly, but will not upload to instagram correctly, then this is a result of the Instagram app bug. Instagram will need to fix this. Please contact Instagram & request a fix for this. This is the best way to get this issue resolved.",
+          "resource-id": "com.videowhiz:id/videoissues_message",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            127,
+            409,
+            1313,
+            2027
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Modal"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    36,
+    84,
+    1404,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        92,
+        140,
+        1348,
+        2336
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "resource-id": "android:id/buttonPanel",
+          "children": [
+            {
+              "text": "Close",
+              "resource-id": "android:id/button1",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.widget.Button",
+              "bounds": [
+                1073,
+                2154,
+                1306,
+                2322
+              ],
+              "componentLabel": "Text Button",
+              "textButtonClass": "close"
+            }
+          ],
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.android.internal.widget.ButtonBarLayout",
+          "bounds": [
+            92,
+            2140,
+            1348,
+            2336
+          ],
+          "componentLabel": "Button Bar"
+        },
+        {
+          "text": "Recent changes",
+          "resource-id": "android:id/alertTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.android.internal.widget.DialogTitle",
+          "bounds": [
+            176,
+            203,
+            1264,
+            296
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Version 1.6.2.9\n\n+ Bug fixes. \n\n+ OAUTH2 authentication for Yandex.\n\n+ Tasker: the plugin now returns data from all matching messages, as arrays (not just one).\n\nVersion 1.6.2.5\n\n+ A help screen for \"undo instead of confirmations\".\n\n+ When using \"dark with light messages\" theme - the message editor is now light too.\n\n+ Updated widget sizes (\"message counters\" widgets).\n\n+ New icons and a few other touch-ups (for material theme).\n\n+ \"Muted\" colors for color chips (contacts). Settings -> message list.\n\nVersion 1.6.2\n\n+ Undo for message deletions and similar actions. Settings -> Confirmations and undo.\n\n+ \"Replace contact names\", app settings -> Contacts.\n\n+ Exchange: now possible to \"accept\" invites without sending a response.\n\n+ Calendar invite previews: show other events from the invite's day. \n\n+ Contact images in message list widget, app settings -> widgets, defaults to enabled on Android 5.0+.\n\n+ Message editor: new feature, background (fill) color.\n\n+ OAUTH2 authentication for Hotmail. To switch an already existing account, check mail there once, then long press (the account) -> account setup. \n\n+ Made possible to cache attachments (not save) on the microSd memory card. Android 5.0+, app settings -> look and feel.\n\n+ Conversations: made possible to combine messages by sender and subject even if otherwise unrelated. App settings -> conversations.\n\n+ Per-folder \"do not notify\" setting (for incoming type folders which are set to check mail).\n\n+ Message search \"by sender only\" (in addition to \"by headers and text\" and \"by headers only\").\n\n+ Better search results performance (all messages search, smart folder search).\n\n+ Settings -> message list -> separate settings for \"when and size color\", for unread and read messages.\n\n+ Gmail: made possible for system accounts to perform OAUTH2 authentication via Google's web site, avoiding issues with Google Play Services. \n\n+ Per-message star indicators in message list widget, app settings -> widgets, disabled by default.\n\n+ The message date header in message lists can be made \"sticky\". Settings -> Message list.\n\n+ Expanded conversations can be sorted in reverse. Settings -> Conversations.\n\n+ Android 6+: redesigned the screen for excluding the app from \"battery optimizations\".\n\n+ Priority notifications (5.0+) now don't require vibration. \n\n+ New translation: Swedish (Svenska), thank you Magnus Gunnarsson.\n\n+ Samsung Gear support can be turned off, app settings -> Message notifications.\n\nVersion 1.6.1.5\n\n+ Improved Samsung Gear smart watch compatibility, requires official Gear app.\n\n+ Settings -> account list -> per-folder \"total\" message counts (always / never / auto depending on available width).\n\n+ Bug fixes.\nVersion 1.6.1.0-3\n\n+ New search interface, now possible to search message headers only (not text).\n\n+ Search in IMAP accounts: the app now asks the server for all matches up front (slower), but each batch of messages is fetched faster.\n\n+ Navigation drawer in message lists now has a \"quick account switch\" panel. App settings -> look and feel.\n\n+ Account images in \"account switch panel\". For Gmail, from your Google profile, for others, from Contacts.\n\n+ \"Recent\" addresses (recipients) on the compose screen, i.e. from actual recent messages (app settings -> Contacts).\n\n+ Per-account night / weekend settings: long press the account -> Special settings.\n\n+ Improved automatic setup (AutoDiscover) when adding Exchange accounts.\n\n+ Message compose: Calibri and Georgia (note: Android does not come with those fonts preinstalled, appearance may not match).\n\n+ Settings -> message list -> \"tap header to select\". \n\n+ Settings -> message list -> \"tap anywhere to select\".\n\n+ Message view: indicate SPF and DKIM status (green or red lock symbol), app settings -> message view.\n\n+ New, more reliable, logic for \"mark unread or not\" when checking mail in POP3 accounts.\n\n+ Unread counter \"badge\" for ASUS (4.4+).\n\n+ Added settings -> message list -> background color for selected messages.\n\n+ Added \"reset saved sort order\" in message lists (menus under Sort).\n\n+ The new search view now supports \"Paste\".\n\n+ Total unread count (app icon, widget) now excludes accounts with disabled notifications.\n\n+ Moved \"add reminder\" for calendar invites (IMAP) from app settings to the invite details popup.\n\n+ When IMAP \"special\" server names change (e.g. language change), try to remap to new names. \n\n+ Added address validation on the compose screen before sending (that the entered addresses are well formed).\n\n+ Settings -> message view -> send read receipts without prompting.\n\n+ Notification settings: use account color (if set) for the LED.\n\n+ Exchange: incoming meeting invites (or changes) are synced in more expediently.\n\n+ Exchange: attachment preload now considers already loaded messages (e.g., after switching from mobile to WiFI).\n\n+ Settings -> Mail, other -> Mark read when archiving.\n\n+ Backup / restore: \"default account for sending\", \"start the app in account / folder\".\n\n+ Added settings -> composing and sending -> default text color.\n\n+ Added \"only to new messages\" for greeting (already existed for for signature).\n\n+ Added settings -> message list -> \"Show sent as from self\" (already existed for Smart Folder).\n\n+ Added \"Messages to cache\" item in app settings, under \"Mail, receiving\".\n\nVersion 1.6.0.11\n\n+ Fixed \"no subject\" in some messages, Android 6.\n\n+ Other bug fixes.\n\nVersion 1.6.0.7\n\n+ Fixed message formatting when exchanging messages with Yahoo Mail app.\n\n+ Added a workaround for TWC / RoadRunner SSL certificate.\n\n+ Fixed swiping between messages inside Smart Folder set to \"just unread\".\n\n+ Improved the logic of \"mark read\" when swiping through messages sorted \"unread first\".\n\n+ Fixed sent messages occasionally getting lost in Exchange accounts.\n\n+ Translation updates, added support for \"private\" events in Exchange calendar sync.\n\nVersion 1.6.0.0\n\n+ Conversations (grouping related messages).\n\n+ Added settings -> conversations: \n\n- whether a change in subject means a new conversation.\n\n- \"mosaic\" images for conversations.\n\n- appearance customization.\n\n- tap conversation to open its first message.\n\n- \"Back\" to collapse.\n\n+ Android 6 \"Doze mode\" handling: app settings -> mail, receiving.\n\n+ Data compression for IMAP (Android 4.4+), long press the account -> options and folders -> IMAP options.\n\n+ Message view: \"find\" in message text (Android 5.0+), in the menu.\n\n+ New translation: Nederlands.\n\n+ Message search: the list of results has a \"panel\" at the bottom to \"search all loaded messages\".\n\n+ Message search: added search icon to search results view, to edit query string and search again.\n\n+ Added settings -> message view -> mark as read -> \"when closing\" (to go with sorting \"unread first\").\n\n+ Message position indicator in message view. To turn off, settings -> message view.\n\n+ Action buttons in Smart Folder notifications (if all messages belong to one account).\n\n+ Added Smart Folder time period \"1 month\".\n",
+          "resource-id": "android:id/text1",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            92,
+            296,
+            1348,
+            2140
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Modal"
+    }
+  ]
+}

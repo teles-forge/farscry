@@ -1,0 +1,787 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "ancestors": [
+        "android.support.v7.widget.Toolbar",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.nbc.news.view.NbcToolBar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            154,
+            105,
+            347,
+            259
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            154,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "com.nbcuni.nbcots.nbcphiladelphia.android:id/action_search",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1188,
+            98,
+            1314,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "settings",
+          "resource-id": "com.nbcuni.nbcots.nbcphiladelphia.android:id/action_settings",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1314,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.nbcuni.nbcots.nbcphiladelphia.android:id/frame_layout",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            280,
+            1440,
+            298
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "resource-id": "com.nbcuni.nbcots.nbcphiladelphia.android:id/radar_map_view",
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.FrameLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "com.google.android.gms.maps.MapView",
+              "bounds": [
+                0,
+                280,
+                1440,
+                2392
+              ],
+              "clickable": true,
+              "children": [
+                {
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    18,
+                    2297,
+                    228,
+                    2374
+                  ],
+                  "clickable": false,
+                  "class": "android.widget.ImageView",
+                  "componentLabel": "Image"
+                }
+              ],
+              "componentLabel": "Map View"
+            }
+          ],
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.wsi.android.framework.map.WSIMapView",
+          "bounds": [
+            0,
+            280,
+            1440,
+            2392
+          ],
+          "componentLabel": "Map View"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.v7.widget.RecyclerView",
+          "bounds": [
+            0,
+            280,
+            1440,
+            2392
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.RelativeLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "com.nbc.news.view.WeatherOverviewLayout",
+              "bounds": [
+                0,
+                280,
+                1440,
+                2392
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.nbcots.nbcphiladelphia.android:id/weather_info_background",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "bounds": [
+                    0,
+                    280,
+                    1440,
+                    2392
+                  ],
+                  "componentLabel": "Background Image"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.nbcots.nbcphiladelphia.android:id/map_open_button",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "bounds": [
+                    588,
+                    928,
+                    693,
+                    1031
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "text": "Philadelphia, PA",
+                  "resource-id": "com.nbcuni.nbcots.nbcphiladelphia.android:id/selected_location_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": true,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    49,
+                    343,
+                    563,
+                    428
+                  ],
+                  "componentLabel": "Text Button"
+                },
+                {
+                  "text": "Updated 8:21 PM",
+                  "resource-id": "com.nbcuni.nbcots.nbcphiladelphia.android:id/current_updated_time",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    49,
+                    447,
+                    373,
+                    504
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.nbcots.nbcphiladelphia.android:id/current_weather_forecast_image",
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NetworkImageView",
+                  "bounds": [
+                    49,
+                    560,
+                    224,
+                    735
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "text": "45°",
+                  "resource-id": "com.nbcuni.nbcots.nbcphiladelphia.android:id/current_temp_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": true,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    49,
+                    659,
+                    367,
+                    995
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "Overcast",
+                  "resource-id": "com.nbcuni.nbcots.nbcphiladelphia.android:id/current_forecast_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NbcTextView",
+                  "bounds": [
+                    49,
+                    957,
+                    574,
+                    1051
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "FEELS LIKE \n39°",
+                  "resource-id": "com.nbcuni.nbcots.nbcphiladelphia.android:id/current_feels_like_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    49,
+                    1100,
+                    285,
+                    1219
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "CHANCE OF PRECIP \n40%",
+                  "resource-id": "com.nbcuni.nbcots.nbcphiladelphia.android:id/current_precip_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    49,
+                    1268,
+                    451,
+                    1387
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "WIND E \n14 MPH",
+                  "resource-id": "com.nbcuni.nbcots.nbcphiladelphia.android:id/current_wind_text",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    49,
+                    1436,
+                    239,
+                    1555
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "ancestors": [
+                    "android.view.ViewGroup",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "class": "com.google.android.gms.ads.doubleclick.PublisherAdView",
+                  "bounds": [
+                    0,
+                    1807,
+                    1440,
+                    2392
+                  ],
+                  "clickable": false,
+                  "children": [
+                    {
+                      "ancestors": [
+                        "android.widget.FrameLayout",
+                        "android.view.ViewGroup",
+                        "android.view.View",
+                        "java.lang.Object"
+                      ],
+                      "class": "com.google.android.gms.ads.internal.webview.n",
+                      "bounds": [
+                        0,
+                        0,
+                        56,
+                        35
+                      ],
+                      "clickable": false,
+                      "children": [
+                        {
+                          "ancestors": [
+                            "android.webkit.WebView",
+                            "android.widget.AbsoluteLayout",
+                            "android.view.ViewGroup",
+                            "android.view.View",
+                            "java.lang.Object"
+                          ],
+                          "bounds": [
+                            0,
+                            1807,
+                            1440,
+                            2392
+                          ],
+                          "clickable": true,
+                          "class": "com.google.android.gms.ads.internal.webview.o",
+                          "componentLabel": "Web View"
+                        }
+                      ],
+                      "componentLabel": "Web View"
+                    }
+                  ],
+                  "componentLabel": "Advertisement"
+                }
+              ],
+              "componentLabel": "List Item"
+            }
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.nbc.news.view.NbcLayout",
+      "bounds": [
+        0,
+        280,
+        1440,
+        2392
+      ],
+      "componentLabel": "Drawer"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        280,
+        980,
+        419
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Set Your Start Screen",
+          "resource-id": "com.nbcuni.nbcots.nbcphiladelphia.android:id/menuHeaderText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            455,
+            280,
+            980,
+            417
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        419,
+        980,
+        587
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Top Stories",
+          "resource-id": "com.nbcuni.nbcots.nbcphiladelphia.android:id/menu_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            53,
+            419,
+            927,
+            587
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        587,
+        980,
+        755
+      ],
+      "clickable": true,
+      "componentLabel": "Text Button",
+      "textButtonClass": "news"
+    },
+    {
+      "text": "Top News",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        755,
+        980,
+        889
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Local",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        889,
+        980,
+        1023
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "US & World",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        1023,
+        980,
+        1157
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "First 100 Days",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        1157,
+        980,
+        1291
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Montco News",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        1291,
+        980,
+        1425
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Weird",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        1425,
+        980,
+        1559
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Health",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        1559,
+        980,
+        1693
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Business",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        1693,
+        980,
+        1827
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "business"
+    },
+    {
+      "text": "Tech",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        1827,
+        980,
+        1961
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1961,
+        980,
+        2129
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "First Alert Weather",
+          "resource-id": "com.nbcuni.nbcots.nbcphiladelphia.android:id/menu_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            53,
+            1961,
+            815,
+            2129
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "expand_less",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.nbcuni.nbcots.nbcphiladelphia.android:id/sub_menu_indicator",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            843,
+            2031,
+            899,
+            2059
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "text": "10 Day Forecast",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        2129,
+        980,
+        2263
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Severe Weather Central",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        2263,
+        980,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    }
+  ]
+}

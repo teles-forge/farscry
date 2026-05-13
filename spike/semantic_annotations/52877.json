@@ -1,0 +1,440 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.my.mail:id/toolbar",
+      "children": [
+        {
+          "iconClass": "close",
+          "resource-id": "com.my.mail:id/toolbar_action_cancel",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1258,
+            98,
+            1426,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "com.my.mail:id/toolbar_action_search",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            42,
+            98,
+            210,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "my mail",
+          "resource-id": "com.my.mail:id/search_text",
+          "ancestors": [
+            "android.widget.AutoCompleteTextView",
+            "android.widget.EditText",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatAutoCompleteTextView",
+          "bounds": [
+            210,
+            139,
+            1258,
+            224
+          ],
+          "componentLabel": "Input"
+        }
+      ],
+      "ancestors": [
+        "ru.mail.ui.CustomToolbar",
+        "android.support.v7.widget.Toolbar",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.ui.CustomSearchToolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.my.mail:id/tabs",
+      "children": [
+        {
+          "text": "all",
+          "resource-id": "com.my.mail:id/text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "ru.mail.uikit.view.FontTextView",
+          "bounds": [
+            42,
+            333,
+            177,
+            431
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "all"
+        },
+        {
+          "text": "from",
+          "resource-id": "com.my.mail:id/text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "ru.mail.uikit.view.FontTextView",
+          "bounds": [
+            191,
+            333,
+            380,
+            431
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "to",
+          "resource-id": "com.my.mail:id/text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "ru.mail.uikit.view.FontTextView",
+          "bounds": [
+            394,
+            333,
+            522,
+            431
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "subject",
+          "resource-id": "com.my.mail:id/text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "ru.mail.uikit.view.FontTextView",
+          "bounds": [
+            536,
+            333,
+            779,
+            431
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "ancestors": [
+        "android.widget.HorizontalScrollView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.SlidingTabLayout",
+      "bounds": [
+        0,
+        329,
+        1296,
+        431
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "iconClass": "expand_more",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.my.mail:id/advanced_search",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageButton",
+      "bounds": [
+        1296,
+        331,
+        1415,
+        429
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "email",
+      "ancestors": [
+        "ru.mail.fragments.view.RoundedImageView",
+        "ru.mail.fragments.view.FramedImageView",
+        "ru.mail.fragments.view.CropImageView",
+        "ru.mail.uikit.view.RecyclingImageView",
+        "android.support.v7.widget.AppCompatImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.my.mail:id/checkbox",
+      "clickable": true,
+      "class": "ru.mail.fragments.view.CheckedRoundedImageView",
+      "bounds": [
+        56,
+        532,
+        252,
+        728
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "myMail team <mail-team@corp.my.com>",
+      "resource-id": "com.my.mail:id/sender",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        308,
+        515,
+        977,
+        591
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Inbox",
+      "resource-id": "com.my.mail:id/folder",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1005,
+        523,
+        1145,
+        594
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "11:10 AM",
+      "resource-id": "com.my.mail:id/date",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1173,
+        523,
+        1384,
+        589
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Welcome to myMail",
+      "resource-id": "com.my.mail:id/subject",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        308,
+        585,
+        1384,
+        661
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "myMail: one app to manage all your email accounts Like so many techies, we get really (and I mean, REALLY) tired of having to deal with a bunch of email accounts. We felt there should be an app for that. So we’ve developed myMail, an ",
+      "resource-id": "com.my.mail:id/snippet",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.SingleMeasureTextView",
+      "bounds": [
+        308,
+        665,
+        1384,
+        802
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "twitter",
+      "ancestors": [
+        "ru.mail.fragments.view.RoundedImageView",
+        "ru.mail.fragments.view.FramedImageView",
+        "ru.mail.fragments.view.CropImageView",
+        "ru.mail.uikit.view.RecyclingImageView",
+        "android.support.v7.widget.AppCompatImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.my.mail:id/checkbox",
+      "clickable": true,
+      "class": "ru.mail.fragments.view.CheckedRoundedImageView",
+      "bounds": [
+        56,
+        914,
+        252,
+        1110
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Twitter <verify@twitter.com>",
+      "resource-id": "com.my.mail:id/sender",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        308,
+        897,
+        1005,
+        973
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Inbox",
+      "resource-id": "com.my.mail:id/folder",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1033,
+        905,
+        1173,
+        976
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "6:20 AM",
+      "resource-id": "com.my.mail:id/date",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1201,
+        905,
+        1384,
+        971
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Confirm your Twitter account, Laura Lee",
+      "resource-id": "com.my.mail:id/subject",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        308,
+        967,
+        1384,
+        1043
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Final step... Confirm your email address to complete your Twitter account. It's easy - just click the button below. Confirm now Settings | Help | Not my account Twitter, Inc. 1355 Market Street, Suite 900 San Francisco, CA 94103",
+      "resource-id": "com.my.mail:id/snippet",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.SingleMeasureTextView",
+      "bounds": [
+        308,
+        1047,
+        1384,
+        1184
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

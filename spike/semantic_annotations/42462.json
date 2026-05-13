@@ -1,0 +1,721 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "fi.android.takealot:id/base_actionbar",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            252,
+            126,
+            688,
+            238
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "fi.android.takealot:id/search",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            880,
+            98,
+            1048,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "cart",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1062,
+            98,
+            1230,
+            266
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "2",
+          "resource-id": "fi.android.takealot:id/cart_count",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1195,
+            105,
+            1237,
+            171
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "favorite",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1258,
+            98,
+            1426,
+            266
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "1",
+          "resource-id": "fi.android.takealot:id/wishlist_count",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1391,
+            105,
+            1433,
+            171
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.design.widget.CollapsingToolbarLayout",
+      "bounds": [
+        0,
+        280,
+        1440,
+        452
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "5 Products",
+          "resource-id": "fi.android.takealot:id/search_results_count",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            0,
+            298,
+            273,
+            434
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "resource-id": "fi.android.takealot:id/search_results_sort",
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "fi.android.takealot.custom.widget.TouchableFrameLayout",
+          "bounds": [
+            722,
+            280,
+            1079,
+            452
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "sort"
+        },
+        {
+          "resource-id": "fi.android.takealot:id/search_results_filter",
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "fi.android.takealot.custom.widget.TouchableFrameLayout",
+          "bounds": [
+            1083,
+            280,
+            1440,
+            452
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "filter"
+        },
+        {
+          "iconClass": "minus",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "fi.android.takealot:id/search_results_layout_switcher_image",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            571,
+            310,
+            683,
+            422
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "fi.android.takealot.custom.widget.TouchableLinearLayout",
+      "bounds": [
+        0,
+        452,
+        720,
+        1614
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "fi.android.takealot:id/search_results_item_imageview",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            2,
+            504,
+            718,
+            907
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "TAKEALOT Gift Voucher - R50",
+          "resource-id": "fi.android.takealot:id/search_results_item_product_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            30,
+            1080,
+            687,
+            1146
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Available Now",
+          "resource-id": "fi.android.takealot:id/search_result_item_product_in_stock",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            30,
+            1236,
+            294,
+            1293
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "R 50",
+          "resource-id": "fi.android.takealot:id/search_results_item_product_price",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            30,
+            1153,
+            144,
+            1229
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "add",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "fi.android.takealot:id/search_results_item_add_cart_action_imageview",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            94,
+            1509,
+            150,
+            1565
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "cart",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "fi.android.takealot:id/search_results_item_add_cart_imageview",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            147,
+            1495,
+            267,
+            1579
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "add",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "fi.android.takealot:id/search_results_item_add_wish_action_imageview",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            448,
+            1509,
+            504,
+            1565
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "favorite",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "fi.android.takealot:id/search_results_item_add_wish_imageview",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            504,
+            1495,
+            629,
+            1579
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "fi.android.takealot.custom.widget.TouchableLinearLayout",
+      "bounds": [
+        720,
+        452,
+        1440,
+        1614
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "fi.android.takealot:id/search_results_item_imageview",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            722,
+            504,
+            1438,
+            907
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "TAKEALOT Gift Voucher - R1,000",
+          "resource-id": "fi.android.takealot:id/search_results_item_product_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            750,
+            1052,
+            1410,
+            1175
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Available Now",
+          "resource-id": "fi.android.takealot:id/search_result_item_product_in_stock",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            750,
+            1265,
+            1014,
+            1322
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "R 1,000",
+          "resource-id": "fi.android.takealot:id/search_results_item_product_price",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            750,
+            1182,
+            942,
+            1258
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "add",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "fi.android.takealot:id/search_results_item_add_cart_action_imageview",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            814,
+            1509,
+            870,
+            1565
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "cart",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "fi.android.takealot:id/search_results_item_add_cart_imageview",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            867,
+            1495,
+            987,
+            1579
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "add",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "fi.android.takealot:id/search_results_item_add_wish_action_imageview",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1168,
+            1509,
+            1224,
+            1565
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "favorite",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "fi.android.takealot:id/search_results_item_add_wish_imageview",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1224,
+            1495,
+            1349,
+            1579
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "fi.android.takealot.custom.widget.TouchableLinearLayout",
+      "bounds": [
+        0,
+        1614,
+        720,
+        2392
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "fi.android.takealot:id/search_results_item_imageview",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            2,
+            1666,
+            718,
+            2069
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "TAKEALOT Gift Voucher - R500",
+          "resource-id": "fi.android.takealot:id/search_results_item_product_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            30,
+            2214,
+            690,
+            2337
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "R 500",
+          "resource-id": "fi.android.takealot:id/search_results_item_product_price",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            30,
+            2344,
+            176,
+            2392
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "fi.android.takealot.custom.widget.TouchableLinearLayout",
+      "bounds": [
+        720,
+        1614,
+        1440,
+        2392
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "fi.android.takealot:id/search_results_item_imageview",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            722,
+            1666,
+            1438,
+            2069
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "TAKEALOT Gift Voucher - R250",
+          "resource-id": "fi.android.takealot:id/search_results_item_product_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            750,
+            2182,
+            1410,
+            2305
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "R 250",
+          "resource-id": "fi.android.takealot:id/search_results_item_product_price",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            750,
+            2312,
+            896,
+            2388
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

@@ -1,0 +1,839 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.khbs.android.weather:id/application_root_view_background_holder_1",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        0,
+        84,
+        1440,
+        2392
+      ],
+      "componentLabel": "Background Image"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.google.android.gms.ads.doubleclick.PublisherAdView",
+      "bounds": [
+        160,
+        84,
+        1280,
+        259
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.google.android.gms.ads.internal.webview.n",
+          "bounds": [
+            160,
+            84,
+            1280,
+            259
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.webkit.WebView",
+                "android.widget.AbsoluteLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                160,
+                84,
+                1280,
+                259
+              ],
+              "clickable": true,
+              "class": "com.google.android.gms.ads.internal.webview.o",
+              "componentLabel": "Web View"
+            }
+          ],
+          "componentLabel": "Web View"
+        }
+      ],
+      "componentLabel": "Advertisement"
+    },
+    {
+      "text": "Today, April 26, 2017",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        0,
+        753,
+        1440,
+        963
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        964,
+        1440,
+        1252
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "7AM",
+          "resource-id": "com.khbs.android.weather:id/hourly_list_row_hour",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            35,
+            964,
+            205,
+            1174
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "weather",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.khbs.android.weather:id/hourly_list_row_weather_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            205,
+            999,
+            310,
+            1139
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "T-Storms",
+          "resource-id": "com.khbs.android.weather:id/hourly_list_row_conditions",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            345,
+            1031,
+            755,
+            1106
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "58°",
+          "resource-id": "com.khbs.android.weather:id/hourly_list_row_temp",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.wsi.android.weather.ui.widget.customfont.CustomFontTextView",
+          "bounds": [
+            790,
+            999,
+            995,
+            1139
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "SE2",
+          "resource-id": "com.khbs.android.weather:id/hourly_list_row_wind",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.wsi.android.weather.ui.widget.customfont.CustomFontTextView",
+          "bounds": [
+            995,
+            999,
+            1405,
+            1139
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "100% Chance of Precipitation",
+          "resource-id": "com.khbs.android.weather:id/hourly_event_desc",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            399,
+            1181,
+            1373,
+            1252
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1253,
+        1440,
+        1541
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "8AM",
+          "resource-id": "com.khbs.android.weather:id/hourly_list_row_hour",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            35,
+            1253,
+            205,
+            1463
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "weather",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.khbs.android.weather:id/hourly_list_row_weather_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            205,
+            1288,
+            310,
+            1428
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "T-Storms",
+          "resource-id": "com.khbs.android.weather:id/hourly_list_row_conditions",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            345,
+            1320,
+            755,
+            1395
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "59°",
+          "resource-id": "com.khbs.android.weather:id/hourly_list_row_temp",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.wsi.android.weather.ui.widget.customfont.CustomFontTextView",
+          "bounds": [
+            1266,
+            0,
+            1280,
+            175
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "SSW5",
+          "resource-id": "com.khbs.android.weather:id/hourly_list_row_wind",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.wsi.android.weather.ui.widget.customfont.CustomFontTextView",
+          "bounds": [
+            995,
+            1288,
+            1120,
+            175
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "90% Chance of Precipitation",
+          "resource-id": "com.khbs.android.weather:id/hourly_event_desc",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            399,
+            1470,
+            1373,
+            1541
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1542,
+        1440,
+        1830
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "9AM",
+          "resource-id": "com.khbs.android.weather:id/hourly_list_row_hour",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            35,
+            1542,
+            205,
+            1752
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.khbs.android.weather:id/hourly_list_row_weather_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            205,
+            1577,
+            310,
+            1717
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Heavy Rain",
+          "resource-id": "com.khbs.android.weather:id/hourly_list_row_conditions",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            345,
+            1609,
+            755,
+            1684
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "58°",
+          "resource-id": "com.khbs.android.weather:id/hourly_list_row_temp",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.wsi.android.weather.ui.widget.customfont.CustomFontTextView",
+          "bounds": [
+            790,
+            1577,
+            995,
+            1717
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "NNW9",
+          "resource-id": "com.khbs.android.weather:id/hourly_list_row_wind",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.wsi.android.weather.ui.widget.customfont.CustomFontTextView",
+          "bounds": [
+            995,
+            1577,
+            1405,
+            1717
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "80% Chance of Precipitation",
+          "resource-id": "com.khbs.android.weather:id/hourly_event_desc",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            399,
+            1759,
+            1373,
+            1830
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1831,
+        1440,
+        2119
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "10AM",
+          "resource-id": "com.khbs.android.weather:id/hourly_list_row_hour",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            35,
+            1831,
+            214,
+            2041
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.khbs.android.weather:id/hourly_list_row_weather_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            214,
+            0,
+            0,
+            0
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "T-Storms",
+          "resource-id": "com.khbs.android.weather:id/hourly_list_row_conditions",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            354,
+            1898,
+            760,
+            1973
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "58°",
+          "resource-id": "com.khbs.android.weather:id/hourly_list_row_temp",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.wsi.android.weather.ui.widget.customfont.CustomFontTextView",
+          "bounds": [
+            795,
+            1866,
+            998,
+            2006
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "N9",
+          "resource-id": "com.khbs.android.weather:id/hourly_list_row_wind",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.wsi.android.weather.ui.widget.customfont.CustomFontTextView",
+          "bounds": [
+            998,
+            1866,
+            1405,
+            2006
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "100% Chance of Precipitation",
+          "resource-id": "com.khbs.android.weather:id/hourly_event_desc",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            407,
+            2048,
+            1373,
+            2119
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        2120,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "11AM",
+          "resource-id": "com.khbs.android.weather:id/hourly_list_row_hour",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            35,
+            2120,
+            214,
+            2330
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "weather",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.khbs.android.weather:id/hourly_list_row_weather_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            214,
+            2155,
+            319,
+            2295
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "T-Storms",
+          "resource-id": "com.khbs.android.weather:id/hourly_list_row_conditions",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            354,
+            2187,
+            760,
+            2262
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "55°",
+          "resource-id": "com.khbs.android.weather:id/hourly_list_row_temp",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.wsi.android.weather.ui.widget.customfont.CustomFontTextView",
+          "bounds": [
+            795,
+            2155,
+            998,
+            2295
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "N12",
+          "resource-id": "com.khbs.android.weather:id/hourly_list_row_wind",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.wsi.android.weather.ui.widget.customfont.CustomFontTextView",
+          "bounds": [
+            998,
+            2155,
+            1405,
+            2295
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "90% Chance of Precipitation",
+          "resource-id": "com.khbs.android.weather:id/hourly_event_desc",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            407,
+            2337,
+            1373,
+            2392
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.khbs.android.weather:id/station_logo",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        0,
+        261,
+        350,
+        380
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "resource-id": "com.khbs.android.weather:id/menu_button",
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.wsi.android.framework.app.ui.widget.MenuButton",
+      "bounds": [
+        1299,
+        259,
+        1440,
+        382
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "menu"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.khbs.android.weather:id/weather_details_item_with_headlines_page_indicator",
+      "clickable": true,
+      "class": "com.wsi.android.framework.app.ui.widget.CirclePageIndicator",
+      "bounds": [
+        0,
+        663,
+        1440,
+        735
+      ],
+      "componentLabel": "Pager Indicator"
+    },
+    {
+      "text": "test",
+      "resource-id": "com.khbs.android.weather:id/current_location_btn",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        707,
+        259,
+        941,
+        382
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "iconClass": "location",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.khbs.android.weather:id/headline_item_icon",
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        35,
+        420,
+        128,
+        508
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "40/29 News",
+      "resource-id": "com.khbs.android.weather:id/headline_item_title",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        163,
+        410,
+        1405,
+        492
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

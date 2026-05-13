@@ -1,0 +1,76 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "ancestors": [
+        "com.autonavi.ae.gmap.GlMapSurface",
+        "android.opengl.GLSurfaceView",
+        "android.view.SurfaceView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.autonavi.minimap:id/atmapsView",
+      "clickable": false,
+      "class": "com.autonavi.ae.gmap.GLMapView",
+      "bounds": [
+        0,
+        84,
+        1440,
+        2392
+      ],
+      "componentLabel": "Map View"
+    },
+    {
+      "resource-id": "com.autonavi.minimap:id/webView",
+      "children": [
+        {
+          "ancestors": [
+            "android.webkit.WebView",
+            "android.widget.AbsoluteLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            1440,
+            2392
+          ],
+          "clickable": true,
+          "class": "com.autonavi.minimap.widget.WebViewEx",
+          "componentLabel": "Web View"
+        }
+      ],
+      "ancestors": [
+        "com.autonavi.minimap.widget.AbstractBaseWebView",
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.autonavi.minimap.widget.ExtendedWebView",
+      "bounds": [
+        0,
+        84,
+        1440,
+        2392
+      ],
+      "componentLabel": "Web View"
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "android:id/action_bar_container",
+      "children": [
+        {
+          "iconClass": "filter",
+          "resource-id": "com.ejr.mctstracker:id/filter",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.android.internal.view.menu.ActionMenuItemView",
+          "bounds": [
+            1244,
+            84,
+            1440,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "android:id/up",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            0,
+            126,
+            84,
+            210
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "android:id/home",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            71,
+            112,
+            183,
+            224
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Nearby stops",
+          "resource-id": "android:id/action_bar_title",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            197,
+            125,
+            566,
+            210
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.android.internal.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        252
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.ejr.mctstracker:id/nearbyAdView",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.google.android.gms.ads.internal.webview.n",
+          "bounds": [
+            160,
+            252,
+            1280,
+            427
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.webkit.WebView",
+                "android.widget.AbsoluteLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                160,
+                252,
+                1280,
+                427
+              ],
+              "clickable": true,
+              "class": "com.google.android.gms.ads.internal.webview.o",
+              "componentLabel": "Web View"
+            }
+          ],
+          "componentLabel": "Web View"
+        }
+      ],
+      "ancestors": [
+        "com.google.android.gms.ads.BaseAdView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.google.android.gms.ads.AdView",
+      "bounds": [
+        0,
+        252,
+        1440,
+        427
+      ],
+      "componentLabel": "Advertisement"
+    },
+    {
+      "resource-id": "com.ejr.mctstracker:id/map",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            18,
+            2297,
+            228,
+            2374
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "location_crosshair",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1258,
+            462,
+            1405,
+            609
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.google.android.gms.maps.MapView",
+      "bounds": [
+        0,
+        427,
+        1440,
+        2392
+      ],
+      "componentLabel": "Map View"
+    }
+  ]
+}

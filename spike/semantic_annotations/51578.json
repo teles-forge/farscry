@@ -1,0 +1,114 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.paktor:id/cropImageView",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.paktor:id/ImageView_image",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            0,
+            278,
+            1440,
+            2392
+          ],
+          "componentLabel": "Background Image"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.edmodo.cropper.CropImageView",
+      "bounds": [
+        0,
+        278,
+        1440,
+        2392
+      ],
+      "componentLabel": "Background Image"
+    },
+    {
+      "text": "Back",
+      "ancestors": [
+        "com.paktor.views.text.AnyTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.paktor.views.MyTextView",
+      "bounds": [
+        0,
+        84,
+        350,
+        278
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "back"
+    },
+    {
+      "text": "Rotate",
+      "resource-id": "com.paktor:id/rotate",
+      "ancestors": [
+        "com.paktor.views.text.AnyTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.paktor.views.MyTextView",
+      "bounds": [
+        350,
+        84,
+        1090,
+        278
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "rotate"
+    },
+    {
+      "text": "Done",
+      "resource-id": "com.paktor:id/save",
+      "ancestors": [
+        "com.paktor.views.text.AnyTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.paktor.views.MyTextView",
+      "bounds": [
+        1090,
+        84,
+        1440,
+        278
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "finish"
+    }
+  ]
+}

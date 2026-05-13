@@ -1,0 +1,1344 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "iconClass": "check",
+      "ancestors": [
+        "android.support.design.widget.VisibilityAwareImageButton",
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.trixiesoft.clapp:id/done_button",
+      "clickable": true,
+      "class": "android.support.design.widget.FloatingActionButton",
+      "bounds": [
+        1244,
+        1891,
+        1384,
+        2031
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "resource-id": "com.trixiesoft.clapp:id/toolbar",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.design.widget.TabLayout$SlidingTabStrip",
+          "bounds": [
+            70,
+            98,
+            1440,
+            266
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.LinearLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.support.design.widget.TabLayout$TabView",
+              "bounds": [
+                531,
+                98,
+                992,
+                266
+              ],
+              "clickable": true,
+              "componentLabel": "Text Button",
+              "textButtonClass": "list"
+            },
+            {
+              "ancestors": [
+                "android.widget.LinearLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.support.design.widget.TabLayout$TabView",
+              "bounds": [
+                992,
+                98,
+                1440,
+                266
+              ],
+              "clickable": true,
+              "componentLabel": "Text Button",
+              "textButtonClass": "map"
+            },
+            {
+              "text": "Nearest",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                193,
+                149,
+                408,
+                215
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "Multi-Tab"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "Search Locations",
+      "resource-id": "com.trixiesoft.clapp:id/select_locations_label",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        56,
+        2017,
+        540,
+        2102
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "City of San Francisco",
+      "resource-id": "com.trixiesoft.clapp:id/selected_locations",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        56,
+        2102,
+        1384,
+        2224
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        280,
+        1440,
+        448
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "iconClass": "close",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.trixiesoft.clapp:id/icon",
+          "clickable": false,
+          "class": "com.trixiesoft.clapp.ui.widgets.TintImageView",
+          "bounds": [
+            84,
+            322,
+            168,
+            406
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "",
+          "resource-id": "com.trixiesoft.clapp:id/selected",
+          "ancestors": [
+            "android.widget.CheckBox",
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatCheckBox",
+          "bounds": [
+            1272,
+            308,
+            1384,
+            420
+          ],
+          "componentLabel": "Input"
+        },
+        {
+          "text": "City of San Francisco",
+          "resource-id": "com.trixiesoft.clapp:id/node_value",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            196,
+            302,
+            1237,
+            368
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "San Francisco Bay Area",
+          "resource-id": "com.trixiesoft.clapp:id/node_value_2",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            196,
+            368,
+            1156,
+            425
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "3 mi",
+          "resource-id": "com.trixiesoft.clapp:id/distance",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1156,
+            368,
+            1237,
+            425
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        448,
+        1440,
+        616
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "iconClass": "date_range",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.trixiesoft.clapp:id/icon",
+          "clickable": false,
+          "class": "com.trixiesoft.clapp.ui.widgets.TintImageView",
+          "bounds": [
+            84,
+            490,
+            168,
+            574
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "",
+          "resource-id": "com.trixiesoft.clapp:id/selected",
+          "ancestors": [
+            "android.widget.CheckBox",
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatCheckBox",
+          "bounds": [
+            1272,
+            476,
+            1384,
+            588
+          ],
+          "componentLabel": "Input"
+        },
+        {
+          "text": "San Francisco Bay Area",
+          "resource-id": "com.trixiesoft.clapp:id/node_value",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            196,
+            470,
+            1237,
+            536
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "California",
+          "resource-id": "com.trixiesoft.clapp:id/node_value_2",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            196,
+            536,
+            1156,
+            593
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "3 mi",
+          "resource-id": "com.trixiesoft.clapp:id/distance",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1156,
+            536,
+            1237,
+            593
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        616,
+        1440,
+        784
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.trixiesoft.clapp:id/icon",
+          "clickable": false,
+          "class": "com.trixiesoft.clapp.ui.widgets.TintImageView",
+          "bounds": [
+            84,
+            658,
+            168,
+            742
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "",
+          "resource-id": "com.trixiesoft.clapp:id/selected",
+          "ancestors": [
+            "android.widget.CheckBox",
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatCheckBox",
+          "bounds": [
+            1272,
+            644,
+            1384,
+            756
+          ],
+          "componentLabel": "Input"
+        },
+        {
+          "text": "Peninsula",
+          "resource-id": "com.trixiesoft.clapp:id/node_value",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            196,
+            638,
+            1237,
+            704
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "San Francisco Bay Area",
+          "resource-id": "com.trixiesoft.clapp:id/node_value_2",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            196,
+            704,
+            1132,
+            761
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "14 mi",
+          "resource-id": "com.trixiesoft.clapp:id/distance",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1132,
+            704,
+            1237,
+            761
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        784,
+        1440,
+        952
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.trixiesoft.clapp:id/icon",
+          "clickable": false,
+          "class": "com.trixiesoft.clapp.ui.widgets.TintImageView",
+          "bounds": [
+            84,
+            826,
+            168,
+            910
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "",
+          "resource-id": "com.trixiesoft.clapp:id/selected",
+          "ancestors": [
+            "android.widget.CheckBox",
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatCheckBox",
+          "bounds": [
+            1272,
+            812,
+            1384,
+            924
+          ],
+          "componentLabel": "Input"
+        },
+        {
+          "text": "East Bay Area",
+          "resource-id": "com.trixiesoft.clapp:id/node_value",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            196,
+            806,
+            1237,
+            872
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "San Francisco Bay Area",
+          "resource-id": "com.trixiesoft.clapp:id/node_value_2",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            196,
+            872,
+            1132,
+            929
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "28 mi",
+          "resource-id": "com.trixiesoft.clapp:id/distance",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1132,
+            872,
+            1237,
+            929
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        952,
+        1440,
+        1120
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "iconClass": "close",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.trixiesoft.clapp:id/icon",
+          "clickable": false,
+          "class": "com.trixiesoft.clapp.ui.widgets.TintImageView",
+          "bounds": [
+            84,
+            994,
+            168,
+            1078
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "",
+          "resource-id": "com.trixiesoft.clapp:id/selected",
+          "ancestors": [
+            "android.widget.CheckBox",
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatCheckBox",
+          "bounds": [
+            1272,
+            980,
+            1384,
+            1092
+          ],
+          "componentLabel": "Input"
+        },
+        {
+          "text": "South Bay Area",
+          "resource-id": "com.trixiesoft.clapp:id/node_value",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            196,
+            974,
+            1237,
+            1040
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "San Francisco Bay Area",
+          "resource-id": "com.trixiesoft.clapp:id/node_value_2",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            196,
+            1040,
+            1132,
+            1097
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "41 mi",
+          "resource-id": "com.trixiesoft.clapp:id/distance",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1132,
+            1040,
+            1237,
+            1097
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1120,
+        1440,
+        1288
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.trixiesoft.clapp:id/icon",
+          "clickable": false,
+          "class": "com.trixiesoft.clapp.ui.widgets.TintImageView",
+          "bounds": [
+            84,
+            1162,
+            168,
+            1246
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "",
+          "resource-id": "com.trixiesoft.clapp:id/selected",
+          "ancestors": [
+            "android.widget.CheckBox",
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatCheckBox",
+          "bounds": [
+            1272,
+            1148,
+            1384,
+            1260
+          ],
+          "componentLabel": "Input"
+        },
+        {
+          "text": "North Bay Area",
+          "resource-id": "com.trixiesoft.clapp:id/node_value",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            196,
+            1142,
+            1237,
+            1208
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "San Francisco Bay Area",
+          "resource-id": "com.trixiesoft.clapp:id/node_value_2",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            196,
+            1208,
+            1132,
+            1265
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "51 mi",
+          "resource-id": "com.trixiesoft.clapp:id/distance",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1132,
+            1208,
+            1237,
+            1265
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1288,
+        1440,
+        1456
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.trixiesoft.clapp:id/icon",
+          "clickable": false,
+          "class": "com.trixiesoft.clapp.ui.widgets.TintImageView",
+          "bounds": [
+            84,
+            1330,
+            168,
+            1414
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "",
+          "resource-id": "com.trixiesoft.clapp:id/selected",
+          "ancestors": [
+            "android.widget.CheckBox",
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatCheckBox",
+          "bounds": [
+            1272,
+            1316,
+            1384,
+            1428
+          ],
+          "componentLabel": "Input"
+        },
+        {
+          "text": "Santa Cruz County",
+          "resource-id": "com.trixiesoft.clapp:id/node_value",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            196,
+            1310,
+            1237,
+            1376
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "San Francisco Bay Area",
+          "resource-id": "com.trixiesoft.clapp:id/node_value_2",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            196,
+            1376,
+            1132,
+            1433
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "58 mi",
+          "resource-id": "com.trixiesoft.clapp:id/distance",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1132,
+            1376,
+            1237,
+            1433
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1456,
+        1440,
+        1624
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.trixiesoft.clapp:id/icon",
+          "clickable": false,
+          "class": "com.trixiesoft.clapp.ui.widgets.TintImageView",
+          "bounds": [
+            84,
+            1498,
+            168,
+            1582
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "",
+          "resource-id": "com.trixiesoft.clapp:id/selected",
+          "ancestors": [
+            "android.widget.CheckBox",
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatCheckBox",
+          "bounds": [
+            1272,
+            1484,
+            1384,
+            1596
+          ],
+          "componentLabel": "Input"
+        },
+        {
+          "text": "Stockton",
+          "resource-id": "com.trixiesoft.clapp:id/node_value",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            196,
+            1478,
+            1237,
+            1544
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "California",
+          "resource-id": "com.trixiesoft.clapp:id/node_value_2",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            196,
+            1544,
+            1132,
+            1601
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "65 mi",
+          "resource-id": "com.trixiesoft.clapp:id/distance",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1132,
+            1544,
+            1237,
+            1601
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1624,
+        1440,
+        1792
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "iconClass": "date_range",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.trixiesoft.clapp:id/icon",
+          "clickable": false,
+          "class": "com.trixiesoft.clapp.ui.widgets.TintImageView",
+          "bounds": [
+            84,
+            1666,
+            168,
+            1750
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "",
+          "resource-id": "com.trixiesoft.clapp:id/selected",
+          "ancestors": [
+            "android.widget.CheckBox",
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatCheckBox",
+          "bounds": [
+            1272,
+            1652,
+            1384,
+            1764
+          ],
+          "componentLabel": "Input"
+        },
+        {
+          "text": "Monterey Bay",
+          "resource-id": "com.trixiesoft.clapp:id/node_value",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            196,
+            1646,
+            1237,
+            1712
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "California",
+          "resource-id": "com.trixiesoft.clapp:id/node_value_2",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            196,
+            1712,
+            1132,
+            1769
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "66 mi",
+          "resource-id": "com.trixiesoft.clapp:id/distance",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1132,
+            1712,
+            1237,
+            1769
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1792,
+        1440,
+        1960
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.trixiesoft.clapp:id/icon",
+          "clickable": false,
+          "class": "com.trixiesoft.clapp.ui.widgets.TintImageView",
+          "bounds": [
+            84,
+            1834,
+            168,
+            1918
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "",
+          "resource-id": "com.trixiesoft.clapp:id/selected",
+          "ancestors": [
+            "android.widget.CheckBox",
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatCheckBox",
+          "bounds": [
+            1272,
+            1820,
+            1384,
+            1932
+          ],
+          "componentLabel": "Input"
+        },
+        {
+          "text": "Sacramento",
+          "resource-id": "com.trixiesoft.clapp:id/node_value",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            196,
+            1814,
+            1237,
+            1880
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "California",
+          "resource-id": "com.trixiesoft.clapp:id/node_value_2",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            196,
+            1880,
+            1132,
+            1937
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "78 mi",
+          "resource-id": "com.trixiesoft.clapp:id/distance",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1132,
+            1880,
+            1237,
+            1937
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1960,
+        1440,
+        1972
+      ],
+      "clickable": true,
+      "children": [],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.support.v7.widget.LinearLayoutCompat",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.trixiesoft.clapp.ui.widgets.RightCheckBox",
+      "bounds": [
+        56,
+        2224,
+        1384,
+        2336
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "City of San Francisco",
+          "resource-id": "com.trixiesoft.clapp:id/text_view",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            2247,
+            1272,
+            2313
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "",
+          "resource-id": "com.trixiesoft.clapp:id/check_box",
+          "ancestors": [
+            "android.widget.CheckBox",
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatCheckBox",
+          "bounds": [
+            1272,
+            2224,
+            1384,
+            2336
+          ],
+          "componentLabel": "Input"
+        }
+      ],
+      "componentLabel": "Checkbox"
+    }
+  ]
+}

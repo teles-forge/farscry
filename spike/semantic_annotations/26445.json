@@ -1,0 +1,518 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "ancestors": [
+        "android.support.v7.widget.Toolbar",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.nbc.news.view.NbcToolBar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            154,
+            105,
+            350,
+            259
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            154,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "HEALTH",
+          "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.nbc.news.view.NbcTextView",
+          "bounds": [
+            620,
+            139,
+            820,
+            224
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/weather_image",
+          "clickable": false,
+          "class": "com.android.volley.toolbox.NetworkImageView",
+          "bounds": [
+            1188,
+            127,
+            1297,
+            236
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "55°",
+          "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/weather_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1311,
+            135,
+            1440,
+            228
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/frame_layout",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            280,
+            1440,
+            298
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.v7.widget.RecyclerView",
+          "bounds": [
+            0,
+            280,
+            1440,
+            2392
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/article_image_layout",
+              "children": [
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/article_image",
+                  "clickable": true,
+                  "class": "com.nbc.news.view.NetworkImageView",
+                  "bounds": [
+                    0,
+                    280,
+                    1440,
+                    1090
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/article_type_image",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "bounds": [
+                    49,
+                    727,
+                    217,
+                    874
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "text": "Eat Healthy on the Go at Fast-Food Restaurant Life & Honey",
+                  "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/headline",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NbcTextView",
+                  "bounds": [
+                    49,
+                    874,
+                    1391,
+                    1090
+                  ],
+                  "componentLabel": "Text"
+                }
+              ],
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.widget.RelativeLayout",
+              "bounds": [
+                0,
+                280,
+                1440,
+                1115
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/article_image_layout",
+              "children": [
+                {
+                  "text": "Cancer-Causing HPV Virus Affects 1 in 4 US Men: Study",
+                  "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/headline",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    504,
+                    1164,
+                    1342,
+                    1336
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/article_image",
+                  "clickable": true,
+                  "class": "com.nbc.news.view.NetworkImageView",
+                  "bounds": [
+                    49,
+                    1164,
+                    504,
+                    1419
+                  ],
+                  "componentLabel": "Image"
+                }
+              ],
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.widget.RelativeLayout",
+              "bounds": [
+                0,
+                1115,
+                1440,
+                1472
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/article_image_layout",
+              "children": [
+                {
+                  "text": "People With Chronic Pain Scared by Ohio's New Opioid Rules",
+                  "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/headline",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    504,
+                    1521,
+                    1342,
+                    1693
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/article_image",
+                  "clickable": true,
+                  "class": "com.nbc.news.view.NetworkImageView",
+                  "bounds": [
+                    49,
+                    1521,
+                    504,
+                    1776
+                  ],
+                  "componentLabel": "Image"
+                }
+              ],
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.widget.RelativeLayout",
+              "bounds": [
+                0,
+                1472,
+                1440,
+                1829
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/article_image_layout",
+              "children": [
+                {
+                  "text": "FDA Approves More Drugs, and Faster, Than Europe: Study ",
+                  "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/headline",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    504,
+                    1878,
+                    1342,
+                    2050
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/article_image",
+                  "clickable": true,
+                  "class": "com.nbc.news.view.NetworkImageView",
+                  "bounds": [
+                    49,
+                    1878,
+                    504,
+                    2133
+                  ],
+                  "componentLabel": "Image"
+                }
+              ],
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.widget.RelativeLayout",
+              "bounds": [
+                0,
+                1829,
+                1440,
+                2186
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/article_image_layout",
+              "children": [
+                {
+                  "text": "Trump's FDA Pick Says Tackling Opioid Crisis a Top Priority",
+                  "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/headline",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    504,
+                    2235,
+                    1342,
+                    2392
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/article_image",
+                  "clickable": true,
+                  "class": "com.nbc.news.view.NetworkImageView",
+                  "bounds": [
+                    49,
+                    2235,
+                    504,
+                    2392
+                  ],
+                  "componentLabel": "Image"
+                }
+              ],
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.widget.RelativeLayout",
+              "bounds": [
+                0,
+                2186,
+                1440,
+                2392
+              ],
+              "componentLabel": "List Item"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.google.android.gms.ads.doubleclick.PublisherAdView",
+          "bounds": [
+            160,
+            2217,
+            1280,
+            2392
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.FrameLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "com.google.android.gms.ads.internal.webview.n",
+              "bounds": [
+                160,
+                2217,
+                1280,
+                2392
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "android.webkit.WebView",
+                    "android.widget.AbsoluteLayout",
+                    "android.view.ViewGroup",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    160,
+                    2217,
+                    1280,
+                    2392
+                  ],
+                  "clickable": true,
+                  "class": "com.google.android.gms.ads.internal.webview.o",
+                  "componentLabel": "Web View"
+                }
+              ],
+              "componentLabel": "Web View"
+            }
+          ],
+          "componentLabel": "Advertisement"
+        }
+      ],
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.nbc.news.view.NbcLayout",
+      "bounds": [
+        0,
+        280,
+        1440,
+        2392
+      ],
+      "componentLabel": "Drawer"
+    }
+  ]
+}

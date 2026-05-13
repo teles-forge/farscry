@@ -1,0 +1,539 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "android:id/action_bar_container",
+      "children": [
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1244,
+            84,
+            1440,
+            252
+          ],
+          "clickable": true,
+          "class": "android.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "android:id/home",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            43,
+            112,
+            155,
+            224
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Mobile Metronome",
+          "resource-id": "android:id/action_bar_title",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            169,
+            125,
+            698,
+            210
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.android.internal.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        252
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "gabriel.metronome:id/sbTempo",
+      "clickable": false,
+      "class": "android.widget.SeekBar",
+      "bounds": [
+        121,
+        709,
+        1319,
+        818
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "text": "To support this app, please take some time to visit our sponsors regularly...",
+      "resource-id": "gabriel.metronome:id/tvSponsor",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        212,
+        1907,
+        1227,
+        2006
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "gabriel.metronome:id/ivBannerOffline",
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        195,
+        2034,
+        1245,
+        2209
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "resource-id": "gabriel.metronome:id/banner_adview",
+      "children": [],
+      "ancestors": [
+        "com.mobclix.android.sdk.MobclixAdView",
+        "android.widget.ViewFlipper",
+        "android.widget.ViewAnimator",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.mobclix.android.sdk.MobclixMMABannerXLAdView",
+      "bounds": [
+        160,
+        2034,
+        1280,
+        2209
+      ],
+      "componentLabel": "Advertisement"
+    },
+    {
+      "text": "Time Signature",
+      "resource-id": "gabriel.metronome:id/tvTimeSignature",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        121,
+        880,
+        428,
+        942
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "gabriel.metronome:id/spBeats",
+      "ancestors": [
+        "android.widget.AbsSpinner",
+        "android.widget.AdapterView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Spinner",
+      "bounds": [
+        516,
+        829,
+        814,
+        980
+      ],
+      "componentLabel": "Text Button",
+      "text": " 5    notes per measure"
+    },
+    {
+      "text": "/",
+      "resource-id": "gabriel.metronome:id/tvTimeSignatureBar",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        814,
+        829,
+        1021,
+        993
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "gabriel.metronome:id/spBeatUnit",
+      "ancestors": [
+        "android.widget.AbsSpinner",
+        "android.widget.AdapterView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Spinner",
+      "bounds": [
+        1021,
+        829,
+        1319,
+        980
+      ],
+      "componentLabel": "Text Button",
+      "text": " 4   -  Quarter note (tempo x1)"
+    },
+    {
+      "text": "Beat Subdivision",
+      "resource-id": "gabriel.metronome:id/tvBeatDivision",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        121,
+        1048,
+        459,
+        1110
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "gabriel.metronome:id/spBeatDivision",
+      "ancestors": [
+        "android.widget.AbsSpinner",
+        "android.widget.AdapterView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Spinner",
+      "bounds": [
+        584,
+        1004,
+        1319,
+        1155
+      ],
+      "componentLabel": "Text Button",
+      "text": "in eighth notes               (2 notes)"
+    },
+    {
+      "text": "Volume:",
+      "resource-id": "gabriel.metronome:id/tvVolume",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        121,
+        1510,
+        286,
+        1572
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "gabriel.metronome:id/sbVolume",
+      "clickable": false,
+      "class": "android.widget.SeekBar",
+      "bounds": [
+        304,
+        1489,
+        1319,
+        1594
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "text": "Start Metronome",
+      "resource-id": "gabriel.metronome:id/btMetronome",
+      "ancestors": [
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.ToggleButton",
+      "bounds": [
+        450,
+        1637,
+        1319,
+        1893
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Tempo",
+      "resource-id": "gabriel.metronome:id/tvTempo",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        121,
+        470,
+        262,
+        532
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "91 bpm",
+      "resource-id": "gabriel.metronome:id/tvTempoValue",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        121,
+        543,
+        321,
+        609
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Andante",
+      "resource-id": "gabriel.metronome:id/tvTempoDef",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        121,
+        616,
+        331,
+        663
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "-",
+      "resource-id": "gabriel.metronome:id/btTempoLess",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        349,
+        435,
+        573,
+        698
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "+",
+      "resource-id": "gabriel.metronome:id/btTempoPlus",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        573,
+        435,
+        797,
+        698
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "or tap the tempo here!",
+      "resource-id": "gabriel.metronome:id/btTapTempo",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        797,
+        435,
+        1319,
+        698
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Sound Pack",
+      "resource-id": "gabriel.metronome:id/tvSoundPack",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        150,
+        1202,
+        391,
+        1264
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "electronic beat",
+      "resource-id": "gabriel.metronome:id/tvSoundPackValue",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        141,
+        1313,
+        400,
+        1429
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Change          Sound Pack",
+      "resource-id": "gabriel.metronome:id/btSoundPack",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        447,
+        1275,
+        839,
+        1478
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "First Beat Accent",
+      "resource-id": "gabriel.metronome:id/tvFirstClick",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        918,
+        1202,
+        1266,
+        1264
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "OFF",
+      "resource-id": "gabriel.metronome:id/btFirstClick",
+      "ancestors": [
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.ToggleButton",
+      "bounds": [
+        886,
+        1278,
+        1299,
+        1478
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Beat Count",
+      "resource-id": "gabriel.metronome:id/tvTimeCount",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        173,
+        1637,
+        398,
+        1699
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

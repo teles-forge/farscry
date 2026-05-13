@@ -1,0 +1,809 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.bikewale.app:id/app_bar",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.bikewale.app:id/ivLogo",
+          "clickable": false,
+          "class": "android.support.v7.widget.aw",
+          "bounds": [
+            196,
+            134,
+            571,
+            229
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.bikewale.app:id/navigation_drawer_frame",
+      "children": [
+        {
+          "resource-id": "com.bikewale.app:id/llHomeNav",
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            0,
+            315,
+            910,
+            431
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "home"
+        },
+        {
+          "text": "New Bikes",
+          "resource-id": "com.bikewale.app:id/tv_new_heading",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.bo",
+          "bounds": [
+            63,
+            533,
+            344,
+            608
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "News, Reviews & Videos",
+          "resource-id": "com.bikewale.app:id/tv_article_heading",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.bo",
+          "bounds": [
+            63,
+            1501,
+            711,
+            1576
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "resource-id": "com.bikewale.app:id/llNews",
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            0,
+            1618,
+            910,
+            1751
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "news"
+        },
+        {
+          "resource-id": "com.bikewale.app:id/llVideos",
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            0,
+            1926,
+            910,
+            2059
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "video"
+        },
+        {
+          "iconClass": "favorite",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.bikewale.app:id/recent_launch_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.aw",
+          "bounds": [
+            63,
+            664,
+            168,
+            769
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Recent launches",
+          "resource-id": "com.bikewale.app:id/tv_recent",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.bo",
+          "bounds": [
+            221,
+            679,
+            665,
+            754
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.bikewale.app:id/upcoming_bike_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.aw",
+          "bounds": [
+            63,
+            818,
+            168,
+            923
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Upcoming bikes",
+          "resource-id": "com.bikewale.app:id/tv_upcoming",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.bo",
+          "bounds": [
+            221,
+            833,
+            654,
+            908
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "font",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.bikewale.app:id/compare_bike_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.aw",
+          "bounds": [
+            63,
+            972,
+            168,
+            1077
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Compare bikes",
+          "resource-id": "com.bikewale.app:id/tv_compare",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.bo",
+          "bounds": [
+            221,
+            987,
+            625,
+            1062
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "location",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.bikewale.app:id/locate_dealer_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.aw",
+          "bounds": [
+            63,
+            1126,
+            168,
+            1231
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Locate dealers",
+          "resource-id": "com.bikewale.app:id/tv_dealer",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.bo",
+          "bounds": [
+            221,
+            1141,
+            612,
+            1216
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "label",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.bikewale.app:id/on_road_price_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.aw",
+          "bounds": [
+            63,
+            1280,
+            168,
+            1385
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "On-road price",
+          "resource-id": "com.bikewale.app:id/tv_orp",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.bo",
+          "bounds": [
+            221,
+            1295,
+            594,
+            1370
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.bikewale.app:id/reviews_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.aw",
+          "bounds": [
+            63,
+            1786,
+            168,
+            1891
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Expert reviews",
+          "resource-id": "com.bikewale.app:id/tv_review",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.bo",
+          "bounds": [
+            221,
+            1801,
+            618,
+            1876
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "star",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.bikewale.app:id/features_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.aw",
+          "bounds": [
+            63,
+            2094,
+            168,
+            2199
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Features",
+          "resource-id": "com.bikewale.app:id/tv_features",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.bo",
+          "bounds": [
+            221,
+            2109,
+            456,
+            2184
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        280,
+        910,
+        2392
+      ],
+      "componentLabel": "Drawer"
+    },
+    {
+      "text": "Discover Bikes",
+      "resource-id": "com.bikewale.app:id/tvDiscoverBikes",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.bo",
+      "bounds": [
+        35,
+        1019,
+        452,
+        1104
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "com.bikewale.app:id/cv_Brand",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.bikewale.app:id/ivBrand",
+          "clickable": false,
+          "class": "android.support.v7.widget.aw",
+          "bounds": [
+            70,
+            1167,
+            210,
+            1307
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Brand",
+          "resource-id": "com.bikewale.app:id/tvBrand",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.bo",
+          "bounds": [
+            245,
+            1160,
+            1405,
+            1236
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "View bikes of your favourite brand",
+          "resource-id": "com.bikewale.app:id/tvBrand1",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.bo",
+          "bounds": [
+            245,
+            1247,
+            985,
+            1313
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        35,
+        1132,
+        1405,
+        1356
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "resource-id": "com.bikewale.app:id/cw_Budget",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.bikewale.app:id/ivBudget",
+          "clickable": false,
+          "class": "android.support.v7.widget.aw",
+          "bounds": [
+            70,
+            1419,
+            210,
+            1559
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Budget",
+          "resource-id": "com.bikewale.app:id/tvBudget",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.bo",
+          "bounds": [
+            245,
+            1412,
+            1405,
+            1488
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "View bikes in your price range",
+          "resource-id": "com.bikewale.app:id/tvBudget1",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.bo",
+          "bounds": [
+            245,
+            1499,
+            891,
+            1565
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        35,
+        1384,
+        1405,
+        1608
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "resource-id": "com.bikewale.app:id/cw_Mileage",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.bikewale.app:id/ivMileage",
+          "clickable": false,
+          "class": "android.support.v7.widget.aw",
+          "bounds": [
+            70,
+            1671,
+            210,
+            1811
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Mileage",
+          "resource-id": "com.bikewale.app:id/tvMileage",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.bo",
+          "bounds": [
+            245,
+            1664,
+            1405,
+            1740
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "View bikes with your desired mileage",
+          "resource-id": "com.bikewale.app:id/tvMileage1",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.bo",
+          "bounds": [
+            245,
+            1751,
+            1048,
+            1817
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        35,
+        1636,
+        1405,
+        1860
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "resource-id": "com.bikewale.app:id/cw_Ride_style",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.bikewale.app:id/ivRideStyle",
+          "clickable": false,
+          "class": "android.support.v7.widget.aw",
+          "bounds": [
+            70,
+            1923,
+            210,
+            2063
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Ride Style",
+          "resource-id": "com.bikewale.app:id/tvRideStyle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.bo",
+          "bounds": [
+            245,
+            1923,
+            1405,
+            1999
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "View bikes that suit your riding style",
+          "resource-id": "com.bikewale.app:id/tvRideStyle1",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.bo",
+          "bounds": [
+            245,
+            2010,
+            1024,
+            2076
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        35,
+        1888,
+        1405,
+        2112
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.bikewale.app:id/iv_home_page",
+      "clickable": false,
+      "class": "android.support.v7.widget.aw",
+      "bounds": [
+        0,
+        280,
+        1440,
+        991
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "FIND YOUR RIDE",
+      "resource-id": "com.bikewale.app:id/tv_header",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.bo",
+      "bounds": [
+        0,
+        280,
+        1440,
+        574
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.bikewale.app:id/iv_home_page_pager",
+      "clickable": false,
+      "class": "android.support.v7.widget.aw",
+      "bounds": [
+        0,
+        2165,
+        1260,
+        2392
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.bikewale.app:id/search",
+      "clickable": false,
+      "class": "android.support.v7.widget.aw",
+      "bounds": [
+        56,
+        651,
+        168,
+        763
+      ],
+      "componentLabel": "Image"
+    }
+  ]
+}

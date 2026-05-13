@@ -1,0 +1,392 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.sololearn.cplusplus:id/toolbar",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Code Playground",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            210,
+            135,
+            747,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "share",
+          "resource-id": "com.sololearn.cplusplus:id/action_share",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1132,
+            98,
+            1300,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "#include<iostream>\r\n#include<string>\r\nusing namespace std;\r\nint main(){\r\n    string put;\r\n    int x;\r\n    \r\n    cout<<\"-----------:Enter Your Name And See Magic:-----------\"<<endl<<endl;\r\n    cout<<\"___________________________________________________\"<<endl;\r\n    \r\n    cin>>put;\r\n    cout<<\"Enter your Name:- \"<<put<<\".\"<<endl;\r\n    \r\n    cout<<\"___________________________________________________\"<<endl;\r\n    x=put.length();\r\n    \r\n    \r\n    for(int b=0;b<x;b++){\r\n        \r\n        switch(put[b]){\r\n            \r\n        case 'a':\r\n        case 'A':\r\n        cout<<\"..######..\\n..#....#..\\n..######..\\n..#....#..\\n..#....#..\\n\\n\"<<endl;\r\n        break;\r\n        \r\n        case 'b':\r\n        case 'B':\r\n        cout<<\"..######..\\n..#....#..\\n..#####...\\n..#....#..\\n..######..\\n\\n\"<<endl;\r\n        break;\r\n        \r\n        case 'c':\r\n        case 'C':\r\n        cout<<\"..######..\\n..#.......\\n..#.......\\n..#.......\\n..######..\\n\\n\"<<endl;\r\n        break;\r\n        \r\n        case 'd':\r\n        case 'D':\r\n        cout<<\"..#####...\\n..#....#..\\n..#....#..\\n..#....#..\\n..#####...\\n\\n\"<<endl;\r\n        break;\r\n        \r\n        case 'e':\r\n        case 'E':\r\n        cout<<\"..######..\\n..#.......\\n..#####...\\n..#.......\\n..######..\\n\\n\"<<endl;\r\n        break;\r\n        \r\n        case 'f':\r\n        case 'F':\r\n        cout<<\"..######..\\n..#.......\\n..#####...\\n..#.......\\n..#.......\\n\\n\"<<endl;\r\n        break;\r\n        \r\n        case 'g':\r\n        case 'G':\r\n        cout<<\"..######..\\n..#.......\\n..#####...\\n..#....#..\\n..#####...\\n\\n\"<<endl;\r\n        break;\r\n        \r\n        \r\n        case 'h':\r\n        case 'H':\r\n        cout<<\"..#....#..\\n..#....#..\\n..######..\\n..#....#..\\n..#....#..\\n\\n\"<<endl;\r\n        break;\r\n        \r\n        case 'i':\r\n        case 'I':\r\n        cout<<\"..######..\\n....##....\\n....##....\\n....##....\\n..######..\\n\\n\"<<endl;\r\n        break;\r\n        \r\n        case 'j':\r\n        case 'J':\r\n        cout<<\"..######..\\n....##....\\n....##....\\n..#.##....\\n..####....\\n\\n\"<<endl;\r\n        break;\r\n        \r\n        case 'k':\r\n        case 'K':\r\n        cout<<\"..#...#...\\n..#..#....\\n..##......\\n..#..#....\\n..#...#...\\n\\n\"<<endl;\r\n        break;\r\n        \r\n        case 'l':\r\n        case 'L':\r\n        cout<<\"..#.......\\n..#.......\\n..#.......\\n..#.......\\n..######..\\n\\n\"<<endl;\r\n        break;\r\n        \r\n        case 'm':\r\n        case 'M':\r\n        cout<<\"..#....#..\\n..##..##..\\n..#.##.#..\\n..#....#..\\n..#....#..\\n\\n\"<<endl;\r\n        break;\r\n        \r\n        case 'n':\r\n        case 'N':\r\n        cout<<\"..#....#..\\n..##...#..\\n..#.#..#..\\n..#..#.#..\\n..#...##..\\n\\n\"<<endl;\r\n        break;\r\n        \r\n        case 'o':\r\n        case 'O':\r\n        cout<<\"..######..\\n..#....#..\\n..#....#..\\n..#....#..\\n..######..\\n\\n\"<<endl;\r\n        break;\r\n        \r\n        case 'p':\r\n        case 'P':\r\n        cout<<\"..######..\\n..#....#..\\n..######..\\n..#.......\\n..#.......\\n\\n\"<<endl;\r\n        break;\r\n        \r\n        case 'q':\r\n        case 'Q':\r\n        cout<<\"..######..\\n..#....#..\\n..#.#..#..\\n..#..#.#..\\n..######..\\n\\n\"<<endl;\r\n        break;\r\n        \r\n        case 'r':\r\n        case 'R':\r\n        cout<<\"..######..\\n..#....#..\\n..#.##...\\n..#...#...\\n..#....#..\\n\\n\"<<endl;\r\n        break;\r\n        \r\n        case 's':\r\n        case 'S':\r\n        cout<<\"..######..\\n..#.......\\n..######..\\n.......#..\\n..######..\\n\\n\"<<endl;\r\n        break;\r\n        \r\n        case 't':\r\n        case 'T':\r\n        cout<<\"..######..\\n....##....\\n....##....\\n....##....\\n....##....\\n\\n\"<<endl;\r\n        break;\r\n        \r\n        case 'u':\r\n        case 'U':\r\n        cout<<\"..#....#..\\n..#....#..\\n..#....#..\\n..#....#..\\n..######..\\n\\n\"<<endl;\r\n        break;\r\n        \r\n        case 'v':\r\n        case 'V':\r\n        cout<<\"..#....#..\\n..#....#..\\n..#....#..\\n...#..#...\\n....##....\\n\\n\"<<endl;\r\n        break;\r\n        \r\n        \r\n        case 'w':\r\n        case 'W':\r\n        cout<<\"..#....#..\\n..#....#..\\n..#.##.#..\\n..##..##..\\n..#....#..\\n\\n\"<<endl;\r\n        break;\r\n        \r\n        case 'x':\r\n        case 'X':\r\n        cout<<\"..#....#..\\n...#..#...\\n....##....\\n...#..#...\\n..#....#..\\n\\n\"<<endl;\r\n        break;\r\n        \r\n        case 'y':\r\n        case 'Y':\r\n        cout<<\"..#....#..\\n...#..#...\\n....##....\\n....##....\\n....##....\\n\\n\"<<endl;\r\n        break;\r\n        \r\n        case 'z':\r\n        case 'Z':\r\n        cout<<\"..######..\\n......#...\\n.....#....\\n....#.....\\n..######..\\n\\n\"<<endl;\r\n        break;\r\n        \r\n        case '.':\r\n        cout<<\"----..----\\n\\n\"<<endl;\r\n        break;\r\n        }\r\n    }\r\n    cout<<\"_____________________________________________\"<<endl<<endl;\r\n    cout<<\"YOur Name Length Is:- \"<<x<<endl;\r\n    cout<<\"_____________________________________________\"<<endl<<endl;\r\n    cout<<\"If You Enjoy It!!! Please Hit One Like:----\"<<endl;\r\n    cout<<\"_____________________________________________\"<<endl<<endl;\r\n    \r\n    cout<<\"code by-'shekhar chauhan'\"<<endl<<endl;\r\n    cout<<\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\"<<endl;\r\n    \r\n}",
+      "resource-id": "com.sololearn.cplusplus:id/code_editor",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatEditText",
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.sololearn.app.views.playground.AdvancedEditText",
+      "bounds": [
+        0,
+        550,
+        1440,
+        1692
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.sololearn.cplusplus:id/code_avatar",
+      "clickable": true,
+      "class": "com.sololearn.app.views.CircleImageView",
+      "bounds": [
+        35,
+        315,
+        158,
+        438
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Put Your Name And See Magic ////[UPDATED]",
+      "resource-id": "com.sololearn.cplusplus:id/code_name",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        193,
+        315,
+        1176,
+        381
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Shekhar Chauhan",
+      "resource-id": "com.sololearn.cplusplus:id/code_user",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        193,
+        385,
+        519,
+        442
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "RUN",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1233,
+        2271,
+        1331,
+        2337
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "thumbs_up",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.sololearn.cplusplus:id/vote_up",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageButton",
+      "bounds": [
+        166,
+        456,
+        289,
+        522
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "+474",
+      "resource-id": "com.sololearn.cplusplus:id/vote_number",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        296,
+        456,
+        408,
+        522
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "thumbs_down",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.sololearn.cplusplus:id/vote_down",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageButton",
+      "bounds": [
+        415,
+        456,
+        538,
+        522
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Tab",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        0,
+        2221,
+        175,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "<",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        175,
+        2217,
+        350,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": ">",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        350,
+        2217,
+        525,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "{",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        525,
+        2217,
+        700,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "}",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        700,
+        2217,
+        875,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": ";",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        875,
+        2217,
+        1050,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "\"",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        1050,
+        2217,
+        1205,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "OUTPUT",
+      "resource-id": "com.sololearn.cplusplus:id/output_title",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        0,
+        1692,
+        1440,
+        1798
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

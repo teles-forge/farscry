@@ -1,0 +1,768 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "org.mozilla.firefox_beta:id/browser_toolbar",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.mozilla.firefox_beta:id/url_bar_entry",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            28,
+            112,
+            1068,
+            224
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "more",
+          "resource-id": "org.mozilla.firefox_beta:id/menu",
+          "children": [
+            {
+              "iconClass": "menu",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "org.mozilla.firefox_beta:id/menu_icon",
+              "clickable": false,
+              "class": "org.mozilla.gecko.widget.themed.ThemedImageView",
+              "bounds": [
+                1345,
+                140,
+                1366,
+                196
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "ancestors": [
+            "org.mozilla.gecko.widget.themed.ThemedFrameLayout",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "org.mozilla.gecko.toolbar.ShapedButtonFrameLayout",
+          "bounds": [
+            1272,
+            84,
+            1440,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "copy",
+          "ancestors": [
+            "org.mozilla.gecko.toolbar.ShapedButton",
+            "org.mozilla.gecko.widget.themed.ThemedImageButton",
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.mozilla.firefox_beta:id/tabs",
+          "clickable": true,
+          "class": "org.mozilla.gecko.toolbar.PhoneTabsButton",
+          "bounds": [
+            1048,
+            84,
+            1272,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "1",
+          "bounds": [
+            1160,
+            126,
+            1244,
+            210
+          ],
+          "clickable": false,
+          "class": "org.mozilla.gecko.widget.themed.ThemedTextView",
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "search",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.mozilla.firefox_beta:id/site_security",
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "bounds": [
+            32,
+            110,
+            144,
+            222
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "org.mozilla.gecko.toolbar.BrowserToolbarPhoneBase",
+        "org.mozilla.gecko.toolbar.BrowserToolbar",
+        "org.mozilla.gecko.widget.themed.ThemedRelativeLayout",
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "org.mozilla.gecko.toolbar.BrowserToolbarPhone",
+      "bounds": [
+        0,
+        84,
+        1440,
+        252
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "org.mozilla.firefox_beta:id/icon",
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        35,
+        2182,
+        203,
+        2350
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Welcome to your Homepage! Get back here every time you open a new tab.",
+      "resource-id": "org.mozilla.firefox_beta:id/text",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "org.mozilla.gecko.widget.EllipsisTextView",
+      "bounds": [
+        238,
+        2140,
+        1293,
+        2392
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "org.mozilla.firefox_beta:id/close",
+      "clickable": true,
+      "class": "android.widget.ImageButton",
+      "bounds": [
+        1293,
+        2140,
+        1440,
+        2392
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.GridView",
+        "android.widget.AbsListView",
+        "android.widget.AdapterView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "org.mozilla.gecko.home.TopSitesGridView",
+      "bounds": [
+        0,
+        420,
+        1440,
+        1979
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "org.mozilla.gecko.widget.CropImageView",
+                "org.mozilla.gecko.widget.themed.ThemedImageView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "org.mozilla.firefox_beta:id/thumbnail",
+              "clickable": false,
+              "class": "org.mozilla.gecko.home.TopSitesThumbnailView",
+              "bounds": [
+                43,
+                463,
+                702,
+                839
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "Facebook",
+              "resource-id": "org.mozilla.firefox_beta:id/title",
+              "ancestors": [
+                "org.mozilla.gecko.widget.FadedTextView",
+                "org.mozilla.gecko.widget.themed.ThemedTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "org.mozilla.gecko.widget.FadedSingleColorTextView",
+              "bounds": [
+                43,
+                839,
+                702,
+                914
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "org.mozilla.gecko.home.TopSitesGridItemView",
+          "bounds": [
+            25,
+            445,
+            720,
+            932
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "org.mozilla.gecko.widget.CropImageView",
+                "org.mozilla.gecko.widget.themed.ThemedImageView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "org.mozilla.firefox_beta:id/thumbnail",
+              "clickable": false,
+              "class": "org.mozilla.gecko.home.TopSitesThumbnailView",
+              "bounds": [
+                738,
+                463,
+                1397,
+                839
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "YouTube",
+              "resource-id": "org.mozilla.firefox_beta:id/title",
+              "ancestors": [
+                "org.mozilla.gecko.widget.FadedTextView",
+                "org.mozilla.gecko.widget.themed.ThemedTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "org.mozilla.gecko.widget.FadedSingleColorTextView",
+              "bounds": [
+                738,
+                839,
+                1397,
+                914
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "org.mozilla.gecko.home.TopSitesGridItemView",
+          "bounds": [
+            720,
+            445,
+            1415,
+            932
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "org.mozilla.gecko.widget.CropImageView",
+                "org.mozilla.gecko.widget.themed.ThemedImageView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "org.mozilla.firefox_beta:id/thumbnail",
+              "clickable": false,
+              "class": "org.mozilla.gecko.home.TopSitesThumbnailView",
+              "bounds": [
+                43,
+                974,
+                702,
+                1350
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "Amazon",
+              "resource-id": "org.mozilla.firefox_beta:id/title",
+              "ancestors": [
+                "org.mozilla.gecko.widget.FadedTextView",
+                "org.mozilla.gecko.widget.themed.ThemedTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "org.mozilla.gecko.widget.FadedSingleColorTextView",
+              "bounds": [
+                43,
+                1350,
+                702,
+                1425
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "org.mozilla.gecko.home.TopSitesGridItemView",
+          "bounds": [
+            25,
+            956,
+            720,
+            1443
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "org.mozilla.gecko.widget.CropImageView",
+                "org.mozilla.gecko.widget.themed.ThemedImageView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "org.mozilla.firefox_beta:id/thumbnail",
+              "clickable": false,
+              "class": "org.mozilla.gecko.home.TopSitesThumbnailView",
+              "bounds": [
+                738,
+                974,
+                1397,
+                1350
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "Wikipedia",
+              "resource-id": "org.mozilla.firefox_beta:id/title",
+              "ancestors": [
+                "org.mozilla.gecko.widget.FadedTextView",
+                "org.mozilla.gecko.widget.themed.ThemedTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "org.mozilla.gecko.widget.FadedSingleColorTextView",
+              "bounds": [
+                738,
+                1350,
+                1397,
+                1425
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "org.mozilla.gecko.home.TopSitesGridItemView",
+          "bounds": [
+            720,
+            956,
+            1415,
+            1443
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "iconClass": "star",
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "org.mozilla.gecko.widget.CropImageView",
+                "org.mozilla.gecko.widget.themed.ThemedImageView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "org.mozilla.firefox_beta:id/thumbnail",
+              "clickable": false,
+              "class": "org.mozilla.gecko.home.TopSitesThumbnailView",
+              "bounds": [
+                43,
+                1485,
+                702,
+                1861
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "Twitter",
+              "resource-id": "org.mozilla.firefox_beta:id/title",
+              "ancestors": [
+                "org.mozilla.gecko.widget.FadedTextView",
+                "org.mozilla.gecko.widget.themed.ThemedTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "org.mozilla.gecko.widget.FadedSingleColorTextView",
+              "bounds": [
+                43,
+                1861,
+                702,
+                1936
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "org.mozilla.gecko.home.TopSitesGridItemView",
+          "bounds": [
+            25,
+            1467,
+            720,
+            1954
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "org.mozilla.gecko.widget.CropImageView",
+                "org.mozilla.gecko.widget.themed.ThemedImageView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "org.mozilla.firefox_beta:id/thumbnail",
+              "clickable": false,
+              "class": "org.mozilla.gecko.home.TopSitesThumbnailView",
+              "bounds": [
+                738,
+                1485,
+                1397,
+                1861
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "Add a site",
+              "resource-id": "org.mozilla.firefox_beta:id/title",
+              "ancestors": [
+                "org.mozilla.gecko.widget.FadedTextView",
+                "org.mozilla.gecko.widget.themed.ThemedTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "org.mozilla.gecko.widget.FadedSingleColorTextView",
+              "bounds": [
+                738,
+                1861,
+                1397,
+                1936
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "org.mozilla.gecko.home.TopSitesGridItemView",
+          "bounds": [
+            720,
+            1467,
+            1415,
+            1954
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "TOP SITES",
+      "bounds": [
+        0,
+        252,
+        400,
+        420
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "componentLabel": "Text Button"
+    },
+    {
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "BOOKMARKS",
+      "bounds": [
+        400,
+        252,
+        821,
+        420
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "componentLabel": "Text Button"
+    },
+    {
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "HISTORY",
+      "bounds": [
+        821,
+        252,
+        1171,
+        420
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "componentLabel": "Text Button",
+      "textButtonClass": "history"
+    },
+    {
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "LINKS",
+      "bounds": [
+        0,
+        252,
+        350,
+        420
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "componentLabel": "Text Button"
+    },
+    {
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "ARTICLES",
+      "bounds": [
+        350,
+        252,
+        700,
+        420
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "componentLabel": "Text Button"
+    },
+    {
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "YOU",
+      "bounds": [
+        700,
+        252,
+        1050,
+        420
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "componentLabel": "Text Button"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "org.mozilla.firefox_beta:id/firstrun_image",
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        142,
+        560,
+        1297,
+        1190
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Turn on Tab queue",
+      "resource-id": "org.mozilla.firefox_beta:id/firstrun_text",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        195,
+        1330,
+        1245,
+        1423
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Save links for later in Firefox Beta when tapping them in other apps.",
+      "resource-id": "org.mozilla.firefox_beta:id/firstrun_subtext",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        195,
+        1423,
+        1245,
+        1740
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "org.mozilla.firefox_beta:id/firstrun_switch",
+      "ancestors": [
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.SwitchCompat",
+      "bounds": [
+        637,
+        1740,
+        803,
+        2106
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Next",
+      "resource-id": "org.mozilla.firefox_beta:id/firstrun_link",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        557,
+        2106,
+        883,
+        2392
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "next"
+    }
+  ]
+}

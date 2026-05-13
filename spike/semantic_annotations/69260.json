@@ -1,0 +1,957 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.etsy.android:id/app_bar_toolbar",
+      "children": [
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "cart",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.etsy.android:id/cart_icon",
+          "clickable": false,
+          "class": "com.etsy.android.iconsy.views.IconView",
+          "bounds": [
+            1314,
+            140,
+            1398,
+            224
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "1",
+          "resource-id": "com.etsy.android:id/cart_badge",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1370,
+            112,
+            1426,
+            178
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "search",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.etsy.android:id/search_mag_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            235,
+            126,
+            347,
+            226
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "handbags",
+          "resource-id": "com.etsy.android:id/search_src_text",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatAutoCompleteTextView",
+            "android.widget.AutoCompleteTextView",
+            "android.widget.EditText",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.SearchView$SearchAutoComplete",
+          "bounds": [
+            347,
+            113,
+            1097,
+            239
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "close",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.etsy.android:id/search_close_btn",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1097,
+            113,
+            1209,
+            239
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        28,
+        280,
+        1412,
+        515
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Filter",
+          "resource-id": "com.etsy.android:id/filters_text_view",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1176,
+            308,
+            1384,
+            487
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "filter"
+        },
+        {
+          "text": "17,541 items",
+          "resource-id": "com.etsy.android:id/header_result_count_textview",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            63,
+            336,
+            1092,
+            402
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Bags & Purses ▻ Totes",
+          "resource-id": "com.etsy.android:id/header_category_textview",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            63,
+            402,
+            1092,
+            459
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.etsy.android:id/listing_matte",
+      "children": [
+        {
+          "text": "Ad",
+          "resource-id": "com.etsy.android:id/search_ads_indicator",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            85,
+            572,
+            174,
+            649
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "com.etsy.android.uikit.view.FullImageView",
+            "com.etsy.android.uikit.view.ForegroundImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.etsy.android:id/listing_image",
+          "clickable": false,
+          "class": "com.etsy.android.uikit.view.ListingFullImageView",
+          "bounds": [
+            56,
+            543,
+            692,
+            1020
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "ON SALE: Handmade Leather Tote Bag // Horween leather in Natural Dublin // Brown leather Bag // Rustic Style handbag",
+          "resource-id": "com.etsy.android:id/listing_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            1024,
+            692,
+            1092
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "choicecuts",
+          "resource-id": "com.etsy.android:id/listing_shop",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            1092,
+            497,
+            1153
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "$166.00",
+          "resource-id": "com.etsy.android:id/listing_price",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            497,
+            1092,
+            692,
+            1153
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.etsy.android:id/btn_fav",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            413,
+            554,
+            547,
+            688
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "list",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.etsy.android:id/btn_lists",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            547,
+            554,
+            681,
+            688
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        56,
+        543,
+        692,
+        1153
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "resource-id": "com.etsy.android:id/listing_matte",
+      "children": [
+        {
+          "text": "Ad",
+          "resource-id": "com.etsy.android:id/search_ads_indicator",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            777,
+            572,
+            866,
+            649
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "com.etsy.android.uikit.view.FullImageView",
+            "com.etsy.android.uikit.view.ForegroundImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.etsy.android:id/listing_image",
+          "clickable": false,
+          "class": "com.etsy.android.uikit.view.ListingFullImageView",
+          "bounds": [
+            748,
+            543,
+            1384,
+            1020
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Sale!!! Distressed grey leather tote bag large leather bag leather handbag Handmade with LOVE!!!!",
+          "resource-id": "com.etsy.android:id/listing_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            748,
+            1024,
+            1384,
+            1092
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "LimorGalili",
+          "resource-id": "com.etsy.android:id/listing_shop",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            748,
+            1092,
+            1186,
+            1153
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "$378.00",
+          "resource-id": "com.etsy.android:id/listing_price",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1186,
+            1092,
+            1384,
+            1153
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "favorite",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.etsy.android:id/btn_fav",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1105,
+            554,
+            1239,
+            688
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "list",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.etsy.android:id/btn_lists",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1239,
+            554,
+            1373,
+            688
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        748,
+        543,
+        1384,
+        1153
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "resource-id": "com.etsy.android:id/listing_matte",
+      "children": [
+        {
+          "ancestors": [
+            "com.etsy.android.uikit.view.FullImageView",
+            "com.etsy.android.uikit.view.ForegroundImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.etsy.android:id/listing_image",
+          "clickable": false,
+          "class": "com.etsy.android.uikit.view.ListingFullImageView",
+          "bounds": [
+            56,
+            1209,
+            692,
+            1686
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Large Brown Leather Handbag Tote",
+          "resource-id": "com.etsy.android:id/listing_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            1690,
+            692,
+            1758
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "TheLeatherStore",
+          "resource-id": "com.etsy.android:id/listing_shop",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            1758,
+            500,
+            1819
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "$155.00",
+          "resource-id": "com.etsy.android:id/listing_price",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            500,
+            1758,
+            692,
+            1819
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "favorite",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.etsy.android:id/btn_fav",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            413,
+            1220,
+            547,
+            1354
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "list",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.etsy.android:id/btn_lists",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            547,
+            1220,
+            681,
+            1354
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        56,
+        1209,
+        692,
+        1819
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "resource-id": "com.etsy.android:id/listing_matte",
+      "children": [
+        {
+          "ancestors": [
+            "com.etsy.android.uikit.view.FullImageView",
+            "com.etsy.android.uikit.view.ForegroundImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.etsy.android:id/listing_image",
+          "clickable": false,
+          "class": "com.etsy.android.uikit.view.ListingFullImageView",
+          "bounds": [
+            748,
+            1209,
+            1384,
+            1686
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Sale Sale Sale 30% - Teal canvas Diaper bag , Mom Tote bag , Hobo Shoulder bag , Handbag Gift for her, women School Bag / RENEE",
+          "resource-id": "com.etsy.android:id/listing_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            748,
+            1690,
+            1384,
+            1758
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "christystudio",
+          "resource-id": "com.etsy.android:id/listing_shop",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            748,
+            1758,
+            1219,
+            1819
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "$27.30",
+          "resource-id": "com.etsy.android:id/listing_price",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1219,
+            1758,
+            1384,
+            1819
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "favorite",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.etsy.android:id/btn_fav",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1105,
+            1220,
+            1239,
+            1354
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "list",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.etsy.android:id/btn_lists",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1239,
+            1220,
+            1373,
+            1354
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        748,
+        1209,
+        1384,
+        1819
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "resource-id": "com.etsy.android:id/listing_matte",
+      "children": [
+        {
+          "ancestors": [
+            "com.etsy.android.uikit.view.FullImageView",
+            "com.etsy.android.uikit.view.ForegroundImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.etsy.android:id/listing_image",
+          "clickable": false,
+          "class": "com.etsy.android.uikit.view.ListingFullImageView",
+          "bounds": [
+            56,
+            1875,
+            692,
+            2352
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Sale - Forest Green Twisted Hemp/Cotton Bag, shoulder bag, tote, purse, handbag, unique, stylish, messenger bag - Lisa",
+          "resource-id": "com.etsy.android:id/listing_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            2356,
+            692,
+            2392
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "favorite",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.etsy.android:id/btn_fav",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            413,
+            1886,
+            547,
+            2020
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "list",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.etsy.android:id/btn_lists",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            547,
+            1886,
+            681,
+            2020
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        56,
+        1875,
+        692,
+        2392
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "resource-id": "com.etsy.android:id/listing_matte",
+      "children": [
+        {
+          "ancestors": [
+            "com.etsy.android.uikit.view.FullImageView",
+            "com.etsy.android.uikit.view.ForegroundImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.etsy.android:id/listing_image",
+          "clickable": false,
+          "class": "com.etsy.android.uikit.view.ListingFullImageView",
+          "bounds": [
+            748,
+            1875,
+            1384,
+            2352
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "canvas bag women handbag canvas tote bag for women leather bag shoulder bag leather handbag waxed canvas bag canvas travel bag market bag",
+          "resource-id": "com.etsy.android:id/listing_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            748,
+            2356,
+            1384,
+            2392
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "favorite",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.etsy.android:id/btn_fav",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1105,
+            1886,
+            1239,
+            2020
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "list",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.etsy.android:id/btn_lists",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1239,
+            1886,
+            1373,
+            2020
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        748,
+        1875,
+        1384,
+        2392
+      ],
+      "componentLabel": "Card"
+    }
+  ]
+}

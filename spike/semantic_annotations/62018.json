@@ -1,0 +1,374 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        84,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "resource-id": "com.fitness22.running:id/toolbar",
+          "children": [
+            {
+              "iconClass": "menu",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.fitness22.running:id/toolbar_menu_icon",
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                56,
+                84,
+                158,
+                280
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "iconClass": "music",
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                1324,
+                141,
+                1405,
+                222
+              ],
+              "clickable": true,
+              "class": "android.widget.ImageView",
+              "componentLabel": "Icon"
+            },
+            {
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                639,
+                166,
+                670,
+                197
+              ],
+              "clickable": false,
+              "class": "android.widget.ImageView",
+              "componentLabel": "Image"
+            },
+            {
+              "text": "GPS",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.fitness22.running.views.RunningTextView",
+              "bounds": [
+                670,
+                131,
+                802,
+                233
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.Toolbar",
+          "bounds": [
+            0,
+            84,
+            1440,
+            280
+          ],
+          "componentLabel": "Toolbar"
+        }
+      ],
+      "componentLabel": "Drawer"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.fitness22.running.views.StartRunButton",
+      "bounds": [
+        35,
+        280,
+        1405,
+        1355
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "START\nRUN",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fitness22.running.views.RunningTextView",
+          "bounds": [
+            335,
+            433,
+            1103,
+            1201
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.fitness22.running.views.SummaryView",
+      "bounds": [
+        35,
+        1411,
+        1405,
+        1981
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Total Mi",
+          "resource-id": "com.fitness22.running:id/tv_summary_view_km_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fitness22.running.views.RunningTextView",
+          "bounds": [
+            293,
+            1411,
+            462,
+            1488
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0",
+          "resource-id": "com.fitness22.running:id/tv_summary_view_km_value",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fitness22.running.views.RunningTextView",
+          "bounds": [
+            345,
+            1503,
+            409,
+            1682
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Min : Sec",
+          "resource-id": "com.fitness22.running:id/tv_summary_view_duration_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fitness22.running.views.RunningTextView",
+          "bounds": [
+            967,
+            1411,
+            1158,
+            1488
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "00:00",
+          "resource-id": "com.fitness22.running:id/tv_summary_view_duration_value",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fitness22.running.views.RunningTextView",
+          "bounds": [
+            920,
+            1503,
+            1204,
+            1682
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Total Runs",
+          "resource-id": "com.fitness22.running:id/tv_summary_view_pace_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fitness22.running.views.RunningTextView",
+          "bounds": [
+            263,
+            1710,
+            492,
+            1787
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0",
+          "resource-id": "com.fitness22.running:id/tv_summary_view_pace_value",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fitness22.running.views.RunningTextView",
+          "bounds": [
+            345,
+            1802,
+            409,
+            1981
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Calories",
+          "resource-id": "com.fitness22.running:id/tv_summary_view_calories_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fitness22.running.views.RunningTextView",
+          "bounds": [
+            976,
+            1710,
+            1149,
+            1787
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0",
+          "resource-id": "com.fitness22.running:id/tv_summary_view_calories_value",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fitness22.running.views.RunningTextView",
+          "bounds": [
+            1030,
+            1802,
+            1094,
+            1981
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        35,
+        2072,
+        1405,
+        2377
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Recent activities",
+          "resource-id": "com.fitness22.running:id/history_list_header_tv_recent",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fitness22.running.views.RunningTextView",
+          "bounds": [
+            476,
+            2072,
+            963,
+            2179
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Your run history will show up here",
+          "resource-id": "com.fitness22.running:id/history_list_header_tv_records",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fitness22.running.views.RunningTextView",
+          "bounds": [
+            245,
+            2278,
+            1194,
+            2377
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

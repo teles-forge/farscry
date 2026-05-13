@@ -1,0 +1,306 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.augmentra.viewranger.map.views.VRMapViewParent",
+      "bounds": [
+        0,
+        84,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [],
+      "componentLabel": "Map View"
+    },
+    {
+      "resource-id": "com.augmentra.viewranger.android:id/map_fab_compass",
+      "children": [],
+      "ancestors": [
+        "com.augmentra.viewranger.ui.main.tabs.map.DefaultUiMode$ActionButton",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.augmentra.viewranger.ui.main.tabs.map.DefaultUiMode$CompassActionButton",
+      "bounds": [
+        580,
+        1762,
+        860,
+        2042
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.augmentra.viewranger.ui.main.tabs.map.DefaultUiMode$ActionButton",
+      "bounds": [
+        0,
+        168,
+        280,
+        448
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "iconClass": "lock",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            32,
+            200,
+            247,
+            415
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "com.augmentra.viewranger.ui.main.tabs.map.DefaultUiMode$ActionButton",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.augmentra.viewranger.android:id/defaultUIMode_new",
+      "clickable": true,
+      "class": "com.augmentra.viewranger.ui.main.tabs.map.DefaultUiMode$StartActionButton",
+      "bounds": [
+        1160,
+        1762,
+        1440,
+        2042
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "resource-id": "com.augmentra.viewranger.android:id/defaultUIMode_trip",
+      "children": [
+        {
+          "text": "Trip time",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            1192,
+            1486,
+            1407,
+            1572
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "com.augmentra.viewranger.ui.main.tabs.map.DefaultUiMode$ActionButton",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.augmentra.viewranger.ui.main.tabs.map.DefaultUiMode$TripViewActionButton",
+      "bounds": [
+        1160,
+        1454,
+        1440,
+        1734
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.augmentra.viewranger.android:id/map_fab_virtual_eye",
+      "clickable": true,
+      "class": "com.augmentra.viewranger.ui.main.tabs.map.DefaultUiMode$ActionButton",
+      "bounds": [
+        0,
+        1762,
+        280,
+        2042
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "resource-id": "com.augmentra.viewranger.android:id/button_zoom_in",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        440,
+        1832,
+        580,
+        1972
+      ],
+      "componentLabel": "Text Button",
+      "text": "+"
+    },
+    {
+      "resource-id": "com.augmentra.viewranger.android:id/button_zoom_out",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        860,
+        1832,
+        1000,
+        1972
+      ],
+      "componentLabel": "Text Button",
+      "text": "-"
+    },
+    {
+      "text": "1.16km",
+      "resource-id": "com.augmentra.viewranger.android:id/distance",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        943,
+        94,
+        1411,
+        160
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "10S 548271E 4176082N",
+      "resource-id": "com.augmentra.viewranger.android:id/coordinate",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        28,
+        94,
+        626,
+        170
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "1.16km",
+      "resource-id": "com.augmentra.viewranger.android:id/navibar_distance_text",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        0,
+        2079,
+        193,
+        2145
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        193,
+        2099,
+        235,
+        2124
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "componentLabel": "Image"
+    },
+    {
+      "text": "WP0001",
+      "resource-id": "com.augmentra.viewranger.android:id/navibar_nextwp_text",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        249,
+        2079,
+        1426,
+        2145
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "warning",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.augmentra.viewranger.android:id/navibar_header_compass_accuracy_icon",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        1209,
+        2308,
+        1291,
+        2378
+      ],
+      "componentLabel": "Icon"
+    }
+  ]
+}

@@ -1,0 +1,630 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.guardian:id/toolbar",
+      "children": [
+        {
+          "iconClass": "home",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.guardian:id/actionbar_item_add_to_home_button",
+          "clickable": true,
+          "class": "com.guardian.ui.views.IconImageView",
+          "bounds": [
+            196,
+            105,
+            336,
+            245
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "us politics",
+          "resource-id": "com.guardian:id/actionbar_item_text_center",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            350,
+            84,
+            1440,
+            266
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.guardian:id/actionbar_home_button",
+          "clickable": true,
+          "class": "com.guardian.ui.views.IconImageView",
+          "bounds": [
+            28,
+            105,
+            168,
+            245
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        266
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.widget.GridLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.guardian.ui.layout.BlockGridLayout",
+      "bounds": [
+        0,
+        266,
+        1440,
+        685
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "com.guardian.ui.views.cards.BaseCardView",
+            "com.guardian.ui.views.cards.CardLinearLayout",
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.guardian.ui.views.cards.AdvertCardView",
+          "bounds": [
+            0,
+            266,
+            1440,
+            685
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "com.google.android.gms.ads.doubleclick.PublisherAdView",
+              "bounds": [
+                0,
+                266,
+                1440,
+                628
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "android.widget.FrameLayout",
+                    "android.view.ViewGroup",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "class": "com.google.android.gms.ads.internal.webview.n",
+                  "bounds": [
+                    195,
+                    266,
+                    1245,
+                    628
+                  ],
+                  "clickable": false,
+                  "children": [
+                    {
+                      "ancestors": [
+                        "android.webkit.WebView",
+                        "android.widget.AbsoluteLayout",
+                        "android.view.ViewGroup",
+                        "android.view.View",
+                        "java.lang.Object"
+                      ],
+                      "bounds": [
+                        195,
+                        266,
+                        1245,
+                        628
+                      ],
+                      "clickable": true,
+                      "class": "com.google.android.gms.ads.internal.webview.o",
+                      "componentLabel": "Web View"
+                    }
+                  ],
+                  "componentLabel": "Web View"
+                }
+              ],
+              "componentLabel": "Advertisement"
+            }
+          ],
+          "componentLabel": "Card"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.GridLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.guardian.ui.layout.BlockGridLayout",
+      "bounds": [
+        0,
+        685,
+        1440,
+        1161
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "com.guardian.ui.views.cards.BaseArticleView",
+            "com.guardian.ui.views.cards.BaseContentView",
+            "com.guardian.ui.views.cards.BaseCardView",
+            "com.guardian.ui.views.cards.CardLinearLayout",
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.guardian.ui.views.cards.ArticleCardView",
+          "bounds": [
+            59,
+            685,
+            692,
+            1104
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "text": "US election was a farce that exposes 'hypocritical' democracy, says China",
+              "resource-id": "com.guardian:id/card_headline",
+              "ancestors": [
+                "com.guardian.ui.views.AntiAliasingTextView",
+                "com.guardian.ui.views.EllipsizingTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.guardian.ui.views.GuardianTextView",
+              "bounds": [
+                80,
+                706,
+                671,
+                976
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "1d",
+              "resource-id": "com.guardian:id/card_time",
+              "ancestors": [
+                "com.guardian.ui.views.AntiAliasingTextView",
+                "com.guardian.ui.views.EllipsizingTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.guardian.ui.views.GuardianTextView",
+              "bounds": [
+                59,
+                1025,
+                206,
+                1100
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "563",
+              "resource-id": "com.guardian:id/card_comments",
+              "ancestors": [
+                "com.guardian.ui.views.AntiAliasingTextView",
+                "com.guardian.ui.views.EllipsizingTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.guardian.ui.views.GuardianTextView",
+              "bounds": [
+                208,
+                1025,
+                384,
+                1100
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "Card"
+        },
+        {
+          "ancestors": [
+            "com.guardian.ui.views.cards.BaseArticleView",
+            "com.guardian.ui.views.cards.BaseContentView",
+            "com.guardian.ui.views.cards.BaseCardView",
+            "com.guardian.ui.views.cards.CardLinearLayout",
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.guardian.ui.views.cards.ArticleCardView",
+          "bounds": [
+            749,
+            685,
+            1382,
+            1104
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "text": "Bill Clinton warns US and Britain face an 'identity crisis' amid nationalist surge",
+              "resource-id": "com.guardian:id/card_headline",
+              "ancestors": [
+                "com.guardian.ui.views.AntiAliasingTextView",
+                "com.guardian.ui.views.EllipsizingTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.guardian.ui.views.GuardianTextView",
+              "bounds": [
+                770,
+                706,
+                1361,
+                976
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "1d",
+              "resource-id": "com.guardian:id/card_time",
+              "ancestors": [
+                "com.guardian.ui.views.AntiAliasingTextView",
+                "com.guardian.ui.views.EllipsizingTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.guardian.ui.views.GuardianTextView",
+              "bounds": [
+                749,
+                1025,
+                896,
+                1100
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "Card"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.GridLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.guardian.ui.layout.BlockGridLayout",
+      "bounds": [
+        0,
+        1161,
+        1440,
+        1950
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "com.guardian.ui.views.cards.BaseArticleView",
+            "com.guardian.ui.views.cards.BaseContentView",
+            "com.guardian.ui.views.cards.BaseCardView",
+            "com.guardian.ui.views.cards.CardLinearLayout",
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.guardian.ui.views.cards.ArticleCardView",
+          "bounds": [
+            59,
+            1161,
+            692,
+            1893
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "text": "Donald Trump's first 100 days as president - daily updates",
+              "resource-id": "com.guardian:id/card_headline",
+              "ancestors": [
+                "com.guardian.ui.views.AntiAliasingTextView",
+                "com.guardian.ui.views.EllipsizingTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.guardian.ui.views.GuardianTextView",
+              "bounds": [
+                80,
+                1182,
+                671,
+                1385
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.guardian:id/card_image",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                59,
+                1509,
+                692,
+                1889
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "1d",
+              "resource-id": "com.guardian:id/card_time",
+              "ancestors": [
+                "com.guardian.ui.views.AntiAliasingTextView",
+                "com.guardian.ui.views.EllipsizingTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.guardian.ui.views.GuardianTextView",
+              "bounds": [
+                59,
+                1434,
+                206,
+                1509
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "Card"
+        },
+        {
+          "ancestors": [
+            "com.guardian.ui.views.cards.BaseArticleView",
+            "com.guardian.ui.views.cards.BaseContentView",
+            "com.guardian.ui.views.cards.BaseCardView",
+            "com.guardian.ui.views.cards.CardLinearLayout",
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.guardian.ui.views.cards.ArticleCardView",
+          "bounds": [
+            749,
+            1161,
+            1382,
+            1893
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "text": "Trump mounts charm offensive on healthcare",
+              "resource-id": "com.guardian:id/card_headline",
+              "ancestors": [
+                "com.guardian.ui.views.AntiAliasingTextView",
+                "com.guardian.ui.views.EllipsizingTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.guardian.ui.views.GuardianTextView",
+              "bounds": [
+                770,
+                1182,
+                1361,
+                1385
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.guardian:id/card_image",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                749,
+                1509,
+                1382,
+                1889
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "1d",
+              "resource-id": "com.guardian:id/card_time",
+              "ancestors": [
+                "com.guardian.ui.views.AntiAliasingTextView",
+                "com.guardian.ui.views.EllipsizingTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.guardian.ui.views.GuardianTextView",
+              "bounds": [
+                749,
+                1434,
+                896,
+                1509
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "Card"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.GridLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.guardian.ui.layout.BlockGridLayout",
+      "bounds": [
+        0,
+        1950,
+        1440,
+        2217
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "com.guardian.ui.views.cards.BaseArticleView",
+            "com.guardian.ui.views.cards.BaseContentView",
+            "com.guardian.ui.views.cards.BaseCardView",
+            "com.guardian.ui.views.cards.CardLinearLayout",
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.guardian.ui.views.cards.ArticleCardView",
+          "bounds": [
+            59,
+            1950,
+            1382,
+            2160
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "text": "Republican healthcare plan approved by two House panels, clearing major hurdle",
+              "resource-id": "com.guardian:id/card_headline",
+              "ancestors": [
+                "com.guardian.ui.views.AntiAliasingTextView",
+                "com.guardian.ui.views.EllipsizingTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.guardian.ui.views.GuardianTextView",
+              "bounds": [
+                80,
+                1971,
+                1361,
+                2107
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "Card"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        2217,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "1d ago",
+          "resource-id": "com.guardian:id/group_title",
+          "ancestors": [
+            "com.guardian.ui.views.AntiAliasingTextView",
+            "com.guardian.ui.views.EllipsizingTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.guardian.ui.views.GuardianTextView",
+          "bounds": [
+            59,
+            2224,
+            1381,
+            2392
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

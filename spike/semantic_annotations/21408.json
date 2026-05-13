@@ -1,0 +1,967 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.bleacherreport.android.teamstream:id/br_toolbar",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            56,
+            133,
+            560,
+            231
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "com.bleacherreport.android.teamstream:id/menu_search",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            964,
+            98,
+            1132,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "add",
+          "resource-id": "com.bleacherreport.android.teamstream:id/menu_pick_teams",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1132,
+            98,
+            1300,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.design.widget.TabLayout$SlidingTabStrip",
+      "bounds": [
+        0,
+        280,
+        1440,
+        448
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.design.widget.TabLayout$TabView",
+          "bounds": [
+            0,
+            280,
+            360,
+            448
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "textButtonClass": "home"
+        },
+        {
+          "text": "My Teams",
+          "resource-id": "com.bleacherreport.android.teamstream:id/title",
+          "ancestors": [
+            "com.bleacherreport.android.teamstream.views.BRTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.bleacherreport.android.teamstream.views.BRAutoResizingTextView",
+          "bounds": [
+            427,
+            319,
+            652,
+            409
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Scores",
+          "resource-id": "com.bleacherreport.android.teamstream:id/title",
+          "ancestors": [
+            "com.bleacherreport.android.teamstream.views.BRTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.bleacherreport.android.teamstream.views.BRAutoResizingTextView",
+          "bounds": [
+            823,
+            319,
+            977,
+            409
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Alerts",
+          "resource-id": "com.bleacherreport.android.teamstream:id/title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.bleacherreport.android.teamstream.views.BRTextView",
+          "bounds": [
+            1196,
+            319,
+            1324,
+            409
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "resource-id": "com.bleacherreport.android.teamstream:id/my_teams_action_suggestion_item",
+      "children": [
+        {
+          "text": "Choose Scores & Spoiler Alert Settings",
+          "resource-id": "com.bleacherreport.android.teamstream:id/label",
+          "ancestors": [
+            "com.bleacherreport.android.teamstream.views.BRTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.bleacherreport.android.teamstream.views.BRAutoResizingTextView",
+          "bounds": [
+            190,
+            470,
+            1034,
+            645
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.bleacherreport.android.teamstream:id/action_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            58,
+            470,
+            163,
+            645
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "!",
+          "resource-id": "com.bleacherreport.android.teamstream:id/iconTextOverlay",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.bleacherreport.android.teamstream.views.BRTextView",
+          "bounds": [
+            32,
+            470,
+            190,
+            645
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        459,
+        1440,
+        656
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.bleacherreport.android.teamstream:id/my_teams_item",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.bleacherreport.android.teamstream:id/logo",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            32,
+            667,
+            249,
+            842
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "NFL News",
+          "resource-id": "com.bleacherreport.android.teamstream:id/displayLabel",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.bleacherreport.android.teamstream.views.BRTextView",
+          "bounds": [
+            249,
+            667,
+            950,
+            842
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "22m ago",
+          "resource-id": "com.bleacherreport.android.teamstream:id/statusLabel",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.bleacherreport.android.teamstream.views.BRTextView",
+          "bounds": [
+            1220,
+            667,
+            1394,
+            842
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        656,
+        1440,
+        853
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.bleacherreport.android.teamstream:id/my_teams_item",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.bleacherreport.android.teamstream:id/logo",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            32,
+            864,
+            249,
+            1039
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Fantasy Football News",
+          "resource-id": "com.bleacherreport.android.teamstream:id/displayLabel",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.bleacherreport.android.teamstream.views.BRTextView",
+          "bounds": [
+            249,
+            864,
+            960,
+            1039
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "com.bleacherreport.android.teamstream.views.ads.GoogleAdContainer",
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.bleacherreport.android.teamstream.views.ads.WebAdContainer",
+          "bounds": [
+            974,
+            881,
+            1202,
+            1021
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "com.google.android.gms.ads.doubleclick.PublisherAdView",
+              "bounds": [
+                974,
+                881,
+                1201,
+                1021
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "android.widget.FrameLayout",
+                    "android.view.ViewGroup",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "class": "com.google.android.gms.ads.internal.webview.l",
+                  "bounds": [
+                    974,
+                    881,
+                    1201,
+                    1021
+                  ],
+                  "clickable": false,
+                  "children": [
+                    {
+                      "ancestors": [
+                        "android.webkit.WebView",
+                        "android.widget.AbsoluteLayout",
+                        "android.view.ViewGroup",
+                        "android.view.View",
+                        "java.lang.Object"
+                      ],
+                      "bounds": [
+                        974,
+                        881,
+                        1201,
+                        1021
+                      ],
+                      "clickable": true,
+                      "class": "com.google.android.gms.ads.internal.webview.m",
+                      "componentLabel": "Web View"
+                    }
+                  ],
+                  "componentLabel": "Web View"
+                }
+              ],
+              "componentLabel": "Advertisement"
+            }
+          ],
+          "componentLabel": "Advertisement"
+        },
+        {
+          "text": "31m ago",
+          "resource-id": "com.bleacherreport.android.teamstream:id/statusLabel",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.bleacherreport.android.teamstream.views.BRTextView",
+          "bounds": [
+            1230,
+            864,
+            1394,
+            1039
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        853,
+        1440,
+        1050
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.bleacherreport.android.teamstream:id/my_teams_item",
+      "children": [
+        {
+          "iconClass": "edit",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.bleacherreport.android.teamstream:id/logo",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            32,
+            1061,
+            249,
+            1236
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Trending",
+          "resource-id": "com.bleacherreport.android.teamstream:id/displayLabel",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.bleacherreport.android.teamstream.views.BRTextView",
+          "bounds": [
+            249,
+            1061,
+            987,
+            1236
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "com.bleacherreport.android.teamstream.views.ads.GoogleAdContainer",
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.bleacherreport.android.teamstream.views.ads.WebAdContainer",
+          "bounds": [
+            1001,
+            1078,
+            1229,
+            1218
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "com.google.android.gms.ads.doubleclick.PublisherAdView",
+              "bounds": [
+                1001,
+                1078,
+                1228,
+                1218
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "android.widget.FrameLayout",
+                    "android.view.ViewGroup",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "class": "com.google.android.gms.ads.internal.webview.l",
+                  "bounds": [
+                    1001,
+                    1078,
+                    1228,
+                    1218
+                  ],
+                  "clickable": false,
+                  "children": [
+                    {
+                      "ancestors": [
+                        "android.webkit.WebView",
+                        "android.widget.AbsoluteLayout",
+                        "android.view.ViewGroup",
+                        "android.view.View",
+                        "java.lang.Object"
+                      ],
+                      "bounds": [
+                        1001,
+                        1078,
+                        1228,
+                        1218
+                      ],
+                      "clickable": true,
+                      "class": "com.google.android.gms.ads.internal.webview.m",
+                      "componentLabel": "Web View"
+                    }
+                  ],
+                  "componentLabel": "Web View"
+                }
+              ],
+              "componentLabel": "Advertisement"
+            }
+          ],
+          "componentLabel": "Advertisement"
+        },
+        {
+          "text": "2h ago",
+          "resource-id": "com.bleacherreport.android.teamstream:id/statusLabel",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.bleacherreport.android.teamstream.views.BRTextView",
+          "bounds": [
+            1257,
+            1061,
+            1394,
+            1236
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        1050,
+        1440,
+        1247
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.bleacherreport.android.teamstream:id/my_teams_item",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.bleacherreport.android.teamstream:id/logo",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            32,
+            1258,
+            249,
+            1433
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "My Fantasy Team",
+          "resource-id": "com.bleacherreport.android.teamstream:id/displayLabel",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.bleacherreport.android.teamstream.views.BRTextView",
+          "bounds": [
+            249,
+            1258,
+            1138,
+            1433
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        1247,
+        1440,
+        1444
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.bleacherreport.android.teamstream:id/my_teams_item",
+      "children": [
+        {
+          "iconClass": "play",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.bleacherreport.android.teamstream:id/logo",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            32,
+            1455,
+            249,
+            1630
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "My Channel",
+          "resource-id": "com.bleacherreport.android.teamstream:id/displayLabel",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.bleacherreport.android.teamstream.views.BRTextView",
+          "bounds": [
+            249,
+            1455,
+            1394,
+            1630
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        1444,
+        1440,
+        1641
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.bleacherreport.android.teamstream:id/my_teams_item",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.bleacherreport.android.teamstream:id/logo",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            32,
+            1652,
+            249,
+            1827
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Cold Hard Facts",
+          "resource-id": "com.bleacherreport.android.teamstream:id/displayLabel",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.bleacherreport.android.teamstream.views.BRTextView",
+          "bounds": [
+            249,
+            1652,
+            1138,
+            1827
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "com.bleacherreport.android.teamstream.views.ads.GoogleAdContainer",
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.bleacherreport.android.teamstream.views.ads.WebAdContainer",
+          "bounds": [
+            1152,
+            1669,
+            1380,
+            1809
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "com.google.android.gms.ads.doubleclick.PublisherAdView",
+              "bounds": [
+                1152,
+                1669,
+                1379,
+                1809
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "android.widget.FrameLayout",
+                    "android.view.ViewGroup",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "class": "com.google.android.gms.ads.internal.webview.l",
+                  "bounds": [
+                    1152,
+                    1669,
+                    1379,
+                    1809
+                  ],
+                  "clickable": false,
+                  "children": [
+                    {
+                      "ancestors": [
+                        "android.webkit.WebView",
+                        "android.widget.AbsoluteLayout",
+                        "android.view.ViewGroup",
+                        "android.view.View",
+                        "java.lang.Object"
+                      ],
+                      "bounds": [
+                        1152,
+                        1669,
+                        1379,
+                        1809
+                      ],
+                      "clickable": true,
+                      "class": "com.google.android.gms.ads.internal.webview.m",
+                      "componentLabel": "Web View"
+                    }
+                  ],
+                  "componentLabel": "Web View"
+                }
+              ],
+              "componentLabel": "Advertisement"
+            }
+          ],
+          "componentLabel": "Advertisement"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        1641,
+        1440,
+        1838
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1838,
+        1440,
+        2232
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Add Teams",
+          "resource-id": "com.bleacherreport.android.teamstream:id/displayLabel",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.bleacherreport.android.teamstream.views.BRTextView",
+          "bounds": [
+            598,
+            1891,
+            841,
+            1981
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.bleacherreport.android.teamstream:id/share_it_image",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1126,
+            2098,
+            1380,
+            2168
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Spread the word on Team Stream",
+          "resource-id": "com.bleacherreport.android.teamstream:id/spread_the_word_share",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.bleacherreport.android.teamstream.views.BRTextView",
+          "bounds": [
+            60,
+            2060,
+            1380,
+            2135
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Tell your friends to get it too!",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.bleacherreport.android.teamstream.views.BRTextView",
+          "bounds": [
+            60,
+            2118,
+            1380,
+            2207
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

@@ -1,0 +1,919 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.clutchpoints:id/toolbar",
+      "children": [
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "date_range",
+          "resource-id": "com.clutchpoints:id/menu_calendar",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1272,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "resource-id": "com.clutchpoints:id/spinner",
+          "ancestors": [
+            "android.widget.Spinner",
+            "android.widget.AbsSpinner",
+            "android.widget.AdapterView",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatSpinner",
+          "bounds": [
+            252,
+            84,
+            1216,
+            280
+          ],
+          "componentLabel": "Text Button",
+          "text": "All Scores"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "20 March",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.nshmura.recyclertablayout.RecyclerTabLayout$TabTextView",
+      "bounds": [
+        0,
+        280,
+        16,
+        385
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "21 March",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.nshmura.recyclertablayout.RecyclerTabLayout$TabTextView",
+      "bounds": [
+        16,
+        280,
+        295,
+        385
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "YESTERDAY",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.nshmura.recyclertablayout.RecyclerTabLayout$TabTextView",
+      "bounds": [
+        295,
+        280,
+        594,
+        385
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "TODAY",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.nshmura.recyclertablayout.RecyclerTabLayout$TabTextView",
+      "bounds": [
+        594,
+        280,
+        846,
+        385
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "today"
+    },
+    {
+      "text": "TOMORROW",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.nshmura.recyclertablayout.RecyclerTabLayout$TabTextView",
+      "bounds": [
+        846,
+        280,
+        1153,
+        385
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "25 March",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.nshmura.recyclertablayout.RecyclerTabLayout$TabTextView",
+      "bounds": [
+        1153,
+        280,
+        1432,
+        385
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "26 March",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.nshmura.recyclertablayout.RecyclerTabLayout$TabTextView",
+      "bounds": [
+        1432,
+        280,
+        1440,
+        385
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "com.clutchpoints:id/rootLayout",
+      "children": [
+        {
+          "resource-id": "com.clutchpoints:id/cardView",
+          "children": [
+            {
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.clutchpoints:id/indicator",
+              "clickable": false,
+              "class": "com.viewpagerindicator.CirclePageIndicator",
+              "bounds": [
+                35,
+                1471,
+                1405,
+                1543
+              ],
+              "componentLabel": "Pager Indicator"
+            },
+            {
+              "ancestors": [
+                "com.clutchpoints.app.scores.widget.HighlightView",
+                "com.clutchpoints.app.stream.widget.TwitterVideoView",
+                "com.clutchpoints.app.widget.base.NewsEntityVideoView",
+                "com.clutchpoints.app.widget.base.TwitterImageView",
+                "com.clutchpoints.app.widget.base.TwitterView",
+                "com.clutchpoints.app.widget.base.BaseNewsView",
+                "com.clutchpoints.app.widget.base.UpdatableView",
+                "android.widget.FrameLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "com.clutchpoints.app.scores.widget.HighlightView_",
+              "bounds": [
+                35,
+                493,
+                1405,
+                1543
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.clutchpoints:id/blurView",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "bounds": [
+                    35,
+                    493,
+                    1405,
+                    1543
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "text": "See in stream",
+                  "ancestors": [
+                    "com.vanniktech.emoji.EmojiTextView",
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.clutchpoints.app.widget.TextView",
+                  "bounds": [
+                    1047,
+                    546,
+                    1327,
+                    605
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "iconClass": "arrow_forward",
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    1334,
+                    549,
+                    1387,
+                    602
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "componentLabel": "Icon"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.clutchpoints:id/gradientBackground",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "bounds": [
+                    35,
+                    1076,
+                    1405,
+                    1543
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "text": "@fswisconsin · 1 minute ago",
+                  "resource-id": "com.clutchpoints:id/dateTextView",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    63,
+                    1181,
+                    1377,
+                    1239
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": ".@Teletovic33 can't miss! Watch the @Bucks close out the Kings on @fswisconsin, #FOXSportsGO http://bit.ly/2nJtWVn",
+                  "resource-id": "com.clutchpoints:id/tweetTextView",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": true,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    63,
+                    1257,
+                    1377,
+                    1480
+                  ],
+                  "componentLabel": "Text Button"
+                }
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "Open game thread",
+              "resource-id": "com.clutchpoints:id/threadButton",
+              "ancestors": [
+                "com.vanniktech.emoji.EmojiTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "com.clutchpoints.app.widget.TextView",
+              "bounds": [
+                82,
+                1954,
+                1358,
+                2094
+              ],
+              "componentLabel": "Text Button"
+            },
+            {
+              "text": "103",
+              "resource-id": "com.clutchpoints:id/awayTeamScore",
+              "ancestors": [
+                "com.vanniktech.emoji.EmojiTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.clutchpoints.app.widget.TextView",
+              "bounds": [
+                517,
+                1564,
+                650,
+                1685
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Bucks",
+              "resource-id": "com.clutchpoints:id/awayTeamName",
+              "ancestors": [
+                "com.vanniktech.emoji.EmojiTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.clutchpoints.app.widget.TextView",
+              "bounds": [
+                70,
+                1578,
+                506,
+                1672
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Q4 05:02",
+              "resource-id": "com.clutchpoints:id/centerTitle",
+              "ancestors": [
+                "com.vanniktech.emoji.EmojiTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.clutchpoints.app.widget.TextView",
+              "bounds": [
+                70,
+                1693,
+                255,
+                1757
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "91",
+              "resource-id": "com.clutchpoints:id/homeTeamScore",
+              "ancestors": [
+                "com.vanniktech.emoji.EmojiTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.clutchpoints.app.widget.TextView",
+              "bounds": [
+                567,
+                1758,
+                650,
+                1907
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Kings",
+              "resource-id": "com.clutchpoints:id/homeTeamName",
+              "ancestors": [
+                "com.vanniktech.emoji.EmojiTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.clutchpoints.app.widget.TextView",
+              "bounds": [
+                70,
+                1774,
+                556,
+                1907
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "25",
+              "resource-id": "com.clutchpoints:id/firstAwayValue",
+              "ancestors": [
+                "com.vanniktech.emoji.EmojiTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.clutchpoints.app.widget.TextView",
+              "bounds": [
+                690,
+                1543,
+                868,
+                1698
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "44",
+              "resource-id": "com.clutchpoints:id/secondAwayValue",
+              "ancestors": [
+                "com.vanniktech.emoji.EmojiTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.clutchpoints.app.widget.TextView",
+              "bounds": [
+                868,
+                1543,
+                1047,
+                1698
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "21",
+              "resource-id": "com.clutchpoints:id/thirdAwayValue",
+              "ancestors": [
+                "com.vanniktech.emoji.EmojiTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.clutchpoints.app.widget.TextView",
+              "bounds": [
+                1047,
+                1543,
+                1226,
+                1698
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "13",
+              "resource-id": "com.clutchpoints:id/fourthAwayValue",
+              "ancestors": [
+                "com.vanniktech.emoji.EmojiTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.clutchpoints.app.widget.TextView",
+              "bounds": [
+                1226,
+                1543,
+                1405,
+                1698
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Q1",
+              "resource-id": "com.clutchpoints:id/firstLabel",
+              "ancestors": [
+                "com.vanniktech.emoji.EmojiTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.clutchpoints.app.widget.TextView",
+              "bounds": [
+                690,
+                1698,
+                868,
+                1751
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Q2",
+              "resource-id": "com.clutchpoints:id/secondLabel",
+              "ancestors": [
+                "com.vanniktech.emoji.EmojiTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.clutchpoints.app.widget.TextView",
+              "bounds": [
+                868,
+                1698,
+                1047,
+                1751
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Q3",
+              "resource-id": "com.clutchpoints:id/thirdLabel",
+              "ancestors": [
+                "com.vanniktech.emoji.EmojiTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.clutchpoints.app.widget.TextView",
+              "bounds": [
+                1047,
+                1698,
+                1226,
+                1751
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Q4",
+              "resource-id": "com.clutchpoints:id/fourthLabel",
+              "ancestors": [
+                "com.vanniktech.emoji.EmojiTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.clutchpoints.app.widget.TextView",
+              "bounds": [
+                1226,
+                1698,
+                1405,
+                1751
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "24",
+              "resource-id": "com.clutchpoints:id/firstHomeValue",
+              "ancestors": [
+                "com.vanniktech.emoji.EmojiTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.clutchpoints.app.widget.TextView",
+              "bounds": [
+                690,
+                1751,
+                868,
+                1907
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "26",
+              "resource-id": "com.clutchpoints:id/secondHomeValue",
+              "ancestors": [
+                "com.vanniktech.emoji.EmojiTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.clutchpoints.app.widget.TextView",
+              "bounds": [
+                868,
+                1751,
+                1047,
+                1907
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "25",
+              "resource-id": "com.clutchpoints:id/thirdHomeValue",
+              "ancestors": [
+                "com.vanniktech.emoji.EmojiTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.clutchpoints.app.widget.TextView",
+              "bounds": [
+                1047,
+                1751,
+                1226,
+                1907
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "16",
+              "resource-id": "com.clutchpoints:id/fourthHomeValue",
+              "ancestors": [
+                "com.vanniktech.emoji.EmojiTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.clutchpoints.app.widget.TextView",
+              "bounds": [
+                1226,
+                1751,
+                1405,
+                1907
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.CardView",
+          "bounds": [
+            35,
+            493,
+            1405,
+            2141
+          ],
+          "componentLabel": "Card"
+        },
+        {
+          "text": "2:30 AM",
+          "resource-id": "com.clutchpoints:id/time",
+          "ancestors": [
+            "com.vanniktech.emoji.EmojiTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.clutchpoints.app.widget.TextView",
+          "bounds": [
+            35,
+            420,
+            180,
+            472
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "@ CSN-CA",
+          "resource-id": "com.clutchpoints:id/broadcast_title",
+          "ancestors": [
+            "com.vanniktech.emoji.EmojiTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.clutchpoints.app.widget.TextView",
+          "bounds": [
+            1216,
+            420,
+            1405,
+            472
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        35,
+        420,
+        1405,
+        2141
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.clutchpoints:id/rootLayout",
+      "children": [
+        {
+          "resource-id": "com.clutchpoints:id/cardView",
+          "children": [
+            {
+              "ancestors": [
+                "com.clutchpoints.app.scores.widget.HighlightView",
+                "com.clutchpoints.app.stream.widget.TwitterVideoView",
+                "com.clutchpoints.app.widget.base.NewsEntityVideoView",
+                "com.clutchpoints.app.widget.base.TwitterImageView",
+                "com.clutchpoints.app.widget.base.TwitterView",
+                "com.clutchpoints.app.widget.base.BaseNewsView",
+                "com.clutchpoints.app.widget.base.UpdatableView",
+                "android.widget.FrameLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "com.clutchpoints.app.scores.widget.HighlightView_",
+              "bounds": [
+                35,
+                2284,
+                1405,
+                2392
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.clutchpoints:id/blurView",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "bounds": [
+                    35,
+                    2284,
+                    1405,
+                    2392
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "iconClass": "volume",
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.clutchpoints:id/mute",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "bounds": [
+                    1289,
+                    2312,
+                    1377,
+                    2392
+                  ],
+                  "componentLabel": "Icon"
+                }
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.CardView",
+          "bounds": [
+            35,
+            2284,
+            1405,
+            2392
+          ],
+          "componentLabel": "Card"
+        },
+        {
+          "text": "2:30 AM",
+          "resource-id": "com.clutchpoints:id/time",
+          "ancestors": [
+            "com.vanniktech.emoji.EmojiTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.clutchpoints.app.widget.TextView",
+          "bounds": [
+            35,
+            2211,
+            180,
+            2263
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "@ ESPN",
+          "resource-id": "com.clutchpoints:id/broadcast_title",
+          "ancestors": [
+            "com.vanniktech.emoji.EmojiTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.clutchpoints.app.widget.TextView",
+          "bounds": [
+            1267,
+            2211,
+            1405,
+            2263
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        35,
+        2211,
+        1405,
+        2392
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

@@ -1,0 +1,553 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.edmunds:id/toolbar",
+      "children": [
+        {
+          "text": "Calculators",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            210,
+            135,
+            567,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "location",
+          "resource-id": "com.edmunds:id/location",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.internal.view.menu.ActionMenuItemView",
+          "bounds": [
+            1272,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.design.widget.TabLayout$SlidingTabStrip",
+      "bounds": [
+        0,
+        280,
+        1440,
+        448
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "AFFORDABILITY",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            35,
+            326,
+            445,
+            402
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "LOAN",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            648,
+            326,
+            791,
+            402
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "LEASE",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1117,
+            326,
+            1282,
+            402
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "text": "RESET",
+      "resource-id": "com.edmunds:id/buttonCalculatorReset",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        0,
+        2224,
+        650,
+        2392
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "default"
+    },
+    {
+      "text": "CALCULATE",
+      "resource-id": "com.edmunds:id/buttonCalculatorCalculate",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        650,
+        2224,
+        1440,
+        2392
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "calculate"
+    },
+    {
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "Vehicle Costs",
+      "bounds": [
+        56,
+        504,
+        397,
+        580
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "info",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.edmunds:id/info_vehicle_costs",
+      "clickable": true,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        1300,
+        504,
+        1384,
+        588
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "Vehicle Price",
+      "bounds": [
+        56,
+        659,
+        964,
+        756
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "com.edmunds:id/editTextCalculatorVehiclePrice",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatEditText",
+      "bounds": [
+        964,
+        623,
+        1384,
+        793
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "Sales Tax",
+      "bounds": [
+        56,
+        836,
+        964,
+        933
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "com.edmunds:id/editTextCalculatorSalesTax",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatEditText",
+      "bounds": [
+        964,
+        800,
+        1384,
+        970
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "Title & Registration Fees",
+      "bounds": [
+        56,
+        1013,
+        964,
+        1110
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "com.edmunds:id/editTextCalculatorTitleRegFees",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatEditText",
+      "bounds": [
+        964,
+        977,
+        1384,
+        1147
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "Incentives and Rebates",
+      "bounds": [
+        56,
+        1190,
+        964,
+        1287
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "com.edmunds:id/editTextCalculatorIncentivesAndRebates",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatEditText",
+      "bounds": [
+        964,
+        1154,
+        1384,
+        1324
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "Trade-In & Down Payment",
+      "bounds": [
+        56,
+        1415,
+        697,
+        1491
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "info",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.edmunds:id/info_trade_in_amp_down_payment",
+      "clickable": true,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        1300,
+        1387,
+        1384,
+        1471
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "Trade-In Value",
+      "bounds": [
+        56,
+        1534,
+        964,
+        1631
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "com.edmunds:id/editTextCalculatorTradeInValue",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatEditText",
+      "bounds": [
+        964,
+        1498,
+        1384,
+        1668
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "Amount Owed on Trade-In",
+      "bounds": [
+        56,
+        1711,
+        964,
+        1808
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "com.edmunds:id/editTextCalculatorAmountOwnedOnTradeIn",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatEditText",
+      "bounds": [
+        964,
+        1675,
+        1384,
+        1845
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "Cash Down Payment",
+      "bounds": [
+        56,
+        1888,
+        964,
+        1985
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "com.edmunds:id/editTextCalculatorCashDownPayment",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatEditText",
+      "bounds": [
+        964,
+        1852,
+        1384,
+        2022
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "Loan Financing",
+      "bounds": [
+        56,
+        2113,
+        435,
+        2189
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "info",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.edmunds:id/info_loan_financing",
+      "clickable": true,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        1300,
+        2085,
+        1384,
+        2169
+      ],
+      "componentLabel": "Icon"
+    }
+  ]
+}

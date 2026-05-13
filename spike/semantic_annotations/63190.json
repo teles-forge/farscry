@@ -1,0 +1,1201 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.audials:id/action_bar_container",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            264
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "home",
+          "resource-id": "com.audials:id/menu_options_home",
+          "children": [
+            {
+              "iconClass": "home",
+              "ancestors": [
+                "android.widget.ImageButton",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.audials:id/activeHome",
+              "clickable": true,
+              "class": "audials.widget.HeaderHomeButton",
+              "bounds": [
+                1118,
+                93,
+                1279,
+                254
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "audials.widget.ActionBarHomeButtonWrapper",
+          "bounds": [
+            1118,
+            93,
+            1279,
+            254
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "resource-id": "com.audials:id/menu_options_others",
+          "children": [
+            {
+              "iconClass": "more",
+              "ancestors": [
+                "android.widget.ImageButton",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.audials:id/icon",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageButton",
+              "bounds": [
+                1279,
+                93,
+                1440,
+                254
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "audials.widget.OptionsActionBarIcon",
+          "bounds": [
+            1279,
+            93,
+            1440,
+            254
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.audials:id/title_logo",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            513,
+            126,
+            601,
+            221
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "audials",
+          "resource-id": "com.audials:id/title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            601,
+            127,
+            839,
+            220
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        264
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "rss.widget.HeaderFooterGridView$b",
+      "bounds": [
+        0,
+        390,
+        1440,
+        1345
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.RelativeLayout",
+          "bounds": [
+            0,
+            390,
+            1440,
+            1345
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "Zap now",
+              "resource-id": "com.audials:id/RadioStreamZappButton",
+              "ancestors": [
+                "android.widget.Button",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatButton",
+              "bounds": [
+                370,
+                1191,
+                1070,
+                1345
+              ],
+              "componentLabel": "Text Button"
+            },
+            {
+              "text": "Edit",
+              "resource-id": "com.audials:id/RadioZapperOpenChancesEditModeBtn",
+              "ancestors": [
+                "android.widget.Button",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatButton",
+              "bounds": [
+                1160,
+                940,
+                1405,
+                1066
+              ],
+              "componentLabel": "Text Button",
+              "textButtonClass": "edit"
+            },
+            {
+              "text": "Americana",
+              "resource-id": "com.audials:id/genreText",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                49,
+                982,
+                381,
+                1039
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "NRJ Hits 128mp3",
+              "resource-id": "com.audials:id/stationText",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                49,
+                1067,
+                381,
+                1124
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "0:20",
+              "resource-id": "com.audials:id/TrackDuration",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                0,
+                443,
+                320,
+                513
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.audials:id/StationLogoSmall",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                18,
+                513,
+                249,
+                742
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "",
+              "resource-id": "com.audials:id/RadioStreamAddRemoveFavoriteButton",
+              "ancestors": [
+                "android.widget.Button",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatButton",
+              "bounds": [
+                1190,
+                513,
+                1422,
+                681
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "iconClass": "skip_previous",
+              "ancestors": [
+                "android.widget.ImageButton",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.audials:id/prev_btn",
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatImageButton",
+              "bounds": [
+                411,
+                742,
+                587,
+                905
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "iconClass": "pause",
+              "ancestors": [
+                "android.widget.ImageButton",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.audials:id/play_btn",
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatImageButton",
+              "bounds": [
+                587,
+                742,
+                851,
+                905
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "iconClass": "skip_next",
+              "ancestors": [
+                "android.widget.ImageButton",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.audials:id/next_btn",
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatImageButton",
+              "bounds": [
+                851,
+                742,
+                1028,
+                905
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "text": "128 MP3",
+              "resource-id": "com.audials:id/RadioStreamBitrate",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                1252,
+                443,
+                1422,
+                513
+              ],
+              "componentLabel": "Text Button"
+            },
+            {
+              "text": "NRJ Hits 128mp3",
+              "resource-id": "com.audials:id/RadioStreamName",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                263,
+                513,
+                1190,
+                634
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Unknown - Unknown",
+              "resource-id": "com.audials:id/RadioStreamCurrentTrack",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                263,
+                634,
+                1190,
+                742
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.audials:id/clickContainer",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.audials:id/StationListItemLogo",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            60,
+            1346,
+            221,
+            1579
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "1:34",
+          "resource-id": "com.audials:id/StationListItemTime",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1316,
+            1431,
+            1398,
+            1550
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "256 MP3",
+          "resource-id": "com.audials:id/StationListItemAdditionalInfoBitrate",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            260,
+            1501,
+            1254,
+            1550
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Long John Hunter - T-Bone Intentions",
+          "resource-id": "com.audials:id/StationListItemAdditionalInfo",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            260,
+            1452,
+            1254,
+            1501
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "1.FM - Blues Radio",
+          "resource-id": "com.audials:id/StationListItemName",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            260,
+            1379,
+            1254,
+            1452
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.audials:id/StationListItemCanCutLogo",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1254,
+            1393,
+            1356,
+            1431
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "add",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.audials:id/StationListItemCountryFlag",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1356,
+            1391,
+            1398,
+            1431
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1345,
+        1440,
+        1580
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.audials:id/clickContainer",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.audials:id/StationListItemLogo",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            60,
+            1581,
+            221,
+            1814
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "1:02",
+          "resource-id": "com.audials:id/StationListItemTime",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1316,
+            1666,
+            1398,
+            1785
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "128 MP3",
+          "resource-id": "com.audials:id/StationListItemAdditionalInfoBitrate",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            260,
+            1736,
+            1254,
+            1785
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "ZZ Top - Sure Got Cold After the Rain Fell",
+          "resource-id": "com.audials:id/StationListItemAdditionalInfo",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            260,
+            1687,
+            1254,
+            1736
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Phoenix Underground Radio",
+          "resource-id": "com.audials:id/StationListItemName",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            260,
+            1614,
+            1254,
+            1687
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.audials:id/StationListItemCanCutLogo",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1254,
+            1628,
+            1356,
+            1666
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "national_flag",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.audials:id/StationListItemCountryFlag",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1356,
+            1626,
+            1398,
+            1666
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1580,
+        1440,
+        1815
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.audials:id/clickContainer",
+      "children": [
+        {
+          "iconClass": "attach_file",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.audials:id/StationListItemLogo",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            60,
+            1816,
+            221,
+            2049
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "128 MP3",
+          "resource-id": "com.audials:id/StationListItemAdditionalInfoBitrate",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            260,
+            1971,
+            1254,
+            2020
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Americana / Bluegrass / Top 40",
+          "resource-id": "com.audials:id/StationListItemAdditionalInfo",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            260,
+            1922,
+            1254,
+            1971
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "AceRadio-Country Gold",
+          "resource-id": "com.audials:id/StationListItemName",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            260,
+            1849,
+            1254,
+            1922
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_forward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.audials:id/StationListItemCanCutLogo",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1254,
+            1863,
+            1356,
+            1901
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "national_flag",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.audials:id/StationListItemCountryFlag",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1356,
+            1861,
+            1398,
+            1901
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1815,
+        1440,
+        2050
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.audials:id/clickContainer",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.audials:id/StationListItemLogo",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            60,
+            2051,
+            221,
+            2284
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "1:10",
+          "resource-id": "com.audials:id/StationListItemTime",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1316,
+            2136,
+            1398,
+            2255
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "128 MP3",
+          "resource-id": "com.audials:id/StationListItemAdditionalInfoBitrate",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            260,
+            2206,
+            1254,
+            2255
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Mickey Gilley - Don't All the Girls Get Prettier at Closing Time",
+          "resource-id": "com.audials:id/StationListItemAdditionalInfo",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            260,
+            2157,
+            1254,
+            2206
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "BigR - Country Gold",
+          "resource-id": "com.audials:id/StationListItemName",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            260,
+            2084,
+            1254,
+            2157
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.audials:id/StationListItemCanCutLogo",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1254,
+            2098,
+            1356,
+            2136
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "national_flag",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.audials:id/StationListItemCountryFlag",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1356,
+            2096,
+            1398,
+            2136
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        2050,
+        1440,
+        2285
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.audials:id/clickContainer",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.audials:id/StationListItemLogo",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            60,
+            2286,
+            221,
+            2392
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "0:53",
+          "resource-id": "com.audials:id/StationListItemTime",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1316,
+            2371,
+            1398,
+            2392
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "181.FM Christmas Highway",
+          "resource-id": "com.audials:id/StationListItemName",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            260,
+            2319,
+            1254,
+            2392
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.audials:id/StationListItemCanCutLogo",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1254,
+            2333,
+            1356,
+            2371
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "national_flag",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.audials:id/StationListItemCountryFlag",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1356,
+            2331,
+            1398,
+            2371
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        2285,
+        1440,
+        2392
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.audials:id/enjoy_radio_tab",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        69,
+        264,
+        201,
+        390
+      ],
+      "componentLabel": "Text Button",
+      "text": "Listen"
+    },
+    {
+      "resource-id": "com.audials:id/streaming_radio_tab",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        340,
+        264,
+        495,
+        390
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "history"
+    },
+    {
+      "resource-id": "com.audials:id/related_radio_tab",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        635,
+        264,
+        787,
+        390
+      ],
+      "componentLabel": "Text Button",
+      "text": "Similar"
+    },
+    {
+      "resource-id": "com.audials:id/zapping_radio_bar",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        1190,
+        264,
+        1370,
+        390
+      ],
+      "componentLabel": "Text Button",
+      "text": "Zapping"
+    },
+    {
+      "text": "News",
+      "resource-id": "com.audials:id/tab_text",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        927,
+        285,
+        1050,
+        351
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

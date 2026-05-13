@@ -1,0 +1,333 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "android:id/action_bar_container",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "clickable": false,
+          "children": [
+            {
+              "iconClass": "arrow_backward",
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "android:id/up",
+              "clickable": false,
+              "class": "android.widget.ImageView",
+              "bounds": [
+                0,
+                140,
+                56,
+                196
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.android.internal.widget.ActionBarView$HomeView",
+          "bounds": [
+            0,
+            84,
+            56,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "help",
+          "resource-id": "com.unionbank.ecommerce.mobile.android:id/depositchecks_menu_item_help",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.android.internal.view.menu.ActionMenuItemView",
+          "bounds": [
+            1244,
+            84,
+            1440,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Deposit a Check",
+          "resource-id": "android:id/action_bar_title",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            56,
+            125,
+            509,
+            210
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.android.internal.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        252
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "RESET",
+      "resource-id": "com.unionbank.ecommerce.mobile.android:id/depositchecks_reset_btn",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.unionbank.androidui.view.FontReplaceButton",
+      "bounds": [
+        28,
+        2196,
+        692,
+        2364
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "default"
+    },
+    {
+      "text": "CONFIRM",
+      "resource-id": "com.unionbank.ecommerce.mobile.android:id/depositchecks_confirm_btn",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.unionbank.androidui.view.FontReplaceButton",
+      "bounds": [
+        748,
+        2196,
+        1412,
+        2364
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "agree"
+    },
+    {
+      "text": "You are near the mobile check deposit limit for a 30-day period. You have 1 deposit left for this period. Your remaining deposit limits are $100 for today and $200 for this period",
+      "resource-id": "com.unionbank.ecommerce.mobile.android:id/personalWarningsMessage",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.unionbank.androidui.view.FontReplaceTextView",
+      "bounds": [
+        28,
+        252,
+        1412,
+        435
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "com.unionbank.ecommerce.mobile.android:id/enterAmountElement",
+      "children": [
+        {
+          "text": "Amount",
+          "resource-id": "com.unionbank.ecommerce.mobile.android:id/common_input_element_label_txt",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.unionbank.androidui.view.FontReplaceTextView",
+          "bounds": [
+            28,
+            714,
+            245,
+            780
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "",
+          "resource-id": "com.unionbank.ecommerce.mobile.android:id/common_input_element_edit_text",
+          "ancestors": [
+            "com.unionbank.androidui.view.FontReplaceEditText",
+            "android.widget.EditText",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.unionbank.androidui.view.CustomEditTextWithBackEvent",
+          "bounds": [
+            28,
+            663,
+            1412,
+            831
+          ],
+          "componentLabel": "Input"
+        },
+        {
+          "text": "$46,190.32 Remaining Limit",
+          "resource-id": "com.unionbank.ecommerce.mobile.android:id/common_input_element_subscript_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.unionbank.androidui.view.FontReplaceTextView",
+          "bounds": [
+            837,
+            746,
+            1412,
+            831
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.unionbank.m.android.ui.common.CommonInputLabelEditText",
+      "bounds": [
+        28,
+        635,
+        1412,
+        831
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Reminder: Deposits made before 9 PM PT will generally be available the next business day. Holds may apply until the 2nd business day after the deposit. We will notify you if a hold is placed.",
+      "resource-id": "com.unionbank.ecommerce.mobile.android:id/deposit_checks_reminder_tip",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.unionbank.androidui.view.FontReplaceTextView",
+      "bounds": [
+        28,
+        873,
+        1412,
+        1056
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Deposit To",
+      "resource-id": "com.unionbank.ecommerce.mobile.android:id/common_input_element_label_txt",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.unionbank.androidui.view.FontReplaceTextView",
+      "bounds": [
+        28,
+        481,
+        349,
+        613
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "arrow_forward",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.unionbank.ecommerce.mobile.android:id/common_input_element_chevron",
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        1370,
+        519,
+        1412,
+        575
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "$3,776.58",
+      "resource-id": "com.unionbank.ecommerce.mobile.android:id/common_account_value_amount",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.unionbank.androidui.view.FontReplaceTextView",
+      "bounds": [
+        1183,
+        547,
+        1370,
+        613
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Primary Checking · 9294",
+      "resource-id": "com.unionbank.ecommerce.mobile.android:id/common_input_element_value_txt",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.unionbank.androidui.view.FontReplaceTextView",
+      "bounds": [
+        830,
+        481,
+        1370,
+        547
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

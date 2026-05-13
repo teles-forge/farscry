@@ -1,0 +1,122 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    80,
+    84,
+    1360,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        80,
+        84,
+        1360,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "android:id/titleDivider",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            135,
+            337,
+            1312,
+            341
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "info",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "android:id/icon",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            170,
+            172,
+            317,
+            305
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "OpenVPN Change Log",
+          "resource-id": "android:id/alertTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.android.internal.widget.DialogTitle",
+          "bounds": [
+            317,
+            187,
+            1277,
+            290
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "OK",
+          "resource-id": "android:id/button3",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.Button",
+          "bounds": [
+            432,
+            2150,
+            1014,
+            2318
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "ok"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "0.4.14\n- Fix a possible NullPointerException in EnterUserPassword.\n- Add VIBRATE permission because app fails on some android 2.3.7 and 4.0.4 devices.\n- Fix VerifyError on Android 1.5.\n0.4.13\n- Major refactoring of code base to prepare for a public service API, Android 4.0, alternative GUIs, etc.\n- Now opens password dialog right away, when OpenVPN Settings is in front\n- issue #150 Drop feature 'Run multiple daemons at a time' in favor for a simpler service API.\n- issue #10 Remember password in the prompt.\n0.4.12\n- issue #135 /sbin/busybox is not detected\n0.4.11\n- Check prerequisites and tell user what is missing.\n- Change license to GPLv3.\n0.4.10\n- issue #108 Username and password input fields are multi-line enabled.\n- issue #115 Crash when more than 2GB data has been transfered.\n- issue #70 Repeating notifications when connecting / connected.\n- issue #112 \tNPE in Shell.joinLoggers.\n0.4.9\n- issue #4 Display logging to user.\n- issue #105 Add \"--verb 3\" to command line when launching a connection\n- issue #41 Add a function to collect tun.ko modules\n- issue #106 Add android.permission.WRITE_EXTERNAL_STORAGE permission to edit config files\n0.4.8\n- Make OpenVPN Settings available to more devices.\n- Update launcher icon.\n- issue #47 Tunnel typo in config description on main screen\n- issue #103 \tEnable small and large screen sizes\n- Revert background to black. Change was unintentional.\n0.4.7\n- Display ads to support development. Ads may be turned of in advanced menu.\n- issue #42 UnknownHostException: InetAddress.getLocalHost()\n- issue #19: Allow configs to be stored in subdirectories.\n- Show a 'restart required' dialog, after changes to config file or properties.\n- Make the config name customizeable. - issue #35: Option to fix routing on new HTC Roms (Froyo). If this bug applys to you then choose Menu -> Advanced -> Fix HTC Routes.\n- Fixed a force close when a tunnel was started before the first network connection was established (crash report via market).\n0.4.6\n- Spawn openvpn process in a different way to support more android mods\n0.4.5\n- issue #5: auth-user-pass with multiple tunnels fails randomly\n- Fixed a 'Force close' when su is not available (crash report via market).\n- Fixed a 'Force close' when openvpn binary is not installed (crash report via market).\n0.4.4\n- issue #17: Make path to tun.ko a configuration parameter\n- issue #18: Fixed cannot allocate TUN/TAP dev dynamically\n- issue #16: Fixed Occasional Force Close when saving client config file\n- VPN DNS now defaults to 'No DNS server'\n- Fixed an issue where a command sent to the shell could get lost\n- Display change log when update is detected\n0.4.3\nPlease view change sets in repository for this and earlier versions.\n",
+          "bounds": [
+            135,
+            359,
+            1312,
+            2118
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Modal"
+    }
+  ]
+}

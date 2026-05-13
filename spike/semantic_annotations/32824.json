@@ -1,0 +1,1133 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.opera.android:id/top_toolbar_container",
+      "children": [
+        {
+          "text": "",
+          "resource-id": "com.opera.android:id/url_field",
+          "ancestors": [
+            "com.opera.android.custom_views.ObservableEditText",
+            "com.opera.android.custom_views.TextDirectionEditText",
+            "android.widget.EditText",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.opera.android.UrlField",
+          "bounds": [
+            137,
+            243,
+            1285,
+            373
+          ],
+          "componentLabel": "Input"
+        },
+        {
+          "iconClass": "refresh",
+          "ancestors": [
+            "com.opera.android.custom_views.StylingImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.opera.android:id/mode_button",
+          "clickable": true,
+          "class": "com.opera.android.custom_views.StylingImageButton",
+          "bounds": [
+            1285,
+            243,
+            1422,
+            373
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "WEB",
+          "bounds": [
+            14,
+            84,
+            200,
+            221
+          ],
+          "clickable": true,
+          "class": "fsf",
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "APPS",
+          "bounds": [
+            200,
+            84,
+            411,
+            221
+          ],
+          "clickable": true,
+          "class": "fsf",
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "IMAGES",
+          "bounds": [
+            411,
+            84,
+            676,
+            221
+          ],
+          "clickable": true,
+          "class": "fsf",
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "SHOPPING",
+          "bounds": [
+            676,
+            84,
+            1005,
+            221
+          ],
+          "clickable": true,
+          "class": "fsf",
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "VIDEO",
+          "bounds": [
+            1005,
+            84,
+            1229,
+            221
+          ],
+          "clickable": true,
+          "class": "fsf",
+          "componentLabel": "Text Button",
+          "textButtonClass": "video"
+        },
+        {
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "NEWS",
+          "bounds": [
+            1229,
+            84,
+            1440,
+            221
+          ],
+          "clickable": true,
+          "class": "fsf",
+          "componentLabel": "Text Button",
+          "textButtonClass": "news"
+        },
+        {
+          "ancestors": [
+            "com.opera.android.custom_views.StylingImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.opera.android:id/search_engine_button",
+          "clickable": true,
+          "class": "com.opera.android.bar.OmniSearchButton",
+          "bounds": [
+            18,
+            243,
+            155,
+            373
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.opera.android.bar.TopToolbarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        396
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "iconClass": "arrow_backward",
+      "ancestors": [
+        "com.opera.android.custom_views.PrivateStateButton",
+        "com.opera.android.custom_views.StylingImageButton",
+        "com.opera.android.custom_views.StylingImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.opera.android:id/bottom_navigation_bar_back_button",
+      "clickable": true,
+      "class": "com.opera.android.custom_views.OrientationButton",
+      "bounds": [
+        0,
+        2235,
+        288,
+        2392
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "arrow_forward",
+      "ancestors": [
+        "com.opera.android.custom_views.PrivateStateButton",
+        "com.opera.android.custom_views.StylingImageButton",
+        "com.opera.android.custom_views.StylingImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.opera.android:id/bottom_navigation_bar_forward_button",
+      "clickable": true,
+      "class": "com.opera.android.custom_views.OrientationButton",
+      "bounds": [
+        288,
+        2235,
+        576,
+        2392
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "home",
+      "ancestors": [
+        "com.opera.android.custom_views.PrivateStateButton",
+        "com.opera.android.custom_views.StylingImageButton",
+        "com.opera.android.custom_views.StylingImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.opera.android:id/bottom_navigation_bar_favorites_button",
+      "clickable": true,
+      "class": "com.opera.android.custom_views.OrientationButton",
+      "bounds": [
+        576,
+        2235,
+        864,
+        2392
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "copy",
+      "ancestors": [
+        "com.opera.android.custom_views.OrientationButton",
+        "com.opera.android.custom_views.PrivateStateButton",
+        "com.opera.android.custom_views.StylingImageButton",
+        "com.opera.android.custom_views.StylingImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.opera.android:id/bottom_navigation_bar_tab_count_button",
+      "clickable": true,
+      "class": "com.opera.android.custom_views.TabCountButton",
+      "bounds": [
+        864,
+        2235,
+        1152,
+        2392
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "com.opera.android.custom_views.PrivateStateButton",
+        "com.opera.android.custom_views.StylingImageButton",
+        "com.opera.android.custom_views.StylingImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.opera.android:id/bottom_navigation_bar_opera_menu_button",
+      "clickable": true,
+      "class": "com.opera.android.custom_views.OrientationButton",
+      "bounds": [
+        1152,
+        2235,
+        1440,
+        2392
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        1345,
+        940,
+        1384,
+        1003
+      ],
+      "clickable": false,
+      "class": "com.opera.android.custom_views.StylingImageView",
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "eag",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "Data savings",
+      "bounds": [
+        806,
+        898,
+        1317,
+        979
+      ],
+      "clickable": false,
+      "class": "com.opera.android.custom_views.StylingTextView",
+      "componentLabel": "Text"
+    },
+    {
+      "text": "0.00 B saved",
+      "resource-id": "com.opera.android:id/data_savings_details",
+      "ancestors": [
+        "eag",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.opera.android.custom_views.StylingTextView",
+      "bounds": [
+        806,
+        979,
+        1317,
+        1045
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.opera.android:id/opera_menu_adblock_icon",
+      "clickable": false,
+      "class": "com.opera.android.custom_views.StylingImageView",
+      "bounds": [
+        509,
+        1122,
+        691,
+        1304
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "resource-id": "com.opera.android:id/menu_night_mode",
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.opera.android.custom_views.LayoutDirectionLinearLayout",
+      "bounds": [
+        509,
+        1308,
+        1440,
+        1490
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "night mode"
+    },
+    {
+      "resource-id": "com.opera.android:id/menu_history",
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.opera.android.custom_views.LayoutDirectionLinearLayout",
+      "bounds": [
+        509,
+        1494,
+        1440,
+        1676
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "history"
+    },
+    {
+      "resource-id": "com.opera.android:id/menu_settings",
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.opera.android.custom_views.LayoutDirectionLinearLayout",
+      "bounds": [
+        509,
+        1866,
+        1440,
+        2048
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "settings"
+    },
+    {
+      "resource-id": "com.opera.android:id/menu_exit",
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.opera.android.custom_views.LayoutDirectionLinearLayout",
+      "bounds": [
+        509,
+        2052,
+        1440,
+        2234
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "close"
+    },
+    {
+      "ancestors": [
+        "eag",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "Ad blocking",
+      "bounds": [
+        691,
+        1144,
+        1440,
+        1225
+      ],
+      "clickable": false,
+      "class": "com.opera.android.custom_views.StylingTextView",
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Disabled",
+      "resource-id": "com.opera.android:id/opera_menu_adblock_text",
+      "ancestors": [
+        "eag",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.opera.android.custom_views.StylingTextView",
+      "bounds": [
+        691,
+        1225,
+        1440,
+        1282
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "file_download",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.opera.android:id/icon",
+      "clickable": false,
+      "class": "com.opera.android.custom_views.StylingImageView",
+      "bounds": [
+        509,
+        1680,
+        691,
+        1862
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Downloads",
+      "resource-id": "com.opera.android:id/text",
+      "ancestors": [
+        "eag",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.opera.android.custom_views.StylingTextView",
+      "bounds": [
+        691,
+        1680,
+        1440,
+        1862
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        0,
+        259,
+        1440,
+        395
+      ],
+      "clickable": false,
+      "class": "eba",
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.opera.android.custom_views.LayoutDirectionRelativeLayout",
+      "bounds": [
+        58,
+        395,
+        1382,
+        584
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "bookmark",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.opera.android:id/icon",
+          "clickable": false,
+          "class": "com.opera.android.custom_views.StylingImageView",
+          "bounds": [
+            58,
+            465,
+            177,
+            584
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Bookmarks",
+          "resource-id": "com.opera.android:id/text",
+          "ancestors": [
+            "com.opera.android.custom_views.StylingTextView",
+            "eag",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.opera.android.custom_views.OrientationTextView",
+          "bounds": [
+            177,
+            468,
+            684,
+            580
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.opera.android:id/icon",
+          "clickable": false,
+          "class": "com.opera.android.custom_views.StylingImageView",
+          "bounds": [
+            755,
+            465,
+            874,
+            584
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Saved pages",
+          "resource-id": "com.opera.android:id/text",
+          "ancestors": [
+            "com.opera.android.custom_views.StylingTextView",
+            "eag",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.opera.android.custom_views.OrientationTextView",
+          "bounds": [
+            874,
+            468,
+            1381,
+            580
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.opera.android:id/grid",
+      "children": [
+        {
+          "text": "Facebook",
+          "resource-id": "com.opera.android:id/favorite",
+          "ancestors": [
+            "ejz",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "ejy",
+          "bounds": [
+            30,
+            622,
+            294,
+            944
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Google",
+          "resource-id": "com.opera.android:id/favorite",
+          "ancestors": [
+            "ejz",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "ejy",
+          "bounds": [
+            309,
+            622,
+            573,
+            944
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Booking.com",
+          "resource-id": "com.opera.android:id/favorite",
+          "ancestors": [
+            "ejz",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "ejy",
+          "bounds": [
+            588,
+            622,
+            852,
+            944
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Amazon",
+          "resource-id": "com.opera.android:id/favorite",
+          "ancestors": [
+            "ejz",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "ejy",
+          "bounds": [
+            867,
+            622,
+            1131,
+            944
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Gmail",
+          "resource-id": "com.opera.android:id/favorite",
+          "ancestors": [
+            "ejz",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "ejy",
+          "bounds": [
+            1146,
+            622,
+            1410,
+            944
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Follow us",
+          "resource-id": "com.opera.android:id/favorite",
+          "ancestors": [
+            "ejz",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "ejy",
+          "bounds": [
+            30,
+            944,
+            294,
+            1266
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "eBay",
+          "resource-id": "com.opera.android:id/favorite",
+          "ancestors": [
+            "ejz",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "ejy",
+          "bounds": [
+            309,
+            944,
+            573,
+            1266
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "YouTube",
+          "resource-id": "com.opera.android:id/favorite",
+          "ancestors": [
+            "ejz",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "ejy",
+          "bounds": [
+            588,
+            944,
+            852,
+            1266
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "BBC News",
+          "resource-id": "com.opera.android:id/favorite",
+          "ancestors": [
+            "ejz",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "ejy",
+          "bounds": [
+            867,
+            944,
+            1131,
+            1266
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "",
+          "resource-id": "com.opera.android:id/grid_plus_item",
+          "ancestors": [
+            "ejx",
+            "ejz",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "ekb",
+          "bounds": [
+            1146,
+            944,
+            1410,
+            1266
+          ],
+          "componentLabel": "Input"
+        }
+      ],
+      "ancestors": [
+        "android.widget.AdapterView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.opera.android.favorites.FavoriteGridView",
+      "bounds": [
+        0,
+        594,
+        1440,
+        1282
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "com.opera.android.custom_views.LayoutDirectionFrameLayout",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.opera.android.custom_views.CardView",
+      "bounds": [
+        28,
+        1302,
+        1412,
+        1734
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "com.opera.android.recommendations.views.AsyncImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.opera.android:id/recommendation_image",
+          "clickable": false,
+          "class": "com.opera.android.recommendations.views.SizeNotifyingImageView",
+          "bounds": [
+            985,
+            1306,
+            1407,
+            1728
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Top news",
+          "resource-id": "com.opera.android:id/category",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "bounds": [
+            47,
+            1334,
+            283,
+            1399
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "42",
+          "resource-id": "com.opera.android:id/shares",
+          "ancestors": [
+            "eag",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.opera.android.custom_views.StylingTextView",
+          "bounds": [
+            857,
+            1338,
+            957,
+            1395
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "US military defends dropping 'mother of all bombs' on ISIS in Afghanistan",
+          "resource-id": "com.opera.android:id/title",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            61,
+            1413,
+            957,
+            1629
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "1 min. ago",
+          "resource-id": "com.opera.android:id/time_stamp",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            761,
+            1643,
+            957,
+            1700
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "cnn.com",
+          "resource-id": "com.opera.android:id/source_name",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            61,
+            1643,
+            705,
+            1700
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "com.opera.android.custom_views.LayoutDirectionFrameLayout",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.opera.android.custom_views.CardView",
+      "bounds": [
+        28,
+        1754,
+        1412,
+        2186
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "com.opera.android.recommendations.views.AsyncImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.opera.android:id/recommendation_image",
+          "clickable": false,
+          "class": "com.opera.android.recommendations.views.SizeNotifyingImageView",
+          "bounds": [
+            985,
+            1758,
+            1407,
+            2180
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Top news",
+          "resource-id": "com.opera.android:id/category",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "bounds": [
+            47,
+            1786,
+            283,
+            1851
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "42",
+          "resource-id": "com.opera.android:id/shares",
+          "ancestors": [
+            "eag",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.opera.android.custom_views.StylingTextView",
+          "bounds": [
+            857,
+            1790,
+            957,
+            1847
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Bellagio Burns, Forcing Closure of Las Vegas Strip",
+          "resource-id": "com.opera.android:id/title",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            61,
+            1865,
+            957,
+            2081
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "2 min. ago",
+          "resource-id": "com.opera.android:id/time_stamp",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            761,
+            2095,
+            957,
+            2152
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "abcnews.go.com",
+          "resource-id": "com.opera.android:id/source_name",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            61,
+            2095,
+            705,
+            2152
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "com.opera.android.custom_views.LayoutDirectionFrameLayout",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.opera.android.custom_views.CardView",
+      "bounds": [
+        28,
+        2206,
+        1412,
+        2234
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "com.opera.android.recommendations.views.AsyncImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.opera.android:id/recommendation_image",
+          "clickable": false,
+          "class": "com.opera.android.recommendations.views.SizeNotifyingImageView",
+          "bounds": [
+            985,
+            2210,
+            1407,
+            2234
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "componentLabel": "Card"
+    }
+  ]
+}

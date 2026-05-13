@@ -1,0 +1,670 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.cheaptickets:id/sort_filter_button_container",
+      "children": [
+        {
+          "iconClass": "sliders",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.cheaptickets:id/filter_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            510,
+            2255,
+            609,
+            2354
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Sort & Filter",
+          "resource-id": "com.cheaptickets:id/filter_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.expedia.bookings.widget.TextView",
+          "bounds": [
+            637,
+            2266,
+            929,
+            2342
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.expedia.bookings.widget.FilterButtonWithCountWidget",
+      "bounds": [
+        0,
+        2189,
+        1440,
+        2392
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "resource-id": "com.cheaptickets:id/map_view",
+      "children": [
+        {
+          "iconClass": "sliders",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            18,
+            768,
+            228,
+            845
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.google.android.gms.maps.MapView",
+      "bounds": [
+        0,
+        0,
+        1440,
+        1809
+      ],
+      "componentLabel": "Map View"
+    },
+    {
+      "ancestors": [
+        "java.lang.Object"
+      ],
+      "bounds": [
+        0,
+        280,
+        1440,
+        863
+      ],
+      "clickable": true,
+      "class": "android.view.View",
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        863,
+        1440,
+        1017
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Prices average per night • 194 Results",
+          "resource-id": "com.cheaptickets:id/pricing_structure_header",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.expedia.bookings.widget.TextView",
+          "bounds": [
+            0,
+            923,
+            1440,
+            989
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.cheaptickets:id/root",
+      "children": [
+        {
+          "resource-id": "com.cheaptickets:id/card_view",
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.cheaptickets:id/background",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                32,
+                1017,
+                1408,
+                1486
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "2.0",
+              "resource-id": "com.cheaptickets:id/guest_rating",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.expedia.bookings.widget.TextView",
+              "bounds": [
+                81,
+                1529,
+                167,
+                1601
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "of 5 - guest rating",
+              "resource-id": "com.cheaptickets:id/guest_rating_recommended_text",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.expedia.bookings.widget.TextView",
+              "bounds": [
+                181,
+                1541,
+                1190,
+                1588
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.cheaptickets:id/urgency_icon",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                1103,
+                1034,
+                1136,
+                1069
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "1 Room Left!",
+              "resource-id": "com.cheaptickets:id/urgency_message",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.expedia.bookings.widget.TextView",
+              "bounds": [
+                1147,
+                1028,
+                1348,
+                1075
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Tilden Hotel",
+              "resource-id": "com.cheaptickets:id/hotel_name_text_view",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.expedia.bookings.widget.TextView",
+              "bounds": [
+                71,
+                1330,
+                359,
+                1401
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Sponsored",
+              "resource-id": "com.cheaptickets:id/top_amenity_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.expedia.bookings.widget.TextView",
+              "bounds": [
+                1190,
+                1577,
+                1359,
+                1624
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "3 mi",
+              "resource-id": "com.cheaptickets:id/hotel_amenity_or_distance_from_location",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.expedia.bookings.widget.TextView",
+              "bounds": [
+                281,
+                1401,
+                362,
+                1458
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "$319",
+              "resource-id": "com.cheaptickets:id/price_per_night",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.expedia.bookings.widget.TextView",
+              "bounds": [
+                1239,
+                1506,
+                1359,
+                1577
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.CardView",
+          "bounds": [
+            32,
+            1017,
+            1408,
+            1651
+          ],
+          "componentLabel": "Card"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        1017,
+        1440,
+        1693
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.cheaptickets:id/root",
+      "children": [
+        {
+          "resource-id": "com.cheaptickets:id/card_view",
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.cheaptickets:id/background",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                32,
+                1693,
+                1408,
+                2162
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "4.3",
+              "resource-id": "com.cheaptickets:id/guest_rating",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.expedia.bookings.widget.TextView",
+              "bounds": [
+                81,
+                2205,
+                167,
+                2277
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "of 5 - guest rating",
+              "resource-id": "com.cheaptickets:id/guest_rating_recommended_text",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.expedia.bookings.widget.TextView",
+              "bounds": [
+                181,
+                2217,
+                1087,
+                2264
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Becks Motor Lodge",
+              "resource-id": "com.cheaptickets:id/hotel_name_text_view",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.expedia.bookings.widget.TextView",
+              "bounds": [
+                71,
+                2006,
+                530,
+                2077
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Free Cancellation",
+              "resource-id": "com.cheaptickets:id/top_amenity_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.expedia.bookings.widget.TextView",
+              "bounds": [
+                1087,
+                2253,
+                1359,
+                2300
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "1.3 mi",
+              "resource-id": "com.cheaptickets:id/hotel_amenity_or_distance_from_location",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.expedia.bookings.widget.TextView",
+              "bounds": [
+                225,
+                2077,
+                341,
+                2134
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "$234",
+              "resource-id": "com.cheaptickets:id/price_per_night",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.expedia.bookings.widget.TextView",
+              "bounds": [
+                1239,
+                2182,
+                1359,
+                2253
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.CardView",
+          "bounds": [
+            32,
+            1693,
+            1408,
+            2327
+          ],
+          "componentLabel": "Card"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        1693,
+        1440,
+        2369
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.cheaptickets:id/root",
+      "children": [
+        {
+          "resource-id": "com.cheaptickets:id/card_view",
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.cheaptickets:id/background",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                32,
+                2369,
+                1408,
+                2392
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.CardView",
+          "bounds": [
+            32,
+            2369,
+            1408,
+            2392
+          ],
+          "componentLabel": "Card"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        2369,
+        1440,
+        2392
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.cheaptickets:id/hotel_results_toolbar",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "San Francisco (and vicinity)",
+          "resource-id": "com.cheaptickets:id/title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.expedia.bookings.widget.TextView",
+          "bounds": [
+            196,
+            113,
+            974,
+            198
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Dec 13 - Dec 14, 1 Guest",
+          "resource-id": "com.cheaptickets:id/subtitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.expedia.bookings.widget.TextView",
+          "bounds": [
+            196,
+            198,
+            622,
+            251
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "com.cheaptickets:id/menu_open_search",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1272,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        0,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    }
+  ]
+}

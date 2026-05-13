@@ -1,0 +1,601 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "de.pixelhouse:id/toolbar",
+      "children": [
+        {
+          "text": "Apfeltaschen aus Hefeteig",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            210,
+            135,
+            1040,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.design.widget.TabLayout$SlidingTabStrip",
+      "bounds": [
+        0,
+        280,
+        1440,
+        448
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Rezept",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            151,
+            331,
+            329,
+            397
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Kommentare",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            554,
+            331,
+            885,
+            397
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Ähnliche",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1080,
+            331,
+            1319,
+            397
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "ancestors": [
+        "de.pixelhouse.chefkoch.adapterview.RecipeTileView",
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "de.pixelhouse.chefkoch.adapterview.RecipeTileView_",
+      "bounds": [
+        56,
+        504,
+        702,
+        1212
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Bratapfel-Kuchen",
+          "resource-id": "de.pixelhouse:id/recipe_tile_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            64,
+            927,
+            694,
+            1095
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "de.pixelhouse.chefkoch.view.NetworkImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "de.pixelhouse:id/recipe_tile_image",
+          "clickable": false,
+          "class": "de.pixelhouse.chefkoch.view.FadingNetworkImageView",
+          "bounds": [
+            64,
+            512,
+            694,
+            927
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "favorite",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "de.pixelhouse:id/recipe_tile_favorite",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            560,
+            512,
+            666,
+            638
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "play",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "de.pixelhouse:id/recipe_tile_video",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            92,
+            512,
+            225,
+            645
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "de.pixelhouse.chefkoch.adapterview.RecipeTileView",
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "de.pixelhouse.chefkoch.adapterview.RecipeTileView_",
+      "bounds": [
+        737,
+        504,
+        1383,
+        1212
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Apfeltaschen - Apple Dumplings",
+          "resource-id": "de.pixelhouse:id/recipe_tile_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            745,
+            927,
+            1375,
+            1095
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "de.pixelhouse.chefkoch.view.NetworkImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "de.pixelhouse:id/recipe_tile_image",
+          "clickable": false,
+          "class": "de.pixelhouse.chefkoch.view.FadingNetworkImageView",
+          "bounds": [
+            745,
+            512,
+            1375,
+            927
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "de.pixelhouse:id/recipe_tile_favorite",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1241,
+            512,
+            1347,
+            638
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "play",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "de.pixelhouse:id/recipe_tile_video",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            773,
+            512,
+            906,
+            645
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "de.pixelhouse.chefkoch.adapterview.RecipeTileView",
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "de.pixelhouse.chefkoch.adapterview.RecipeTileView_",
+      "bounds": [
+        56,
+        1247,
+        702,
+        1955
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Nuss - Potica",
+          "resource-id": "de.pixelhouse:id/recipe_tile_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            64,
+            1670,
+            694,
+            1838
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "de.pixelhouse.chefkoch.view.NetworkImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "de.pixelhouse:id/recipe_tile_image",
+          "clickable": false,
+          "class": "de.pixelhouse.chefkoch.view.FadingNetworkImageView",
+          "bounds": [
+            64,
+            1255,
+            694,
+            1670
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "favorite",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "de.pixelhouse:id/recipe_tile_favorite",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            560,
+            1255,
+            666,
+            1381
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "de.pixelhouse.chefkoch.adapterview.RecipeTileView",
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "de.pixelhouse.chefkoch.adapterview.RecipeTileView_",
+      "bounds": [
+        737,
+        1247,
+        1383,
+        1955
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Karamellisierter Apfelschmarrn mit Walnüssen",
+          "resource-id": "de.pixelhouse:id/recipe_tile_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            745,
+            1670,
+            1375,
+            1838
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "de.pixelhouse.chefkoch.view.NetworkImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "de.pixelhouse:id/recipe_tile_image",
+          "clickable": false,
+          "class": "de.pixelhouse.chefkoch.view.FadingNetworkImageView",
+          "bounds": [
+            745,
+            1255,
+            1375,
+            1670
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "favorite",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "de.pixelhouse:id/recipe_tile_favorite",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1241,
+            1255,
+            1347,
+            1381
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "de.pixelhouse.chefkoch.adapterview.RecipeTileView",
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "de.pixelhouse.chefkoch.adapterview.RecipeTileView_",
+      "bounds": [
+        56,
+        1990,
+        702,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "de.pixelhouse.chefkoch.view.NetworkImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "de.pixelhouse:id/recipe_tile_image",
+          "clickable": false,
+          "class": "de.pixelhouse.chefkoch.view.FadingNetworkImageView",
+          "bounds": [
+            64,
+            1998,
+            694,
+            2392
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "favorite",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "de.pixelhouse:id/recipe_tile_favorite",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            560,
+            1998,
+            666,
+            2124
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "de.pixelhouse.chefkoch.adapterview.RecipeTileView",
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "de.pixelhouse.chefkoch.adapterview.RecipeTileView_",
+      "bounds": [
+        737,
+        1990,
+        1383,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "de.pixelhouse.chefkoch.view.NetworkImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "de.pixelhouse:id/recipe_tile_image",
+          "clickable": false,
+          "class": "de.pixelhouse.chefkoch.view.FadingNetworkImageView",
+          "bounds": [
+            745,
+            1998,
+            1375,
+            2392
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "favorite",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "de.pixelhouse:id/recipe_tile_favorite",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1241,
+            1998,
+            1347,
+            2124
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

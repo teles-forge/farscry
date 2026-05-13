@@ -1,0 +1,506 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.gilt.android:id/toolbar",
+      "children": [
+        {
+          "text": "Stain Shirt Reg Collar Shirt",
+          "resource-id": "com.gilt.android:id/toolbar_title",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.gilt.android.base.views.CustomFontTextView",
+          "bounds": [
+            252,
+            144,
+            977,
+            220
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "cart",
+          "resource-id": "com.gilt.android:id/action_cart",
+          "children": [
+            {
+              "iconClass": "cart",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.gilt.android:id/toolbar_cart_badge_icon",
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                1293,
+                119,
+                1419,
+                245
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "text": "0",
+              "resource-id": "com.gilt.android:id/toolbar_cart_badge_label",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.gilt.android.base.views.CustomFontTextView",
+              "bounds": [
+                1328,
+                112,
+                1360,
+                175
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.gilt.android.cart.views.ToolbarBadgedCartView",
+          "bounds": [
+            1272,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "Add to Cart",
+      "resource-id": "com.gilt.android:id/fragment_product_cart_button",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.gilt.android.base.views.CustomFontButton",
+      "bounds": [
+        56,
+        2177,
+        1384,
+        2350
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "add"
+    },
+    {
+      "resource-id": "com.gilt.android:id/fragment_product_detail_image_pager",
+      "children": [
+        {
+          "ancestors": [
+            "com.android.volley.toolbox.NetworkImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            280,
+            1440,
+            1400
+          ],
+          "clickable": true,
+          "class": "com.gilt.android.base.views.AnimatedNetworkImageView",
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.support.v4.view.ViewPager",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.gilt.android.product.views.SwipingImageView",
+      "bounds": [
+        0,
+        280,
+        1440,
+        1400
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Ebbe Kids",
+      "resource-id": "com.gilt.android:id/fragment_product_brand",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.gilt.android.base.views.CustomFontTextView",
+      "bounds": [
+        56,
+        1460,
+        1384,
+        1524
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Stain Shirt Reg Collar Shirt",
+      "resource-id": "com.gilt.android:id/fragment_product_name",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.gilt.android.base.views.CustomFontTextView",
+      "bounds": [
+        56,
+        1524,
+        1384,
+        1600
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "$25",
+      "resource-id": "com.gilt.android:id/fragment_product_price",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.gilt.android.base.views.CustomFontTextView",
+      "bounds": [
+        176,
+        1600,
+        301,
+        1696
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "$53",
+      "resource-id": "com.gilt.android:id/fragment_product_msrp",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.gilt.android.base.views.CustomFontTextView",
+      "bounds": [
+        56,
+        1611,
+        162,
+        1693
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.gilt.android.product.views.LookToggleButton",
+      "bounds": [
+        56,
+        1986,
+        210,
+        2140
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "iconClass": "date_range",
+          "ancestors": [
+            "com.android.volley.toolbox.NetworkImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.gilt.android:id/view_product_color_swatch_image",
+          "clickable": false,
+          "class": "com.gilt.android.base.views.AnimatedNetworkImageView",
+          "bounds": [
+            56,
+            1986,
+            210,
+            2140
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.gilt.android.product.views.SizeToggleButton",
+      "bounds": [
+        56,
+        2374,
+        210,
+        2392
+      ],
+      "clickable": true,
+      "componentLabel": "Text Button",
+      "text": "92"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.gilt.android.product.views.SizeToggleButton",
+      "bounds": [
+        235,
+        2374,
+        389,
+        2392
+      ],
+      "clickable": true,
+      "componentLabel": "Text Button",
+      "text": "104"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.gilt.android.product.views.SizeToggleButton",
+      "bounds": [
+        414,
+        2374,
+        568,
+        2392
+      ],
+      "clickable": true,
+      "componentLabel": "Text Button",
+      "text": "110"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.gilt.android.product.views.SizeToggleButton",
+      "bounds": [
+        593,
+        2374,
+        747,
+        2392
+      ],
+      "clickable": true,
+      "componentLabel": "Text Button",
+      "text": "116"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.gilt.android.product.views.SizeToggleButton",
+      "bounds": [
+        772,
+        2374,
+        926,
+        2392
+      ],
+      "clickable": true,
+      "componentLabel": "Text Button",
+      "text": "122"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.gilt.android.product.views.SizeToggleButton",
+      "bounds": [
+        951,
+        2374,
+        1105,
+        2392
+      ],
+      "clickable": true,
+      "componentLabel": "Text Button",
+      "text": "128"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.gilt.android.product.views.SizeToggleButton",
+      "bounds": [
+        1130,
+        2374,
+        1284,
+        2392
+      ],
+      "clickable": true,
+      "componentLabel": "Text Button",
+      "text": "134"
+    },
+    {
+      "text": "Color:",
+      "resource-id": "com.gilt.android:id/view_description_field_label",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.gilt.android.base.views.CustomFontTextView",
+      "bounds": [
+        56,
+        1854,
+        223,
+        1930
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "blue/green check",
+      "resource-id": "com.gilt.android:id/view_description_field_value",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.gilt.android.base.views.CustomFontTextView",
+      "bounds": [
+        223,
+        1854,
+        717,
+        1930
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Size:",
+      "resource-id": "com.gilt.android:id/view_description_field_label",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.gilt.android.base.views.CustomFontTextView",
+      "bounds": [
+        56,
+        2242,
+        190,
+        2318
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "(Select a Size)",
+      "resource-id": "com.gilt.android:id/view_description_field_value",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.gilt.android.base.views.CustomFontTextView",
+      "bounds": [
+        190,
+        2242,
+        584,
+        2318
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

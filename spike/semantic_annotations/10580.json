@@ -1,0 +1,720 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.supersport.android.phone:id/toolbar",
+      "children": [
+        {
+          "text": "Home",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            364,
+            135,
+            553,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            252,
+            126,
+            364,
+            238
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.supersport.android.phone:id/fragment_supersport_tabstrip",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "Match Centre",
+          "bounds": [
+            0,
+            280,
+            480,
+            476
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "Videos",
+          "bounds": [
+            480,
+            280,
+            793,
+            476
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button",
+          "textButtonClass": "video"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "News",
+          "bounds": [
+            793,
+            280,
+            1078,
+            476
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button",
+          "textButtonClass": "news"
+        }
+      ],
+      "ancestors": [
+        "android.widget.HorizontalScrollView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.astuetz.PagerSlidingTabStrip",
+      "bounds": [
+        0,
+        280,
+        1440,
+        476
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        14,
+        490,
+        1426,
+        790
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Cricket: SA Team",
+          "resource-id": "com.supersport.android.phone:id/list_item_news_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            14,
+            490,
+            1426,
+            580
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.supersport.android.phone:id/list_item_news_img",
+          "clickable": false,
+          "class": "com.supersport.android.phone.viewholder.TopCropImageView",
+          "bounds": [
+            14,
+            580,
+            294,
+            790
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Dunedin test venue evacuated ",
+          "resource-id": "com.supersport.android.phone:id/list_item_news_headline",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            294,
+            580,
+            1426,
+            713
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Thu, 09 Mar 2017 | 20:34",
+          "resource-id": "com.supersport.android.phone:id/list_item_news_date",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            294,
+            727,
+            1426,
+            790
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        14,
+        818,
+        1426,
+        1118
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Cricket: SA Team",
+          "resource-id": "com.supersport.android.phone:id/list_item_news_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            14,
+            818,
+            1426,
+            908
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.supersport.android.phone:id/list_item_news_img",
+          "clickable": false,
+          "class": "com.supersport.android.phone.viewholder.TopCropImageView",
+          "bounds": [
+            14,
+            908,
+            294,
+            1118
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "LIVE: NZ v SA, 1st Test Day 3",
+          "resource-id": "com.supersport.android.phone:id/list_item_news_headline",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            294,
+            908,
+            1426,
+            1041
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Thu, 09 Mar 2017 | 13:31",
+          "resource-id": "com.supersport.android.phone:id/list_item_news_date",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            294,
+            1055,
+            1426,
+            1118
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        14,
+        1146,
+        1426,
+        1446
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Football: U20 Afcon",
+          "resource-id": "com.supersport.android.phone:id/list_item_news_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            14,
+            1146,
+            1426,
+            1236
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.supersport.android.phone:id/list_item_news_img",
+          "clickable": false,
+          "class": "com.supersport.android.phone.viewholder.TopCropImageView",
+          "bounds": [
+            14,
+            1236,
+            294,
+            1446
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Senegal grind out U20 Afcon semis win",
+          "resource-id": "com.supersport.android.phone:id/list_item_news_headline",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            294,
+            1236,
+            1426,
+            1369
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Thu, 09 Mar 2017 | 11:40",
+          "resource-id": "com.supersport.android.phone:id/list_item_news_date",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            294,
+            1383,
+            1426,
+            1446
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        14,
+        1474,
+        1426,
+        1774
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Football: Nigeria",
+          "resource-id": "com.supersport.android.phone:id/list_item_news_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            14,
+            1474,
+            1426,
+            1564
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.supersport.android.phone:id/list_item_news_img",
+          "clickable": false,
+          "class": "com.supersport.android.phone.viewholder.TopCropImageView",
+          "bounds": [
+            14,
+            1564,
+            294,
+            1774
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Tornadoes duo want Warriors’ scalp",
+          "resource-id": "com.supersport.android.phone:id/list_item_news_headline",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            294,
+            1564,
+            1426,
+            1697
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Thu, 09 Mar 2017 | 09:34",
+          "resource-id": "com.supersport.android.phone:id/list_item_news_date",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            294,
+            1711,
+            1426,
+            1774
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        14,
+        1802,
+        1426,
+        2102
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Football: Nigeria",
+          "resource-id": "com.supersport.android.phone:id/list_item_news_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            14,
+            1802,
+            1426,
+            1892
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.supersport.android.phone:id/list_item_news_img",
+          "clickable": false,
+          "class": "com.supersport.android.phone.viewholder.TopCropImageView",
+          "bounds": [
+            14,
+            1892,
+            294,
+            2102
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "‘Pillars at their NPFL best’",
+          "resource-id": "com.supersport.android.phone:id/list_item_news_headline",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            294,
+            1892,
+            1426,
+            2025
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Thu, 09 Mar 2017 | 08:21",
+          "resource-id": "com.supersport.android.phone:id/list_item_news_date",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            294,
+            2039,
+            1426,
+            2102
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        14,
+        2130,
+        1426,
+        2217
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Cricket: International",
+          "resource-id": "com.supersport.android.phone:id/list_item_news_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            14,
+            2130,
+            1426,
+            2217
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "com.google.android.gms.ads.BaseAdView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.google.android.gms.ads.AdView",
+      "bounds": [
+        160,
+        2217,
+        1280,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.google.android.gms.ads.internal.webview.n",
+          "bounds": [
+            160,
+            2217,
+            1280,
+            2392
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.webkit.WebView",
+                "android.widget.AbsoluteLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                160,
+                2217,
+                1280,
+                2392
+              ],
+              "clickable": true,
+              "class": "com.google.android.gms.ads.internal.webview.o",
+              "componentLabel": "Web View"
+            }
+          ],
+          "componentLabel": "Web View"
+        }
+      ],
+      "componentLabel": "Advertisement"
+    }
+  ]
+}

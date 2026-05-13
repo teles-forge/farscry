@@ -1,0 +1,463 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.facebook.katana:id/titlebar",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "com.facebook.widget.FbImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.facebook.katana:id/fb_logo_up_button",
+          "clickable": true,
+          "class": "com.facebook.fbui.glyph.GlyphView",
+          "bounds": [
+            0,
+            84,
+            196,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Add Friends",
+          "resource-id": "com.facebook.katana:id/title",
+          "ancestors": [
+            "X.0wN",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.facebook.resources.ui.FbTextView",
+          "bounds": [
+            196,
+            84,
+            1171,
+            252
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Next",
+          "resource-id": "com.facebook.katana:id/primary_named_button",
+          "ancestors": [
+            "com.facebook.fbui.widget.text.ImageWithTextView",
+            "com.facebook.widget.text.BetterTextView",
+            "com.facebook.resources.ui.FbTextView",
+            "X.0wN",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.facebook.fbui.widget.text.GlyphWithTextView",
+          "bounds": [
+            1227,
+            84,
+            1440,
+            252
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "next"
+        }
+      ],
+      "ancestors": [
+        "com.facebook.widget.CustomLinearLayout",
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.facebook.ui.titlebar.Fb4aTitleBar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        252
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "iconClass": "search",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        42,
+        301,
+        91,
+        350
+      ],
+      "clickable": false,
+      "class": "com.facebook.widget.FbImageView",
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "",
+      "resource-id": "com.facebook.katana:id/friend_finder_search_text",
+      "ancestors": [
+        "com.facebook.widget.text.BetterEditTextView",
+        "com.facebook.resources.ui.FbEditText",
+        "X.0zk",
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.facebook.ui.search.SearchEditText",
+      "bounds": [
+        133,
+        252,
+        1440,
+        399
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "CONTACTS",
+      "ancestors": [
+        "com.facebook.resources.ui.FbTextView",
+        "X.0wN",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.facebook.widget.text.BetterTextView",
+      "bounds": [
+        0,
+        399,
+        1440,
+        554
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "com.facebook.fbui.widget.contentview.ContentViewWithButton",
+        "com.facebook.fbui.widget.contentview.ContentView",
+        "com.facebook.fbui.widget.layout.ImageBlockLayout",
+        "com.facebook.fbui.widget.layout.ViewGroupWithDraweeView",
+        "com.facebook.widget.CustomViewGroup",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.facebook.friending.common.list.FriendListItemView",
+      "bounds": [
+        0,
+        555,
+        1440,
+        919
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "CANCEL",
+          "resource-id": "com.facebook.katana:id/friending_button",
+          "ancestors": [
+            "com.facebook.fbui.widget.text.ImageWithTextView",
+            "com.facebook.widget.text.BetterTextView",
+            "com.facebook.resources.ui.FbTextView",
+            "X.0wN",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.facebook.friends.ui.SmartButtonLite",
+          "bounds": [
+            964,
+            674,
+            1384,
+            800
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "back"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "X.0wN",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "MANAGE IMPORTED CONTACTS",
+      "bounds": [
+        0,
+        920,
+        1440,
+        999
+      ],
+      "clickable": true,
+      "class": "com.facebook.resources.ui.FbTextView",
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "PEOPLE YOU MAY KNOW",
+      "ancestors": [
+        "com.facebook.resources.ui.FbTextView",
+        "X.0wN",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.facebook.widget.text.BetterTextView",
+      "bounds": [
+        0,
+        1000,
+        1440,
+        1155
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "com.facebook.fbui.widget.contentview.ContentView",
+        "com.facebook.fbui.widget.layout.ImageBlockLayout",
+        "com.facebook.fbui.widget.layout.ViewGroupWithDraweeView",
+        "com.facebook.widget.CustomViewGroup",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.facebook.friending.common.list.FriendRequestItemView",
+      "bounds": [
+        0,
+        1156,
+        1440,
+        1520
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "ADD FRIEND",
+          "resource-id": "com.facebook.katana:id/friend_request_positive_button",
+          "ancestors": [
+            "com.facebook.fbui.widget.text.ImageWithTextView",
+            "com.facebook.widget.text.BetterTextView",
+            "com.facebook.resources.ui.FbTextView",
+            "X.0wN",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.facebook.friends.ui.SmartButtonLite",
+          "bounds": [
+            392,
+            1318,
+            874,
+            1440
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "REMOVE",
+          "resource-id": "com.facebook.katana:id/friend_request_negative_button",
+          "ancestors": [
+            "com.facebook.fbui.widget.text.ImageWithTextView",
+            "com.facebook.widget.text.BetterTextView",
+            "com.facebook.resources.ui.FbTextView",
+            "X.0wN",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.facebook.friends.ui.SmartButtonLite",
+          "bounds": [
+            902,
+            1318,
+            1384,
+            1440
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "delete"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "com.facebook.fbui.widget.contentview.ContentView",
+        "com.facebook.fbui.widget.layout.ImageBlockLayout",
+        "com.facebook.fbui.widget.layout.ViewGroupWithDraweeView",
+        "com.facebook.widget.CustomViewGroup",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.facebook.friending.common.list.FriendRequestItemView",
+      "bounds": [
+        0,
+        1521,
+        1440,
+        1885
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "ADD FRIEND",
+          "resource-id": "com.facebook.katana:id/friend_request_positive_button",
+          "ancestors": [
+            "com.facebook.fbui.widget.text.ImageWithTextView",
+            "com.facebook.widget.text.BetterTextView",
+            "com.facebook.resources.ui.FbTextView",
+            "X.0wN",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.facebook.friends.ui.SmartButtonLite",
+          "bounds": [
+            392,
+            1683,
+            874,
+            1805
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "REMOVE",
+          "resource-id": "com.facebook.katana:id/friend_request_negative_button",
+          "ancestors": [
+            "com.facebook.fbui.widget.text.ImageWithTextView",
+            "com.facebook.widget.text.BetterTextView",
+            "com.facebook.resources.ui.FbTextView",
+            "X.0wN",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.facebook.friends.ui.SmartButtonLite",
+          "bounds": [
+            902,
+            1683,
+            1384,
+            1805
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "delete"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "com.facebook.fbui.widget.contentview.ContentView",
+        "com.facebook.fbui.widget.layout.ImageBlockLayout",
+        "com.facebook.fbui.widget.layout.ViewGroupWithDraweeView",
+        "com.facebook.widget.CustomViewGroup",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.facebook.friending.common.list.FriendRequestItemView",
+      "bounds": [
+        0,
+        1886,
+        1440,
+        2250
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "ADD FRIEND",
+          "resource-id": "com.facebook.katana:id/friend_request_positive_button",
+          "ancestors": [
+            "com.facebook.fbui.widget.text.ImageWithTextView",
+            "com.facebook.widget.text.BetterTextView",
+            "com.facebook.resources.ui.FbTextView",
+            "X.0wN",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.facebook.friends.ui.SmartButtonLite",
+          "bounds": [
+            392,
+            2048,
+            874,
+            2170
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "REMOVE",
+          "resource-id": "com.facebook.katana:id/friend_request_negative_button",
+          "ancestors": [
+            "com.facebook.fbui.widget.text.ImageWithTextView",
+            "com.facebook.widget.text.BetterTextView",
+            "com.facebook.resources.ui.FbTextView",
+            "X.0wN",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.facebook.friends.ui.SmartButtonLite",
+          "bounds": [
+            902,
+            2048,
+            1384,
+            2170
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "delete"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "com.facebook.fbui.widget.contentview.ContentView",
+        "com.facebook.fbui.widget.layout.ImageBlockLayout",
+        "com.facebook.fbui.widget.layout.ViewGroupWithDraweeView",
+        "com.facebook.widget.CustomViewGroup",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.facebook.friending.common.list.FriendRequestItemView",
+      "bounds": [
+        0,
+        2251,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [],
+      "componentLabel": "List Item"
+    }
+  ]
+}

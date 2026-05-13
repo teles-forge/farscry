@@ -1,0 +1,308 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "android:id/action_bar_container",
+      "children": [
+        {
+          "iconClass": "network_wifi",
+          "clickable": false,
+          "children": [
+            {
+              "iconClass": "network_wifi",
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "android:id/home",
+              "clickable": false,
+              "class": "android.widget.ImageView",
+              "bounds": [
+                71,
+                112,
+                211,
+                224
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.android.internal.widget.ActionBarView$HomeView",
+          "bounds": [
+            57,
+            84,
+            225,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "power",
+          "resource-id": "io.wifimap.wifimap:id/menu_scan",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.android.internal.view.menu.ActionMenuItemView",
+          "bounds": [
+            852,
+            84,
+            1048,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "refresh",
+          "resource-id": "io.wifimap.wifimap:id/menu_update",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.android.internal.view.menu.ActionMenuItemView",
+          "bounds": [
+            1048,
+            84,
+            1244,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "io.wifimap.wifimap:id/menu_search",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.android.internal.view.menu.ActionMenuItemView",
+          "bounds": [
+            1244,
+            84,
+            1440,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "WiFi Map",
+          "resource-id": "android:id/action_bar_title",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            225,
+            114,
+            562,
+            222
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.android.internal.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        252
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "io.wifimap.wifimap:id/tab_strip",
+      "children": [
+        {
+          "iconClass": "location",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "io.wifimap.wifimap:id/tab_icon",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            103,
+            263,
+            256,
+            408
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "group",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "io.wifimap.wifimap:id/tab_icon",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            452,
+            266,
+            628,
+            406
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "io.wifimap.wifimap:id/tab_icon",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            823,
+            263,
+            976,
+            408
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "settings",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "io.wifimap.wifimap:id/tab_icon",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1183,
+            263,
+            1336,
+            408
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.HorizontalScrollView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.astuetz.PagerSlidingTabStrip",
+      "bounds": [
+        0,
+        252,
+        1440,
+        420
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "iconClass": "navigation",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "io.wifimap.wifimap:id/my_location_button",
+      "clickable": true,
+      "class": "io.wifimap.wifimap.ui.widgets.MyImageButton",
+      "bounds": [
+        1261,
+        438,
+        1422,
+        599
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "sliders",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "io.wifimap.wifimap:id/show_sort_button",
+      "clickable": true,
+      "class": "io.wifimap.wifimap.ui.widgets.MyImageButton",
+      "bounds": [
+        1261,
+        635,
+        1422,
+        796
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Location is not available. Cannot show nearby WiFi.",
+      "resource-id": "io.wifimap.wifimap:id/message",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        1490,
+        1440,
+        1791
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Enable Location",
+      "resource-id": "io.wifimap.wifimap:id/buttonEnableLocation",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        429,
+        1791,
+        1011,
+        1959
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "enable"
+    }
+  ]
+}

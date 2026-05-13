@@ -1,0 +1,852 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.pinterest:id/actionbar",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.pinterest:id/bar_home",
+          "clickable": true,
+          "class": "com.pinterest.design.brio.widget.IconView",
+          "bounds": [
+            0,
+            103,
+            170,
+            288
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Search your Pins",
+          "resource-id": "com.pinterest:id/search_tv",
+          "ancestors": [
+            "com.pinterest.design.widget.ExtendedTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.pinterest.design.brio.widget.BrioTextView",
+          "bounds": [
+            170,
+            126,
+            1095,
+            266
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "iconClass": "add",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.pinterest:id/menu_create",
+          "clickable": true,
+          "class": "com.pinterest.design.brio.widget.IconView",
+          "bounds": [
+            1109,
+            117,
+            1267,
+            275
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "visibility",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.pinterest:id/menu_settings",
+          "clickable": true,
+          "class": "com.pinterest.design.brio.widget.IconView",
+          "bounds": [
+            1267,
+            117,
+            1425,
+            274
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.pinterest.ui.actionbar.ActionBar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        308
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        720,
+        238,
+        720,
+        238
+      ],
+      "clickable": false,
+      "class": "com.pinterest.design.brio.widget.progress.c",
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        84,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.FrameLayout",
+          "bounds": [
+            0,
+            84,
+            1440,
+            276
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "resource-id": "com.pinterest:id/library_header_pins",
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.widget.LinearLayout",
+              "bounds": [
+                56,
+                84,
+                345,
+                220
+              ],
+              "componentLabel": "Text Button",
+              "text": "1"
+            },
+            {
+              "resource-id": "com.pinterest:id/library_header_likes",
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.widget.LinearLayout",
+              "bounds": [
+                401,
+                84,
+                690,
+                220
+              ],
+              "componentLabel": "Text Button",
+              "textButtonClass": "favorites"
+            },
+            {
+              "resource-id": "com.pinterest:id/library_header_followers",
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.widget.LinearLayout",
+              "bounds": [
+                690,
+                84,
+                980,
+                220
+              ],
+              "componentLabel": "Text Button",
+              "text": "0"
+            },
+            {
+              "resource-id": "com.pinterest:id/library_header_following",
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.widget.LinearLayout",
+              "bounds": [
+                1036,
+                84,
+                1326,
+                220
+              ],
+              "componentLabel": "Text Button",
+              "textButtonClass": "follow"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.pinterest.activity.library.view.BoardSortOptionsView",
+          "bounds": [
+            0,
+            276,
+            1440,
+            467
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "text": "Sort by Most recent",
+              "resource-id": "com.pinterest:id/sortOrderText",
+              "ancestors": [
+                "com.pinterest.design.widget.ExtendedTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.pinterest.design.brio.widget.BrioTextView",
+              "bounds": [
+                56,
+                304,
+                474,
+                355
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "iconClass": "expand_more",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.pinterest:id/sortOrderArrow",
+              "clickable": false,
+              "class": "com.pinterest.ui.text.IconView",
+              "bounds": [
+                474,
+                321,
+                519,
+                355
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.pinterest.activity.library.view.LibrarySectionView",
+          "bounds": [
+            0,
+            467,
+            1440,
+            1515
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.LinearLayout",
+              "bounds": [
+                56,
+                661,
+                382,
+                1403
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "com.makeramen.RoundedImageView",
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.pinterest:id/pin_iv_1",
+                  "clickable": false,
+                  "class": "com.pinterest.ui.imageview.WebImageView",
+                  "bounds": [
+                    56,
+                    661,
+                    382,
+                    1212
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "ancestors": [
+                    "com.makeramen.RoundedImageView",
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.pinterest:id/pin_iv_5",
+                  "clickable": false,
+                  "class": "com.pinterest.ui.imageview.WebImageView",
+                  "bounds": [
+                    56,
+                    1219,
+                    382,
+                    1403
+                  ],
+                  "componentLabel": "Image"
+                }
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.LinearLayout",
+              "bounds": [
+                389,
+                661,
+                716,
+                1403
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "com.makeramen.RoundedImageView",
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.pinterest:id/pin_iv_2",
+                  "clickable": false,
+                  "class": "com.pinterest.ui.imageview.WebImageView",
+                  "bounds": [
+                    389,
+                    661,
+                    716,
+                    1028
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "ancestors": [
+                    "com.makeramen.RoundedImageView",
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.pinterest:id/pin_iv_6",
+                  "clickable": false,
+                  "class": "com.pinterest.ui.imageview.WebImageView",
+                  "bounds": [
+                    389,
+                    1035,
+                    716,
+                    1403
+                  ],
+                  "componentLabel": "Image"
+                }
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.LinearLayout",
+              "bounds": [
+                723,
+                661,
+                1050,
+                1403
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "com.makeramen.RoundedImageView",
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.pinterest:id/pin_iv_3",
+                  "clickable": false,
+                  "class": "com.pinterest.ui.imageview.WebImageView",
+                  "bounds": [
+                    723,
+                    661,
+                    1050,
+                    1028
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "ancestors": [
+                    "com.makeramen.RoundedImageView",
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.pinterest:id/pin_iv_7",
+                  "clickable": false,
+                  "class": "com.pinterest.ui.imageview.WebImageView",
+                  "bounds": [
+                    723,
+                    1035,
+                    1050,
+                    1403
+                  ],
+                  "componentLabel": "Image"
+                }
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.LinearLayout",
+              "bounds": [
+                1057,
+                661,
+                1384,
+                1403
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "com.makeramen.RoundedImageView",
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.pinterest:id/pin_iv_4",
+                  "clickable": false,
+                  "class": "com.pinterest.ui.imageview.WebImageView",
+                  "bounds": [
+                    1057,
+                    661,
+                    1384,
+                    1028
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "ancestors": [
+                    "com.makeramen.RoundedImageView",
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.pinterest:id/pin_iv_8",
+                  "clickable": false,
+                  "class": "com.pinterest.ui.imageview.WebImageView",
+                  "bounds": [
+                    1057,
+                    1035,
+                    1384,
+                    1403
+                  ],
+                  "componentLabel": "Image"
+                }
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "text": "food",
+              "resource-id": "com.pinterest:id/library_section_title",
+              "ancestors": [
+                "com.pinterest.design.widget.ExtendedTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.pinterest.design.brio.widget.BrioTextView",
+              "bounds": [
+                56,
+                467,
+                1037,
+                555
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "2 minutes ago",
+              "resource-id": "com.pinterest:id/library_section_subtitle",
+              "ancestors": [
+                "com.pinterest.design.widget.ExtendedTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.pinterest.design.brio.widget.BrioTextView",
+              "bounds": [
+                56,
+                555,
+                1037,
+                605
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.pinterest.activity.library.view.LibraryEmptyStateSectionView",
+          "bounds": [
+            0,
+            1515,
+            1440,
+            2392
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "iconClass": "add",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.pinterest:id/board_add_iv",
+              "clickable": false,
+              "class": "com.pinterest.ui.text.IconView",
+              "bounds": [
+                77,
+                1515,
+                186,
+                1616
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "text": "Create board",
+              "resource-id": "com.pinterest:id/create_board_title",
+              "ancestors": [
+                "com.pinterest.design.widget.ExtendedTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.pinterest.design.brio.widget.BrioTextView",
+              "bounds": [
+                200,
+                1515,
+                1384,
+                1616
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                56,
+                2120,
+                1384,
+                2392
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "componentLabel": "Image"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.LinearLayout",
+              "bounds": [
+                56,
+                1658,
+                382,
+                2392
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "com.makeramen.RoundedImageView",
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.pinterest:id/pin_iv_1",
+                  "clickable": false,
+                  "class": "com.pinterest.ui.imageview.WebImageView",
+                  "bounds": [
+                    56,
+                    1658,
+                    382,
+                    2025
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "ancestors": [
+                    "com.makeramen.RoundedImageView",
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.pinterest:id/pin_iv_5",
+                  "clickable": false,
+                  "class": "com.pinterest.ui.imageview.WebImageView",
+                  "bounds": [
+                    56,
+                    2032,
+                    382,
+                    2392
+                  ],
+                  "componentLabel": "Image"
+                }
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.LinearLayout",
+              "bounds": [
+                389,
+                1658,
+                716,
+                2392
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "com.makeramen.RoundedImageView",
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.pinterest:id/pin_iv_2",
+                  "clickable": false,
+                  "class": "com.pinterest.ui.imageview.WebImageView",
+                  "bounds": [
+                    389,
+                    1658,
+                    716,
+                    2209
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "ancestors": [
+                    "com.makeramen.RoundedImageView",
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.pinterest:id/pin_iv_6",
+                  "clickable": false,
+                  "class": "com.pinterest.ui.imageview.WebImageView",
+                  "bounds": [
+                    389,
+                    2216,
+                    716,
+                    2392
+                  ],
+                  "componentLabel": "Image"
+                }
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.LinearLayout",
+              "bounds": [
+                723,
+                1658,
+                1050,
+                2392
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "com.makeramen.RoundedImageView",
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.pinterest:id/pin_iv_3",
+                  "clickable": false,
+                  "class": "com.pinterest.ui.imageview.WebImageView",
+                  "bounds": [
+                    723,
+                    1658,
+                    1050,
+                    2025
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "ancestors": [
+                    "com.makeramen.RoundedImageView",
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.pinterest:id/pin_iv_7",
+                  "clickable": false,
+                  "class": "com.pinterest.ui.imageview.WebImageView",
+                  "bounds": [
+                    723,
+                    2032,
+                    1050,
+                    2392
+                  ],
+                  "componentLabel": "Image"
+                }
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.LinearLayout",
+              "bounds": [
+                1057,
+                1658,
+                1384,
+                2392
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "com.makeramen.RoundedImageView",
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.pinterest:id/pin_iv_4",
+                  "clickable": false,
+                  "class": "com.pinterest.ui.imageview.WebImageView",
+                  "bounds": [
+                    1057,
+                    1658,
+                    1384,
+                    2025
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "ancestors": [
+                    "com.makeramen.RoundedImageView",
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.pinterest:id/pin_iv_8",
+                  "clickable": false,
+                  "class": "com.pinterest.ui.imageview.WebImageView",
+                  "bounds": [
+                    1057,
+                    2032,
+                    1384,
+                    2392
+                  ],
+                  "componentLabel": "Image"
+                }
+              ],
+              "componentLabel": "List Item"
+            }
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

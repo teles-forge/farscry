@@ -1,0 +1,715 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.android.vending:id/action_bar",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.android.vending:id/navigation_button",
+          "clickable": true,
+          "class": "com.google.android.play.search.PlaySearchNavigationButton",
+          "bounds": [
+            42,
+            112,
+            182,
+            280
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "priceline",
+          "resource-id": "com.android.vending:id/search_box_active_text_view",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.bo",
+          "bounds": [
+            238,
+            119,
+            1174,
+            273
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "iconClass": "close",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.android.vending:id/action_button",
+          "clickable": true,
+          "class": "com.google.android.play.search.PlaySearchActionButton",
+          "bounds": [
+            1230,
+            112,
+            1398,
+            280
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "com.google.android.play.search.PlaySearchToolbar",
+        "android.support.v7.widget.Toolbar",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.google.android.finsky.layout.actionbar.FinskySearchToolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        288
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.android.vending:id/bucket_items",
+      "children": [
+        {
+          "ancestors": [
+            "com.google.android.play.layout.b",
+            "com.google.android.play.layout.a",
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.google.android.finsky.playcard.PlayCardAppsMdpView",
+          "bounds": [
+            28,
+            308,
+            1412,
+            1256
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "textButtonClass": "uninstall"
+        }
+      ],
+      "ancestors": [
+        "com.google.android.finsky.layout.IdentifiableLinearLayout",
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.google.android.finsky.layout.BucketRow",
+      "bounds": [
+        0,
+        308,
+        1440,
+        1256
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.android.vending:id/play_card_cluster_container",
+      "children": [
+        {
+          "text": "MORE",
+          "resource-id": "com.android.vending:id/header_more",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.google.android.finsky.layout.play.CardTextView",
+          "bounds": [
+            1150,
+            1287,
+            1370,
+            1392
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "resource-id": "com.android.vending:id/play_card",
+          "children": [
+            {
+              "text": "Travelocity Hotels & Flights",
+              "resource-id": "com.android.vending:id/li_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.google.android.play.layout.PlayTextView",
+              "bounds": [
+                84,
+                1828,
+                306,
+                1951
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "iconClass": "more",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.android.vending:id/li_overflow",
+              "clickable": true,
+              "class": "android.support.v7.widget.ax",
+              "bounds": [
+                306,
+                1808,
+                418,
+                1920
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "ancestors": [
+                "com.google.android.play.image.FifeImageView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.android.vending:id/li_thumbnail",
+              "clickable": false,
+              "class": "com.google.android.finsky.image.DocImageView",
+              "bounds": [
+                63,
+                1445,
+                418,
+                1800
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "Ad",
+              "resource-id": "com.android.vending:id/li_ad_label",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.bo",
+              "bounds": [
+                63,
+                1743,
+                137,
+                1800
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "com.google.android.play.layout.b",
+            "com.google.android.play.layout.a",
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.google.android.play.layout.PlayCardViewMini",
+          "bounds": [
+            28,
+            1410,
+            453,
+            2052
+          ],
+          "componentLabel": "Card"
+        },
+        {
+          "resource-id": "com.android.vending:id/play_card",
+          "children": [
+            {
+              "text": "Google Trips - Travel Planner",
+              "resource-id": "com.android.vending:id/li_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.google.android.play.layout.PlayTextView",
+              "bounds": [
+                509,
+                1828,
+                731,
+                1951
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "iconClass": "more",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.android.vending:id/li_overflow",
+              "clickable": true,
+              "class": "android.support.v7.widget.ax",
+              "bounds": [
+                731,
+                1808,
+                843,
+                1920
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "ancestors": [
+                "com.google.android.play.image.FifeImageView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.android.vending:id/li_thumbnail",
+              "clickable": false,
+              "class": "com.google.android.finsky.image.DocImageView",
+              "bounds": [
+                488,
+                1445,
+                843,
+                1800
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "ancestors": [
+            "com.google.android.play.layout.b",
+            "com.google.android.play.layout.a",
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.google.android.play.layout.PlayCardViewMini",
+          "bounds": [
+            453,
+            1410,
+            878,
+            2052
+          ],
+          "componentLabel": "Card"
+        },
+        {
+          "resource-id": "com.android.vending:id/play_card",
+          "children": [
+            {
+              "text": "Hotel Tonight - Amazing Deals",
+              "resource-id": "com.android.vending:id/li_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.google.android.play.layout.PlayTextView",
+              "bounds": [
+                934,
+                1828,
+                1156,
+                1951
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "iconClass": "more",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.android.vending:id/li_overflow",
+              "clickable": true,
+              "class": "android.support.v7.widget.ax",
+              "bounds": [
+                1156,
+                1808,
+                1268,
+                1920
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "ancestors": [
+                "com.google.android.play.image.FifeImageView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.android.vending:id/li_thumbnail",
+              "clickable": false,
+              "class": "com.google.android.finsky.image.DocImageView",
+              "bounds": [
+                913,
+                1445,
+                1268,
+                1800
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "ancestors": [
+            "com.google.android.play.layout.b",
+            "com.google.android.play.layout.a",
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.google.android.play.layout.PlayCardViewMini",
+          "bounds": [
+            878,
+            1410,
+            1303,
+            2052
+          ],
+          "componentLabel": "Card"
+        },
+        {
+          "resource-id": "com.android.vending:id/play_card",
+          "children": [
+            {
+              "text": "Skiplagged, Flights and Hotels",
+              "resource-id": "com.android.vending:id/li_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.google.android.play.layout.PlayTextView",
+              "bounds": [
+                1359,
+                1828,
+                1440,
+                1951
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "iconClass": "minus",
+              "ancestors": [
+                "com.google.android.play.image.FifeImageView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.android.vending:id/li_thumbnail",
+              "clickable": false,
+              "class": "com.google.android.finsky.image.DocImageView",
+              "bounds": [
+                1338,
+                1445,
+                1440,
+                1800
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "ancestors": [
+            "com.google.android.play.layout.b",
+            "com.google.android.play.layout.a",
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.google.android.play.layout.PlayCardViewMini",
+          "bounds": [
+            1303,
+            1410,
+            1440,
+            2052
+          ],
+          "componentLabel": "Card"
+        },
+        {
+          "text": "You Might Also Like",
+          "resource-id": "com.android.vending:id/header_title_main",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.bo",
+          "bounds": [
+            70,
+            1302,
+            622,
+            1378
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "com.google.android.finsky.layout.play.by",
+        "com.google.android.finsky.layout.bw",
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.google.android.finsky.layout.play.PlayCardClusterViewV2",
+      "bounds": [
+        0,
+        1256,
+        1440,
+        2066
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.android.vending:id/play_card_cluster_container",
+      "children": [
+        {
+          "text": "MORE",
+          "resource-id": "com.android.vending:id/header_more",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.google.android.finsky.layout.play.CardTextView",
+          "bounds": [
+            1150,
+            2097,
+            1370,
+            2202
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "resource-id": "com.android.vending:id/play_card",
+          "children": [
+            {
+              "ancestors": [
+                "com.google.android.play.image.FifeImageView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.android.vending:id/li_thumbnail",
+              "clickable": false,
+              "class": "com.google.android.finsky.image.DocImageView",
+              "bounds": [
+                63,
+                2255,
+                418,
+                2392
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "ancestors": [
+            "com.google.android.play.layout.b",
+            "com.google.android.play.layout.a",
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.google.android.play.layout.PlayCardViewMini",
+          "bounds": [
+            28,
+            2220,
+            453,
+            2392
+          ],
+          "componentLabel": "Card"
+        },
+        {
+          "resource-id": "com.android.vending:id/play_card",
+          "children": [
+            {
+              "ancestors": [
+                "com.google.android.play.image.FifeImageView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.android.vending:id/li_thumbnail",
+              "clickable": false,
+              "class": "com.google.android.finsky.image.DocImageView",
+              "bounds": [
+                488,
+                2255,
+                843,
+                2392
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "ancestors": [
+            "com.google.android.play.layout.b",
+            "com.google.android.play.layout.a",
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.google.android.play.layout.PlayCardViewMini",
+          "bounds": [
+            453,
+            2220,
+            878,
+            2392
+          ],
+          "componentLabel": "Card"
+        },
+        {
+          "resource-id": "com.android.vending:id/play_card",
+          "children": [
+            {
+              "ancestors": [
+                "com.google.android.play.image.FifeImageView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.android.vending:id/li_thumbnail",
+              "clickable": false,
+              "class": "com.google.android.finsky.image.DocImageView",
+              "bounds": [
+                913,
+                2255,
+                1268,
+                2392
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "ancestors": [
+            "com.google.android.play.layout.b",
+            "com.google.android.play.layout.a",
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.google.android.play.layout.PlayCardViewMini",
+          "bounds": [
+            878,
+            2220,
+            1303,
+            2392
+          ],
+          "componentLabel": "Card"
+        },
+        {
+          "resource-id": "com.android.vending:id/play_card",
+          "children": [
+            {
+              "ancestors": [
+                "com.google.android.play.image.FifeImageView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.android.vending:id/li_thumbnail",
+              "clickable": false,
+              "class": "com.google.android.finsky.image.DocImageView",
+              "bounds": [
+                1338,
+                2255,
+                1440,
+                2392
+              ],
+              "componentLabel": "Image"
+            }
+          ],
+          "ancestors": [
+            "com.google.android.play.layout.b",
+            "com.google.android.play.layout.a",
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.google.android.play.layout.PlayCardViewMini",
+          "bounds": [
+            1303,
+            2220,
+            1440,
+            2392
+          ],
+          "componentLabel": "Card"
+        },
+        {
+          "text": "Similar Apps",
+          "resource-id": "com.android.vending:id/header_title_main",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.bo",
+          "bounds": [
+            70,
+            2112,
+            444,
+            2188
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "com.google.android.finsky.layout.play.by",
+        "com.google.android.finsky.layout.bw",
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.google.android.finsky.layout.play.PlayCardClusterViewV2",
+      "bounds": [
+        0,
+        2066,
+        1440,
+        2392
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

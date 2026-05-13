@@ -1,0 +1,406 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "org.pri.android:id/toolbar",
+      "children": [
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            328,
+            84,
+            1112,
+            280
+          ],
+          "clickable": true,
+          "class": "com.android.volley.toolbox.NetworkImageView",
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "iconClass": "pause",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "org.pri.android:id/audioPlayerPlayButton",
+      "clickable": true,
+      "class": "com.jacapps.view.ColorableImageButton",
+      "bounds": [
+        70,
+        294,
+        183,
+        406
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Buffering…",
+      "resource-id": "org.pri.android:id/audioPlayerTextView",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        211,
+        280,
+        1314,
+        420
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "com.google.android.gms.ads.BaseAdView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.google.android.gms.ads.AdView",
+      "bounds": [
+        160,
+        2217,
+        1280,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.google.android.gms.ads.internal.webview.n",
+          "bounds": [
+            160,
+            2217,
+            1280,
+            2392
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.webkit.WebView",
+                "android.widget.AbsoluteLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                160,
+                2217,
+                1280,
+                2392
+              ],
+              "clickable": true,
+              "class": "com.google.android.gms.ads.internal.webview.o",
+              "componentLabel": "Web View"
+            }
+          ],
+          "componentLabel": "Web View"
+        }
+      ],
+      "componentLabel": "Advertisement"
+    },
+    {
+      "text": "PRI's The World Latest Episodes",
+      "resource-id": "org.pri.android:id/rssFeedTitle",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        270,
+        434,
+        1170,
+        519
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "All",
+      "resource-id": "org.pri.android:id/rssFeedAllButton",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        56,
+        533,
+        498,
+        645
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "all"
+    },
+    {
+      "text": "Favorites",
+      "resource-id": "org.pri.android:id/rssFeedButton2",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        498,
+        533,
+        941,
+        645
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "favorites"
+    },
+    {
+      "text": "Downloads",
+      "resource-id": "org.pri.android:id/rssFeedButton3",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        941,
+        533,
+        1384,
+        645
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1989,
+        1440,
+        2217
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Comment Via Email",
+          "resource-id": "org.pri.android:id/buttonItemText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            1989,
+            1384,
+            2217
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        659,
+        1440,
+        976
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Global PR disaster for United, World Cup bids, and young Cubans worried about the future",
+          "resource-id": "org.pri.android:id/feedItemTitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            673,
+            1384,
+            730
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "A video of a United passenger being forcibly removed from a plane sparks calls for a boycott in China. Also, why the US, Mexico and Canada want to host soccer's World Cup together. Plus, young Cuban professionals worry about their future.",
+          "resource-id": "org.pri.android:id/feedItemSubtitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            730,
+            1384,
+            834
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "11 Apr 2017",
+          "resource-id": "org.pri.android:id/feedItemDate",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            56,
+            848,
+            908,
+            905
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "share",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.pri.android:id/feedItemShareButton",
+          "clickable": true,
+          "class": "com.jacapps.view.ColorableImageButton",
+          "bounds": [
+            1272,
+            848,
+            1384,
+            960
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "file_download",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.pri.android:id/feedItemDownloadButton",
+          "clickable": true,
+          "class": "com.jacapps.view.ColorableImageButton",
+          "bounds": [
+            1104,
+            848,
+            1216,
+            960
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "star",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.pri.android:id/feedItemFavoriteButton",
+          "clickable": true,
+          "class": "com.jacapps.view.ColorableImageButton",
+          "bounds": [
+            936,
+            848,
+            1048,
+            960
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

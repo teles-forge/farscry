@@ -1,0 +1,126 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "android:id/action_bar_container",
+      "children": [
+        {
+          "iconClass": "network_wifi",
+          "clickable": false,
+          "children": [
+            {
+              "iconClass": "network_wifi",
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "android:id/home",
+              "clickable": false,
+              "class": "android.widget.ImageView",
+              "bounds": [
+                43,
+                112,
+                155,
+                224
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.android.internal.widget.ActionBarView$HomeView",
+          "bounds": [
+            29,
+            84,
+            169,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "MediaServer",
+          "resource-id": "android:id/action_bar_title",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            169,
+            125,
+            519,
+            210
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.android.internal.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        252
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "Settings view",
+      "resource-id": "es.mediaserver:id/section_title",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        53,
+        252,
+        508,
+        355
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "From this view, you can control the server settings.\n The configuration is divided into two parts:\n -Media Content (Everything related to share files)\n -Firewall (Security Settings)\n \n In Section Multimedia Content we can observe the following:\n -Share photos (Share the photos selected by the user)\n -Share Music (Share the music selected by the user)\n -Share videos (Share the videos selected by the user)\n -Share new content-default (automatically shares the new content whenever the appropriate category to which belongs (Music / Photos / Videos) is selected).\n -Content Providers (Pressing can configure the multimedia data source)(See the corresponding help section).\n \n \n In the Firewall section can configure the behavior of the same, in this section we have:\n -Assign the default access permission (If this option is enabled all devices detected on the network will automatically pass to the list of known devices with the permission assigned to the selector located below.)\n -Default permission Selector (Here we assign the default permission we want).\n",
+      "resource-id": "es.mediaserver:id/help_message",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        35,
+        380,
+        1440,
+        2392
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

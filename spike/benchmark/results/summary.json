@@ -1,0 +1,45 @@
+{
+  "n_screenshots": 20,
+  "run_a_accuracy": 1.0,
+  "run_b_accuracy": 1.0,
+  "accuracy_delta_pp": 0.0,
+  "farscry_wins": 0,
+  "vision_wins": 0,
+  "ties": 20,
+  "both_fail": 0,
+  "avg_token_reduction_x": 3.7,
+  "avg_farscry_ocr_ms": 453.3,
+  "by_category": {
+    "terminal": {
+      "n": 7,
+      "run_a_acc": 1.0,
+      "run_b_acc": 1.0
+    },
+    "web_form": {
+      "n": 4,
+      "run_a_acc": 1.0,
+      "run_b_acc": 1.0
+    },
+    "vscode": {
+      "n": 3,
+      "run_a_acc": 1.0,
+      "run_b_acc": 1.0
+    },
+    "config": {
+      "n": 3,
+      "run_a_acc": 1.0,
+      "run_b_acc": 1.0
+    },
+    "devtools": {
+      "n": 1,
+      "run_a_acc": 1.0,
+      "run_b_acc": 1.0
+    },
+    "browser": {
+      "n": 2,
+      "run_a_acc": 1.0,
+      "run_b_acc": 1.0
+    }
+  },
+  "note_on_methodology": "Evaluation is keyword-based against pre-registered ground truth. A response is marked correct if \u226540% of key tokens from the ground truth correct_element + correct_action appear in the response (minimum 2 tokens). Full responses are in full_log.json for manual review. Token counts for RUN A include image encoding estimate (170 tokens/512px tile + 85 base). This is NOT an OSWorld-style task completion benchmark \u2014 it measures element identification accuracy from screenshots, not end-to-end agent task success."
+}

@@ -1,0 +1,1006 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.laterooms:id/action_bar_container",
+      "children": [
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "date_range",
+          "resource-id": "com.laterooms:id/action_bar_search_searchcriteriaicon",
+          "children": [
+            {
+              "text": "26",
+              "resource-id": "com.laterooms:id/search_criteria_icon_textview_date",
+              "ancestors": [
+                "com.laterooms.app.widgets.TypefaceTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.laterooms.app.widgets.AutoFitTypefaceTextView",
+              "bounds": [
+                1151,
+                174,
+                1235,
+                221
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "2",
+              "resource-id": "com.laterooms:id/search_criteria_icon_textview_occupants",
+              "ancestors": [
+                "com.laterooms.app.widgets.TypefaceTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.laterooms.app.widgets.AutoFitTypefaceTextView",
+              "bounds": [
+                1293,
+                183,
+                1342,
+                228
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.laterooms.app.search.criteria.SearchCriteriaIconView",
+          "bounds": [
+            1104,
+            112,
+            1384,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Current Location",
+          "resource-id": "com.laterooms:id/action_bar_search_edittext_search",
+          "ancestors": [
+            "android.widget.EditText",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.laterooms.app.widgets.TypefaceEditText",
+          "bounds": [
+            338,
+            112,
+            1067,
+            252
+          ],
+          "componentLabel": "Input"
+        },
+        {
+          "iconClass": "search",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.laterooms:id/action_bar_search_imageview_search_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            250,
+            147,
+            320,
+            217
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.laterooms:id/search_results_list_listview",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.laterooms.app.search.SearchResultsItemView",
+          "bounds": [
+            35,
+            366,
+            1405,
+            863
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                35,
+                366,
+                525,
+                856
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "componentLabel": "Image"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.laterooms:id/search_results_item_hotelphoto_photo",
+              "clickable": false,
+              "class": "com.laterooms.app.widgets.NetworkImageView",
+              "bounds": [
+                35,
+                366,
+                525,
+                856
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "0.1 miles from you",
+              "resource-id": "com.laterooms:id/search_results_item_textview_distance",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.laterooms.app.widgets.TypefaceTextView",
+              "bounds": [
+                558,
+                534,
+                1387,
+                586
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "City Center Inn & Suites",
+              "resource-id": "com.laterooms:id/search_results_item_textview_name",
+              "ancestors": [
+                "com.laterooms.app.widgets.TypefaceTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.laterooms.app.widgets.EllipsisTypefaceTextView",
+              "bounds": [
+                560,
+                396,
+                1387,
+                465
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.laterooms:id/search_results_item_imageview_distance_divider",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                558,
+                672,
+                1387,
+                676
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.laterooms:id/user_rating_imageview_icon",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                1188,
+                736,
+                1310,
+                844
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "Total",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.laterooms.app.widgets.TypefaceTextView",
+              "bounds": [
+                562,
+                695,
+                653,
+                745
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "£177.06",
+              "resource-id": "com.laterooms:id/price_label_textview_value",
+              "ancestors": [
+                "com.laterooms.app.widgets.TypefaceTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.laterooms.app.widgets.AutoFitTypefaceTextView",
+              "bounds": [
+                560,
+                749,
+                822,
+                828
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.laterooms.app.search.SearchResultsItemView",
+          "bounds": [
+            35,
+            898,
+            1405,
+            1395
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                35,
+                898,
+                525,
+                1388
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "componentLabel": "Image"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.laterooms:id/search_results_item_hotelphoto_photo",
+              "clickable": false,
+              "class": "com.laterooms.app.widgets.NetworkImageView",
+              "bounds": [
+                35,
+                898,
+                525,
+                1388
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "0.1 miles from you",
+              "resource-id": "com.laterooms:id/search_results_item_textview_distance",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.laterooms.app.widgets.TypefaceTextView",
+              "bounds": [
+                558,
+                1066,
+                1387,
+                1118
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Europa Hostel",
+              "resource-id": "com.laterooms:id/search_results_item_textview_name",
+              "ancestors": [
+                "com.laterooms.app.widgets.TypefaceTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.laterooms.app.widgets.EllipsisTypefaceTextView",
+              "bounds": [
+                560,
+                928,
+                1387,
+                997
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.laterooms:id/search_results_item_imageview_distance_divider",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                558,
+                1204,
+                1387,
+                1208
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.laterooms:id/user_rating_imageview_icon",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                1188,
+                1268,
+                1310,
+                1376
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "Total",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.laterooms.app.widgets.TypefaceTextView",
+              "bounds": [
+                562,
+                1227,
+                653,
+                1277
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "£60.70",
+              "resource-id": "com.laterooms:id/price_label_textview_value",
+              "ancestors": [
+                "com.laterooms.app.widgets.TypefaceTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.laterooms.app.widgets.AutoFitTypefaceTextView",
+              "bounds": [
+                560,
+                1281,
+                781,
+                1360
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.laterooms.app.search.SearchResultsItemView",
+          "bounds": [
+            35,
+            1430,
+            1405,
+            1927
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                35,
+                1430,
+                525,
+                1920
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "componentLabel": "Image"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.laterooms:id/search_results_item_hotelphoto_photo",
+              "clickable": false,
+              "class": "com.laterooms.app.widgets.NetworkImageView",
+              "bounds": [
+                35,
+                1430,
+                525,
+                1920
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "0.2 miles from you",
+              "resource-id": "com.laterooms:id/search_results_item_textview_distance",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.laterooms.app.widgets.TypefaceTextView",
+              "bounds": [
+                558,
+                1598,
+                1387,
+                1650
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Hotel 964",
+              "resource-id": "com.laterooms:id/search_results_item_textview_name",
+              "ancestors": [
+                "com.laterooms.app.widgets.TypefaceTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.laterooms.app.widgets.EllipsisTypefaceTextView",
+              "bounds": [
+                560,
+                1460,
+                1387,
+                1529
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.laterooms:id/search_results_item_imageview_distance_divider",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                558,
+                1736,
+                1387,
+                1740
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.laterooms:id/user_rating_imageview_icon",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                1188,
+                1800,
+                1310,
+                1908
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "Total",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.laterooms.app.widgets.TypefaceTextView",
+              "bounds": [
+                562,
+                1759,
+                653,
+                1809
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "£133.11",
+              "resource-id": "com.laterooms:id/price_label_textview_value",
+              "ancestors": [
+                "com.laterooms.app.widgets.TypefaceTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.laterooms.app.widgets.AutoFitTypefaceTextView",
+              "bounds": [
+                560,
+                1813,
+                822,
+                1892
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.laterooms.app.search.SearchResultsItemView",
+          "bounds": [
+            35,
+            1962,
+            1405,
+            2392
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                35,
+                1962,
+                525,
+                2392
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "componentLabel": "Image"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.laterooms:id/search_results_item_hotelphoto_photo",
+              "clickable": false,
+              "class": "com.laterooms.app.widgets.NetworkImageView",
+              "bounds": [
+                35,
+                1962,
+                525,
+                2392
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "0.2 miles from you",
+              "resource-id": "com.laterooms:id/search_results_item_textview_distance",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.laterooms.app.widgets.TypefaceTextView",
+              "bounds": [
+                558,
+                2130,
+                1387,
+                2182
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Inn on Folsom",
+              "resource-id": "com.laterooms:id/search_results_item_textview_name",
+              "ancestors": [
+                "com.laterooms.app.widgets.TypefaceTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.laterooms.app.widgets.EllipsisTypefaceTextView",
+              "bounds": [
+                560,
+                1992,
+                1387,
+                2061
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.laterooms:id/search_results_item_imageview_distance_divider",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                558,
+                2268,
+                1387,
+                2272
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.laterooms:id/user_rating_imageview_icon",
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                1188,
+                2332,
+                1310,
+                2392
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "Total",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.laterooms.app.widgets.TypefaceTextView",
+              "bounds": [
+                562,
+                2291,
+                653,
+                2341
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "£60.58",
+              "resource-id": "com.laterooms:id/price_label_textview_value",
+              "ancestors": [
+                "com.laterooms.app.widgets.TypefaceTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.laterooms.app.widgets.AutoFitTypefaceTextView",
+              "bounds": [
+                560,
+                2345,
+                781,
+                2392
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "ancestors": [
+        "android.widget.AbsListView",
+        "android.widget.AdapterView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.ListView",
+      "bounds": [
+        0,
+        366,
+        1440,
+        2392
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "iconClass": "national_flag",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.laterooms:id/search_options_imageview_filter_sort_divider",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        470,
+        2247,
+        477,
+        2369
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "national_flag",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.laterooms:id/search_options_imageview_filter_sort_mode",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        962,
+        2247,
+        969,
+        2369
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Prices for 2 Adults | 1 Night",
+      "resource-id": "com.laterooms:id/search_results_header_textview_price_info",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.laterooms.app.widgets.TypefaceTextView",
+      "bounds": [
+        35,
+        280,
+        535,
+        361
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "(287 hotels)",
+      "resource-id": "com.laterooms:id/search_results_header_textview_hotel_count",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.laterooms.app.widgets.TypefaceTextView",
+      "bounds": [
+        1186,
+        280,
+        1405,
+        361
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Add filters",
+      "resource-id": "com.laterooms:id/search_options_textview_filter_label",
+      "ancestors": [
+        "com.laterooms.app.widgets.TypefaceTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.laterooms.app.widgets.AutoFitTypefaceTextView",
+      "bounds": [
+        179,
+        2273,
+        428,
+        2333
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        583,
+        2261,
+        667,
+        2345
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "componentLabel": "Image"
+    },
+    {
+      "iconClass": "location",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        1044,
+        2261,
+        1128,
+        2345
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Map view",
+      "resource-id": "com.laterooms:id/search_options_textview_map_label",
+      "ancestors": [
+        "com.laterooms.app.widgets.TypefaceTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.laterooms.app.widgets.AutoFitTypefaceTextView",
+      "bounds": [
+        1149,
+        2273,
+        1378,
+        2333
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "filter",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.laterooms:id/search_options_imageview_filter_count",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        61,
+        2261,
+        145,
+        2345
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Sort by",
+      "resource-id": "com.laterooms:id/search_options_textview_sort_label",
+      "ancestors": [
+        "com.laterooms.app.widgets.TypefaceTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.laterooms.app.widgets.AutoFitTypefaceTextView",
+      "bounds": [
+        688,
+        2255,
+        856,
+        2315
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "closest",
+      "resource-id": "com.laterooms:id/search_options_textview_sort_type",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.laterooms.app.widgets.TypefaceTextView",
+      "bounds": [
+        688,
+        2312,
+        797,
+        2352
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

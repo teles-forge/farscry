@@ -1,0 +1,313 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.pandora.android:id/now_playing_toolbar",
+      "children": [
+        {
+          "text": "Bruno Mars Mixtape",
+          "resource-id": "com.pandora.android:id/toolbar_title",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            210,
+            135,
+            843,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.pandora.android:id/toolbar_home",
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "Tap <img> to replay this track",
+      "resource-id": "com.pandora.android:id/mini_coachmark",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.pandora.android.view.MiniCoachmarkView",
+      "bounds": [
+        70,
+        2049,
+        1370,
+        2175
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "ancestors": [
+        "com.pandora.android.ads.AdView",
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.pandora.android.activity.NowPlayingAdView",
+      "bounds": [
+        160,
+        642,
+        1280,
+        1594
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.AbsoluteLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.pandora.android:id/ad",
+          "clickable": true,
+          "class": "android.webkit.WebView",
+          "bounds": [
+            160,
+            642,
+            1280,
+            1594
+          ],
+          "componentLabel": "Web View"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.pandora.android:id/ad_close_button",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            160,
+            642,
+            248,
+            730
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "componentLabel": "Advertisement"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.pandora.android:id/play",
+      "clickable": true,
+      "class": "com.pandora.android.view.PandoraImageButton",
+      "bounds": [
+        850,
+        2175,
+        1110,
+        2392
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "iconClass": "skip_next",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.pandora.android:id/skip_forward",
+      "clickable": true,
+      "class": "com.pandora.android.view.PandoraImageButton",
+      "bounds": [
+        1110,
+        2175,
+        1370,
+        2392
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "com.pandora.android.view.SafeImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.pandora.android:id/album_art",
+      "clickable": true,
+      "class": "com.pandora.android.view.SquareImageView",
+      "bounds": [
+        70,
+        336,
+        1370,
+        1636
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "iconClass": "refresh",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.pandora.android:id/replay",
+      "clickable": true,
+      "class": "com.pandora.android.view.PandoraImageButton",
+      "bounds": [
+        70,
+        2175,
+        330,
+        2392
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "thumbs_down",
+      "ancestors": [
+        "com.pandora.android.view.PandoraImageButton",
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.pandora.android:id/thumb_down_mini_player",
+      "clickable": true,
+      "class": "com.pandora.android.util.ThumbImageButton",
+      "bounds": [
+        330,
+        2175,
+        590,
+        2392
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "thumbs_up",
+      "ancestors": [
+        "com.pandora.android.view.PandoraImageButton",
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.pandora.android:id/thumb_up_mini_player",
+      "clickable": true,
+      "class": "com.pandora.android.util.ThumbImageButton",
+      "bounds": [
+        590,
+        2175,
+        850,
+        2392
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.pandora.android:id/more_info",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        678,
+        1942,
+        762,
+        2037
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "West Coast Poplock",
+      "resource-id": "com.pandora.android:id/title",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        81,
+        1734,
+        1177,
+        1810
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Ronnie Hudson",
+      "resource-id": "com.pandora.android:id/artist",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        81,
+        1810,
+        1177,
+        1876
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

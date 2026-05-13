@@ -1,0 +1,709 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "android:id/action_bar_container",
+      "children": [
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "sg.mediacorp.android:id/home_menu_icon",
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "bounds": [
+            11,
+            84,
+            179,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "file_download",
+          "resource-id": "sg.mediacorp.android:id/action_downloads",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.android.internal.view.menu.ActionMenuItemView",
+          "bounds": [
+            1039,
+            84,
+            1170,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "",
+          "resource-id": "sg.mediacorp.android:id/action_notifications",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.android.internal.view.menu.ActionMenuItemView",
+          "bounds": [
+            1170,
+            84,
+            1301,
+            252
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "sg.mediacorp.android:id/action_search",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.android.internal.view.menu.ActionMenuItemView",
+          "bounds": [
+            1301,
+            84,
+            1440,
+            252
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.android.internal.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        252
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "Hero",
+      "resource-id": "sg.mediacorp.android:id/detail_title",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "sg.mediacorp.toggle.widget.MCTextView",
+      "bounds": [
+        0,
+        252,
+        1440,
+        372
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "sg.mediacorp.android:id/interaction_layout",
+      "children": [
+        {
+          "iconClass": "favorite",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "sg.mediacorp.android:id/favorite",
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "bounds": [
+            0,
+            2252,
+            224,
+            2392
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "star",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "sg.mediacorp.android:id/rating",
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "bounds": [
+            224,
+            2252,
+            448,
+            2392
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "share",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "sg.mediacorp.android:id/share",
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "bounds": [
+            448,
+            2252,
+            672,
+            2392
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "sg.mediacorp.android:id/download",
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "bounds": [
+            1216,
+            2252,
+            1440,
+            2392
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.widget.ViewAnimator",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.ViewSwitcher",
+      "bounds": [
+        0,
+        2252,
+        1440,
+        2392
+      ],
+      "componentLabel": "On/Off Switch"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "sg.mediacorp.android:id/thumbnail",
+      "clickable": false,
+      "class": "com.android.volley.toolbox.NetworkImageView",
+      "bounds": [
+        0,
+        372,
+        1440,
+        1081
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Videos (30)",
+      "resource-id": "sg.mediacorp.android:id/count_text",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "sg.mediacorp.toggle.widget.MCTextView",
+      "bounds": [
+        46,
+        1255,
+        324,
+        1326
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Latest First",
+      "resource-id": "sg.mediacorp.android:id/sorting_title",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "sg.mediacorp.toggle.widget.MCButton",
+      "bounds": [
+        565,
+        1221,
+        1405,
+        1361
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1361,
+        715,
+        1766
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "sg.mediacorp.android:id/thumbnail",
+          "clickable": false,
+          "class": "com.android.volley.toolbox.NetworkImageView",
+          "bounds": [
+            0,
+            1361,
+            715,
+            1766
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Hero",
+          "resource-id": "sg.mediacorp.android:id/title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "sg.mediacorp.toggle.widget.MCTextView",
+          "bounds": [
+            42,
+            1610,
+            673,
+            1667
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "EP30 | Finale",
+          "resource-id": "sg.mediacorp.android:id/description",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "sg.mediacorp.toggle.widget.MCTextView",
+          "bounds": [
+            42,
+            1667,
+            673,
+            1724
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        725,
+        1361,
+        1440,
+        1766
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "sg.mediacorp.android:id/thumbnail",
+          "clickable": false,
+          "class": "com.android.volley.toolbox.NetworkImageView",
+          "bounds": [
+            725,
+            1361,
+            1440,
+            1766
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Hero",
+          "resource-id": "sg.mediacorp.android:id/title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "sg.mediacorp.toggle.widget.MCTextView",
+          "bounds": [
+            767,
+            1610,
+            1398,
+            1667
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "EP29",
+          "resource-id": "sg.mediacorp.android:id/description",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "sg.mediacorp.toggle.widget.MCTextView",
+          "bounds": [
+            767,
+            1667,
+            1398,
+            1724
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1776,
+        715,
+        2181
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "sg.mediacorp.android:id/thumbnail",
+          "clickable": false,
+          "class": "com.android.volley.toolbox.NetworkImageView",
+          "bounds": [
+            0,
+            1776,
+            715,
+            2181
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Hero",
+          "resource-id": "sg.mediacorp.android:id/title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "sg.mediacorp.toggle.widget.MCTextView",
+          "bounds": [
+            42,
+            2025,
+            673,
+            2082
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "EP28",
+          "resource-id": "sg.mediacorp.android:id/description",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "sg.mediacorp.toggle.widget.MCTextView",
+          "bounds": [
+            42,
+            2082,
+            673,
+            2139
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        725,
+        1776,
+        1440,
+        2181
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "sg.mediacorp.android:id/thumbnail",
+          "clickable": false,
+          "class": "com.android.volley.toolbox.NetworkImageView",
+          "bounds": [
+            725,
+            1776,
+            1440,
+            2181
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Hero",
+          "resource-id": "sg.mediacorp.android:id/title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "sg.mediacorp.toggle.widget.MCTextView",
+          "bounds": [
+            767,
+            2025,
+            1398,
+            2082
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "EP27",
+          "resource-id": "sg.mediacorp.android:id/description",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "sg.mediacorp.toggle.widget.MCTextView",
+          "bounds": [
+            767,
+            2082,
+            1398,
+            2139
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        2191,
+        715,
+        2252
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "pause",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "sg.mediacorp.android:id/thumbnail",
+          "clickable": false,
+          "class": "com.android.volley.toolbox.NetworkImageView",
+          "bounds": [
+            0,
+            2191,
+            715,
+            2252
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        725,
+        2191,
+        1440,
+        2252
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "sg.mediacorp.android:id/thumbnail",
+          "clickable": false,
+          "class": "com.android.volley.toolbox.NetworkImageView",
+          "bounds": [
+            725,
+            2191,
+            1440,
+            2252
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "text": "Episodes",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "sg.mediacorp.toggle.widget.MCRadioButton",
+      "bounds": [
+        18,
+        1091,
+        286,
+        1210
+      ],
+      "componentLabel": "Radio Button"
+    },
+    {
+      "text": "Related",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "sg.mediacorp.toggle.widget.MCRadioButton",
+      "bounds": [
+        328,
+        1091,
+        553,
+        1210
+      ],
+      "componentLabel": "Radio Button"
+    },
+    {
+      "text": "You May Like",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "sg.mediacorp.toggle.widget.MCRadioButton",
+      "bounds": [
+        595,
+        1091,
+        949,
+        1210
+      ],
+      "componentLabel": "Radio Button"
+    },
+    {
+      "text": "About",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "sg.mediacorp.toggle.widget.MCRadioButton",
+      "bounds": [
+        991,
+        1091,
+        1179,
+        1210
+      ],
+      "componentLabel": "Radio Button"
+    }
+  ]
+}

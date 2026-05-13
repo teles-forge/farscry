@@ -1,0 +1,906 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.mylocaltv.whbq:id/my_awesome_toolbar",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "resource-id": "com.mylocaltv.whbq:id/action_bar",
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.RelativeLayout",
+          "bounds": [
+            196,
+            120,
+            1440,
+            243
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "finish"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "iconClass": "arrow_backward",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.mylocaltv.whbq:id/inAppLogo",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        18,
+        102,
+        228,
+        312
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.mylocaltv.whbq:id/homeImageView",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        193,
+        161,
+        281,
+        231
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "resource-id": "com.mylocaltv.whbq:id/navigation_drawer",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            0,
+            280,
+            1120,
+            448
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "Home",
+              "resource-id": "com.mylocaltv.whbq:id/menuTextView",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                56,
+                280,
+                1120,
+                448
+              ],
+              "componentLabel": "Text Button",
+              "textButtonClass": "home"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            0,
+            459,
+            1120,
+            1509
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "News",
+              "resource-id": "com.mylocaltv.whbq:id/menuTextView",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                56,
+                459,
+                1120,
+                627
+              ],
+              "componentLabel": "Text Button",
+              "textButtonClass": "news"
+            },
+            {
+              "text": "Watch News Now",
+              "resource-id": "com.mylocaltv.whbq:id/subMenuTextView",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                105,
+                627,
+                1120,
+                753
+              ],
+              "componentLabel": "Text Button"
+            },
+            {
+              "text": "Top Stories",
+              "resource-id": "com.mylocaltv.whbq:id/subMenuTextView",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                105,
+                753,
+                1120,
+                879
+              ],
+              "componentLabel": "Text Button"
+            },
+            {
+              "text": "Latest Videos",
+              "resource-id": "com.mylocaltv.whbq:id/subMenuTextView",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                105,
+                879,
+                1120,
+                1005
+              ],
+              "componentLabel": "Text Button"
+            },
+            {
+              "text": "Hot Topics",
+              "resource-id": "com.mylocaltv.whbq:id/subMenuTextView",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                105,
+                1005,
+                1120,
+                1131
+              ],
+              "componentLabel": "Text Button"
+            },
+            {
+              "text": "FOX13 Investigates",
+              "resource-id": "com.mylocaltv.whbq:id/subMenuTextView",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                105,
+                1131,
+                1120,
+                1257
+              ],
+              "componentLabel": "Text Button"
+            },
+            {
+              "text": "National",
+              "resource-id": "com.mylocaltv.whbq:id/subMenuTextView",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                105,
+                1257,
+                1120,
+                1383
+              ],
+              "componentLabel": "Text Button"
+            },
+            {
+              "text": "FOX13 Family",
+              "resource-id": "com.mylocaltv.whbq:id/subMenuTextView",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                105,
+                1383,
+                1120,
+                1509
+              ],
+              "componentLabel": "Text Button"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            0,
+            1520,
+            1120,
+            2192
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "Weather",
+              "resource-id": "com.mylocaltv.whbq:id/menuTextView",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                56,
+                1520,
+                1120,
+                1688
+              ],
+              "componentLabel": "Text Button"
+            },
+            {
+              "text": "Current Conditions",
+              "resource-id": "com.mylocaltv.whbq:id/subMenuTextView",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                105,
+                1688,
+                1120,
+                1814
+              ],
+              "componentLabel": "Text Button"
+            },
+            {
+              "text": "Forecast",
+              "resource-id": "com.mylocaltv.whbq:id/subMenuTextView",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                105,
+                1814,
+                1120,
+                1940
+              ],
+              "componentLabel": "Text Button",
+              "textButtonClass": "forecast"
+            },
+            {
+              "text": "Radar",
+              "resource-id": "com.mylocaltv.whbq:id/subMenuTextView",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                105,
+                1940,
+                1120,
+                2066
+              ],
+              "componentLabel": "Text Button",
+              "textButtonClass": "radar"
+            },
+            {
+              "text": "Weather App",
+              "resource-id": "com.mylocaltv.whbq:id/subMenuTextView",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                105,
+                2066,
+                1120,
+                2192
+              ],
+              "componentLabel": "Text Button"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            0,
+            2203,
+            1120,
+            2392
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "Multimedia",
+              "resource-id": "com.mylocaltv.whbq:id/menuTextView",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                56,
+                2203,
+                1120,
+                2371
+              ],
+              "componentLabel": "Text Button"
+            },
+            {
+              "text": "Latest Photos",
+              "resource-id": "com.mylocaltv.whbq:id/subMenuTextView",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                105,
+                2371,
+                1120,
+                2392
+              ],
+              "componentLabel": "Text Button"
+            }
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        280,
+        1120,
+        2392
+      ],
+      "componentLabel": "Drawer"
+    },
+    {
+      "resource-id": "com.mylocaltv.whbq:id/adView",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.google.android.gms.ads.doubleclick.PublisherAdView",
+          "bounds": [
+            0,
+            2217,
+            1440,
+            2392
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.FrameLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "com.google.android.gms.ads.internal.webview.n",
+              "bounds": [
+                160,
+                2217,
+                1280,
+                2392
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "android.webkit.WebView",
+                    "android.widget.AbsoluteLayout",
+                    "android.view.ViewGroup",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    160,
+                    2217,
+                    1280,
+                    2392
+                  ],
+                  "clickable": true,
+                  "class": "com.google.android.gms.ads.internal.webview.o",
+                  "componentLabel": "Web View"
+                }
+              ],
+              "componentLabel": "Web View"
+            }
+          ],
+          "componentLabel": "Advertisement"
+        }
+      ],
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.cmgdigital.news.views.CMGAdView",
+      "bounds": [
+        0,
+        2217,
+        1440,
+        2392
+      ],
+      "componentLabel": "Advertisement"
+    },
+    {
+      "text": "Weather",
+      "resource-id": "com.mylocaltv.whbq:id/tabOne",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        0,
+        2042,
+        477,
+        2217
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Traffic",
+      "resource-id": "com.mylocaltv.whbq:id/tabTwo",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        481,
+        2042,
+        958,
+        2217
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Top Video",
+      "resource-id": "com.mylocaltv.whbq:id/tabThree",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        962,
+        2042,
+        1440,
+        2217
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        280,
+        1440,
+        1353
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Suspect on the run after shots reportedly fired at Oak Court Mall",
+          "resource-id": "com.mylocaltv.whbq:id/breakingNewsTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            525,
+            283,
+            1384,
+            540
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.mylocaltv.whbq:id/topNewsImageView",
+          "clickable": false,
+          "class": "com.cmgdigital.news.views.AspectRatioImageView",
+          "bounds": [
+            0,
+            543,
+            1440,
+            1353
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            543,
+            1440,
+            1353
+          ],
+          "clickable": false,
+          "class": "com.cmgdigital.news.views.AspectRatioImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.mylocaltv.whbq:id/playImage",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1142,
+            589,
+            1405,
+            852
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "MPD: Man robs First Tennessee Bank in Frayser",
+          "resource-id": "com.mylocaltv.whbq:id/topNewsTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            53,
+            1107,
+            1387,
+            1300
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.mylocaltv.whbq:id/imageView2",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            0,
+            280,
+            525,
+            543
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.mylocaltv.whbq:id/scene",
+      "children": [
+        {
+          "text": "TOP STORIES",
+          "resource-id": "com.mylocaltv.whbq:id/headerTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            0,
+            1357,
+            1440,
+            1498
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1357,
+        1440,
+        1498
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.mylocaltv.whbq:id/scene",
+      "children": [
+        {
+          "text": "Manhunt underway for Oxford murder suspect",
+          "resource-id": "com.mylocaltv.whbq:id/storyHeadlineTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            420,
+            1572,
+            1440,
+            1765
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.mylocaltv.whbq:id/story_thumbnail",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            35,
+            1537,
+            385,
+            1800
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1502,
+        1440,
+        1835
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.mylocaltv.whbq:id/scene",
+      "children": [
+        {
+          "text": "Man dies after being shot and crashing into building in North Memphis",
+          "resource-id": "com.mylocaltv.whbq:id/storyHeadlineTextView",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            420,
+            1872,
+            1440,
+            2035
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.mylocaltv.whbq:id/story_thumbnail",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            35,
+            1874,
+            385,
+            2035
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.mylocaltv.whbq:id/play_image",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            279,
+            1909,
+            367,
+            1997
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1839,
+        1440,
+        2035
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

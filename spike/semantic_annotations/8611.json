@@ -1,0 +1,679 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.grofers.customerapp:id/toolbar",
+      "children": [
+        {
+          "text": "Express Delivery Stores",
+          "resource-id": "com.grofers.customerapp:id/title",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grofers.customerapp.customviews.TextViewRegularFont",
+          "bounds": [
+            182,
+            84,
+            769,
+            280
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "search",
+          "text": "%",
+          "resource-id": "com.grofers.customerapp:id/merchant_search_container",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.grofers.customerapp.customviews.IconTextView",
+          "bounds": [
+            1082,
+            98,
+            1250,
+            266
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "iconClass": "cart",
+          "text": "M",
+          "resource-id": "com.grofers.customerapp:id/cart_icon",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.grofers.customerapp.customviews.IconTextView",
+          "bounds": [
+            1261,
+            98,
+            1429,
+            266
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "2",
+          "resource-id": "com.grofers.customerapp:id/cart_count_products",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grofers.customerapp.customviews.TextViewRegularFont",
+          "bounds": [
+            1345,
+            130,
+            1398,
+            183
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        284
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "com.grofers.customerapp.widget.BaseWidget",
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.grofers.customerapp.widget.PromotionsWidget",
+      "bounds": [
+        0,
+        284,
+        1440,
+        1004
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "com.grofers.clade.CladeImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.grofers.customerapp:id/promotions_feedpage_image",
+          "clickable": false,
+          "class": "com.grofers.customerapp.customviews.CircularImageView",
+          "bounds": [
+            0,
+            284,
+            1440,
+            968
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "com.grofers.customerapp.widget.BaseWidget",
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.grofers.customerapp.widget.StoreCardWidget",
+      "bounds": [
+        0,
+        1004,
+        1440,
+        1580
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.grofers.customerapp:id/storecard_widget_image",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            56,
+            1076,
+            98,
+            1118
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Sabzi 2 Home - Neb Sarai",
+          "resource-id": "com.grofers.customerapp:id/storecard_widget_title",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grofers.customerapp.customviews.TextViewMediumFont",
+          "bounds": [
+            126,
+            1062,
+            1230,
+            1132
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "<",
+          "resource-id": "com.grofers.customerapp:id/storecard_widget_bag_icon",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grofers.customerapp.customviews.IconTextView",
+          "bounds": [
+            56,
+            1450,
+            98,
+            1499
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Delivered by Store",
+          "resource-id": "com.grofers.customerapp:id/storecard_widget_del_by_text",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grofers.customerapp.customviews.TextViewRegularFont",
+          "bounds": [
+            112,
+            1450,
+            1384,
+            1508
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "DELIVERY BY",
+          "resource-id": "com.grofers.customerapp:id/storecard_widget_del_time_tv1",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grofers.customerapp.customviews.TextViewMediumFont",
+          "bounds": [
+            0,
+            1232,
+            719,
+            1292
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Tomorrow, 3 PM",
+          "resource-id": "com.grofers.customerapp:id/storecard_widget_del_time_tv2",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grofers.customerapp.customviews.TextViewMediumFont",
+          "bounds": [
+            0,
+            1306,
+            719,
+            1366
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "FREE DELIVERY ABOVE",
+          "resource-id": "com.grofers.customerapp:id/storecard_widget_del_charge_tv1",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grofers.customerapp.customviews.TextViewMediumFont",
+          "bounds": [
+            721,
+            1232,
+            1323,
+            1292
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "₹400, Online Only",
+          "resource-id": "com.grofers.customerapp:id/storecard_widget_del_charge_tv2",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grofers.customerapp.customviews.TextViewMediumFont",
+          "bounds": [
+            721,
+            1306,
+            1200,
+            1366
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "star",
+          "resource-id": "com.grofers.customerapp:id/storecard_widget_rating_icon",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grofers.customerapp.customviews.IconTextView",
+          "bounds": [
+            1258,
+            1062,
+            1318,
+            1122
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "4.5",
+          "resource-id": "com.grofers.customerapp:id/storecard_widget_rating_text",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grofers.customerapp.customviews.TextViewRegularFont",
+          "bounds": [
+            1318,
+            1062,
+            1384,
+            1130
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "com.grofers.customerapp.widget.BaseWidget",
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.grofers.customerapp.widget.StoreCardWidget",
+      "bounds": [
+        0,
+        1580,
+        1440,
+        2156
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.grofers.customerapp:id/storecard_widget_image",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            56,
+            1652,
+            98,
+            1694
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Modern Bazaar - Basant Lok",
+          "resource-id": "com.grofers.customerapp:id/storecard_widget_title",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grofers.customerapp.customviews.TextViewMediumFont",
+          "bounds": [
+            126,
+            1638,
+            1230,
+            1708
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "<",
+          "resource-id": "com.grofers.customerapp:id/storecard_widget_bag_icon",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grofers.customerapp.customviews.IconTextView",
+          "bounds": [
+            56,
+            2026,
+            98,
+            2075
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Delivered by Store",
+          "resource-id": "com.grofers.customerapp:id/storecard_widget_del_by_text",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grofers.customerapp.customviews.TextViewRegularFont",
+          "bounds": [
+            112,
+            2026,
+            1384,
+            2084
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "DELIVERY BY",
+          "resource-id": "com.grofers.customerapp:id/storecard_widget_del_time_tv1",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grofers.customerapp.customviews.TextViewMediumFont",
+          "bounds": [
+            0,
+            1808,
+            719,
+            1868
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Today, 2 PM",
+          "resource-id": "com.grofers.customerapp:id/storecard_widget_del_time_tv2",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grofers.customerapp.customviews.TextViewMediumFont",
+          "bounds": [
+            0,
+            1882,
+            719,
+            1942
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "FREE DELIVERY ABOVE",
+          "resource-id": "com.grofers.customerapp:id/storecard_widget_del_charge_tv1",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grofers.customerapp.customviews.TextViewMediumFont",
+          "bounds": [
+            721,
+            1808,
+            1323,
+            1868
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "₹500, Online Only",
+          "resource-id": "com.grofers.customerapp:id/storecard_widget_del_charge_tv2",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grofers.customerapp.customviews.TextViewMediumFont",
+          "bounds": [
+            721,
+            1882,
+            1199,
+            1942
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "star",
+          "resource-id": "com.grofers.customerapp:id/storecard_widget_rating_icon",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grofers.customerapp.customviews.IconTextView",
+          "bounds": [
+            1258,
+            1638,
+            1318,
+            1698
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "3.4",
+          "resource-id": "com.grofers.customerapp:id/storecard_widget_rating_text",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grofers.customerapp.customviews.TextViewRegularFont",
+          "bounds": [
+            1318,
+            1638,
+            1384,
+            1706
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "com.grofers.customerapp.widget.BaseWidget",
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.grofers.customerapp.widget.StoreCardWidget",
+      "bounds": [
+        0,
+        2156,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.grofers.customerapp:id/storecard_widget_image",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            56,
+            2228,
+            98,
+            2270
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Apollo Pharmacy - R K Puram Sector 9",
+          "resource-id": "com.grofers.customerapp:id/storecard_widget_title",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grofers.customerapp.customviews.TextViewMediumFont",
+          "bounds": [
+            126,
+            2214,
+            1230,
+            2284
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Flat 10% off on selected Apollo products",
+          "resource-id": "com.grofers.customerapp:id/storecard_widget_subtitle",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grofers.customerapp.customviews.TextViewMediumFont",
+          "bounds": [
+            126,
+            2298,
+            1384,
+            2358
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "star",
+          "resource-id": "com.grofers.customerapp:id/storecard_widget_rating_icon",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grofers.customerapp.customviews.IconTextView",
+          "bounds": [
+            1258,
+            2214,
+            1318,
+            2274
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "3.9",
+          "resource-id": "com.grofers.customerapp:id/storecard_widget_rating_text",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.grofers.customerapp.customviews.TextViewRegularFont",
+          "bounds": [
+            1318,
+            2214,
+            1384,
+            2282
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

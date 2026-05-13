@@ -1,0 +1,984 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "iconClass": "play",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "flipboard.app:id/post_item_video_indicator",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        968,
+        1437,
+        1171,
+        1640
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Mashable · 2h · Brian Koerber",
+      "resource-id": "flipboard.app:id/item_post_publisher",
+      "ancestors": [
+        "flipboard.gui.FLTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "flipboard.gui.section.AttributionPublisher",
+      "bounds": [
+        35,
+        1282,
+        707,
+        1348
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Cannabis",
+      "resource-id": "flipboard.app:id/item_post_topic_tag",
+      "ancestors": [
+        "flipboard.gui.FLTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "flipboard.gui.TopicTagView",
+      "bounds": [
+        35,
+        910,
+        356,
+        1009
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "ancestors": [
+        "flipboard.gui.FLViewGroup",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "flipboard.gui.section.ItemActionBar",
+      "bounds": [
+        0,
+        2210,
+        1440,
+        2392
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Comment",
+          "resource-id": "flipboard.app:id/item_action_bar_social_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "flipboard.gui.FLTextView",
+          "bounds": [
+            154,
+            2268,
+            370,
+            2334
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "favorite",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "flipboard.app:id/item_action_bar_like_button",
+          "clickable": true,
+          "class": "flipboard.gui.FLChameleonImageView",
+          "bounds": [
+            957,
+            2238,
+            1118,
+            2364
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "share",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "flipboard.app:id/item_action_bar_share_button",
+          "clickable": true,
+          "class": "flipboard.gui.FLChameleonImageView",
+          "bounds": [
+            1118,
+            2242,
+            1279,
+            2359
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "add",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "flipboard.app:id/item_action_bar_flip_button",
+          "clickable": true,
+          "class": "flipboard.gui.FLChameleonImageView",
+          "bounds": [
+            1279,
+            2242,
+            1440,
+            2359
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "avatar",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            35,
+            2259,
+            119,
+            2343
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.support.v7.widget.Toolbar",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "flipboard.gui.actionbar.FLToolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Follow",
+          "resource-id": "flipboard.app:id/follow_button_internal",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "flipboard.gui.FLTextView",
+          "bounds": [
+            1084,
+            135,
+            1300,
+            229
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "follow"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "flipboard.app:id/post_item_video_indicator",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        618,
+        930,
+        821,
+        1133
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "The Huffington Post · 15h · Ed Mazza",
+      "resource-id": "flipboard.app:id/item_post_publisher",
+      "ancestors": [
+        "flipboard.gui.FLTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "flipboard.gui.section.AttributionPublisher",
+      "bounds": [
+        35,
+        1943,
+        1405,
+        2009
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Democratic Party",
+      "resource-id": "flipboard.app:id/item_post_topic_tag",
+      "ancestors": [
+        "flipboard.gui.FLTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "flipboard.gui.TopicTagView",
+      "bounds": [
+        28,
+        1438,
+        590,
+        1537
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "ancestors": [
+        "flipboard.gui.FLViewGroup",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "flipboard.gui.section.ItemActionBar",
+      "bounds": [
+        0,
+        2210,
+        1440,
+        2392
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Comment",
+          "resource-id": "flipboard.app:id/item_action_bar_social_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "flipboard.gui.FLTextView",
+          "bounds": [
+            154,
+            2268,
+            370,
+            2334
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "favorite",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "flipboard.app:id/item_action_bar_like_button",
+          "clickable": true,
+          "class": "flipboard.gui.FLChameleonImageView",
+          "bounds": [
+            957,
+            2238,
+            1118,
+            2364
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "share",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "flipboard.app:id/item_action_bar_share_button",
+          "clickable": true,
+          "class": "flipboard.gui.FLChameleonImageView",
+          "bounds": [
+            1118,
+            2242,
+            1279,
+            2359
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "add",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "flipboard.app:id/item_action_bar_flip_button",
+          "clickable": true,
+          "class": "flipboard.gui.FLChameleonImageView",
+          "bounds": [
+            1279,
+            2242,
+            1440,
+            2359
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "avatar",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            35,
+            2259,
+            119,
+            2343
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.support.v7.widget.Toolbar",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "flipboard.gui.actionbar.FLToolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Follow",
+          "resource-id": "flipboard.app:id/follow_button_internal",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "flipboard.gui.FLTextView",
+          "bounds": [
+            1084,
+            135,
+            1300,
+            229
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "follow"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "Mashable · 7h · Tim Chester",
+      "resource-id": "flipboard.app:id/item_post_publisher",
+      "ancestors": [
+        "flipboard.gui.FLTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "flipboard.gui.section.AttributionPublisher",
+      "bounds": [
+        35,
+        1567,
+        1405,
+        1633
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Donald Trump",
+      "resource-id": "flipboard.app:id/item_post_topic_tag",
+      "ancestors": [
+        "flipboard.gui.FLTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "flipboard.gui.TopicTagView",
+      "bounds": [
+        28,
+        1167,
+        489,
+        1266
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "ancestors": [
+        "flipboard.gui.FLViewGroup",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "flipboard.gui.section.ItemActionBar",
+      "bounds": [
+        0,
+        2210,
+        1440,
+        2392
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Comment",
+          "resource-id": "flipboard.app:id/item_action_bar_social_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "flipboard.gui.FLTextView",
+          "bounds": [
+            154,
+            2268,
+            370,
+            2334
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "favorite",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "flipboard.app:id/item_action_bar_like_button",
+          "clickable": true,
+          "class": "flipboard.gui.FLChameleonImageView",
+          "bounds": [
+            957,
+            2238,
+            1118,
+            2364
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "share",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "flipboard.app:id/item_action_bar_share_button",
+          "clickable": true,
+          "class": "flipboard.gui.FLChameleonImageView",
+          "bounds": [
+            1118,
+            2242,
+            1279,
+            2359
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "add",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "flipboard.app:id/item_action_bar_flip_button",
+          "clickable": true,
+          "class": "flipboard.gui.FLChameleonImageView",
+          "bounds": [
+            1279,
+            2242,
+            1440,
+            2359
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            35,
+            2259,
+            119,
+            2343
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Image"
+        }
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.support.v7.widget.Toolbar",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "flipboard.gui.actionbar.FLToolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Follow",
+          "resource-id": "flipboard.app:id/follow_button_internal",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "flipboard.gui.FLTextView",
+          "bounds": [
+            1084,
+            135,
+            1300,
+            229
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "follow"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "iconClass": "avatar",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "flipboard.app:id/attribution_avatar",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        35,
+        698,
+        175,
+        838
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Simon He",
+      "resource-id": "flipboard.app:id/attribution_title",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "flipboard.gui.FLTextView",
+      "bounds": [
+        210,
+        698,
+        444,
+        769
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "iWant - Gadgets & Toys",
+      "resource-id": "flipboard.app:id/attribution_subtitle",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "flipboard.gui.FLTextView",
+      "bounds": [
+        210,
+        769,
+        781,
+        840
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Humor",
+      "resource-id": "flipboard.app:id/topic_header_tag",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "flipboard.gui.FLTextView",
+      "bounds": [
+        542,
+        322,
+        898,
+        485
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "flipboard.app:id/attribution_avatar",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        35,
+        315,
+        175,
+        455
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "The Huffington Post",
+      "resource-id": "flipboard.app:id/attribution_title",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "flipboard.gui.FLTextView",
+      "bounds": [
+        210,
+        315,
+        684,
+        386
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "News",
+      "resource-id": "flipboard.app:id/attribution_subtitle",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "flipboard.gui.FLTextView",
+      "bounds": [
+        210,
+        386,
+        346,
+        457
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "flipboard.app:id/attribution_avatar",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        35,
+        315,
+        175,
+        455
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Mashable",
+      "resource-id": "flipboard.app:id/attribution_title",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "flipboard.gui.FLTextView",
+      "bounds": [
+        210,
+        315,
+        443,
+        386
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Tech",
+      "resource-id": "flipboard.app:id/attribution_subtitle",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "flipboard.gui.FLTextView",
+      "bounds": [
+        210,
+        386,
+        325,
+        457
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        728,
+        1282,
+        1412,
+        1795
+      ],
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "componentLabel": "Image"
+    },
+    {
+      "iconClass": "expand_more",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "flipboard.app:id/attribution_caret",
+      "clickable": false,
+      "class": "flipboard.gui.FLChameleonImageView",
+      "bounds": [
+        1316,
+        697,
+        1402,
+        765
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        0,
+        492,
+        1440,
+        1572
+      ],
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "flipboard.app:id/attribution_caret",
+      "clickable": false,
+      "class": "flipboard.gui.FLChameleonImageView",
+      "bounds": [
+        1316,
+        314,
+        1402,
+        382
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        0,
+        492,
+        1440,
+        1301
+      ],
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "flipboard.app:id/attribution_caret",
+      "clickable": false,
+      "class": "flipboard.gui.FLChameleonImageView",
+      "bounds": [
+        1316,
+        314,
+        1402,
+        382
+      ],
+      "componentLabel": "Image"
+    }
+  ]
+}

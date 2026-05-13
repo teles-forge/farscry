@@ -1,0 +1,587 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.mine.videoplayer:id/main_toolbar",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Equalizer",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            252,
+            135,
+            541,
+            228
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.mine.videoplayer:id/equalizer_preamp",
+      "clickable": false,
+      "class": "android.widget.SeekBar",
+      "bounds": [
+        0,
+        448,
+        1440,
+        546
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "resource-id": "com.mine.videoplayer:id/audio_media_switcher",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.mine.videoplayer:id/cover",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            0,
+            2207,
+            175,
+            2382
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Elementary Podcasts S4 E2",
+          "resource-id": "com.mine.videoplayer:id/title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            210,
+            2207,
+            893,
+            2283
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "British Council",
+          "resource-id": "com.mine.videoplayer:id/artist",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            210,
+            2283,
+            526,
+            2349
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "org.videolan.vlc.widget.AudioMediaSwitcher",
+        "org.videolan.vlc.widget.FlingViewGroup",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "org.videolan.vlc.gui.audio.widget.HeaderMediaSwitcher",
+      "bounds": [
+        0,
+        2189,
+        1040,
+        2392
+      ],
+      "componentLabel": "On/Off Switch"
+    },
+    {
+      "text": "4:26",
+      "resource-id": "com.mine.videoplayer:id/header_time",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1096,
+        2251,
+        1216,
+        2336
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "iconClass": "pause",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.mine.videoplayer:id/header_play_pause",
+      "clickable": true,
+      "class": "android.widget.ImageButton",
+      "bounds": [
+        1272,
+        2238,
+        1384,
+        2350
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "",
+      "resource-id": "com.mine.videoplayer:id/equalizer_button",
+      "ancestors": [
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.SwitchCompat",
+      "bounds": [
+        0,
+        316,
+        166,
+        411
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "resource-id": "com.mine.videoplayer:id/equalizer_presets",
+      "ancestors": [
+        "android.widget.Spinner",
+        "android.widget.AbsSpinner",
+        "android.widget.AdapterView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatSpinner",
+      "bounds": [
+        166,
+        280,
+        874,
+        448
+      ],
+      "componentLabel": "Text Button",
+      "text": "Soft"
+    },
+    {
+      "ancestors": [
+        "android.widget.SeekBar",
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.mine.videoplayer:id/equalizer_seek",
+      "clickable": false,
+      "class": "org.videolan.vlc.widget.VerticalSeekBar",
+      "bounds": [
+        0,
+        546,
+        238,
+        2033
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "text": "31 Hz",
+      "resource-id": "com.mine.videoplayer:id/equalizer_band",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        64,
+        2033,
+        173,
+        2090
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "4.8 Db",
+      "resource-id": "com.mine.videoplayer:id/equalizer_value",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        58,
+        2090,
+        179,
+        2147
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.SeekBar",
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.mine.videoplayer:id/equalizer_seek",
+      "clickable": false,
+      "class": "org.videolan.vlc.widget.VerticalSeekBar",
+      "bounds": [
+        238,
+        546,
+        476,
+        2033
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "text": "63 Hz",
+      "resource-id": "com.mine.videoplayer:id/equalizer_band",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        302,
+        2033,
+        411,
+        2090
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "1.6 Db",
+      "resource-id": "com.mine.videoplayer:id/equalizer_value",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        296,
+        2090,
+        417,
+        2147
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.SeekBar",
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.mine.videoplayer:id/equalizer_seek",
+      "clickable": false,
+      "class": "org.videolan.vlc.widget.VerticalSeekBar",
+      "bounds": [
+        476,
+        546,
+        714,
+        2033
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "text": "125 Hz",
+      "resource-id": "com.mine.videoplayer:id/equalizer_band",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        528,
+        2033,
+        661,
+        2090
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "0.0 Db",
+      "resource-id": "com.mine.videoplayer:id/equalizer_value",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        534,
+        2090,
+        655,
+        2147
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.SeekBar",
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.mine.videoplayer:id/equalizer_seek",
+      "clickable": false,
+      "class": "org.videolan.vlc.widget.VerticalSeekBar",
+      "bounds": [
+        714,
+        546,
+        952,
+        2033
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "text": "250 Hz",
+      "resource-id": "com.mine.videoplayer:id/equalizer_band",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        766,
+        2033,
+        899,
+        2090
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "-2.4 Db",
+      "resource-id": "com.mine.videoplayer:id/equalizer_value",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        766,
+        2090,
+        899,
+        2147
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.SeekBar",
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.mine.videoplayer:id/equalizer_seek",
+      "clickable": false,
+      "class": "org.videolan.vlc.widget.VerticalSeekBar",
+      "bounds": [
+        952,
+        546,
+        1190,
+        2033
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "text": "500 Hz",
+      "resource-id": "com.mine.videoplayer:id/equalizer_band",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1004,
+        2033,
+        1137,
+        2090
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "0.0 Db",
+      "resource-id": "com.mine.videoplayer:id/equalizer_value",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1010,
+        2090,
+        1131,
+        2147
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.SeekBar",
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.mine.videoplayer:id/equalizer_seek",
+      "clickable": false,
+      "class": "org.videolan.vlc.widget.VerticalSeekBar",
+      "bounds": [
+        1190,
+        546,
+        1428,
+        2033
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "text": "1 kHz",
+      "resource-id": "com.mine.videoplayer:id/equalizer_band",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1256,
+        2033,
+        1362,
+        2090
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "4.0 Db",
+      "resource-id": "com.mine.videoplayer:id/equalizer_value",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1248,
+        2090,
+        1369,
+        2147
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.SeekBar",
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.mine.videoplayer:id/equalizer_seek",
+      "clickable": false,
+      "class": "org.videolan.vlc.widget.VerticalSeekBar",
+      "bounds": [
+        1428,
+        546,
+        1440,
+        2033
+      ],
+      "componentLabel": "Slider"
+    }
+  ]
+}

@@ -1,0 +1,724 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.financial.calculator:id/action_bar_container",
+      "children": [
+        {
+          "text": "TVM Calculator",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            210,
+            135,
+            697,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Advanced",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.internal.view.menu.ActionMenuItemView",
+          "bounds": [
+            1130,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "advanced"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.internal.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "Present Value ",
+      "resource-id": "com.financial.calculator:id/presentValue",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        0,
+        344,
+        385,
+        415
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "com.financial.calculator:id/pvInput",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatEditText",
+      "bounds": [
+        385,
+        298,
+        875,
+        456
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "PV",
+      "resource-id": "com.financial.calculator:id/PV",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        882,
+        316,
+        1127,
+        456
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Payment ",
+      "resource-id": "com.financial.calculator:id/monthlyPayment",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        0,
+        502,
+        385,
+        573
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "com.financial.calculator:id/pmtInput",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatEditText",
+      "bounds": [
+        385,
+        456,
+        875,
+        614
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "PMT",
+      "resource-id": "com.financial.calculator:id/PMT",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        882,
+        474,
+        1127,
+        614
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Future Value ",
+      "resource-id": "com.financial.calculator:id/futureValue",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        0,
+        660,
+        385,
+        731
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "com.financial.calculator:id/fvInput",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatEditText",
+      "bounds": [
+        385,
+        614,
+        875,
+        772
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "FV",
+      "resource-id": "com.financial.calculator:id/FV",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        882,
+        632,
+        1127,
+        772
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Annual Rate% ",
+      "resource-id": "com.financial.calculator:id/interestRate",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        0,
+        818,
+        385,
+        889
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "com.financial.calculator:id/rateInput",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatEditText",
+      "bounds": [
+        385,
+        772,
+        875,
+        930
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Rate",
+      "resource-id": "com.financial.calculator:id/rate",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        882,
+        790,
+        1127,
+        930
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "rate"
+    },
+    {
+      "text": "Periods ",
+      "resource-id": "com.financial.calculator:id/period",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        0,
+        976,
+        385,
+        1047
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "com.financial.calculator:id/periodInput",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatEditText",
+      "bounds": [
+        385,
+        930,
+        875,
+        1088
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Period",
+      "resource-id": "com.financial.calculator:id/periods",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        882,
+        948,
+        1127,
+        1088
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Compounding ",
+      "resource-id": "com.financial.calculator:id/compoundMethod",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        0,
+        1114,
+        385,
+        1185
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "com.financial.calculator:id/paymentSpinner",
+      "ancestors": [
+        "android.widget.Spinner",
+        "android.widget.AbsSpinner",
+        "android.widget.AdapterView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatSpinner",
+      "bounds": [
+        385,
+        1106,
+        980,
+        1190
+      ],
+      "componentLabel": "Text Button",
+      "text": "Monthly"
+    },
+    {
+      "text": "Mode ",
+      "resource-id": "com.financial.calculator:id/mode",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        0,
+        1228,
+        385,
+        1299
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Decimal Digit",
+      "resource-id": "com.financial.calculator:id/decimal",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        0,
+        1340,
+        385,
+        1411
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Reset",
+      "resource-id": "com.financial.calculator:id/reset",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        154,
+        1439,
+        504,
+        1580
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "default"
+    },
+    {
+      "text": "Instruction",
+      "resource-id": "com.financial.calculator:id/instruction",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        518,
+        1439,
+        921,
+        1580
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Email",
+      "resource-id": "com.financial.calculator:id/email",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        935,
+        1439,
+        1285,
+        1580
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "email"
+    },
+    {
+      "text": "Example",
+      "resource-id": "com.financial.calculator:id/example",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        154,
+        1612,
+        504,
+        1753
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "History",
+      "resource-id": "com.financial.calculator:id/history",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        518,
+        1612,
+        921,
+        1753
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "history"
+    },
+    {
+      "text": "Save",
+      "resource-id": "com.financial.calculator:id/save",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        935,
+        1612,
+        1285,
+        1753
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "save"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.google.android.gms.ads.AdView",
+      "bounds": [
+        0,
+        2217,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.google.android.gms.ads.internal.webview.l",
+          "bounds": [
+            160,
+            2217,
+            1280,
+            2392
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.webkit.WebView",
+                "android.widget.AbsoluteLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                160,
+                2217,
+                1280,
+                2392
+              ],
+              "clickable": true,
+              "class": "com.google.android.gms.ads.internal.webview.m",
+              "componentLabel": "Web View"
+            }
+          ],
+          "componentLabel": "Web View"
+        }
+      ],
+      "componentLabel": "Advertisement"
+    },
+    {
+      "text": "End",
+      "resource-id": "com.financial.calculator:id/rbEnd",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatRadioButton",
+      "bounds": [
+        385,
+        1208,
+        586,
+        1320
+      ],
+      "componentLabel": "Radio Button"
+    },
+    {
+      "text": "Beginning",
+      "resource-id": "com.financial.calculator:id/rbBegin",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatRadioButton",
+      "bounds": [
+        586,
+        1208,
+        932,
+        1320
+      ],
+      "componentLabel": "Radio Button"
+    },
+    {
+      "text": "two",
+      "resource-id": "com.financial.calculator:id/rbTwo",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatRadioButton",
+      "bounds": [
+        385,
+        1320,
+        584,
+        1432
+      ],
+      "componentLabel": "Radio Button"
+    },
+    {
+      "text": "three",
+      "resource-id": "com.financial.calculator:id/rbThree",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatRadioButton",
+      "bounds": [
+        584,
+        1320,
+        816,
+        1432
+      ],
+      "componentLabel": "Radio Button"
+    },
+    {
+      "text": "four",
+      "resource-id": "com.financial.calculator:id/rbFour",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatRadioButton",
+      "bounds": [
+        816,
+        1320,
+        1023,
+        1432
+      ],
+      "componentLabel": "Radio Button"
+    }
+  ]
+}

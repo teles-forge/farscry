@@ -1,0 +1,173 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "org.mozilla.firefox_beta:id/browser_toolbar",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.mozilla.firefox_beta:id/url_bar_entry",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            28,
+            112,
+            1068,
+            224
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "more",
+          "resource-id": "org.mozilla.firefox_beta:id/menu",
+          "children": [
+            {
+              "iconClass": "menu",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "org.mozilla.firefox_beta:id/menu_icon",
+              "clickable": false,
+              "class": "org.mozilla.gecko.widget.themed.ThemedImageView",
+              "bounds": [
+                1345,
+                140,
+                1366,
+                196
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "ancestors": [
+            "org.mozilla.gecko.widget.themed.ThemedFrameLayout",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "org.mozilla.gecko.toolbar.ShapedButtonFrameLayout",
+          "bounds": [
+            1272,
+            84,
+            1440,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "copy",
+          "ancestors": [
+            "org.mozilla.gecko.toolbar.ShapedButton",
+            "org.mozilla.gecko.widget.themed.ThemedImageButton",
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.mozilla.firefox_beta:id/tabs",
+          "clickable": true,
+          "class": "org.mozilla.gecko.toolbar.PhoneTabsButton",
+          "bounds": [
+            1048,
+            84,
+            1272,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "1",
+          "bounds": [
+            1160,
+            126,
+            1244,
+            210
+          ],
+          "clickable": false,
+          "class": "org.mozilla.gecko.widget.themed.ThemedTextView",
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "lock",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.mozilla.firefox_beta:id/site_security",
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "bounds": [
+            32,
+            110,
+            144,
+            222
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "https://support.mozilla.org/en-US/products/mobile?utm_source=inproduct&utm_medium=default-bookmarks&utm_campaign=mobileandroid",
+          "resource-id": "org.mozilla.firefox_beta:id/url_bar_title",
+          "ancestors": [
+            "org.mozilla.gecko.widget.FadedTextView",
+            "org.mozilla.gecko.widget.themed.ThemedTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "org.mozilla.gecko.widget.FadedMultiColorTextView",
+          "bounds": [
+            144,
+            84,
+            1054,
+            252
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "org.mozilla.gecko.toolbar.BrowserToolbarPhoneBase",
+        "org.mozilla.gecko.toolbar.BrowserToolbar",
+        "org.mozilla.gecko.widget.themed.ThemedRelativeLayout",
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "org.mozilla.gecko.toolbar.BrowserToolbarPhone",
+      "bounds": [
+        0,
+        84,
+        1440,
+        252
+      ],
+      "componentLabel": "Toolbar"
+    }
+  ]
+}

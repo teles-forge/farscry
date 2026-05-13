@@ -1,0 +1,961 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.doodleapp.ringtonebox:id/actionbar",
+      "children": [
+        {
+          "iconClass": "music",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.doodleapp.ringtonebox:id/actionbar_i",
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "bounds": [
+            0,
+            101,
+            140,
+            241
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "RingtoneMaker",
+          "resource-id": "com.doodleapp.ringtonebox:id/actionbar_title",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            158,
+            133,
+            897,
+            209
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "file_download",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.doodleapp.ringtonebox:id/actionbar_item",
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "bounds": [
+            915,
+            84,
+            1090,
+            259
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.doodleapp.ringtonebox:id/actionbar_item",
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "bounds": [
+            1090,
+            84,
+            1265,
+            259
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.doodleapp.ringtonebox:id/actionbar_item",
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "bounds": [
+            1265,
+            84,
+            1440,
+            259
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.doodleapp.custom.doodleappactionbar.DoodleActionBar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        259
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.doodleapp.ringtonebox:id/indicator",
+      "clickable": false,
+      "class": "com.viewpagerindicator.TitlePageIndicator",
+      "bounds": [
+        0,
+        259,
+        1440,
+        383
+      ],
+      "componentLabel": "Pager Indicator"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.google.android.gms.ads.AdView",
+      "bounds": [
+        0,
+        2217,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.google.android.gms.ads.internal.webview.l",
+          "bounds": [
+            160,
+            2217,
+            1280,
+            2392
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.webkit.WebView",
+                "android.widget.AbsoluteLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                160,
+                2217,
+                1280,
+                2392
+              ],
+              "clickable": true,
+              "class": "com.google.android.gms.ads.internal.webview.m",
+              "componentLabel": "Web View"
+            }
+          ],
+          "componentLabel": "Web View"
+        }
+      ],
+      "componentLabel": "Advertisement"
+    },
+    {
+      "resource-id": "com.doodleapp.ringtonebox:id/audio_item_layout",
+      "children": [
+        {
+          "text": "Action Hero",
+          "resource-id": "com.doodleapp.ringtonebox:id/audio_t",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.doodleapp.ringtonebox.custom.AutoScrollTextView",
+          "bounds": [
+            203,
+            425,
+            1209,
+            506
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "<unknown>",
+          "resource-id": "com.doodleapp.ringtonebox:id/audio_artist",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            203,
+            506,
+            1074,
+            563
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "8.10KB",
+          "resource-id": "com.doodleapp.ringtonebox:id/audio_size",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            1074,
+            506,
+            1209,
+            563
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "",
+          "resource-id": "com.doodleapp.ringtonebox:id/more_show",
+          "ancestors": [
+            "android.widget.CheckBox",
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.doodleapp.ringtonebox.custom.DoodleCheckBox",
+          "bounds": [
+            1230,
+            383,
+            1440,
+            628
+          ],
+          "componentLabel": "Input"
+        },
+        {
+          "text": "00:36",
+          "resource-id": "com.doodleapp.ringtonebox:id/audio_duration",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            26,
+            474,
+            155,
+            536
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        383,
+        1440,
+        628
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.doodleapp.ringtonebox:id/audio_item_layout",
+      "children": [
+        {
+          "text": "Arrival",
+          "resource-id": "com.doodleapp.ringtonebox:id/audio_t",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.doodleapp.ringtonebox.custom.AutoScrollTextView",
+          "bounds": [
+            203,
+            670,
+            1209,
+            751
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "<unknown>",
+          "resource-id": "com.doodleapp.ringtonebox:id/audio_artist",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            203,
+            751,
+            1074,
+            808
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0.40KB",
+          "resource-id": "com.doodleapp.ringtonebox:id/audio_size",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            1074,
+            751,
+            1209,
+            808
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "",
+          "resource-id": "com.doodleapp.ringtonebox:id/more_show",
+          "ancestors": [
+            "android.widget.CheckBox",
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.doodleapp.ringtonebox.custom.DoodleCheckBox",
+          "bounds": [
+            1230,
+            628,
+            1440,
+            873
+          ],
+          "componentLabel": "Input"
+        },
+        {
+          "text": "00:05",
+          "resource-id": "com.doodleapp.ringtonebox:id/audio_duration",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            26,
+            719,
+            155,
+            781
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        628,
+        1440,
+        873
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.doodleapp.ringtonebox:id/audio_item_layout",
+      "children": [
+        {
+          "text": "Calypso",
+          "resource-id": "com.doodleapp.ringtonebox:id/audio_t",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.doodleapp.ringtonebox.custom.AutoScrollTextView",
+          "bounds": [
+            203,
+            915,
+            1209,
+            996
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "<unknown>",
+          "resource-id": "com.doodleapp.ringtonebox:id/audio_artist",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            203,
+            996,
+            1074,
+            1053
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "4.48KB",
+          "resource-id": "com.doodleapp.ringtonebox:id/audio_size",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            1074,
+            996,
+            1209,
+            1053
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "",
+          "resource-id": "com.doodleapp.ringtonebox:id/more_show",
+          "ancestors": [
+            "android.widget.CheckBox",
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.doodleapp.ringtonebox.custom.DoodleCheckBox",
+          "bounds": [
+            1230,
+            873,
+            1440,
+            1118
+          ],
+          "componentLabel": "Input"
+        },
+        {
+          "text": "00:16",
+          "resource-id": "com.doodleapp.ringtonebox:id/audio_duration",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            26,
+            964,
+            155,
+            1026
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        873,
+        1440,
+        1118
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.doodleapp.ringtonebox:id/audio_item_layout",
+      "children": [
+        {
+          "text": "Organic",
+          "resource-id": "com.doodleapp.ringtonebox:id/audio_t",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.doodleapp.ringtonebox.custom.AutoScrollTextView",
+          "bounds": [
+            203,
+            1160,
+            1209,
+            1241
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "<unknown>",
+          "resource-id": "com.doodleapp.ringtonebox:id/audio_artist",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            203,
+            1241,
+            1074,
+            1298
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "5.05KB",
+          "resource-id": "com.doodleapp.ringtonebox:id/audio_size",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            1074,
+            1241,
+            1209,
+            1298
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "",
+          "resource-id": "com.doodleapp.ringtonebox:id/more_show",
+          "ancestors": [
+            "android.widget.CheckBox",
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.doodleapp.ringtonebox.custom.DoodleCheckBox",
+          "bounds": [
+            1230,
+            1118,
+            1440,
+            1363
+          ],
+          "componentLabel": "Input"
+        },
+        {
+          "text": "00:18",
+          "resource-id": "com.doodleapp.ringtonebox:id/audio_duration",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            26,
+            1209,
+            155,
+            1271
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1118,
+        1440,
+        1363
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.doodleapp.ringtonebox:id/audio_item_layout",
+      "children": [
+        {
+          "text": "Phone",
+          "resource-id": "com.doodleapp.ringtonebox:id/audio_t",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.doodleapp.ringtonebox.custom.AutoScrollTextView",
+          "bounds": [
+            203,
+            1405,
+            1209,
+            1486
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "<unknown>",
+          "resource-id": "com.doodleapp.ringtonebox:id/audio_artist",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            203,
+            1486,
+            1074,
+            1543
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0.73KB",
+          "resource-id": "com.doodleapp.ringtonebox:id/audio_size",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            1074,
+            1486,
+            1209,
+            1543
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "",
+          "resource-id": "com.doodleapp.ringtonebox:id/more_show",
+          "ancestors": [
+            "android.widget.CheckBox",
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.doodleapp.ringtonebox.custom.DoodleCheckBox",
+          "bounds": [
+            1230,
+            1363,
+            1440,
+            1608
+          ],
+          "componentLabel": "Input"
+        },
+        {
+          "text": "00:04",
+          "resource-id": "com.doodleapp.ringtonebox:id/audio_duration",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            26,
+            1454,
+            155,
+            1516
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1363,
+        1440,
+        1608
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.doodleapp.ringtonebox:id/audio_item_layout",
+      "children": [
+        {
+          "text": "Psychic Delia",
+          "resource-id": "com.doodleapp.ringtonebox:id/audio_t",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.doodleapp.ringtonebox.custom.AutoScrollTextView",
+          "bounds": [
+            203,
+            1650,
+            1209,
+            1731
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "<unknown>",
+          "resource-id": "com.doodleapp.ringtonebox:id/audio_artist",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            203,
+            1731,
+            1026,
+            1788
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "246.56KB",
+          "resource-id": "com.doodleapp.ringtonebox:id/audio_size",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            1026,
+            1731,
+            1209,
+            1788
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "",
+          "resource-id": "com.doodleapp.ringtonebox:id/more_show",
+          "ancestors": [
+            "android.widget.CheckBox",
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.doodleapp.ringtonebox.custom.DoodleCheckBox",
+          "bounds": [
+            1230,
+            1608,
+            1440,
+            1853
+          ],
+          "componentLabel": "Input"
+        },
+        {
+          "text": "00:16",
+          "resource-id": "com.doodleapp.ringtonebox:id/audio_duration",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            26,
+            1699,
+            155,
+            1761
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1608,
+        1440,
+        1853
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.doodleapp.ringtonebox:id/audio_item_layout",
+      "children": [
+        {
+          "text": "Silent",
+          "resource-id": "com.doodleapp.ringtonebox:id/audio_t",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.doodleapp.ringtonebox.custom.AutoScrollTextView",
+          "bounds": [
+            203,
+            1895,
+            1209,
+            1976
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "<unknown>",
+          "resource-id": "com.doodleapp.ringtonebox:id/audio_artist",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            203,
+            1976,
+            1074,
+            2033
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "0.04KB",
+          "resource-id": "com.doodleapp.ringtonebox:id/audio_size",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            1074,
+            1976,
+            1209,
+            2033
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "",
+          "resource-id": "com.doodleapp.ringtonebox:id/more_show",
+          "ancestors": [
+            "android.widget.CheckBox",
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.doodleapp.ringtonebox.custom.DoodleCheckBox",
+          "bounds": [
+            1230,
+            1853,
+            1440,
+            2098
+          ],
+          "componentLabel": "Input"
+        },
+        {
+          "text": "00:00",
+          "resource-id": "com.doodleapp.ringtonebox:id/audio_duration",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            26,
+            1944,
+            155,
+            2006
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1853,
+        1440,
+        2098
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

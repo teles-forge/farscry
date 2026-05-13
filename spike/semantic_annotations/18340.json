@@ -1,0 +1,989 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "ancestors": [
+        "android.support.v7.widget.Toolbar",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.nbc.news.view.NbcToolBar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            154,
+            105,
+            361,
+            259
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            154,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "com.nbcuni.telemundostation.telemundony:id/action_search",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1188,
+            98,
+            1314,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "settings",
+          "resource-id": "com.nbcuni.telemundostation.telemundony:id/action_settings",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1314,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.nbcuni.telemundostation.telemundony:id/frame_layout",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            280,
+            1440,
+            298
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.v7.widget.RecyclerView",
+          "bounds": [
+            0,
+            280,
+            1440,
+            2392
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "resource-id": "com.nbcuni.telemundostation.telemundony:id/article_image_layout",
+              "children": [
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.telemundostation.telemundony:id/article_image",
+                  "clickable": true,
+                  "class": "com.nbc.news.view.NetworkImageView",
+                  "bounds": [
+                    0,
+                    280,
+                    1440,
+                    1090
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "text": "ACTUALIZADO HACE 4 HORAS",
+                  "resource-id": "com.nbcuni.telemundostation.telemundony:id/time",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NbcTextView",
+                  "bounds": [
+                    49,
+                    802,
+                    1391,
+                    849
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "Hoy por Telemundo “Latinos Venciendo el Miedo”",
+                  "resource-id": "com.nbcuni.telemundostation.telemundony:id/headline",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NbcTextView",
+                  "bounds": [
+                    49,
+                    874,
+                    1391,
+                    1090
+                  ],
+                  "componentLabel": "Text"
+                }
+              ],
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.widget.RelativeLayout",
+              "bounds": [
+                0,
+                280,
+                1440,
+                1115
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "resource-id": "com.nbcuni.telemundostation.telemundony:id/article_image_layout",
+              "children": [
+                {
+                  "text": "La Autoridad en el Tiempo",
+                  "resource-id": "com.nbcuni.telemundostation.telemundony:id/headline",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    504,
+                    1164,
+                    1342,
+                    1279
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.telemundostation.telemundony:id/article_image",
+                  "clickable": true,
+                  "class": "com.nbc.news.view.NetworkImageView",
+                  "bounds": [
+                    49,
+                    1164,
+                    504,
+                    1419
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.telemundostation.telemundony:id/article_type_image",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "bounds": [
+                    49,
+                    1370,
+                    217,
+                    1419
+                  ],
+                  "componentLabel": "Image"
+                }
+              ],
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.widget.RelativeLayout",
+              "bounds": [
+                0,
+                1115,
+                1440,
+                1472
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "resource-id": "com.nbcuni.telemundostation.telemundony:id/article_image_layout",
+              "children": [
+                {
+                  "text": "Arrestan a sospechoso de golpiza mortal",
+                  "resource-id": "com.nbcuni.telemundostation.telemundony:id/headline",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    504,
+                    1521,
+                    1342,
+                    1693
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.telemundostation.telemundony:id/article_image",
+                  "clickable": true,
+                  "class": "com.nbc.news.view.NetworkImageView",
+                  "bounds": [
+                    49,
+                    1521,
+                    504,
+                    1776
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.telemundostation.telemundony:id/article_type_image",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "bounds": [
+                    49,
+                    1727,
+                    217,
+                    1776
+                  ],
+                  "componentLabel": "Image"
+                }
+              ],
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.widget.RelativeLayout",
+              "bounds": [
+                0,
+                1472,
+                1440,
+                1829
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "resource-id": "com.nbcuni.telemundostation.telemundony:id/article_image_layout",
+              "children": [
+                {
+                  "text": "Policías disparan contra vehículo en Queens",
+                  "resource-id": "com.nbcuni.telemundostation.telemundony:id/headline",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    504,
+                    1878,
+                    1342,
+                    2050
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.telemundostation.telemundony:id/article_image",
+                  "clickable": true,
+                  "class": "com.nbc.news.view.NetworkImageView",
+                  "bounds": [
+                    49,
+                    1878,
+                    504,
+                    2133
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.telemundostation.telemundony:id/article_type_image",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "bounds": [
+                    49,
+                    2084,
+                    217,
+                    2133
+                  ],
+                  "componentLabel": "Image"
+                }
+              ],
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.widget.RelativeLayout",
+              "bounds": [
+                0,
+                1829,
+                1440,
+                2186
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "resource-id": "com.nbcuni.telemundostation.telemundony:id/article_image_layout",
+              "children": [
+                {
+                  "text": "Policía: Mujeres transgénero sufren ataque de odio ",
+                  "resource-id": "com.nbcuni.telemundostation.telemundony:id/headline",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    504,
+                    2235,
+                    1342,
+                    2392
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "iconClass": "close",
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.telemundostation.telemundony:id/article_image",
+                  "clickable": true,
+                  "class": "com.nbc.news.view.NetworkImageView",
+                  "bounds": [
+                    49,
+                    2235,
+                    504,
+                    2392
+                  ],
+                  "componentLabel": "Icon"
+                }
+              ],
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.widget.RelativeLayout",
+              "bounds": [
+                0,
+                2186,
+                1440,
+                2392
+              ],
+              "componentLabel": "List Item"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.google.android.gms.ads.doubleclick.PublisherAdView",
+          "bounds": [
+            160,
+            2217,
+            1280,
+            2392
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.FrameLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "com.google.android.gms.ads.internal.webview.n",
+              "bounds": [
+                160,
+                2217,
+                1280,
+                2392
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "android.webkit.WebView",
+                    "android.widget.AbsoluteLayout",
+                    "android.view.ViewGroup",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    160,
+                    2217,
+                    1280,
+                    2392
+                  ],
+                  "clickable": true,
+                  "class": "com.google.android.gms.ads.internal.webview.o",
+                  "componentLabel": "Web View"
+                }
+              ],
+              "componentLabel": "Web View"
+            }
+          ],
+          "componentLabel": "Advertisement"
+        }
+      ],
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.nbc.news.view.NbcLayout",
+      "bounds": [
+        0,
+        280,
+        1440,
+        2392
+      ],
+      "componentLabel": "Drawer"
+    },
+    {
+      "text": "EEUU",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        280,
+        980,
+        287
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Lo insólito",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        287,
+        980,
+        421
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Noticias en fotos",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        421,
+        980,
+        555
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "República Dominicana",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        555,
+        980,
+        689
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Puerto Rico",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        689,
+        980,
+        823
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Inmigración",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        823,
+        980,
+        957
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Mundo",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        957,
+        980,
+        1091
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Salud",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        1091,
+        980,
+        1225
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Deportes",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        1225,
+        980,
+        1359
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Autos y Tecnología",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.TextView",
+      "bounds": [
+        0,
+        1359,
+        980,
+        1493
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1493,
+        980,
+        1661
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "El tiempo",
+          "resource-id": "com.nbcuni.telemundostation.telemundony:id/menu_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            53,
+            1493,
+            815,
+            1661
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_downward",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.nbcuni.telemundostation.telemundony:id/sub_menu_indicator",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            843,
+            1563,
+            899,
+            1591
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1661,
+        980,
+        1829
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Entretenimiento",
+          "resource-id": "com.nbcuni.telemundostation.telemundony:id/menu_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            53,
+            1661,
+            815,
+            1829
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_downward",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.nbcuni.telemundostation.telemundony:id/sub_menu_indicator",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            843,
+            1731,
+            899,
+            1759
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1829,
+        980,
+        1997
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Fotos y Videos",
+          "resource-id": "com.nbcuni.telemundostation.telemundony:id/menu_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            53,
+            1829,
+            927,
+            1997
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        1997,
+        980,
+        2165
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Copa Confederaciones 2017",
+          "resource-id": "com.nbcuni.telemundostation.telemundony:id/menu_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            53,
+            1997,
+            927,
+            2165
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        2165,
+        980,
+        2333
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Telemundo 47 Responde",
+          "resource-id": "com.nbcuni.telemundostation.telemundony:id/menu_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            53,
+            2165,
+            815,
+            2333
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_downward",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.nbcuni.telemundostation.telemundony:id/sub_menu_indicator",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            843,
+            2235,
+            899,
+            2263
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        2333,
+        980,
+        2392
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Conoce al equipo",
+          "resource-id": "com.nbcuni.telemundostation.telemundony:id/menu_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            53,
+            2333,
+            927,
+            2392
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

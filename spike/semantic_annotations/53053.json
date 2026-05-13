@@ -1,0 +1,348 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.ziprecruiter.android.release:id/toolbar",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            423,
+            0,
+            1017,
+            196
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        0,
+        1440,
+        196
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        35,
+        231,
+        1405,
+        438
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "avatar",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.ziprecruiter.android.release:id/avatar",
+          "clickable": false,
+          "class": "com.ziprecruiter.android.features.onboarding.view.CircularImageView",
+          "bounds": [
+            35,
+            324,
+            147,
+            438
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Hi! Welcome to ZipRecruiter! I'll help you find your dream job",
+          "resource-id": "com.ziprecruiter.android.release:id/message",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            224,
+            273,
+            1274,
+            396
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        35,
+        472,
+        1405,
+        622
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "avatar",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.ziprecruiter.android.release:id/avatar",
+          "clickable": false,
+          "class": "com.ziprecruiter.android.features.onboarding.view.CircularImageView",
+          "bounds": [
+            35,
+            508,
+            147,
+            622
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Start by telling me what you're looking for ",
+          "resource-id": "com.ziprecruiter.android.release:id/message",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            224,
+            514,
+            1196,
+            580
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        35,
+        656,
+        1405,
+        1574
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "I'm looking for",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            495,
+            656,
+            1405,
+            806
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "resource-id": "com.ziprecruiter.android.release:id/spinner",
+          "ancestors": [
+            "android.widget.Spinner",
+            "android.widget.AbsSpinner",
+            "android.widget.AdapterView",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatSpinner",
+          "bounds": [
+            551,
+            1024,
+            1387,
+            1160
+          ],
+          "componentLabel": "Text Button",
+          "text": "Within 50 miles of"
+        },
+        {
+          "text": "SEARCH",
+          "resource-id": "com.ziprecruiter.android.release:id/searchButton",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1107,
+            1424,
+            1349,
+            1546
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "search"
+        },
+        {
+          "text": "",
+          "resource-id": "com.ziprecruiter.android.release:id/keywordsEditor",
+          "ancestors": [
+            "android.widget.MultiAutoCompleteTextView",
+            "android.widget.AutoCompleteTextView",
+            "android.widget.EditText",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatMultiAutoCompleteTextView",
+          "bounds": [
+            551,
+            862,
+            1405,
+            928
+          ],
+          "componentLabel": "Input"
+        },
+        {
+          "iconClass": "location_crosshair",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.ziprecruiter.android.release:id/locationButton",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1272,
+            1257,
+            1349,
+            1334
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Urbana, IL",
+          "resource-id": "com.ziprecruiter.android.release:id/locationEditor",
+          "ancestors": [
+            "android.widget.MultiAutoCompleteTextView",
+            "android.widget.AutoCompleteTextView",
+            "android.widget.EditText",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatMultiAutoCompleteTextView",
+          "bounds": [
+            551,
+            1234,
+            1237,
+            1357
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "java.lang.Object"
+      ],
+      "bounds": [
+        35,
+        1608,
+        1405,
+        2392
+      ],
+      "clickable": false,
+      "class": "android.view.View",
+      "componentLabel": "List Item"
+    },
+    {
+      "text": "Privacy Policy",
+      "resource-id": "com.ziprecruiter.android.release:id/privacyPolicyButton",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        35,
+        2300,
+        718,
+        2357
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "privacy policy"
+    },
+    {
+      "text": "Terms of Use",
+      "resource-id": "com.ziprecruiter.android.release:id/termsOfUseButton",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        722,
+        2300,
+        1405,
+        2357
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "terms of use"
+    }
+  ]
+}

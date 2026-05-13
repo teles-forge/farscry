@@ -1,0 +1,630 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "org.wikipedia:id/single_fragment_toolbar",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.wikipedia:id/single_fragment_toolbar_wordmark",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            56,
+            130,
+            406,
+            234
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "org.wikipedia:id/menu_feed_search",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1104,
+            98,
+            1272,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "resource-id": "org.wikipedia:id/menu_overflow_button",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1272,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.design.widget.TabLayout$SlidingTabStrip",
+      "bounds": [
+        0,
+        2196,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.design.widget.TabLayout$TabView",
+          "bounds": [
+            720,
+            2196,
+            1080,
+            2392
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "textButtonClass": "history"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.design.widget.TabLayout$TabView",
+          "bounds": [
+            1080,
+            2196,
+            1440,
+            2392
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "textButtonClass": "nearby"
+        },
+        {
+          "text": "Explore",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "org.wikipedia.navtab.NavTabView",
+          "bounds": [
+            42,
+            2215,
+            318,
+            2372
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "My lists",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "org.wikipedia.navtab.NavTabView",
+          "bounds": [
+            402,
+            2220,
+            678,
+            2368
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "ancestors": [
+        "org.wikipedia.feed.view.ListCardView",
+        "org.wikipedia.feed.view.DefaultFeedCardView",
+        "android.support.v7.widget.CardView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "org.wikipedia.feed.mostread.MostReadCardView",
+      "bounds": [
+        25,
+        280,
+        1415,
+        825
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "org.wikipedia.feed.view.PageTitleListCardItemView",
+          "bounds": [
+            25,
+            280,
+            1415,
+            517
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "iconClass": "more",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "org.wikipedia:id/view_list_card_item_menu",
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                1275,
+                293,
+                1415,
+                433
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "ancestors": [
+                "com.facebook.drawee.view.GenericDraweeView",
+                "com.facebook.drawee.view.DraweeView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "org.wikipedia:id/view_list_card_item_image",
+              "clickable": false,
+              "class": "com.facebook.drawee.view.SimpleDraweeView",
+              "bounds": [
+                81,
+                321,
+                221,
+                461
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "13 Reasons Why",
+              "resource-id": "org.wikipedia:id/view_list_card_item_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                277,
+                306,
+                690,
+                382
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "American television series",
+              "resource-id": "org.wikipedia:id/view_list_card_item_subtitle",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "org.wikipedia.views.GoneIfEmptyTextView",
+              "bounds": [
+                277,
+                389,
+                850,
+                455
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "org.wikipedia.feed.view.PageTitleListCardItemView",
+          "bounds": [
+            25,
+            517,
+            1415,
+            825
+          ],
+          "clickable": true,
+          "children": [
+            {
+              "iconClass": "more",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "org.wikipedia:id/view_list_card_item_menu",
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                1275,
+                545,
+                1415,
+                685
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "ancestors": [
+                "com.facebook.drawee.view.GenericDraweeView",
+                "com.facebook.drawee.view.DraweeView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "org.wikipedia:id/view_list_card_item_image",
+              "clickable": false,
+              "class": "com.facebook.drawee.view.SimpleDraweeView",
+              "bounds": [
+                81,
+                573,
+                221,
+                713
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "Good Friday",
+              "resource-id": "org.wikipedia:id/view_list_card_item_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                277,
+                552,
+                577,
+                628
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Christian religious holiday, the Friday before Easter",
+              "resource-id": "org.wikipedia:id/view_list_card_item_subtitle",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "org.wikipedia.views.GoneIfEmptyTextView",
+              "bounds": [
+                277,
+                635,
+                1303,
+                769
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "org.wikipedia.feed.view.DefaultFeedCardView",
+        "android.support.v7.widget.CardView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "org.wikipedia.feed.image.FeaturedImageCardView",
+      "bounds": [
+        25,
+        861,
+        1415,
+        2107
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "com.facebook.drawee.view.SimpleDraweeView",
+            "com.facebook.drawee.view.GenericDraweeView",
+            "com.facebook.drawee.view.DraweeView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.wikipedia:id/view_featured_image_card_image",
+          "clickable": true,
+          "class": "org.wikipedia.views.FaceAndColorDetectImageView",
+          "bounds": [
+            25,
+            1029,
+            1415,
+            1939
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "The Lincoln Memorial, finished in 1922, is a national monument built to honor Abraham Lincoln (February 12, 1809 - April 15, 1865), 16th President of the United States, serving from March 1861 until his assassination in April 1865.",
+          "resource-id": "org.wikipedia:id/featured_image_description_Text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            25,
+            1803,
+            1415,
+            1939
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "resource-id": "org.wikipedia:id/view_card_action_footer_button",
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            25,
+            1939,
+            482,
+            2107
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "download"
+        },
+        {
+          "iconClass": "share",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.wikipedia:id/view_card_action_footer_share_button",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1219,
+            1939,
+            1415,
+            2107
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "photo",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.wikipedia:id/view_card_header_image",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            81,
+            903,
+            165,
+            987
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Picture of the day",
+          "resource-id": "org.wikipedia:id/view_card_header_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            193,
+            912,
+            578,
+            978
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Apr 15, 2017",
+          "resource-id": "org.wikipedia:id/view_card_header_subtitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1038,
+            916,
+            1275,
+            973
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.wikipedia:id/view_list_card_header_menu",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1275,
+            875,
+            1415,
+            1015
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "org.wikipedia.feed.view.StaticCardView",
+        "org.wikipedia.feed.view.DefaultFeedCardView",
+        "android.support.v7.widget.CardView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "org.wikipedia.feed.mainpage.MainPageCardView",
+      "bounds": [
+        25,
+        2143,
+        1415,
+        2392
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "iconClass": "explore",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.wikipedia:id/view_static_card_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1191,
+            2185,
+            1359,
+            2353
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Today on Wikipedia",
+          "resource-id": "org.wikipedia:id/view_static_card_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            81,
+            2200,
+            509,
+            2266
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Main page on Apr 15, 2017",
+          "resource-id": "org.wikipedia:id/view_static_card_subtitle",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            81,
+            2280,
+            581,
+            2337
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    }
+  ]
+}

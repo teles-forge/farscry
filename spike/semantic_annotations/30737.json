@@ -1,0 +1,245 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "ancestors": [
+        "com.mapbox.mapboxsdk.views.MapView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "de.komoot.android:id/map",
+      "clickable": true,
+      "class": "de.komoot.android.view.KomootMapView",
+      "bounds": [
+        0,
+        756,
+        1440,
+        2392
+      ],
+      "componentLabel": "Map View"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        84,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "resource-id": "de.komoot.android:id/mbmb_cta_button",
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "de.komoot.android.view.composition.MapBottomBarCTAButton",
+          "bounds": [
+            601,
+            1993,
+            839,
+            2231
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "stop"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "de.komoot.android:id/mbmb_camera_ib",
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "bounds": [
+            0,
+            2238,
+            360,
+            2392
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "de.komoot.android:id/mbmb_search_ib",
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "bounds": [
+            360,
+            2238,
+            720,
+            2392
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "de.komoot.android:id/mbmb_voice_switch_ib",
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "bounds": [
+            720,
+            2238,
+            1080,
+            2392
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "de.komoot.android:id/mbmb_focus_ib",
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "bounds": [
+            1080,
+            2238,
+            1440,
+            2392
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "componentLabel": "Bottom Navigation"
+    },
+    {
+      "text": "0.2 mi",
+      "resource-id": "de.komoot.android:id/txt_scale_label",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "de.komoot.android.view.TypefaceTextView",
+      "bounds": [
+        209,
+        820,
+        314,
+        874
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "de.komoot.android:id/button_zoom_in",
+      "clickable": true,
+      "class": "android.widget.ImageButton",
+      "bounds": [
+        1226,
+        1812,
+        1394,
+        1980
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "de.komoot.android:id/button_zoom_out",
+      "clickable": true,
+      "class": "android.widget.ImageButton",
+      "bounds": [
+        1226,
+        1982,
+        1394,
+        2150
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Current Speed",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "de.komoot.android.view.TypefaceTextView",
+      "bounds": [
+        552,
+        140,
+        887,
+        213
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "0.8",
+      "resource-id": "de.komoot.android:id/tpl_current_speed_full_tv",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        528,
+        213,
+        912,
+        604
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "mph",
+      "resource-id": "de.komoot.android:id/tpl_current_speed_unit_full_ttv",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "de.komoot.android.view.TypefaceTextView",
+      "bounds": [
+        664,
+        625,
+        776,
+        700
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

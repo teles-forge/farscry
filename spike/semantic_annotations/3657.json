@@ -1,0 +1,527 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.vitalhint.haemukja:id/recipe_videoview",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.VideoView",
+            "android.view.SurfaceView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.vitalhint.haemukja:id/v_video",
+          "clickable": false,
+          "class": "com.vitalhint.haemukja.ui.recipevideo.VideoViewCustom",
+          "bounds": [
+            364,
+            84,
+            1075,
+            795
+          ],
+          "componentLabel": "Video"
+        },
+        {
+          "iconClass": "pause",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.vitalhint.haemukja:id/iv_play_pause",
+          "clickable": true,
+          "class": "com.vitalhint.haemukja.ui.recipevideo.ScaleImageView",
+          "bounds": [
+            632,
+            352,
+            807,
+            527
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.vitalhint.haemukja:id/back_button",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            0,
+            100,
+            163,
+            263
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "0:01",
+          "resource-id": "com.vitalhint.haemukja:id/tv_current_position",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            35,
+            697,
+            140,
+            763
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "fullscreen",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.vitalhint.haemukja:id/iv_fullscreen",
+          "clickable": true,
+          "class": "com.vitalhint.haemukja.ui.recipevideo.ScaleImageView",
+          "bounds": [
+            1335,
+            677,
+            1440,
+            782
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "0:39",
+          "resource-id": "com.vitalhint.haemukja:id/tv_duration",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1212,
+            697,
+            1317,
+            763
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.SeekBar",
+            "android.widget.AbsSeekBar",
+            "android.widget.ProgressBar",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.vitalhint.haemukja:id/seek_bar_video",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatSeekBar",
+          "bounds": [
+            140,
+            688,
+            1212,
+            772
+          ],
+          "componentLabel": "Slider"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.vitalhint.haemukja.ui.recipevideo.RecipeVideoViewWidget",
+      "bounds": [
+        0,
+        0,
+        1440,
+        795
+      ],
+      "componentLabel": "Video"
+    },
+    {
+      "text": "70",
+      "resource-id": "com.vitalhint.haemukja:id/likes",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1193,
+        2241,
+        1370,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "0",
+      "resource-id": "com.vitalhint.haemukja:id/comments",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1009,
+        2241,
+        1158,
+        2392
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Share",
+      "resource-id": "com.vitalhint.haemukja:id/share",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        737,
+        2241,
+        974,
+        2392
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "share"
+    },
+    {
+      "resource-id": "com.vitalhint.haemukja:id/collapsingToolbar",
+      "children": [
+        {
+          "text": "One of representative Korean dishes",
+          "resource-id": "com.vitalhint.haemukja:id/recipe_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            70,
+            971,
+            1370,
+            1033
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Korean Spicy Chicken Stew",
+          "resource-id": "com.vitalhint.haemukja:id/recipe_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            70,
+            1068,
+            1370,
+            1149
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "resource-id": "com.vitalhint.haemukja:id/btn_play_icook",
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.RelativeLayout",
+          "bounds": [
+            70,
+            1316,
+            1370,
+            1474
+          ],
+          "componentLabel": "Text Button",
+          "text": "Step by Step Video Play"
+        },
+        {
+          "text": "A bit challenging",
+          "resource-id": "com.vitalhint.haemukja:id/levelText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            280,
+            853,
+            627,
+            915
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "time",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.vitalhint.haemukja:id/cookingTime",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            662,
+            861,
+            708,
+            907
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "30 mins",
+          "resource-id": "com.vitalhint.haemukja:id/timeText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            729,
+            853,
+            894,
+            915
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "2016.09.12",
+          "resource-id": "com.vitalhint.haemukja:id/recipe_date",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            70,
+            1184,
+            302,
+            1246
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "by Foodiest",
+          "resource-id": "com.vitalhint.haemukja:id/owner_name",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            337,
+            1184,
+            1370,
+            1246
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.design.widget.CollapsingToolbarLayout",
+      "bounds": [
+        0,
+        795,
+        1440,
+        1509
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.design.widget.TabLayout$SlidingTabStrip",
+      "bounds": [
+        0,
+        1509,
+        1440,
+        1677
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Cooking Info",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            209,
+            1557,
+            511,
+            1628
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Recommended Videos",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            814,
+            1557,
+            1346,
+            1628
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        35,
+        1712,
+        1405,
+        2241
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "1 chicken , 3T sugar , 1/2C red chili powder , 1T minced garlic , 3/4C soy sauce , 1/2t pepper , 2 potato , 1 carrot , 1/2 onion , 1/2 green onion , 3 red chili pepper",
+          "resource-id": "com.vitalhint.haemukja:id/ingredientText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            95,
+            1951,
+            1345,
+            2143
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.vitalhint.haemukja:id/recipe_detail_header_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            91,
+            1757,
+            175,
+            1841
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Ingredients",
+          "resource-id": "com.vitalhint.haemukja:id/recipe_detail_header_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            238,
+            1766,
+            487,
+            1832
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "3 servings",
+          "resource-id": "com.vitalhint.haemukja:id/food_person_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1084,
+            1768,
+            1293,
+            1830
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    }
+  ]
+}

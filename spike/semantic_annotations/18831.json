@@ -1,0 +1,582 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.wkt.onetravel.android:id/tabs",
+      "children": [
+        {
+          "text": "Round Trip",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.fareportal.corelibrary.view.CustomTextViewMedium",
+          "bounds": [
+            0,
+            284,
+            480,
+            445
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "round trip"
+        },
+        {
+          "text": "One Way",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.fareportal.corelibrary.view.CustomTextViewMedium",
+          "bounds": [
+            480,
+            284,
+            960,
+            445
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "one way"
+        },
+        {
+          "text": "Multi City",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.fareportal.corelibrary.view.CustomTextViewMedium",
+          "bounds": [
+            960,
+            284,
+            1440,
+            445
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "ancestors": [
+        "android.widget.HorizontalScrollView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.fareportal.corelibrary.view.SlidingTabLayout",
+      "bounds": [
+        0,
+        284,
+        1440,
+        445
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "resource-id": "com.wkt.onetravel.android:id/base_top_toolbar",
+      "children": [
+        {
+          "text": "Flight Search",
+          "resource-id": "com.wkt.onetravel.android:id/toolbar_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomTextView",
+          "bounds": [
+            231,
+            141,
+            643,
+            223
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.internal.widget.TintImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.wkt.onetravel.android:id/base_footer_layout",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        40,
+        2151,
+        1400,
+        2352
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "search"
+    },
+    {
+      "resource-id": "com.wkt.onetravel.android:id/search_card_view",
+      "children": [
+        {
+          "text": "Flight 1",
+          "resource-id": "com.wkt.onetravel.android:id/air_search_segment_flight_number_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomTextView",
+          "bounds": [
+            40,
+            485,
+            299,
+            614
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "check",
+          "resource-id": "com.wkt.onetravel.android:id/air_search_segment_depart_flight_image",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomImageView",
+          "bounds": [
+            69,
+            672,
+            185,
+            788
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "From",
+          "resource-id": "com.wkt.onetravel.android:id/air_search_segment_depart_location_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomTextView",
+          "bounds": [
+            214,
+            647,
+            337,
+            709
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Enter a city or airport",
+          "resource-id": "com.wkt.onetravel.android:id/air_search_segment_depart_location_placeholder_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomTextViewLight",
+          "bounds": [
+            214,
+            709,
+            1371,
+            797
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "call",
+          "resource-id": "com.wkt.onetravel.android:id/air_search_segment_return_flight_image",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomImageView",
+          "bounds": [
+            69,
+            900,
+            185,
+            1016
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "To",
+          "resource-id": "com.wkt.onetravel.android:id/air_search_segment_return_location_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomTextView",
+          "bounds": [
+            214,
+            875,
+            273,
+            937
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Enter a city or airport",
+          "resource-id": "com.wkt.onetravel.android:id/air_search_segment_return_location_placeholder_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomTextViewLight",
+          "bounds": [
+            214,
+            937,
+            1371,
+            1025
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "date_range",
+          "resource-id": "com.wkt.onetravel.android:id/air_search_segment_depart_date_calendar_image",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomImageView",
+          "bounds": [
+            69,
+            1140,
+            185,
+            1256
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Depart",
+          "resource-id": "com.wkt.onetravel.android:id/air_search_segment_depart_date_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomTextView",
+          "bounds": [
+            214,
+            1115,
+            373,
+            1177
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Choose Date",
+          "resource-id": "com.wkt.onetravel.android:id/air_search_segment_depart_date_placeholder",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomTextViewLight",
+          "bounds": [
+            214,
+            1204,
+            507,
+            1265
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        33,
+        474,
+        1407,
+        1309
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "resource-id": "com.wkt.onetravel.android:id/search_card_view",
+      "children": [
+        {
+          "text": "Flight 2",
+          "resource-id": "com.wkt.onetravel.android:id/air_search_segment_flight_number_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomTextView",
+          "bounds": [
+            40,
+            1349,
+            299,
+            1478
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "check",
+          "resource-id": "com.wkt.onetravel.android:id/air_search_segment_depart_flight_image",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomImageView",
+          "bounds": [
+            69,
+            1536,
+            185,
+            1652
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "From",
+          "resource-id": "com.wkt.onetravel.android:id/air_search_segment_depart_location_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomTextView",
+          "bounds": [
+            214,
+            1511,
+            337,
+            1573
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Enter a city or airport",
+          "resource-id": "com.wkt.onetravel.android:id/air_search_segment_depart_location_placeholder_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomTextViewLight",
+          "bounds": [
+            214,
+            1573,
+            1371,
+            1661
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "call",
+          "resource-id": "com.wkt.onetravel.android:id/air_search_segment_return_flight_image",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomImageView",
+          "bounds": [
+            69,
+            1764,
+            185,
+            1880
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "To",
+          "resource-id": "com.wkt.onetravel.android:id/air_search_segment_return_location_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomTextView",
+          "bounds": [
+            214,
+            1739,
+            273,
+            1801
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Enter a city or airport",
+          "resource-id": "com.wkt.onetravel.android:id/air_search_segment_return_location_placeholder_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomTextViewLight",
+          "bounds": [
+            214,
+            1801,
+            1371,
+            1889
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "date_range",
+          "resource-id": "com.wkt.onetravel.android:id/air_search_segment_depart_date_calendar_image",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomImageView",
+          "bounds": [
+            69,
+            2004,
+            185,
+            2120
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Depart",
+          "resource-id": "com.wkt.onetravel.android:id/air_search_segment_depart_date_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomTextView",
+          "bounds": [
+            214,
+            1979,
+            373,
+            2041
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Choose Date",
+          "resource-id": "com.wkt.onetravel.android:id/air_search_segment_depart_date_placeholder",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.fareportal.corelibrary.view.CustomTextViewLight",
+          "bounds": [
+            214,
+            2068,
+            507,
+            2122
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        33,
+        1338,
+        1407,
+        2122
+      ],
+      "componentLabel": "Card"
+    }
+  ]
+}

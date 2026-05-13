@@ -1,0 +1,111 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.nbcnews.today:id/toolbar",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            88
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Image"
+        },
+        {
+          "resource-id": "com.nbcnews.today:id/searchContainer",
+          "children": [
+            {
+              "text": "Funny",
+              "resource-id": "com.nbcnews.today:id/title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "com.nbcnews.newsappcommon.views.NBCTextView",
+              "bounds": [
+                196,
+                84,
+                390,
+                88
+              ],
+              "componentLabel": "Text Button"
+            }
+          ],
+          "ancestors": [
+            "android.widget.ViewAnimator",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.ViewSwitcher",
+          "bounds": [
+            196,
+            84,
+            936,
+            88
+          ],
+          "componentLabel": "On/Off Switch"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        88
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.webkit.WebView",
+        "android.widget.AbsoluteLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.nbcnews.today:id/webView",
+      "clickable": true,
+      "class": "com.nbcnews.newsappui.web.NBCWebView",
+      "bounds": [
+        0,
+        88,
+        1440,
+        2392
+      ],
+      "componentLabel": "Web View"
+    }
+  ]
+}

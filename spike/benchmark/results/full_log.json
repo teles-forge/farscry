@@ -1,0 +1,562 @@
+[
+  {
+    "screenshot": "01.png",
+    "ground_truth": {
+      "question": "What is the error and which file + line caused it?",
+      "correct_element": "processor.py line 47",
+      "correct_action": "NoneType has no attribute 'run' in processor.py:47 \u2014 pipeline not initialized",
+      "category": "terminal",
+      "advantage": "tie"
+    },
+    "run_a": {
+      "response": "1. **Error:** `AttributeError: 'NoneType' object has no attribute 'run'` \u2014 `self.pipeline` is `None` in `processor.py` at line 47 (`return self.pipeline.run(data)`).\n\n2. **Fix:** Call `.setup()` on the processor before invoking `.process()`. In `app.py`, add `processor.setup()` before line 23 (`result = processor.process(data)`).",
+      "elapsed_s": 12.89,
+      "rc": 0,
+      "input_tokens": 886,
+      "output_tokens": 82
+    },
+    "run_b": {
+      "response": "1. **Error:** `AttributeError: 'NoneType' object has no attribute 'run'` \u2014 `self.pipeline` is `None` in `processor.py:47`.\n\n2. **Fix:** Call `.setup()` on the processor before calling `.process(data)` in `app.py:23`, or ensure `setup()` is called in the processor's `__init__`.",
+      "elapsed_s": 9.49,
+      "rc": 0,
+      "input_tokens": 213,
+      "output_tokens": 69,
+      "farscry_output": "=== farscry visual context ===\nsource: /Users/teles/github/farscry/spike/benchmark/screenshots/01.png\nscreen_type: terminal\n---\n[top-center] bash - 80\u00d724\n[top-left] $ python3 app-py\n[top-left] Traceback (most recent call last):\n[top-left] File \"app-py\", line 23, in <module>\n[top-left] result = processor.process(data)\n[top-left] File \"processor-py\", line 47, in process\n[middle-left] return self.pipeline.run(data)\n[middle-left] AttributeError:\n[middle-left] 'NoneType' object has no attribute\n[middle] 'run\n[middle-left] The pipeline was not initialized. Call .setup() first.\n[middle-left] $",
+      "farscry_ms": 307.9
+    },
+    "run_a_correct": true,
+    "run_b_correct": true
+  },
+  {
+    "screenshot": "02.png",
+    "ground_truth": {
+      "question": "What is the compile error and which file and line?",
+      "correct_element": "src/pipeline.rs line 89",
+      "correct_action": "borrow of moved value 'output' at pipeline.rs:89 \u2014 E0382",
+      "category": "terminal",
+      "advantage": "tie"
+    },
+    "run_a": {
+      "response": "1. **Error:** `E0382 \u2014 borrow of moved value: output` in `src/pipeline.rs:89:18`. The value `output` is moved into `log::debug!` on line 88, then used again on line 89 in `self.formatter.format(output)`.\n\n2. **Fix:** Clone or borrow `output` before the move. Change line 88 to `log::debug!(\"{:?}\", &output);` (pass a reference instead of moving), so `output` is still available on line 89.",
+      "elapsed_s": 18.97,
+      "rc": 0,
+      "input_tokens": 886,
+      "output_tokens": 97
+    },
+    "run_b": {
+      "response": "1. **Error**: `E0382` \u2014 borrow of moved value: `output` is moved at `src/pipeline.rs:87` (passed into `log::debug!`) and then used again at line 89 (`self.formatter.format(output)`).\n\n2. **Fix**: Borrow `output` in the `log::debug!` call instead of moving it. Change line 88 to use a reference:\n\n```rust\nlog::debug!(\"{:?}\", &output);\n```\n\nThis keeps ownership of `output` intact so it can be passed to `self.formatter.format(output)` on line 89.",
+      "elapsed_s": 9.82,
+      "rc": 0,
+      "input_tokens": 252,
+      "output_tokens": 111,
+      "farscry_output": "=== farscry visual context ===\nsource: /Users/teles/github/farscry/spike/benchmark/screenshots/02.png\nscreen_type: config\n---\n[top-center] cargo build \u2014 farscry\n[top-left] Compiling farscry-core v0.1.0\n[top-left] error[E0382]: borrow of moved value:\n[top-center] output\n[top-left] src/pipeline.rs:89:18\n[top-left] 87 1\n[top-left] let output = self.ocr.extract(&img)?;\n[top-left] value moved here\n[middle-left] 88 I\n[middle-left] log::debug!(\"{:?}\", output);\n[middle-left] I\n[middle] A^ value used here after move\n[middle-left] 89 I\n[middle-left] self.formatter.format(output)\n[middle-left] AAAAAA\n[middle-left] I\n[middle-left] For more information: error --explain E0382\n[middle-left] could not compile\n[middle-left] error:\n[middle-left] \"farscry-core",
+      "farscry_ms": 382.8
+    },
+    "run_a_correct": true,
+    "run_b_correct": true
+  },
+  {
+    "screenshot": "03.png",
+    "ground_truth": {
+      "question": "Why is the Save Payment button disabled? What field has an error?",
+      "correct_element": "Card Number field at top of form",
+      "correct_action": "Card number is invalid \u2014 fix the card number field to enable Save Payment button",
+      "category": "web_form",
+      "advantage": "farscry"
+    },
+    "run_a": {
+      "response": "1. **Error identified:** The **Card Number** field has a validation error \u2014 it shows the inline message `\"Card number is invalid\"` in red, and the field is highlighted with a red border. The entered value starts with `4532` (a Visa prefix), but the full number fails validation.\n\n2. **Fix needed:** Enter a valid card number that passes Luhn algorithm check. The current number (`4532 \u2022\u2022\u2022\u2022 \u2022\u2022\u2022\u2022 \u2022\u2022\u2022\u2022`) is invalid \u2014 replace it with a correctly formatted, Luhn-valid card number (e.g., for testing: `4532 0151 1245 2903`). Once the field passes validation, the **Save Payment** button will become enabled.",
+      "elapsed_s": 14.61,
+      "rc": 0,
+      "input_tokens": 890,
+      "output_tokens": 150
+    },
+    "run_b": {
+      "response": "1. **Error identified:** The \"Card Number\" field has a validation error \u2014 the message \"Card number is invalid\" is displayed beneath the field showing `4532 .\u2026\u2026\u2022 \u2026\u2026\u2022 \u2026\u2026\u2022`.\n\n2. **Fix needed:** Enter a valid, complete card number. The current value appears to be truncated or malformed (only the first 4 digits `4532` are visible; the remaining groups are masked/missing). A valid 16-digit card number must be entered to clear the error and re-enable the Save Payment button.",
+      "elapsed_s": 11.41,
+      "rc": 0,
+      "input_tokens": 179,
+      "output_tokens": 118,
+      "farscry_output": "=== farscry visual context ===\nsource: /Users/teles/github/farscry/spike/benchmark/screenshots/03.png\nscreen_type: conversation\n---\n[top-left] Payment Settings\n[top-left] Card Number\n[top-left] 4532 .\u2026\u2026\u2022 \u2026\u2026\u2022 \u2026\u2026\u2022\n[top-left] Card number is invalid\n[middle] CVV\n[middle-left] Expiry\n[middle-left] 12 /26\n[middle] \u2022\u2022\u2022\n[middle-left] Billing Address\n[middle-left] 123 Main Street, San Francisco, CA\n[bottom-center] Cancel\n[bottom-right] Save Payment",
+      "farscry_ms": 243.9
+    },
+    "run_a_correct": true,
+    "run_b_correct": true
+  },
+  {
+    "screenshot": "04.png",
+    "ground_truth": {
+      "question": "Which file has the most errors and what is the first error on line 47?",
+      "correct_element": "src/components/ProductList.tsx \u2014 2 errors",
+      "correct_action": "ProductList.tsx has 2 errors; line 47: Type 'undefined' is not assignable to type 'Product[]'",
+      "category": "vscode",
+      "advantage": "farscry"
+    },
+    "run_a": {
+      "response": "The file with the most errors is **`src/components/ProductList.tsx`** (2 errors: lines 47 and 52).\n\n**Line 47 of `ProductList.tsx`:**\n\n1. **Error identified:** `Type 'undefined' is not assignable to type 'Product[]'`\n2. **Fix needed:** Ensure the value being assigned is typed as `Product[]` (not `undefined`) \u2014 either provide a default value (e.g., `[]`) or change the type annotation to `Product[] | undefined`.",
+      "elapsed_s": 13.02,
+      "rc": 0,
+      "input_tokens": 891,
+      "output_tokens": 103
+    },
+    "run_b": {
+      "response": "Based on the screenshot:\n\n**1. File with the most errors:** `src/components/ProductList.tsx` \u2014 it has 2 errors (lines 47 and 52).\n\n**2. First error on line 47:**\n- **Error identified:** Type `'undefined'` is not assignable to type `'Product[]'`\n- **Fix needed:** Ensure the value passed to the `Product[]` typed variable/prop is never `undefined` \u2014 either provide a default value (e.g., `products ?? []`) or update the type to `Product[] | undefined`.",
+      "elapsed_s": 11.69,
+      "rc": 0,
+      "input_tokens": 261,
+      "output_tokens": 112,
+      "farscry_output": "=== farscry visual context ===\nsource: /Users/teles/github/farscry/spike/benchmark/screenshots/04.png\nscreen_type: conversation\n---\n[top-left] PROBLEMS TERMINAL OUTPUT DEBUG CONSOLE\n[top-right] 3 errors1 warnin\n[top-left] Type 'undefined' is not assignable to type 'Product[]'\n[top-left] src/components/ProductList.tsx:47\n[top-left] Property\n[top-center] \"undefined'\n[top-left] 'map '\n[top-left] does not exist on\n[top-center] type\n[top-left] src/components/ProductList.tsx:52\n[top-left] Cannot find name\n[top-center] 'CartItems'?\n[top-left] .\n[top-left] 'CartItem'\n[top-center] Did you mean\n[top-left] src/pages/Checkout.tsx:103\n[middle-left] 0\n[middle-left] Variable\n[middle-left] 'response'\n[middle-left] is used before assignment\n[middle-left] src/utils/api.ts:23",
+      "farscry_ms": 490.8
+    },
+    "run_a_correct": true,
+    "run_b_correct": true
+  },
+  {
+    "screenshot": "05.png",
+    "ground_truth": {
+      "question": "Why is the Merge button disabled and what action is required?",
+      "correct_element": "Merge pull request button (disabled)",
+      "correct_action": "Review required \u2014 @arch-bot must approve before merging",
+      "category": "web_form",
+      "advantage": "tie"
+    },
+    "run_a": {
+      "response": "1. **Error identified:** \"Review required\" \u2014 at least 1 approving review is required by a code owner before merging. The required reviewer `@arch-bot` has not reviewed yet.\n\n2. **Action needed:** `@arch-bot` must approve PR #42 (`teles-forge/farscry/pull/42`). Once that approval is submitted, the \"Merge pull request\" button will become active (all checks are already passing).",
+      "elapsed_s": 13.41,
+      "rc": 0,
+      "input_tokens": 889,
+      "output_tokens": 94
+    },
+    "run_b": {
+      "response": "1. **Error identified:** \"Review required\" \u2014 the required reviewer `@arch-bot` has not reviewed the PR yet.\n\n2. **Action needed:** Request a review from `@arch-bot` (a code owner) and wait for their approval before the Merge button becomes active.",
+      "elapsed_s": 7.79,
+      "rc": 0,
+      "input_tokens": 217,
+      "output_tokens": 61,
+      "farscry_output": "=== farscry visual context ===\nsource: /Users/teles/github/farscry/spike/benchmark/screenshots/05.png\nscreen_type: conversation\n---\n[top-left] github.com / teles-forge / farscry / pull/ 42\n[top-left] Fix: initialize pipeline before calling .run()\n[top-left] enhancemeny\n[middle-left] Review required\n[middle-left] At least 1 approving review is required by a code owner before merging.\n[middle-left] Required reviewer: @arch-bot has not reviewed yet.\n[middle-left] All checks passed \n[middle-left] Merge pullrequest\n[bottom-left] You can also open this in GitHub.dev I View command line instructions",
+      "farscry_ms": 262.8
+    },
+    "run_a_correct": true,
+    "run_b_correct": true
+  },
+  {
+    "screenshot": "06.png",
+    "ground_truth": {
+      "question": "How many critical vulnerabilities are there and in which package?",
+      "correct_element": "semver \u2014 1 critical vulnerability",
+      "correct_action": "1 critical vulnerability in semver (<7.5.2) \u2014 run npm audit fix",
+      "category": "terminal",
+      "advantage": "tie"
+    },
+    "run_a": {
+      "response": "There is **1 critical vulnerability**, in the **`semver`** package (versions `<7.5.2`).\n\n1. **Error identified:** Regular Expression Denial of Service (ReDoS) in `semver <7.5.2`, located at `node_modules/semver` and `node_modules/lerna/node_modules/semver`.\n\n2. **Fix needed:** Run `npm audit fix` to automatically upgrade `semver` to `>=7.5.2`.",
+      "elapsed_s": 13.27,
+      "rc": 0,
+      "input_tokens": 890,
+      "output_tokens": 86
+    },
+    "run_b": {
+      "response": "There is **1 critical vulnerability** in the `semver` package.\n\n1. **Error identified:** Regular Expression Denial of Service (ReDoS) in `semver` versions `<7.5.2`, found in two locations: `node_modules/semver` and `node_modules/lerna/node_modules/semver`.\n\n2. **Fix needed:** Run `npm audit fix` to automatically upgrade `semver` to `>=7.5.2`.",
+      "elapsed_s": 7.88,
+      "rc": 0,
+      "input_tokens": 247,
+      "output_tokens": 86,
+      "farscry_output": "=== farscry visual context ===\nsource: /Users/teles/github/farscry/spike/benchmark/screenshots/06.png\nscreen_type: terminal\n---\n[top-center] npm audit\n[top-left] $ npm audit\n[top-left] # npm audit report\n[top-left] <7.5.2\n[top-left] semver\n[top-left] Severity: critical\n[middle-left] Regular Expression Denial of Service\n[middle-left] 'npm audit fix\n[middle-left] fix available via\n[middle-left] node_modules/semver\n[middle-left] node_modules/lerna/node_modules/semver\n[middle-left] <0.1.10\n[middle-left] path-to-regexp\n[middle-left] Severity: high\n[middle-left] ReDoS in path-to-regexp\n[bottom-left] 3 vulnerabilities (1 critical, 2 high)\n[bottom-left] Run\n[bottom-left] npm audit fix'\n[bottom-left] to fix them.",
+      "farscry_ms": 350.7
+    },
+    "run_a_correct": true,
+    "run_b_correct": true
+  },
+  {
+    "screenshot": "07.png",
+    "ground_truth": {
+      "question": "Which field has a validation error and what is the current invalid value?",
+      "correct_element": "Max Retries field",
+      "correct_action": "Max Retries has value 999 which is invalid (must be 1-10)",
+      "category": "config",
+      "advantage": "farscry"
+    },
+    "run_a": {
+      "response": "1. **Field with error:** `Max Retries` \u2014 currently set to `999`, which fails validation with the message *\"Value must be between 1 and 10\"*.\n\n2. **Fix needed:** Change the `Max Retries` value from `999` to a number between `1` and `10` (inclusive).",
+      "elapsed_s": 13.03,
+      "rc": 0,
+      "input_tokens": 892,
+      "output_tokens": 62
+    },
+    "run_b": {
+      "response": "1. **Field with error:** \"Max Retries\" \u2014 current invalid value is **999**\n2. **Fix needed:** Change the value to something between **1 and 10** (inclusive), as indicated by the validation message \"Value must be between 1 and 10\"",
+      "elapsed_s": 7.75,
+      "rc": 0,
+      "input_tokens": 202,
+      "output_tokens": 57,
+      "farscry_output": "=== farscry visual context ===\nsource: /Users/teles/github/farscry/spike/benchmark/screenshots/07.png\nscreen_type: conversation\n---\n[top-left] Application Settings\n[top-left] API Base URL\n[top-left] https://api.example.com\n[top-left] Timeout (ms)\n[middle-left] 30000\n[middle-left] Max Retries\n[middle-left] 999\n[middle-left] Value must be between 1 and 10\n[middle-left] Auth Token\n[bottom-left] sk-.......2f9a\n[bottom-left] Webhook URL\n[bottom-left] https://hooks.example.com\n[bottom-right] Save Settings\n[bottom-center] Cancel",
+      "farscry_ms": 220.4
+    },
+    "run_a_correct": true,
+    "run_b_correct": true
+  },
+  {
+    "screenshot": "08.png",
+    "ground_truth": {
+      "question": "What URL is being blocked by CORS and from what origin?",
+      "correct_element": "https://api.internal.corp/v1/users",
+      "correct_action": "CORS blocks api.internal.corp/v1/users from localhost:3000 \u2014 server needs Access-Control-Allow-Origin header",
+      "category": "devtools",
+      "advantage": "tie"
+    },
+    "run_a": {
+      "response": "**CORS blocked URL:** `https://api.internal.corp/v1/users`\n**Origin:** `http://localhost:3000`\n\n---\n\n1. **Error identified:** CORS policy is blocking a `GET` fetch to `https://api.internal.corp/v1/users` from `http://localhost:3000`, resulting in `net::ERR_FAILED` and an `Uncaught TypeError: Failed to fetch`. There is also a secondary React warning that the `isActive` prop is being passed to a DOM element.\n\n2. **Fix needed:** On the API server (`api.internal.corp`), add `http://localhost:3000` to the allowed CORS origins (e.g., set the `Access-Control-Allow-Origin: http://localhost:3000` response header). Additionally, rename or filter the `isActive` prop in the React component so it is not forwarded directly to a DOM element (use a styled-component `$isActive` or destructure it out before spreading props).",
+      "elapsed_s": 19.76,
+      "rc": 0,
+      "input_tokens": 887,
+      "output_tokens": 204
+    },
+    "run_b": {
+      "response": "1. **CORS error**: `https://api.internal.corp/v1/users` is blocked from origin `http://localhost:3000` \u2014 the server is not returning the `Access-Control-Allow-Origin` header permitting that origin.\n\n2. **Fix**: Add `http://localhost:3000` to the allowed origins on the `api.internal.corp` server (e.g., set `Access-Control-Allow-Origin: http://localhost:3000` in the API response headers). Alternatively, proxy the request through the local dev server to avoid cross-origin requests entirely.",
+      "elapsed_s": 9.97,
+      "rc": 0,
+      "input_tokens": 246,
+      "output_tokens": 123,
+      "farscry_output": "=== farscry visual context ===\nsource: /Users/teles/github/farscry/spike/benchmark/screenshots/08.png\nscreen_type: conversation\n---\n[top-left] Network\n[top-left] Elements\n[top-center] Performance\n[top-left] Console\n[top-left] Sources\n[top-left] Access to fetch at\n[top-center] 'https://api.internal.corp/v1/users' from origin 'http://localhost:3000' has been\n[top-center] net::ERR_FAILED 0\n[top-left] \u25a1 GET https://api.internal.corp/v1/users\n[top-left] Uncaught (in promise) TypeError: Failed to fetch\n[top-left] React\n[top-left] the\n[top-left] isActive\n[top-center] prop on a DOM element.\n[top-left] does not\n[top-left] recognize\n[middle-left] Component mounted: UserDashboard\n[middle-left] Fetching user list from API...",
+      "farscry_ms": 557.9
+    },
+    "run_a_correct": true,
+    "run_b_correct": true
+  },
+  {
+    "screenshot": "09.png",
+    "ground_truth": {
+      "question": "What is the TypeScript error on line 23 and how to fix it?",
+      "correct_element": "line 23 \u2014 interface Props definition",
+      "correct_action": "TS2345: undefined not assignable to Product[] \u2014 add null check or change type to Product[]",
+      "category": "vscode",
+      "advantage": "tie"
+    },
+    "run_a": {
+      "response": "**File:** `ProductList.tsx`, line 23\n\n1. **Error identified:** TS2345 \u2014 the `products` prop is typed as `Product[] | undefined`, but `products.map()` on line 28 requires `Product[]`. TypeScript won't allow calling `.map()` on a possibly-`undefined` value.\n\n2. **Fix:** Change the prop type on line 23 to make `products` required (remove `| undefined`), or provide a default value:\n\n**Option A** \u2014 make it required:\n```ts\ninterface Props { products: Product[]; }\n```\n\n**Option B** \u2014 keep optional but add a fallback at the call site (line 28):\n```tsx\n{(products ?? []).map((p) => (\n```\n\nOption A is cleaner if the parent always provides the array.",
+      "elapsed_s": 14.56,
+      "rc": 0,
+      "input_tokens": 888,
+      "output_tokens": 161
+    },
+    "run_b": {
+      "response": "**1. Error identified:** Line 23 in `ProductList.tsx` \u2014 the `Props` interface defines `products` as `Product[] | undefined`, but `products.map()` on line 28 is called without a null check, causing TS error 2345: `'Product[] | undefined' is not assignable to parameter of type 'Product[]'`.\n\n**2. Fix needed:** Change the `products` prop type on line 23 to use a default value or add a guard:\n\n**Option A** \u2014 default to empty array in destructuring (line 25):\n```ts\nconst ProductList: React.FC<Props> = ({ products = [] }) => {\n```\n\n**Option B** \u2014 make the prop required (line 23):\n```ts\ninterface Props { products: Product[]; }\n```\n\nOption A is the safer fix if the prop is genuinely optional; Option B if callers always pass it.",
+      "elapsed_s": 11.65,
+      "rc": 0,
+      "input_tokens": 358,
+      "output_tokens": 182,
+      "farscry_output": "=== farscry visual context ===\nsource: /Users/teles/github/farscry/spike/benchmark/screenshots/09.png\nscreen_type: conversation\n---\n[top-left] ProductList.tsx \u2014 farscry-ui\n[top-left] 20\n[top-left] import React from 'react'\n[top-left] 21\n[top-left] import { Product } from\n[top-left] ../types';\n[top-left] 22\n[top-left] 23\n[top-left] interface~Ppops~f~produetss~ProduetEJ~f~undefined; }\n[top-left] 24\n[top-left] 25\n[top-left] const ProductList: React.FC<Props> = ({ products }) => {\n[middle-left] 26\n[middle-left] return (\n[middle-left] 27\n[middle-left] <div className=\"product-grid\">\n[middle-left] 28\n[middle-left] {products.map((p) => (\n[middle-left] 29\n[middle-left] <div key={p.id}>{p.name}</div>\n[middle-left] 30\n[middle-left] ))}\n[middle-left] 31\n[middle-left] </div>\n[middle-left] 32\n[middle-left] );\n[middle-left] 33\n[middle-left] };\n[bottom-center] 'Product[]\n[bottom-left] 0 TypeScript error\n[bottom-left] (2345): Argument of type\n[bottom-center] I I undefined' is not assignable\n[bottom-left] to parameter of\n[bottom-left] 'Product[]'.\n[bottom-center] 'undefined'\n[bottom-center] is not assignable to type 'Product[]'\n[bottom-center] Type\n[bottom-left] type",
+      "farscry_ms": 441.1
+    },
+    "run_a_correct": true,
+    "run_b_correct": true
+  },
+  {
+    "screenshot": "10.png",
+    "ground_truth": {
+      "question": "Which container failed and why?",
+      "correct_element": "farscry-api container",
+      "correct_action": "farscry-api failed \u2014 port 8080 already in use, run lsof -i :8080 to find what's using it",
+      "category": "terminal",
+      "advantage": "tie"
+    },
+    "run_a": {
+      "response": "**Container:** `farscry-api`\n\n1. **Error:** `Bind for 0.0.0.0:8080 failed: port is already allocated` \u2014 port 8080 on the host is already in use by another process.\n\n2. **Fix:** Find and free the port with `lsof -i :8080` (or `netstat -an | grep 8080`), then kill the conflicting process \u2014 or change the host port mapping in `docker-compose.yml` for the `farscry-api` service (e.g., `\"8081:8080\"`).",
+      "elapsed_s": 13.3,
+      "rc": 0,
+      "input_tokens": 881,
+      "output_tokens": 99
+    },
+    "run_b": {
+      "response": "1. **Container `farscry-api` failed** \u2014 port `8080` is already in use on the host.\n\n2. **Fix**: Run `lsof -i :8080` to find the conflicting process, then either kill it (`kill -9 <PID>`) or change the host port mapping in `docker-compose.yml` (e.g., `\"8081:8080\"`).",
+      "elapsed_s": 8.98,
+      "rc": 0,
+      "input_tokens": 248,
+      "output_tokens": 66,
+      "farscry_output": "=== farscry visual context ===\nsource: /Users/teles/github/farscry/spike/benchmark/screenshots/10.png\nscreen_type: terminal\n---\n[top-center] docker compose up \u2014 farscry-stack\n[top-left] $ docker compose up\n[top-left] [+] Running 3/3\n[top-center] Started\n[top-left] D Container farscry-db\n[top-center] Started\n[top-left]  Container farscry-redis\n[top-left] Error\n[top-left]  Container farscry-api\n[middle-left] Error response from daemon:\n[middle-left] driver failed programming external connectivity\n[middle-left] on endpoint farscry-api (sha256:d3b4...):\n[middle-left] Bind for 0.0.0.0:8080 failed: port is already allocated\n[middle-left] Hint: Check if something is already running on port 8080.\n[middle-left] lsof -i :8080 or netstat -an l grep 8080",
+      "farscry_ms": 367.5
+    },
+    "run_a_correct": true,
+    "run_b_correct": true
+  },
+  {
+    "screenshot": "11.png",
+    "ground_truth": {
+      "question": "Which pod is failing and what is the root cause from the logs?",
+      "correct_element": "farscry-worker-7b4d2f-p9x1r",
+      "correct_action": "CrashLoopBackOff (47 restarts): REDIS_URL env var not set",
+      "category": "terminal",
+      "advantage": "farscry"
+    },
+    "run_a": {
+      "response": "**Failing pod:** `farscry-worker-7b4d2f-p9x1r` \u2014 status `CrashLoopBackOff`, 47 restarts, age 3h.\n\n1. **Error identified:** `Error: REDIS_URL environment variable not set` (from `kubectl logs farscry-worker-7b4d2f-p9x1r --tail=5`)\n\n2. **Fix needed:** Add the `REDIS_URL` environment variable to the worker pod's deployment spec (pointing to `farscry-redis-0`, which is running). Patch the deployment env section or update the values/configmap with the correct Redis service URL (e.g., `redis://farscry-redis-0:6379`).",
+      "elapsed_s": 14.66,
+      "rc": 0,
+      "input_tokens": 889,
+      "output_tokens": 129
+    },
+    "run_b": {
+      "response": "1. **Failing pod**: `farscry-worker-7b4d2f-p9x1r` \u2014 `CrashLoopBackOff` with 47 restarts in 3h. **Root cause**: missing `REDIS_URL` environment variable.\n\n2. **Fix**: Add `REDIS_URL` to the worker's deployment manifest (env section) pointing to `farscry-redis-0`'s service address, e.g. `redis://farscry-redis:6379`, then roll out the deployment.",
+      "elapsed_s": 10.14,
+      "rc": 0,
+      "input_tokens": 323,
+      "output_tokens": 86,
+      "farscry_output": "=== farscry visual context ===\nsource: /Users/teles/github/farscry/spike/benchmark/screenshots/11.png\nscreen_type: terminal\n---\n[top-center] kubectl get pods \u2014 farscry-prod\n[top-left] READY\n[top-center] RESTARTS\n[top-center] AGE\n[top-left] NAME\n[top-center] STATUS\n[top-center] 0\n[top-left] 1/1\n[top-right] 2d\n[top-left] farscry-api-5d8f9c-x7k2p\n[top-center] Running\n[top-center] 0\n[top-left] farscry-api-5d8f9c-m3n8q\n[top-left] 1/1\n[top-center] Running\n[top-right] 2d\n[top-center] 47\n[top-left] 0/1\n[top-right] 3h\n[top-left] farscry-worker-7b4d2f-p9x1r\n[top-center] CrashLoopBackOff\n[top-left] 1/1\n[top-center] 0\n[top-right] 5d\n[top-left] farscry-redis-0\n[top-center] Running\n[middle-right] 5d\n[middle-left] 1/1\n[middle-left] farscry-db-0\n[middle] 0\n[middle] Running\n[middle-left] farscry-ingress-6c7f-n2k4m\n[middle-left] 1/1\n[middle] Running\n[middle] 0\n[middle-right] 2d\n[middle] --tail=5\n[middle-left] $ kubectl logs farscry-worker-7b4d2f-p9x1r\n[middle-left] Error:\n[middle-left] REDIS_URL environment variable not set",
+      "farscry_ms": 337.7
+    },
+    "run_a_correct": true,
+    "run_b_correct": true
+  },
+  {
+    "screenshot": "12.png",
+    "ground_truth": {
+      "question": "What is the error and which component + line caused it?",
+      "correct_element": "ProductList.jsx line 47",
+      "correct_action": "TypeError: Cannot read properties of undefined (reading 'map') at ProductList.jsx:47",
+      "category": "browser",
+      "advantage": "tie"
+    },
+    "run_a": {
+      "response": "1. **Error:** `TypeError: Cannot read properties of undefined (reading 'map')` \u2014 in `ProductList` component at **`ProductList.jsx:47`**. The component is trying to call `.map()` on a value that is `undefined`.\n\n2. **Fix:** At `ProductList.jsx:47`, guard against `undefined` before mapping \u2014 e.g., change the array reference to use optional chaining or a fallback: `(products ?? []).map(...)` or `products?.map(...)`.",
+      "elapsed_s": 14.27,
+      "rc": 0,
+      "input_tokens": 887,
+      "output_tokens": 104
+    },
+    "run_b": {
+      "response": "1. **Error**: `TypeError: Cannot read properties of undefined (reading 'map')` in `ProductList.jsx:47` \u2014 the component is calling `.map()` on an undefined value (likely `props.products` or a state variable that hasn't loaded yet).\n\n2. **Fix**: Add a guard before the `.map()` call at `ProductList.jsx:47`:\n   ```js\n   // Change from:\n   products.map(...)\n   // To:\n   (products ?? []).map(...)\n   // or:\n   products?.map(...)\n   ```\n   Alternatively, ensure the parent (`App.jsx:23`) passes a default empty array: `<ProductList products={data ?? []} />`.",
+      "elapsed_s": 12.66,
+      "rc": 0,
+      "input_tokens": 237,
+      "output_tokens": 138,
+      "farscry_output": "=== farscry visual context ===\nsource: /Users/teles/github/farscry/spike/benchmark/screenshots/12.png\nscreen_type: conversation\n---\n[top-left] React Error Boundary \u2014 localhost:300o\n[top-left] Uncaught Error\n[top-left] TypeError: Cannot read properties of undefined\n[middle-left] (reading\n[middle-left] 'map')\n[middle-left] Call Stack:\n[middle-left] ProductList\n[middle] ProductList.jsx:47\n[middle-left] renderWithHooks\n[middle] react-dom.development.js:14985\n[middle-left] mountIndeterminateComponent\n[middle] react-dom.development.js:17811\n[middle-left] App\n[middle] App.jsx:23\n[middle-left] This error happened while rendering. See the call stack above.\n[bottom-right] Copy stack trace",
+      "farscry_ms": 347.9
+    },
+    "run_a_correct": true,
+    "run_b_correct": true
+  },
+  {
+    "screenshot": "13.png",
+    "ground_truth": {
+      "question": "Which field is currently focused/highlighted and what must the user enter?",
+      "correct_element": "Address Line 1 field (highlighted in purple)",
+      "correct_action": "Address Line 1 is empty and required \u2014 user must enter their street address",
+      "category": "web_form",
+      "advantage": "farscry"
+    },
+    "run_a": {
+      "response": "1. **Focused field:** \"Address Line 1\" \u2014 highlighted with a purple border and light lavender background, showing the validation error \"This field is required\" in red below it.\n\n2. **Required action:** The user must type their street address into the \"Address Line 1\" field (placeholder: *Enter your street address*) before the form will allow proceeding to the next step via the \"Continue\" button.",
+      "elapsed_s": 14.12,
+      "rc": 0,
+      "input_tokens": 892,
+      "output_tokens": 99
+    },
+    "run_b": {
+      "response": "1. **Address Line 1** is the focused/highlighted field \u2014 it's showing a validation error: \"This field is required\" with an empty value.\n\n2. The user must **type a street address** into the Address Line 1 field (e.g., \"123 Main St\") to clear the error and proceed.\n\n**Secondary issue also visible:** The Email field contains `john.smitheexample.com` \u2014 it's missing the `@` symbol. That will also need to be corrected to `john.smith@example.com` before the form can submit successfully.",
+      "elapsed_s": 17.67,
+      "rc": 0,
+      "input_tokens": 194,
+      "output_tokens": 121,
+      "farscry_output": "=== farscry visual context ===\nsource: /Users/teles/github/farscry/spike/benchmark/screenshots/13.png\nscreen_type: conversation\n---\n[top-left] Checkout \u2014 Step 2 of 3: Shipping\n[top-left] First Name *\n[top-center] Last Name *\n[top-left] John\n[top-center] Smith\n[top-left] Email \n[middle-left] john.smitheexample.com\n[middle-left] Address Line 1 *\n[middle-left] Enter your street address\n[middle-left] This field is required\n[middle-left] City *\n[bottom-left] ZIP Code *\n[bottom-right] Continue",
+      "farscry_ms": 265.8
+    },
+    "run_a_correct": true,
+    "run_b_correct": true
+  },
+  {
+    "screenshot": "14.png",
+    "ground_truth": {
+      "question": "Which file has a merge conflict and what are the two conflicting changes?",
+      "correct_element": "src/auth/middleware.js",
+      "correct_action": "HEAD uses authorization header with 401; feature/auth uses x-auth-token with 403",
+      "category": "terminal",
+      "advantage": "tie"
+    },
+    "run_a": {
+      "response": "1. **File with conflict:** `src/auth/middleware.js` has a merge conflict. The two conflicting changes are:\n   - **HEAD:** checks `req.headers.authorization` and returns `401` with `{ error: 'Missing token' }`\n   - **feature/auth:** reads `req.headers['x-auth-token']` and returns `403` with `{ error: 'Forbidden' }`\n\n2. **Fix needed:** Manually edit `src/auth/middleware.js` to resolve the conflict markers (`<<<<<<<`, `=======`, `>>>>>>>`) by choosing one approach or merging both \u2014 e.g., check `req.headers.authorization` OR `req.headers['x-auth-token']`, then return an appropriate status code \u2014 then `git add src/auth/middleware.js` and `git commit`.",
+      "elapsed_s": 14.23,
+      "rc": 0,
+      "input_tokens": 892,
+      "output_tokens": 163
+    },
+    "run_b": {
+      "response": "1. **File with conflict:** `src/auth/middleware.js` has a merge conflict in the token validation logic.\n\n2. **The two conflicting changes:**\n   - **HEAD (current branch):** Checks `req.headers.authorization` and returns `401` with `'Missing token'`\n   - **feature/auth branch:** Checks `req.headers['x-auth-token']` and returns `403` with `'Forbidden'`\n\n**Fix needed:** Edit `src/auth/middleware.js` and resolve the conflict markers (`<<<<<<<`, `=======`, `>>>>>>>`) by choosing one approach (or merging both), then `git add src/auth/middleware.js` and commit.",
+      "elapsed_s": 10.43,
+      "rc": 0,
+      "input_tokens": 282,
+      "output_tokens": 140,
+      "farscry_output": "=== farscry visual context ===\nsource: /Users/teles/github/farscry/spike/benchmark/screenshots/14.png\nscreen_type: terminal\n---\n[top-center] git merge feature/auth\n[top-left] $ git merge feature/auth\n[top-left] Auto-merging src/auth/middleware.js\n[top-left] CONFLICT (content): Merge conflict in src/auth/middleware.js\n[top-left] Auto-merging src/utils/helpers.js\n[top-left] Automatic merge failed; fix conflicts and commit.\n[middle-left] I head -20\n[middle-left] $ cat src/auth/middleware.js\n[middle-left] HEAD\n[middle-left] \u2264\u2264\u2264\u2264\u2264\u2264\u2264\n[middle-left] if (!req.headers.authorization) {\n[middle-left] return res.status(401).json({ error: 'Missing token' });\n[middle-left] const token = req.headers['x-auth-token'];\n[middle-left] if (!token) {\n[middle-left] return res.status(403).json({ error: 'Forbidden' });\n[bottom-left] feature/auth\n[bottom-left] $",
+      "farscry_ms": 447.6
+    },
+    "run_a_correct": true,
+    "run_b_correct": true
+  },
+  {
+    "screenshot": "15.png",
+    "ground_truth": {
+      "question": "Which test failed and what was the assertion failure?",
+      "correct_element": "Pipeline Tests \u203a process \u203a should extract text regions",
+      "correct_action": "Expected 5 text regions, received 3 \u2014 at pipeline.test.ts:47",
+      "category": "vscode",
+      "advantage": "tie"
+    },
+    "run_a": {
+      "response": "**Test failed:** `Pipeline Tests > process > should extract text regions`\n\n1. **Error identified:** `expect(received).toHaveLength(expected)` \u2014 expected length `5`, received length `3`. Located at `tests/pipeline.test.ts:47:28`.\n\n2. **Fix needed:** The `process` function is only returning 3 text regions instead of the expected 5. Investigate the region extraction logic in the pipeline and ensure it correctly identifies all 5 regions, or update the expected value at line 47 if 3 is the correct output.",
+      "elapsed_s": 21.35,
+      "rc": 0,
+      "input_tokens": 887,
+      "output_tokens": 126
+    },
+    "run_b": {
+      "response": "1. **Failed test:** `Pipeline Tests > process > should extract text regions` \u2014 `expect(received).toHaveLength(expected)` failed: expected **5** regions, received **3**.\n\n2. **Fix needed:** In `tests/pipeline.test.ts:47`, the text extraction logic is returning 2 fewer regions than expected. Investigate why the pipeline's region detection produces only 3 results \u2014 likely a filtering condition, confidence threshold, or parsing logic in the `process` stage is discarding valid regions.",
+      "elapsed_s": 19.31,
+      "rc": 0,
+      "input_tokens": 294,
+      "output_tokens": 121,
+      "farscry_output": "=== farscry visual context ===\nsource: /Users/teles/github/farscry/spike/benchmark/screenshots/15.png\nscreen_type: config\n---\n[top-left] OUTPUT\n[top-left] PROBLEMS TERMINAL\n[top-center] TEST RESULTS\n[top-left]  Pipeline Tests > process > should extract text regions\n[top-left] expect(received).toHaveLength(expected)\n[top-left] Expected length: 5\n[top-left] Received length: 3\n[middle-left] at Object.<anonymous> (tests/pipeline.test.ts:47:28)\n[middle-left] 0 Pipeline Tests > build > should load models\n[middle] (234ms)\n[middle-left] 0 Pipeline Tests > build > should accept config\n[middle] (12ms)\n[middle-left]  Pipeline Tests > process > should extract text regions\n[middle-left] 0 Pipeline Tests > diff > should detect changes\n[middle] (89ms)\n[middle-left] Tests:\n[middle-left] 1 failed, 3 passed, 4 total\n[bottom-left] 1 failed, 0 passed, 1 total\n[bottom-left] Suites:\n[bottom-left] Time:\n[bottom-left] 4.821s",
+      "farscry_ms": 1687.0
+    },
+    "run_a_correct": true,
+    "run_b_correct": true
+  },
+  {
+    "screenshot": "16.png",
+    "ground_truth": {
+      "question": "What is the Memory configuration and what button saves changes?",
+      "correct_element": "Memory 512MB; Save button at bottom right",
+      "correct_action": "Memory is 512 MB; click orange Save button to save configuration",
+      "category": "config",
+      "advantage": "farscry"
+    },
+    "run_a": {
+      "response": "1. **Memory configuration**: The `farscry-processor` Lambda function's **Memory (MB)** is set to **512 MB**.\n\n2. **Button that saves changes**: The orange **\"Save\"** button (bottom right of the panel) commits any edits made via the \"Edit configuration\" button.",
+      "elapsed_s": 22.17,
+      "rc": 0,
+      "input_tokens": 889,
+      "output_tokens": 65
+    },
+    "run_b": {
+      "response": "1. **Memory is set to 512 MB** (visible in the \"Memory (MB)\" field, top-left area of the Configuration panel).\n\n2. **The \"Save\" button** (bottom-right corner) saves the changes.",
+      "elapsed_s": 17.46,
+      "rc": 0,
+      "input_tokens": 230,
+      "output_tokens": 44,
+      "farscry_output": "=== farscry visual context ===\nsource: /Users/teles/github/farscry/spike/benchmark/screenshots/16.png\nscreen_type: conversation\n---\n[top-left] Lambda: Functions: farscry-processor Configuration\n[top-left] AWS\n[top-left] General configuration\n[top-right] Runtime\n[top-left] Memory (MB)\n[top-center] 512\n[top-right] provided.al2023\n[top-left] Timeout\n[top-center] 3 min 0 sec\n[top-right] Handler\n[middle-left] Ephemeral storage\n[middle] 512 MB\n[middle-right] bootstrap\n[middle-left] Architecture\n[middle] arm64\n[middle-right] Edit configuration\n[middle-left] Concurrency\n[middle] Unreserved\n[middle-left] Code size\n[middle] 8.2 MB\n[bottom-right] Save",
+      "farscry_ms": 1068.0
+    },
+    "run_a_correct": true,
+    "run_b_correct": true
+  },
+  {
+    "screenshot": "17.png",
+    "ground_truth": {
+      "question": "What database error occurred and what is the fix?",
+      "correct_element": "orders.payment_status column missing",
+      "correct_action": "Column 'orders.payment_status' doesn't exist \u2014 run flask db migrate && flask db upgrade",
+      "category": "browser",
+      "advantage": "tie"
+    },
+    "run_a": {
+      "response": "1. **Error:** `sqlalchemy.exc.OperationalError: no such column: orders.payment_status` \u2014 thrown at `/app/app.py` line 42 in the `checkout` function. The `payment_status` column exists in the model but not in the actual SQLite database schema.\n\n2. **Fix:** Run the pending database migrations:\n   ```\n   flask db migrate && flask db upgrade\n   ```",
+      "elapsed_s": 16.02,
+      "rc": 0,
+      "input_tokens": 886,
+      "output_tokens": 86
+    },
+    "run_b": {
+      "response": "1. **Error**: `sqlalchemy.exc.OperationalError: no such column: orders.payment_status` \u2014 the `orders` table is missing the `payment_status` column (referenced in `app.py:42`).\n\n2. **Fix**: Run the pending database migrations:\n   ```\n   flask db migrate && flask db upgrade\n   ```",
+      "elapsed_s": 11.28,
+      "rc": 0,
+      "input_tokens": 268,
+      "output_tokens": 69,
+      "farscry_output": "=== farscry visual context ===\nsource: /Users/teles/github/farscry/spike/benchmark/screenshots/17.png\nscreen_type: terminal\n---\n[top-left] 500 INTERNAL SERVER ERROR\n[top-left] Traceback (most recent call last):\n[top-left] File \"/app/app.py\", line 42, in checkout\n[top-left] result = db.execute(query, params)\n[top-left] File \"/usr/lib/python3.11/sqlite3/dbapi2.py\", line 67, in execute\n[middle-left] return self._execute(sql, params)\n[middle-left] sqlalchemy.exc.OperationalError: (sqlite3.OperationalError)\n[middle-left] no such column: orders.payment_status\n[middle-left] The above exception was the direct cause of the following exception:\n[middle] sqlalchemy.exc.OperationalError: no such column: orders.payment_status\n[middle-left] Run: flask db migrate && flask db upgrade\n[middle] to apply pending migrations",
+      "farscry_ms": 480.4
+    },
+    "run_a_correct": true,
+    "run_b_correct": true
+  },
+  {
+    "screenshot": "18.png",
+    "ground_truth": {
+      "question": "What is the dangerous action button and what coordinates is it at?",
+      "correct_element": "Delete Environment button (red, far right)",
+      "correct_action": "Red 'Delete Environment' button at approximately (440, 322) \u2014 irreversible action",
+      "category": "web_form",
+      "advantage": "farscry"
+    },
+    "run_a": {
+      "response": "1. **Element identified:** The \"Delete Environment\" confirmation dialog for the production environment `farscry-prod-eu`, with the confirmation name already typed in the input field.\n\n2. **Dangerous action button:** The red **\"Delete Environment\"** button, located at approximately **(519, 335)**.",
+      "elapsed_s": 18.12,
+      "rc": 0,
+      "input_tokens": 890,
+      "output_tokens": 74
+    },
+    "run_b": {
+      "response": "1. **Element identified:** \"Delete Environment\" confirmation button \u2014 a destructive action dialog for deleting the `farscry-prod-eu` production environment.\n\n2. **Coordinates:** The **\"Delete Environment\"** button (the dangerous confirm button) is at **bottom-center** of the dialog. The \"Cancel\" button is at **bottom-left**.",
+      "elapsed_s": 8.69,
+      "rc": 0,
+      "input_tokens": 185,
+      "output_tokens": 81,
+      "farscry_output": "=== farscry visual context ===\nsource: /Users/teles/github/farscry/spike/benchmark/screenshots/18.png\nscreen_type: conversation\n---\n[top-left] Delete Environment\n[middle] You are about to delete the production\n[middle] environment farscry-prod-eu'. This action\n[middle] cannot be undone. All data will be lost.\n[middle] Type the environment name to confirm:\n[middle-left] farscry-prod-eu\n[bottom-center] Back\n[bottom-left] Cancel\n[bottom-center] Delete Environment",
+      "farscry_ms": 161.5
+    },
+    "run_a_correct": true,
+    "run_b_correct": true
+  },
+  {
+    "screenshot": "19.png",
+    "ground_truth": {
+      "question": "Which endpoint is returning 500 errors and what does the latency suggest?",
+      "correct_element": "POST /api/v1/extract \u2014 4 errors, 4000ms+ latency",
+      "correct_action": "/api/v1/extract is timing out (~4s) causing 500s \u2014 likely model loading issue",
+      "category": "terminal",
+      "advantage": "farscry"
+    },
+    "run_a": {
+      "response": "1. **Endpoint:** `POST /api/v1/extract` is returning 500 errors. All five 500 responses come exclusively from this endpoint, with one entry showing an explicit `timeout` instead of a latency value.\n\n2. **Fix needed:** The ~4000\u20134200ms latency on every failing request (vs. ~140ms for successful ones) indicates the handler is hitting a processing or upstream timeout. Investigate the `/api/v1/extract` handler's timeout configuration \u2014 specifically the upstream call or worker timeout threshold (likely set around 4 seconds) \u2014 and either fix the underlying slowness causing the timeout or raise the timeout limit if the workload legitimately requires more time.",
+      "elapsed_s": 14.4,
+      "rc": 0,
+      "input_tokens": 892,
+      "output_tokens": 165
+    },
+    "run_b": {
+      "response": "1. **`POST /api/v1/extract`** is returning 500 errors (multiple consecutive failures from IPs 10.0.1.5, 10.0.1.12, 10.0.1.15).\n\n2. The ~4000ms latency before each 500 (4023ms, 4001ms, 4189ms, 4201ms) indicates the service is hitting a timeout threshold \u2014 the fix is to investigate the upstream dependency (likely a database query or external service call) inside the `/api/v1/extract` handler that is consistently timing out around 4 seconds, and either increase the timeout, fix the slow operation, or add a circuit breaker.",
+      "elapsed_s": 10.74,
+      "rc": 0,
+      "input_tokens": 385,
+      "output_tokens": 131,
+      "farscry_output": "=== farscry visual context ===\nsource: /Users/teles/github/farscry/spike/benchmark/screenshots/19.png\nscreen_type: conversation\n---\n[top-center] tail -f/var/log/nginx/access.log\n[top-left] 10.0.1.5\n[top-left] POST /api/v1/extract\n[top-center] 200\n[top-center] 142ms\n[top-left] 10.0.1.5\n[top-left] POST /api/v1/extract\n[top-center] 200\n[top-center] 138ms\n[top-left] POST /api/v1/diff\n[top-center] 200\n[top-left] 10.0.1.8\n[top-center] 89ms\n[top-left] GET\n[top-left] /api/v1/health\n[top-center] 200\n[top-center] 3ms\n[top-left] 10.0.1.12\n[top-left] POST\n[top-center] 500\n[top-left] 10.0.1.5\n[top-center] 4023ms\n[top-left] /api/v1/extract\n[middle] 500\n[middle-left] 10.0.1.5\n[middle] 4001ms\n[middle-left] POST /api/v1/extract\n[middle-left] 10.0.1.5\n[middle] 500\n[middle] 4189ms\n[middle-left] POST /api/v1/extract\n[middle] 502\n[middle-left] 10.0.1.8\n[middle-left] POST /api/v1/diff\n[middle] 31ms\n[middle-left] GET\n[middle-left] /api/v1/health\n[middle] 200\n[middle] 2ms\n[middle-left] 10.0.1.12\n[middle] 500\n[middle-left] 10.0.1.5\n[middle-left] POST\n[middle] 4201ms\n[middle-left] /api/v1/extract\n[middle] 500\n[middle-left] 10.0.1.15\n[middle-left] POST /api/v1/extract\n[middle] timeout\n[middle-left] 10.0.1.8\n[middle] 502\n[middle] 28ms\n[middle-left] POST /api/v1/diff",
+      "farscry_ms": 355.8
+    },
+    "run_a_correct": true,
+    "run_b_correct": true
+  },
+  {
+    "screenshot": "20.png",
+    "ground_truth": {
+      "question": "What settings are currently enabled and where is the Save button?",
+      "correct_element": "Require 2FA (ON) + SSH key access (ON); Save button at (576, 478)",
+      "correct_action": "2FA and SSH access are ON; SAML and IP allowlist OFF; Save button is blue at bottom right",
+      "category": "config",
+      "advantage": "farscry"
+    },
+    "run_a": {
+      "response": "**Settings currently enabled (ON):**\n- Require 2FA for all members\n- Allow SSH key access\n\n**SAML single sign-on** and **IP allowlist** are both OFF.\n\n**Save button location:** Bottom-right corner of the page, in the sticky footer bar (approximately coordinates 611, 493).\n\n---\n\n1. **Element identified:** The banner \"You have unsaved changes\" (orange/yellow, top of content area) \u2014 there are pending changes not yet persisted.\n\n2. **Action needed:** Click the **Save** button (bottom-right footer, labeled \"Save\") to persist the current toggle states.",
+      "elapsed_s": 13.43,
+      "rc": 0,
+      "input_tokens": 890,
+      "output_tokens": 138
+    },
+    "run_b": {
+      "response": "1. **Settings currently enabled:** \"Require 2FA for all members\" (ON) and \"Allow SSH key access\" (ON). SAML single sign-on and IP allowlist are both OFF.\n\n2. **Save button location:** Bottom-right corner of the screen, labeled \"Save\" (next to \"Discard\").",
+      "elapsed_s": 8.26,
+      "rc": 0,
+      "input_tokens": 242,
+      "output_tokens": 63,
+      "farscry_output": "=== farscry visual context ===\nsource: /Users/teles/github/farscry/spike/benchmark/screenshots/20.png\nscreen_type: conversation\n---\n[top-left] \u2014\n[top-left] Organization Settings\n[top-left] Security\n[top-left] You have unsaved changes\n[top-left] Require 2FA for all members\n[top-left] \"on\n[top-left] Members must use two-factor authentication\n[top-left] Allow SSH key access\n[top-left] ON\n[middle-left] Members can use SSH keys to clone repositories\n[middle-left] SAML single sign-on\n[middle-left] OFF\n[middle-left] Not configured \u2014 requires Business plan\n[middle-left] IP allowlist\n[middle-left] OFF\n[middle-left] Restrict access to specific IP ranges\n[bottom-right] Save\n[bottom-right] Discard",
+      "farscry_ms": 287.7
+    },
+    "run_a_correct": true,
+    "run_b_correct": true
+  }
+]

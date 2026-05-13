@@ -1,0 +1,333 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.azumio.android.sleeptime:id/ads_switcher",
+      "children": [
+        {
+          "resource-id": "com.azumio.android.sleeptime:id/ad_view_banner",
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.FrameLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "com.google.android.gms.ads.internal.webview.l",
+              "bounds": [
+                160,
+                2217,
+                1280,
+                2392
+              ],
+              "clickable": false,
+              "children": [
+                {
+                  "ancestors": [
+                    "android.webkit.WebView",
+                    "android.widget.AbsoluteLayout",
+                    "android.view.ViewGroup",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    160,
+                    2217,
+                    1280,
+                    2392
+                  ],
+                  "clickable": true,
+                  "class": "com.google.android.gms.ads.internal.webview.m",
+                  "componentLabel": "Web View"
+                }
+              ],
+              "componentLabel": "Web View"
+            }
+          ],
+          "ancestors": [
+            "com.google.android.gms.ads.BaseAdView",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.google.android.gms.ads.AdView",
+          "bounds": [
+            0,
+            2217,
+            1440,
+            2392
+          ],
+          "componentLabel": "Advertisement"
+        },
+        {
+          "iconClass": "close",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.azumio.android.sleeptime:id/ad_view_banner_close",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            1247,
+            2217,
+            1387,
+            2392
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.ViewAnimator",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.ViewSwitcher",
+      "bounds": [
+        0,
+        1517,
+        1440,
+        2392
+      ],
+      "componentLabel": "On/Off Switch"
+    },
+    {
+      "iconClass": "avatar",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.azumio.android.sleeptime:id/action_settings",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageButton",
+      "bounds": [
+        1282,
+        112,
+        1422,
+        252
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "Alarm",
+      "bounds": [
+        56,
+        84,
+        590,
+        280
+      ],
+      "clickable": true,
+      "class": "com.azumio.android.argus.view.XMLTypefaceTextView",
+      "componentLabel": "Text Button"
+    },
+    {
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "Insights",
+      "bounds": [
+        590,
+        84,
+        1124,
+        280
+      ],
+      "clickable": true,
+      "class": "com.azumio.android.argus.view.XMLTypefaceTextView",
+      "componentLabel": "Text Button"
+    },
+    {
+      "iconClass": "info",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.azumio.android.sleeptime:id/image_button_info",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageButton",
+      "bounds": [
+        1160,
+        280,
+        1384,
+        504
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "iconClass": "settings",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.azumio.android.sleeptime:id/image_button_settings",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageButton",
+      "bounds": [
+        56,
+        280,
+        280,
+        504
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Alarm time",
+      "resource-id": "com.azumio.android.sleeptime:id/text_view_clock_alarmTimeDescription",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.azumio.android.argus.view.XMLTypefaceTextView",
+      "bounds": [
+        70,
+        1860,
+        326,
+        1931
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Wake up in",
+      "resource-id": "com.azumio.android.sleeptime:id/text_view_clock_wakeupDescription",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.azumio.android.argus.view.XMLTypefaceTextView",
+      "bounds": [
+        573,
+        1860,
+        828,
+        1931
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "com.azumio.android.sleeptime:id/action_alarmclock_start",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        1065,
+        1840,
+        1328,
+        2103
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "09:50",
+      "resource-id": "com.azumio.android.sleeptime:id/text_view_clock_alarmTime",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.azumio.android.argus.view.XMLTypefaceTextView",
+      "bounds": [
+        70,
+        1931,
+        315,
+        2082
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "PM",
+      "resource-id": "com.azumio.android.sleeptime:id/text_view_clock_pm",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.azumio.android.argus.view.XMLTypefaceTextView",
+      "bounds": [
+        315,
+        1977,
+        403,
+        2072
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "07:26",
+      "resource-id": "com.azumio.android.sleeptime:id/text_view_clock_wakeTime",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.azumio.android.argus.view.XMLTypefaceTextView",
+      "bounds": [
+        573,
+        1931,
+        811,
+        2082
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "H",
+      "resource-id": "com.azumio.android.sleeptime:id/text_view_clock_hours",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.azumio.android.argus.view.XMLTypefaceTextView",
+      "bounds": [
+        822,
+        1977,
+        858,
+        2072
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

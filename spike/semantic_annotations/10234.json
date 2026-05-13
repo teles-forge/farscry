@@ -1,0 +1,783 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "org.npr.android.news:id/action_bar_container",
+      "children": [
+        {
+          "resource-id": "org.npr.android.news:id/spinner",
+          "ancestors": [
+            "android.widget.Spinner",
+            "android.widget.AbsSpinner",
+            "android.widget.AdapterView",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "org.npr.android.widget.NprSpinner",
+          "bounds": [
+            350,
+            84,
+            721,
+            280
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "news"
+        },
+        {
+          "iconClass": "refresh",
+          "resource-id": "org.npr.android.news:id/action_refresh",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1104,
+            98,
+            1272,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "org.npr.android.news:id/action_search",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1272,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "sliders",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.npr.android.news:id/npr_logo_home",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            52,
+            140,
+            297,
+            224
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        280,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "pause",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.npr.android.news:id/contracted_play_pause",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "bounds": [
+            0,
+            2182,
+            273,
+            2389
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "NOW PLAYING",
+          "resource-id": "org.npr.android.news:id/contracted_status",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            291,
+            2231,
+            524,
+            2278
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Along A Shifting Border, Georgia And Russia Maintain An Uneasy Peace",
+          "resource-id": "org.npr.android.news:id/contracted_news_item_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            291,
+            2278,
+            1422,
+            2343
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "text": "information Technology",
+      "resource-id": "org.npr.android.news:id/SearchText",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatEditText",
+      "bounds": [
+        18,
+        298,
+        1268,
+        450
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "iconClass": "search",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "org.npr.android.news:id/search_go_button",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageButton",
+      "bounds": [
+        1268,
+        298,
+        1422,
+        450
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Search Results",
+      "resource-id": "org.npr.android.news:id/TitleText",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        28,
+        477,
+        867,
+        543
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Updated 0 minutes ago",
+      "resource-id": "org.npr.android.news:id/TitleRight",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        867,
+        491,
+        1412,
+        529
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        552,
+        1440,
+        776
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "volume",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.npr.android.news:id/NewsItemIcon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            11,
+            602,
+            134,
+            725
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "technology",
+          "resource-id": "org.npr.android.news:id/NewsItemTopicText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            134,
+            575,
+            1429,
+            628
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Rise Of Artifical Intelligence Met With Mixed Reaction At SXSW",
+          "resource-id": "org.npr.android.news:id/NewsItemNameText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            134,
+            628,
+            1408,
+            752
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        783,
+        1440,
+        1007
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "volume",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.npr.android.news:id/NewsItemIcon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            11,
+            833,
+            134,
+            956
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "technology",
+          "resource-id": "org.npr.android.news:id/NewsItemTopicText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            134,
+            806,
+            1429,
+            859
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Developers Create 'Panic Button' For Immigrants Being Detained",
+          "resource-id": "org.npr.android.news:id/NewsItemNameText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            134,
+            859,
+            1408,
+            983
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1014,
+        1440,
+        1238
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "volume",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.npr.android.news:id/NewsItemIcon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            11,
+            1064,
+            134,
+            1187
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "music reviews",
+          "resource-id": "org.npr.android.news:id/NewsItemTopicText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            134,
+            1066,
+            1429,
+            1119
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Music Review: 'Drunk,' Thundercat",
+          "resource-id": "org.npr.android.news:id/NewsItemNameText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            134,
+            1119,
+            1408,
+            1186
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1245,
+        1440,
+        1469
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "volume",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.npr.android.news:id/NewsItemIcon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            11,
+            1295,
+            134,
+            1418
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "politics",
+          "resource-id": "org.npr.android.news:id/NewsItemTopicText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            134,
+            1268,
+            1429,
+            1321
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Texas Rep. Michael McCaul On Proposed Border Wall",
+          "resource-id": "org.npr.android.news:id/NewsItemNameText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            134,
+            1321,
+            1408,
+            1445
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1476,
+        1440,
+        1700
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "volume",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.npr.android.news:id/NewsItemIcon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            11,
+            1526,
+            134,
+            1649
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "author interviews",
+          "resource-id": "org.npr.android.news:id/NewsItemTopicText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            134,
+            1499,
+            1429,
+            1552
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "'White Tears' Is A Mystery, A History, A Coming-Of-Age Story",
+          "resource-id": "org.npr.android.news:id/NewsItemNameText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            134,
+            1552,
+            1408,
+            1676
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1707,
+        1440,
+        1931
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "volume",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.npr.android.news:id/NewsItemIcon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            11,
+            1757,
+            134,
+            1880
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "environment",
+          "resource-id": "org.npr.android.news:id/NewsItemTopicText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            134,
+            1730,
+            1429,
+            1783
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Activists Work To Preserve Government Environmental Data",
+          "resource-id": "org.npr.android.news:id/NewsItemNameText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            134,
+            1783,
+            1408,
+            1907
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1938,
+        1440,
+        2162
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "iconClass": "volume",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "org.npr.android.news:id/NewsItemIcon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            11,
+            1988,
+            134,
+            2111
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "education",
+          "resource-id": "org.npr.android.news:id/NewsItemTopicText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            134,
+            1990,
+            1429,
+            2043
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "A Conversation About Who Needs College And Why",
+          "resource-id": "org.npr.android.news:id/NewsItemNameText",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            134,
+            2043,
+            1408,
+            2110
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        2169,
+        1440,
+        2182
+      ],
+      "clickable": false,
+      "children": [],
+      "componentLabel": "List Item"
+    }
+  ]
+}

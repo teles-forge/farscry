@@ -1,0 +1,824 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.craftsvilla.app:id/mHomeToolbar",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.craftsvilla.app:id/mHomeToolbarTitleImgView",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            56,
+            114,
+            458,
+            215
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "cart",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.craftsvilla.app:id/mImageViewCart",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1282,
+            119,
+            1373,
+            210
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "0",
+          "resource-id": "com.craftsvilla.app:id/mImageCartCount",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.craftsvilla.app.helper.customViews.ProximaNovaTextViewBold",
+          "bounds": [
+            1345,
+            112,
+            1394,
+            161
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        245
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "Search for products and brands",
+      "resource-id": "com.craftsvilla.app:id/mSearchBarTextViewBold",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.craftsvilla.app.helper.customViews.ProximaNovaTextViewRegular",
+      "bounds": [
+        60,
+        266,
+        1419,
+        413
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "resource-id": "com.craftsvilla.app:id/mBottomNavigationHomeLayout",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        2194,
+        288,
+        2392
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "home"
+    },
+    {
+      "resource-id": "com.craftsvilla.app:id/mBottomNavigationCategoriesLayout",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        288,
+        2194,
+        576,
+        2392
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "categories"
+    },
+    {
+      "iconClass": "label",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.craftsvilla.app:id/mDealsImageView",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        685,
+        2233,
+        755,
+        2303
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Deals",
+      "resource-id": "com.craftsvilla.app:id/mBottomNavigationDealsTextView",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.craftsvilla.app.helper.customViews.ProximaNovaTextViewRegular",
+      "bounds": [
+        668,
+        2324,
+        772,
+        2371
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "favorite",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.craftsvilla.app:id/mWishlistImageView",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        973,
+        2235,
+        1043,
+        2301
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Wishlist",
+      "resource-id": "com.craftsvilla.app:id/mBottomNavigationWishlistTextView",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.craftsvilla.app.helper.customViews.ProximaNovaTextViewRegular",
+      "bounds": [
+        938,
+        2322,
+        1077,
+        2369
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "avatar",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.craftsvilla.app:id/mProfileImageView",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        1263,
+        2233,
+        1329,
+        2303
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Account",
+      "resource-id": "com.craftsvilla.app:id/mBottomNavigationAccountTextView",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.craftsvilla.app.helper.customViews.ProximaNovaTextViewRegular",
+      "bounds": [
+        1220,
+        2324,
+        1372,
+        2371
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "com.craftsvilla.app:id/mRelativeCorousalHome",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.craftsvilla.app:id/mIndicatorCorousalHome",
+          "clickable": false,
+          "class": "com.craftsvilla.app.features.discovery.home.homeScreen.homefragment.CirclePageIndicator",
+          "bounds": [
+            638,
+            848,
+            801,
+            892
+          ],
+          "componentLabel": "Pager Indicator"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.craftsvilla.app:id/mImageItemCorousalHome",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            0,
+            434,
+            3,
+            917
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.craftsvilla.app:id/mImageItemCorousalHome",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            3,
+            434,
+            1440,
+            917
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        434,
+        1440,
+        917
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.craftsvilla.app:id/mRelativeLayoutNewUser",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        28,
+        945,
+        1412,
+        1391
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "view"
+    },
+    {
+      "resource-id": "com.craftsvilla.app:id/mLinearLayoutSlider",
+      "children": [
+        {
+          "text": "Shop By Category",
+          "resource-id": "com.craftsvilla.app:id/mTextViewTitleSlider",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.craftsvilla.app.helper.customViews.ProximaNovaTextViewRegular",
+          "bounds": [
+            0,
+            1465,
+            521,
+            1527
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "resource-id": "com.craftsvilla.app:id/mLinearLayoutItemGrid",
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.craftsvilla.app:id/mImageViewGridItem",
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                35,
+                1590,
+                259,
+                1814
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "Sarees",
+              "resource-id": "com.craftsvilla.app:id/mTextViewTitleGridItem",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.craftsvilla.app.helper.customViews.ProximaNovaTextViewRegular",
+              "bounds": [
+                82,
+                1849,
+                211,
+                1896
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            35,
+            1590,
+            259,
+            1896
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "resource-id": "com.craftsvilla.app:id/mLinearLayoutItemGrid",
+          "children": [
+            {
+              "iconClass": "avatar",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.craftsvilla.app:id/mImageViewGridItem",
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                398,
+                1590,
+                622,
+                1814
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "text": "Casual Wear",
+              "resource-id": "com.craftsvilla.app:id/mTextViewTitleGridItem",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.craftsvilla.app.helper.customViews.ProximaNovaTextViewRegular",
+              "bounds": [
+                395,
+                1849,
+                625,
+                1896
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            395,
+            1590,
+            625,
+            1896
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "resource-id": "com.craftsvilla.app:id/mLinearLayoutItemGrid",
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.craftsvilla.app:id/mImageViewGridItem",
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                755,
+                1590,
+                979,
+                1814
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "Salwar Suits",
+              "resource-id": "com.craftsvilla.app:id/mTextViewTitleGridItem",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.craftsvilla.app.helper.customViews.ProximaNovaTextViewRegular",
+              "bounds": [
+                755,
+                1849,
+                978,
+                1896
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            755,
+            1590,
+            979,
+            1896
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "resource-id": "com.craftsvilla.app:id/mLinearLayoutItemGrid",
+          "children": [
+            {
+              "iconClass": "avatar",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.craftsvilla.app:id/mImageViewGridItem",
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                1115,
+                1590,
+                1339,
+                1814
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "text": "Lehengas",
+              "resource-id": "com.craftsvilla.app:id/mTextViewTitleGridItem",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.craftsvilla.app.helper.customViews.ProximaNovaTextViewRegular",
+              "bounds": [
+                1137,
+                1849,
+                1317,
+                1896
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            1115,
+            1590,
+            1339,
+            1896
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "resource-id": "com.craftsvilla.app:id/mLinearLayoutItemGrid",
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.craftsvilla.app:id/mImageViewGridItem",
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                35,
+                2001,
+                259,
+                2225
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "Jewellery",
+              "resource-id": "com.craftsvilla.app:id/mTextViewTitleGridItem",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.craftsvilla.app.helper.customViews.ProximaNovaTextViewRegular",
+              "bounds": [
+                59,
+                2260,
+                235,
+                2307
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            35,
+            2001,
+            259,
+            2307
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "resource-id": "com.craftsvilla.app:id/mLinearLayoutItemGrid",
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.craftsvilla.app:id/mImageViewGridItem",
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                400,
+                2001,
+                624,
+                2225
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "Home Decor",
+              "resource-id": "com.craftsvilla.app:id/mTextViewTitleGridItem",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.craftsvilla.app.helper.customViews.ProximaNovaTextViewRegular",
+              "bounds": [
+                395,
+                2260,
+                630,
+                2307
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            395,
+            2001,
+            630,
+            2307
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "resource-id": "com.craftsvilla.app:id/mLinearLayoutItemGrid",
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.craftsvilla.app:id/mImageViewGridItem",
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                774,
+                2001,
+                998,
+                2225
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "Men's Fashion",
+              "resource-id": "com.craftsvilla.app:id/mTextViewTitleGridItem",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.craftsvilla.app.helper.customViews.ProximaNovaTextViewRegular",
+              "bounds": [
+                755,
+                2260,
+                1018,
+                2307
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            755,
+            2001,
+            1018,
+            2307
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "resource-id": "com.craftsvilla.app:id/mLinearLayoutItemGrid",
+          "children": [
+            {
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.craftsvilla.app:id/mImageViewGridItem",
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatImageView",
+              "bounds": [
+                1115,
+                2001,
+                1339,
+                2225
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "Beauty",
+              "resource-id": "com.craftsvilla.app:id/mTextViewTitleGridItem",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.craftsvilla.app.helper.customViews.ProximaNovaTextViewRegular",
+              "bounds": [
+                1163,
+                2260,
+                1291,
+                2307
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            1115,
+            2001,
+            1339,
+            2307
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1419,
+        1440,
+        2377
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

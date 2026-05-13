@@ -1,0 +1,593 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "de.flixbus.app:id/toolbar",
+      "children": [
+        {
+          "text": "PAYMENT DETAILS",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.ab",
+          "bounds": [
+            252,
+            121,
+            854,
+            215
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            252
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.o",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        252
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "de.flixbus.app:id/cpdv_button",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        974,
+        2175,
+        1429,
+        2385
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "buy"
+    },
+    {
+      "resource-id": "de.flixbus.app:id/vpd_email_container",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.v7.widget.CardView",
+          "bounds": [
+            28,
+            1302,
+            1412,
+            1656
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "iconClass": "email",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "de.flixbus.app:id/vpd_email_icon",
+              "clickable": false,
+              "class": "android.support.v7.widget.q",
+              "bounds": [
+                28,
+                1302,
+                224,
+                1498
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "text": "Email address *",
+              "resource-id": "de.flixbus.app:id/vpd_email_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.ab",
+              "bounds": [
+                224,
+                1358,
+                1356,
+                1431
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "",
+              "resource-id": "de.flixbus.app:id/vpd_email",
+              "ancestors": [
+                "android.support.v7.widget.n",
+                "android.widget.EditText",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "de.meinfernbus.views.MFBEditText",
+              "bounds": [
+                224,
+                1431,
+                1356,
+                1600
+              ],
+              "componentLabel": "Input"
+            }
+          ],
+          "componentLabel": "Card"
+        }
+      ],
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "de.meinfernbus.occ.payment.EmailCardView",
+      "bounds": [
+        0,
+        1302,
+        1440,
+        1684
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "text": "Total:",
+      "resource-id": "de.flixbus.app:id/cpdv_sum_hint_collapsed",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.ab",
+      "bounds": [
+        0,
+        2280,
+        303,
+        2337
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "74.50 €",
+      "resource-id": "de.flixbus.app:id/cpdv_sum",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.ab",
+      "bounds": [
+        303,
+        2280,
+        500,
+        2337
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "In cart: 1",
+      "resource-id": "de.flixbus.app:id/cpdv_text_collapsed",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.ab",
+      "bounds": [
+        0,
+        2195,
+        406,
+        2280
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        28,
+        280,
+        1412,
+        550
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "de.flixbus.app:id/vpd_pax_overview_pax_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.q",
+          "bounds": [
+            28,
+            280,
+            224,
+            476
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "edit",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "de.flixbus.app:id/vpd_pax_overview_edit",
+          "clickable": false,
+          "class": "android.support.v7.widget.q",
+          "bounds": [
+            1237,
+            280,
+            1412,
+            455
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Passengers",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.ab",
+          "bounds": [
+            224,
+            336,
+            550,
+            409
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Missing info for passengers",
+          "resource-id": "de.flixbus.app:id/vpd_pax_overview_missing_passengers",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.ab",
+          "bounds": [
+            224,
+            437,
+            829,
+            494
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        28,
+        578,
+        1412,
+        1274
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Save payment data securely for faster payment in the future.",
+          "resource-id": "de.flixbus.app:id/vpd_save_switch",
+          "ancestors": [
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.SwitchCompat",
+          "bounds": [
+            224,
+            852,
+            1412,
+            1078
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "iconClass": "minus",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "de.flixbus.app:id/vpd_payment_method_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.q",
+          "bounds": [
+            28,
+            578,
+            224,
+            774
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "edit",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "de.flixbus.app:id/vpd_payment_method_change",
+          "clickable": false,
+          "class": "android.support.v7.widget.q",
+          "bounds": [
+            1237,
+            578,
+            1412,
+            753
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Pay with",
+          "resource-id": "de.flixbus.app:id/vpd_payment_method_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.ab",
+          "bounds": [
+            224,
+            634,
+            461,
+            707
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Credit card",
+          "resource-id": "de.flixbus.app:id/vpd_payment_method_payment_overview",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.ab",
+          "bounds": [
+            224,
+            735,
+            1237,
+            792
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "playlist",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "de.flixbus.app:id/vpd_invoice_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.q",
+          "bounds": [
+            28,
+            1078,
+            224,
+            1274
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "I need an invoice.",
+          "resource-id": "de.flixbus.app:id/vpd_invoice_switch",
+          "ancestors": [
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.SwitchCompat",
+          "bounds": [
+            224,
+            1078,
+            1412,
+            1263
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "text": "",
+      "resource-id": "de.flixbus.app:id/vpd_donation",
+      "ancestors": [
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.SwitchCompat",
+      "bounds": [
+        56,
+        1891,
+        1412,
+        1986
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "CO₂ compensation (1.22 €)",
+      "resource-id": "de.flixbus.app:id/vpd_donation_text",
+      "ancestors": [
+        "android.support.v7.widget.ab",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "de.meinfernbus.views.InfoTextView",
+      "bounds": [
+        56,
+        1891,
+        893,
+        1964
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "",
+      "resource-id": "de.flixbus.app:id/vpd_agb",
+      "ancestors": [
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.SwitchCompat",
+      "bounds": [
+        56,
+        2098,
+        1412,
+        2168
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "I accept the T&Cs and Privacy Policy. I consent to share of my email address with Adyen B.V for the purpose of fraud prevention and detection. I can revoke my consent at any time with effect for the future.",
+      "resource-id": "de.flixbus.app:id/vpd_agb_text",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.ab",
+      "bounds": [
+        56,
+        2098,
+        1244,
+        2168
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "",
+      "resource-id": "de.flixbus.app:id/snv_sms_notification_switch",
+      "ancestors": [
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.SwitchCompat",
+      "bounds": [
+        56,
+        1740,
+        1412,
+        1835
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "SMS alerts",
+      "resource-id": "de.flixbus.app:id/snv_sms_notification_text",
+      "ancestors": [
+        "android.support.v7.widget.ab",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "de.meinfernbus.views.InfoTextView",
+      "bounds": [
+        56,
+        1740,
+        440,
+        1813
+      ],
+      "componentLabel": "Text Button"
+    }
+  ]
+}

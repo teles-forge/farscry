@@ -1,0 +1,1801 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.alipay.mobile.beehive:id/titleBar",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.alipay.mobile.ui:id/title_bar_back_button",
+          "clickable": true,
+          "class": "com.alipay.mobile.commonui.widget.APImageButton",
+          "bounds": [
+            0,
+            84,
+            168,
+            252
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "com.alipay.mobile.commonui.widget.APRelativeLayout",
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.alipay.mobile.commonui.widget.APTitleBar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        252
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.alipay.mobile.beehive:id/switchTab",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.alipay.mobile.ui:id/tabLine",
+          "clickable": false,
+          "class": "com.alipay.mobile.commonui.widget.APImageView",
+          "bounds": [
+            214,
+            245,
+            760,
+            252
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "resource-id": "com.alipay.mobile.ui:id/tab",
+          "ancestors": [
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.alipay.mobile.commonui.widget.APRelativeLayout",
+          "bounds": [
+            487,
+            84,
+            760,
+            252
+          ],
+          "componentLabel": "Text Button",
+          "text": "Overseas"
+        },
+        {
+          "text": "All",
+          "resource-id": "com.alipay.mobile.ui:id/tab_tv",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.alipay.mobile.commonui.widget.APTextView",
+          "bounds": [
+            318,
+            129,
+            383,
+            206
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.alipay.mobile.commonui.widget.APSwitchTab",
+      "bounds": [
+        214,
+        84,
+        760,
+        252
+      ],
+      "componentLabel": "On/Off Switch"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+      "bounds": [
+        0,
+        420,
+        1335,
+        659
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Your location",
+          "resource-id": "com.alipay.mobile.beehive:id/city_grid_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.alipay.mobile.commonui.widget.APTextView",
+          "bounds": [
+            56,
+            445,
+            1335,
+            511
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "resource-id": "com.alipay.mobile.beehive:id/city_grid",
+          "ancestors": [
+            "android.widget.GridView",
+            "android.widget.AbsListView",
+            "android.widget.AdapterView",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.alipay.mobile.beehive.cityselect.view.ExpandableGridView",
+          "bounds": [
+            56,
+            536,
+            1335,
+            659
+          ],
+          "componentLabel": "Text Button",
+          "text": "Urbana"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+      "bounds": [
+        0,
+        659,
+        1335,
+        947
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "安顺",
+          "resource-id": "com.alipay.mobile.beehive:id/city_item",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.alipay.mobile.commonui.widget.APTextView",
+          "bounds": [
+            0,
+            792,
+            1335,
+            946
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "A",
+          "resource-id": "com.alipay.mobile.beehive:id/section_header_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.alipay.mobile.commonui.widget.APTextView",
+          "bounds": [
+            0,
+            659,
+            1335,
+            792
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+      "bounds": [
+        0,
+        947,
+        1335,
+        1102
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "安阳",
+          "resource-id": "com.alipay.mobile.beehive:id/city_item",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.alipay.mobile.commonui.widget.APTextView",
+          "bounds": [
+            0,
+            947,
+            1335,
+            1101
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+      "bounds": [
+        0,
+        1102,
+        1335,
+        1257
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "鞍山",
+          "resource-id": "com.alipay.mobile.beehive:id/city_item",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.alipay.mobile.commonui.widget.APTextView",
+          "bounds": [
+            0,
+            1102,
+            1335,
+            1256
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+      "bounds": [
+        0,
+        1257,
+        1335,
+        1412
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "安康",
+          "resource-id": "com.alipay.mobile.beehive:id/city_item",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.alipay.mobile.commonui.widget.APTextView",
+          "bounds": [
+            0,
+            1257,
+            1335,
+            1411
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+      "bounds": [
+        0,
+        1412,
+        1335,
+        1567
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "阿拉尔",
+          "resource-id": "com.alipay.mobile.beehive:id/city_item",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.alipay.mobile.commonui.widget.APTextView",
+          "bounds": [
+            0,
+            1412,
+            1335,
+            1566
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+      "bounds": [
+        0,
+        1567,
+        1335,
+        1722
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "阿克苏",
+          "resource-id": "com.alipay.mobile.beehive:id/city_item",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.alipay.mobile.commonui.widget.APTextView",
+          "bounds": [
+            0,
+            1567,
+            1335,
+            1721
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+      "bounds": [
+        0,
+        1722,
+        1335,
+        1877
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "阿勒泰",
+          "resource-id": "com.alipay.mobile.beehive:id/city_item",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.alipay.mobile.commonui.widget.APTextView",
+          "bounds": [
+            0,
+            1722,
+            1335,
+            1876
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+      "bounds": [
+        0,
+        1877,
+        1335,
+        2032
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "阿里",
+          "resource-id": "com.alipay.mobile.beehive:id/city_item",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.alipay.mobile.commonui.widget.APTextView",
+          "bounds": [
+            0,
+            1877,
+            1335,
+            2031
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+      "bounds": [
+        0,
+        2032,
+        1335,
+        2187
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "阿拉善",
+          "resource-id": "com.alipay.mobile.beehive:id/city_item",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.alipay.mobile.commonui.widget.APTextView",
+          "bounds": [
+            0,
+            2032,
+            1335,
+            2186
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+      "bounds": [
+        0,
+        2187,
+        1335,
+        2342
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "澳门",
+          "resource-id": "com.alipay.mobile.beehive:id/city_item",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.alipay.mobile.commonui.widget.APTextView",
+          "bounds": [
+            0,
+            2187,
+            1335,
+            2341
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+      "bounds": [
+        0,
+        2342,
+        1335,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "安庆",
+          "resource-id": "com.alipay.mobile.beehive:id/city_item",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.alipay.mobile.commonui.widget.APTextView",
+          "bounds": [
+            0,
+            2342,
+            1335,
+            2392
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+      "bounds": [
+        0,
+        420,
+        1335,
+        659
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Your location",
+          "resource-id": "com.alipay.mobile.beehive:id/city_grid_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.alipay.mobile.commonui.widget.APTextView",
+          "bounds": [
+            56,
+            445,
+            1335,
+            511
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "resource-id": "com.alipay.mobile.beehive:id/city_grid",
+          "ancestors": [
+            "android.widget.GridView",
+            "android.widget.AbsListView",
+            "android.widget.AdapterView",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.alipay.mobile.beehive.cityselect.view.ExpandableGridView",
+          "bounds": [
+            56,
+            536,
+            1335,
+            659
+          ],
+          "componentLabel": "Text Button",
+          "text": "Urbana"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+      "bounds": [
+        0,
+        659,
+        1335,
+        2162
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "All top destinations",
+          "resource-id": "com.alipay.mobile.beehive:id/city_grid_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.alipay.mobile.commonui.widget.APTextView",
+          "bounds": [
+            56,
+            684,
+            1335,
+            750
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+          "bounds": [
+            56,
+            775,
+            459,
+            898
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "奥克兰（新西兰）",
+              "resource-id": "com.alipay.mobile.beehive:id/city_item",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.alipay.mobile.commonui.widget.APTextView",
+              "bounds": [
+                56,
+                775,
+                459,
+                898
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+          "bounds": [
+            494,
+            775,
+            897,
+            898
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "澳门",
+              "resource-id": "com.alipay.mobile.beehive:id/city_item",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.alipay.mobile.commonui.widget.APTextView",
+              "bounds": [
+                494,
+                775,
+                897,
+                898
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+          "bounds": [
+            932,
+            775,
+            1335,
+            898
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "巴黎",
+              "resource-id": "com.alipay.mobile.beehive:id/city_item",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.alipay.mobile.commonui.widget.APTextView",
+              "bounds": [
+                932,
+                775,
+                1335,
+                898
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+          "bounds": [
+            56,
+            933,
+            459,
+            1056
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "北京",
+              "resource-id": "com.alipay.mobile.beehive:id/city_item",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.alipay.mobile.commonui.widget.APTextView",
+              "bounds": [
+                56,
+                933,
+                459,
+                1056
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+          "bounds": [
+            494,
+            933,
+            897,
+            1056
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "大阪",
+              "resource-id": "com.alipay.mobile.beehive:id/city_item",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.alipay.mobile.commonui.widget.APTextView",
+              "bounds": [
+                494,
+                933,
+                897,
+                1056
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+          "bounds": [
+            932,
+            933,
+            1335,
+            1056
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "东京",
+              "resource-id": "com.alipay.mobile.beehive:id/city_item",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.alipay.mobile.commonui.widget.APTextView",
+              "bounds": [
+                932,
+                933,
+                1335,
+                1056
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+          "bounds": [
+            56,
+            1091,
+            459,
+            1214
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "高雄",
+              "resource-id": "com.alipay.mobile.beehive:id/city_item",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.alipay.mobile.commonui.widget.APTextView",
+              "bounds": [
+                56,
+                1091,
+                459,
+                1214
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+          "bounds": [
+            494,
+            1091,
+            897,
+            1214
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "广州",
+              "resource-id": "com.alipay.mobile.beehive:id/city_item",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.alipay.mobile.commonui.widget.APTextView",
+              "bounds": [
+                494,
+                1091,
+                897,
+                1214
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+          "bounds": [
+            932,
+            1091,
+            1335,
+            1214
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "杭州",
+              "resource-id": "com.alipay.mobile.beehive:id/city_item",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.alipay.mobile.commonui.widget.APTextView",
+              "bounds": [
+                932,
+                1091,
+                1335,
+                1214
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+          "bounds": [
+            56,
+            1249,
+            459,
+            1372
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "旧金山",
+              "resource-id": "com.alipay.mobile.beehive:id/city_item",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.alipay.mobile.commonui.widget.APTextView",
+              "bounds": [
+                56,
+                1249,
+                459,
+                1372
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+          "bounds": [
+            494,
+            1249,
+            897,
+            1372
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "伦敦",
+              "resource-id": "com.alipay.mobile.beehive:id/city_item",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.alipay.mobile.commonui.widget.APTextView",
+              "bounds": [
+                494,
+                1249,
+                897,
+                1372
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+          "bounds": [
+            932,
+            1249,
+            1335,
+            1372
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "洛杉矶",
+              "resource-id": "com.alipay.mobile.beehive:id/city_item",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.alipay.mobile.commonui.widget.APTextView",
+              "bounds": [
+                932,
+                1249,
+                1335,
+                1372
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+          "bounds": [
+            56,
+            1407,
+            459,
+            1530
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "曼谷",
+              "resource-id": "com.alipay.mobile.beehive:id/city_item",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.alipay.mobile.commonui.widget.APTextView",
+              "bounds": [
+                56,
+                1407,
+                459,
+                1530
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+          "bounds": [
+            494,
+            1407,
+            897,
+            1530
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "墨尔本",
+              "resource-id": "com.alipay.mobile.beehive:id/city_item",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.alipay.mobile.commonui.widget.APTextView",
+              "bounds": [
+                494,
+                1407,
+                897,
+                1530
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+          "bounds": [
+            932,
+            1407,
+            1335,
+            1530
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "慕尼黑",
+              "resource-id": "com.alipay.mobile.beehive:id/city_item",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.alipay.mobile.commonui.widget.APTextView",
+              "bounds": [
+                932,
+                1407,
+                1335,
+                1530
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+          "bounds": [
+            56,
+            1565,
+            459,
+            1688
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "纽约",
+              "resource-id": "com.alipay.mobile.beehive:id/city_item",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.alipay.mobile.commonui.widget.APTextView",
+              "bounds": [
+                56,
+                1565,
+                459,
+                1688
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+          "bounds": [
+            494,
+            1565,
+            897,
+            1688
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "上海",
+              "resource-id": "com.alipay.mobile.beehive:id/city_item",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.alipay.mobile.commonui.widget.APTextView",
+              "bounds": [
+                494,
+                1565,
+                897,
+                1688
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+          "bounds": [
+            932,
+            1565,
+            1335,
+            1688
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "深圳",
+              "resource-id": "com.alipay.mobile.beehive:id/city_item",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.alipay.mobile.commonui.widget.APTextView",
+              "bounds": [
+                932,
+                1565,
+                1335,
+                1688
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+          "bounds": [
+            56,
+            1723,
+            459,
+            1846
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "首尔",
+              "resource-id": "com.alipay.mobile.beehive:id/city_item",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.alipay.mobile.commonui.widget.APTextView",
+              "bounds": [
+                56,
+                1723,
+                459,
+                1846
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+          "bounds": [
+            494,
+            1723,
+            897,
+            1846
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "台北",
+              "resource-id": "com.alipay.mobile.beehive:id/city_item",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.alipay.mobile.commonui.widget.APTextView",
+              "bounds": [
+                494,
+                1723,
+                897,
+                1846
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+          "bounds": [
+            932,
+            1723,
+            1335,
+            1846
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "台中",
+              "resource-id": "com.alipay.mobile.beehive:id/city_item",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.alipay.mobile.commonui.widget.APTextView",
+              "bounds": [
+                932,
+                1723,
+                1335,
+                1846
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+          "bounds": [
+            56,
+            1881,
+            459,
+            2004
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "桃园",
+              "resource-id": "com.alipay.mobile.beehive:id/city_item",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.alipay.mobile.commonui.widget.APTextView",
+              "bounds": [
+                56,
+                1881,
+                459,
+                2004
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+          "bounds": [
+            494,
+            1881,
+            897,
+            2004
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "悉尼",
+              "resource-id": "com.alipay.mobile.beehive:id/city_item",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.alipay.mobile.commonui.widget.APTextView",
+              "bounds": [
+                494,
+                1881,
+                897,
+                2004
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+          "bounds": [
+            932,
+            1881,
+            1335,
+            2004
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "香港",
+              "resource-id": "com.alipay.mobile.beehive:id/city_item",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.alipay.mobile.commonui.widget.APTextView",
+              "bounds": [
+                932,
+                1881,
+                1335,
+                2004
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+          "bounds": [
+            56,
+            2039,
+            459,
+            2162
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "新北",
+              "resource-id": "com.alipay.mobile.beehive:id/city_item",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.alipay.mobile.commonui.widget.APTextView",
+              "bounds": [
+                56,
+                2039,
+                459,
+                2162
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+          "bounds": [
+            494,
+            2039,
+            897,
+            2162
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "新加坡",
+              "resource-id": "com.alipay.mobile.beehive:id/city_item",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.alipay.mobile.commonui.widget.APTextView",
+              "bounds": [
+                494,
+                2039,
+                897,
+                2162
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.alipay.mobile.commonui.widget.APLinearLayout",
+      "bounds": [
+        0,
+        2162,
+        1335,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "阿坝",
+          "resource-id": "com.alipay.mobile.beehive:id/city_item",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.alipay.mobile.commonui.widget.APTextView",
+          "bounds": [
+            0,
+            2295,
+            1335,
+            2392
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "A",
+          "resource-id": "com.alipay.mobile.beehive:id/section_header_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.alipay.mobile.commonui.widget.APTextView",
+          "bounds": [
+            0,
+            2162,
+            1335,
+            2295
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "iconClass": "search",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.alipay.mobile.ui:id/search_bar_icon",
+      "clickable": false,
+      "class": "com.alipay.mobile.commonui.widget.APImageView",
+      "bounds": [
+        58,
+        302,
+        129,
+        370
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "",
+      "resource-id": "com.alipay.mobile.ui:id/search_bar_inputbox",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.alipay.mobile.commonui.widget.APEditText",
+      "bounds": [
+        129,
+        265,
+        1417,
+        407
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "iconClass": "search",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.alipay.mobile.ui:id/search_bar_icon",
+      "clickable": false,
+      "class": "com.alipay.mobile.commonui.widget.APImageView",
+      "bounds": [
+        58,
+        302,
+        129,
+        370
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "",
+      "resource-id": "com.alipay.mobile.ui:id/search_bar_inputbox",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.alipay.mobile.commonui.widget.APEditText",
+      "bounds": [
+        129,
+        265,
+        1417,
+        407
+      ],
+      "componentLabel": "Input"
+    }
+  ]
+}

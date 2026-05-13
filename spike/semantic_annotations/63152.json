@@ -1,0 +1,1364 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.amber.weather:id/layout_container",
+      "children": [
+        {
+          "resource-id": "com.amber.weather:id/toolbar",
+          "children": [
+            {
+              "iconClass": "menu",
+              "ancestors": [
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                0,
+                84,
+                196,
+                259
+              ],
+              "clickable": true,
+              "class": "android.widget.ImageButton",
+              "componentLabel": "Icon"
+            },
+            {
+              "iconClass": "edit",
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                1111,
+                87,
+                1272,
+                255
+              ],
+              "clickable": true,
+              "class": "android.widget.ImageView",
+              "componentLabel": "Icon"
+            },
+            {
+              "iconClass": "add",
+              "ancestors": [
+                "android.support.v7.widget.AppCompatTextView",
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.internal.view.menu.ActionMenuItemView",
+              "bounds": [
+                1272,
+                87,
+                1440,
+                255
+              ],
+              "componentLabel": "Icon"
+            }
+          ],
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.Toolbar",
+          "bounds": [
+            0,
+            84,
+            1440,
+            259
+          ],
+          "componentLabel": "Toolbar"
+        },
+        {
+          "resource-id": "com.amber.weather:id/main_tab_strip",
+          "children": [
+            {
+              "text": "NOW",
+              "resource-id": "com.amber.weather:id/psts_tab_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                0,
+                259,
+                252,
+                340
+              ],
+              "componentLabel": "Text Button"
+            },
+            {
+              "text": "HOUR",
+              "resource-id": "com.amber.weather:id/psts_tab_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                252,
+                259,
+                576,
+                340
+              ],
+              "componentLabel": "Text Button"
+            },
+            {
+              "text": "DAY",
+              "resource-id": "com.amber.weather:id/psts_tab_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                576,
+                259,
+                864,
+                340
+              ],
+              "componentLabel": "Text Button",
+              "textButtonClass": "day"
+            },
+            {
+              "text": "PRECIPITATION",
+              "resource-id": "com.amber.weather:id/psts_tab_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                864,
+                259,
+                1376,
+                340
+              ],
+              "componentLabel": "Text Button"
+            },
+            {
+              "text": "DAYTIME & LUNAR PHASE",
+              "resource-id": "com.amber.weather:id/psts_tab_title",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                1376,
+                259,
+                1440,
+                340
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.widget.HorizontalScrollView",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.astuetz.PagerSlidingTabStrip",
+          "bounds": [
+            0,
+            259,
+            1440,
+            347
+          ],
+          "componentLabel": "Multi-Tab"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            0,
+            347,
+            1440,
+            1684
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "Daily Graphic",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "mobi.infolife.card.view.style.AmberTextView",
+              "bounds": [
+                56,
+                445,
+                383,
+                516
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                439,
+                479,
+                1440,
+                481
+              ],
+              "clickable": false,
+              "class": "android.widget.ImageView",
+              "componentLabel": "Image"
+            },
+            {
+              "resource-id": "com.amber.weather:id/ll_daily_item",
+              "children": [
+                {
+                  "text": "TODAY",
+                  "resource-id": "com.amber.weather:id/text_daily_item_week",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "mobi.infolife.card.view.style.AmberTextView",
+                  "bounds": [
+                    38,
+                    586,
+                    172,
+                    648
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "26/03",
+                  "resource-id": "com.amber.weather:id/text_daily_item_date",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "mobi.infolife.card.view.style.AmberTextView",
+                  "bounds": [
+                    61,
+                    648,
+                    149,
+                    696
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.amber.weather:id/img_daily_item_icon",
+                  "clickable": false,
+                  "class": "android.widget.ImageView",
+                  "bounds": [
+                    45,
+                    700,
+                    164,
+                    819
+                  ],
+                  "componentLabel": "Image"
+                }
+              ],
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.widget.RelativeLayout",
+              "bounds": [
+                0,
+                586,
+                210,
+                1351
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "resource-id": "com.amber.weather:id/ll_daily_item",
+              "children": [
+                {
+                  "text": "Mon",
+                  "resource-id": "com.amber.weather:id/text_daily_item_week",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "mobi.infolife.card.view.style.AmberTextView",
+                  "bounds": [
+                    265,
+                    586,
+                    364,
+                    648
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "27/03",
+                  "resource-id": "com.amber.weather:id/text_daily_item_date",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "mobi.infolife.card.view.style.AmberTextView",
+                  "bounds": [
+                    272,
+                    648,
+                    358,
+                    696
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "iconClass": "volume",
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.amber.weather:id/img_daily_item_icon",
+                  "clickable": false,
+                  "class": "android.widget.ImageView",
+                  "bounds": [
+                    255,
+                    700,
+                    374,
+                    819
+                  ],
+                  "componentLabel": "Icon"
+                }
+              ],
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.widget.RelativeLayout",
+              "bounds": [
+                210,
+                586,
+                420,
+                1351
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "resource-id": "com.amber.weather:id/ll_daily_item",
+              "children": [
+                {
+                  "text": "Tue",
+                  "resource-id": "com.amber.weather:id/text_daily_item_week",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "mobi.infolife.card.view.style.AmberTextView",
+                  "bounds": [
+                    484,
+                    586,
+                    565,
+                    648
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "28/03",
+                  "resource-id": "com.amber.weather:id/text_daily_item_date",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "mobi.infolife.card.view.style.AmberTextView",
+                  "bounds": [
+                    481,
+                    648,
+                    569,
+                    696
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.amber.weather:id/img_daily_item_icon",
+                  "clickable": false,
+                  "class": "android.widget.ImageView",
+                  "bounds": [
+                    465,
+                    700,
+                    584,
+                    819
+                  ],
+                  "componentLabel": "Image"
+                }
+              ],
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.widget.RelativeLayout",
+              "bounds": [
+                420,
+                586,
+                630,
+                1351
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "resource-id": "com.amber.weather:id/ll_daily_item",
+              "children": [
+                {
+                  "text": "Wed",
+                  "resource-id": "com.amber.weather:id/text_daily_item_week",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "mobi.infolife.card.view.style.AmberTextView",
+                  "bounds": [
+                    689,
+                    586,
+                    781,
+                    648
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "29/03",
+                  "resource-id": "com.amber.weather:id/text_daily_item_date",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "mobi.infolife.card.view.style.AmberTextView",
+                  "bounds": [
+                    691,
+                    648,
+                    779,
+                    696
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.amber.weather:id/img_daily_item_icon",
+                  "clickable": false,
+                  "class": "android.widget.ImageView",
+                  "bounds": [
+                    675,
+                    700,
+                    794,
+                    819
+                  ],
+                  "componentLabel": "Image"
+                }
+              ],
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.widget.RelativeLayout",
+              "bounds": [
+                630,
+                586,
+                840,
+                1351
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "resource-id": "com.amber.weather:id/ll_daily_item",
+              "children": [
+                {
+                  "text": "Thu",
+                  "resource-id": "com.amber.weather:id/text_daily_item_week",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "mobi.infolife.card.view.style.AmberTextView",
+                  "bounds": [
+                    901,
+                    586,
+                    988,
+                    648
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "30/03",
+                  "resource-id": "com.amber.weather:id/text_daily_item_date",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "mobi.infolife.card.view.style.AmberTextView",
+                  "bounds": [
+                    901,
+                    648,
+                    989,
+                    696
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.amber.weather:id/img_daily_item_icon",
+                  "clickable": false,
+                  "class": "android.widget.ImageView",
+                  "bounds": [
+                    885,
+                    700,
+                    1004,
+                    819
+                  ],
+                  "componentLabel": "Image"
+                }
+              ],
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.widget.RelativeLayout",
+              "bounds": [
+                840,
+                586,
+                1050,
+                1351
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "resource-id": "com.amber.weather:id/ll_daily_item",
+              "children": [
+                {
+                  "text": "Fri",
+                  "resource-id": "com.amber.weather:id/text_daily_item_week",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "mobi.infolife.card.view.style.AmberTextView",
+                  "bounds": [
+                    1122,
+                    586,
+                    1188,
+                    648
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "31/03",
+                  "resource-id": "com.amber.weather:id/text_daily_item_date",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "mobi.infolife.card.view.style.AmberTextView",
+                  "bounds": [
+                    1112,
+                    648,
+                    1198,
+                    696
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.amber.weather:id/img_daily_item_icon",
+                  "clickable": false,
+                  "class": "android.widget.ImageView",
+                  "bounds": [
+                    1095,
+                    700,
+                    1214,
+                    819
+                  ],
+                  "componentLabel": "Image"
+                }
+              ],
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.widget.RelativeLayout",
+              "bounds": [
+                1050,
+                586,
+                1260,
+                1351
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "resource-id": "com.amber.weather:id/ll_daily_item",
+              "children": [
+                {
+                  "text": "Sat",
+                  "resource-id": "com.amber.weather:id/text_daily_item_week",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "mobi.infolife.card.view.style.AmberTextView",
+                  "bounds": [
+                    1325,
+                    586,
+                    1405,
+                    648
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "01/04",
+                  "resource-id": "com.amber.weather:id/text_daily_item_date",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "mobi.infolife.card.view.style.AmberTextView",
+                  "bounds": [
+                    1322,
+                    648,
+                    1408,
+                    696
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "ancestors": [
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.amber.weather:id/img_daily_item_icon",
+                  "clickable": false,
+                  "class": "android.widget.ImageView",
+                  "bounds": [
+                    1305,
+                    700,
+                    1424,
+                    819
+                  ],
+                  "componentLabel": "Image"
+                }
+              ],
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.widget.RelativeLayout",
+              "bounds": [
+                1260,
+                586,
+                1440,
+                1351
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "text": "Daily Details",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "mobi.infolife.card.view.style.AmberTextView",
+              "bounds": [
+                56,
+                1449,
+                367,
+                1520
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                423,
+                1483,
+                1440,
+                1485
+              ],
+              "clickable": false,
+              "class": "android.widget.ImageView",
+              "componentLabel": "Image"
+            },
+            {
+              "text": "Time",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "mobi.infolife.card.view.style.AmberTextView",
+              "bounds": [
+                0,
+                1590,
+                360,
+                1656
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Weather",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "mobi.infolife.card.view.style.AmberTextView",
+              "bounds": [
+                360,
+                1590,
+                720,
+                1656
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Wind",
+              "resource-id": "com.amber.weather:id/text_daily_sub_title_wind",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "mobi.infolife.card.view.style.AmberTextView",
+              "bounds": [
+                720,
+                1590,
+                1080,
+                1656
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Precip",
+              "resource-id": "com.amber.weather:id/text_daily_sub_title_rain_prob",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "mobi.infolife.card.view.style.AmberTextView",
+              "bounds": [
+                1080,
+                1590,
+                1440,
+                1656
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            0,
+            1684,
+            1440,
+            1894
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "W4.7m/s",
+              "resource-id": "com.amber.weather:id/text_daily_detail_value_wind",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "mobi.infolife.card.view.style.AmberTextView",
+              "bounds": [
+                720,
+                1755,
+                1080,
+                1820
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "43%",
+              "resource-id": "com.amber.weather:id/text_daily_detail_value_realfeel_or_prob",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "mobi.infolife.card.view.style.AmberTextView",
+              "bounds": [
+                1080,
+                1755,
+                1440,
+                1820
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Sun",
+              "resource-id": "com.amber.weather:id/text_daily_detail_week_new",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "mobi.infolife.card.view.style.AmberTextView",
+              "bounds": [
+                141,
+                1726,
+                219,
+                1788
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "26/03",
+              "resource-id": "com.amber.weather:id/text_daily_detail_date_new",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "mobi.infolife.card.view.style.AmberTextView",
+              "bounds": [
+                125,
+                1788,
+                234,
+                1850
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.amber.weather:id/img_daily_detail_icon_new",
+              "clickable": false,
+              "class": "android.widget.ImageView",
+              "bounds": [
+                395,
+                1739,
+                493,
+                1837
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "15° / 10°",
+              "resource-id": "com.amber.weather:id/text_daily_detail_high_low_temp",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "mobi.infolife.card.view.style.AmberTextView",
+              "bounds": [
+                514,
+                1755,
+                684,
+                1820
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            0,
+            1894,
+            1440,
+            2104
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "NW10.3m/s",
+              "resource-id": "com.amber.weather:id/text_daily_detail_value_wind",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "mobi.infolife.card.view.style.AmberTextView",
+              "bounds": [
+                720,
+                1965,
+                1080,
+                2030
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "2%",
+              "resource-id": "com.amber.weather:id/text_daily_detail_value_realfeel_or_prob",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "mobi.infolife.card.view.style.AmberTextView",
+              "bounds": [
+                1080,
+                1965,
+                1440,
+                2030
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Mon",
+              "resource-id": "com.amber.weather:id/text_daily_detail_week_new",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "mobi.infolife.card.view.style.AmberTextView",
+              "bounds": [
+                134,
+                1936,
+                225,
+                1998
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "27/03",
+              "resource-id": "com.amber.weather:id/text_daily_detail_date_new",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "mobi.infolife.card.view.style.AmberTextView",
+              "bounds": [
+                125,
+                1998,
+                234,
+                2060
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.amber.weather:id/img_daily_detail_icon_new",
+              "clickable": false,
+              "class": "android.widget.ImageView",
+              "bounds": [
+                406,
+                1949,
+                504,
+                2047
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "15° / 9°",
+              "resource-id": "com.amber.weather:id/text_daily_detail_high_low_temp",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "mobi.infolife.card.view.style.AmberTextView",
+              "bounds": [
+                525,
+                1965,
+                673,
+                2030
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            0,
+            2104,
+            1440,
+            2314
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "NW9.0m/s",
+              "resource-id": "com.amber.weather:id/text_daily_detail_value_wind",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "mobi.infolife.card.view.style.AmberTextView",
+              "bounds": [
+                720,
+                2175,
+                1080,
+                2240
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "2%",
+              "resource-id": "com.amber.weather:id/text_daily_detail_value_realfeel_or_prob",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "mobi.infolife.card.view.style.AmberTextView",
+              "bounds": [
+                1080,
+                2175,
+                1440,
+                2240
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Tue",
+              "resource-id": "com.amber.weather:id/text_daily_detail_week_new",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "mobi.infolife.card.view.style.AmberTextView",
+              "bounds": [
+                143,
+                2146,
+                216,
+                2208
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "28/03",
+              "resource-id": "com.amber.weather:id/text_daily_detail_date_new",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "mobi.infolife.card.view.style.AmberTextView",
+              "bounds": [
+                125,
+                2208,
+                234,
+                2270
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.amber.weather:id/img_daily_detail_icon_new",
+              "clickable": false,
+              "class": "android.widget.ImageView",
+              "bounds": [
+                395,
+                2159,
+                493,
+                2257
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "18° / 10°",
+              "resource-id": "com.amber.weather:id/text_daily_detail_high_low_temp",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "mobi.infolife.card.view.style.AmberTextView",
+              "bounds": [
+                514,
+                2175,
+                684,
+                2240
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            0,
+            2314,
+            1440,
+            2392
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "W8.3m/s",
+              "resource-id": "com.amber.weather:id/text_daily_detail_value_wind",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "mobi.infolife.card.view.style.AmberTextView",
+              "bounds": [
+                720,
+                2385,
+                1080,
+                2392
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "4%",
+              "resource-id": "com.amber.weather:id/text_daily_detail_value_realfeel_or_prob",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "mobi.infolife.card.view.style.AmberTextView",
+              "bounds": [
+                1080,
+                2385,
+                1440,
+                2392
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Wed",
+              "resource-id": "com.amber.weather:id/text_daily_detail_week_new",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "mobi.infolife.card.view.style.AmberTextView",
+              "bounds": [
+                138,
+                2356,
+                222,
+                2392
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "iconClass": "pause",
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.amber.weather:id/img_daily_detail_icon_new",
+              "clickable": false,
+              "class": "android.widget.ImageView",
+              "bounds": [
+                397,
+                2369,
+                495,
+                2392
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "text": "17° / 10°",
+              "resource-id": "com.amber.weather:id/text_daily_detail_high_low_temp",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "mobi.infolife.card.view.style.AmberTextView",
+              "bounds": [
+                516,
+                2385,
+                682,
+                2392
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.RelativeLayout",
+      "bounds": [
+        0,
+        0,
+        1440,
+        2392
+      ],
+      "componentLabel": "Drawer"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.amber.weather:id/blurredview_blurred_img",
+      "clickable": false,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        0,
+        0,
+        1440,
+        2392
+      ],
+      "componentLabel": "Background Image"
+    }
+  ]
+}

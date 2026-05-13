@@ -1,0 +1,463 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.sololearn.javascript:id/toolbar",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Code Playground",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            210,
+            135,
+            747,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "share",
+          "resource-id": "com.sololearn.javascript:id/action_share",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1132,
+            98,
+            1300,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.design.widget.TabLayout$SlidingTabStrip",
+      "bounds": [
+        0,
+        280,
+        1440,
+        448
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "HTML",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            113,
+            331,
+            247,
+            397
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "CSS",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            494,
+            331,
+            586,
+            397
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "JS",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            871,
+            331,
+            928,
+            397
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Output",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1165,
+            331,
+            1354,
+            397
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "text": "function shiftFn(ken) {\n    var shift = document.getElementById(\"shiftBtn\") ;\n    var arr = document.getElementsByTagName(\"td\") ;\n    if (ken == 1) {\n        shift.setAttribute(\"onclick\", \"shiftFn(0)\") ;\n        shift.style.backgroundColor = \"orange\" ;\n        arr[2].innerHTML = \"sin<sup>-1</sup>\" ;\n        arr[2].setAttribute(\"onclick\", \"trigo1('sin')\") ;\n        arr[3].innerHTML = \"cos<sup>-1</sup>\" ;\n        arr[3].setAttribute(\"onclick\", \"trigo1('cos')\") ;\n        arr[4].innerHTML = \"tan<sup>-1</sup>\" ;\n        arr[4].setAttribute(\"onclick\", \"trigo1('tan')\") ;\n        arr[10].innerHTML = \"ln\" ;\n        arr[10].setAttribute(\"onclick\", \"log(0)\") ;\n        arr[28].innerHTML = \"\\u0065\" ;\n        arr[28].setAttribute(\"onclick\", \"piOrE('e')\") ;\n    } else {\n        shift.setAttribute(\"onclick\", \"shiftFn(1)\") ;\n        shift.style.backgroundColor = \"yellow\" ;\n        arr[2].innerHTML = \"sin\" ;\n        arr[2].setAttribute(\"onclick\", \"trigo('sin')\") ;\n        arr[3].innerHTML = \"cos\" ;\n        arr[3].setAttribute(\"onclick\", \"trigo('cos')\") ;\n        arr[4].innerHTML = \"tan\" ;\n        arr[4].setAttribute(\"onclick\", \"trigo('tan')\") ;\n        arr[10].innerHTML = \"log\" ;\n        arr[10].setAttribute(\"onclick\", \"log(1)\") ;\n        arr[28].innerHTML = \"\\u03C0\" ;\n        arr[28].setAttribute(\"onclick\", \"piOrE('pi')\") ;\n    }\n}\n\nfunction input(sun) {\n    var x = document.getElementById(\"result\") ;\n    var y = document.getElementById(\"myPara\") ;\n    x.value += sun ;\n    y.innerHTML += sun ;\n}\n\nfunction factorial(shirious) {\n    if (Number.isInteger(shirious)) {\n        if (shirious < 2) return 1 ;\n        return shirious * factorial(shirious - 1) ;\n    }\n}\n\nfunction sqrt() {\n    var x = document.getElementById(\"result\") ;\n    var y = document.getElementById(\"myPara\") ;\n    x.value += \"sqrt(\" ;\n    y.innerHTML += (/[\\d)IE]/.test(y.innerHTML.slice(-1))) ? \n    \" * Math.sqrt(\" : \"Math.sqrt(\" ;\n}\n\nfunction leftParen() {\n    var x = document.getElementById(\"result\") ;\n    var y = document.getElementById(\"myPara\") ;\n    x.value += \"(\" ;\n    y.innerHTML += (/[\\d)IE]/.test(y.innerHTML.slice(-1))) ? \n    \" * (\" : \"(\" ;\n}\n\nfunction piOrE(lunar) {\n    var x = document.getElementById(\"result\") ;\n    var y = document.getElementById(\"myPara\") ;\n    if (lunar == \"pi\") {\n        x.value += \"\\u03C0\" ;\n        y.innerHTML += (/[\\d)IE]/.test(y.innerHTML.slice(-1))) ? \n        \" * Math.PI\" : \"Math.PI\" ;\n    } else {\n        x.value += \"\\u0065\" ;\n        y.innerHTML += (/[\\d)IE]/.test(y.innerHTML.slice(-1))) ? \n        \" * Math.E\" : \"Math.E\" ;\n    }\n}\n\nfunction log(jafca) {\n    var x = document.getElementById(\"result\") ;\n    var y = document.getElementById(\"myPara\") ;\n    if (jafca == 1) {\n        x.value += \"log(\" ;\n        y.innerHTML += (/[\\d)IE]/.test(y.innerHTML.slice(-1))) ? \n        \" * Math.log10(\" : \"Math.log10(\" ;\n    } else {\n        x.value += \"ln(\" ;\n        y.innerHTML += (/[\\d)IE]/.test(y.innerHTML.slice(-1))) ? \n        \" * Math.log(\" : \"Math.log(\" ;\n    }\n}\n\nfunction trigo(hatsyrei) {\n    var x = document.getElementById(\"result\") ;\n    var y = document.getElementById(\"myPara\") ;\n    x.value += hatsyrei + \"(\" ;\n    y.innerHTML += (/[\\d)IE]/.test(y.innerHTML.slice(-1))) ? \n    \" * Math.\" + hatsyrei + \"(Math.PI / 180 * \" : \"Math.\" + hatsyrei + \"(Math.PI / 180 * \" ;\n}\n\nfunction trigo1(valentin) {\n    var x = document.getElementById(\"result\") ;\n    var y = document.getElementById(\"myPara\") ;\n    x.value += valentin + \"\\u207B\\u00B9(\"\n    y.innerHTML += (/[\\d)IE]/.test(y.innerHTML.slice(-1))) ? \n    \" * 180 / Math.PI * Math.a\" + valentin + \"(\" : \"180 / Math.PI * Math.a\" + valentin + \"(\" ;\n}\n\nfunction multOrDiv(edward) {\n    var x = document.getElementById(\"result\") ;\n    var y = document.getElementById(\"myPara\") ;\n    if (edward == \"mult\") {\n        x.value += \"\\u00D7\" ;\n        y.innerHTML += \"*\" ;\n    } else {\n        x.value += \"\\u00F7\" ;\n        y.innerHTML += \"/\"\n    }\n}\n\nfunction del() {\n    var x = document.getElementById(\"result\") ;\n    var y = document.getElementById(\"myPara\") ;\n    var z = document.getElementById(\"myAns\") ;\n    if (x.value.slice(-3) == \"Ans\") {\n        y.innerHTML = (/[\\d)IE]/.test(x.value.slice(-4, -3))) ? \n        y.innerHTML.slice(0, -(z.innerHTML.length + 3)) : y.innerHTML.slice(0, -(z.innerHTML.length)) ;\n        x.value = x.value.slice(0, -3) ;\n    } else if (x.value == \"Error!\") {\n        ac() ;\n    } else {\n        switch (y.innerHTML.slice(-2)) {\n            case \"* \": // sin cos tan\n            y.innerHTML = (/[\\d)IE]/.test(x.value.slice(-5, -4))) ? \n            y.innerHTML.slice(0, -28) : y.innerHTML.slice(0, -25) ;\n            x.value = x.value.slice(0, -4) ;\n            break ;\n            case \"n(\":\n            case \"s(\": // asin acos atan\n            y.innerHTML = (/[\\d)IE]/.test(x.value.slice(-7, -6))) ? \n            y.innerHTML.slice(0, -29) : y.innerHTML.slice(0, -26) ;\n            x.value = x.value.slice(0, -6) ;\n            break ;\n            case \"0(\": // log\n            y.innerHTML = (/[\\d)IE]/.test(x.value.slice(-5, -4))) ? \n            y.innerHTML.slice(0, -14) : y.innerHTML.slice(0, -11) ;\n            x.value = x.value.slice(0, -4) ;\n            break ;\n            case \"g(\": // ln\n            y.innerHTML = (/[\\d)IE]/.test(x.value.slice(-4, -3))) ? \n            y.innerHTML.slice(0, -12) : y.innerHTML.slice(0, -9) ;\n            x.value = x.value.slice(0, -3) ;\n            break ;\n            case \"t(\": // sqrt\n            y.innerHTML = (/[\\d)IE]/.test(x.value.slice(-6, -5))) ? \n            y.innerHTML.slice(0, -13) : y.innerHTML.slice(0, -10) ;\n            x.value = x.value.slice(0, -5) ;\n            break ;\n            case \"PI\": // pi\n            y.innerHTML = (/[\\d)IE]/.test(x.value.slice(-2, -1))) ? \n            y.innerHTML.slice(0, -10) : y.innerHTML.slice(0, -7) ;\n            x.value = x.value.slice(0, -1) ;\n            break ;\n            case \".E\": // e\n            y.innerHTML = (/[\\d)IE]/.test(x.value.slice(-2, -1))) ? \n            y.innerHTML.slice(0, -9) : y.innerHTML.slice(0, -6) ;\n            x.value = x.value.slice(0, -1) ;\n            break ;\n            default:\n            y.innerHTML = y.innerHTML.slice(0, -1) ;\n            x.value = x.value.slice(0, -1) ;\n        } ;\n    }\n}\n\nfunction ac() {\n    var x = document.getElementById(\"result\") ;\n    var y = document.getElementById(\"myPara\") ;\n    x.value = y.innerHTML = \"\" ;\n}\n\nfunction ans() {\n    var x = document.getElementById(\"result\") ;\n    var y = document.getElementById(\"myPara\") ;\n    var z = document.getElementById(\"myAns\") ;\n    x.value += \"Ans\" ;\n    y.innerHTML += (/[\\d)IE]/.test(y.innerHTML.slice(-1))) ? \n    \" * \" + z.innerHTML : z.innerHTML ;\n}\n\nfunction equal() {\n    var x = document.getElementById(\"result\") ;\n    var y = document.getElementById(\"myPara\") ;\n    var z = document.getElementById(\"myAns\") ;\n    for (var i = 0; i < x.value.split(\"(\").length - x.value.split(\")\").length; i++) {\n        y.innerHTML += \")\" ;\n    }\n    if (y.innerHTML != \"\") {\n        x.value = y.innerHTML = z.innerHTML = eval(y.innerHTML\n        .replace(/(\\d+\\.?\\d*)\\!/g, \"factorial($1)\")\n        .replace(/(\\(?[^(]*\\)?)\\^(\\(?.*\\)?)/, \"Math.pow($1, $2)\")\n        ) ;\n    }\n    if (!isFinite(x.value)) x.value = \"Error!\" ;\n}",
+      "resource-id": "com.sololearn.javascript:id/code_editor",
+      "ancestors": [
+        "android.support.v7.widget.AppCompatEditText",
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.sololearn.app.views.playground.AdvancedEditText",
+      "bounds": [
+        0,
+        718,
+        1440,
+        2217
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "resource-id": "com.sololearn.javascript:id/run_code",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        1205,
+        2217,
+        1440,
+        2392
+      ],
+      "componentLabel": "Text Button",
+      "text": "RUN"
+    },
+    {
+      "iconClass": "avatar",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.sololearn.javascript:id/code_avatar",
+      "clickable": true,
+      "class": "com.sololearn.app.views.CircleImageView",
+      "bounds": [
+        35,
+        483,
+        158,
+        606
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "A scientific calculator",
+      "resource-id": "com.sololearn.javascript:id/code_name",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        193,
+        483,
+        664,
+        549
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "cheeze",
+      "resource-id": "com.sololearn.javascript:id/code_user",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        193,
+        553,
+        325,
+        610
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "thumbs_up",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.sololearn.javascript:id/vote_up",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageButton",
+      "bounds": [
+        166,
+        624,
+        289,
+        690
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "+383",
+      "resource-id": "com.sololearn.javascript:id/vote_number",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        296,
+        624,
+        408,
+        690
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "thumbs_down",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.sololearn.javascript:id/vote_down",
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatImageButton",
+      "bounds": [
+        415,
+        624,
+        538,
+        690
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Tab",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        0,
+        2221,
+        175,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "{",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        175,
+        2217,
+        350,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "}",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        350,
+        2217,
+        525,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": ";",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        525,
+        2217,
+        700,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "\"",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        700,
+        2217,
+        875,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "(",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        875,
+        2217,
+        1050,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": ")",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.Button",
+      "bounds": [
+        1050,
+        2217,
+        1205,
+        2392
+      ],
+      "componentLabel": "Text Button"
+    }
+  ]
+}

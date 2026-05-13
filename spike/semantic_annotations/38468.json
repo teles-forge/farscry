@@ -1,0 +1,1006 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "net.flixster.android:id/toolbar",
+      "children": [
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Box Office",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            210,
+            135,
+            534,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "search",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1272,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.design.widget.TabLayout$SlidingTabStrip",
+      "bounds": [
+        0,
+        280,
+        1440,
+        441
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.design.widget.TabLayout$TabView",
+          "bounds": [
+            745,
+            280,
+            997,
+            441
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "textButtonClass": "news"
+        },
+        {
+          "text": "Now Playing",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            42,
+            327,
+            365,
+            393
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Upcoming",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            449,
+            327,
+            703,
+            393
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "resource-id": "net.flixster.android:id/qa_movielist_item",
+      "children": [],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        441,
+        1440,
+        449
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "java.lang.Object"
+      ],
+      "bounds": [
+        0,
+        449,
+        1440,
+        453
+      ],
+      "clickable": false,
+      "class": "android.view.View",
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "net.flixster.android:id/qa_movielist_item",
+      "children": [
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "net.flixster.android:id/movielist_more",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1277,
+            665,
+            1412,
+            800
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "star",
+          "ancestors": [
+            "com.flixster.android.view.ImageWrappedView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "net.flixster.android:id/movielist_poster",
+          "clickable": false,
+          "class": "com.flixster.android.view.PosterView",
+          "bounds": [
+            28,
+            481,
+            242,
+            800
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "net.flixster.android:id/movielist_playbutton",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            28,
+            481,
+            242,
+            800
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Seasons (Les saisons)",
+          "resource-id": "net.flixster.android:id/movielist_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            270,
+            481,
+            833,
+            557
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "François Sarano, Philippe Descola",
+          "resource-id": "net.flixster.android:id/movielist_actors",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            270,
+            623,
+            1007,
+            689
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "PG, 1 hr. 35 min., $17.6K",
+          "resource-id": "net.flixster.android:id/movielist_meta",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            270,
+            689,
+            803,
+            755
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "95%",
+          "resource-id": "net.flixster.android:id/movielist_rt_score",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            270,
+            557,
+            418,
+            623
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "53%",
+          "resource-id": "net.flixster.android:id/movielist_user_score",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            446,
+            557,
+            601,
+            623
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        453,
+        1440,
+        828
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "java.lang.Object"
+      ],
+      "bounds": [
+        0,
+        828,
+        1440,
+        832
+      ],
+      "clickable": false,
+      "class": "android.view.View",
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "net.flixster.android:id/qa_movielist_item",
+      "children": [
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "net.flixster.android:id/movielist_more",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1277,
+            1044,
+            1412,
+            1179
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "com.flixster.android.view.ImageWrappedView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "net.flixster.android:id/movielist_poster",
+          "clickable": false,
+          "class": "com.flixster.android.view.PosterView",
+          "bounds": [
+            28,
+            860,
+            242,
+            1179
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Harry & Snowman",
+          "resource-id": "net.flixster.android:id/movielist_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            270,
+            860,
+            716,
+            936
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Harry deLeyer, Tom Haney",
+          "resource-id": "net.flixster.android:id/movielist_actors",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            270,
+            1002,
+            840,
+            1068
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Unrated, 1 hr. 24 min., $15.8K",
+          "resource-id": "net.flixster.android:id/movielist_meta",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            270,
+            1068,
+            911,
+            1134
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "92%",
+          "resource-id": "net.flixster.android:id/movielist_rt_score",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            270,
+            936,
+            418,
+            1002
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "80%",
+          "resource-id": "net.flixster.android:id/movielist_user_score",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            446,
+            936,
+            594,
+            1002
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        832,
+        1440,
+        1207
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "java.lang.Object"
+      ],
+      "bounds": [
+        0,
+        1207,
+        1440,
+        1211
+      ],
+      "clickable": false,
+      "class": "android.view.View",
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "net.flixster.android:id/qa_movielist_item",
+      "children": [
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "net.flixster.android:id/movielist_more",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1277,
+            1423,
+            1412,
+            1558
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "com.flixster.android.view.ImageWrappedView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "net.flixster.android:id/movielist_poster",
+          "clickable": false,
+          "class": "com.flixster.android.view.PosterView",
+          "bounds": [
+            28,
+            1239,
+            242,
+            1558
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "net.flixster.android:id/movielist_playbutton",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            28,
+            1239,
+            242,
+            1558
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Queen of Katwe",
+          "resource-id": "net.flixster.android:id/movielist_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            270,
+            1239,
+            665,
+            1315
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "David Oyelowo, Lupita Nyong'o",
+          "resource-id": "net.flixster.android:id/movielist_actors",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            270,
+            1381,
+            937,
+            1447
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "PG, 2 hr. 4 min., $11.9K",
+          "resource-id": "net.flixster.android:id/movielist_meta",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            270,
+            1447,
+            775,
+            1513
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "92%",
+          "resource-id": "net.flixster.android:id/movielist_rt_score",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            270,
+            1315,
+            421,
+            1381
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "88%",
+          "resource-id": "net.flixster.android:id/movielist_user_score",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            449,
+            1315,
+            597,
+            1381
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        1211,
+        1440,
+        1586
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "java.lang.Object"
+      ],
+      "bounds": [
+        0,
+        1586,
+        1440,
+        1590
+      ],
+      "clickable": false,
+      "class": "android.view.View",
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "net.flixster.android:id/qa_movielist_item",
+      "children": [
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "net.flixster.android:id/movielist_more",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1277,
+            1802,
+            1412,
+            1937
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "com.flixster.android.view.ImageWrappedView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "net.flixster.android:id/movielist_poster",
+          "clickable": false,
+          "class": "com.flixster.android.view.PosterView",
+          "bounds": [
+            28,
+            1618,
+            242,
+            1937
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "net.flixster.android:id/movielist_playbutton",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            28,
+            1618,
+            242,
+            1937
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Christine",
+          "resource-id": "net.flixster.android:id/movielist_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            270,
+            1618,
+            492,
+            1694
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Rebecca Hall, Michael C. Hall",
+          "resource-id": "net.flixster.android:id/movielist_actors",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            270,
+            1760,
+            906,
+            1826
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "R, 1 hr. 55 min., $11.1K",
+          "resource-id": "net.flixster.android:id/movielist_meta",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            270,
+            1826,
+            769,
+            1892
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "84%",
+          "resource-id": "net.flixster.android:id/movielist_rt_score",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            270,
+            1694,
+            421,
+            1760
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "80%",
+          "resource-id": "net.flixster.android:id/movielist_user_score",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            449,
+            1694,
+            597,
+            1760
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        1590,
+        1440,
+        1965
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "java.lang.Object"
+      ],
+      "bounds": [
+        0,
+        1965,
+        1440,
+        1969
+      ],
+      "clickable": false,
+      "class": "android.view.View",
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "net.flixster.android:id/lvi_footer",
+      "children": [
+        {
+          "text": "Ratings by Rotten Tomatoes",
+          "resource-id": "net.flixster.android:id/md_footer_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            35,
+            1969,
+            1405,
+            2057
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Fresh (60% or more critics rated the movie positively)",
+          "resource-id": "net.flixster.android:id/md_footer_fresh",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            35,
+            2057,
+            1012,
+            2110
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Rotten (59% or fewer critics rated the movie positively)",
+          "resource-id": "net.flixster.android:id/md_footer_rotten",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            35,
+            2110,
+            1038,
+            2163
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Ratings by Flixster",
+          "resource-id": "net.flixster.android:id/md_footer_title_flixster",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            35,
+            2163,
+            1405,
+            2251
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "60% or more Flixster users rated the movie favorably",
+          "resource-id": "net.flixster.android:id/md_footer_popcorn",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            35,
+            2251,
+            1002,
+            2304
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "59% or fewer Flixster users rated the movie favorably",
+          "resource-id": "net.flixster.android:id/md_footer_spilled",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            35,
+            2304,
+            1017,
+            2357
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1969,
+        1440,
+        2392
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

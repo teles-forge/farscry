@@ -1,0 +1,869 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.particlenews.newsbreak:id/toolbar",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.particlenews.newsbreak:id/app_header_img",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            210,
+            122,
+            655,
+            213
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "search",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.particlenews.newsbreak:id/imv_explore",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1303,
+            136,
+            1366,
+            199
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.particlenews.newsbreak:id/imv_profile",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            63,
+            126,
+            147,
+            210
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        252
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.particlenews.newsbreak:id/navi_tabs",
+      "children": [
+        {
+          "text": "For You",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "bounds": [
+            0,
+            252,
+            217,
+            420
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "Local News",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "bounds": [
+            217,
+            252,
+            540,
+            420
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "Videos",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "bounds": [
+            540,
+            252,
+            761,
+            420
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "video"
+        },
+        {
+          "text": "U.S. News",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "bounds": [
+            761,
+            252,
+            1053,
+            420
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "Sports",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "bounds": [
+            1053,
+            252,
+            1264,
+            420
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "Food",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "bounds": [
+            1264,
+            252,
+            1440,
+            420
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "ancestors": [
+        "android.widget.HorizontalScrollView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.hipu.yidian.ui.navibar.PagerSlidingTabStrip",
+      "bounds": [
+        0,
+        252,
+        1440,
+        420
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "resource-id": "com.particlenews.newsbreak:id/channel_selection_cardview",
+      "children": [
+        {
+          "resource-id": "com.particlenews.newsbreak:id/card_view",
+          "children": [
+            {
+              "text": "All",
+              "resource-id": "com.particlenews.newsbreak:id/channel_name",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "com.particlenews.ui.CustomFontTextView",
+              "bounds": [
+                29,
+                596,
+                287,
+                689
+              ],
+              "componentLabel": "Text Button",
+              "textButtonClass": "all"
+            }
+          ],
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            18,
+            578,
+            298,
+            696
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "resource-id": "com.particlenews.newsbreak:id/card_view",
+          "children": [
+            {
+              "text": "Society",
+              "resource-id": "com.particlenews.newsbreak:id/channel_name",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "com.particlenews.ui.CustomFontTextView",
+              "bounds": [
+                309,
+                596,
+                567,
+                689
+              ],
+              "componentLabel": "Text Button"
+            }
+          ],
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            298,
+            578,
+            578,
+            696
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "resource-id": "com.particlenews.newsbreak:id/card_view",
+          "children": [
+            {
+              "text": "Sports",
+              "resource-id": "com.particlenews.newsbreak:id/channel_name",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "com.particlenews.ui.CustomFontTextView",
+              "bounds": [
+                589,
+                596,
+                847,
+                689
+              ],
+              "componentLabel": "Text Button"
+            }
+          ],
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            578,
+            578,
+            858,
+            696
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "resource-id": "com.particlenews.newsbreak:id/card_view",
+          "children": [
+            {
+              "text": "Lifestyle",
+              "resource-id": "com.particlenews.newsbreak:id/channel_name",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "com.particlenews.ui.CustomFontTextView",
+              "bounds": [
+                869,
+                596,
+                1127,
+                689
+              ],
+              "componentLabel": "Text Button"
+            }
+          ],
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            858,
+            578,
+            1138,
+            696
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "resource-id": "com.particlenews.newsbreak:id/card_view",
+          "children": [
+            {
+              "text": "Business",
+              "resource-id": "com.particlenews.newsbreak:id/channel_name",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "com.particlenews.ui.CustomFontTextView",
+              "bounds": [
+                1149,
+                596,
+                1407,
+                689
+              ],
+              "componentLabel": "Text Button",
+              "textButtonClass": "business"
+            }
+          ],
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            1138,
+            578,
+            1418,
+            696
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "resource-id": "com.particlenews.newsbreak:id/card_view",
+          "children": [
+            {
+              "text": "School",
+              "resource-id": "com.particlenews.newsbreak:id/channel_name",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "com.particlenews.ui.CustomFontTextView",
+              "bounds": [
+                1429,
+                596,
+                1440,
+                689
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            1418,
+            578,
+            1440,
+            696
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.hipu.yidian.ui.newslist.cardWidgets.ChannelSelectionCardView",
+      "bounds": [
+        0,
+        560,
+        1440,
+        718
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "resource-id": "com.particlenews.newsbreak:id/channel_news_normal_item",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.particlenews.newsbreak:id/news_image",
+          "clickable": false,
+          "class": "com.hipu.yidian.image.YdNetworkImageView",
+          "bounds": [
+            28,
+            749,
+            364,
+            1085
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Urbana search finds cannabis operation, dozens of guns",
+          "resource-id": "com.particlenews.newsbreak:id/news_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.particlenews.ui.CustomFontTextView",
+          "bounds": [
+            392,
+            749,
+            1306,
+            859
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "minus",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.particlenews.newsbreak:id/negativeFeedbackBtn",
+          "clickable": true,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1306,
+            715,
+            1440,
+            855
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "share",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.particlenews.newsbreak:id/shareBtn",
+          "clickable": true,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1306,
+            979,
+            1440,
+            1119
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "News-Gazette - 15 hours ago",
+          "resource-id": "com.particlenews.newsbreak:id/news_source",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.particlenews.ui.CustomFontTextView",
+          "bounds": [
+            392,
+            1042,
+            1306,
+            1085
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "com.hipu.yidian.ui.newslist.cardWidgets.NewsBaseCardView",
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.hipu.yidian.ui.newslist.cardWidgets.NewsSmallImageCardView",
+      "bounds": [
+        0,
+        714,
+        1440,
+        1124
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "resource-id": "com.particlenews.newsbreak:id/channel_news_normal_item",
+      "children": [
+        {
+          "text": "D-87 board OKs work at Sheridan, Raymond",
+          "resource-id": "com.particlenews.newsbreak:id/news_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.particlenews.ui.CustomFontTextView",
+          "bounds": [
+            56,
+            1194,
+            1278,
+            1247
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "BLOOMINGTON - Work will be done on the boiler at Sheridan Elementary School and the air handler at Sarah E. Raymond School of Early Education over the summer. The District 87 school board accepted bid recommendations for the two projects at its meeting Wednesday. Mechanical Inc. of Freeport was awarded the contract for the Sheridan project at a total cost of $51,689. It submitted the low bid among six bidders. Davis-Houk Mechanical of Urbana was selected for the Raymond project at a total cost of $89,886. It's bid was the lowest among three received for the project. Other projects on the horizon are work on the heating-ventilation-air conditioning system and auditorium light controls at Bloomington High School. The HVAC project will begin in late summer or early fall and continue through December. Superintendent Barry Reilly said after the meeting it is important to stay ahead on building maintenance and upkeep. \"We take a lot of pride in our facilities,\" said Reilly. \"It sends a message to your kids and staff.\" He credited past and present school board members, his predecessor Bob Nielsen and Colin Manahan, director of facilities management, with good maintenance and improvements to facilities, making them \"a great place to learrn and participate in extra-curricular activities.\" Subscribe to The Pantagraph ",
+          "resource-id": "com.particlenews.newsbreak:id/news_summary",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.particlenews.ui.CustomFontTextView",
+          "bounds": [
+            56,
+            1275,
+            1278,
+            1436
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "minus",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.particlenews.newsbreak:id/negativeFeedbackBtn",
+          "clickable": true,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1278,
+            1160,
+            1412,
+            1300
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "share",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.particlenews.newsbreak:id/shareBtn",
+          "clickable": true,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1278,
+            1401,
+            1412,
+            1541
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Pantagraph - 8 hours ago",
+          "resource-id": "com.particlenews.newsbreak:id/news_source",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.particlenews.ui.CustomFontTextView",
+          "bounds": [
+            56,
+            1464,
+            1278,
+            1507
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "com.hipu.yidian.ui.newslist.cardWidgets.NewsBaseCardView",
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.hipu.yidian.ui.newslist.cardWidgets.NewsNoImageCardView",
+      "bounds": [
+        0,
+        1124,
+        1440,
+        1581
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "resource-id": "com.particlenews.newsbreak:id/channel_news_normal_item",
+      "children": [
+        {
+          "text": "Urbana School District announces registration dates for next year",
+          "resource-id": "com.particlenews.newsbreak:id/news_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.particlenews.ui.CustomFontTextView",
+          "bounds": [
+            56,
+            1651,
+            1278,
+            1761
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": " Urbana - Urbana School District #116 announces their annual Centralized Registration event will take place at the end of July. The one-stop-shop for all Urbana students, early childhood through high school, will take place at Urbana Middle School, 1201 S. Vine St., Urbana. The days and times are as follows: During this two-day event, parents and guardians can: All USD families are encouraged to participate in Centralized Registration. If you are registering a new or returning student, please remember to bring a photo ID and proof of residency. If you have a child entering kindergarten, 6th or 9th grades, please bring their completed physical forms to registration. If your student needs a physical or dental exam, Urbana School Based Health Center is scheduling appointments for students. Please call 239-4220. Enrollment requirements and documents needed for new and returning students can be found on the USD #116 web site here: http://www.usd116.org/parents/registration-information/ Registration fees can be made online at the USD #116 Web Store. Please bring the printed receipt with you. First day of attendance for students in grades 1st through 6th and 9th, and half of the kindergarten students for the 2017-18 school year will be Friday, August 18th. On Monday, August 21, all high school and middle school students, and the other half of kindergarten students will be in attendance, and Urbana Early Childhood School begins. All students will be in attendance by Tuesday, August 22nd. More information can be found on the USD #116 calendar page: http://www.usd116.org/calendar/ Urbana School District #116 is a unit district located in east central Illinois. Our outstanding schools in an outstanding community comprise of an early childhood school, six neighborhood elementary schools, a middle school, a high school, and an adult education center.",
+          "resource-id": "com.particlenews.newsbreak:id/news_summary",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.particlenews.ui.CustomFontTextView",
+          "bounds": [
+            56,
+            1789,
+            1278,
+            1950
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "minus",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.particlenews.newsbreak:id/negativeFeedbackBtn",
+          "clickable": true,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1278,
+            1617,
+            1412,
+            1757
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "share",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.particlenews.newsbreak:id/shareBtn",
+          "clickable": true,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            1278,
+            1915,
+            1412,
+            2055
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "smilepolitely.com - 13 hours ago",
+          "resource-id": "com.particlenews.newsbreak:id/news_source",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.particlenews.ui.CustomFontTextView",
+          "bounds": [
+            56,
+            1978,
+            1278,
+            2021
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "com.hipu.yidian.ui.newslist.cardWidgets.NewsBaseCardView",
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.hipu.yidian.ui.newslist.cardWidgets.NewsNoImageCardView",
+      "bounds": [
+        0,
+        1581,
+        1440,
+        2095
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.hipu.yidian.ui.newslist.cardWidgets.AdListCardView",
+      "bounds": [
+        0,
+        2095,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "resource-id": "com.particlenews.newsbreak:id/facebook_ad",
+          "children": [
+            {
+              "resource-id": "com.particlenews.newsbreak:id/ad_root",
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.widget.LinearLayout",
+              "bounds": [
+                28,
+                2130,
+                1412,
+                2392
+              ],
+              "componentLabel": "Text Button",
+              "textButtonClass": "install"
+            }
+          ],
+          "ancestors": [
+            "com.google.android.gms.ads.formats.NativeAdView",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.hipu.yidian.ui.newslist.cardWidgets.FacebookNativeAdCardView",
+          "bounds": [
+            0,
+            2095,
+            1440,
+            2392
+          ],
+          "componentLabel": "Card"
+        }
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "text": "Urbana, IL",
+      "resource-id": "com.particlenews.newsbreak:id/location_name",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.particlenews.ui.CustomFontTextView",
+      "bounds": [
+        28,
+        455,
+        332,
+        525
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Change",
+      "resource-id": "com.particlenews.newsbreak:id/location_button",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.particlenews.ui.CustomFontTextView",
+      "bounds": [
+        1242,
+        459,
+        1412,
+        521
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

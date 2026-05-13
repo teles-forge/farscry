@@ -1,0 +1,554 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.rhmsoft.pulsar:id/toolbar",
+      "children": [
+        {
+          "text": "Equalizer",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            210,
+            139,
+            499,
+            232
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            88,
+            196,
+            284
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "volume",
+          "resource-id": "com.rhmsoft.pulsar:id/volume",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1073,
+            102,
+            1241,
+            270
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "",
+          "resource-id": "com.rhmsoft.pulsar:id/toolbar_switch",
+          "ancestors": [
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.SwitchCompat",
+          "bounds": [
+            1241,
+            138,
+            1440,
+            233
+          ],
+          "componentLabel": "Input"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        88,
+        1440,
+        284
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "Preset",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        53,
+        355,
+        301,
+        421
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "com.rhmsoft.pulsar:id/preset_spinner",
+      "ancestors": [
+        "android.widget.Spinner",
+        "android.widget.AbsSpinner",
+        "android.widget.AdapterView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatSpinner",
+      "bounds": [
+        392,
+        319,
+        1387,
+        458
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "normal"
+    },
+    {
+      "text": "Reverb",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        53,
+        1834,
+        301,
+        1900
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "com.rhmsoft.pulsar:id/reverb_spinner",
+      "ancestors": [
+        "android.widget.Spinner",
+        "android.widget.AbsSpinner",
+        "android.widget.AdapterView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatSpinner",
+      "bounds": [
+        392,
+        1798,
+        1387,
+        1937
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "none"
+    },
+    {
+      "text": "Bass Boost",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        53,
+        1991,
+        301,
+        2057
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.rhmsoft.pulsar:id/bass_btn",
+      "clickable": true,
+      "class": "com.rhmsoft.play.view.EQSwitch",
+      "bounds": [
+        1282,
+        1972,
+        1387,
+        2077
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Virtualizer",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        53,
+        2131,
+        301,
+        2197
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.rhmsoft.pulsar:id/virtual_btn",
+      "clickable": true,
+      "class": "com.rhmsoft.play.view.EQSwitch",
+      "bounds": [
+        1282,
+        2112,
+        1387,
+        2217
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Loudness",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        53,
+        2271,
+        301,
+        2337
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.rhmsoft.pulsar:id/loudness_btn",
+      "clickable": true,
+      "class": "com.rhmsoft.play.view.EQSwitch",
+      "bounds": [
+        1282,
+        2252,
+        1387,
+        2357
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "15",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        88,
+        557,
+        136,
+        1075
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "0",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        112,
+        1075,
+        136,
+        1132
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "-15",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        76,
+        1132,
+        136,
+        1651
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "60 Hz",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        195,
+        493,
+        304,
+        557
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        197,
+        1658,
+        302,
+        1763
+      ],
+      "clickable": true,
+      "class": "com.rhmsoft.play.view.EQSwitch",
+      "componentLabel": "Image"
+    },
+    {
+      "text": "230 Hz",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        417,
+        493,
+        550,
+        557
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        431,
+        1658,
+        536,
+        1763
+      ],
+      "clickable": true,
+      "class": "com.rhmsoft.play.view.EQSwitch",
+      "componentLabel": "Image"
+    },
+    {
+      "text": "910 Hz",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        652,
+        493,
+        785,
+        557
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        666,
+        1658,
+        771,
+        1763
+      ],
+      "clickable": true,
+      "class": "com.rhmsoft.play.view.EQSwitch",
+      "componentLabel": "Image"
+    },
+    {
+      "text": "3.6 kHz",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        883,
+        493,
+        1024,
+        557
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        901,
+        1658,
+        1006,
+        1763
+      ],
+      "clickable": true,
+      "class": "com.rhmsoft.play.view.EQSwitch",
+      "componentLabel": "Image"
+    },
+    {
+      "text": "14 kHz",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1124,
+        493,
+        1254,
+        557
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        1136,
+        1658,
+        1241,
+        1763
+      ],
+      "clickable": true,
+      "class": "com.rhmsoft.play.view.EQSwitch",
+      "componentLabel": "Image"
+    },
+    {
+      "text": "15",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1303,
+        557,
+        1351,
+        1075
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "0",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1303,
+        1075,
+        1327,
+        1132
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "-15",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1303,
+        1132,
+        1363,
+        1651
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

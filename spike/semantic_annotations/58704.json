@@ -1,0 +1,112 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "cc.pacer.androidapp:id/toolbar",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "cc.pacer.androidapp:id/return_button",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            0,
+            143,
+            63,
+            206
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "FAQ / Troubleshooting",
+          "resource-id": "cc.pacer.androidapp:id/toolbar_title",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "cc.pacer.androidapp.ui.common.fonts.TypefaceTextView",
+          "bounds": [
+            63,
+            139,
+            613,
+            210
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        266
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "cc.pacer.androidapp:id/refreshable_view",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.AbsoluteLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "cc.pacer.androidapp:id/wvFaq",
+          "clickable": true,
+          "class": "android.webkit.WebView",
+          "bounds": [
+            0,
+            270,
+            1440,
+            2392
+          ],
+          "componentLabel": "Web View"
+        }
+      ],
+      "ancestors": [
+        "android.support.v4.widget.SwipeRefreshLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "cc.pacer.androidapp.ui.faq.SwipeRefreshLayoutForWebView",
+      "bounds": [
+        0,
+        270,
+        1440,
+        2392
+      ],
+      "componentLabel": "Web View"
+    }
+  ]
+}

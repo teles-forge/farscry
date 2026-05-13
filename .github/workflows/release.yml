@@ -1,0 +1,336 @@
+
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+'
+      - 'v[0-9]+.[0-9]+.[0-9]+-*'
+
+permissions:
+  contents: write
+
+env:
+  CARGO_TERM_COLOR: always
+  RUST_BACKTRACE: 1
+  ORT_STRATEGY: download
+
+jobs:
+  create-release:
+    name: Create draft release
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.parse.outputs.version }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Parse version from tag
+        id: parse
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          echo "Building farscry $VERSION"
+
+      - name: Create draft GitHub Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          PRERELEASE_FLAG=""
+          if [[ "${{ github.ref_name }}" == *"-"* ]]; then
+            PRERELEASE_FLAG="--prerelease"
+          fi
+          gh release create "${{ github.ref_name }}" \
+            --title "farscry ${{ github.ref_name }}" \
+            --draft \
+            --generate-notes \
+            $PRERELEASE_FLAG \
+            --repo "${{ github.repository }}"
+
+  build:
+    name: Build ${{ matrix.asset_name }}
+    needs: create-release
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: macos-latest
+            target: aarch64-apple-darwin
+            asset_name: farscry-aarch64-apple-darwin
+            binary: farscry
+            archive_ext: tar.gz
+            ort_lib_glob: "libonnxruntime*.dylib"
+            sha_cmd: shasum -a 256
+
+          - os: macos-13
+            target: x86_64-apple-darwin
+            asset_name: farscry-x86_64-apple-darwin
+            binary: farscry
+            archive_ext: tar.gz
+            ort_lib_glob: "libonnxruntime*.dylib"
+            sha_cmd: shasum -a 256
+
+          - os: ubuntu-latest
+            target: x86_64-unknown-linux-gnu
+            asset_name: farscry-x86_64-unknown-linux-gnu
+            binary: farscry
+            archive_ext: tar.gz
+            ort_lib_glob: "libonnxruntime*.so*"
+            sha_cmd: sha256sum
+
+          - os: windows-latest
+            target: x86_64-pc-windows-msvc
+            asset_name: farscry-x86_64-pc-windows-msvc
+            binary: farscry.exe
+            archive_ext: zip
+            ort_lib_glob: "onnxruntime*.dll"
+            sha_cmd: ""
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust stable
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.target }}
+
+      - name: Cache Cargo registry
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry/index/
+            ~/.cargo/registry/cache/
+            ~/.cargo/git/db/
+          key: cargo-registry-${{ matrix.target }}-${{ hashFiles('**/Cargo.lock') }}
+          restore-keys: |
+            cargo-registry-${{ matrix.target }}-
+
+      - name: Cache build artifacts (includes ORT download)
+        uses: actions/cache@v4
+        with:
+          path: target/
+          key: cargo-build-${{ matrix.target }}-${{ hashFiles('**/Cargo.lock') }}
+          restore-keys: |
+            cargo-build-${{ matrix.target }}-
+
+      - name: Install Visual Studio Build Tools (Windows)
+        if: runner.os == 'Windows'
+        uses: ilammy/msvc-dev-cmd@v1
+
+      - name: Build release binary
+        env:
+          ORT_STRATEGY: download
+        run: |
+          cargo build --release --target ${{ matrix.target }}
+
+      - name: Bundle release archive (Unix)
+        if: runner.os != 'Windows'
+        shell: bash
+        run: |
+          BINARY="target/${{ matrix.target }}/release/${{ matrix.binary }}"
+          ASSET="${{ matrix.asset_name }}"
+
+          ORT_LIB=$(find "target/${{ matrix.target }}/release/build" \
+            -name "${{ matrix.ort_lib_glob }}" -type f 2>/dev/null | head -1)
+
+          mkdir -p "dist/$ASSET"
+          cp "$BINARY" "dist/$ASSET/"
+
+          if [ -n "$ORT_LIB" ]; then
+            echo "Found ORT library: $ORT_LIB"
+            cp -L "$ORT_LIB" "dist/$ASSET/"
+            ORT_LIB_NAME=$(basename "$(readlink -f "$ORT_LIB" 2>/dev/null || echo "$ORT_LIB")")
+
+            if [[ "${{ matrix.os }}" == macos* ]]; then
+              install_name_tool \
+                -add_rpath "@executable_path" \
+                "dist/$ASSET/${{ matrix.binary }}" 2>/dev/null || true
+
+              OLD_PATH=$(otool -L "dist/$ASSET/${{ matrix.binary }}" 2>/dev/null \
+                | grep "onnxruntime" | awk '{print $1}' | head -1)
+              if [ -n "$OLD_PATH" ]; then
+                install_name_tool \
+                  -change "$OLD_PATH" "@rpath/$ORT_LIB_NAME" \
+                  "dist/$ASSET/${{ matrix.binary }}" 2>/dev/null || true
+              fi
+              echo "macOS rpath fixed."
+            fi
+
+            if [[ "${{ matrix.os }}" == ubuntu* ]]; then
+              if command -v patchelf &>/dev/null; then
+                patchelf --set-rpath '$ORIGIN' "dist/$ASSET/${{ matrix.binary }}"
+                echo "Linux rpath (RUNPATH) set to \$ORIGIN"
+              else
+                sudo apt-get install -y patchelf -q
+                patchelf --set-rpath '$ORIGIN' "dist/$ASSET/${{ matrix.binary }}"
+              fi
+            fi
+          else
+            echo "WARNING: ORT library not found in build dir."
+            echo "Binary may be statically linked (unlikely with download-binaries)."
+            echo "Check ort crate version and ORT_STRATEGY env var."
+          fi
+
+          tar -czf "${ASSET}.tar.gz" -C dist "$ASSET"
+
+          ${{ matrix.sha_cmd }} "$BINARY" | awk '{print $1}' \
+            > "${ASSET}.sha256"
+
+          echo "=== Archive contents ==="
+          tar -tzvf "${ASSET}.tar.gz"
+          echo "=== SHA256 ==="
+          cat "${ASSET}.sha256"
+
+      - name: Bundle release archive (Windows)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          $target    = "${{ matrix.target }}"
+          $binary    = "target\$target\release\${{ matrix.binary }}"
+          $assetName = "${{ matrix.asset_name }}"
+
+          $ortDll = Get-ChildItem `
+            -Path "target\$target\release\build" `
+            -Filter "onnxruntime*.dll" `
+            -Recurse `
+            -ErrorAction SilentlyContinue |
+            Sort-Object LastWriteTime -Descending |
+            Select-Object -First 1
+
+          New-Item -ItemType Directory -Force -Path "dist\$assetName" | Out-Null
+          Copy-Item $binary "dist\$assetName\"
+
+          if ($ortDll) {
+            Write-Host "Found ORT DLL: $($ortDll.FullName)"
+            Copy-Item $ortDll.FullName "dist\$assetName\"
+          } else {
+            Write-Warning "ORT DLL not found - binary may not run on other machines"
+          }
+
+          Compress-Archive `
+            -Path "dist\$assetName\*" `
+            -DestinationPath "${assetName}.zip" `
+            -Force
+
+          $hash = (Get-FileHash $binary -Algorithm SHA256).Hash.ToLower()
+          $hash | Out-File -FilePath "${assetName}.sha256" -NoNewline -Encoding ascii
+
+          Write-Host "=== Archive contents ==="
+          Expand-Archive -Path "${assetName}.zip" -DestinationPath "dist_verify" -Force
+          Get-ChildItem "dist_verify\$assetName" | Format-Table Name, Length
+          Write-Host "=== SHA256 ==="
+          Get-Content "${assetName}.sha256"
+
+      - name: Upload to GitHub Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          ASSET="${{ matrix.asset_name }}"
+          EXT="${{ matrix.archive_ext }}"
+          gh release upload "${{ github.ref_name }}" \
+            "${ASSET}.${EXT}" \
+            "${ASSET}.sha256" \
+            --clobber \
+            --repo "${{ github.repository }}"
+
+  publish-npm:
+    name: Publish npm
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Set version from tag
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          cd npm
+          npm version "$VERSION" --no-git-tag-version --allow-same-version
+
+      - name: Publish to npmjs.com
+        working-directory: npm
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npm publish --access public
+
+  publish-pypi:
+    name: Publish PyPI
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install build tools
+        run: pip install build twine
+
+      - name: Set version from tag
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          sed -i "s/^version = \".*\"/version = \"$VERSION\"/" pip/pyproject.toml
+
+      - name: Build wheel + sdist
+        working-directory: pip
+        run: python -m build
+
+      - name: Publish to PyPI
+        env:
+          TWINE_USERNAME: __token__
+          TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
+        run: twine upload pip/dist/*
+
+  publish-crates:
+    name: Publish crates.io
+    needs: build
+    runs-on: ubuntu-latest
+    env:
+      ORT_STRATEGY: download
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      - name: Cache Cargo registry
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry/index/
+            ~/.cargo/registry/cache/
+            ~/.cargo/git/db/
+          key: cargo-registry-publish-${{ hashFiles('**/Cargo.lock') }}
+
+      - name: Publish farscry-core
+        env:
+          CARGO_REGISTRY_TOKEN: ${{ secrets.CARGO_REGISTRY_TOKEN }}
+        run: cargo publish -p farscry-core --no-verify
+
+      - name: Wait for crates.io index propagation
+        run: sleep 45
+
+      - name: Publish farscry binary
+        env:
+          CARGO_REGISTRY_TOKEN: ${{ secrets.CARGO_REGISTRY_TOKEN }}
+        run: cargo publish -p farscry --no-verify
+
+  finalize-release:
+    name: Publish release
+    needs: [publish-npm, publish-pypi, publish-crates]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mark release as published (un-draft)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release edit "${{ github.ref_name }}" \
+            --draft=false \
+            --repo "${{ github.repository }}"
+          echo "farscry ${{ github.ref_name }} is live."

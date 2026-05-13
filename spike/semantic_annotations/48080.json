@@ -1,0 +1,478 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.refuelcalc.light:id/toolbar",
+      "children": [
+        {
+          "text": "Car",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            252,
+            135,
+            361,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "help",
+          "resource-id": "com.refuelcalc.light:id/refueling_help",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            936,
+            98,
+            1104,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "sliders",
+          "resource-id": "com.refuelcalc.light:id/refueling_preferences",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1104,
+            98,
+            1272,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "check",
+          "resource-id": "com.refuelcalc.light:id/refueling_save",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1272,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.refuelcalc.light:id/card_view",
+      "children": [
+        {
+          "text": "Save GPS",
+          "resource-id": "com.refuelcalc.light:id/switch_gps_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            32,
+            1639,
+            720,
+            1705
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "",
+          "resource-id": "com.refuelcalc.light:id/switch_gps_postion",
+          "ancestors": [
+            "android.widget.CompoundButton",
+            "android.widget.Button",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.SwitchCompat",
+          "bounds": [
+            720,
+            1625,
+            1408,
+            1720
+          ],
+          "componentLabel": "Input"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.CardView",
+      "bounds": [
+        18,
+        1611,
+        1422,
+        1734
+      ],
+      "componentLabel": "Card"
+    },
+    {
+      "text": "Refueling information",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        7,
+        364,
+        1426,
+        527
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "com.refuelcalc.light:id/odometer_types",
+      "ancestors": [
+        "android.widget.Spinner",
+        "android.widget.AbsSpinner",
+        "android.widget.AdapterView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatSpinner",
+      "bounds": [
+        7,
+        565,
+        645,
+        649
+      ],
+      "componentLabel": "Text Button",
+      "text": "Odometer"
+    },
+    {
+      "text": "50",
+      "resource-id": "com.refuelcalc.light:id/edit_distance",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.refuelcalc.light.EditTextDistance",
+      "bounds": [
+        645,
+        527,
+        1426,
+        685
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Gallon price:",
+      "resource-id": "com.refuelcalc.light:id/refueling_prize_text",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        7,
+        717,
+        645,
+        819
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "com.refuelcalc.light:id/edit_petrol_prize",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.refuelcalc.light.EditTextPrize",
+      "bounds": [
+        645,
+        685,
+        1426,
+        843
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Payment:",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        7,
+        875,
+        645,
+        977
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "com.refuelcalc.light:id/edit_fuel_cost",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.refuelcalc.light.EditTextPlain",
+      "bounds": [
+        645,
+        843,
+        1426,
+        1001
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Fueled volume:",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        7,
+        1033,
+        645,
+        1135
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "com.refuelcalc.light:id/edit_fuel_volume",
+      "ancestors": [
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.refuelcalc.light.EditTextVolume",
+      "bounds": [
+        645,
+        1001,
+        1426,
+        1159
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "Refuel type:",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        7,
+        1159,
+        645,
+        1261
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "com.refuelcalc.light:id/refuel_types",
+      "ancestors": [
+        "android.widget.Spinner",
+        "android.widget.AbsSpinner",
+        "android.widget.AdapterView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatSpinner",
+      "bounds": [
+        645,
+        1165,
+        1426,
+        1249
+      ],
+      "componentLabel": "Text Button",
+      "text": "Full refuel"
+    },
+    {
+      "text": "Note:",
+      "resource-id": "com.refuelcalc.light:id/refuel_rating_text",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        7,
+        1261,
+        645,
+        1425
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Date:",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        7,
+        1425,
+        645,
+        1527
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "17-03-19",
+      "resource-id": "com.refuelcalc.light:id/button_refueling_date",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        645,
+        1425,
+        1036,
+        1593
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "15:13",
+      "resource-id": "com.refuelcalc.light:id/button_refueling_time",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        1036,
+        1425,
+        1426,
+        1593
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "+1750 Recommend this on Google",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        158,
+        291,
+        850,
+        353
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

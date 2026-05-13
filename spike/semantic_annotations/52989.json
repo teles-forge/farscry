@@ -1,0 +1,549 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.twitter.android:id/toolbar",
+      "children": [
+        {
+          "iconClass": "search",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.twitter.android:id/toolbar_search",
+          "clickable": true,
+          "class": "com.twitter.internal.android.widget.ToolBarItemView",
+          "bounds": [
+            1244,
+            84,
+            1440,
+            280
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "com.twitter.internal.android.widget.ToolBar",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.twitter.library.widget.StatusToolBar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        280,
+        1440,
+        458
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Find friends",
+          "resource-id": "com.twitter.android:id/collapsed_prompt",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.twitter.ui.widget.TypefacesTextView",
+          "bounds": [
+            0,
+            280,
+            1440,
+            458
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "find"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "java.lang.Object"
+      ],
+      "bounds": [
+        0,
+        458,
+        1440,
+        486
+      ],
+      "clickable": false,
+      "class": "android.view.View",
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        486,
+        1440,
+        638
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Popular near you",
+          "resource-id": "com.twitter.android:id/title_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.twitter.ui.widget.TypefacesTextView",
+          "bounds": [
+            42,
+            528,
+            1259,
+            594
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "More",
+          "resource-id": "com.twitter.android:id/pivot",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.twitter.ui.widget.TypefacesTextView",
+          "bounds": [
+            1259,
+            528,
+            1398,
+            594
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "com.twitter.internal.android.widget.GroupedRowView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.twitter.android.widget.CarouselRowView",
+      "bounds": [
+        0,
+        638,
+        1440,
+        1674
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "resource-id": "com.twitter.android:id/profile_card",
+          "children": [
+            {
+              "resource-id": "com.twitter.android:id/banner_image",
+              "children": [
+                {
+                  "ancestors": [
+                    "com.twitter.media.ui.image.FixedSizeImageView",
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.twitter.android:id/image",
+                  "clickable": false,
+                  "class": "com.twitter.media.ui.image.RichImageView",
+                  "bounds": [
+                    44,
+                    682,
+                    1260,
+                    1087
+                  ],
+                  "componentLabel": "Image"
+                }
+              ],
+              "ancestors": [
+                "com.twitter.media.ui.image.BaseMediaImageView",
+                "com.twitter.media.ui.image.AspectRatioFrameLayout",
+                "android.widget.FrameLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.twitter.media.ui.image.MediaImageView",
+              "bounds": [
+                44,
+                682,
+                1260,
+                1087
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "resource-id": "com.twitter.android:id/user_image",
+              "children": [
+                {
+                  "iconClass": "date_range",
+                  "ancestors": [
+                    "com.twitter.media.ui.image.FixedSizeImageView",
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    95,
+                    953,
+                    379,
+                    1237
+                  ],
+                  "clickable": false,
+                  "class": "com.twitter.media.ui.image.RichImageView",
+                  "componentLabel": "Icon"
+                }
+              ],
+              "ancestors": [
+                "com.twitter.media.ui.image.MediaImageView",
+                "com.twitter.media.ui.image.BaseMediaImageView",
+                "com.twitter.media.ui.image.AspectRatioFrameLayout",
+                "android.widget.FrameLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.twitter.library.media.widget.UserImageView",
+              "bounds": [
+                83,
+                941,
+                391,
+                1249
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "iconClass": "follow",
+              "ancestors": [
+                "com.twitter.ui.widget.TintableImageView",
+                "android.widget.ImageView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "resource-id": "com.twitter.android:id/action_button",
+              "clickable": true,
+              "class": "com.twitter.library.widget.ActionButton",
+              "bounds": [
+                1022,
+                1132,
+                1211,
+                1237
+              ],
+              "componentLabel": "Icon"
+            },
+            {
+              "text": "All the latest from the University of Illinois at Urbana-Champaign. To thy happy children of the future, those of the past send greetings.  #ILLINOIS #ILLINI",
+              "resource-id": "com.twitter.android:id/profile_description_item",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.twitter.ui.widget.TypefacesTextView",
+              "bounds": [
+                93,
+                1454,
+                1211,
+                1581
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Univ. of Illinois",
+              "resource-id": "com.twitter.android:id/name_item",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.twitter.ui.widget.TypefacesTextView",
+              "bounds": [
+                93,
+                1277,
+                467,
+                1353
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "@Illinois_Alma",
+              "resource-id": "com.twitter.android:id/screenname_item",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.twitter.ui.widget.TypefacesTextView",
+              "bounds": [
+                93,
+                1353,
+                406,
+                1419
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "com.twitter.library.widget.UserSocialView",
+            "com.twitter.library.widget.UserView",
+            "com.twitter.library.widget.BaseUserView",
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.twitter.library.widget.ProfileCardView",
+          "bounds": [
+            42,
+            680,
+            1262,
+            1632
+          ],
+          "componentLabel": "Card"
+        },
+        {
+          "resource-id": "com.twitter.android:id/profile_card",
+          "children": [
+            {
+              "resource-id": "com.twitter.android:id/banner_image",
+              "children": [
+                {
+                  "iconClass": "menu",
+                  "ancestors": [
+                    "com.twitter.media.ui.image.FixedSizeImageView",
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.twitter.android:id/image",
+                  "clickable": false,
+                  "class": "com.twitter.media.ui.image.RichImageView",
+                  "bounds": [
+                    1306,
+                    682,
+                    1440,
+                    1087
+                  ],
+                  "componentLabel": "Icon"
+                }
+              ],
+              "ancestors": [
+                "com.twitter.media.ui.image.BaseMediaImageView",
+                "com.twitter.media.ui.image.AspectRatioFrameLayout",
+                "android.widget.FrameLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.twitter.media.ui.image.MediaImageView",
+              "bounds": [
+                1306,
+                682,
+                1440,
+                1087
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "resource-id": "com.twitter.android:id/user_image",
+              "children": [
+                {
+                  "ancestors": [
+                    "com.twitter.media.ui.image.FixedSizeImageView",
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    1357,
+                    953,
+                    1440,
+                    1237
+                  ],
+                  "clickable": false,
+                  "class": "com.twitter.media.ui.image.RichImageView",
+                  "componentLabel": "Image"
+                }
+              ],
+              "ancestors": [
+                "com.twitter.media.ui.image.MediaImageView",
+                "com.twitter.media.ui.image.BaseMediaImageView",
+                "com.twitter.media.ui.image.AspectRatioFrameLayout",
+                "android.widget.FrameLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.twitter.library.media.widget.UserImageView",
+              "bounds": [
+                1345,
+                941,
+                1440,
+                1249
+              ],
+              "componentLabel": "Image"
+            },
+            {
+              "text": "Official Twitter for the University of Illinois Football team, updated by the Illini Athletics Communication office #Illini",
+              "resource-id": "com.twitter.android:id/profile_description_item",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.twitter.ui.widget.TypefacesTextView",
+              "bounds": [
+                1355,
+                1454,
+                1440,
+                1581
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "Illini Football",
+              "resource-id": "com.twitter.android:id/name_item",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.twitter.ui.widget.TypefacesTextView",
+              "bounds": [
+                1355,
+                1277,
+                1440,
+                1353
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "@IlliniFootball",
+              "resource-id": "com.twitter.android:id/screenname_item",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "com.twitter.ui.widget.TypefacesTextView",
+              "bounds": [
+                1355,
+                1353,
+                1440,
+                1419
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "ancestors": [
+            "com.twitter.library.widget.UserSocialView",
+            "com.twitter.library.widget.UserView",
+            "com.twitter.library.widget.BaseUserView",
+            "android.widget.RelativeLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.twitter.library.widget.ProfileCardView",
+          "bounds": [
+            1304,
+            680,
+            1440,
+            1632
+          ],
+          "componentLabel": "Card"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.FrameLayout",
+      "bounds": [
+        0,
+        1674,
+        1440,
+        1891
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.twitter.android:id/footer_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            0,
+            1730,
+            1440,
+            1835
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

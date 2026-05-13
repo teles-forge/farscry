@@ -1,0 +1,454 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.jmd.busservice:id/app_bar",
+      "children": [
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        329
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.google.android.gms.ads.AdView",
+      "bounds": [
+        0,
+        2217,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.google.android.gms.ads.internal.webview.n",
+          "bounds": [
+            0,
+            2217,
+            1440,
+            2392
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.webkit.WebView",
+                "android.widget.AbsoluteLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                0,
+                2217,
+                1440,
+                2392
+              ],
+              "clickable": true,
+              "class": "com.google.android.gms.ads.internal.webview.o",
+              "componentLabel": "Web View"
+            }
+          ],
+          "componentLabel": "Web View"
+        }
+      ],
+      "componentLabel": "Advertisement"
+    },
+    {
+      "text": "TIP: Enter an intersection, bus route or bus stop code.",
+      "resource-id": "com.jmd.busservice:id/text1",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        70,
+        771,
+        1233,
+        837
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Try these example searches:",
+      "resource-id": "com.jmd.busservice:id/text2",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        70,
+        890,
+        754,
+        961
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "(Add route for best results)",
+      "resource-id": "com.jmd.busservice:id/tv_hint",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        70,
+        1335,
+        701,
+        1406
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "com.jmd.busservice:id/stops_for_location",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        149,
+        392,
+        720,
+        550
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "",
+      "resource-id": "com.jmd.busservice:id/routes_for_location",
+      "ancestors": [
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatButton",
+      "bounds": [
+        720,
+        392,
+        1291,
+        550
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "",
+      "resource-id": "com.jmd.busservice:id/search",
+      "ancestors": [
+        "android.widget.AutoCompleteTextView",
+        "android.widget.EditText",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.jmd.busservice.CustomAutoCompleteView",
+      "bounds": [
+        168,
+        613,
+        1131,
+        753
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "iconClass": "search",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.jmd.busservice:id/searchImage",
+      "clickable": true,
+      "class": "android.widget.ImageView",
+      "bounds": [
+        1097,
+        613,
+        1272,
+        753
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Route:",
+      "resource-id": "com.jmd.busservice:id/text3",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        70,
+        979,
+        220,
+        1050
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "B65",
+      "resource-id": "com.jmd.busservice:id/tv_B65",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        255,
+        979,
+        348,
+        1050
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "M5",
+      "resource-id": "com.jmd.busservice:id/tv_M5",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        383,
+        979,
+        459,
+        1050
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Bx1",
+      "resource-id": "com.jmd.busservice:id/tv_BX1",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        494,
+        979,
+        583,
+        1050
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Intersection:",
+      "resource-id": "com.jmd.busservice:id/text7",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        70,
+        1068,
+        361,
+        1139
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Main st and Kissena Bl",
+      "resource-id": "com.jmd.busservice:id/text8",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        396,
+        1068,
+        929,
+        1139
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Stop Code:",
+      "resource-id": "com.jmd.busservice:id/text9",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        70,
+        1157,
+        326,
+        1228
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "200884",
+      "resource-id": "com.jmd.busservice:id/tv_code",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        361,
+        1157,
+        541,
+        1228
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "Location:",
+      "resource-id": "com.jmd.busservice:id/text11",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        70,
+        1246,
+        288,
+        1317
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "10304",
+      "resource-id": "com.jmd.busservice:id/text12",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        323,
+        1246,
+        473,
+        1317
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Click here",
+      "resource-id": "com.jmd.busservice:id/clickHere",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        70,
+        1424,
+        302,
+        1495
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "for a list of available routes",
+      "resource-id": "com.jmd.busservice:id/text13",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        337,
+        1424,
+        973,
+        1495
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

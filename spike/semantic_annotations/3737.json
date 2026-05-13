@@ -1,0 +1,571 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.wunderground.android.storm:id/toolbar",
+      "children": [
+        {
+          "text": "Settings",
+          "resource-id": "com.wunderground.android.storm:id/toolbar_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            210,
+            138,
+            483,
+            225
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "close",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.wunderground.android.storm:id/toolbar_back_button",
+          "clickable": false,
+          "class": "com.wunderground.android.weather.commons.view.FilteredImageView",
+          "bounds": [
+            28,
+            126,
+            140,
+            238
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.design.widget.TabLayout$SlidingTabStrip",
+      "bounds": [
+        0,
+        280,
+        1440,
+        448
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "PREFERENCES",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            195,
+            331,
+            524,
+            397
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "ALERTING",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            965,
+            331,
+            1194,
+            397
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "text": "Units",
+      "resource-id": "com.wunderground.android.storm:id/units_caption",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        210,
+        532,
+        330,
+        593
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "iconClass": "menu",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.wunderground.android.storm:id/units_settings_icon",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        28,
+        621,
+        112,
+        705
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Miles",
+      "resource-id": "com.wunderground.android.storm:id/miles_button",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatRadioButton",
+      "bounds": [
+        210,
+        810,
+        582,
+        936
+      ],
+      "componentLabel": "Radio Button"
+    },
+    {
+      "text": "Km",
+      "resource-id": "com.wunderground.android.storm:id/km_button",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatRadioButton",
+      "bounds": [
+        610,
+        810,
+        983,
+        936
+      ],
+      "componentLabel": "Radio Button"
+    },
+    {
+      "text": "Nmi",
+      "resource-id": "com.wunderground.android.storm:id/nmi_button",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatRadioButton",
+      "bounds": [
+        1011,
+        810,
+        1384,
+        936
+      ],
+      "componentLabel": "Radio Button"
+    },
+    {
+      "text": "Mph",
+      "resource-id": "com.wunderground.android.storm:id/mph_button",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatRadioButton",
+      "bounds": [
+        210,
+        999,
+        582,
+        1125
+      ],
+      "componentLabel": "Radio Button"
+    },
+    {
+      "text": "Km/h",
+      "resource-id": "com.wunderground.android.storm:id/kph_button",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatRadioButton",
+      "bounds": [
+        610,
+        999,
+        983,
+        1125
+      ],
+      "componentLabel": "Radio Button"
+    },
+    {
+      "text": "Kts",
+      "resource-id": "com.wunderground.android.storm:id/knots_button",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatRadioButton",
+      "bounds": [
+        1011,
+        999,
+        1384,
+        1125
+      ],
+      "componentLabel": "Radio Button"
+    },
+    {
+      "text": "Feet",
+      "resource-id": "com.wunderground.android.storm:id/feet_button",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatRadioButton",
+      "bounds": [
+        210,
+        1188,
+        783,
+        1314
+      ],
+      "componentLabel": "Radio Button"
+    },
+    {
+      "text": "Meters",
+      "resource-id": "com.wunderground.android.storm:id/meters_button",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatRadioButton",
+      "bounds": [
+        811,
+        1188,
+        1384,
+        1314
+      ],
+      "componentLabel": "Radio Button"
+    },
+    {
+      "text": "Inches",
+      "resource-id": "com.wunderground.android.storm:id/inches_pressure_button",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatRadioButton",
+      "bounds": [
+        210,
+        1377,
+        783,
+        1503
+      ],
+      "componentLabel": "Radio Button"
+    },
+    {
+      "text": "Millibars",
+      "resource-id": "com.wunderground.android.storm:id/millibars_button",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatRadioButton",
+      "bounds": [
+        811,
+        1377,
+        1384,
+        1503
+      ],
+      "componentLabel": "Radio Button"
+    },
+    {
+      "text": "Inches",
+      "resource-id": "com.wunderground.android.storm:id/inches_precip_button",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatRadioButton",
+      "bounds": [
+        210,
+        1566,
+        783,
+        1692
+      ],
+      "componentLabel": "Radio Button"
+    },
+    {
+      "text": "Centimeters",
+      "resource-id": "com.wunderground.android.storm:id/centimeters_button",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatRadioButton",
+      "bounds": [
+        811,
+        1566,
+        1384,
+        1692
+      ],
+      "componentLabel": "Radio Button"
+    },
+    {
+      "text": "Cardinal",
+      "resource-id": "com.wunderground.android.storm:id/cardinal_button",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatRadioButton",
+      "bounds": [
+        210,
+        1755,
+        783,
+        1881
+      ],
+      "componentLabel": "Radio Button"
+    },
+    {
+      "text": "Degrees",
+      "resource-id": "com.wunderground.android.storm:id/degrees_button",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatRadioButton",
+      "bounds": [
+        811,
+        1755,
+        1384,
+        1881
+      ],
+      "componentLabel": "Radio Button"
+    },
+    {
+      "text": "",
+      "resource-id": "com.wunderground.android.storm:id/status_bar_toggle",
+      "ancestors": [
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.SwitchCompat",
+      "bounds": [
+        1246,
+        1998,
+        1412,
+        2093
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "text": "°F",
+      "resource-id": "com.wunderground.android.storm:id/fahrenheit_button",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatRadioButton",
+      "bounds": [
+        210,
+        621,
+        783,
+        747
+      ],
+      "componentLabel": "Radio Button"
+    },
+    {
+      "text": "°C",
+      "resource-id": "com.wunderground.android.storm:id/celsius_button",
+      "ancestors": [
+        "android.widget.RadioButton",
+        "android.widget.CompoundButton",
+        "android.widget.Button",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.AppCompatRadioButton",
+      "bounds": [
+        811,
+        621,
+        1384,
+        747
+      ],
+      "componentLabel": "Radio Button"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.wunderground.android.storm:id/status_bar_settings_icon",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        28,
+        2026,
+        112,
+        2110
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Status Bar",
+      "resource-id": "com.wunderground.android.storm:id/status_bar_caption",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        322,
+        1998,
+        566,
+        2059
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Current Location (GPS)",
+      "resource-id": "com.wunderground.android.storm:id/current_status_bar_location_label",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        322,
+        2087,
+        906,
+        2145
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

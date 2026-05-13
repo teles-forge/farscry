@@ -1,0 +1,892 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.jcp:id/search_toolbar",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.at",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Refine",
+          "resource-id": "com.jcp:id/search_refine_button",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.bk",
+          "bounds": [
+            1259,
+            126,
+            1422,
+            238
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "edit"
+        },
+        {
+          "iconClass": "avatar",
+          "resource-id": "com.jcp:id/search_view_search_icon",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.joanzapata.iconify.widget.IconTextView",
+          "bounds": [
+            305,
+            158,
+            393,
+            205
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Bedding",
+          "resource-id": "com.jcp:id/search_edit_field",
+          "ancestors": [
+            "android.widget.EditText",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.as",
+          "bounds": [
+            411,
+            144,
+            1083,
+            220
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "close",
+          "text": "",
+          "resource-id": "com.jcp:id/search_view_close_button",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.joanzapata.iconify.widget.IconTextView",
+          "bounds": [
+            1101,
+            144,
+            1206,
+            220
+          ],
+          "componentLabel": "Text Button"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "text": "Related:",
+      "resource-id": "android:id/text1",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.bk",
+      "bounds": [
+        0,
+        280,
+        217,
+        476
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "com.jcp:id/search_related_terms_list",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.RecyclerView",
+      "bounds": [
+        217,
+        280,
+        1440,
+        476
+      ],
+      "componentLabel": "Text Button",
+      "text": "Comforter Sets"
+    },
+    {
+      "resource-id": "com.jcp:id/navigation_bar_saved_items",
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.jcpenney.views.navbar.NavigationBarButton",
+      "bounds": [
+        0,
+        2200,
+        288,
+        2392
+      ],
+      "componentLabel": "Text Button",
+      "text": ""
+    },
+    {
+      "resource-id": "com.jcp:id/navigation_bar_search",
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.jcpenney.views.navbar.NavigationBarButton",
+      "bounds": [
+        288,
+        2200,
+        576,
+        2392
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "search"
+    },
+    {
+      "resource-id": "com.jcp:id/navigation_bar_home",
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.jcpenney.views.navbar.NavigationBarButton",
+      "bounds": [
+        576,
+        2200,
+        864,
+        2392
+      ],
+      "componentLabel": "Text Button",
+      "text": ""
+    },
+    {
+      "resource-id": "com.jcp:id/navigation_bar_shopping_bag",
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.jcpenney.views.navbar.NavigationBarButton",
+      "bounds": [
+        864,
+        2200,
+        1152,
+        2392
+      ],
+      "componentLabel": "Text Button",
+      "text": ""
+    },
+    {
+      "resource-id": "com.jcp:id/navigation_bar_my_account",
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.jcpenney.views.navbar.NavigationBarButton",
+      "bounds": [
+        1152,
+        2200,
+        1440,
+        2392
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "login"
+    },
+    {
+      "resource-id": "com.jcp:id/product_grid_item_layout",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        634,
+        480,
+        734
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "create"
+    },
+    {
+      "resource-id": "com.jcp:id/product_grid_item_layout",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        480,
+        634,
+        960,
+        734
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "create"
+    },
+    {
+      "resource-id": "com.jcp:id/product_grid_item_layout",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        960,
+        634,
+        1380,
+        734
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "create"
+    },
+    {
+      "resource-id": "com.jcp:id/product_grid_item_layout",
+      "children": [
+        {
+          "text": "$119.99 SALE",
+          "resource-id": "com.jcp:id/product_price",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.bk",
+          "bounds": [
+            76,
+            1119,
+            343,
+            1176
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "$240 Original",
+          "resource-id": "com.jcp:id/product_price_original",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.bk",
+          "bounds": [
+            95,
+            1176,
+            325,
+            1229
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.jcp:id/product_image",
+          "clickable": false,
+          "class": "com.jcpenney.views.AdjustableImageView",
+          "bounds": [
+            35,
+            769,
+            385,
+            1119
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        734,
+        420,
+        1366
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.jcp:id/product_grid_item_layout",
+      "children": [
+        {
+          "text": "$149.99 - $179.99 SALE",
+          "resource-id": "com.jcp:id/product_price",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.bk",
+          "bounds": [
+            515,
+            1119,
+            925,
+            1225
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "$250 - $300 Original",
+          "resource-id": "com.jcp:id/product_price_original",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.bk",
+          "bounds": [
+            545,
+            1225,
+            894,
+            1278
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.jcp:id/product_image",
+          "clickable": false,
+          "class": "com.jcpenney.views.AdjustableImageView",
+          "bounds": [
+            545,
+            769,
+            895,
+            1119
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        480,
+        734,
+        960,
+        1366
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.jcp:id/product_grid_item_layout",
+      "children": [
+        {
+          "text": "$34.99 - $149.99 SALE",
+          "resource-id": "com.jcp:id/product_price",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.bk",
+          "bounds": [
+            995,
+            1119,
+            1405,
+            1225
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "$60 - $300 Original",
+          "resource-id": "com.jcp:id/product_price_original",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.bk",
+          "bounds": [
+            1036,
+            1225,
+            1363,
+            1278
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "2 colors",
+          "resource-id": "com.jcp:id/product_num_colors",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.bk",
+          "bounds": [
+            1130,
+            1278,
+            1270,
+            1331
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.jcp:id/product_image",
+          "clickable": false,
+          "class": "com.jcpenney.views.AdjustableImageView",
+          "bounds": [
+            1025,
+            769,
+            1375,
+            1119
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        960,
+        734,
+        1440,
+        1366
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.jcp:id/product_grid_item_layout",
+      "children": [
+        {
+          "text": "$64.99 - $84.99 SALE",
+          "resource-id": "com.jcp:id/product_price",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.bk",
+          "bounds": [
+            35,
+            1751,
+            445,
+            1857
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "$130 - $170 Original",
+          "resource-id": "com.jcp:id/product_price_original",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.bk",
+          "bounds": [
+            65,
+            1857,
+            414,
+            1910
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.jcp:id/product_image",
+          "clickable": false,
+          "class": "com.jcpenney.views.AdjustableImageView",
+          "bounds": [
+            65,
+            1401,
+            415,
+            1751
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1366,
+        480,
+        1945
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.jcp:id/product_grid_item_layout",
+      "children": [
+        {
+          "text": "$149.99 - $189.99 SALE",
+          "resource-id": "com.jcp:id/product_price",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.bk",
+          "bounds": [
+            515,
+            1751,
+            925,
+            1857
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "$300 - $390 Original",
+          "resource-id": "com.jcp:id/product_price_original",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.bk",
+          "bounds": [
+            545,
+            1857,
+            894,
+            1910
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.jcp:id/product_image",
+          "clickable": false,
+          "class": "com.jcpenney.views.AdjustableImageView",
+          "bounds": [
+            545,
+            1401,
+            895,
+            1751
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        480,
+        1366,
+        960,
+        1945
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.jcp:id/product_grid_item_layout",
+      "children": [
+        {
+          "text": "$139.99 - $169.99 SALE",
+          "resource-id": "com.jcp:id/product_price",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.bk",
+          "bounds": [
+            995,
+            1751,
+            1405,
+            1857
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "$260 - $300 Original",
+          "resource-id": "com.jcp:id/product_price_original",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.bk",
+          "bounds": [
+            1025,
+            1857,
+            1374,
+            1910
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.jcp:id/product_image",
+          "clickable": false,
+          "class": "com.jcpenney.views.AdjustableImageView",
+          "bounds": [
+            1025,
+            1401,
+            1375,
+            1751
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        960,
+        1366,
+        1440,
+        1945
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.jcp:id/product_grid_item_layout",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1945,
+        420,
+        2196
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "create"
+    },
+    {
+      "resource-id": "com.jcp:id/product_grid_item_layout",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        480,
+        1945,
+        900,
+        2196
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "create"
+    },
+    {
+      "resource-id": "com.jcp:id/product_grid_item_layout",
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        960,
+        1945,
+        1380,
+        2196
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "create"
+    },
+    {
+      "text": "24 of 4,210 Results",
+      "resource-id": "com.jcp:id/product_count",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.bk",
+      "bounds": [
+        60,
+        522,
+        480,
+        588
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "",
+      "resource-id": "com.jcp:id/product_list_button",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.joanzapata.iconify.widget.IconTextView",
+      "bounds": [
+        1068,
+        523,
+        1132,
+        587
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "iconClass": "add",
+      "text": "",
+      "resource-id": "com.jcp:id/product_grid_button",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.joanzapata.iconify.widget.IconTextView",
+      "bounds": [
+        1192,
+        523,
+        1256,
+        587
+      ],
+      "componentLabel": "Text Button"
+    },
+    {
+      "text": "",
+      "resource-id": "com.jcp:id/product_polaroid_button",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.joanzapata.iconify.widget.IconTextView",
+      "bounds": [
+        1316,
+        523,
+        1380,
+        587
+      ],
+      "componentLabel": "Text Button"
+    }
+  ]
+}

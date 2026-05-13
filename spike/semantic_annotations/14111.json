@@ -1,0 +1,691 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.tudorspan.recipekeeper:id/toolbar",
+      "children": [
+        {
+          "text": "Recipe Keeper",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            210,
+            135,
+            662,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "add",
+          "resource-id": "com.tudorspan.recipekeeper:id/MnuNewRecipe",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1104,
+            98,
+            1272,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "com.tudorspan.recipekeeper:id/MnuSearch",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1272,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.design.widget.TabLayout$SlidingTabStrip",
+      "bounds": [
+        0,
+        280,
+        1440,
+        448
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.design.widget.TabLayout$TabView",
+          "bounds": [
+            480,
+            280,
+            960,
+            448
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "textButtonClass": "favorites"
+        },
+        {
+          "ancestors": [
+            "android.widget.LinearLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.design.widget.TabLayout$TabView",
+          "bounds": [
+            960,
+            280,
+            1440,
+            448
+          ],
+          "clickable": true,
+          "componentLabel": "Text Button",
+          "textButtonClass": "past"
+        },
+        {
+          "text": "Courses",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            131,
+            331,
+            348,
+            397
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "resource-id": "com.tudorspan.recipekeeper:id/frmMain",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ViewAnimator",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.ViewFlipper",
+          "bounds": [
+            14,
+            462,
+            475,
+            923
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                14,
+                462,
+                475,
+                923
+              ],
+              "clickable": false,
+              "class": "android.widget.ImageView",
+              "componentLabel": "Image"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            14,
+            825,
+            475,
+            923
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "Breakfast",
+              "resource-id": "com.tudorspan.recipekeeper:id/txtTitle",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                42,
+                825,
+                391,
+                923
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "1",
+              "resource-id": "com.tudorspan.recipekeeper:id/txtCount",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                419,
+                825,
+                447,
+                923
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "md59f33c1f6e40db40587f04513401ec25b.SquareGridViewItem",
+      "bounds": [
+        14,
+        462,
+        475,
+        923
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.tudorspan.recipekeeper:id/frmMain",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ViewAnimator",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.ViewFlipper",
+          "bounds": [
+            489,
+            462,
+            950,
+            923
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                489,
+                462,
+                950,
+                923
+              ],
+              "clickable": false,
+              "class": "android.widget.ImageView",
+              "componentLabel": "Image"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            489,
+            825,
+            950,
+            923
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "Dessert",
+              "resource-id": "com.tudorspan.recipekeeper:id/txtTitle",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                517,
+                825,
+                866,
+                923
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "2",
+              "resource-id": "com.tudorspan.recipekeeper:id/txtCount",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                894,
+                825,
+                922,
+                923
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "md59f33c1f6e40db40587f04513401ec25b.SquareGridViewItem",
+      "bounds": [
+        489,
+        462,
+        950,
+        923
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "iconClass": "settings",
+      "resource-id": "com.tudorspan.recipekeeper:id/frmMain",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ViewAnimator",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.ViewFlipper",
+          "bounds": [
+            964,
+            462,
+            1425,
+            923
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                964,
+                462,
+                1425,
+                923
+              ],
+              "clickable": false,
+              "class": "android.widget.ImageView",
+              "componentLabel": "Image"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            964,
+            825,
+            1425,
+            923
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "Main Dish",
+              "resource-id": "com.tudorspan.recipekeeper:id/txtTitle",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                992,
+                825,
+                1341,
+                923
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "2",
+              "resource-id": "com.tudorspan.recipekeeper:id/txtCount",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                1369,
+                825,
+                1397,
+                923
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "md59f33c1f6e40db40587f04513401ec25b.SquareGridViewItem",
+      "bounds": [
+        964,
+        462,
+        1425,
+        923
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.tudorspan.recipekeeper:id/frmMain",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ViewAnimator",
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.ViewFlipper",
+          "bounds": [
+            14,
+            937,
+            475,
+            1398
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                14,
+                937,
+                475,
+                1398
+              ],
+              "clickable": false,
+              "class": "android.widget.ImageView",
+              "componentLabel": "Image"
+            }
+          ],
+          "componentLabel": "List Item"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            14,
+            1300,
+            475,
+            1398
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "Snack",
+              "resource-id": "com.tudorspan.recipekeeper:id/txtTitle",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                42,
+                1300,
+                391,
+                1398
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "1",
+              "resource-id": "com.tudorspan.recipekeeper:id/txtCount",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                419,
+                1300,
+                447,
+                1398
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "md59f33c1f6e40db40587f04513401ec25b.SquareGridViewItem",
+      "bounds": [
+        14,
+        937,
+        475,
+        1398
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.tudorspan.recipekeeper:id/frmMain",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            489,
+            1300,
+            950,
+            1398
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "text": "All",
+              "resource-id": "com.tudorspan.recipekeeper:id/txtTitle",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                517,
+                1300,
+                866,
+                1398
+              ],
+              "componentLabel": "Text"
+            },
+            {
+              "text": "6",
+              "resource-id": "com.tudorspan.recipekeeper:id/txtCount",
+              "ancestors": [
+                "android.widget.TextView",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": false,
+              "class": "android.support.v7.widget.AppCompatTextView",
+              "bounds": [
+                894,
+                1300,
+                922,
+                1398
+              ],
+              "componentLabel": "Text"
+            }
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "md59f33c1f6e40db40587f04513401ec25b.SquareGridViewItem",
+      "bounds": [
+        489,
+        937,
+        950,
+        1398
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

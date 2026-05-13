@@ -1,0 +1,793 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "ru.mail.mailapp:id/toolbar",
+      "children": [
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            14,
+            126,
+            210,
+            238
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "resource-id": "ru.mail.mailapp:id/spinner",
+          "ancestors": [
+            "android.widget.Spinner",
+            "android.widget.AbsSpinner",
+            "android.widget.AdapterView",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatSpinner",
+          "bounds": [
+            322,
+            135,
+            769,
+            228
+          ],
+          "componentLabel": "Text Button",
+          "text": "Inbox 117"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "ru.mail.mailapp:id/toolbar_action_search",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1090,
+            98,
+            1258,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "edit",
+          "resource-id": "ru.mail.mailapp:id/toolbar_action_new",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1258,
+            98,
+            1426,
+            266
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "ru.mail.ui.CustomToolbar",
+        "android.support.v7.widget.Toolbar",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.ui.CustomTabletLandscapeToolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "ru.mail.fragments.view.RoundedImageView",
+        "ru.mail.fragments.view.FramedImageView",
+        "ru.mail.fragments.view.CropImageView",
+        "ru.mail.uikit.view.RecyclingImageView",
+        "android.support.v7.widget.AppCompatImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "ru.mail.mailapp:id/checkbox",
+      "clickable": true,
+      "class": "ru.mail.fragments.view.CheckedRoundedImageView",
+      "bounds": [
+        56,
+        336,
+        252,
+        532
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "ru.mail.mailapp:id/unread",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        308,
+        337,
+        357,
+        379
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "SEEK JobMail",
+      "resource-id": "ru.mail.mailapp:id/sender",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        378,
+        319,
+        1174,
+        395
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "3:04 PM",
+      "resource-id": "ru.mail.mailapp:id/date",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1202,
+        327,
+        1384,
+        393
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "7 new jobs for Wildlife",
+      "resource-id": "ru.mail.mailapp:id/subject",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        308,
+        389,
+        1384,
+        465
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Hi Jason, Check out 7 new jobs. Update your SEEK Profile to get more opportunities tailored for you. Senior Business Analyst - QLD Parks and Wildlife Service Hudson Brisbane , CBD & Inner Suburbs $726 p.d. Queensland Parks and Wil",
+      "resource-id": "ru.mail.mailapp:id/snippet",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.SingleMeasureTextView",
+      "bounds": [
+        308,
+        469,
+        1384,
+        606
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "ru.mail.fragments.view.RoundedImageView",
+        "ru.mail.fragments.view.FramedImageView",
+        "ru.mail.fragments.view.CropImageView",
+        "ru.mail.uikit.view.RecyclingImageView",
+        "android.support.v7.widget.AppCompatImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "ru.mail.mailapp:id/checkbox",
+      "clickable": true,
+      "class": "ru.mail.fragments.view.CheckedRoundedImageView",
+      "bounds": [
+        56,
+        718,
+        252,
+        914
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "ru.mail.mailapp:id/unread",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        308,
+        719,
+        357,
+        761
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "GasBuddy",
+      "resource-id": "ru.mail.mailapp:id/sender",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        378,
+        701,
+        1174,
+        777
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "2:46 PM",
+      "resource-id": "ru.mail.mailapp:id/date",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1202,
+        709,
+        1384,
+        775
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "It’s Spring Break! Let’s Hit The Road.",
+      "resource-id": "ru.mail.mailapp:id/subject",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        308,
+        771,
+        1384,
+        847
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Since you have survived winter, you deserve a break - a SPRING BREAK! Our tips will help you make the best of your vacation in the upcoming weeks. GET THE TIPS  2017 GasBuddy/OpenStore LLC 77 N Washington St, Boston, MA 02114 View On",
+      "resource-id": "ru.mail.mailapp:id/snippet",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.SingleMeasureTextView",
+      "bounds": [
+        308,
+        851,
+        1384,
+        988
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "ru.mail.fragments.view.RoundedImageView",
+        "ru.mail.fragments.view.FramedImageView",
+        "ru.mail.fragments.view.CropImageView",
+        "ru.mail.uikit.view.RecyclingImageView",
+        "android.support.v7.widget.AppCompatImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "ru.mail.mailapp:id/checkbox",
+      "clickable": true,
+      "class": "ru.mail.fragments.view.CheckedRoundedImageView",
+      "bounds": [
+        56,
+        1100,
+        252,
+        1296
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "ru.mail.mailapp:id/unread",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        308,
+        1101,
+        357,
+        1143
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Once",
+      "resource-id": "ru.mail.mailapp:id/sender",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        378,
+        1083,
+        1174,
+        1159
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "2:05 PM",
+      "resource-id": "ru.mail.mailapp:id/date",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1202,
+        1091,
+        1384,
+        1157
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Here he is! Deric, 28 from San Pablo",
+      "resource-id": "ru.mail.mailapp:id/subject",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        308,
+        1153,
+        1384,
+        1229
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "You have a new match. His name is Deric. He is also discovering your profile while you're reading this. Deric, 28, San Pablo Look at his profile Unsubscribe | Report Spam Once Dating AG, Dorfstrasse 23, 8835 Feusisberg, Switzerla",
+      "resource-id": "ru.mail.mailapp:id/snippet",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.SingleMeasureTextView",
+      "bounds": [
+        308,
+        1233,
+        1384,
+        1370
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "ru.mail.fragments.view.RoundedImageView",
+        "ru.mail.fragments.view.FramedImageView",
+        "ru.mail.fragments.view.CropImageView",
+        "ru.mail.uikit.view.RecyclingImageView",
+        "android.support.v7.widget.AppCompatImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "ru.mail.mailapp:id/checkbox",
+      "clickable": true,
+      "class": "ru.mail.fragments.view.CheckedRoundedImageView",
+      "bounds": [
+        56,
+        1482,
+        252,
+        1678
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "ru.mail.mailapp:id/unread",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        308,
+        1483,
+        357,
+        1525
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Under Armour",
+      "resource-id": "ru.mail.mailapp:id/sender",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        378,
+        1465,
+        1174,
+        1541
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "1:25 PM",
+      "resource-id": "ru.mail.mailapp:id/date",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1202,
+        1473,
+        1384,
+        1539
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "For You! A $40 Under Armour Gift",
+      "resource-id": "ru.mail.mailapp:id/subject",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        308,
+        1535,
+        1384,
+        1611
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "FREE SHIPPING ON ALL ORDERS $49+ & FREE RETURNS MapMyFitness Member Exclusive View Online MEN WOMEN BOYS GIRLS SHOES GIFT CODE: FNAQ46GDACA7 Expires 3/23/17. Only valid online in the U.S. - including the UA Shop app. NEW ARRIVALS ",
+      "resource-id": "ru.mail.mailapp:id/snippet",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.SingleMeasureTextView",
+      "bounds": [
+        308,
+        1615,
+        1384,
+        1752
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "ru.mail.fragments.view.RoundedImageView",
+        "ru.mail.fragments.view.FramedImageView",
+        "ru.mail.fragments.view.CropImageView",
+        "ru.mail.uikit.view.RecyclingImageView",
+        "android.support.v7.widget.AppCompatImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "ru.mail.mailapp:id/checkbox",
+      "clickable": true,
+      "class": "ru.mail.fragments.view.CheckedRoundedImageView",
+      "bounds": [
+        56,
+        1864,
+        252,
+        2060
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "ru.mail.mailapp:id/unread",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        308,
+        1865,
+        357,
+        1907
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "Gilt",
+      "resource-id": "ru.mail.mailapp:id/sender",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        378,
+        1847,
+        1146,
+        1923
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "12:58 PM",
+      "resource-id": "ru.mail.mailapp:id/date",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1174,
+        1855,
+        1384,
+        1921
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Extra 30% Off Starts Now + Bottega Veneta Handbags, Sandro, Bedhead Pajamas and More Start Today at Noon ET",
+      "resource-id": "ru.mail.mailapp:id/subject",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        308,
+        1917,
+        1384,
+        1993
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Free US Shipping On Orders $99+ WOMEN MEN BABY & KIDS HOME CITY Your Most Wanted Bottega Veneta Handbags & More Coveted Italian accessories by the arbiters of understated luxury Sandro Classic shapes with a modern twist from t",
+      "resource-id": "ru.mail.mailapp:id/snippet",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.SingleMeasureTextView",
+      "bounds": [
+        308,
+        1997,
+        1384,
+        2134
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "ru.mail.fragments.view.RoundedImageView",
+        "ru.mail.fragments.view.FramedImageView",
+        "ru.mail.fragments.view.CropImageView",
+        "ru.mail.uikit.view.RecyclingImageView",
+        "android.support.v7.widget.AppCompatImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "ru.mail.mailapp:id/checkbox",
+      "clickable": true,
+      "class": "ru.mail.fragments.view.CheckedRoundedImageView",
+      "bounds": [
+        56,
+        2246,
+        252,
+        2392
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "ru.mail.mailapp:id/unread",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        308,
+        2247,
+        357,
+        2289
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "LivingSocial",
+      "resource-id": "ru.mail.mailapp:id/sender",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        378,
+        2229,
+        1146,
+        2305
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "12:01 PM",
+      "resource-id": "ru.mail.mailapp:id/date",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        1174,
+        2237,
+        1384,
+        2303
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Toast to Savings this Wedding Season!",
+      "resource-id": "ru.mail.mailapp:id/subject",
+      "ancestors": [
+        "ru.mail.uikit.view.HighlightedTextView",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.MailItemTextView",
+      "bounds": [
+        308,
+        2299,
+        1384,
+        2375
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "home local escapes shop my preferences my vouchers Invisible Braces Impression Kit and Treatment Plan $95 $49.99 view deal $40 to Spend on Farm-Fresh Flowers $40 $20 view deal 1-Year Subscription to Martha Stewart Weddings $9 $5 view ",
+      "resource-id": "ru.mail.mailapp:id/snippet",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ru.mail.fragments.view.SingleMeasureTextView",
+      "bounds": [
+        308,
+        2379,
+        1384,
+        2392
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

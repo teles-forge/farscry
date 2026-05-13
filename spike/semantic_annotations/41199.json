@@ -1,0 +1,898 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "iconClass": "search",
+      "ancestors": [
+        "android.support.design.widget.VisibilityAwareImageButton",
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.medium.reader:id/personalize_search_fab",
+      "clickable": true,
+      "class": "android.support.design.widget.FloatingActionButton",
+      "bounds": [
+        1188,
+        2140,
+        1384,
+        2336
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "resource-id": "com.medium.reader:id/nav_metabar",
+      "children": [
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Interests",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            210,
+            135,
+            487,
+            228
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.support.design.widget.TabLayout$SlidingTabStrip",
+      "bounds": [
+        0,
+        280,
+        960,
+        448
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Tags",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            73,
+            331,
+            178,
+            397
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "People",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            322,
+            331,
+            475,
+            397
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Publications",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            615,
+            331,
+            890,
+            397
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.medium.android.common.stream.tag.TagListView",
+      "bounds": [
+        0,
+        448,
+        1440,
+        1635
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Pop culture",
+          "resource-id": "com.medium.reader:id/tag_list_view_header",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            0,
+            448,
+            1440,
+            591
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "resource-id": "com.medium.reader:id/tag_list_view_tags",
+          "children": [
+            {
+              "resource-id": "com.medium.reader:id/tag_preview_view_card",
+              "children": [
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.medium.reader:id/tag_preview_view_image",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "bounds": [
+                    70,
+                    650,
+                    203,
+                    783
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "resource-id": "com.medium.reader:id/tag_preview_view_follow",
+                  "ancestors": [
+                    "android.widget.FrameLayout",
+                    "android.view.ViewGroup",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": true,
+                  "class": "com.medium.android.common.ui.FollowButtonView",
+                  "bounds": [
+                    1090,
+                    619,
+                    1370,
+                    815
+                  ],
+                  "componentLabel": "Text Button",
+                  "textButtonClass": "follow"
+                },
+                {
+                  "text": "Movies",
+                  "resource-id": "com.medium.reader:id/tag_preview_view_name",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    259,
+                    655,
+                    417,
+                    721
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "874K",
+                  "resource-id": "com.medium.reader:id/tag_preview_view_follower_count",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    259,
+                    721,
+                    410,
+                    778
+                  ],
+                  "componentLabel": "Text"
+                }
+              ],
+              "ancestors": [
+                "android.widget.FrameLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.CardView",
+              "bounds": [
+                0,
+                591,
+                1440,
+                843
+              ],
+              "componentLabel": "Card"
+            },
+            {
+              "resource-id": "com.medium.reader:id/tag_preview_view_card",
+              "children": [
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.medium.reader:id/tag_preview_view_image",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "bounds": [
+                    70,
+                    904,
+                    203,
+                    1037
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "resource-id": "com.medium.reader:id/tag_preview_view_follow",
+                  "ancestors": [
+                    "android.widget.FrameLayout",
+                    "android.view.ViewGroup",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": true,
+                  "class": "com.medium.android.common.ui.FollowButtonView",
+                  "bounds": [
+                    1090,
+                    873,
+                    1370,
+                    1069
+                  ],
+                  "componentLabel": "Text Button",
+                  "textButtonClass": "follow"
+                },
+                {
+                  "text": "Television",
+                  "resource-id": "com.medium.reader:id/tag_preview_view_name",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    259,
+                    909,
+                    478,
+                    975
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "319K",
+                  "resource-id": "com.medium.reader:id/tag_preview_view_follower_count",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    259,
+                    975,
+                    410,
+                    1032
+                  ],
+                  "componentLabel": "Text"
+                }
+              ],
+              "ancestors": [
+                "android.widget.FrameLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.CardView",
+              "bounds": [
+                0,
+                845,
+                1440,
+                1097
+              ],
+              "componentLabel": "Card"
+            },
+            {
+              "resource-id": "com.medium.reader:id/tag_preview_view_card",
+              "children": [
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.medium.reader:id/tag_preview_view_image",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "bounds": [
+                    70,
+                    1158,
+                    203,
+                    1291
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "resource-id": "com.medium.reader:id/tag_preview_view_follow",
+                  "ancestors": [
+                    "android.widget.FrameLayout",
+                    "android.view.ViewGroup",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": true,
+                  "class": "com.medium.android.common.ui.FollowButtonView",
+                  "bounds": [
+                    1090,
+                    1127,
+                    1370,
+                    1323
+                  ],
+                  "componentLabel": "Text Button",
+                  "textButtonClass": "follow"
+                },
+                {
+                  "text": "Music",
+                  "resource-id": "com.medium.reader:id/tag_preview_view_name",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    259,
+                    1163,
+                    392,
+                    1229
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "532K",
+                  "resource-id": "com.medium.reader:id/tag_preview_view_follower_count",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    259,
+                    1229,
+                    410,
+                    1286
+                  ],
+                  "componentLabel": "Text"
+                }
+              ],
+              "ancestors": [
+                "android.widget.FrameLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.CardView",
+              "bounds": [
+                0,
+                1099,
+                1440,
+                1351
+              ],
+              "componentLabel": "Card"
+            },
+            {
+              "resource-id": "com.medium.reader:id/tag_preview_view_card",
+              "children": [
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.medium.reader:id/tag_preview_view_image",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "bounds": [
+                    70,
+                    1412,
+                    203,
+                    1545
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "resource-id": "com.medium.reader:id/tag_preview_view_follow",
+                  "ancestors": [
+                    "android.widget.FrameLayout",
+                    "android.view.ViewGroup",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": true,
+                  "class": "com.medium.android.common.ui.FollowButtonView",
+                  "bounds": [
+                    1090,
+                    1381,
+                    1370,
+                    1577
+                  ],
+                  "componentLabel": "Text Button",
+                  "textButtonClass": "follow"
+                },
+                {
+                  "text": "Gaming",
+                  "resource-id": "com.medium.reader:id/tag_preview_view_name",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    259,
+                    1417,
+                    428,
+                    1483
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "390K",
+                  "resource-id": "com.medium.reader:id/tag_preview_view_follower_count",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    259,
+                    1483,
+                    410,
+                    1540
+                  ],
+                  "componentLabel": "Text"
+                }
+              ],
+              "ancestors": [
+                "android.widget.FrameLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.CardView",
+              "bounds": [
+                0,
+                1353,
+                1440,
+                1605
+              ],
+              "componentLabel": "Card"
+            }
+          ],
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            0,
+            591,
+            1440,
+            1607
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.medium.android.common.stream.tag.TagListView",
+      "bounds": [
+        0,
+        1635,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "text": "Food",
+          "resource-id": "com.medium.reader:id/tag_list_view_header",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            0,
+            1635,
+            1440,
+            1778
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "resource-id": "com.medium.reader:id/tag_list_view_tags",
+          "children": [
+            {
+              "resource-id": "com.medium.reader:id/tag_preview_view_card",
+              "children": [
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.medium.reader:id/tag_preview_view_image",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "bounds": [
+                    70,
+                    1837,
+                    203,
+                    1970
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "resource-id": "com.medium.reader:id/tag_preview_view_follow",
+                  "ancestors": [
+                    "android.widget.FrameLayout",
+                    "android.view.ViewGroup",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": true,
+                  "class": "com.medium.android.common.ui.FollowButtonView",
+                  "bounds": [
+                    1090,
+                    1806,
+                    1370,
+                    2002
+                  ],
+                  "componentLabel": "Text Button",
+                  "textButtonClass": "follow"
+                },
+                {
+                  "text": "Food",
+                  "resource-id": "com.medium.reader:id/tag_preview_view_name",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    259,
+                    1842,
+                    370,
+                    1908
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "760K",
+                  "resource-id": "com.medium.reader:id/tag_preview_view_follower_count",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    259,
+                    1908,
+                    410,
+                    1965
+                  ],
+                  "componentLabel": "Text"
+                }
+              ],
+              "ancestors": [
+                "android.widget.FrameLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.CardView",
+              "bounds": [
+                0,
+                1778,
+                1440,
+                2030
+              ],
+              "componentLabel": "Card"
+            },
+            {
+              "resource-id": "com.medium.reader:id/tag_preview_view_card",
+              "children": [
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.medium.reader:id/tag_preview_view_image",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "bounds": [
+                    70,
+                    2091,
+                    203,
+                    2224
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "resource-id": "com.medium.reader:id/tag_preview_view_follow",
+                  "ancestors": [
+                    "android.widget.FrameLayout",
+                    "android.view.ViewGroup",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": true,
+                  "class": "com.medium.android.common.ui.FollowButtonView",
+                  "bounds": [
+                    1090,
+                    2060,
+                    1370,
+                    2256
+                  ],
+                  "componentLabel": "Text Button",
+                  "textButtonClass": "follow"
+                },
+                {
+                  "text": "Recipes",
+                  "resource-id": "com.medium.reader:id/tag_preview_view_name",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    259,
+                    2096,
+                    431,
+                    2162
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "37K",
+                  "resource-id": "com.medium.reader:id/tag_preview_view_follower_count",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    259,
+                    2162,
+                    386,
+                    2219
+                  ],
+                  "componentLabel": "Text"
+                }
+              ],
+              "ancestors": [
+                "android.widget.FrameLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.CardView",
+              "bounds": [
+                0,
+                2032,
+                1440,
+                2284
+              ],
+              "componentLabel": "Card"
+            },
+            {
+              "resource-id": "com.medium.reader:id/tag_preview_view_card",
+              "children": [
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.medium.reader:id/tag_preview_view_image",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "bounds": [
+                    70,
+                    2345,
+                    203,
+                    2392
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "resource-id": "com.medium.reader:id/tag_preview_view_follow",
+                  "ancestors": [
+                    "android.widget.FrameLayout",
+                    "android.view.ViewGroup",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": true,
+                  "class": "com.medium.android.common.ui.FollowButtonView",
+                  "bounds": [
+                    1090,
+                    2314,
+                    1370,
+                    2392
+                  ],
+                  "componentLabel": "Text Button",
+                  "textButtonClass": "follow"
+                },
+                {
+                  "text": "Future Of Food",
+                  "resource-id": "com.medium.reader:id/tag_preview_view_name",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    259,
+                    2350,
+                    584,
+                    2392
+                  ],
+                  "componentLabel": "Text"
+                }
+              ],
+              "ancestors": [
+                "android.widget.FrameLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.support.v7.widget.CardView",
+              "bounds": [
+                0,
+                2286,
+                1440,
+                2392
+              ],
+              "componentLabel": "Card"
+            }
+          ],
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.LinearLayout",
+          "bounds": [
+            0,
+            1778,
+            1440,
+            2392
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

@@ -1,0 +1,963 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2392
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "android:id/action_bar_container",
+      "children": [
+        {
+          "iconClass": "save",
+          "resource-id": "com.jm.android.frequencygenerator:id/menuSave",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.android.internal.view.menu.ActionMenuItemView",
+          "bounds": [
+            852,
+            84,
+            1048,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "description",
+          "resource-id": "com.jm.android.frequencygenerator:id/menuList",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.android.internal.view.menu.ActionMenuItemView",
+          "bounds": [
+            1048,
+            84,
+            1244,
+            252
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1244,
+            84,
+            1440,
+            252
+          ],
+          "clickable": true,
+          "class": "android.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "android:id/home",
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "bounds": [
+            43,
+            112,
+            155,
+            224
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "text": "Multi-tone generator",
+          "resource-id": "android:id/action_bar_title",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            169,
+            125,
+            734,
+            210
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.android.internal.widget.ActionBarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        252
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "com.google.android.gms.ads.BaseAdView",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.google.android.gms.ads.NativeExpressAdView",
+      "bounds": [
+        7,
+        280,
+        1433,
+        595
+      ],
+      "clickable": false,
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.google.android.gms.ads.internal.webview.n",
+          "bounds": [
+            160,
+            280,
+            1280,
+            595
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.webkit.WebView",
+                "android.widget.AbsoluteLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                160,
+                280,
+                1280,
+                595
+              ],
+              "clickable": true,
+              "class": "com.google.android.gms.ads.internal.webview.o",
+              "componentLabel": "Web View"
+            }
+          ],
+          "componentLabel": "Web View"
+        }
+      ],
+      "componentLabel": "Advertisement"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.jm.android.frequencygenerator:id/btDecrement",
+      "clickable": true,
+      "class": "android.widget.ImageButton",
+      "bounds": [
+        21,
+        2238,
+        300,
+        2371
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.jm.android.frequencygenerator:id/btPlay",
+      "clickable": true,
+      "class": "android.widget.ImageButton",
+      "bounds": [
+        300,
+        2238,
+        719,
+        2371
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.jm.android.frequencygenerator:id/BtStop",
+      "clickable": true,
+      "class": "android.widget.ImageButton",
+      "bounds": [
+        719,
+        2238,
+        1139,
+        2371
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.jm.android.frequencygenerator:id/btIncrement",
+      "clickable": true,
+      "class": "android.widget.ImageButton",
+      "bounds": [
+        1139,
+        2238,
+        1419,
+        2371
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "1",
+      "bounds": [
+        21,
+        1132,
+        56,
+        1217
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.jm.android.frequencygenerator:id/seekBarVolume1",
+      "clickable": false,
+      "class": "android.widget.SeekBar",
+      "bounds": [
+        77,
+        1119,
+        833,
+        1231
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "text": "100",
+      "resource-id": "com.jm.android.frequencygenerator:id/lbVolume1",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        833,
+        1132,
+        979,
+        1217
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "S",
+      "resource-id": "com.jm.android.frequencygenerator:id/lbChannel1",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        979,
+        1132,
+        1016,
+        1217
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "440.00",
+      "resource-id": "com.jm.android.frequencygenerator:id/frequencyValue1",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.EditText",
+      "bounds": [
+        1016,
+        1106,
+        1308,
+        1244
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "Hz",
+      "bounds": [
+        1308,
+        1132,
+        1384,
+        1217
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "2",
+      "bounds": [
+        21,
+        1305,
+        77,
+        1390
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.jm.android.frequencygenerator:id/seekBarVolume2",
+      "clickable": false,
+      "class": "android.widget.SeekBar",
+      "bounds": [
+        77,
+        1292,
+        833,
+        1404
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "text": "0",
+      "resource-id": "com.jm.android.frequencygenerator:id/lbVolume2",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        833,
+        1305,
+        979,
+        1390
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "S",
+      "resource-id": "com.jm.android.frequencygenerator:id/lbChannel2",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        979,
+        1305,
+        1016,
+        1390
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "0.00",
+      "resource-id": "com.jm.android.frequencygenerator:id/frequencyValue2",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.EditText",
+      "bounds": [
+        1016,
+        1279,
+        1308,
+        1417
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "Hz",
+      "bounds": [
+        1308,
+        1305,
+        1419,
+        1390
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "3",
+      "bounds": [
+        21,
+        1478,
+        77,
+        1563
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.jm.android.frequencygenerator:id/seekBarVolume3",
+      "clickable": false,
+      "class": "android.widget.SeekBar",
+      "bounds": [
+        77,
+        1465,
+        833,
+        1577
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "text": "0",
+      "resource-id": "com.jm.android.frequencygenerator:id/lbVolume3",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        833,
+        1478,
+        979,
+        1563
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "S",
+      "resource-id": "com.jm.android.frequencygenerator:id/lbChannel3",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        979,
+        1478,
+        1016,
+        1563
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "0.00",
+      "resource-id": "com.jm.android.frequencygenerator:id/frequencyValue3",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.EditText",
+      "bounds": [
+        1016,
+        1452,
+        1308,
+        1590
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "Hz",
+      "bounds": [
+        1308,
+        1478,
+        1419,
+        1563
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "4",
+      "bounds": [
+        21,
+        1651,
+        77,
+        1736
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.jm.android.frequencygenerator:id/seekBarVolume4",
+      "clickable": false,
+      "class": "android.widget.SeekBar",
+      "bounds": [
+        77,
+        1638,
+        833,
+        1750
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "text": "0",
+      "resource-id": "com.jm.android.frequencygenerator:id/lbVolume4",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        833,
+        1651,
+        979,
+        1736
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "S",
+      "resource-id": "com.jm.android.frequencygenerator:id/lbChannel4",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        979,
+        1651,
+        1016,
+        1736
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "0.00",
+      "resource-id": "com.jm.android.frequencygenerator:id/frequencyValue4",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.EditText",
+      "bounds": [
+        1016,
+        1625,
+        1308,
+        1763
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "Hz",
+      "bounds": [
+        1308,
+        1651,
+        1419,
+        1736
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "5",
+      "bounds": [
+        21,
+        1824,
+        77,
+        1909
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.jm.android.frequencygenerator:id/seekBarVolume5",
+      "clickable": false,
+      "class": "android.widget.SeekBar",
+      "bounds": [
+        77,
+        1811,
+        833,
+        1923
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "text": "0",
+      "resource-id": "com.jm.android.frequencygenerator:id/lbVolume5",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        833,
+        1824,
+        979,
+        1909
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "S",
+      "resource-id": "com.jm.android.frequencygenerator:id/lbChannel5",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        979,
+        1824,
+        1016,
+        1909
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "0.00",
+      "resource-id": "com.jm.android.frequencygenerator:id/frequencyValue5",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.EditText",
+      "bounds": [
+        1016,
+        1798,
+        1308,
+        1936
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "Hz",
+      "bounds": [
+        1308,
+        1824,
+        1419,
+        1909
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "6",
+      "bounds": [
+        21,
+        1997,
+        77,
+        2082
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.jm.android.frequencygenerator:id/seekBarVolume6",
+      "clickable": false,
+      "class": "android.widget.SeekBar",
+      "bounds": [
+        77,
+        1984,
+        833,
+        2096
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "text": "0",
+      "resource-id": "com.jm.android.frequencygenerator:id/lbVolume6",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        833,
+        1997,
+        979,
+        2082
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "S",
+      "resource-id": "com.jm.android.frequencygenerator:id/lbChannel6",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        979,
+        1997,
+        1016,
+        2082
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "0.00",
+      "resource-id": "com.jm.android.frequencygenerator:id/frequencyValue6",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.EditText",
+      "bounds": [
+        1016,
+        1971,
+        1308,
+        2109
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "Hz",
+      "bounds": [
+        1308,
+        1997,
+        1419,
+        2082
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "7",
+      "bounds": [
+        21,
+        2170,
+        77,
+        2196
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.AbsSeekBar",
+        "android.widget.ProgressBar",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.jm.android.frequencygenerator:id/seekBarVolume7",
+      "clickable": false,
+      "class": "android.widget.SeekBar",
+      "bounds": [
+        77,
+        2157,
+        833,
+        2196
+      ],
+      "componentLabel": "Slider"
+    },
+    {
+      "text": "0",
+      "resource-id": "com.jm.android.frequencygenerator:id/lbVolume7",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        833,
+        2170,
+        979,
+        2196
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "S",
+      "resource-id": "com.jm.android.frequencygenerator:id/lbChannel7",
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "bounds": [
+        979,
+        2170,
+        1016,
+        2196
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "0.00",
+      "resource-id": "com.jm.android.frequencygenerator:id/frequencyValue7",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.EditText",
+      "bounds": [
+        1016,
+        2144,
+        1308,
+        2196
+      ],
+      "componentLabel": "Input"
+    },
+    {
+      "ancestors": [
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "Hz",
+      "bounds": [
+        1308,
+        2170,
+        1419,
+        2196
+      ],
+      "clickable": false,
+      "class": "android.widget.TextView",
+      "componentLabel": "Text"
+    }
+  ]
+}

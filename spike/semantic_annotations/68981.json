@@ -1,0 +1,617 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.opera.mini.native.beta:id/top_toolbar_container",
+      "children": [
+        {
+          "text": "https://m.facebook.com/home.php?_rdr",
+          "resource-id": "com.opera.mini.native.beta:id/url_field",
+          "ancestors": [
+            "com.opera.android.custom_views.ObservableEditText",
+            "com.opera.android.custom_views.TextDirectionEditText",
+            "android.widget.EditText",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "com.opera.android.UrlField",
+          "bounds": [
+            137,
+            106,
+            1285,
+            236
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "ancestors": [
+            "com.opera.android.custom_views.StylingImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.opera.mini.native.beta:id/mode_button",
+          "clickable": true,
+          "class": "com.opera.android.custom_views.StylingImageButton",
+          "bounds": [
+            1285,
+            106,
+            1422,
+            236
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "com.opera.android.custom_views.StylingImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.opera.mini.native.beta:id/plus_button",
+          "clickable": true,
+          "class": "com.opera.android.custom_views.StylingImageButton",
+          "bounds": [
+            18,
+            106,
+            155,
+            236
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.opera.android.bar.TopToolbarContainer",
+      "bounds": [
+        0,
+        84,
+        1440,
+        259
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "com.opera.android.custom_views.PrivateStateButton",
+        "com.opera.android.custom_views.StylingImageButton",
+        "com.opera.android.custom_views.StylingImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.opera.mini.native.beta:id/bottom_navigation_bar_back_button",
+      "clickable": true,
+      "class": "com.opera.android.custom_views.OrientationButton",
+      "bounds": [
+        0,
+        2235,
+        288,
+        2392
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "com.opera.android.custom_views.PrivateStateButton",
+        "com.opera.android.custom_views.StylingImageButton",
+        "com.opera.android.custom_views.StylingImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.opera.mini.native.beta:id/bottom_navigation_bar_forward_button",
+      "clickable": true,
+      "class": "com.opera.android.custom_views.OrientationButton",
+      "bounds": [
+        288,
+        2235,
+        576,
+        2392
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "com.opera.android.custom_views.PrivateStateButton",
+        "com.opera.android.custom_views.StylingImageButton",
+        "com.opera.android.custom_views.StylingImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.opera.mini.native.beta:id/bottom_navigation_bar_favorites_button",
+      "clickable": true,
+      "class": "com.opera.android.custom_views.OrientationButton",
+      "bounds": [
+        576,
+        2235,
+        864,
+        2392
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "com.opera.android.custom_views.OrientationButton",
+        "com.opera.android.custom_views.PrivateStateButton",
+        "com.opera.android.custom_views.StylingImageButton",
+        "com.opera.android.custom_views.StylingImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.opera.mini.native.beta:id/bottom_navigation_bar_tab_count_button",
+      "clickable": true,
+      "class": "com.opera.android.custom_views.TabCountButton",
+      "bounds": [
+        864,
+        2235,
+        1152,
+        2392
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "ancestors": [
+        "com.opera.android.custom_views.PrivateStateButton",
+        "com.opera.android.custom_views.StylingImageButton",
+        "com.opera.android.custom_views.StylingImageView",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.opera.mini.native.beta:id/bottom_navigation_bar_opera_menu_button",
+      "clickable": true,
+      "class": "com.opera.android.custom_views.OrientationButton",
+      "bounds": [
+        1152,
+        2235,
+        1440,
+        2392
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "resource-id": "com.opera.mini.native.beta:id/actionbar_title",
+      "ancestors": [
+        "com.opera.android.custom_views.LayoutDirectionLinearLayout",
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.opera.android.custom_views.PrivateLinearLayout",
+      "bounds": [
+        0,
+        84,
+        507,
+        241
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "settings"
+    },
+    {
+      "resource-id": "com.opera.mini.native.beta:id/settings_tab_disposition",
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.opera.android.settings.StatusButton",
+      "bounds": [
+        56,
+        242,
+        1384,
+        368
+      ],
+      "componentLabel": "Text Button",
+      "text": "New tabs"
+    },
+    {
+      "resource-id": "com.opera.mini.native.beta:id/settings_clear_browsing_data",
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.opera.android.settings.StatusButton",
+      "bounds": [
+        56,
+        369,
+        1384,
+        569
+      ],
+      "componentLabel": "Text Button",
+      "text": "Clear browsing data…"
+    },
+    {
+      "resource-id": "com.opera.mini.native.beta:id/settings_night_mode",
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.opera.android.settings.StatusButton",
+      "bounds": [
+        56,
+        570,
+        1384,
+        770
+      ],
+      "componentLabel": "Text Button",
+      "text": "Night mode…"
+    },
+    {
+      "resource-id": "com.opera.mini.native.beta:id/settings_fullscreen",
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.opera.android.settings.StatusButton",
+      "bounds": [
+        56,
+        771,
+        1384,
+        971
+      ],
+      "componentLabel": "Text Button",
+      "text": "Fullscreen"
+    },
+    {
+      "resource-id": "com.opera.mini.native.beta:id/settings_language",
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.opera.android.settings.StatusButton",
+      "bounds": [
+        56,
+        972,
+        1384,
+        1172
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "english"
+    },
+    {
+      "resource-id": "com.opera.mini.native.beta:id/settings_default_browser",
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.opera.android.settings.StatusButton",
+      "bounds": [
+        56,
+        1173,
+        1384,
+        1373
+      ],
+      "componentLabel": "Text Button",
+      "text": "Set as default browser…"
+    },
+    {
+      "resource-id": "com.opera.mini.native.beta:id/settings_facebook_notifications",
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.opera.android.settings.StatusButton",
+      "bounds": [
+        56,
+        1374,
+        1384,
+        1574
+      ],
+      "componentLabel": "Text Button",
+      "text": "Facebook notifications…"
+    },
+    {
+      "resource-id": "com.opera.mini.native.beta:id/settings_page_layout",
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.opera.android.settings.StatusButton",
+      "bounds": [
+        56,
+        1575,
+        1384,
+        1775
+      ],
+      "componentLabel": "Text Button",
+      "text": "Page layout"
+    },
+    {
+      "resource-id": "com.opera.mini.native.beta:id/settings_data_savings",
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.opera.android.settings.StatusButton",
+      "bounds": [
+        56,
+        1776,
+        1384,
+        1976
+      ],
+      "componentLabel": "Text Button",
+      "text": "Data savings"
+    },
+    {
+      "resource-id": "com.opera.mini.native.beta:id/settings_downloads",
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.opera.android.settings.StatusButton",
+      "bounds": [
+        56,
+        1977,
+        1384,
+        2177
+      ],
+      "componentLabel": "Text Button",
+      "text": "Downloads"
+    },
+    {
+      "resource-id": "com.opera.mini.native.beta:id/settings_advanced",
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.opera.android.settings.StatusButton",
+      "bounds": [
+        56,
+        2178,
+        1384,
+        2378
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "advanced"
+    },
+    {
+      "ancestors": [
+        "com.opera.android.custom_views.StylingTextView",
+        "cne",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "HELP",
+      "bounds": [
+        56,
+        2378,
+        1384,
+        2392
+      ],
+      "clickable": false,
+      "class": "com.opera.android.settings.Header",
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "com.opera.android.custom_views.StylingTextView",
+        "cne",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "NEW DOWNLOADS",
+      "bounds": [
+        56,
+        242,
+        1384,
+        407
+      ],
+      "clickable": false,
+      "class": "com.opera.android.settings.Header",
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "com.opera.mini.native.beta:id/downloads_location",
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.opera.android.custom_views.LayoutDirectionLinearLayout",
+      "bounds": [
+        56,
+        407,
+        1384,
+        607
+      ],
+      "componentLabel": "Text Button",
+      "textButtonClass": "download"
+    },
+    {
+      "resource-id": "com.opera.mini.native.beta:id/downloads_disposition",
+      "ancestors": [
+        "com.opera.android.custom_views.LayoutDirectionLinearLayout",
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.opera.android.settings.SwitchButton",
+      "bounds": [
+        56,
+        608,
+        1384,
+        808
+      ],
+      "componentLabel": "Text Button",
+      "text": "Always show download list"
+    },
+    {
+      "resource-id": "com.opera.mini.native.beta:id/downloads_confirm_all",
+      "ancestors": [
+        "com.opera.android.custom_views.LayoutDirectionLinearLayout",
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.opera.android.settings.SwitchButton",
+      "bounds": [
+        56,
+        809,
+        1384,
+        1009
+      ],
+      "componentLabel": "Text Button",
+      "text": "Ask before downloading"
+    },
+    {
+      "resource-id": "com.opera.mini.native.beta:id/downloads_wifi_postpone_action",
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.opera.android.settings.StatusButton",
+      "bounds": [
+        56,
+        1010,
+        1384,
+        1210
+      ],
+      "componentLabel": "Text Button",
+      "text": "Large downloads"
+    },
+    {
+      "ancestors": [
+        "com.opera.android.custom_views.StylingTextView",
+        "cne",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "text": "GENERAL",
+      "bounds": [
+        56,
+        1210,
+        1384,
+        1375
+      ],
+      "clickable": false,
+      "class": "com.opera.android.settings.Header",
+      "componentLabel": "Text"
+    },
+    {
+      "resource-id": "com.opera.mini.native.beta:id/downloads_concurrent_count",
+      "ancestors": [
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "com.opera.android.settings.StatusButton",
+      "bounds": [
+        56,
+        1375,
+        1384,
+        1575
+      ],
+      "componentLabel": "Text Button",
+      "text": "Concurrent downloads"
+    },
+    {
+      "iconClass": "arrow_backward",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.opera.mini.native.beta:id/actionbar_arrow",
+      "clickable": false,
+      "class": "com.opera.android.custom_views.StylingImageView",
+      "bounds": [
+        0,
+        85,
+        154,
+        239
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Download settings",
+      "resource-id": "com.opera.mini.native.beta:id/actionbar_title_text",
+      "ancestors": [
+        "cne",
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.opera.android.custom_views.StylingTextView",
+      "bounds": [
+        154,
+        84,
+        890,
+        241
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

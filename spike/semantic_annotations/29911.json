@@ -1,0 +1,652 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.reddit.frontpage:id/toolbar",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.reddit.frontpage:id/reddit_wordmark",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            196,
+            84,
+            396,
+            280
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageButton",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "com.reddit.frontpage:id/action_search",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            964,
+            98,
+            1132,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "filter_list",
+          "resource-id": "com.reddit.frontpage:id/action_sort",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.view.menu.ActionMenuItemView",
+          "bounds": [
+            1132,
+            98,
+            1300,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatImageView",
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            1300,
+            98,
+            1440,
+            266
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton",
+          "componentLabel": "Icon"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "iconClass": "add",
+      "ancestors": [
+        "com.getbase.floatingactionbutton.AddFloatingActionButton",
+        "com.getbase.floatingactionbutton.FloatingActionButton",
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.reddit.frontpage:id/fab_expand_menu_button",
+      "clickable": true,
+      "class": "com.getbase.floatingactionbutton.FloatingActionsMenu$1",
+      "bounds": [
+        1126,
+        2077,
+        1384,
+        2336
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        308,
+        1440,
+        702
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "r/Showerthoughts ",
+          "resource-id": "com.reddit.frontpage:id/link_alt_link_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            0,
+            308,
+            407,
+            420
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "• 4h",
+          "resource-id": "com.reddit.frontpage:id/time_posted_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            407,
+            308,
+            479,
+            420
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "My ability to proofread increases by 1000% after I hit \"Submit\".",
+          "resource-id": "com.reddit.frontpage:id/link_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.reddit.frontpage.ui.listing.newcard.RightIndentTextView",
+          "bounds": [
+            56,
+            420,
+            1384,
+            562
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "resource-id": "com.reddit.frontpage:id/share",
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.FrameLayout",
+          "bounds": [
+            961,
+            562,
+            1440,
+            702
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "share"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.reddit.frontpage:id/overflow_icon",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1335,
+            332,
+            1398,
+            395
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "arrow_upward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.reddit.frontpage:id/upvote",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            67,
+            590,
+            151,
+            674
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "19494",
+          "resource-id": "com.reddit.frontpage:id/score",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            179,
+            562,
+            299,
+            702
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_downward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.reddit.frontpage:id/downvote",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            327,
+            590,
+            411,
+            674
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "503",
+          "resource-id": "com.reddit.frontpage:id/comment_count",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.reddit.frontpage.widgets.DrawableTextView",
+          "bounds": [
+            620,
+            597,
+            818,
+            667
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        730,
+        1440,
+        2241
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Former CIA contractor teaches handgun basics. Proceeds to slowly lose his mind because he can't swear.",
+          "resource-id": "com.reddit.frontpage:id/link_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.reddit.frontpage.widgets.LinkTitleView",
+          "bounds": [
+            0,
+            842,
+            1440,
+            965
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "r/videos ",
+          "resource-id": "com.reddit.frontpage:id/link_alt_link_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            0,
+            730,
+            223,
+            842
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "• 4h",
+          "resource-id": "com.reddit.frontpage:id/time_posted_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            223,
+            730,
+            295,
+            842
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": " • youtu.be",
+          "resource-id": "com.reddit.frontpage:id/domain_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            295,
+            730,
+            493,
+            842
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "resource-id": "com.reddit.frontpage:id/share",
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.FrameLayout",
+          "bounds": [
+            961,
+            2101,
+            1440,
+            2241
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "share"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.reddit.frontpage:id/overflow_icon",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1335,
+            754,
+            1398,
+            817
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.reddit.frontpage:id/video_preview_image",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            0,
+            1021,
+            1440,
+            2101
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "play",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.reddit.frontpage:id/video_play_icon",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            636,
+            1477,
+            804,
+            1645
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "arrow_upward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.reddit.frontpage:id/upvote",
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            79,
+            2129,
+            163,
+            2213
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "6717",
+          "resource-id": "com.reddit.frontpage:id/score",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            191,
+            2101,
+            287,
+            2241
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "arrow_downward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.reddit.frontpage:id/downvote",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            315,
+            2129,
+            399,
+            2213
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "658",
+          "resource-id": "com.reddit.frontpage:id/comment_count",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.reddit.frontpage.widgets.DrawableTextView",
+          "bounds": [
+            620,
+            2136,
+            818,
+            2206
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        2269,
+        1440,
+        2392
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "text": "Cat before and after being called a good cat.",
+          "resource-id": "com.reddit.frontpage:id/link_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "com.reddit.frontpage.widgets.LinkTitleView",
+          "bounds": [
+            0,
+            2381,
+            1440,
+            2392
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "r/pics ",
+          "resource-id": "com.reddit.frontpage:id/link_alt_link_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            0,
+            2269,
+            177,
+            2381
+          ],
+          "componentLabel": "Text Button"
+        },
+        {
+          "text": "• 7h",
+          "resource-id": "com.reddit.frontpage:id/time_posted_label",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            177,
+            2269,
+            249,
+            2381
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "more",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.reddit.frontpage:id/overflow_icon",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1335,
+            2293,
+            1398,
+            2356
+          ],
+          "componentLabel": "Icon"
+        }
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

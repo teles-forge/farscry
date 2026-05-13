@@ -1,0 +1,267 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.fedex.ida.android:id/fedex_app_bar",
+      "children": [
+        {
+          "text": "Shipment List",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.widget.TextView",
+          "bounds": [
+            210,
+            135,
+            641,
+            228
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "search",
+          "resource-id": "com.fedex.ida.android:id/searchPackageMenuIcon",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.internal.view.menu.ActionMenuItemView",
+          "bounds": [
+            1104,
+            98,
+            1272,
+            266
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "",
+          "resource-id": "com.fedex.ida.android:id/scanBarcodeMenuIcon",
+          "ancestors": [
+            "android.support.v7.widget.AppCompatTextView",
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.internal.view.menu.ActionMenuItemView",
+          "bounds": [
+            1272,
+            98,
+            1440,
+            266
+          ],
+          "componentLabel": "Image"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "iconClass": "add",
+      "ancestors": [
+        "android.widget.ImageButton",
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.fedex.ida.android:id/fabTrack",
+      "clickable": true,
+      "class": "android.support.design.widget.FloatingActionButton",
+      "bounds": [
+        1188,
+        2140,
+        1384,
+        2336
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "resource-id": "com.fedex.ida.android:id/shipmentListSlidingTabLayout",
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "All",
+          "bounds": [
+            0,
+            280,
+            350,
+            448
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button",
+          "textButtonClass": "all"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "To me",
+          "bounds": [
+            350,
+            280,
+            700,
+            448
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "From me",
+          "bounds": [
+            700,
+            280,
+            1050,
+            448
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button"
+        },
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "text": "Watch list",
+          "bounds": [
+            1050,
+            280,
+            1400,
+            448
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "componentLabel": "Text Button"
+        }
+      ],
+      "ancestors": [
+        "android.widget.HorizontalScrollView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.fedex.ida.android.customcomponents.SlidingTabLayout",
+      "bounds": [
+        0,
+        280,
+        1440,
+        448
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "iconClass": "search",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "com.fedex.ida.android:id/ivShipmentListEmptyIcon",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        636,
+        962,
+        804,
+        1130
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "Nothing being tracked",
+      "resource-id": "com.fedex.ida.android:id/tvShipmentListEmptyHeader",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        412,
+        1309,
+        1027,
+        1394
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Anything you track will show up here.",
+      "resource-id": "com.fedex.ida.android:id/tvShipmentListEmptyBody",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatTextView",
+      "bounds": [
+        283,
+        1394,
+        1157,
+        1530
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

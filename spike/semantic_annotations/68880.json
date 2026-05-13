@@ -1,0 +1,548 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "ancestors": [
+        "android.support.v7.widget.Toolbar",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "class": "com.nbc.news.view.NbcToolBar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "clickable": true,
+      "children": [
+        {
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            154,
+            105,
+            350,
+            259
+          ],
+          "clickable": false,
+          "class": "android.widget.ImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            154,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/watch_live_icon",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            984,
+            143,
+            1111,
+            220
+          ],
+          "componentLabel": "Image"
+        },
+        {
+          "iconClass": "weather",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/weather_image",
+          "clickable": false,
+          "class": "com.android.volley.toolbox.NetworkImageView",
+          "bounds": [
+            1172,
+            127,
+            1281,
+            236
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "47°",
+          "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/weather_text",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1295,
+            127,
+            1440,
+            235
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/frame_layout",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            280,
+            1440,
+            298
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "componentLabel": "Image"
+        },
+        {
+          "ancestors": [
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "android.support.v7.widget.RecyclerView",
+          "bounds": [
+            0,
+            280,
+            1440,
+            2392
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/article_image_layout",
+              "children": [
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/article_image",
+                  "clickable": true,
+                  "class": "com.nbc.news.view.NetworkImageView",
+                  "bounds": [
+                    0,
+                    280,
+                    1440,
+                    660
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/article_type_image",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "bounds": [
+                    49,
+                    280,
+                    217,
+                    414
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "text": "How to Protect Yourself Against ATM Skimming",
+                  "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/headline",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NbcTextView",
+                  "bounds": [
+                    49,
+                    414,
+                    1391,
+                    660
+                  ],
+                  "componentLabel": "Text"
+                }
+              ],
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.widget.RelativeLayout",
+              "bounds": [
+                0,
+                280,
+                1440,
+                709
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.LinearLayout",
+              "bounds": [
+                0,
+                709,
+                1440,
+                1350
+              ],
+              "clickable": true,
+              "children": [
+                {
+                  "text": "DHS Worker Who Carried Loaded Gun at Work Gets 18 Months",
+                  "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/headline",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    49,
+                    1122,
+                    695,
+                    1301
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "Another Federal Employee Caught Watching Porn at Work",
+                  "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/right_headline",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    745,
+                    1122,
+                    1391,
+                    1301
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/article_image",
+                  "clickable": true,
+                  "class": "com.nbc.news.view.NetworkImageView",
+                  "bounds": [
+                    49,
+                    734,
+                    695,
+                    1097
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/right_article_image",
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NetworkImageView",
+                  "bounds": [
+                    745,
+                    734,
+                    1391,
+                    1097
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/right_article_type_image",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "bounds": [
+                    745,
+                    1048,
+                    913,
+                    1097
+                  ],
+                  "componentLabel": "Image"
+                }
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "class": "android.widget.LinearLayout",
+              "bounds": [
+                0,
+                1350,
+                1440,
+                1991
+              ],
+              "clickable": true,
+              "children": [
+                {
+                  "text": "'Super Speeding' Increasing in DC Area Despite Speed Cameras",
+                  "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/headline",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    49,
+                    1763,
+                    695,
+                    1942
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "text": "Distracted Driving Around Capitol Hill Is an Increasing Cause for Concern",
+                  "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/right_headline",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatTextView",
+                  "bounds": [
+                    745,
+                    1763,
+                    1391,
+                    1942
+                  ],
+                  "componentLabel": "Text"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/article_image",
+                  "clickable": true,
+                  "class": "com.nbc.news.view.NetworkImageView",
+                  "bounds": [
+                    49,
+                    1375,
+                    695,
+                    1738
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/article_type_image",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "bounds": [
+                    49,
+                    1689,
+                    217,
+                    1738
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/right_article_image",
+                  "clickable": false,
+                  "class": "com.nbc.news.view.NetworkImageView",
+                  "bounds": [
+                    745,
+                    1375,
+                    1391,
+                    1738
+                  ],
+                  "componentLabel": "Image"
+                },
+                {
+                  "ancestors": [
+                    "android.widget.ImageView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/right_article_type_image",
+                  "clickable": false,
+                  "class": "android.support.v7.widget.AppCompatImageView",
+                  "bounds": [
+                    745,
+                    1689,
+                    913,
+                    1738
+                  ],
+                  "componentLabel": "Image"
+                }
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/root_view",
+              "children": [
+                {
+                  "text": "CONSUMER RESOURCES",
+                  "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/headline",
+                  "ancestors": [
+                    "android.widget.TextView",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "clickable": true,
+                  "class": "com.nbc.news.view.NbcTextView",
+                  "bounds": [
+                    0,
+                    2040,
+                    854,
+                    2224
+                  ],
+                  "componentLabel": "Text Button"
+                }
+              ],
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.widget.RelativeLayout",
+              "bounds": [
+                0,
+                1991,
+                1440,
+                2224
+              ],
+              "componentLabel": "List Item"
+            },
+            {
+              "resource-id": "com.nbcuni.nbcots.nbcwashington.android:id/custom_html_container",
+              "children": [
+                {
+                  "ancestors": [
+                    "android.webkit.WebView",
+                    "android.widget.AbsoluteLayout",
+                    "android.view.ViewGroup",
+                    "android.view.View",
+                    "java.lang.Object"
+                  ],
+                  "bounds": [
+                    0,
+                    2224,
+                    1440,
+                    2297
+                  ],
+                  "clickable": true,
+                  "class": "com.nbc.news.view.NbcWebView",
+                  "componentLabel": "Web View"
+                }
+              ],
+              "ancestors": [
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "clickable": true,
+              "class": "android.widget.RelativeLayout",
+              "bounds": [
+                0,
+                2224,
+                1440,
+                2392
+              ],
+              "componentLabel": "List Item"
+            }
+          ],
+          "componentLabel": "List Item"
+        }
+      ],
+      "ancestors": [
+        "android.widget.RelativeLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.nbc.news.view.NbcLayout",
+      "bounds": [
+        0,
+        280,
+        1440,
+        2392
+      ],
+      "componentLabel": "Drawer"
+    }
+  ]
+}

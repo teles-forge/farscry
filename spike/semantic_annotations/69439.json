@@ -1,0 +1,1255 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "com.cg.android.babynames:id/toolbar",
+      "children": [
+        {
+          "iconClass": "menu",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "bounds": [
+            0,
+            84,
+            196,
+            280
+          ],
+          "clickable": true,
+          "class": "android.widget.ImageButton",
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Popular",
+          "resource-id": "com.cg.android.babynames:id/title_toolbar",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            196,
+            143,
+            1004,
+            220
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Year",
+          "resource-id": "com.cg.android.babynames:id/title_year",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1004,
+            152,
+            1128,
+            212
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "resource-id": "com.cg.android.babynames:id/spinner_year",
+          "ancestors": [
+            "android.widget.Spinner",
+            "android.widget.AbsSpinner",
+            "android.widget.AdapterView",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatSpinner",
+          "bounds": [
+            1128,
+            139,
+            1439,
+            224
+          ],
+          "componentLabel": "Text Button",
+          "text": "2013"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.Toolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        280
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "resource-id": "com.cg.android.babynames:id/adView",
+      "children": [
+        {
+          "ancestors": [
+            "android.widget.FrameLayout",
+            "android.view.ViewGroup",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "class": "com.google.android.gms.ads.internal.webview.n",
+          "bounds": [
+            160,
+            2217,
+            1280,
+            2392
+          ],
+          "clickable": false,
+          "children": [
+            {
+              "ancestors": [
+                "android.webkit.WebView",
+                "android.widget.AbsoluteLayout",
+                "android.view.ViewGroup",
+                "android.view.View",
+                "java.lang.Object"
+              ],
+              "bounds": [
+                160,
+                2217,
+                1280,
+                2392
+              ],
+              "clickable": true,
+              "class": "com.google.android.gms.ads.internal.webview.o",
+              "componentLabel": "Web View"
+            }
+          ],
+          "componentLabel": "Web View"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.google.android.gms.ads.AdView",
+      "bounds": [
+        0,
+        2217,
+        1440,
+        2392
+      ],
+      "componentLabel": "Advertisement"
+    },
+    {
+      "resource-id": "com.cg.android.babynames:id/popular_tab",
+      "children": [
+        {
+          "text": "All",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "bounds": [
+            0,
+            280,
+            480,
+            459
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "all"
+        },
+        {
+          "text": "GIRL",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "bounds": [
+            480,
+            280,
+            960,
+            459
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "girl"
+        },
+        {
+          "text": "BOY",
+          "ancestors": [
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": true,
+          "class": "android.widget.TextView",
+          "bounds": [
+            960,
+            280,
+            1440,
+            459
+          ],
+          "componentLabel": "Text Button",
+          "textButtonClass": "boy"
+        }
+      ],
+      "ancestors": [
+        "android.widget.HorizontalScrollView",
+        "android.widget.FrameLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "com.cg.android.babynames.utils.SlidingTabLayout",
+      "bounds": [
+        0,
+        280,
+        1440,
+        459
+      ],
+      "componentLabel": "Multi-Tab"
+    },
+    {
+      "resource-id": "com.cg.android.babynames:id/linearLayout_Populardetail",
+      "children": [
+        {
+          "text": "#1",
+          "resource-id": "com.cg.android.babynames:id/txt_rowNum",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            53,
+            534,
+            154,
+            607
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Noah",
+          "resource-id": "com.cg.android.babynames:id/txt_babyName",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            154,
+            524,
+            720,
+            618
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Gender: ",
+          "resource-id": "com.cg.android.babynames:id/txt_gender",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1041,
+            510,
+            1234,
+            570
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Unisex",
+          "resource-id": "com.cg.android.babynames:id/txt_babyGender",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1234,
+            508,
+            1387,
+            571
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Origin: ",
+          "resource-id": "com.cg.android.babynames:id/txt_origin",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1037,
+            573,
+            1202,
+            633
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Multiple",
+          "resource-id": "com.cg.android.babynames:id/txt_babyOrigin",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1202,
+            571,
+            1387,
+            634
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        459,
+        1440,
+        683
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.cg.android.babynames:id/linearLayout_Populardetail",
+      "children": [
+        {
+          "text": "#2",
+          "resource-id": "com.cg.android.babynames:id/txt_rowNum",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            53,
+            758,
+            154,
+            831
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Liam",
+          "resource-id": "com.cg.android.babynames:id/txt_babyName",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            154,
+            748,
+            720,
+            842
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Gender: ",
+          "resource-id": "com.cg.android.babynames:id/txt_gender",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1111,
+            734,
+            1304,
+            794
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Boy",
+          "resource-id": "com.cg.android.babynames:id/txt_babyGender",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1304,
+            732,
+            1387,
+            795
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Origin: ",
+          "resource-id": "com.cg.android.babynames:id/txt_origin",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1037,
+            797,
+            1202,
+            857
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Multiple",
+          "resource-id": "com.cg.android.babynames:id/txt_babyOrigin",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1202,
+            795,
+            1387,
+            858
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        683,
+        1440,
+        907
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.cg.android.babynames:id/linearLayout_Populardetail",
+      "children": [
+        {
+          "text": "#3",
+          "resource-id": "com.cg.android.babynames:id/txt_rowNum",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            53,
+            982,
+            154,
+            1055
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Jacob",
+          "resource-id": "com.cg.android.babynames:id/txt_babyName",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            154,
+            972,
+            720,
+            1066
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Gender: ",
+          "resource-id": "com.cg.android.babynames:id/txt_gender",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1111,
+            958,
+            1304,
+            1018
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Boy",
+          "resource-id": "com.cg.android.babynames:id/txt_babyGender",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1304,
+            956,
+            1387,
+            1019
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Origin: ",
+          "resource-id": "com.cg.android.babynames:id/txt_origin",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1037,
+            1021,
+            1202,
+            1081
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Multiple",
+          "resource-id": "com.cg.android.babynames:id/txt_babyOrigin",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1202,
+            1019,
+            1387,
+            1082
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        907,
+        1440,
+        1131
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.cg.android.babynames:id/linearLayout_Populardetail",
+      "children": [
+        {
+          "text": "#4",
+          "resource-id": "com.cg.android.babynames:id/txt_rowNum",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            53,
+            1206,
+            154,
+            1279
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Mason",
+          "resource-id": "com.cg.android.babynames:id/txt_babyName",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            154,
+            1196,
+            720,
+            1290
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Gender: ",
+          "resource-id": "com.cg.android.babynames:id/txt_gender",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1111,
+            1182,
+            1304,
+            1242
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Boy",
+          "resource-id": "com.cg.android.babynames:id/txt_babyGender",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1304,
+            1180,
+            1387,
+            1243
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Origin: ",
+          "resource-id": "com.cg.android.babynames:id/txt_origin",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1037,
+            1245,
+            1202,
+            1305
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Multiple",
+          "resource-id": "com.cg.android.babynames:id/txt_babyOrigin",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1202,
+            1243,
+            1387,
+            1306
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1131,
+        1440,
+        1355
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.cg.android.babynames:id/linearLayout_Populardetail",
+      "children": [
+        {
+          "text": "#5",
+          "resource-id": "com.cg.android.babynames:id/txt_rowNum",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            53,
+            1430,
+            154,
+            1503
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "William",
+          "resource-id": "com.cg.android.babynames:id/txt_babyName",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            154,
+            1420,
+            720,
+            1514
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Gender: ",
+          "resource-id": "com.cg.android.babynames:id/txt_gender",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1111,
+            1406,
+            1304,
+            1466
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Boy",
+          "resource-id": "com.cg.android.babynames:id/txt_babyGender",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1304,
+            1404,
+            1387,
+            1467
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Origin: ",
+          "resource-id": "com.cg.android.babynames:id/txt_origin",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1037,
+            1469,
+            1202,
+            1529
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Multiple",
+          "resource-id": "com.cg.android.babynames:id/txt_babyOrigin",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1202,
+            1467,
+            1387,
+            1530
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1355,
+        1440,
+        1579
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.cg.android.babynames:id/linearLayout_Populardetail",
+      "children": [
+        {
+          "text": "#6",
+          "resource-id": "com.cg.android.babynames:id/txt_rowNum",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            53,
+            1654,
+            154,
+            1727
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Ethan",
+          "resource-id": "com.cg.android.babynames:id/txt_babyName",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            154,
+            1644,
+            720,
+            1738
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Gender: ",
+          "resource-id": "com.cg.android.babynames:id/txt_gender",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1111,
+            1630,
+            1304,
+            1690
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Boy",
+          "resource-id": "com.cg.android.babynames:id/txt_babyGender",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1304,
+            1628,
+            1387,
+            1691
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Origin: ",
+          "resource-id": "com.cg.android.babynames:id/txt_origin",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1037,
+            1693,
+            1202,
+            1753
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Multiple",
+          "resource-id": "com.cg.android.babynames:id/txt_babyOrigin",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1202,
+            1691,
+            1387,
+            1754
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1579,
+        1440,
+        1803
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.cg.android.babynames:id/linearLayout_Populardetail",
+      "children": [
+        {
+          "text": "#7",
+          "resource-id": "com.cg.android.babynames:id/txt_rowNum",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            53,
+            1878,
+            154,
+            1951
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Michael",
+          "resource-id": "com.cg.android.babynames:id/txt_babyName",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            154,
+            1868,
+            720,
+            1962
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Gender: ",
+          "resource-id": "com.cg.android.babynames:id/txt_gender",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1041,
+            1854,
+            1234,
+            1914
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Unisex",
+          "resource-id": "com.cg.android.babynames:id/txt_babyGender",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1234,
+            1852,
+            1387,
+            1915
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Origin: ",
+          "resource-id": "com.cg.android.babynames:id/txt_origin",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1037,
+            1917,
+            1202,
+            1977
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Multiple",
+          "resource-id": "com.cg.android.babynames:id/txt_babyOrigin",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1202,
+            1915,
+            1387,
+            1978
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        1803,
+        1440,
+        2027
+      ],
+      "componentLabel": "List Item"
+    },
+    {
+      "resource-id": "com.cg.android.babynames:id/linearLayout_Populardetail",
+      "children": [
+        {
+          "text": "#8",
+          "resource-id": "com.cg.android.babynames:id/txt_rowNum",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            53,
+            2102,
+            154,
+            2175
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Alexander",
+          "resource-id": "com.cg.android.babynames:id/txt_babyName",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            154,
+            2092,
+            720,
+            2186
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Gender: ",
+          "resource-id": "com.cg.android.babynames:id/txt_gender",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1041,
+            2078,
+            1234,
+            2138
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Unisex",
+          "resource-id": "com.cg.android.babynames:id/txt_babyGender",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1234,
+            2076,
+            1387,
+            2139
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Origin: ",
+          "resource-id": "com.cg.android.babynames:id/txt_origin",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1037,
+            2141,
+            1202,
+            2201
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "Multiple",
+          "resource-id": "com.cg.android.babynames:id/txt_babyOrigin",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.AppCompatTextView",
+          "bounds": [
+            1202,
+            2139,
+            1387,
+            2202
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": true,
+      "class": "android.widget.LinearLayout",
+      "bounds": [
+        0,
+        2027,
+        1440,
+        2217
+      ],
+      "componentLabel": "List Item"
+    }
+  ]
+}

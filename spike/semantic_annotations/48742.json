@@ -1,0 +1,744 @@
+{
+  "ancestors": [
+    "android.widget.FrameLayout",
+    "android.view.ViewGroup",
+    "android.view.View",
+    "java.lang.Object"
+  ],
+  "class": "com.android.internal.policy.PhoneWindow$DecorView",
+  "bounds": [
+    0,
+    0,
+    1440,
+    2560
+  ],
+  "clickable": false,
+  "children": [
+    {
+      "resource-id": "ch.admin.meteoswiss:id/main_toolbar",
+      "children": [
+        {
+          "iconClass": "arrow_backward",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "ch.admin.meteoswiss:id/toolbar_menu_back",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            0,
+            84,
+            186,
+            259
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "iconClass": "info",
+          "ancestors": [
+            "android.widget.ImageView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "resource-id": "ch.admin.meteoswiss:id/toolbar_menu_info",
+          "clickable": true,
+          "class": "android.support.v7.widget.AppCompatImageView",
+          "bounds": [
+            1265,
+            84,
+            1440,
+            259
+          ],
+          "componentLabel": "Icon"
+        },
+        {
+          "text": "Local forecast",
+          "resource-id": "ch.admin.meteoswiss:id/toolbar_title",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.y",
+          "bounds": [
+            225,
+            107,
+            1265,
+            171
+          ],
+          "componentLabel": "Text"
+        },
+        {
+          "text": "1807 Blonay",
+          "resource-id": "ch.admin.meteoswiss:id/toolbar_subtitle_static",
+          "ancestors": [
+            "android.widget.TextView",
+            "android.view.View",
+            "java.lang.Object"
+          ],
+          "clickable": false,
+          "class": "android.support.v7.widget.y",
+          "bounds": [
+            225,
+            171,
+            525,
+            235
+          ],
+          "componentLabel": "Text"
+        }
+      ],
+      "ancestors": [
+        "android.widget.LinearLayout",
+        "android.view.ViewGroup",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "ch.admin.meteoswiss.toolbar.MetToolbar",
+      "bounds": [
+        0,
+        84,
+        1440,
+        270
+      ],
+      "componentLabel": "Toolbar"
+    },
+    {
+      "ancestors": [
+        "android.opengl.GLSurfaceView",
+        "android.view.SurfaceView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        0,
+        270,
+        1440,
+        2392
+      ],
+      "clickable": false,
+      "class": "ch.admin.meteoswiss.view.map.MapView",
+      "componentLabel": "Map View"
+    },
+    {
+      "text": "Forecast for the week",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.y",
+      "bounds": [
+        0,
+        558,
+        1440,
+        707
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Wed, 23:30",
+      "resource-id": "ch.admin.meteoswiss:id/plzdetail_current_time",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.y",
+      "bounds": [
+        49,
+        270,
+        897,
+        296
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "bounds": [
+        950,
+        270,
+        1440,
+        554
+      ],
+      "clickable": false,
+      "class": "ch.admin.meteoswiss.view.MapImageView",
+      "componentLabel": "Image"
+    },
+    {
+      "iconClass": "thumbs_up",
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "ch.admin.meteoswiss:id/plzdetail_current_icon",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        49,
+        331,
+        350,
+        505
+      ],
+      "componentLabel": "Icon"
+    },
+    {
+      "text": "2.2°",
+      "resource-id": "ch.admin.meteoswiss:id/plzdetail_current_temperature",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.y",
+      "bounds": [
+        350,
+        331,
+        897,
+        505
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "ch.admin.meteoswiss:id/plzdetail_weekday_icon",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        482,
+        738,
+        608,
+        864
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "0° | 3°",
+      "resource-id": "ch.admin.meteoswiss:id/plzdetail_weekday_temps",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.y",
+      "bounds": [
+        608,
+        768,
+        1104,
+        835
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "ch.admin.meteoswiss:id/plzdetail_weekday_rainicon",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        1104,
+        736,
+        1146,
+        867
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "4 mm",
+      "resource-id": "ch.admin.meteoswiss:id/plzdetail_weekday_prec",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.y",
+      "bounds": [
+        1146,
+        769,
+        1391,
+        833
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "ch.admin.meteoswiss:id/plzdetail_weekday_icon",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        482,
+        923,
+        608,
+        1049
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "0° | 2°",
+      "resource-id": "ch.admin.meteoswiss:id/plzdetail_weekday_temps",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.y",
+      "bounds": [
+        608,
+        953,
+        1104,
+        1020
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "ch.admin.meteoswiss:id/plzdetail_weekday_rainicon",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        1104,
+        921,
+        1146,
+        1052
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "6 mm",
+      "resource-id": "ch.admin.meteoswiss:id/plzdetail_weekday_prec",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.y",
+      "bounds": [
+        1146,
+        954,
+        1391,
+        1018
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "ch.admin.meteoswiss:id/plzdetail_weekday_icon",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        482,
+        1108,
+        608,
+        1234
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "-4° | -1°",
+      "resource-id": "ch.admin.meteoswiss:id/plzdetail_weekday_temps",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.y",
+      "bounds": [
+        608,
+        1138,
+        1104,
+        1205
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "ch.admin.meteoswiss:id/plzdetail_weekday_rainicon",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        1104,
+        1106,
+        1146,
+        1237
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "11 mm",
+      "resource-id": "ch.admin.meteoswiss:id/plzdetail_weekday_prec",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.y",
+      "bounds": [
+        1146,
+        1139,
+        1391,
+        1203
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "ch.admin.meteoswiss:id/plzdetail_weekday_icon",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        482,
+        1293,
+        608,
+        1419
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "-5° | -2°",
+      "resource-id": "ch.admin.meteoswiss:id/plzdetail_weekday_temps",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.y",
+      "bounds": [
+        608,
+        1323,
+        1104,
+        1390
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "ch.admin.meteoswiss:id/plzdetail_weekday_rainicon",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        1104,
+        1291,
+        1146,
+        1422
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "1 mm",
+      "resource-id": "ch.admin.meteoswiss:id/plzdetail_weekday_prec",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.y",
+      "bounds": [
+        1146,
+        1324,
+        1391,
+        1388
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "ch.admin.meteoswiss:id/plzdetail_weekday_icon",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        482,
+        1478,
+        608,
+        1604
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "-5° | -1°",
+      "resource-id": "ch.admin.meteoswiss:id/plzdetail_weekday_temps",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.y",
+      "bounds": [
+        608,
+        1508,
+        1104,
+        1575
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "ancestors": [
+        "android.widget.ImageView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "resource-id": "ch.admin.meteoswiss:id/plzdetail_weekday_rainicon",
+      "clickable": false,
+      "class": "android.support.v7.widget.AppCompatImageView",
+      "bounds": [
+        1104,
+        1476,
+        1146,
+        1607
+      ],
+      "componentLabel": "Image"
+    },
+    {
+      "text": "0 mm",
+      "resource-id": "ch.admin.meteoswiss:id/plzdetail_weekday_prec",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.y",
+      "bounds": [
+        1146,
+        1509,
+        1391,
+        1573
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Thursday",
+      "resource-id": "ch.admin.meteoswiss:id/plzdetail_weekday_day",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.y",
+      "bounds": [
+        49,
+        736,
+        482,
+        803
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "12. Jan",
+      "resource-id": "ch.admin.meteoswiss:id/plzdetail_weekday_date",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.y",
+      "bounds": [
+        49,
+        803,
+        482,
+        867
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Friday",
+      "resource-id": "ch.admin.meteoswiss:id/plzdetail_weekday_day",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.y",
+      "bounds": [
+        49,
+        921,
+        482,
+        988
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "13. Jan",
+      "resource-id": "ch.admin.meteoswiss:id/plzdetail_weekday_date",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.y",
+      "bounds": [
+        49,
+        988,
+        482,
+        1052
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Saturday",
+      "resource-id": "ch.admin.meteoswiss:id/plzdetail_weekday_day",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.y",
+      "bounds": [
+        49,
+        1106,
+        482,
+        1173
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "14. Jan",
+      "resource-id": "ch.admin.meteoswiss:id/plzdetail_weekday_date",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.y",
+      "bounds": [
+        49,
+        1173,
+        482,
+        1237
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Sunday",
+      "resource-id": "ch.admin.meteoswiss:id/plzdetail_weekday_day",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.y",
+      "bounds": [
+        49,
+        1291,
+        482,
+        1358
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "15. Jan",
+      "resource-id": "ch.admin.meteoswiss:id/plzdetail_weekday_date",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.y",
+      "bounds": [
+        49,
+        1358,
+        482,
+        1422
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "Monday",
+      "resource-id": "ch.admin.meteoswiss:id/plzdetail_weekday_day",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.y",
+      "bounds": [
+        49,
+        1476,
+        482,
+        1543
+      ],
+      "componentLabel": "Text"
+    },
+    {
+      "text": "16. Jan",
+      "resource-id": "ch.admin.meteoswiss:id/plzdetail_weekday_date",
+      "ancestors": [
+        "android.widget.TextView",
+        "android.view.View",
+        "java.lang.Object"
+      ],
+      "clickable": false,
+      "class": "android.support.v7.widget.y",
+      "bounds": [
+        49,
+        1543,
+        482,
+        1607
+      ],
+      "componentLabel": "Text"
+    }
+  ]
+}

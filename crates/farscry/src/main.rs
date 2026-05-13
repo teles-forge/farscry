@@ -2,6 +2,8 @@ use anyhow::{Context, Result};
 use clap::{Parser, Subcommand};
 use farscry_core::{Pipeline, VaspOutput};
 use image::GenericImageView;
+use serde::{Deserialize, Serialize};
+use std::io::Read;
 use std::path::{Path, PathBuf};
 use std::process;
 use std::sync::{Arc, OnceLock};
@@ -54,7 +56,6 @@ enum Commands {
 
     Diff {
         before: PathBuf,
-
         after: PathBuf,
 
         #[arg(long)]
@@ -75,6 +76,14 @@ enum Commands {
     },
 
     Setup,
+
+    Paste {
+        #[arg(long)]
+        agent: Option<String>,
+
+        #[arg(trailing_var_arg = true)]
+        prompt: Vec<String>,
+    },
 }
 
 #[tokio::main]
@@ -109,27 +118,31 @@ async fn main() {
                 extract_images(paths, opts, &lang, max_size_bytes)
             }
         }
-        Commands::Diff {
-            before,
-            after,
-            json,
-        } => diff_images(before, after, json),
+        Commands::Diff { before, after, json } => diff_images(before, after, json),
         Commands::Serve { mcp, port } => serve_mcp(mcp, port).await,
         Commands::InstallLang { lang } => install_lang(lang),
         Commands::Setup => setup(),
+        Commands::Paste { agent, prompt } => {
+            let prompt_str = if prompt.is_empty() {
+                None
+            } else {
+                Some(prompt.join(" "))
+            };
+            paste(agent.as_deref(), prompt_str.as_deref())
+        }
     };
 
     match result {
         Ok(_) => process::exit(0),
         Err(e) => {
             eprintln!("Error: {}", e);
-
             let exit_code = if e.to_string().contains("file not found")
                 || e.to_string().contains("invalid input")
                 || e.to_string().contains("not an image")
             {
                 1
-            } else if e.to_string().contains("OCR failed") || e.to_string().contains("model error")
+            } else if e.to_string().contains("OCR failed")
+                || e.to_string().contains("model error")
             {
                 2
             } else if e.to_string().contains("language not installed")
@@ -198,7 +211,6 @@ fn extract_images(
     }
 
     let pipeline = get_or_build_pipeline()?;
-
     let results = pipeline.process_batch(paths.clone());
 
     let mut combined = String::new();
@@ -210,11 +222,9 @@ fn extract_images(
         let output = batch_result
             .output
             .map_err(|e| anyhow::anyhow!("{}: {}", path.display(), e))?;
-
         let (width, height) = image::open(path)
             .map(|img| img.dimensions())
             .unwrap_or((1920, 1080));
-
         let text = format_output(&output, &path.to_string_lossy(), width, height, &opts);
         combined.push_str(&text);
         if !text.ends_with('\n') {
@@ -228,7 +238,7 @@ fn extract_images(
 fn extract_from_clipboard(opts: ExtractOpts, _lang: &str, max_size: u64) -> Result<()> {
     #[cfg(target_os = "macos")]
     {
-        let image_data = read_clipboard_png_macos()?;
+        let (image_data, source_label) = read_clipboard_image_macos()?;
         let temp_path = PathBuf::from("/tmp/farscry_clipboard.png");
         std::fs::write(&temp_path, image_data)?;
 
@@ -236,7 +246,7 @@ fn extract_from_clipboard(opts: ExtractOpts, _lang: &str, max_size: u64) -> Resu
         let (width, height) = image::open(&temp_path)
             .map(|img| img.dimensions())
             .unwrap_or((1920, 1080));
-        let text = format_output(&output, "clipboard", width, height, &opts);
+        let text = format_output(&output, &source_label, width, height, &opts);
         write_output(&text, opts.output.as_ref())
     }
 
@@ -360,7 +370,6 @@ fn install_lang(langs: Vec<String>) -> Result<()> {
     let models_dir = resolve_models_dir();
     if let Some(lang) = langs.first() {
         eprintln!("[farscry] Installing language model: {lang}");
-
         eprintln!(
             "[farscry] Place model files manually at: {}",
             models_dir.display()
@@ -372,8 +381,63 @@ fn install_lang(langs: Vec<String>) -> Result<()> {
     Ok(())
 }
 
+fn agent_in_path(binary: &str) -> bool {
+    std::process::Command::new("which")
+        .arg(binary)
+        .output()
+        .map(|o| o.status.success())
+        .unwrap_or(false)
+}
+
+fn readline_prompt(prompt: &str) -> String {
+    use std::io::Write;
+    print!("{}", prompt);
+    std::io::stdout().flush().ok();
+    let mut input = String::new();
+    std::io::stdin().read_line(&mut input).ok();
+    input.trim().to_string()
+}
+
 fn setup() -> Result<()> {
-    let snippet = r#"{
+    let home = dirs::home_dir().unwrap_or_else(|| PathBuf::from("."));
+    let zshrc = home.join(".zshrc");
+
+    println!("farscry v0.1.0 — setup\n");
+
+    let agents: &[(&str, &str, &str)] = &[
+        ("claude", "Claude Code", "farscry extract --from-clipboard | claude -p \"fix this\""),
+        ("devin",  "Devin",       "devin -p \"$(farscry extract --from-clipboard) — fix this\""),
+        ("codex",  "Codex",       "farscry extract --from-clipboard | codex exec \"fix this:\""),
+        ("aider",  "Aider",       "aider --message \"$(farscry extract --from-clipboard)\""),
+    ];
+
+    let mut detected: Vec<usize> = Vec::new();
+    for (i, (bin, _, _)) in agents.iter().enumerate() {
+        if agent_in_path(bin) {
+            detected.push(i);
+        }
+    }
+
+    if detected.is_empty() {
+        println!("No agent CLIs detected in PATH.");
+        println!("Checked: claude, devin, codex, aider\n");
+    } else {
+        let names: Vec<&str> = detected.iter().map(|&i| agents[i].1).collect();
+        println!("Detected agents: {}\n", names.join(", "));
+    }
+
+    println!("Which agent do you want to use with ffix?");
+    for (i, (bin, name, _)) in agents.iter().enumerate() {
+        let tag = if agent_in_path(bin) { "(detected)" } else { "(not installed)" };
+        println!("  {}. {} {}", i + 1, name, tag);
+    }
+    println!("  {}. Configure multiple aliases", agents.len() + 1);
+    println!("  {}. Skip\n", agents.len() + 2);
+
+    let choice_str = readline_prompt("Choice: ");
+    let choice: usize = choice_str.parse().unwrap_or(agents.len() + 2);
+
+    let mcp_snippet = r#"{
   "mcpServers": {
     "farscry": {
       "command": "farscry",
@@ -382,53 +446,204 @@ fn setup() -> Result<()> {
   }
 }"#;
 
-    let home = dirs::home_dir().unwrap_or_else(|| PathBuf::from("."));
+    if choice >= 1 && choice <= agents.len() {
+        let (_, name, alias_cmd) = agents[choice - 1];
+        println!("\nRun this to add ffix to your shell:\n");
+        println!(
+            "  echo \"alias ffix='{alias_cmd}'\" >> {} && source {}",
+            zshrc.display(),
+            zshrc.display()
+        );
+        println!("\nThen: screenshot → type ffix → Enter\n");
 
-    let agents: &[(&str, &str)] = &[
-        ("Claude Code", ".claude/mcp.json"),
-        ("Cursor", ".cursor/mcp.json"),
-        ("Windsurf", ".windsurf/mcp.json"),
-        ("Zed", ".config/zed/settings.json"),
-    ];
-
-    let mut detected: Vec<&str> = Vec::new();
-    for (name, rel) in agents {
-        if home.join(rel).exists() {
-            detected.push(name);
+        let preferred = agents[choice - 1].0;
+        write_farscry_config(preferred, "fix this")?;
+        println!("Saved preferred agent: {name}");
+    } else if choice == agents.len() + 1 {
+        println!("\nAdd these aliases to your shell:\n");
+        for (_, name, alias_cmd) in agents {
+            if name == &"Claude Code" {
+                println!("  echo \"alias ffix='{alias_cmd}'\" >> {}", zshrc.display());
+            } else {
+                let short = name.to_lowercase().replace(' ', "-");
+                println!(
+                    "  echo \"alias ffix-{short}='{alias_cmd}'\" >> {}",
+                    zshrc.display()
+                );
+            }
         }
-    }
-
-    println!("farscry v0.1.0\n");
-
-    if detected.is_empty() {
-        println!("No MCP-compatible agents detected.");
-        println!("Checked: Claude Code, Cursor, Windsurf, Zed\n");
+        println!("  source {}\n", zshrc.display());
     } else {
-        println!("Detected: {}\n", detected.join(", "));
+        println!("\nSkipped alias setup.\n");
     }
 
-    println!("Add this to your agent's MCP config (paste manually):\n");
-    println!("{snippet}\n");
+    println!("─────────────────────────────────────────");
+    println!("Zero-friction alias (recommended):\n");
+    println!("  echo \"alias fp='farscry paste'\" >> {} && source {}", zshrc.display(), zshrc.display());
+    println!("\nThen: screenshot → fp → done.\n");
 
-    println!("Config file locations:");
-    for (name, rel) in agents {
+    println!("─────────────────────────────────────────");
+    println!("MCP integration (automatic, no alias needed):\n");
+    println!("{mcp_snippet}\n");
+
+    let mcp_agents: &[(&str, &str)] = &[
+        ("Claude Code", ".claude/mcp.json"),
+        ("Cursor",      ".cursor/mcp.json"),
+        ("Windsurf",    ".windsurf/mcp.json"),
+        ("Zed",         ".config/zed/settings.json"),
+    ];
+    for (name, rel) in mcp_agents {
         let path = home.join(rel);
         let status = if path.exists() { "found" } else { "not found" };
         println!("  {name:12} {status:10} {}", path.display());
     }
+    println!("\nfarscry never modifies your config files automatically.\n");
 
-    println!("\nfarscry never modifies your config files automatically.");
+    let open = readline_prompt(&format!("Open {} in your editor? (y/N) ", zshrc.display()));
+    if open.eq_ignore_ascii_case("y") {
+        let editor = std::env::var("EDITOR").unwrap_or_else(|_| "open".to_string());
+        let _ = std::process::Command::new(&editor).arg(&zshrc).spawn();
+    }
 
-    println!("\n{}", "─".repeat(50));
-    println!("Optional: zero-friction clipboard workflow");
-    println!("{}\n", "─".repeat(50));
-    println!("Capture any screenshot, then run:\n");
-    println!("  ffix\n");
-    println!("To enable, add this to your ~/.zshrc:\n");
-    println!("  echo \"alias ffix='farscry --from-clipboard | claude \\\"fix this\\\"'\" >> ~/.zshrc && source ~/.zshrc\n");
-    println!("Then: Shottr screenshot -> type 'ffix' -> Enter");
-    println!("Works with any screenshot tool that copies to clipboard.");
+    Ok(())
+}
 
+#[derive(Debug, Serialize, Deserialize, Default)]
+struct FarscryConfig {
+    agent: Option<AgentConfig>,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+struct AgentConfig {
+    preferred: String,
+    default_prompt: String,
+}
+
+fn config_path() -> PathBuf {
+    dirs::home_dir()
+        .unwrap_or_else(|| PathBuf::from("."))
+        .join(".farscry")
+        .join("config.toml")
+}
+
+fn read_farscry_config() -> FarscryConfig {
+    let path = config_path();
+    std::fs::read_to_string(&path)
+        .ok()
+        .and_then(|s| toml::from_str(&s).ok())
+        .unwrap_or_default()
+}
+
+fn write_farscry_config(agent: &str, default_prompt: &str) -> Result<()> {
+    let path = config_path();
+    if let Some(parent) = path.parent() {
+        std::fs::create_dir_all(parent)?;
+    }
+    let cfg = FarscryConfig {
+        agent: Some(AgentConfig {
+            preferred: agent.to_string(),
+            default_prompt: default_prompt.to_string(),
+        }),
+    };
+    let content = toml::to_string_pretty(&cfg)?;
+    std::fs::write(&path, content)?;
+    Ok(())
+}
+
+fn paste(agent_override: Option<&str>, prompt_override: Option<&str>) -> Result<()> {
+    let cfg = read_farscry_config();
+
+    let agent = if let Some(a) = agent_override {
+        a.to_string()
+    } else if let Some(ref a) = cfg.agent {
+        a.preferred.clone()
+    } else {
+        let choice = readline_prompt(
+            "Which agent? (claude / devin / codex) [claude]: "
+        );
+        let chosen = if choice.is_empty() {
+            "claude".to_string()
+        } else {
+            choice
+        };
+        let prompt_default = prompt_override.unwrap_or("fix this").to_string();
+        write_farscry_config(&chosen, &prompt_default)?;
+        println!("Saved. Next time just run: farscry paste\n");
+        chosen
+    };
+
+    let prompt = prompt_override
+        .map(|s| s.to_string())
+        .or_else(|| cfg.agent.as_ref().map(|a| a.default_prompt.clone()))
+        .unwrap_or_else(|| "fix this".to_string());
+
+    let vasp = capture_clipboard_vasp()?;
+
+    dispatch_to_agent(&agent, &vasp, &prompt)
+}
+
+fn capture_clipboard_vasp() -> Result<String> {
+    #[cfg(target_os = "macos")]
+    {
+        let (image_data, _) = read_clipboard_image_macos()?;
+        let temp_path = PathBuf::from("/tmp/farscry_paste.png");
+        std::fs::write(&temp_path, image_data)?;
+        let output = process_image(&temp_path, 50_000_000)?;
+        let (w, h) = image::open(&temp_path)
+            .map(|i| i.dimensions())
+            .unwrap_or((1920, 1080));
+        Ok(farscry_formatter::VaspFormatter::format_vasp_with_options(
+            &output, "clipboard", w, h, true,
+        ))
+    }
+
+    #[cfg(not(target_os = "macos"))]
+    {
+        anyhow::bail!("farscry paste currently requires macOS");
+    }
+}
+
+fn dispatch_to_agent(agent: &str, vasp: &str, prompt: &str) -> Result<()> {
+    match agent {
+        "claude" => {
+            let mut child = std::process::Command::new("claude")
+                .args(["-p", prompt])
+                .stdin(std::process::Stdio::piped())
+                .spawn()
+                .context("claude not found in PATH")?;
+            if let Some(stdin) = child.stdin.take() {
+                use std::io::Write;
+                let mut w = stdin;
+                writeln!(w, "{vasp}")?;
+            }
+            child.wait()?;
+        }
+        "devin" => {
+            let full_prompt = format!("{vasp}\n\n{prompt}");
+            std::process::Command::new("devin")
+                .args(["-p", &full_prompt])
+                .status()
+                .context("devin not found in PATH")?;
+        }
+        "codex" => {
+            let mut child = std::process::Command::new("codex")
+                .args(["exec", prompt])
+                .stdin(std::process::Stdio::piped())
+                .spawn()
+                .context("codex not found in PATH")?;
+            if let Some(stdin) = child.stdin.take() {
+                use std::io::Write;
+                let mut w = stdin;
+                writeln!(w, "{vasp}")?;
+            }
+            child.wait()?;
+        }
+        other => {
+            anyhow::bail!(
+                "Unknown agent: {other}. Supported: claude, devin, codex"
+            );
+        }
+    }
     Ok(())
 }
 
@@ -567,12 +782,22 @@ fn validate_image(path: &Path, max_size: u64) -> Result<()> {
     let mut magic = [0u8; 8];
     file.read_exact(&mut magic)?;
 
-    let is_png = magic.starts_with(&[0x89, 0x50, 0x4E, 0x47]);
-    let is_jpg = magic.starts_with(&[0xFF, 0xD8, 0xFF]);
+    let is_png  = magic.starts_with(&[0x89, 0x50, 0x4E, 0x47]);
+    let is_jpg  = magic.starts_with(&[0xFF, 0xD8, 0xFF]);
     let is_webp = magic.starts_with(&[0x52, 0x49, 0x46, 0x46]);
-    let is_gif = magic.starts_with(&[0x47, 0x49, 0x46, 0x38]);
+    let is_gif  = magic.starts_with(&[0x47, 0x49, 0x46, 0x38]);
+    let is_tiff = magic.starts_with(&[0x49, 0x49, 0x2A, 0x00])
+        || magic.starts_with(&[0x4D, 0x4D, 0x00, 0x2A]);
+    let is_pdf  = magic.starts_with(b"%PDF");
+    let is_svg  = magic.starts_with(b"<svg") || magic.starts_with(b"<?xm");
 
-    if !is_png && !is_jpg && !is_webp && !is_gif {
+    if is_pdf {
+        anyhow::bail!("PDF not supported. Export as PNG first.");
+    }
+    if is_svg {
+        anyhow::bail!("SVG not supported. Export as PNG first.");
+    }
+    if !is_png && !is_jpg && !is_webp && !is_gif && !is_tiff {
         anyhow::bail!("not an image file: {}", path.display());
     }
 
@@ -585,9 +810,80 @@ fn validate_image(path: &Path, max_size: u64) -> Result<()> {
     Ok(())
 }
 
+fn check_clipboard_file_path(text: &str) -> Option<PathBuf> {
+    let path = PathBuf::from(text.trim());
+    if path.exists() && path.is_file() {
+        return Some(path);
+    }
+    None
+}
+
+fn supported_image_extension(path: &Path) -> Result<()> {
+    let ext = path
+        .extension()
+        .and_then(|e| e.to_str())
+        .unwrap_or("")
+        .to_lowercase();
+    match ext.as_str() {
+        "png" | "jpg" | "jpeg" | "gif" | "webp" | "tiff" | "tif" => Ok(()),
+        "pdf" => anyhow::bail!("PDF not supported. Export as PNG first."),
+        "svg" => anyhow::bail!("SVG not supported. Export as PNG first."),
+        other => anyhow::bail!(
+            "File type .{other} not supported. Use PNG or JPG."
+        ),
+    }
+}
+
 #[cfg(target_os = "macos")]
-fn read_clipboard_png_macos() -> Result<Vec<u8>> {
+fn read_clipboard_image_macos() -> Result<(Vec<u8>, String)> {
     use std::process::Command;
+
+    let type_script = r#"
+set cTypes to (clipboard info)
+set typeList to {}
+repeat with t in cTypes
+    set end of typeList to (class of t) as string
+end repeat
+return typeList as string"#;
+
+    let type_result = Command::new("osascript")
+        .arg("-e")
+        .arg(type_script)
+        .output()?;
+    let type_str = String::from_utf8_lossy(&type_result.stdout).to_lowercase();
+
+    if type_str.contains("«class utf8»")
+        || type_str.contains("«class utxt»")
+        || type_str.contains("string")
+    {
+        let text_script = r#"return (the clipboard as string)"#;
+        let text_result = Command::new("osascript")
+            .arg("-e")
+            .arg(text_script)
+            .output()?;
+        let clipboard_text = String::from_utf8_lossy(&text_result.stdout);
+        let text = clipboard_text.trim();
+
+        if text.is_empty() {
+            anyhow::bail!("Clipboard is empty.");
+        }
+
+        if let Some(file_path) = check_clipboard_file_path(text) {
+            supported_image_extension(&file_path)?;
+            let data = std::fs::read(&file_path)?;
+            let label = file_path.file_name()
+                .and_then(|n| n.to_str())
+                .unwrap_or("file")
+                .to_string();
+            return Ok((data, label));
+        }
+
+        anyhow::bail!("Clipboard contains text, not an image.");
+    }
+
+    if type_str.contains("pdf") {
+        anyhow::bail!("PDF not supported. Export as PNG first.");
+    }
 
     let script = r#"
 set out to "/tmp/farscry_clipboard.png"
@@ -600,22 +896,33 @@ try
     close access f
     return out
 on error
-    set d to (the clipboard as TIFF picture)
-    set f to open for access POSIX file tiff with write permission
-    set eof of f to 0
-    write d to f
-    close access f
-    do shell script "sips -s format png " & quoted form of tiff & " --out " & quoted form of out
-    return out
+    try
+        set d to (the clipboard as TIFF picture)
+        set f to open for access POSIX file tiff with write permission
+        set eof of f to 0
+        write d to f
+        close access f
+        do shell script "sips -s format png " & quoted form of tiff & " --out " & quoted form of out
+        return out
+    on error
+        return ""
+    end try
 end try"#;
 
     let result = Command::new("osascript").arg("-e").arg(script).output()?;
 
-    if !result.status.success() {
-        anyhow::bail!("No image in clipboard");
+    if !result.status.success() || result.stdout.is_empty() {
+        anyhow::bail!("Clipboard is empty.");
     }
 
-    std::fs::read("/tmp/farscry_clipboard.png").context("Failed to read clipboard image")
+    let out_path = String::from_utf8_lossy(&result.stdout).trim().to_string();
+    if out_path.is_empty() {
+        anyhow::bail!("Clipboard is empty.");
+    }
+
+    let data = std::fs::read("/tmp/farscry_clipboard.png")
+        .context("Failed to read clipboard image")?;
+    Ok((data, "clipboard".to_string()))
 }
 
 #[cfg(target_os = "linux")]
@@ -642,5 +949,3 @@ fn read_clipboard_png_linux() -> Result<Vec<u8>> {
 
     anyhow::bail!("No image in clipboard (requires xclip or wl-paste)")
 }
-
-use std::io::Read;

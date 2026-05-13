@@ -76,40 +76,49 @@ affordances:
 
 ## Agent integrations
 
-### Claude Code / Cursor / Windsurf / Zed (MCP)
-
+### Setup (recommended)
 ```bash
 farscry setup
 ```
+Detects claude, devin, codex, aider. Shows the alias to add and MCP config to paste. Saves your preferred agent to `~/.farscry/config.toml`.
 
-Auto-detects your agent and shows the config snippet to paste.
-
-```json
-{
-  "mcpServers": {
-    "farscry": {
-      "command": "farscry",
-      "args": ["serve", "--mcp"]
-    }
-  }
-}
-```
-
-### Any terminal agent (pipe)
-
+### Zero-friction workflow
 ```bash
-farscry --from-clipboard | claude "fix this"
-farscry --from-clipboard | devin "fix this"
-farscry screen.png | codex "fix this"
+echo "alias fp='farscry paste'" >> ~/.zshrc && source ~/.zshrc
+
+# Every time after: screenshot → fp → done
+fp
+fp "explain this error"
+fp --agent devin
 ```
 
-### Devin Web (API preprocessing)
-
+### Claude Code
 ```bash
-vasp=$(farscry screen.png)
+farscry extract screen.png | claude -p "fix this"
+farscry extract --from-clipboard | claude -p "fix this"
 ```
 
-Include `$vasp` in your Devin prompt before sending.
+### Devin
+```bash
+devin -p "$(farscry extract screen.png) — fix this"
+devin -p "$(farscry extract --from-clipboard) — fix this"
+```
+
+### Codex
+```bash
+farscry extract screen.png | codex exec "fix this:"
+farscry extract --from-clipboard | codex exec "fix this:"
+```
+
+### MCP (all agents)
+```bash
+farscry serve --mcp
+```
+Supports multiple images via `image_paths` parameter.
+
+### Supported image formats
+PNG, JPEG, GIF, WEBP, TIFF — from clipboard, file, or stdin.
+From clipboard: Cmd+Shift+4, Shottr, or Cmd+C on an image file in Finder.
 
 ## License
 

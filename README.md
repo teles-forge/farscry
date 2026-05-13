@@ -120,8 +120,8 @@ farscry extract --from-clipboard | claude -p "fix this"
 
 ### Devin
 ```bash
-devin -p "$(farscry extract screen.png) — fix this"
-devin -p "$(farscry extract --from-clipboard) — fix this"
+devin -p "$(farscry extract screen.png): fix this"
+devin -p "$(farscry extract --from-clipboard): fix this"
 ```
 
 ### Codex
@@ -137,7 +137,7 @@ farscry serve --mcp
 Supports multiple images via `image_paths` parameter.
 
 ### Supported image formats
-PNG, JPEG, GIF, WEBP, TIFF — from clipboard, file, or stdin.
+PNG, JPEG, GIF, WEBP, TIFF. From clipboard, file, or stdin.
 From clipboard: Cmd+Shift+4, Shottr, or Cmd+C on an image file in Finder.
 
 ## License

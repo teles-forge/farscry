@@ -419,6 +419,16 @@ fn setup() -> Result<()> {
 
     println!("\nfarscry never modifies your config files automatically.");
 
+    println!("\n{}", "─".repeat(50));
+    println!("Optional: zero-friction clipboard workflow");
+    println!("{}\n", "─".repeat(50));
+    println!("Capture any screenshot, then run:\n");
+    println!("  ffix\n");
+    println!("To enable, add this to your ~/.zshrc:\n");
+    println!("  echo \"alias ffix='farscry --from-clipboard | claude \\\"fix this\\\"'\" >> ~/.zshrc && source ~/.zshrc\n");
+    println!("Then: Shottr screenshot -> type 'ffix' -> Enter");
+    println!("Works with any screenshot tool that copies to clipboard.");
+
     Ok(())
 }
 

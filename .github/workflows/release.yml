@@ -288,3 +288,33 @@ jobs:
         env:
           CARGO_REGISTRY_TOKEN: ${{ secrets.CARGO_REGISTRY_TOKEN }}
         run: cargo publish -p farscry --no-verify || true
+
+  publish-homebrew:
+    name: Update Homebrew tap
+    needs: [finalize-release]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get ARM64 SHA256
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          ARM_SHA=$(gh release download "${{ github.ref_name }}" \
+            --pattern "farscry-aarch64-apple-darwin.sha256" \
+            --output - \
+            --repo "${{ github.repository }}" | awk '{print $1}')
+          echo "ARM_SHA=$ARM_SHA" >> $GITHUB_ENV
+
+      - name: Update Homebrew formula
+        env:
+          GH_TOKEN: ${{ secrets.HOMEBREW_TAP_TOKEN }}
+        run: |
+          git clone https://x-access-token:${{ secrets.HOMEBREW_TAP_TOKEN }}@github.com/teles-forge/homebrew-farscry.git
+          cd homebrew-farscry
+          VERSION="${GITHUB_REF_NAME#v}"
+          sed -i "s/version \".*\"/version \"$VERSION\"/" Formula/farscry.rb
+          sed -i "s/PLACEHOLDER_ARM64/${{ env.ARM_SHA }}/" Formula/farscry.rb
+          git config user.email "ci@farscry.dev"
+          git config user.name "farscry-ci"
+          git add Formula/farscry.rb
+          git diff --staged --quiet || git commit -m "farscry $VERSION"
+          git push

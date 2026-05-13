@@ -23,7 +23,7 @@ farscry gives exact typed coordinates from any image.
 Local. Free. Deterministic. No API key. No GPU.
 
 ```
-farscry screenshot.png
+farscry extract screenshot.png
 ```
 
 ```
@@ -57,8 +57,8 @@ without sending them to a cloud API every time.
 1. **Extract**: any image -> typed coordinates
 
 ```bash
-farscry error.png | claude "fix this"
-farscry figma.png | claude "build this component"
+farscry extract error.png | claude -p "fix this"
+farscry extract figma.png | claude -p "build this component"
 ```
 
 2. **Diff**: what changed between two states

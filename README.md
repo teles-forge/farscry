@@ -37,7 +37,7 @@ curl -fsSL https://farscry.dev/install | sh
 ## Quick start
 
 ```bash
-# Describe any image — returns coordinates
+# Describe any image, returns coordinates
 farscry screen.png
 
 # Diff before/after an action
@@ -60,7 +60,7 @@ Detects: error messages · UI fields + values · terminal output · conversation
 
 ## Output (VASP format)
 
-~175 tokens average. Typed elements with exact pixel coordinates — not descriptions.
+~175 tokens average. Typed elements with exact pixel coordinates, not descriptions.
 
 ```
 === farscry visual context ===

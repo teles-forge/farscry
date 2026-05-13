@@ -61,6 +61,30 @@ Config snippet for Claude/Cursor/Windsurf:
 }
 ```
 
+**Agent integrations:**
+
+```bash
+farscry setup
+```
+
+Auto-detects Claude Code, Cursor, Windsurf, or Zed and shows the config snippet to paste.
+
+```json
+{
+  "mcpServers": {
+    "farscry": { "command": "farscry", "args": ["serve", "--mcp"] }
+  }
+}
+```
+
+Any terminal agent via pipe:
+
+```bash
+farscry --from-clipboard | claude "fix this"
+farscry --from-clipboard | devin "fix this"
+farscry screen.png | codex "fix this"
+```
+
 **Install:**
 
 ```bash

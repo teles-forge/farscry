@@ -76,13 +76,42 @@ affordances:
   type  → "Max Value"     at (200,120)  current:"1500"
 ```
 
-## Integrations
+## Agent integrations
 
-Works with any agent that accepts text:
+### Claude Code / Cursor / Windsurf / Zed (MCP)
 
-- **Devin CLI**: `farscry screen.png | devin "fix this"`
-- **Claude Code**: `farscry screen.png | claude`
-- **MCP server**: `farscry serve --mcp`
+```bash
+farscry setup
+```
+
+Auto-detects your agent and shows the config snippet to paste.
+
+```json
+{
+  "mcpServers": {
+    "farscry": {
+      "command": "farscry",
+      "args": ["serve", "--mcp"]
+    }
+  }
+}
+```
+
+### Any terminal agent (pipe)
+
+```bash
+farscry --from-clipboard | claude "fix this"
+farscry --from-clipboard | devin "fix this"
+farscry screen.png | codex "fix this"
+```
+
+### Devin Web (API preprocessing)
+
+```bash
+vasp=$(farscry screen.png)
+```
+
+Include `$vasp` in your Devin prompt before sending.
 
 ## License
 

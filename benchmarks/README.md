@@ -20,6 +20,10 @@ Results (cloud vision model, 1,568-token cap)
 | Avg latency | **359 ms** cold CLI (new process per image) |
 | Median latency | **333 ms** |
 
+**Success definition:** farscry produced a non-empty VASP output with at least one
+detected UI element. The 9 failures (4%) are screenshots with no detectable text
+regions — icon-heavy UIs or near-blank screens — where farscry returns an empty
+ui_tree. No crashes, no panics.
 
 ---
 
@@ -69,9 +73,10 @@ Per-App Breakdown
 | Windows 11 Pro | 5120x1440 | 96% (27/28) | 87 t | **18x** |
 | Linux Ubuntu 24.04 | 3456x2160 | 90% (45/50) | 349 t | **4.5x** |
 
-
-detections -> more VASP output). This is correct behavior - farscry captures more
-context, the VASP output is proportionally larger.*
+**Note on Linux:** Linux terminals and config panels are text-dense. More text regions
+detected = more VASP output = lower token ratio. This is correct behavior: farscry
+captures more context when more context exists. The 4.5x ratio still represents a
+real saving over sending the raw image.
 
 ---
 
@@ -87,6 +92,13 @@ All times are **cold-start CLI** (binary load + model init + OCR + output per ca
 
 **Daemon mode** (`farscry serve --mcp`): models stay warm in memory.
 Measured independently on M4 Pro: **38ms** per image (CoreML ANE, warm daemon).
+
+Cold CLI vs daemon comparison:
+
+| Mode | Latency | When to use |
+|---|---|---|
+| `farscry extract image.png` (cold) | ~333 ms | One-off analysis |
+| `farscry serve --mcp` (warm daemon) | **38 ms** | Repeated calls, MCP integration |
 
 ---
 
@@ -126,16 +138,16 @@ Full dataset: 1,581 screenshots across 23 professional applications.
 Reproduce
 
 ```bash
-1. Download screenshots
+# 1. Download screenshots
 python3 scripts/download_benchmark.py
 
-2. Build farscry (CoreML backend, Apple Silicon)
+# 2. Build farscry (CoreML backend, Apple Silicon)
 cargo build --release --features coreml -p farscry
 
-3. Run benchmark
+# 3. Run benchmark
 python3 scripts/run_benchmark.py
 
-4. Results -> benchmarks/results/benchmark_v2.json
+# 4. Results -> benchmarks/results/benchmark_v2.json
 ```
 
 Requirements: macOS aarch64, `huggingface_hub`, `Pillow`.
@@ -144,8 +156,8 @@ Requirements: macOS aarch64, `huggingface_hub`, `Pillow`.
 
 Summary for HN Post
 
-> **farscry reduces image token cost by 15x on average** for professional 4K screenshots
-> (Android Studio, macOS, Windows), benchmarked on N=223 real screenshots from
-> ScreenSpot-Pro (MIT). At 1080p the reduction is ~9x - matching the baseline
-> 1,568-token cap against farscry's typical 175-token VASP output.
+> **farscry reduces image token cost by 15.5x on average** (median 15.8x) for
+> professional 4K screenshots (Android Studio, macOS, Windows), benchmarked on
+> N=223 real screenshots from ScreenSpot-Pro (MIT). At 1080p the reduction is ~9x,
+> matching the baseline 1,568-token cap against farscry's typical 175-token VASP output.
 > Methodology: [github.com/teles-forge/farscry/benchmarks](benchmarks/)

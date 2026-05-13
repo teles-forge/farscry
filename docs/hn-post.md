@@ -43,7 +43,7 @@ affordances:
 
 **Why I built this:**
 
-Built while working on kiosk payment support. Agents couldn't understand
+Built while working on enterprise payment systems. Agents couldn't understand
 error screenshots from customers. The support engineer would paste a screenshot
 in the chat and the agent would describe it instead of acting on it.
 

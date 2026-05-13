@@ -1,0 +1,53 @@
+[package]
+name = "farscry-ocr-coreml"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+publish = false
+
+[[example]]
+name = "pipeline"
+path = "examples/pipeline.rs"
+
+[[example]]
+name = "diagnose_rec"
+path = "examples/diagnose_rec.rs"
+
+[[bin]]
+name = "test_pipeline"
+path = "src/bin/test_pipeline.rs"
+
+[target.'cfg(target_os = "macos")'.dependencies]
+farscry-core = { path = "../farscry-core" }
+image = { workspace = true }
+imageproc = "0.25"
+ndarray = { workspace = true }
+objc2 = { workspace = true }
+objc2-core-ml = { workspace = true, features = [
+    "MLDictionaryFeatureProvider",
+    "MLFeatureProvider",
+    "MLFeatureValue",
+    "MLModel",
+    "MLModelConfiguration",
+    "MLMultiArray",
+    "MLPredictionOptions",
+] }
+objc2-foundation = { workspace = true, features = [
+    "NSArray",
+    "NSDictionary",
+    "NSString",
+    "NSURL",
+    "NSValue",
+    "NSObject",
+] }
+oar-ocr-core = "0.6"
+sha2 = { workspace = true }
+serde_json = { workspace = true }
+dirs = { workspace = true }
+
+[dev-dependencies]
+oar-ocr = { version = "0.6", features = ["default"] }
+
+[target.'cfg(not(target_os = "macos"))'.dependencies]

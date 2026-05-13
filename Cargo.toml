@@ -1,0 +1,36 @@
+[workspace]
+members = [
+    "crates/farscry-core",
+    "crates/farscry-classifier",
+    "crates/farscry-diff",
+    "crates/farscry-formatter",
+    "crates/farscry-mcp",
+    "crates/farscry-ocr-coreml",
+    "crates/farscry-ocr-ort",
+    "crates/farscry-ocr",
+    "crates/farscry",
+]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.75"
+license = "MIT"
+repository = "https://github.com/teles/farscry"
+
+[workspace.dependencies]
+image = "0.25"
+serde = { version = "1", features = ["derive"] }
+thiserror = "1"
+rayon = "1"
+rustdct = "0.7"
+hex = "0.4"
+sha2 = "0.10"
+serde_json = "1"
+dirs = "5"
+ndarray = "0.17"
+
+objc2 = "0.6"
+objc2-core-ml = "0.3"
+objc2-foundation = "0.3"

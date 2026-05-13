@@ -1,0 +1,29 @@
+{
+  "name": "farscry",
+  "version": "0.1.0",
+  "description": "Image interpreter for automation workflows - local, offline, 8x fewer tokens",
+  "keywords": ["ai", "agents", "ocr", "vision", "vasp", "mcp", "screenshot"],
+  "homepage": "https://farscry.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/teles-forge/farscry.git"
+  },
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=18"
+  },
+  "os": ["darwin", "linux", "win32"],
+  "cpu": ["x64", "arm64"],
+  "bin": {
+    "farscry": "bin/farscry"
+  },
+  "scripts": {
+    "postinstall": "node postinstall.js"
+  },
+  "files": [
+    "postinstall.js",
+    "bin/.gitkeep",
+    "README.md",
+    "LICENSE"
+  ]
+}

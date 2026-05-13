@@ -1,6 +1,6 @@
-# Show HN: farscry — screenshots give AI agents coordinates, not descriptions
+# Show HN: farscry, screenshots give AI agents coordinates, not descriptions
 
-**Title:** Show HN: farscry — converts screenshots into typed coordinates for AI agents (offline, 38ms, $0)
+**Title:** Show HN: farscry, converts screenshots into typed coordinates for AI agents (offline, 38ms, $0)
 
 ---
 
@@ -8,7 +8,7 @@
 
 I built farscry to solve a problem I kept hitting with Devin and Claude Code: give them a screenshot, they describe it. They don't know where to click.
 
-farscry converts any screenshot into structured output with exact pixel coordinates — locally, in 38ms warm, at $0.
+farscry converts any screenshot into structured output with exact pixel coordinates, locally, in 38ms warm, at $0.
 
 ```
 $ farscry screen.png
@@ -31,10 +31,10 @@ $ farscry screen.png
 **Three modes:**
 
 ```bash
-# 1. Describe — any image → coordinates
+# 1. Describe, any image → coordinates
 farscry screen.png
 
-# 2. Diff — what changed between states
+# 2. Diff, what changed between states
 farscry diff before.png after.png
 → button "Submit": disabled → enabled
 → spinner: removed
@@ -43,7 +43,7 @@ farscry diff before.png after.png
 farscry --from-clipboard | your-agent "fix this"
 ```
 
-**MCP server** — agents call it directly:
+**MCP server**, agents call it directly:
 
 ```bash
 farscry serve --mcp
@@ -95,7 +95,7 @@ pip install farscry
 curl -fsSL https://farscry.dev/install | sh
 ```
 
-**The output format is VASP** (Visual Application State Protocol) — an open spec at vasp-protocol.github.io/spec. Same idea as MCP for tool connectivity, but for visual state. farscry is the reference implementation.
+**The output format is VASP** (Visual Application State Protocol), an open spec at vasp-protocol.github.io/spec. Same idea as MCP for tool connectivity, but for visual state. farscry is the reference implementation.
 
 **Benchmarks are reproducible:** github.com/teles-forge/farscry/tree/main/benchmarks
 
@@ -115,12 +115,12 @@ Cloud vision typically takes 2-5 seconds per image and costs ~$0.0047 per image.
 
 **"What's VASP?"**
 
-VASP (Visual Application State Protocol) is an open format spec for how AI agents receive visual context — typed elements with coordinates, not natural language descriptions. Think of it like MCP but for visual state. Spec is at vasp-protocol.github.io/spec.
+VASP (Visual Application State Protocol) is an open format spec for how AI agents receive visual context, typed elements with coordinates, not natural language descriptions. Think of it like MCP but for visual state. Spec is at vasp-protocol.github.io/spec.
 
 **"Does it work on Linux/Windows?"**
 
-Yes. Four pre-built binaries: macOS arm64 (CoreML, 38ms warm), macOS x64, Linux x64, Windows x64 (ORT backend, ~300ms — no CoreML on non-Apple). The npm/pip packages auto-download the right binary.
+Yes. Four pre-built binaries: macOS arm64 (CoreML, 38ms warm), macOS x64, Linux x64, Windows x64 (ORT backend, ~300ms, no CoreML on non-Apple). The npm/pip packages auto-download the right binary.
 
 **"What about accuracy on complex UIs?"**
 
-96% success rate on N=223 real professional screenshots (ScreenSpot-Pro dataset — Android Studio, macOS, Windows, Linux). The 4% failures are icon-heavy screens with no detectable text. Full breakdown in benchmarks/README.md.
+96% success rate on N=223 real professional screenshots (ScreenSpot-Pro dataset, Android Studio, macOS, Windows, Linux). The 4% failures are icon-heavy screens with no detectable text. Full breakdown in benchmarks/README.md.

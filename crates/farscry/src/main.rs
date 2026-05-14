@@ -299,7 +299,21 @@ fn extract_from_clipboard(opts: ExtractOpts, _lang: &str, max_size: u64) -> Resu
         write_output(&text, opts.output.as_ref())
     }
 
-    #[cfg(not(any(target_os = "macos", target_os = "linux")))]
+    #[cfg(target_os = "windows")]
+    {
+        let image_data = read_clipboard_image_windows()?;
+        let temp_path = std::env::temp_dir().join("farscry_clipboard.png");
+        std::fs::write(&temp_path, image_data)?;
+
+        let output = process_image(&temp_path, max_size)?;
+        let (width, height) = image::open(&temp_path)
+            .map(|img| img.dimensions())
+            .unwrap_or((1920, 1080));
+        let text = format_output(&output, "clipboard", width, height, &opts);
+        write_output(&text, opts.output.as_ref())
+    }
+
+    #[cfg(not(any(target_os = "macos", target_os = "linux", target_os = "windows")))]
     {
         anyhow::bail!("--from-clipboard not supported on this platform");
     }
@@ -422,7 +436,6 @@ fn annotate_from_clipboard(output: Option<PathBuf>) -> Result<()> {
         anyhow::bail!("--from-clipboard not supported on this platform");
     }
 }
-
 #[derive(Clone)]
 struct FarscryPipelineAdapter {
     pipeline: Arc<Pipeline>,
@@ -1694,4 +1707,33 @@ fn read_clipboard_png_linux() -> Result<Vec<u8>> {
     }
 
     anyhow::bail!("No image in clipboard (requires xclip or wl-paste)")
+}
+
+#[cfg(target_os = "windows")]
+fn read_clipboard_image_windows() -> Result<Vec<u8>> {
+    use base64::{Engine as _, engine::general_purpose::STANDARD};
+    use std::process::Command;
+
+    let script = r#"
+Add-Type -AssemblyName System.Windows.Forms
+$img = [System.Windows.Forms.Clipboard]::GetImage()
+if ($img -eq $null) { exit 1 }
+$ms = New-Object System.IO.MemoryStream
+$img.Save($ms, [System.Drawing.Imaging.ImageFormat]::Png)
+[System.Convert]::ToBase64String($ms.ToArray())
+"#;
+
+    let output = Command::new("powershell")
+        .args(["-Command", script])
+        .output()?;
+
+    if !output.status.success() {
+        anyhow::bail!("No image in clipboard");
+    }
+
+    let b64 = String::from_utf8(output.stdout)?.trim().to_string();
+    if b64.is_empty() {
+        anyhow::bail!("No image in clipboard");
+    }
+    Ok(STANDARD.decode(&b64)?)
 }

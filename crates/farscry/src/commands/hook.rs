@@ -69,7 +69,8 @@ const HOOK_SCRIPT: &str = r#"_farscry_session_start() {
 }
 
 _farscry_session_stop() {
-  [ -n "$FARSCRY_SESSION_PID" ] && kill "$FARSCRY_SESSION_PID" 2>/dev/null
+  [ -n "$FARSCRY_SESSION_PID" ] && \
+    kill "$FARSCRY_SESSION_PID" 2>/dev/null
   unset FARSCRY_SESSION_PID FARSCRY_SESSION_FILE
 }
 

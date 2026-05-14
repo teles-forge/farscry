@@ -150,6 +150,7 @@ GitHub: github.com/teles-forge/farscry
 Site: farscry.dev
 VASP spec: vasp-protocol.github.io/spec
 Benchmark methodology: github.com/teles-forge/farscry/benchmarks
+Roadmap (v0.2.0): github.com/teles-forge/farscry/blob/main/docs/projects/roadmap-v0.2.0.md
 
 Built with Rust. Apache 2.0.
 

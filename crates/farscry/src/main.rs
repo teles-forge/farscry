@@ -84,6 +84,9 @@ enum Commands {
     Setup {
         #[arg(long)]
         undo_smart_paste: bool,
+
+        #[arg(long)]
+        hook: bool,
     },
 
     Paste {
@@ -121,6 +124,39 @@ enum Commands {
 
     Info {
         input: PathBuf,
+    },
+
+    Record {
+        #[arg(short = 'o', long, value_name = "FILE")]
+        output: PathBuf,
+
+        #[arg(long, default_value = "1")]
+        fps: u32,
+
+        #[arg(long)]
+        daemon: bool,
+
+        #[arg(long)]
+        silent: bool,
+
+        #[arg(long, default_value = "10")]
+        threshold: u8,
+    },
+
+    Hook {
+        #[arg(long)]
+        init: bool,
+
+        #[arg(long)]
+        remove: bool,
+    },
+
+    Session {
+        #[arg(long)]
+        list: bool,
+
+        #[arg(long)]
+        latest: bool,
     },
 }
 
@@ -168,8 +204,10 @@ async fn main() {
             hamming_threshold,
         } => commands::serve::serve_mcp(mcp, port, record, hamming_threshold).await,
         Commands::InstallLang { lang } => commands::install::install_lang(lang),
-        Commands::Setup { undo_smart_paste } => {
-            if undo_smart_paste {
+        Commands::Setup { undo_smart_paste, hook } => {
+            if hook {
+                commands::hook::setup_hook()
+            } else if undo_smart_paste {
                 let home = dirs::home_dir().unwrap_or_else(|| PathBuf::from("."));
                 commands::setup::undo_smart_paste_configs(&home)
             } else {
@@ -202,6 +240,27 @@ async fn main() {
         } => commands::pack::pack_frames(input, output, hamming_threshold),
         Commands::Timeline { input } => commands::timeline::timeline(input),
         Commands::Info { input } => commands::info::info(input),
+        Commands::Record { output, fps, daemon, silent, threshold } => {
+            commands::record::record(commands::record::RecordOpts {
+                output, fps, daemon, silent, threshold,
+            })
+        }
+        Commands::Hook { init, remove } => {
+            if init {
+                commands::hook::hook_init()
+            } else if remove {
+                commands::hook::remove_hook()
+            } else {
+                commands::hook::hook_init()
+            }
+        }
+        Commands::Session { list: _, latest } => {
+            if latest {
+                commands::session::session_latest()
+            } else {
+                commands::session::session_list()
+            }
+        }
     };
 
     match result {

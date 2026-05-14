@@ -1,10 +1,13 @@
 pub mod annotate;
 pub mod diff;
 pub mod extract;
+pub mod hook;
 pub mod info;
 pub mod install;
 pub mod pack;
 pub mod paste;
+pub mod record;
 pub mod serve;
+pub mod session;
 pub mod setup;
 pub mod timeline;

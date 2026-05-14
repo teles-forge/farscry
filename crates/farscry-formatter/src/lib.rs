@@ -1,3 +1,5 @@
+pub mod annotate;
+
 use farscry_core::{
     Confidence, DeltaEntry, ElementType, ScreenType, UiElement, VaspDelta, VaspOutput,
 };

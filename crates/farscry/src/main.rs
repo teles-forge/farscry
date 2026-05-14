@@ -87,6 +87,17 @@ enum Commands {
         #[arg(trailing_var_arg = true)]
         prompt: Vec<String>,
     },
+
+    Annotate {
+        #[arg(required = false)]
+        paths: Vec<PathBuf>,
+
+        #[arg(long)]
+        from_clipboard: bool,
+
+        #[arg(short = 'o', long, value_name = "FILE")]
+        output: Option<PathBuf>,
+    },
 }
 
 #[tokio::main]
@@ -121,7 +132,11 @@ async fn main() {
                 extract_images(paths, opts, &lang, max_size_bytes)
             }
         }
-        Commands::Diff { before, after, json } => diff_images(before, after, json),
+        Commands::Diff {
+            before,
+            after,
+            json,
+        } => diff_images(before, after, json),
         Commands::Serve { mcp, port } => serve_mcp(mcp, port).await,
         Commands::InstallLang { lang } => install_lang(lang),
         Commands::Setup { undo_smart_paste } => {
@@ -140,6 +155,17 @@ async fn main() {
             };
             paste(agent.as_deref(), prompt_str.as_deref())
         }
+        Commands::Annotate {
+            paths,
+            from_clipboard,
+            output,
+        } => {
+            if from_clipboard {
+                annotate_from_clipboard(output)
+            } else {
+                annotate_images(paths, output)
+            }
+        }
     };
 
     match result {
@@ -151,8 +177,7 @@ async fn main() {
                 || e.to_string().contains("not an image")
             {
                 1
-            } else if e.to_string().contains("OCR failed")
-                || e.to_string().contains("model error")
+            } else if e.to_string().contains("OCR failed") || e.to_string().contains("model error")
             {
                 2
             } else if e.to_string().contains("language not installed")
@@ -318,6 +343,81 @@ fn diff_images(before: PathBuf, after: PathBuf, json: bool) -> Result<()> {
     Ok(())
 }
 
+fn run_annotate(img: image::DynamicImage, source: &Path, output: Option<PathBuf>) -> Result<()> {
+    let vasp = {
+        let pipeline = get_or_build_pipeline()?;
+        let img_clone = img.clone();
+        pipeline
+            .process(img_clone)
+            .map_err(|e| anyhow::anyhow!("pipeline failed: {e}"))?
+    };
+
+    let out_path = match output {
+        Some(p) => p,
+        None => {
+            let stem = source.file_stem().unwrap_or_default().to_string_lossy();
+            let ext = source
+                .extension()
+                .map(|e| format!(".{}", e.to_string_lossy()))
+                .unwrap_or_else(|| ".png".to_string());
+            source
+                .parent()
+                .unwrap_or(std::path::Path::new("."))
+                .join(format!("{stem}_annotated{ext}"))
+        }
+    };
+
+    let annotated = farscry_formatter::annotate::annotate_image(img, &vasp);
+    annotated
+        .save(&out_path)
+        .with_context(|| format!("cannot save: {}", out_path.display()))?;
+
+    eprintln!(
+        "[farscry] annotated {} elements -> {}",
+        vasp.ui_tree.len(),
+        out_path.display()
+    );
+    Ok(())
+}
+
+fn annotate_images(paths: Vec<PathBuf>, output: Option<PathBuf>) -> Result<()> {
+    if paths.is_empty() {
+        anyhow::bail!("provide at least one image path, or use --from-clipboard");
+    }
+    let path = &paths[0];
+    validate_image(path, 100_000_000)?;
+    let img =
+        image::open(path).with_context(|| format!("cannot open image: {}", path.display()))?;
+    run_annotate(img, path, output)
+}
+
+fn annotate_from_clipboard(output: Option<PathBuf>) -> Result<()> {
+    let tmp = PathBuf::from("/tmp/farscry_annotate_clip.png");
+    let out = output.unwrap_or_else(|| PathBuf::from("/tmp/farscry_annotated.png"));
+
+    #[cfg(target_os = "macos")]
+    {
+        let (data, _) = read_clipboard_image_macos()?;
+        std::fs::write(&tmp, data)?;
+        let img = image::open(&tmp).context("cannot open clipboard image")?;
+        return run_annotate(img, &tmp, Some(out));
+    }
+
+    #[cfg(target_os = "linux")]
+    {
+        let data = read_clipboard_png_linux()?;
+        std::fs::write(&tmp, data)?;
+        let img = image::open(&tmp).context("cannot open clipboard image")?;
+        return run_annotate(img, &tmp, Some(out));
+    }
+
+    #[cfg(not(any(target_os = "macos", target_os = "linux")))]
+    {
+        let _ = (tmp, out);
+        anyhow::bail!("--from-clipboard not supported on this platform");
+    }
+}
+
 #[derive(Clone)]
 struct FarscryPipelineAdapter {
     pipeline: Arc<Pipeline>,
@@ -415,10 +515,26 @@ fn setup() -> Result<()> {
     println!("farscry v0.1.0 — setup\n");
 
     let agents: &[(&str, &str, &str)] = &[
-        ("claude", "Claude Code", "farscry extract --from-clipboard | claude -p \"fix this\""),
-        ("devin",  "Devin",       "devin -p \"$(farscry extract --from-clipboard) — fix this\""),
-        ("codex",  "Codex",       "farscry extract --from-clipboard | codex exec \"fix this:\""),
-        ("aider",  "Aider",       "aider --message \"$(farscry extract --from-clipboard)\""),
+        (
+            "claude",
+            "Claude Code",
+            "farscry extract --from-clipboard | claude -p \"fix this\"",
+        ),
+        (
+            "devin",
+            "Devin",
+            "devin -p \"$(farscry extract --from-clipboard) — fix this\"",
+        ),
+        (
+            "codex",
+            "Codex",
+            "farscry extract --from-clipboard | codex exec \"fix this:\"",
+        ),
+        (
+            "aider",
+            "Aider",
+            "aider --message \"$(farscry extract --from-clipboard)\"",
+        ),
     ];
 
     let mut detected: Vec<usize> = Vec::new();
@@ -438,7 +554,11 @@ fn setup() -> Result<()> {
 
     println!("Which agent do you want to use with ffix?");
     for (i, (bin, name, _)) in agents.iter().enumerate() {
-        let tag = if agent_in_path(bin) { "(detected)" } else { "(not installed)" };
+        let tag = if agent_in_path(bin) {
+            "(detected)"
+        } else {
+            "(not installed)"
+        };
         println!("  {}. {} {}", i + 1, name, tag);
     }
     println!("  {}. Configure multiple aliases", agents.len() + 1);
@@ -489,7 +609,11 @@ fn setup() -> Result<()> {
 
     println!("─────────────────────────────────────────");
     println!("Zero-friction alias (recommended):\n");
-    println!("  echo \"alias fp='farscry paste'\" >> {} && source {}", zshrc.display(), zshrc.display());
+    println!(
+        "  echo \"alias fp='farscry paste'\" >> {} && source {}",
+        zshrc.display(),
+        zshrc.display()
+    );
     println!("\nThen: screenshot → fp → done.\n");
 
     println!("─────────────────────────────────────────");
@@ -510,9 +634,9 @@ fn setup() -> Result<()> {
 
     let mcp_agents: &[(&str, &str)] = &[
         ("Claude Code", ".claude/mcp.json"),
-        ("Cursor",      ".cursor/mcp.json"),
-        ("Windsurf",    ".windsurf/mcp.json"),
-        ("Zed",         ".config/zed/settings.json"),
+        ("Cursor", ".cursor/mcp.json"),
+        ("Windsurf", ".windsurf/mcp.json"),
+        ("Zed", ".config/zed/settings.json"),
     ];
     for (name, rel) in mcp_agents {
         let path = home.join(rel);
@@ -545,18 +669,20 @@ struct TerminalResult {
 
 fn backup_file(path: &Path) -> Result<()> {
     if path.exists() {
-        let backup = path.with_extension(
-            format!("{}.farscry-backup", path.extension().and_then(|e| e.to_str()).unwrap_or(""))
-        );
+        let backup = path.with_extension(format!(
+            "{}.farscry-backup",
+            path.extension().and_then(|e| e.to_str()).unwrap_or("")
+        ));
         std::fs::copy(path, &backup)?;
     }
     Ok(())
 }
 
 fn restore_backup(path: &Path) -> bool {
-    let backup = path.with_extension(
-        format!("{}.farscry-backup", path.extension().and_then(|e| e.to_str()).unwrap_or(""))
-    );
+    let backup = path.with_extension(format!(
+        "{}.farscry-backup",
+        path.extension().and_then(|e| e.to_str()).unwrap_or("")
+    ));
     if backup.exists() {
         std::fs::copy(&backup, path).is_ok() && std::fs::remove_file(&backup).is_ok()
     } else {
@@ -564,36 +690,71 @@ fn restore_backup(path: &Path) -> bool {
     }
 }
 
-fn path_exists(p: &Path) -> bool { p.exists() }
+fn path_exists(p: &Path) -> bool {
+    p.exists()
+}
 fn cmd_exists(cmd: &str) -> bool {
-    std::process::Command::new("which").arg(cmd).output()
-        .map(|o| o.status.success()).unwrap_or(false)
+    std::process::Command::new("which")
+        .arg(cmd)
+        .output()
+        .map(|o| o.status.success())
+        .unwrap_or(false)
 }
 
 #[cfg(target_os = "macos")]
 fn configure_iterm2(script: &Path, home: &Path) -> TerminalResult {
     let plist = home.join("Library/Preferences/com.googlecode.iterm2.plist");
     if !plist.exists() {
-        return TerminalResult { name: "iTerm2", configured: false, note: "plist not found" };
+        return TerminalResult {
+            name: "iTerm2",
+            configured: false,
+            note: "plist not found",
+        };
     }
     if backup_file(&plist).is_err() {
-        return TerminalResult { name: "iTerm2", configured: false, note: "backup failed" };
+        return TerminalResult {
+            name: "iTerm2",
+            configured: false,
+            note: "backup failed",
+        };
     }
     let script_str = script.to_string_lossy();
     let key = "0x76-0x100000";
     let ok = std::process::Command::new("defaults")
-        .args(["write", "com.googlecode.iterm2",
-               &format!("GlobalKeyMap:{key}:Action"), "13"])
-        .status().map(|s| s.success()).unwrap_or(false)
+        .args([
+            "write",
+            "com.googlecode.iterm2",
+            &format!("GlobalKeyMap:{key}:Action"),
+            "13",
+        ])
+        .status()
+        .map(|s| s.success())
+        .unwrap_or(false)
         && std::process::Command::new("defaults")
-        .args(["write", "com.googlecode.iterm2",
-               &format!("GlobalKeyMap:{key}:Text"), &*script_str])
-        .status().map(|s| s.success()).unwrap_or(false);
-    let _ = std::process::Command::new("killall").args(["-HUP", "iTerm2"]).status();
+            .args([
+                "write",
+                "com.googlecode.iterm2",
+                &format!("GlobalKeyMap:{key}:Text"),
+                &*script_str,
+            ])
+            .status()
+            .map(|s| s.success())
+            .unwrap_or(false);
+    let _ = std::process::Command::new("killall")
+        .args(["-HUP", "iTerm2"])
+        .status();
     if ok {
-        TerminalResult { name: "iTerm2", configured: true, note: "restart to apply" }
+        TerminalResult {
+            name: "iTerm2",
+            configured: true,
+            note: "restart to apply",
+        }
     } else {
-        TerminalResult { name: "iTerm2", configured: false, note: "defaults write failed" }
+        TerminalResult {
+            name: "iTerm2",
+            configured: false,
+            note: "defaults write failed",
+        }
     }
 }
 
@@ -604,16 +765,34 @@ fn configure_warp(script: &Path, home: &Path) -> TerminalResult {
         let _ = std::fs::create_dir_all(p);
     }
     if backup_file(&kb).is_err() {
-        return TerminalResult { name: "Warp", configured: false, note: "backup failed" };
+        return TerminalResult {
+            name: "Warp",
+            configured: false,
+            note: "backup failed",
+        };
     }
     let entry = format!("\n- key: cmd+v\n  command: {}\n", script.display());
-    let ok = std::fs::OpenOptions::new().create(true).append(true).open(&kb)
-        .and_then(|mut f| { use std::io::Write; f.write_all(entry.as_bytes()) })
+    let ok = std::fs::OpenOptions::new()
+        .create(true)
+        .append(true)
+        .open(&kb)
+        .and_then(|mut f| {
+            use std::io::Write;
+            f.write_all(entry.as_bytes())
+        })
         .is_ok();
     if ok {
-        TerminalResult { name: "Warp", configured: true, note: "active immediately" }
+        TerminalResult {
+            name: "Warp",
+            configured: true,
+            note: "active immediately",
+        }
     } else {
-        TerminalResult { name: "Warp", configured: false, note: "write failed" }
+        TerminalResult {
+            name: "Warp",
+            configured: false,
+            note: "write failed",
+        }
     }
 }
 
@@ -623,21 +802,39 @@ fn configure_kitty(script: &Path, home: &Path) -> TerminalResult {
         let _ = std::fs::create_dir_all(p);
     }
     if backup_file(&conf).is_err() {
-        return TerminalResult { name: "Kitty", configured: false, note: "backup failed" };
+        return TerminalResult {
+            name: "Kitty",
+            configured: false,
+            note: "backup failed",
+        };
     }
     let entry = format!("\nmap ctrl+v launch --type=overlay {}\n", script.display());
-    let ok = std::fs::OpenOptions::new().create(true).append(true).open(&conf)
-        .and_then(|mut f| { use std::io::Write; f.write_all(entry.as_bytes()) })
+    let ok = std::fs::OpenOptions::new()
+        .create(true)
+        .append(true)
+        .open(&conf)
+        .and_then(|mut f| {
+            use std::io::Write;
+            f.write_all(entry.as_bytes())
+        })
         .is_ok();
     if ok {
-        TerminalResult { name: "Kitty", configured: true, note: "restart to apply" }
+        TerminalResult {
+            name: "Kitty",
+            configured: true,
+            note: "restart to apply",
+        }
     } else {
-        TerminalResult { name: "Kitty", configured: false, note: "write failed" }
+        TerminalResult {
+            name: "Kitty",
+            configured: false,
+            note: "write failed",
+        }
     }
 }
 
 fn configure_alacritty(script: &Path, home: &Path) -> TerminalResult {
-    let yml  = home.join(".config/alacritty/alacritty.yml");
+    let yml = home.join(".config/alacritty/alacritty.yml");
     let toml = home.join(".config/alacritty/alacritty.toml");
     let (path, content) = if toml.exists() {
         (toml, format!(
@@ -645,72 +842,140 @@ fn configure_alacritty(script: &Path, home: &Path) -> TerminalResult {
             script.display()
         ))
     } else {
-        (yml, format!(
-            "\nkey_bindings:\n  - key: V\n    mods: Control\n    command:\n      program: {}\n",
-            script.display()
-        ))
+        (
+            yml,
+            format!(
+                "\nkey_bindings:\n  - key: V\n    mods: Control\n    command:\n      program: {}\n",
+                script.display()
+            ),
+        )
     };
-    if let Some(p) = path.parent() { let _ = std::fs::create_dir_all(p); }
-    if backup_file(&path).is_err() {
-        return TerminalResult { name: "Alacritty", configured: false, note: "backup failed" };
+    if let Some(p) = path.parent() {
+        let _ = std::fs::create_dir_all(p);
     }
-    let ok = std::fs::OpenOptions::new().create(true).append(true).open(&path)
-        .and_then(|mut f| { use std::io::Write; f.write_all(content.as_bytes()) })
+    if backup_file(&path).is_err() {
+        return TerminalResult {
+            name: "Alacritty",
+            configured: false,
+            note: "backup failed",
+        };
+    }
+    let ok = std::fs::OpenOptions::new()
+        .create(true)
+        .append(true)
+        .open(&path)
+        .and_then(|mut f| {
+            use std::io::Write;
+            f.write_all(content.as_bytes())
+        })
         .is_ok();
     if ok {
-        TerminalResult { name: "Alacritty", configured: true, note: "restart to apply" }
+        TerminalResult {
+            name: "Alacritty",
+            configured: true,
+            note: "restart to apply",
+        }
     } else {
-        TerminalResult { name: "Alacritty", configured: false, note: "write failed" }
+        TerminalResult {
+            name: "Alacritty",
+            configured: false,
+            note: "write failed",
+        }
     }
 }
 
 fn configure_bashrc_gnome(script: &Path, home: &Path) -> TerminalResult {
     let bashrc = home.join(".bashrc");
     if backup_file(&bashrc).is_err() {
-        return TerminalResult { name: "Gnome Terminal", configured: false, note: "backup failed" };
+        return TerminalResult {
+            name: "Gnome Terminal",
+            configured: false,
+            note: "backup failed",
+        };
     }
     let entry = format!("\nbind -x '\"\\C-v\": {}'\n", script.display());
-    let ok = std::fs::OpenOptions::new().create(true).append(true).open(&bashrc)
-        .and_then(|mut f| { use std::io::Write; f.write_all(entry.as_bytes()) })
+    let ok = std::fs::OpenOptions::new()
+        .create(true)
+        .append(true)
+        .open(&bashrc)
+        .and_then(|mut f| {
+            use std::io::Write;
+            f.write_all(entry.as_bytes())
+        })
         .is_ok();
     if ok {
-        TerminalResult { name: "Gnome Terminal", configured: true, note: "source ~/.bashrc to apply" }
+        TerminalResult {
+            name: "Gnome Terminal",
+            configured: true,
+            note: "source ~/.bashrc to apply",
+        }
     } else {
-        TerminalResult { name: "Gnome Terminal", configured: false, note: "write failed" }
+        TerminalResult {
+            name: "Gnome Terminal",
+            configured: false,
+            note: "write failed",
+        }
     }
 }
 
 #[cfg(target_os = "windows")]
 fn configure_windows_terminal(script: &Path, home: &Path) -> TerminalResult {
-    let settings = home.join("AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json");
+    let settings = home.join(
+        "AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json",
+    );
     if !settings.exists() {
-        return TerminalResult { name: "Windows Terminal", configured: false, note: "settings.json not found" };
+        return TerminalResult {
+            name: "Windows Terminal",
+            configured: false,
+            note: "settings.json not found",
+        };
     }
     if backup_file(&settings).is_err() {
-        return TerminalResult { name: "Windows Terminal", configured: false, note: "backup failed" };
+        return TerminalResult {
+            name: "Windows Terminal",
+            configured: false,
+            note: "backup failed",
+        };
     }
     let raw = match std::fs::read_to_string(&settings) {
         Ok(s) => s,
-        Err(_) => return TerminalResult { name: "Windows Terminal", configured: false, note: "read failed" },
+        Err(_) => {
+            return TerminalResult {
+                name: "Windows Terminal",
+                configured: false,
+                note: "read failed",
+            }
+        }
     };
-    let new_action = format!(
-        r#"{{ "command": {{ "action": "sendInput", "input": "" }}, "keys": "ctrl+v" }}"#
-    );
+    let new_action =
+        format!(r#"{{ "command": {{ "action": "sendInput", "input": "" }}, "keys": "ctrl+v" }}"#);
     let script_path = script.display().to_string().replace('\\', "\\\\");
     let new_action = format!(
         r#"{{ "command": {{ "action": "wt", "commandline": "powershell -Command \\"{}\\"" }}, "keys": "ctrl+v" }}"#,
         script_path
     );
     let updated = if raw.contains("\"actions\"") {
-        raw.replacen("\"actions\": [", &format!("\"actions\": [\n        {},", new_action), 1)
+        raw.replacen(
+            "\"actions\": [",
+            &format!("\"actions\": [\n        {},", new_action),
+            1,
+        )
     } else {
         raw.replacen("}", &format!(", \"actions\": [ {} ] }}", new_action), 1)
     };
     let ok = std::fs::write(&settings, updated).is_ok();
     if ok {
-        TerminalResult { name: "Windows Terminal", configured: true, note: "restart to apply" }
+        TerminalResult {
+            name: "Windows Terminal",
+            configured: true,
+            note: "restart to apply",
+        }
     } else {
-        TerminalResult { name: "Windows Terminal", configured: false, note: "write failed" }
+        TerminalResult {
+            name: "Windows Terminal",
+            configured: false,
+            note: "write failed",
+        }
     }
 }
 
@@ -796,25 +1061,24 @@ fn setup_smart_paste(home: &Path) -> Result<()> {
 
     #[cfg(target_os = "macos")]
     {
-        let iterm2  = path_exists(Path::new("/Applications/iTerm.app"));
-        let warp    = path_exists(Path::new("/Applications/Warp.app"));
-        let kitty   = cmd_exists("kitty") || path_exists(&home.join(".config/kitty/kitty.conf"));
-        let alac    = path_exists(Path::new("/Applications/Alacritty.app"))
-            || cmd_exists("alacritty");
-        detected.push(("iTerm2",          iterm2));
-        detected.push(("Warp",            warp));
-        detected.push(("Kitty",           kitty));
-        detected.push(("Alacritty",       alac));
-        detected.push(("Terminal.app",    true));
+        let iterm2 = path_exists(Path::new("/Applications/iTerm.app"));
+        let warp = path_exists(Path::new("/Applications/Warp.app"));
+        let kitty = cmd_exists("kitty") || path_exists(&home.join(".config/kitty/kitty.conf"));
+        let alac = path_exists(Path::new("/Applications/Alacritty.app")) || cmd_exists("alacritty");
+        detected.push(("iTerm2", iterm2));
+        detected.push(("Warp", warp));
+        detected.push(("Kitty", kitty));
+        detected.push(("Alacritty", alac));
+        detected.push(("Terminal.app", true));
     }
 
     #[cfg(target_os = "linux")]
     {
-        detected.push(("Kitty",           cmd_exists("kitty")));
-        detected.push(("Gnome Terminal",  cmd_exists("gnome-terminal")));
-        detected.push(("Alacritty",       cmd_exists("alacritty")));
-        detected.push(("Konsole",         cmd_exists("konsole")));
-        detected.push(("Tilix",           cmd_exists("tilix")));
+        detected.push(("Kitty", cmd_exists("kitty")));
+        detected.push(("Gnome Terminal", cmd_exists("gnome-terminal")));
+        detected.push(("Alacritty", cmd_exists("alacritty")));
+        detected.push(("Konsole", cmd_exists("konsole")));
+        detected.push(("Tilix", cmd_exists("tilix")));
     }
 
     #[cfg(target_os = "windows")]
@@ -823,7 +1087,11 @@ fn setup_smart_paste(home: &Path) -> Result<()> {
         detected.push(("Windows Terminal", wt.exists()));
     }
 
-    let found: Vec<&str> = detected.iter().filter(|(_, d)| *d).map(|(n, _)| *n).collect();
+    let found: Vec<&str> = detected
+        .iter()
+        .filter(|(_, d)| *d)
+        .map(|(n, _)| *n)
+        .collect();
 
     if found.is_empty() {
         println!("No terminals detected on your system.");
@@ -887,7 +1155,11 @@ fn setup_smart_paste(home: &Path) -> Result<()> {
                 configured: false,
                 note: "not supported — use fp alias instead",
             },
-            other => TerminalResult { name: other, configured: false, note: "unknown terminal" },
+            other => TerminalResult {
+                name: other,
+                configured: false,
+                note: "unknown terminal",
+            },
         };
         results.push(result);
     }
@@ -934,13 +1206,22 @@ fn undo_smart_paste_configs(home: &Path) -> Result<()> {
         let mut any = false;
         for rel in *paths {
             let p = home.join(rel);
-            let backup = p.with_extension(
-                format!("{}.farscry-backup", p.extension().and_then(|e| e.to_str()).unwrap_or(""))
-            );
-            if backup.exists() { any = true; break; }
-            if restore_backup(&p) { any = true; break; }
+            let backup = p.with_extension(format!(
+                "{}.farscry-backup",
+                p.extension().and_then(|e| e.to_str()).unwrap_or("")
+            ));
+            if backup.exists() {
+                any = true;
+                break;
+            }
+            if restore_backup(&p) {
+                any = true;
+                break;
+            }
         }
-        if !any { let _ = label; }
+        if !any {
+            let _ = label;
+        }
     }
 
     if restored == 0 {
@@ -1002,9 +1283,7 @@ fn paste(agent_override: Option<&str>, prompt_override: Option<&str>) -> Result<
     } else if let Some(ref a) = cfg.agent {
         a.preferred.clone()
     } else {
-        let choice = readline_prompt(
-            "Which agent? (claude / devin / codex) [claude]: "
-        );
+        let choice = readline_prompt("Which agent? (claude / devin / codex) [claude]: ");
         let chosen = if choice.is_empty() {
             "claude".to_string()
         } else {
@@ -1037,7 +1316,11 @@ fn capture_clipboard_vasp() -> Result<String> {
             .map(|i| i.dimensions())
             .unwrap_or((1920, 1080));
         Ok(farscry_formatter::VaspFormatter::format_vasp_with_options(
-            &output, "clipboard", w, h, true,
+            &output,
+            "clipboard",
+            w,
+            h,
+            true,
         ))
     }
 
@@ -1083,9 +1366,7 @@ fn dispatch_to_agent(agent: &str, vasp: &str, prompt: &str) -> Result<()> {
             child.wait()?;
         }
         other => {
-            anyhow::bail!(
-                "Unknown agent: {other}. Supported: claude, devin, codex"
-            );
+            anyhow::bail!("Unknown agent: {other}. Supported: claude, devin, codex");
         }
     }
     Ok(())
@@ -1226,14 +1507,14 @@ fn validate_image(path: &Path, max_size: u64) -> Result<()> {
     let mut magic = [0u8; 8];
     file.read_exact(&mut magic)?;
 
-    let is_png  = magic.starts_with(&[0x89, 0x50, 0x4E, 0x47]);
-    let is_jpg  = magic.starts_with(&[0xFF, 0xD8, 0xFF]);
+    let is_png = magic.starts_with(&[0x89, 0x50, 0x4E, 0x47]);
+    let is_jpg = magic.starts_with(&[0xFF, 0xD8, 0xFF]);
     let is_webp = magic.starts_with(&[0x52, 0x49, 0x46, 0x46]);
-    let is_gif  = magic.starts_with(&[0x47, 0x49, 0x46, 0x38]);
+    let is_gif = magic.starts_with(&[0x47, 0x49, 0x46, 0x38]);
     let is_tiff = magic.starts_with(&[0x49, 0x49, 0x2A, 0x00])
         || magic.starts_with(&[0x4D, 0x4D, 0x00, 0x2A]);
-    let is_pdf  = magic.starts_with(b"%PDF");
-    let is_svg  = magic.starts_with(b"<svg") || magic.starts_with(b"<?xm");
+    let is_pdf = magic.starts_with(b"%PDF");
+    let is_svg = magic.starts_with(b"<svg") || magic.starts_with(b"<?xm");
 
     if is_pdf {
         anyhow::bail!("PDF not supported. Export as PNG first.");
@@ -1272,9 +1553,7 @@ fn supported_image_extension(path: &Path) -> Result<()> {
         "png" | "jpg" | "jpeg" | "gif" | "webp" | "tiff" | "tif" => Ok(()),
         "pdf" => anyhow::bail!("PDF not supported. Export as PNG first."),
         "svg" => anyhow::bail!("SVG not supported. Export as PNG first."),
-        other => anyhow::bail!(
-            "File type .{other} not supported. Use PNG or JPG."
-        ),
+        other => anyhow::bail!("File type .{other} not supported. Use PNG or JPG."),
     }
 }
 
@@ -1315,7 +1594,8 @@ return typeList as string"#;
         if let Some(file_path) = check_clipboard_file_path(text) {
             supported_image_extension(&file_path)?;
             let data = std::fs::read(&file_path)?;
-            let label = file_path.file_name()
+            let label = file_path
+                .file_name()
                 .and_then(|n| n.to_str())
                 .unwrap_or("file")
                 .to_string();
@@ -1364,8 +1644,8 @@ end try"#;
         anyhow::bail!("Clipboard is empty.");
     }
 
-    let data = std::fs::read("/tmp/farscry_clipboard.png")
-        .context("Failed to read clipboard image")?;
+    let data =
+        std::fs::read("/tmp/farscry_clipboard.png").context("Failed to read clipboard image")?;
     Ok((data, "clipboard".to_string()))
 }
 

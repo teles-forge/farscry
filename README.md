@@ -48,6 +48,19 @@ farscry extract --from-clipboard | your-agent "fix this"
 farscry serve --mcp
 ```
 
+## Visual debug — annotate any screenshot
+
+```bash
+farscry annotate screenshot.png -o annotated.png
+# or from clipboard:
+farscry annotate --from-clipboard -o /tmp/out.png && open /tmp/out.png
+
+# Add alias for one-command visual debug:
+alias fannot='farscry annotate --from-clipboard -o /tmp/farscry_annotated.png && open /tmp/farscry_annotated.png'
+```
+
+Then: Shottr screenshot -> `fannot` -> annotated image opens automatically.
+
 ## Smart paste
 
 Configure Cmd+V to auto-detect images in terminal:

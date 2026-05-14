@@ -3,6 +3,7 @@ use crossbeam_channel::bounded;
 use farscry_core::vasf::{VasfFrame, VasfWriter};
 use farscry_core::StateId;
 use std::path::PathBuf;
+use std::sync::atomic::{AtomicBool, Ordering};
 use std::sync::{Arc, Mutex};
 use std::thread;
 use std::time::{Duration, SystemTime, UNIX_EPOCH};
@@ -75,35 +76,51 @@ fn run_capture_loop(opts: RecordOpts) -> Result<()> {
     let (cap_tx, cap_rx) = bounded::<image::DynamicImage>(3);
     let (ocr_tx, ocr_rx) = bounded::<(image::DynamicImage, StateId)>(1);
 
-    let threshold = opts.threshold;
-    let writer_phash = writer.clone();
-    let _t2 = {
-        let ocr_tx = ocr_tx.clone();
-        thread::spawn(move || phash_thread(cap_rx, ocr_tx, writer_phash, threshold))
-    };
-
-    let pipeline = crate::pipeline::get_or_build_pipeline()?;
-    let writer_ocr = writer.clone();
-    let _t3 = thread::spawn(move || ocr_thread(ocr_rx, pipeline, writer_ocr));
-
-    let fps = opts.fps.max(1);
-    let interval = Duration::from_millis(1000 / fps as u64);
-    let writer_final = writer.clone();
-
+    // Shared stop flag — set by SIGINT or SIGTERM handler.
+    let stop = Arc::new(AtomicBool::new(false));
+    let stop_ctrlc = stop.clone();
     ctrlc::set_handler(move || {
-        if let Ok(mut w) = writer_final.lock() {
-            w.finalize().ok();
-        }
-        std::process::exit(0);
+        stop_ctrlc.store(true, Ordering::SeqCst);
     })
     .ok();
 
+    let threshold = opts.threshold;
+    let writer_phash = writer.clone();
+    // Give phash thread sole ownership of ocr_tx: when it exits, the OCR
+    // channel closes and the OCR thread's for-loop terminates naturally.
+    let t_phash = thread::spawn(move || phash_thread(cap_rx, ocr_tx, writer_phash, threshold));
+
+    let pipeline = crate::pipeline::get_or_build_pipeline()?;
+    let writer_ocr = writer.clone();
+    let t_ocr = thread::spawn(move || ocr_thread(ocr_rx, pipeline, writer_ocr));
+
+    let fps = opts.fps.max(1);
+    let interval = Duration::from_millis(1000 / fps as u64);
+
+    // Capture loop — sleeps between frames, checks stop flag each iteration.
     loop {
         thread::sleep(interval);
+        if stop.load(Ordering::SeqCst) {
+            break;
+        }
         if let Some(img) = capture_screen() {
             cap_tx.try_send(img).ok();
         }
     }
+
+    // Graceful shutdown sequence:
+    // 1. Drop cap_tx → phash_thread's for-loop sees a closed channel and exits,
+    //    which in turn drops ocr_tx → ocr_thread's for-loop exits.
+    drop(cap_tx);
+    // 2. Wait for both threads to finish their in-flight work.
+    t_phash.join().ok();
+    t_ocr.join().ok();
+    // 3. All threads done — no one holds the mutex, finalize is safe.
+    if let Ok(mut w) = writer.lock() {
+        w.finalize().ok();
+    }
+
+    Ok(())
 }
 
 fn phash_thread(

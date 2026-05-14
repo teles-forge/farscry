@@ -272,14 +272,19 @@ impl VasfWriter {
         Ok(())
     }
 
-    pub fn finalize(&mut self) -> std::io::Result<()> {
+    pub fn update_header(&mut self) -> std::io::Result<()> {
         self.writer.flush()?;
         let file = self.writer.get_mut();
         file.seek(SeekFrom::Start(6))?;
         file.write_all(&self.frame_count.to_le_bytes())?;
         file.seek(SeekFrom::Start(18))?;
         file.write_all(&self.total_input.to_le_bytes())?;
-        file.flush()
+        file.seek(SeekFrom::End(0))?;
+        Ok(())
+    }
+
+    pub fn finalize(&mut self) -> std::io::Result<()> {
+        self.update_header()
     }
 }
 

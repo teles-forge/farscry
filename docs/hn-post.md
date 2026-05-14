@@ -1,191 +1,234 @@
-# Show HN: farscry – typed pixel coordinates from any screenshot, local, 38ms
+# We added visual state tracking to OSWorld. Here's what benchmarks can't see.
 
 ---
 
 ## Title
 
-Show HN: farscry – typed pixel coordinates from any screenshot, local, 38ms
+We added visual state tracking to OSWorld. Here's what benchmarks can't see.
+
+Alternative (with real corpus):
+Computer-use agents fail silently. [X]% of failed sessions have actions that returned OK but changed nothing on screen.
 
 ---
 
 ## Body
 
-I was tired of agents guessing where to click.
-Claude Code sees a screenshot and says "there's a blue Save button somewhere".
-farscry says: button "Save" at (400,300) enabled:true
+Claude Computer Use succeeds on ~15% of OSWorld tasks.
+We wanted to understand the other 85%.
+
+So we built farscry — a Rust CLI that gives every visual state a stable address
+(StateId), records sessions in a deduplicated binary format (VASF), and lets you
+diff two sessions the way you diff code.
+
+Then we ran it on [N] agent sessions.
+
+What we found:
+
+- [X]% of failures are silent failures — action returned OK, screen didn't
+  change, agent continued with a broken world model
+- [Y]% involve visual loops — same StateId 3+ consecutive times
+- [Z]% of failures happen at the same visual states
+
+The primitive that makes this measurable: StateId.
+A perceptual hash. Cross-session comparable.
+StateId before == StateId after = action had zero effect.
 
 ---
 
-Vision APIs return prose. Agents guess where to click.
-They fail 58% of the time (OSWorld, arXiv:2404.07972, GPT-4V baseline, Table 2).
+**1. Claude CUA at 15%. What happens in the other 85%?**
 
-farscry gives exact typed coordinates from any image.
-Local. Free. Deterministic. No API key. No GPU.
+OSWorld (arXiv:2404.07972) is the canonical benchmark for computer-use agents.
+GPT-4V baseline: 11.7% task success. Claude Computer Use: ~14.9%. State of the
+art as of this writing.
 
-```
-farscry extract screenshot.png
-```
+Benchmarks measure task completion. They don't measure what happens when the
+agent fails. They can't — there's no standard format for recording what the agent
+saw at each step.
 
-```
-=== farscry visual context ===
-screen_type: config
----
-[middle-right]  button  "Save Changes"  enabled:true  at (400,300)
-[middle-center] input   value="1500"    editable:true at (200,120)
-[bottom]        error   "Value must be <= 10000"       at (20,350)
-
-affordances:
-  click -> "Save Changes" at (400,300)
-  type  -> "Max Value"    at (200,120)  current:"1500"
-```
+We built one.
 
 ---
 
-**Why I built this:**
+**2. What we measured**
 
-Built while working on enterprise payment systems. Agents couldn't understand
-error screenshots from customers. The support engineer would paste a screenshot
-in the chat and the agent would describe it instead of acting on it.
+We introduce two new metrics computable from VASF sessions:
 
-That's when I realized: Devin and Claude Code don't lack intelligence.
-They lack coordinates. Give them a screenshot, they describe it in prose.
-Give them farscry output, they know exactly what to click.
+**AER — Action Effect Rate**
 
-I wanted to pipe screenshots directly into my agent
-without sending them to a cloud API every time.
+The fraction of agent actions that produce a detectable visual change.
+
+```
+AER = (steps with StateId change) / (total steps)
+```
+
+A low AER means the agent is taking actions that don't change the screen.
+In OSWorld parlance: the agent thinks it succeeded. The task state disagrees.
+
+**VLR — Visual Loop Rate**
+
+The fraction of sessions where the same StateId appears 3 or more times.
+
+```
+VLR = (sessions with repeated StateId ≥ 3) / (total sessions)
+```
+
+A high VLR means the agent is cycling: same screen, different action, same
+outcome, repeat.
+
+Both metrics require a StateId: a stable, cross-session visual fingerprint.
+VASF provides it. Existing benchmarks don't.
 
 ---
 
-**Four modes:**
+**3. Results: [X]% silent failures, [Y]% visual loops**
 
-1. **Extract**: any image -> typed coordinates
+*[Numbers will be filled in once the corpus is measured. Until then: these are
+the metrics, not the values. The methodology below is fully reproducible.]*
 
 ```bash
-farscry extract error.png | claude -p "fix this"
-farscry extract figma.png | claude -p "build this component"
+farscry analyze sessions/*.vasf
 ```
 
-2. **Diff**: what changed between two states
+```
+Analyzed: [F] failed sessions, [S] successful sessions
 
-```bash
-farscry diff before.png after.png
-# appeared: error "Card declined"
-# changed: button "Submit" -> "Processing..." disabled
-# ~175 tokens vs 3,136 re-sending both images
+FAILURE PATTERN ANALYSIS
+──────────────────────────────────────────────────
+Top states preceding failures:
+
+  1. StateId phash:____  →  [N] failures ([X]%)
+     screen_type: Config
+     agent_context: "Save button disabled"
+     avg_steps_before_failure: 2.3
+
+SILENT FAILURE DETECTION
+──────────────────────────────────────────────────
+  [N] sessions ([X]%) contain silent failures
+  Action returned OK. StateId unchanged. Agent continued.
+
+VISUAL LOOPS
+──────────────────────────────────────────────────
+  [N] sessions ([Y]%) contain visual loops
+  Same StateId 3+ consecutive times.
+  Avg tokens burned in loops: [Z]/session
 ```
 
-3. **Clipboard alias**: typed command, one word
-
-```bash
-ffix  # after: farscry setup
-```
-
-`farscry setup` adds `ffix` to your shell.
-`ffix` = `farscry extract --from-clipboard | claude -p "fix this"`
-Use when: you want a typed command.
-
-4. **Smart paste**: Cmd+V auto-detects images
-
-After `farscry setup`, Cmd+V in your terminal checks the clipboard.
-Image? Runs farscry. Text? Normal paste.
-
-Screenshot -> Cmd+V -> done. No command to type.
-Use when: you want zero typing.
+*[measured when corpus is ready]*
 
 ---
 
-**Benchmarks** (N=223 real screenshots, ScreenSpot-Pro MIT, reproducible):
+**4. What existing benchmarks don't measure**
 
-| Tool | Time | Tokens/image | Coordinates | Cost |
-|---|---|---|---|---|
-| farscry daemon | 38ms | ~175 | Yes | $0 |
-| Tesseract 4K | ~2,500ms | raw text | No | $0 |
-| Cloud Vision | ~2-5s (network-dependent) | ~1,568 | No | $0.0047 |
+**OSWorld**: task success/failure at the end. No per-action verification. No
+visual state history. You know the agent failed. You don't know where or why.
 
-65x faster than Tesseract on 4K screens.
-9x fewer tokens than Cloud Vision on 1080p.
-100% accuracy parity with Cloud Vision (N=20 screenshots, 2 runs each: small sample, manual verification).
+**Agent Reliability paper** (arXiv:2403.xxxxx): measures reliability via
+repeated runs. No visual state metrics. Can't distinguish silent failure from
+correct no-op.
 
-Run it yourself: github.com/teles-forge/farscry/tree/main/benchmarks
+**AgentSight**: Linux-only session recording. No visual state fingerprinting.
+No cross-session state comparison. No deduplicated binary format.
 
----
-
-**VASP (Visual Agent State Protocol)**: the open standard behind farscry.
-
-Like MCP standardized tool connectivity,
-VASP standardizes visual context for agents.
-
-Any tool can output VASP. Any agent can consume it.
-spec: vasp-protocol.github.io/spec
+farscry adds to all of these: a stable visual address (StateId) for every screen
+the agent sees, recorded in a compact binary format (VASF), analyzable with
+`farscry analyze`.
 
 ---
 
-**What it doesn't do:**
+**5. Two new metrics**
 
-- Icon-only buttons (no text label): missed
-- Charts, graphs, diagrams: no structured output
-- `--from-clipboard` on Linux: requires xclip installed
-- Windows: binary ships, clipboard not yet implemented
-- Not a visual grounding model: farscry is fast and local OCR, not ML-based semantic understanding
-- Element classification accuracy on complex UIs: 89.4% OOD, not 100%
+We propose AER and VLR as standard additions to computer-use benchmarks.
+
+They require only:
+1. A way to fingerprint visual states (StateId = perceptual hash)
+2. A session format that records state transitions (VASF)
+3. An analysis pass over sessions (farscry analyze)
+
+All three are open source and available today.
 
 ---
 
-**Install:**
+**6. The dataset and the tool**
+
+Dataset: [N] sessions (VASF format) — browser-use + OSWorld tasks + Claude CUA
+via API. Public on HuggingFace: [link — coming before arXiv submission]
+
+Tool:
 
 ```bash
 npm install -g farscry
-# or: pip install farscry
-# or: brew install teles-forge/farscry/farscry
 
-farscry setup  # auto-configures Claude Code, Cursor, Windsurf
-# setup asks: configure smart Cmd+V? (y/N)
-# if yes: shows your terminal's key binding instructions
-# result: Cmd+V auto-detects images in terminal
+# record a session
+farscry serve --mcp --record session.vasf
+
+# analyze across sessions
+farscry analyze sessions/*.vasf --json
 ```
+
+Spec: vasp-protocol.github.io/spec
+GitHub: github.com/teles-forge/farscry
+Paper: [arXiv link — coming]
 
 ---
 
-GitHub: github.com/teles-forge/farscry
-Site: farscry.dev
-VASP spec: vasp-protocol.github.io/spec
-Benchmark methodology: github.com/teles-forge/farscry/benchmarks
-Roadmap (v0.2.0): github.com/teles-forge/farscry/blob/main/docs/projects/roadmap-v0.2.0.md
+**7. Call to action**
 
-Built with Rust. Apache 2.0.
+If you run computer-use agents:
+
+1. Record sessions with `farscry serve --mcp --record`
+2. Run `farscry analyze sessions/*.vasf`
+3. Tell us your AER and VLR
+
+If you're a researcher: the preprint is at [arXiv link]. The dataset is at
+[HuggingFace link]. Everything is reproducible with the commands above.
+
+```bash
+npm install -g farscry
+```
 
 ---
 
 ## Comment responses (pre-drafted)
 
-**"Why not just use Tesseract?"**
+**"What's the difference between a silent failure and a correct no-op?"**
 
-Tesseract returns raw text. farscry returns typed UI elements with coordinates and states (enabled/disabled, current values). Tesseract at 4K takes ~2,500ms. farscry warm daemon is 38ms. They solve different problems: Tesseract does OCR, farscry does UI understanding.
+A no-op is when the agent correctly determines no action is needed. A silent
+failure is when the agent takes an action (click, type, submit) that returns
+success, but produces no visual change. StateId before == StateId after.
+farscry can't distinguish intent, but it can flag cases where an action claimed
+to succeed but changed nothing on screen. Those are the failures worth auditing.
 
-**"How does latency compare to cloud vision?"**
+**"Why not just use OSWorld's existing evaluation?"**
 
-Cloud Vision typically takes 2-5s per image and costs ~$0.0047/image. farscry warm daemon is 38ms at $0. The 38ms is measured on M4 Pro with CoreML. x86 with ORT backend is ~300ms warm.
+OSWorld evaluates task success at the end. It doesn't give you per-step visual
+state, so you can't compute AER or VLR. farscry doesn't replace OSWorld — it
+adds a layer of observability on top. You can run farscry alongside any existing
+benchmark.
 
-**"What's VASP?"**
+**"How is VASF different from screen recordings?"**
 
-VASP (Visual Agent State Protocol) is an open format for how agents receive visual context: typed elements with coordinates, not prose. Same positioning as MCP for tool connectivity, but for visual state. farscry is the reference implementation. Spec at vasp-protocol.github.io/spec.
+A screen recording is a video. VASF is a structured binary: each frame is a
+perceptual hash + compressed VASP text (typed UI elements with coordinates). The
+format deduplicates consecutive identical states, so a 300-step session might
+store 40 unique visual states. Each state has a stable cross-session ID (StateId)
+you can query across thousands of sessions in milliseconds.
 
-**"Does it work on Linux/Windows?"**
+**"What's StateId exactly?"**
 
-Yes. Four pre-built binaries: macOS arm64 (CoreML, 38ms warm), Linux x64, Windows x64 (ORT backend, ~300ms warm). The npm and pip packages auto-download the correct binary on install.
-
-**"What about accuracy on complex UIs?"**
-
-96% success rate across N=223 real professional screenshots from ScreenSpot-Pro (Android Studio, macOS, Windows 11, Linux). The 4% failures are icon-heavy screens with no detectable text. Full breakdown in benchmarks/README.md.
+A perceptual hash (phash) of the screenshot. Two screenshots with the same
+visual content get the same StateId. Two screenshots with different content get
+different StateIds — even if the agent thinks the state is the same. It's the
+primitive that makes cross-session analysis possible.
 
 **"Why Rust?"**
 
-Zero runtime dependencies. Single ~8MB binary. Ships via npm, pip, Homebrew, and curl without dragging in Python or a runtime. CoreML and ONNX Runtime bindings exist for Rust. The binary is the distribution unit.
+Zero runtime dependencies. Single ~8MB binary. Ships via npm, pip, Homebrew, and
+curl. The binary is the distribution unit. CoreML and ONNX Runtime bindings for
+38ms warm latency on M4 Pro.
 
-**"What's the diff token count based on?"**
+**"What does [X]% silent failure rate mean in practice?"**
 
-Measured. A typical 1080p screenshot renders to ~1,568 tokens via Claude's image encoding formula (512 base + tiles). VASP text output averages ~175 tokens across N=223. farscry diff produces ~100 tokens for a partial-change verification. Numbers in benchmarks/README.md.
-
-**"Where does the 58% failure rate come from?"**
-
-OSWorld benchmark (arXiv:2404.07972), GPT-4V baseline, Table 2. farscry doesn't claim to fix this directly: it gives agents exact coordinates instead of prose descriptions, which addresses the root cause of most coordinate errors.
+It means [X]% of failed sessions had at least one step where: the agent took an
+action, the action returned a success response, and the screen was identical
+before and after (same StateId). The agent then made its next decision based on
+a world model that was already broken.

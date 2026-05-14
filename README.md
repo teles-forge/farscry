@@ -1,9 +1,17 @@
 # farscry
 
-> Converts screenshots into structured context that AI agents can act on.
-> No vision API. No cloud. One binary.
+> Claude Computer Use succeeds on ~15% of OSWorld tasks.
+> We built tooling to measure what happens in the other 85%.
 
 *farscry (n.) a magical artifact that reveals what is hidden at a distance.*
+
+**[X]% of failed sessions contain a silent failure: an action that returned OK but produced zero visual effect.**
+The agent continued with a broken world model.
+
+→ Paper: We measured why computer-use agents fail [[arXiv link — coming]]
+→ Dataset: [N] sessions, VASF format, public [[HuggingFace link — coming]]
+
+---
 
 **Problem**: Devin CLI, Claude Code, and Cursor struggle with images.
 Give them a screenshot, they guess. Give them farscry output, they understand.

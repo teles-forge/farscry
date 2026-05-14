@@ -68,6 +68,12 @@ enum Commands {
 
         #[arg(long)]
         port: Option<u16>,
+
+        #[arg(long)]
+        record: Option<PathBuf>,
+
+        #[arg(long, default_value = "10")]
+        hamming_threshold: u8,
     },
 
     InstallLang {
@@ -155,7 +161,12 @@ async fn main() {
             after,
             json,
         } => commands::diff::diff_images(before, after, json),
-        Commands::Serve { mcp, port } => commands::serve::serve_mcp(mcp, port).await,
+        Commands::Serve {
+            mcp,
+            port,
+            record,
+            hamming_threshold,
+        } => commands::serve::serve_mcp(mcp, port, record, hamming_threshold).await,
         Commands::InstallLang { lang } => commands::install::install_lang(lang),
         Commands::Setup { undo_smart_paste } => {
             if undo_smart_paste {

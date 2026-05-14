@@ -3,8 +3,16 @@ use serde::{Deserialize, Serialize};
 use std::path::PathBuf;
 
 #[derive(Debug, Serialize, Deserialize, Default)]
+pub struct SessionsConfig {
+    pub record: Option<bool>,
+    pub output_dir: Option<String>,
+    pub hamming_threshold: Option<u8>,
+}
+
+#[derive(Debug, Serialize, Deserialize, Default)]
 pub struct FarscryConfig {
     pub agent: Option<AgentConfig>,
+    pub sessions: Option<SessionsConfig>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -38,6 +46,7 @@ pub fn write_farscry_config(agent: &str, default_prompt: &str) -> Result<()> {
             preferred: agent.to_string(),
             default_prompt: default_prompt.to_string(),
         }),
+        sessions: None,
     };
     let content = toml::to_string_pretty(&cfg)?;
     std::fs::write(&path, content)?;

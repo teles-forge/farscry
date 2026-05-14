@@ -1,62 +1,249 @@
 use anyhow::Result;
-use farscry_core::Pipeline;
+use chrono::Utc;
+use farscry_core::vasf::{VasfFrame, VasfWriter};
+use farscry_core::{Pipeline, StateId, VaspDelta, VaspOutput};
 use std::path::PathBuf;
-use std::sync::Arc;
+use std::sync::{Arc, Mutex};
+use std::time::{SystemTime, UNIX_EPOCH};
 
-#[derive(Clone)]
-struct FarscryPipelineAdapter {
-    pipeline: Arc<Pipeline>,
+pub async fn serve_mcp(
+    mcp: bool,
+    port: Option<u16>,
+    record: Option<PathBuf>,
+    hamming_threshold: u8,
+) -> Result<()> {
+    if !mcp {
+        anyhow::bail!("Only MCP mode is currently supported");
+    }
+    let pipeline = crate::pipeline::get_or_build_pipeline()
+        .map_err(|e| anyhow::anyhow!("Pipeline init failed: {e}"))?;
+    let record_path = resolve_record_path(record, hamming_threshold).await?;
+    let recorder = record_path
+        .map(|p| SessionRecorder::new(p, hamming_threshold))
+        .transpose()
+        .map_err(|e| anyhow::anyhow!("Failed to create recorder: {e}"))?;
+    let recorder_arc: Arc<Mutex<Option<SessionRecorder>>> = Arc::new(Mutex::new(recorder));
+    let adapter = RecordingAdapter {
+        pipeline,
+        recorder: recorder_arc.clone(),
+    };
+    run_server(port, adapter).await;
+    finalize_recorder(recorder_arc);
+    Ok(())
 }
 
-impl farscry_mcp::PipelineOps for FarscryPipelineAdapter {
-    fn process(&self, image_path: &str) -> Result<farscry_core::VaspOutput, String> {
+async fn run_server<P: farscry_mcp::PipelineOps>(port: Option<u16>, adapter: P) {
+    let task: tokio::task::JoinHandle<Result<(), String>> = if let Some(p) = port {
+        tokio::spawn(async move { farscry_mcp::McpServer::serve_tcp_with(p, adapter).await })
+    } else {
+        #[cfg(unix)]
+        {
+            let socket_path = default_socket_path();
+            tokio::spawn(async move {
+                farscry_mcp::McpServer::serve_unix_with(&socket_path, adapter).await
+            })
+        }
+        #[cfg(not(unix))]
+        {
+            eprintln!("[farscry] Unix sockets not supported on Windows. Use --port.");
+            return;
+        }
+    };
+    tokio::select! {
+        r = task => { if let Err(e) = r { eprintln!("[farscry] server error: {e}"); } }
+        _ = tokio::signal::ctrl_c() => { eprintln!("[farscry] shutting down"); }
+    }
+}
+
+fn finalize_recorder(recorder_arc: Arc<Mutex<Option<SessionRecorder>>>) {
+    if let Ok(mut guard) = recorder_arc.lock() {
+        if let Some(mut rec) = guard.take() {
+            rec.print_summary();
+            let _ = rec.finalize();
+        }
+    }
+}
+
+async fn resolve_record_path(
+    explicit: Option<PathBuf>,
+    hamming_threshold: u8,
+) -> Result<Option<PathBuf>> {
+    if let Some(p) = explicit {
+        return Ok(Some(p));
+    }
+    let cfg = crate::config::read_farscry_config();
+    if let Some(sessions) = &cfg.sessions {
+        if sessions.record == Some(true) {
+            let dir = sessions
+                .output_dir
+                .as_ref()
+                .map(PathBuf::from)
+                .unwrap_or_else(default_sessions_dir);
+            std::fs::create_dir_all(&dir)?;
+            let path = dir.join(timestamp_filename());
+            eprintln!("[farscry] session recording: auto (from config)");
+            eprintln!("[farscry] recording to {}", path.display());
+            return Ok(Some(path));
+        }
+    }
+    let _ = hamming_threshold;
+    tokio::task::spawn_blocking(prompt_record_session)
+        .await
+        .map_err(|e| anyhow::anyhow!("prompt task: {e}"))
+        .and_then(|r| r)
+}
+
+fn prompt_record_session() -> Result<Option<PathBuf>> {
+    use std::io::Write;
+    let dir = default_sessions_dir();
+    std::fs::create_dir_all(&dir)?;
+    let path = dir.join(timestamp_filename());
+    eprint!("[farscry] session observability: disabled\nEnable recording? (y/N): ");
+    std::io::stderr().flush().ok();
+    let mut line = String::new();
+    std::io::stdin().read_line(&mut line)?;
+    if line.trim().eq_ignore_ascii_case("y") {
+        eprintln!("[farscry] recording to {}", path.display());
+        Ok(Some(path))
+    } else {
+        Ok(None)
+    }
+}
+
+fn default_sessions_dir() -> PathBuf {
+    dirs::home_dir()
+        .unwrap_or_else(|| PathBuf::from("."))
+        .join(".farscry")
+        .join("sessions")
+}
+
+fn default_socket_path() -> PathBuf {
+    dirs::home_dir()
+        .unwrap_or_else(|| PathBuf::from("."))
+        .join(".farscry")
+        .join("mcp.sock")
+}
+
+fn timestamp_filename() -> String {
+    let now = Utc::now();
+    format!("{}.vasf", now.format("%Y-%m-%d-%H%M"))
+}
+
+fn now_ms() -> i64 {
+    SystemTime::now()
+        .duration_since(UNIX_EPOCH)
+        .unwrap_or_default()
+        .as_millis() as i64
+}
+
+fn hamming(a: StateId, b: StateId) -> u8 {
+    (a.to_bits() ^ b.to_bits()).count_ones() as u8
+}
+
+struct SessionRecorder {
+    writer: VasfWriter,
+    last_state_id: Option<StateId>,
+    hamming_threshold: u8,
+    output_path: PathBuf,
+    start_time: i64,
+}
+
+impl SessionRecorder {
+    fn new(output_path: PathBuf, hamming_threshold: u8) -> std::io::Result<Self> {
+        if let Some(parent) = output_path.parent() {
+            std::fs::create_dir_all(parent)?;
+        }
+        let writer = VasfWriter::create(&output_path)?;
+        let start_time = SystemTime::now()
+            .duration_since(UNIX_EPOCH)
+            .unwrap_or_default()
+            .as_secs() as i64;
+        Ok(Self {
+            writer,
+            last_state_id: None,
+            hamming_threshold,
+            output_path,
+            start_time,
+        })
+    }
+
+    fn record(&mut self, vasp: &VaspOutput, image_path: &str) {
+        self.writer.total_input += 1;
+        let is_new = self
+            .last_state_id
+            .map(|last| hamming(vasp.state_id, last) > self.hamming_threshold)
+            .unwrap_or(true);
+        if !is_new {
+            return;
+        }
+        let (w, h) = image::image_dimensions(image_path).unwrap_or((1920, 1080));
+        let vasp_text = farscry_formatter::VaspFormatter::format_vasp(vasp, image_path, w, h);
+        let frame = VasfFrame {
+            state_id: vasp.state_id,
+            timestamp: now_ms(),
+            vasp_data: vasp_text.into_bytes(),
+            delta_data: None,
+        };
+        let _ = self.writer.append_frame(&frame);
+        self.last_state_id = Some(vasp.state_id);
+    }
+
+    fn print_summary(&self) {
+        let unique = self.writer.frame_count;
+        let total = self.writer.total_input;
+        let dupes = total.saturating_sub(unique);
+        let pct = if total > 0 { dupes * 100 / total } else { 0 };
+        let tokens_raw = total as u64 * 2765;
+        let tokens_vasf = unique as u64 * 200;
+        let ratio = if tokens_vasf > 0 {
+            tokens_raw / tokens_vasf
+        } else {
+            0
+        };
+        eprintln!("[farscry] session complete");
+        eprintln!("[farscry] unique states: {unique} of {total} frames ({pct}% deduplicated)");
+        eprintln!("[farscry] tokens without farscry: ~{tokens_raw}");
+        eprintln!("[farscry] tokens with farscry: ~{tokens_vasf}");
+        eprintln!("[farscry] reduction: ~{ratio}x");
+        eprintln!("[farscry] saved: {}", self.output_path.display());
+        eprintln!(
+            "[farscry] replay: farscry timeline {}",
+            self.output_path.display()
+        );
+        let _ = self.start_time;
+    }
+
+    fn finalize(&mut self) -> std::io::Result<()> {
+        self.writer.finalize()
+    }
+}
+
+#[derive(Clone)]
+struct RecordingAdapter {
+    pipeline: Arc<Pipeline>,
+    recorder: Arc<Mutex<Option<SessionRecorder>>>,
+}
+
+impl farscry_mcp::PipelineOps for RecordingAdapter {
+    fn process(&self, image_path: &str) -> Result<VaspOutput, String> {
         let img = image::open(image_path).map_err(|e| format!("cannot open image: {e}"))?;
-        self.pipeline.process(img).map_err(|e| e.to_string())
+        let output = self.pipeline.process(img).map_err(|e| e.to_string())?;
+        if let Ok(mut guard) = self.recorder.lock() {
+            if let Some(rec) = guard.as_mut() {
+                rec.record(&output, image_path);
+            }
+        }
+        Ok(output)
     }
 
     fn diff(
         &self,
-        before: &farscry_core::VaspOutput,
-        after: &farscry_core::VaspOutput,
+        before: &VaspOutput,
+        after: &VaspOutput,
         before_dims: Option<(u32, u32)>,
         after_dims: Option<(u32, u32)>,
-    ) -> farscry_core::VaspDelta {
+    ) -> VaspDelta {
         use farscry_core::DiffEngine;
         farscry_diff::DiffEngineImpl.diff(before, after, before_dims, after_dims)
     }
-}
-
-pub async fn serve_mcp(mcp: bool, port: Option<u16>) -> Result<()> {
-    if !mcp {
-        anyhow::bail!("Only MCP mode is currently supported");
-    }
-
-    let pipeline = crate::pipeline::get_or_build_pipeline()
-        .map_err(|e| anyhow::anyhow!("Pipeline init failed: {e}"))?;
-    let adapter = FarscryPipelineAdapter { pipeline };
-
-    if let Some(port) = port {
-        farscry_mcp::McpServer::serve_tcp_with(port, adapter)
-            .await
-            .map_err(|e| anyhow::anyhow!("{}", e))?;
-    } else {
-        #[cfg(unix)]
-        {
-            let socket_path = dirs::home_dir()
-                .unwrap_or_else(|| PathBuf::from("."))
-                .join(".farscry")
-                .join("mcp.sock");
-            farscry_mcp::McpServer::serve_unix_with(&socket_path, adapter)
-                .await
-                .map_err(|e| anyhow::anyhow!("{}", e))?;
-        }
-        #[cfg(not(unix))]
-        {
-            anyhow::bail!(
-                "Unix Domain Sockets are not supported on Windows. Use --port to specify a TCP port."
-            );
-        }
-    }
-
-    Ok(())
 }

@@ -1,6 +1,6 @@
 use crate::StateId;
 use std::collections::HashMap;
-use std::io::{BufReader, BufWriter, Read, Write};
+use std::io::{BufReader, BufWriter, Read, Seek, SeekFrom, Write};
 use std::path::Path;
 use std::time::{SystemTime, UNIX_EPOCH};
 
@@ -236,6 +236,51 @@ fn read_frame<R: Read>(r: &mut R) -> std::io::Result<VasfFrame> {
         vasp_data,
         delta_data,
     })
+}
+
+pub struct VasfWriter {
+    writer: BufWriter<std::fs::File>,
+    pub frame_count: u32,
+    pub total_input: u32,
+}
+
+impl VasfWriter {
+    pub fn create(path: &Path) -> std::io::Result<Self> {
+        let created_at = SystemTime::now()
+            .duration_since(UNIX_EPOCH)
+            .unwrap_or_default()
+            .as_secs() as i64;
+        let file = std::fs::File::create(path)?;
+        let mut w = BufWriter::new(file);
+        w.write_all(MAGIC)?;
+        w.write_all(&FORMAT_VERSION.to_le_bytes())?;
+        w.write_all(&0u32.to_le_bytes())?;
+        w.write_all(&created_at.to_le_bytes())?;
+        w.write_all(&0u32.to_le_bytes())?;
+        w.flush()?;
+        Ok(Self {
+            writer: w,
+            frame_count: 0,
+            total_input: 0,
+        })
+    }
+
+    pub fn append_frame(&mut self, frame: &VasfFrame) -> std::io::Result<()> {
+        write_frame(&mut self.writer, frame)?;
+        self.writer.flush()?;
+        self.frame_count += 1;
+        Ok(())
+    }
+
+    pub fn finalize(&mut self) -> std::io::Result<()> {
+        self.writer.flush()?;
+        let file = self.writer.get_mut();
+        file.seek(SeekFrom::Start(6))?;
+        file.write_all(&self.frame_count.to_le_bytes())?;
+        file.seek(SeekFrom::Start(18))?;
+        file.write_all(&self.total_input.to_le_bytes())?;
+        file.flush()
+    }
 }
 
 #[cfg(test)]

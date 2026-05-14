@@ -98,6 +98,20 @@ enum Commands {
         #[arg(short = 'o', long, value_name = "FILE")]
         output: Option<PathBuf>,
     },
+
+    Pack {
+        input: PathBuf,
+
+        #[arg(short = 'o', long, value_name = "FILE")]
+        output: PathBuf,
+
+        #[arg(long, default_value = "10")]
+        hamming_threshold: u8,
+    },
+
+    Timeline {
+        input: PathBuf,
+    },
 }
 
 #[tokio::main]
@@ -166,6 +180,12 @@ async fn main() {
                 commands::annotate::annotate_images(paths, output)
             }
         }
+        Commands::Pack {
+            input,
+            output,
+            hamming_threshold,
+        } => commands::pack::pack_frames(input, output, hamming_threshold),
+        Commands::Timeline { input } => commands::timeline::timeline(input),
     };
 
     match result {

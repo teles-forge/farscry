@@ -3,6 +3,7 @@ pub mod hash;
 pub mod pipeline;
 pub mod traits;
 pub mod types;
+pub mod vasf;
 
 pub use error::FarscryError;
 pub use hash::phash_image;

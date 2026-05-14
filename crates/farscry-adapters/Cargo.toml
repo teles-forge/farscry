@@ -1,0 +1,18 @@
+[package]
+name = "farscry-adapters"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+publish = true
+description = "VASP adapters: convert claude-computer-use, playwright-a11y, and openai-vision output to VASP"
+keywords = ["vasp", "agents", "vision", "adapter", "ocr"]
+categories = ["computer-vision", "command-line-utilities"]
+
+[dependencies]
+farscry-core = { path = "../farscry-core" }
+serde = { workspace = true }
+serde_json = "1"
+thiserror = { workspace = true }

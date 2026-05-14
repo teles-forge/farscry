@@ -87,6 +87,25 @@ enum Commands {
         #[arg(trailing_var_arg = true)]
         prompt: Vec<String>,
     },
+
+    Annotate {
+        #[arg(required = true)]
+        paths: Vec<PathBuf>,
+
+        #[arg(short = 'o', long, value_name = "FILE")]
+        output: Option<PathBuf>,
+    },
+
+    Convert {
+        #[arg(long)]
+        from: String,
+
+        #[arg(long, value_name = "FILE")]
+        input: PathBuf,
+
+        #[arg(long)]
+        json: bool,
+    },
 }
 
 #[tokio::main]
@@ -140,6 +159,8 @@ async fn main() {
             };
             paste(agent.as_deref(), prompt_str.as_deref())
         }
+        Commands::Annotate { paths, output } => annotate_images(paths, output),
+        Commands::Convert { from, input, json } => convert_adapter(&from, &input, json),
     };
 
     match result {
@@ -314,6 +335,68 @@ fn diff_images(before: PathBuf, after: PathBuf, json: bool) -> Result<()> {
         let delta_text = farscry_formatter::VaspFormatter::format_diff(&delta);
         print!("{}", delta_text);
     }
+
+    Ok(())
+}
+
+fn convert_adapter(from: &str, input: &PathBuf, json: bool) -> Result<()> {
+    let content = std::fs::read_to_string(input)
+        .with_context(|| format!("failed to read {}", input.display()))?;
+    let output = farscry_adapters::convert_file(from, &content)
+        .with_context(|| format!("adapter '{}' failed", from))?;
+    if json {
+        println!("{}", farscry_formatter::VaspFormatter::format_json(&output, true));
+    } else {
+        print!(
+            "{}",
+            farscry_formatter::VaspFormatter::format_vasp_with_options(
+                &output,
+                &input.to_string_lossy(),
+                1920,
+                1080,
+                true,
+            )
+        );
+    }
+    Ok(())
+}
+
+fn annotate_images(paths: Vec<PathBuf>, output: Option<PathBuf>) -> Result<()> {
+    if paths.is_empty() {
+        anyhow::bail!("at least one image path is required");
+    }
+
+    let out_path = match output {
+        Some(p) => p,
+        None => {
+            let first = &paths[0];
+            let stem = first.file_stem().unwrap_or_default().to_string_lossy();
+            let ext = first
+                .extension()
+                .map(|e| format!(".{}", e.to_string_lossy()))
+                .unwrap_or_else(|| ".png".to_string());
+            first
+                .parent()
+                .unwrap_or(std::path::Path::new("."))
+                .join(format!("{stem}_annotated{ext}"))
+        }
+    };
+
+    let path = &paths[0];
+    let img = image::open(path)
+        .with_context(|| format!("cannot open image: {}", path.display()))?;
+
+    let vasp_output = process_image(path, 100_000_000)?;
+
+    anyhow::bail!("annotate command not yet implemented");
+    #[allow(unreachable_code)]
+    let _ = (img, vasp_output, out_path);
+
+    eprintln!(
+        "[farscry] annotated {} elements -> {}",
+        vasp_output.ui_tree.len(),
+        out_path.display()
+    );
 
     Ok(())
 }

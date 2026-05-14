@@ -742,6 +742,7 @@ dependencies = [
  "anyhow",
  "clap",
  "dirs",
+ "farscry-adapters",
  "farscry-classifier",
  "farscry-core",
  "farscry-diff",
@@ -753,6 +754,16 @@ dependencies = [
  "serde_json",
  "tokio",
  "toml 0.8.23",
+]
+
+[[package]]
+name = "farscry-adapters"
+version = "0.1.0"
+dependencies = [
+ "farscry-core",
+ "serde",
+ "serde_json",
+ "thiserror 1.0.69",
 ]
 
 [[package]]

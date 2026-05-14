@@ -19,25 +19,25 @@ fn compute_2d_dct(input: &mut [f32], size: usize) -> Vec<f32> {
     let dct = planner.plan_dct2(size);
     let mut output = vec![0.0f32; size * size];
 
-    let mut temp = vec![0.0f32; size];
+    let mut row_scratch = vec![0.0f32; size];
 
     for i in 0..size {
         for j in 0..size {
-            temp[j] = input[i * size + j];
+            row_scratch[j] = input[i * size + j];
         }
-        dct.process_dct2(&mut temp);
+        dct.process_dct2(&mut row_scratch);
         for j in 0..size {
-            output[i * size + j] = temp[j];
+            output[i * size + j] = row_scratch[j];
         }
     }
 
     for j in 0..size {
         for i in 0..size {
-            temp[i] = output[i * size + j];
+            row_scratch[i] = output[i * size + j];
         }
-        dct.process_dct2(&mut temp);
+        dct.process_dct2(&mut row_scratch);
         for i in 0..size {
-            output[i * size + j] = temp[i];
+            output[i * size + j] = row_scratch[i];
         }
     }
 
@@ -45,19 +45,19 @@ fn compute_2d_dct(input: &mut [f32], size: usize) -> Vec<f32> {
 }
 
 fn pack_phash_bits(dct: &[f32]) -> StateId {
-    let mut low_freq = Vec::with_capacity(64);
-    for v in 0..8 {
-        for u in 0..8 {
-            low_freq.push(dct[v * 32 + u]);
+    let mut low_freq_block = Vec::with_capacity(64);
+    for freq_row in 0..8 {
+        for freq_col in 0..8 {
+            low_freq_block.push(dct[freq_row * 32 + freq_col]);
         }
     }
 
-    let working_set: Vec<f32> = low_freq.iter().skip(1).copied().collect();
+    let ac_coefficients: Vec<f32> = low_freq_block.iter().skip(1).copied().collect();
 
-    let mean: f32 = working_set.iter().sum::<f32>() / working_set.len() as f32;
+    let mean: f32 = ac_coefficients.iter().sum::<f32>() / ac_coefficients.len() as f32;
 
     let mut bits: u64 = 0;
-    for (i, &val) in working_set.iter().enumerate() {
+    for (i, &val) in ac_coefficients.iter().enumerate() {
         if val > mean {
             bits |= 1 << i;
         }

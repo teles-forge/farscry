@@ -56,81 +56,90 @@ impl OrtOcrEngine {
     }
 
     fn run_pipeline(&self, image: &DynamicImage) -> Result<OcrOutput, FarscryError> {
-        let rgb = match image {
-            DynamicImage::ImageRgb8(img) => img.clone(),
-            DynamicImage::ImageRgba8(img) => {
-                let mut rgb = image::RgbImage::new(img.width(), img.height());
-                for (x, y, pixel) in img.enumerate_pixels() {
-                    rgb[(x, y)] = image::Rgb([pixel.0[0], pixel.0[1], pixel.0[2]]);
-                }
-                rgb
-            }
-            DynamicImage::ImageLuma8(img) => {
-                image::RgbImage::from_fn(img.width(), img.height(), |x, y| {
-                    let luma = img.get_pixel(x, y).0[0];
-                    image::Rgb([luma, luma, luma])
-                })
-            }
-            DynamicImage::ImageRgb16(_) => {
-                return Err(FarscryError::OcrFailed("RGB16 not supported".to_string()));
-            }
-            DynamicImage::ImageRgba16(_) => {
-                return Err(FarscryError::OcrFailed("RGBA16 not supported".to_string()));
-            }
-            _ => {
-                return Err(FarscryError::OcrFailed(
-                    "Unsupported image format".to_string(),
-                ));
-            }
-        };
+        let rgb_image = to_rgb_image(image)?;
+        let image_width = image.width();
+        let image_height = image.height();
 
-        let results = self
+        let ocr_results = self
             .ocr
-            .predict(vec![rgb])
+            .predict(vec![rgb_image])
             .map_err(|e| FarscryError::OcrFailed(format!("OCR prediction failed: {e}")))?;
 
-        if results.is_empty() {
+        if ocr_results.is_empty() {
             return Err(FarscryError::OcrFailed(
                 "No OCR results returned".to_string(),
             ));
         }
 
-        let (w, h) = (image.width(), image.height());
-
-        let regions: Vec<TextRegion> = results[0]
-            .text_regions
-            .iter()
-            .filter_map(|r: &oar_ocr::domain::TextRegion| {
-                r.text_with_confidence().map(|(text, _conf)| {
-                    let pts = &r.bounding_box.points;
-                    let (w, h) = if pts.len() >= 4 {
-                        let w = ((pts[1].x - pts[0].x).powi(2) + (pts[1].y - pts[0].y).powi(2))
-                            .sqrt()
-                            .max(1.0);
-                        let h = ((pts[3].x - pts[0].x).powi(2) + (pts[3].y - pts[0].y).powi(2))
-                            .sqrt()
-                            .max(1.0);
-                        (w, h)
-                    } else {
-                        let min_x = pts.iter().map(|p| p.x).fold(f32::MAX, f32::min);
-                        let max_x = pts.iter().map(|p| p.x).fold(f32::MIN, f32::max);
-                        let min_y = pts.iter().map(|p| p.y).fold(f32::MAX, f32::min);
-                        let max_y = pts.iter().map(|p| p.y).fold(f32::MIN, f32::max);
-                        ((max_x - min_x).max(1.0), (max_y - min_y).max(1.0))
-                    };
-                    let center = r.bounding_box.center();
-                    (text.to_string(), center.x, center.y, w, h)
-                })
-            })
-            .map(|(text, cx, cy, w, h)| TextRegion { text, cx, cy, w, h })
-            .collect();
+        let regions = extract_text_regions(&ocr_results[0].text_regions);
 
         Ok(OcrOutput {
             regions,
-            width: w,
-            height: h,
+            width: image_width,
+            height: image_height,
         })
     }
+}
+
+fn to_rgb_image(image: &DynamicImage) -> Result<image::RgbImage, FarscryError> {
+    match image {
+        DynamicImage::ImageRgb8(img) => Ok(img.clone()),
+        DynamicImage::ImageRgba8(img) => {
+            let mut rgb_image = image::RgbImage::new(img.width(), img.height());
+            for (x, y, pixel) in img.enumerate_pixels() {
+                rgb_image[(x, y)] = image::Rgb([pixel.0[0], pixel.0[1], pixel.0[2]]);
+            }
+            Ok(rgb_image)
+        }
+        DynamicImage::ImageLuma8(img) => Ok(image::RgbImage::from_fn(
+            img.width(),
+            img.height(),
+            |x, y| {
+                let luma = img.get_pixel(x, y).0[0];
+                image::Rgb([luma, luma, luma])
+            },
+        )),
+        DynamicImage::ImageRgb16(_) => {
+            Err(FarscryError::OcrFailed("RGB16 not supported".to_string()))
+        }
+        DynamicImage::ImageRgba16(_) => {
+            Err(FarscryError::OcrFailed("RGBA16 not supported".to_string()))
+        }
+        _ => Err(FarscryError::OcrFailed(
+            "Unsupported image format".to_string(),
+        )),
+    }
+}
+
+fn extract_text_regions(raw_regions: &[oar_ocr::domain::TextRegion]) -> Vec<TextRegion> {
+    raw_regions
+        .iter()
+        .filter_map(|text_region| {
+            text_region.text_with_confidence().map(|(text, _conf)| {
+                let points = &text_region.bounding_box.points;
+                let (bbox_w, bbox_h) = if points.len() >= 4 {
+                    let bbox_w = ((points[1].x - points[0].x).powi(2)
+                        + (points[1].y - points[0].y).powi(2))
+                    .sqrt()
+                    .max(1.0);
+                    let bbox_h = ((points[3].x - points[0].x).powi(2)
+                        + (points[3].y - points[0].y).powi(2))
+                    .sqrt()
+                    .max(1.0);
+                    (bbox_w, bbox_h)
+                } else {
+                    let min_x = points.iter().map(|p| p.x).fold(f32::MAX, f32::min);
+                    let max_x = points.iter().map(|p| p.x).fold(f32::MIN, f32::max);
+                    let min_y = points.iter().map(|p| p.y).fold(f32::MAX, f32::min);
+                    let max_y = points.iter().map(|p| p.y).fold(f32::MIN, f32::max);
+                    ((max_x - min_x).max(1.0), (max_y - min_y).max(1.0))
+                };
+                let center = text_region.bounding_box.center();
+                (text.to_string(), center.x, center.y, bbox_w, bbox_h)
+            })
+        })
+        .map(|(text, cx, cy, w, h)| TextRegion { text, cx, cy, w, h })
+        .collect()
 }
 
 impl OcrEngine for OrtOcrEngine {

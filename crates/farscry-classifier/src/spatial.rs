@@ -43,8 +43,9 @@ pub fn extract_affordances(elements: &[UiElement]) -> Vec<Affordance> {
     affordances
 }
 
-fn nearest_label(input: &UiElement, all: &[UiElement]) -> String {
-    all.iter()
+fn nearest_label(input: &UiElement, elements: &[UiElement]) -> String {
+    elements
+        .iter()
         .filter(|e| e.element_type == ElementType::Label)
         .filter(|e| e.cx < input.cx + 10.0 || e.cy < input.cy + 10.0)
         .filter(|e| {

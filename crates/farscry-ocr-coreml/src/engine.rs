@@ -384,7 +384,11 @@ pub(crate) fn ndarray_to_mlarray(
         let ptr = arr.dataPointer().as_ptr() as *mut f32;
         let data_slice = std::slice::from_raw_parts_mut(ptr, count);
 
-        data_slice.copy_from_slice(tensor.as_slice().unwrap());
+        let contiguous_tensor = tensor.as_standard_layout();
+        let tensor_slice = contiguous_tensor.as_slice().ok_or_else(|| {
+            FarscryError::OcrFailed("tensor layout is not contiguous".to_string())
+        })?;
+        data_slice.copy_from_slice(tensor_slice);
 
         Ok(arr)
     }

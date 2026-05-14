@@ -37,12 +37,13 @@ fn is_terminal_screen(regions: &[TextRegion]) -> bool {
         let needle = "error:";
         let mut start = 0;
         while let Some(pos) = lower[start..].find(needle) {
-            let abs = start + pos;
-            let preceded_by_letter = abs > 0 && lower.as_bytes()[abs - 1].is_ascii_alphabetic();
+            let match_pos = start + pos;
+            let preceded_by_letter =
+                match_pos > 0 && lower.as_bytes()[match_pos - 1].is_ascii_alphabetic();
             if !preceded_by_letter {
                 return true;
             }
-            start = abs + needle.len();
+            start = match_pos + needle.len();
         }
 
         false

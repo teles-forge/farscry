@@ -6,18 +6,18 @@ use imageproc::rect::Rect;
 /// 12 neon colors cycled by element index.
 /// Adjacent boxes always get different colors; no fill avoids overlap noise.
 const NEON: &[Rgba<u8>] = &[
-    Rgba([255, 0, 128, 255]),   // hot pink
-    Rgba([0, 255, 80, 255]),    // neon green
-    Rgba([0, 220, 255, 255]),   // electric cyan
-    Rgba([255, 220, 0, 255]),   // electric yellow
-    Rgba([200, 0, 255, 255]),   // electric purple
-    Rgba([255, 80, 0, 255]),    // neon orange
-    Rgba([0, 255, 200, 255]),   // spring green
-    Rgba([255, 0, 255, 255]),   // magenta
-    Rgba([80, 255, 0, 255]),    // acid green
-    Rgba([255, 160, 0, 255]),   // neon amber
-    Rgba([0, 128, 255, 255]),   // electric blue
-    Rgba([255, 255, 0, 255]),   // pure yellow
+    Rgba([255, 0, 128, 255]), // hot pink
+    Rgba([0, 255, 80, 255]),  // neon green
+    Rgba([0, 220, 255, 255]), // electric cyan
+    Rgba([255, 220, 0, 255]), // electric yellow
+    Rgba([200, 0, 255, 255]), // electric purple
+    Rgba([255, 80, 0, 255]),  // neon orange
+    Rgba([0, 255, 200, 255]), // spring green
+    Rgba([255, 0, 255, 255]), // magenta
+    Rgba([80, 255, 0, 255]),  // acid green
+    Rgba([255, 160, 0, 255]), // neon amber
+    Rgba([0, 128, 255, 255]), // electric blue
+    Rgba([255, 255, 0, 255]), // pure yellow
 ];
 
 /// Draw bounding boxes over every detected UI element.

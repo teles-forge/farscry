@@ -29,10 +29,10 @@ pub fn verify_models(models_dir: &Path) -> Result<(), FarscryError> {
         }
     }
 
-    let manifest_path = dirs::home_dir()
-        .unwrap_or_default()
-        .join(".farscry")
-        .join(".manifest.json");
+    let Some(home) = dirs::home_dir() else {
+        return Ok(());
+    };
+    let manifest_path = home.join(".farscry").join(".manifest.json");
     let mut manifest = load_manifest(&manifest_path);
     for &(filename, expected) in models {
         manifest.insert(filename.to_string(), expected.to_string());
@@ -54,7 +54,9 @@ fn save_manifest(path: &Path, manifest: &HashMap<String, String>) -> Result<(), 
     if let Some(parent) = path.parent() {
         std::fs::create_dir_all(parent)?;
     }
-    std::fs::write(path, serde_json::to_string_pretty(manifest).unwrap())
+    let serialized = serde_json::to_string_pretty(manifest)
+        .map_err(|e| FarscryError::OcrFailed(format!("Failed to serialize manifest: {e}")))?;
+    std::fs::write(path, serialized)
         .map_err(|e| FarscryError::OcrFailed(format!("Failed to write manifest: {e}")))
 }
 

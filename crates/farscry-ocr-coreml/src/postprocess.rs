@@ -86,10 +86,10 @@ pub fn boxes_to_regions(
                 });
 
             TextRegion {
-                cx: min_x,
-                cy: min_y,
-                w: (max_x - min_x),
-                h: (max_y - min_y),
+                cx: (min_x + max_x) / 2.0,
+                cy: (min_y + max_y) / 2.0,
+                w: max_x - min_x,
+                h: max_y - min_y,
                 text: text.clone(),
             }
         })

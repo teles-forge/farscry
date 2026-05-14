@@ -37,8 +37,8 @@ impl Pipeline {
     pub fn process(&self, image: DynamicImage) -> Result<VaspOutput, FarscryError> {
         let preprocessed = self.preprocessor.process(image);
         let state_id = self.state_hasher.hash(&preprocessed);
-        let ocr = self.ocr.extract(&preprocessed)?;
-        let elements = self.element_classifier.classify(&ocr);
+        let ocr_output = self.ocr.extract(&preprocessed)?;
+        let elements = self.element_classifier.classify(&ocr_output);
         let screen_type = self.screen_classifier.classify(&elements);
         let screen = ClassifiedScreen {
             ui_tree: elements,

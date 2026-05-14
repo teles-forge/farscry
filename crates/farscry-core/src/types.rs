@@ -227,6 +227,6 @@ mod tests {
 
     #[test]
     fn test_element_type_has_select() {
-        let _ = ElementType::Select;
+        assert!(matches!(ElementType::Select, ElementType::Select));
     }
 }

@@ -14,21 +14,34 @@ fn check_screen_capture_permission() {
     // CoreGraphics is already linked via the `core-graphics` crate dependency.
     extern "C" {
         fn CGPreflightScreenCaptureAccess() -> bool;
+        // CGRequestScreenCaptureAccess() shows the native macOS permission dialog.
+        // Available on macOS 11+.
+        fn CGRequestScreenCaptureAccess() -> bool;
     }
-    let granted = unsafe { CGPreflightScreenCaptureAccess() };
-    if granted {
+
+    if unsafe { CGPreflightScreenCaptureAccess() } {
         return;
     }
 
+    // Trigger the native system permission dialog.
+    // For GUI apps this shows a modal; for terminal tools it registers the
+    // request in TCC and may surface the dialog or a notification.
+    let granted_via_dialog = unsafe { CGRequestScreenCaptureAccess() };
+    if granted_via_dialog {
+        return;
+    }
+
+    // Not granted yet — guide the user.
     println!("farscry needs Screen Recording permission to capture your terminal.");
     println!();
-    println!("Opening System Settings → Privacy & Security → Screen Recording…");
+    println!("A permission dialog should have appeared — approve it, then run:");
+    println!("  farscry setup --hook");
     println!();
-    println!("Steps to grant access:");
-    println!("  1. Enable the toggle next to your terminal app");
-    println!("     (e.g. iTerm2, Terminal.app, Warp, Ghostty)");
-    println!("  2. Quit and reopen your terminal");
-    println!("  3. Run  farscry setup --hook  again");
+    println!("If no dialog appeared:");
+    println!("  System Settings → Privacy & Security → Screen Recording");
+    println!("  Enable the toggle next to your terminal app");
+    println!("  (e.g. iTerm2, Terminal.app, Warp, Ghostty)");
+    println!("  Quit and reopen your terminal, then run  farscry setup --hook  again");
     println!();
 
     let _ = std::process::Command::new("open")

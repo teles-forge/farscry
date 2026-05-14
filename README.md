@@ -36,13 +36,13 @@ curl -fsSL https://farscry.dev/install | sh
 
 ```bash
 # Describe any image, returns coordinates
-farscry screen.png
+farscry extract screen.png
 
 # Diff before/after an action
 farscry diff before.png after.png
 
 # Pipe from clipboard (Cmd+Shift+4 on macOS)
-farscry --from-clipboard | your-agent "fix this"
+farscry extract --from-clipboard | your-agent "fix this"
 
 # Run as MCP server
 farscry serve --mcp
@@ -85,8 +85,8 @@ Detects: error messages · UI fields + values · terminal output · conversation
 screen_type: config
 ---
 
-[mid-right]  button  "Save Changes"  enabled:true
-[mid-center] input   value="1500"    editable:true
+[middle-right]  button  "Save Changes"  enabled:true
+[middle-center] input   value="1500"    editable:true
 [bottom]     error   "Value must be ≤ 10000"
 
 affordances:
@@ -139,6 +139,28 @@ Supports multiple images via `image_paths` parameter.
 ### Supported image formats
 PNG, JPEG, GIF, WEBP, TIFF. From clipboard, file, or stdin.
 From clipboard: Cmd+Shift+4, Shottr, or Cmd+C on an image file in Finder.
+
+## Roadmap
+
+**v0.1.0** (released)
+- Extract: screenshot to typed VASP output, 38ms warm daemon
+- Diff: semantic delta between two screenshots
+- MCP server, smart paste, ffix alias
+- npm, pip, Homebrew, crates.io
+- VASP 1.0-draft open RFC
+
+**v0.2.0** (in planning)
+- Multi-language OCR (Portuguese, Spanish, German, Japanese)
+- `farscry annotate` - screenshot with bounding boxes drawn over elements
+- Windows clipboard support
+- VASP adapters: Claude computer-use, Playwright, OpenAI vision
+
+**v0.3.0** (planned)
+- `farscry watch` - continuous diff on screen region changes
+- Loop detection via state_id history in daemon
+- SDK native clients (no subprocess overhead)
+
+Full spike docs: [docs/projects/roadmap-v0.2.0.md](docs/projects/roadmap-v0.2.0.md)
 
 ## License
 

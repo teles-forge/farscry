@@ -160,7 +160,15 @@ async fn main() {
             before,
             after,
             json,
-        } => commands::diff::diff_images(before, after, json),
+        } => {
+            let is_vasf = before.extension().and_then(|e| e.to_str()) == Some("vasf")
+                || after.extension().and_then(|e| e.to_str()) == Some("vasf");
+            if is_vasf {
+                commands::diff::diff_sessions(before, after)
+            } else {
+                commands::diff::diff_images(before, after, json)
+            }
+        }
         Commands::Serve {
             mcp,
             port,

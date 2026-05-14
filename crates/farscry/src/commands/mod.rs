@@ -1,6 +1,7 @@
 pub mod annotate;
 pub mod diff;
 pub mod extract;
+pub mod info;
 pub mod install;
 pub mod pack;
 pub mod paste;

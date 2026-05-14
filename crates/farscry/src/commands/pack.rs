@@ -46,7 +46,7 @@ pub fn pack_frames(input: PathBuf, output: PathBuf, hamming_threshold: u8) -> Re
     }
 
     let unique = frames.len();
-    VasfFile::new(frames)
+    VasfFile::new(frames, total as u32)
         .write_to(&output)
         .with_context(|| format!("cannot write {}", output.display()))?;
     print_stats(total, unique, &output);

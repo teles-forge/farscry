@@ -112,6 +112,10 @@ enum Commands {
     Timeline {
         input: PathBuf,
     },
+
+    Info {
+        input: PathBuf,
+    },
 }
 
 #[tokio::main]
@@ -186,6 +190,7 @@ async fn main() {
             hamming_threshold,
         } => commands::pack::pack_frames(input, output, hamming_threshold),
         Commands::Timeline { input } => commands::timeline::timeline(input),
+        Commands::Info { input } => commands::info::info(input),
     };
 
     match result {

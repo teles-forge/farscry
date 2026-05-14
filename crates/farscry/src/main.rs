@@ -382,13 +382,18 @@ fn run_annotate(img: image::DynamicImage, source: &Path, output: Option<PathBuf>
 
 fn annotate_images(paths: Vec<PathBuf>, output: Option<PathBuf>) -> Result<()> {
     if paths.is_empty() {
-        anyhow::bail!("provide at least one image path, or use --from-clipboard");
+        anyhow::bail!("invalid input: provide at least one image path or --from-clipboard");
     }
-    let path = &paths[0];
-    validate_image(path, 100_000_000)?;
-    let img =
-        image::open(path).with_context(|| format!("cannot open image: {}", path.display()))?;
-    run_annotate(img, path, output)
+    if output.is_some() && paths.len() > 1 {
+        anyhow::bail!("invalid input: -o/--output cannot be used with multiple input paths");
+    }
+    for path in &paths {
+        validate_image(path, 100_000_000)?;
+        let img =
+            image::open(path).with_context(|| format!("cannot open image: {}", path.display()))?;
+        run_annotate(img, path, output.clone())?;
+    }
+    Ok(())
 }
 
 fn annotate_from_clipboard(output: Option<PathBuf>) -> Result<()> {
@@ -400,7 +405,7 @@ fn annotate_from_clipboard(output: Option<PathBuf>) -> Result<()> {
         let (data, _) = read_clipboard_image_macos()?;
         std::fs::write(&tmp, data)?;
         let img = image::open(&tmp).context("cannot open clipboard image")?;
-        return run_annotate(img, &tmp, Some(out));
+        run_annotate(img, &tmp, Some(out))
     }
 
     #[cfg(target_os = "linux")]
@@ -408,7 +413,7 @@ fn annotate_from_clipboard(output: Option<PathBuf>) -> Result<()> {
         let data = read_clipboard_png_linux()?;
         std::fs::write(&tmp, data)?;
         let img = image::open(&tmp).context("cannot open clipboard image")?;
-        return run_annotate(img, &tmp, Some(out));
+        run_annotate(img, &tmp, Some(out))
     }
 
     #[cfg(not(any(target_os = "macos", target_os = "linux")))]
@@ -617,7 +622,16 @@ fn setup() -> Result<()> {
     println!("\nThen: screenshot → fp → done.\n");
 
     println!("─────────────────────────────────────────");
-    println!("Smart paste — Cmd+V auto-detects images\n");
+    println!("Visual debug alias (opens annotated image):\n");
+    println!(
+        "  echo \"alias fannot='farscry annotate --from-clipboard -o /tmp/farscry_annotated.png && open /tmp/farscry_annotated.png'\" >> {}",
+        zshrc.display()
+    );
+    println!("  source {}\n", zshrc.display());
+    println!("Then: screenshot → fannot → annotated image opens.\n");
+
+    println!("─────────────────────────────────────────");
+    println!("Smart paste - Cmd+V auto-detects images\n");
     println!("Configure Cmd+V to run farscry automatically");
     println!("when clipboard contains an image?\n");
     println!("  y = create script + show terminal instructions");
@@ -648,9 +662,10 @@ fn setup() -> Result<()> {
     println!("─────────────────────────────────────────");
     println!("Setup complete.\n");
     println!("Summary:");
-    println!("  ffix  → farscry + your agent (one command)");
-    println!("  fp    → farscry paste (smart, uses saved config)");
-    println!("  Cmd+V → auto-detects images (if configured above)\n");
+    println!("  ffix   → farscry + your agent (one command)");
+    println!("  fp     → farscry paste (smart, uses saved config)");
+    println!("  fannot → annotate screenshot, opens image");
+    println!("  Cmd+V  → auto-detects images (if configured above)\n");
 
     let open = readline_prompt(&format!("Open {} in your editor? (y/N) ", zshrc.display()));
     if open.eq_ignore_ascii_case("y") {
@@ -884,6 +899,7 @@ fn configure_alacritty(script: &Path, home: &Path) -> TerminalResult {
     }
 }
 
+#[allow(dead_code)]
 fn configure_bashrc_gnome(script: &Path, home: &Path) -> TerminalResult {
     let bashrc = home.join(".bashrc");
     if backup_file(&bashrc).is_err() {
@@ -1183,7 +1199,7 @@ fn setup_smart_paste(home: &Path) -> Result<()> {
 
 fn undo_smart_paste_configs(home: &Path) -> Result<()> {
     let mut restored = 0usize;
-    let mut failed: Vec<&'static str> = Vec::new();
+    let failed: Vec<&'static str> = Vec::new();
 
     let candidates: &[(&str, &[&str])] = &[
         ("iTerm2 plist", &["Library/Preferences/com.googlecode.iterm2.plist"]),
@@ -1459,7 +1475,13 @@ impl farscry_core::VaspFormatter for DefaultVaspFormatter {
             .collect::<Vec<_>>()
             .join(" • ");
         let ctx = if ctx.len() > 120 {
-            format!("{}…", &ctx[..120])
+            let boundary = ctx
+                .char_indices()
+                .map(|(i, _)| i)
+                .take_while(|&i| i <= 120)
+                .last()
+                .unwrap_or(0);
+            format!("{}…", &ctx[..boundary])
         } else {
             ctx
         };

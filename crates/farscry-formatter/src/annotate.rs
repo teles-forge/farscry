@@ -1,68 +1,83 @@
-use farscry_core::{ElementType, VaspOutput};
+use farscry_core::VaspOutput;
 use image::{DynamicImage, Rgba};
 use imageproc::drawing::draw_hollow_rect_mut;
 use imageproc::rect::Rect;
-use std::collections::HashSet;
+
+/// 12 neon colors cycled by element index.
+/// Adjacent boxes always get different colors; no fill avoids overlap noise.
+const NEON: &[Rgba<u8>] = &[
+    Rgba([255, 0, 128, 255]),   // hot pink
+    Rgba([0, 255, 80, 255]),    // neon green
+    Rgba([0, 220, 255, 255]),   // electric cyan
+    Rgba([255, 220, 0, 255]),   // electric yellow
+    Rgba([200, 0, 255, 255]),   // electric purple
+    Rgba([255, 80, 0, 255]),    // neon orange
+    Rgba([0, 255, 200, 255]),   // spring green
+    Rgba([255, 0, 255, 255]),   // magenta
+    Rgba([80, 255, 0, 255]),    // acid green
+    Rgba([255, 160, 0, 255]),   // neon amber
+    Rgba([0, 128, 255, 255]),   // electric blue
+    Rgba([255, 255, 0, 255]),   // pure yellow
+];
 
 /// Draw bounding boxes over every detected UI element.
 ///
-/// Color coding:
-///   Button                 = indigo  #6366f1
-///   Input / Select         = cyan    #22d3ee
-///   Error                  = red     #f87171
-///   Heading                = amber   #fbbf24
-///   Label / Badge          = gray    #a1a1aa
-///   Unknown                = gray    #a1a1aa
+/// Each element receives a unique neon color (cycled by index) so adjacent
+/// detections are always visually distinct.
 ///
-/// Elements that are also affordances get a thicker border (3px vs 2px).
+/// Border strategy — inward only, 2 pixels:
+///   pixel 0 (outermost): black  — anchors the box on any background
+///   pixel 1 (inner):     neon   — the identifying color
+///
+/// Drawing inward means boxes that share an edge never overwrite each other.
+/// Affordances that coincide with a ui_tree element get a third neon pixel.
 pub fn annotate_image(img: DynamicImage, output: &VaspOutput) -> DynamicImage {
     let mut rgba = img.to_rgba8();
-    let img_w = rgba.width();
-    let img_h = rgba.height();
+    let img_w = rgba.width() as i32;
+    let img_h = rgba.height() as i32;
 
-    let affordance_keys: HashSet<(i32, i32)> = output
-        .affordances
-        .iter()
-        .map(|a| (a.cx.round() as i32, a.cy.round() as i32))
-        .collect();
+    let black = Rgba([0u8, 0, 0, 255]);
 
-    for element in &output.ui_tree {
-        let color = element_color(&element.element_type);
-        let is_affordance =
-            affordance_keys.contains(&(element.cx.round() as i32, element.cy.round() as i32));
-
-        let x = (element.cx - element.w / 2.0).floor().max(0.0) as i32;
-        let y = (element.cy - element.h / 2.0).floor().max(0.0) as i32;
-        let w = (element.w.ceil() as u32)
-            .min(img_w.saturating_sub(x as u32))
-            .max(1);
-        let h = (element.h.ceil() as u32)
-            .min(img_h.saturating_sub(y as u32))
-            .max(1);
-
-        let thickness: i32 = if is_affordance { 3 } else { 2 };
-
-        for t in 0..thickness {
-            let rx = (x - t).max(0);
-            let ry = (y - t).max(0);
-            let rw = ((w as i32 + t * 2) as u32).min(img_w.saturating_sub(rx as u32));
-            let rh = ((h as i32 + t * 2) as u32).min(img_h.saturating_sub(ry as u32));
-            if rw > 0 && rh > 0 {
-                draw_hollow_rect_mut(&mut rgba, Rect::at(rx, ry).of_size(rw, rh), color);
-            }
+    // draw_inward_box: 1px black then 1px neon, both shrinking inward from boundary.
+    let mut draw_inward_box = |x0: i32, y0: i32, w: u32, h: u32, color: Rgba<u8>| {
+        if w == 0 || h == 0 {
+            return;
         }
+        // px 0: black outline at the boundary edge
+        draw_hollow_rect_mut(&mut rgba, Rect::at(x0, y0).of_size(w, h), black);
+        // px 1: neon just inside (shrink by 1 on all sides)
+        if w > 2 && h > 2 {
+            draw_hollow_rect_mut(
+                &mut rgba,
+                Rect::at(x0 + 1, y0 + 1).of_size(w - 2, h - 2),
+                color,
+            );
+        }
+        // px 2: second neon pixel for affordances (only when box is large enough)
+        if w > 4 && h > 4 {
+            draw_hollow_rect_mut(
+                &mut rgba,
+                Rect::at(x0 + 2, y0 + 2).of_size(w - 4, h - 4),
+                color,
+            );
+        }
+    };
+
+    for (i, element) in output.ui_tree.iter().enumerate() {
+        if element.w < 1.0 || element.h < 1.0 {
+            continue;
+        }
+        let color = NEON[i % NEON.len()];
+
+        let x0 = ((element.cx - element.w / 2.0).floor() as i32).clamp(0, img_w - 1);
+        let y0 = ((element.cy - element.h / 2.0).floor() as i32).clamp(0, img_h - 1);
+        let x1 = ((element.cx + element.w / 2.0).ceil() as i32).clamp(0, img_w - 1);
+        let y1 = ((element.cy + element.h / 2.0).ceil() as i32).clamp(0, img_h - 1);
+        let w = (x1 - x0).max(0) as u32;
+        let h = (y1 - y0).max(0) as u32;
+
+        draw_inward_box(x0, y0, w, h, color);
     }
 
     DynamicImage::ImageRgba8(rgba)
-}
-
-fn element_color(et: &ElementType) -> Rgba<u8> {
-    match et {
-        ElementType::Button => Rgba([99, 102, 241, 230]),
-        ElementType::Input | ElementType::Select => Rgba([34, 211, 238, 230]),
-        ElementType::Error => Rgba([248, 113, 113, 230]),
-        ElementType::Heading => Rgba([251, 191, 36, 230]),
-        ElementType::Label | ElementType::Badge => Rgba([161, 161, 170, 180]),
-        ElementType::Unknown => Rgba([161, 161, 170, 180]),
-    }
 }

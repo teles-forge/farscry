@@ -1,6 +1,6 @@
 use anyhow::{Context, Result};
 use crossbeam_channel::bounded;
-use farscry_core::vasf::{VasfFrame, VasfWriter};
+use farscry_core::vasf::VasfWriter;
 use farscry_core::StateId;
 use std::path::PathBuf;
 use std::sync::atomic::{AtomicBool, Ordering};
@@ -139,16 +139,8 @@ fn phash_thread(
         if is_new {
             ocr_tx.try_send((img, hash)).ok();
             last_hash = Some(hash);
-        } else {
-            if let Ok(mut w) = writer.lock() {
-                w.total_input = w.total_input.saturating_add(1);
-                let _ = w.append_frame(&VasfFrame {
-                    state_id: hash,
-                    timestamp: ts,
-                    vasp_data: vec![],
-                    delta_data: None,
-                });
-            }
+        } else if let Ok(mut w) = writer.lock() {
+            w.append_timeline(ts, hash).ok();
         }
     }
 }
@@ -165,13 +157,8 @@ fn ocr_thread(
             let vasp_text =
                 farscry_formatter::VaspFormatter::format_vasp(&vasp, "screen", w, h);
             if let Ok(mut wr) = writer.lock() {
-                wr.total_input = wr.total_input.saturating_add(1);
-                let _ = wr.append_frame(&VasfFrame {
-                    state_id: hash,
-                    timestamp: ts,
-                    vasp_data: vasp_text.into_bytes(),
-                    delta_data: None,
-                });
+                wr.append_state(hash, &vasp_text).ok();
+                wr.append_timeline(ts, hash).ok();
             }
         }
     }

@@ -285,14 +285,42 @@ impl VasfWriter {
         Ok(())
     }
 
-    pub fn finalize(&mut self) -> std::io::Result<()> {
+    pub fn append_state(&mut self, state_id: StateId, vasp_text: &str) -> std::io::Result<()> {
+        let ts = SystemTime::now()
+            .duration_since(UNIX_EPOCH)
+            .unwrap_or_default()
+            .as_millis() as i64;
+        write_frame(
+            &mut self.writer,
+            &VasfFrame {
+                state_id,
+                timestamp: ts,
+                vasp_data: vasp_text.as_bytes().to_vec(),
+                delta_data: None,
+            },
+        )?;
+        self.frame_count = self.frame_count.saturating_add(1);
+        self.update_header_in_place()
+    }
+
+    pub fn append_timeline(&mut self, _timestamp_ms: i64, _state_id: StateId) -> std::io::Result<()> {
+        self.total_input = self.total_input.saturating_add(1);
+        self.update_header_in_place()
+    }
+
+    fn update_header_in_place(&mut self) -> std::io::Result<()> {
         self.writer.flush()?;
         let file = self.writer.get_mut();
         file.seek(SeekFrom::Start(6))?;
         file.write_all(&self.frame_count.to_le_bytes())?;
         file.seek(SeekFrom::Start(18))?;
         file.write_all(&self.total_input.to_le_bytes())?;
-        file.flush()
+        file.seek(SeekFrom::End(0))?;
+        Ok(())
+    }
+
+    pub fn finalize(&mut self) -> std::io::Result<()> {
+        self.update_header_in_place()
     }
 }
 
@@ -367,5 +395,44 @@ mod tests {
         };
         let vasf = VasfFile::new(vec![make_frame(1000), make_frame(61000)], 2);
         assert_eq!(vasf.duration_ms(), Some(60000));
+    }
+
+    #[test]
+    fn test_vasf_writer_dedup_stats() {
+        let path = std::path::PathBuf::from("/tmp/_test_vasf_writer_dedup.vasf");
+        let mut w = VasfWriter::create(&path).unwrap();
+        let state_id = StateId::from_bits(0xABCDEF01_23456789);
+        w.append_state(state_id, "screen_type: terminal\nagent_context: \"test\"\n")
+            .unwrap();
+        w.append_timeline(1000, state_id).unwrap();
+        w.append_timeline(2000, state_id).unwrap();
+        w.append_timeline(3000, state_id).unwrap();
+        w.append_timeline(4000, state_id).unwrap();
+        w.finalize().unwrap();
+
+        let vasf = VasfFile::read_from(&path).unwrap();
+        assert_eq!(vasf.header.frame_count, 1);
+        assert_eq!(vasf.header.total_input, 4);
+        assert_eq!(vasf.frames.len(), 1);
+        assert_eq!(vasf.unique_states(), 1);
+        assert_eq!(vasf.total_frames(), 4);
+        assert!((vasf.dedup_percentage() - 75.0).abs() < 0.01);
+        let _ = std::fs::remove_file(&path);
+    }
+
+    #[test]
+    fn test_vasf_writer_crash_safe() {
+        let path = std::path::PathBuf::from("/tmp/_test_vasf_writer_crash.vasf");
+        let mut w = VasfWriter::create(&path).unwrap();
+        let state_id = StateId::from_bits(0x1122334455667788);
+        w.append_state(state_id, "screen_type: terminal\n").unwrap();
+        w.append_timeline(1000, state_id).unwrap();
+        w.append_timeline(2000, state_id).unwrap();
+
+        let vasf = VasfFile::read_from(&path).unwrap();
+        assert_eq!(vasf.header.frame_count, 1, "frame_count must be live without finalize");
+        assert_eq!(vasf.header.total_input, 2, "total_input must be live without finalize");
+        assert_eq!(vasf.frames.len(), 1);
+        let _ = std::fs::remove_file(&path);
     }
 }

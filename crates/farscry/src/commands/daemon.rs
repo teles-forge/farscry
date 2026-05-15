@@ -1,24 +1,3 @@
-// Single global daemon — one process per machine, all terminals share it.
-//
-// Architecture:
-//   ~/.farscry/daemon.pid   — PID of the running daemon (for liveness check)
-//   ~/.farscry/daemon.sock  — Unix socket for IPC
-//
-// Line-based text protocol (client → daemon):
-//   REGISTER <shell_pid>\n
-//   UNREGISTER <shell_pid>\n
-//   PING\n
-//
-// Daemon → client:
-//   OK <window_id> <session_file_path>\n  (REGISTER response)
-//   OK\n                                  (UNREGISTER / PING)
-//   ERR <reason>\n
-//
-// Memory model:
-//   - Zero OCR, zero model loading.
-//   - pHash computed via IOSurface (zero heap allocation for pixels).
-//   - Steady-state RSS: ~7 MB regardless of how many terminals register.
-//   - Peak during capture: IOSurface lock is shared memory, not process heap.
 
 use anyhow::{Context, Result};
 use chrono::Utc;
@@ -38,7 +17,6 @@ use crate::iosurface_phash as ios;
 #[cfg(target_os = "macos")]
 use crate::iosurface_phash::DisplayStream;
 
-// ─── State ───────────────────────────────────────────────────────────────────
 
 struct WindowEntry {
     #[allow(dead_code)]
@@ -50,7 +28,6 @@ struct WindowEntry {
 
 type SharedState = Arc<Mutex<HashMap<u32, WindowEntry>>>;
 
-// ─── Public entry points ──────────────────────────────────────────────────────
 
 /// Start the global daemon.  Fails immediately if another daemon instance is
 /// detected (PID file exists and process is alive).
@@ -128,7 +105,6 @@ pub fn unregister(shell_pid: u32) -> Result<()> {
     Ok(())
 }
 
-// ─── IPC handler ─────────────────────────────────────────────────────────────
 
 fn handle_client(stream: UnixStream, state: SharedState) -> Result<()> {
     let mut writer = stream.try_clone()?;
@@ -206,7 +182,6 @@ fn drop_window(shell_pid: u32, state: &SharedState) {
     }
 }
 
-// ─── Capture loop ─────────────────────────────────────────────────────────────
 
 fn now_ms() -> i64 {
     SystemTime::now()
@@ -223,10 +198,8 @@ fn capture_loop(state: SharedState) {
     let threshold: u8 = 10;
     let mut idle_ticks: u32 = 0;
 
-    // Start a single 32×32 CGDisplayStream — zero heap allocation for pixels.
-    // The GPU scales the display before delivering frames to us.
     #[cfg(target_os = "macos")]
-    let stream = DisplayStream::start(2); // up to 2 pHash/sec
+    let stream = DisplayStream::start(2);
     #[cfg(not(target_os = "macos"))]
     let stream: Option<()> = None;
 
@@ -245,7 +218,6 @@ fn capture_loop(state: SharedState) {
         }
         idle_ticks = 0;
 
-        // Read the latest display pHash from the stream (zero copy).
         #[cfg(target_os = "macos")]
         let current_hash = stream.as_ref().and_then(|s| s.latest_phash());
         #[cfg(not(target_os = "macos"))]
@@ -256,7 +228,6 @@ fn capture_loop(state: SharedState) {
         };
         let ts = now_ms();
 
-        // All registered terminals share the same display-level pHash.
         for entry in guard.values_mut() {
             let is_new = entry
                 .last_hash
@@ -273,7 +244,6 @@ fn capture_loop(state: SharedState) {
     }
 }
 
-// ─── Daemon lifecycle helpers ─────────────────────────────────────────────────
 
 fn evict_stale_daemon(pid_path: &PathBuf, sock_path: &PathBuf) {
     if let Ok(s) = std::fs::read_to_string(pid_path) {
@@ -308,7 +278,6 @@ fn pid_path() -> PathBuf {
 fn ensure_daemon_running() -> Result<()> {
     let sock_path = sock_path();
 
-    // Fast path: socket exists and daemon answers PING
     if sock_path.exists() {
         if let Ok(mut s) = UnixStream::connect(&sock_path) {
             if s.write_all(b"PING\n").is_ok() {
@@ -318,11 +287,9 @@ fn ensure_daemon_running() -> Result<()> {
                 }
             }
         }
-        // Stale socket — clean up
         let _ = std::fs::remove_file(&sock_path);
     }
 
-    // Start daemon
     let exe = std::env::current_exe()?;
     std::process::Command::new(&exe)
         .args(["daemon", "--start"])
@@ -331,7 +298,6 @@ fn ensure_daemon_running() -> Result<()> {
         .spawn()
         .context("failed to start daemon")?;
 
-    // Wait up to 5 s for socket to appear
     for _ in 0..50 {
         thread::sleep(Duration::from_millis(100));
         if sock_path.exists() {

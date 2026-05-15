@@ -1,15 +1,3 @@
-// Zero-copy pHash via CGDisplayStream + IOSurface.
-//
-// CGDisplayStream delivers screen frames to a callback, with the GPU scaling
-// the output to the requested dimensions BEFORE delivering it to our process.
-// Requesting 32×32 means the IOSurface in the callback is 32×32 (4 KB), not
-// the native 3600×2338 (33 MB).  We lock, sample 1024 pixels, unlock, and
-// compute pHash.  Total heap allocation during pHash: ~12 KB.
-//
-// This module is macOS-only.  The C/ObjC wrapper in display_stream.m is
-// compiled by build.rs and linked as a static library.
-//
-// Steady-state RSS: ~7 MB (process baseline + DCT buffers, no frame buffer pool).
 
 #![cfg(target_os = "macos")]
 
@@ -19,7 +7,6 @@ use std::path::PathBuf;
 use std::sync::atomic::{AtomicU64, Ordering};
 use std::sync::Arc;
 
-// ─── C interface (display_stream.m) ──────────────────────────────────────────
 
 extern "C" {
     fn farscry_stream_start(
@@ -27,7 +14,6 @@ extern "C" {
         out_w: usize,
         out_h: usize,
         fps_limit: u32,
-        // base: locked CVPixelBuffer base addr, bpr: bytes-per-row, ctx: user data
         callback: unsafe extern "C" fn(base: *const c_void, bpr: usize, ctx: *mut c_void),
         ctx: *mut c_void,
     ) -> *mut c_void;
@@ -35,7 +21,6 @@ extern "C" {
     fn farscry_stream_stop(handle: *mut c_void);
 }
 
-// ─── DisplayStream ────────────────────────────────────────────────────────────
 
 /// A CGDisplayStream that delivers the primary display at 32×32 to a callback.
 /// Frames are rate-limited to `fps_limit` per second by the ObjC layer.
@@ -43,13 +28,9 @@ extern "C" {
 pub struct DisplayStream {
     handle: *mut c_void,
     pub latest_hash: Arc<AtomicU64>,
-    // ctx is Box<StreamCtx> — kept alive for the stream's lifetime
     _ctx: Box<StreamCtx>,
 }
 
-// SAFETY: the stream handle and ctx are Send because:
-// - handle is an opaque ObjC pointer managed entirely by the C layer
-// - ctx is accessed only inside the serial dispatch queue + Rust callback
 unsafe impl Send for DisplayStream {}
 unsafe impl Sync for DisplayStream {}
 
@@ -69,7 +50,7 @@ impl DisplayStream {
 
         let handle = unsafe {
             farscry_stream_start(
-                0, // CGMainDisplayID()
+                0,
                 32,
                 32,
                 fps_limit.max(1),
@@ -112,8 +93,6 @@ unsafe extern "C" fn frame_callback(base: *const c_void, bpr: usize, ctx: *mut c
     if base.is_null() || bpr == 0 {
         return;
     }
-    // The CVPixelBuffer is locked for us by the ObjC wrapper.
-    // We only have pixels for the 32×32 configured output.
     let pixels = std::slice::from_raw_parts(base as *const u8, 32 * bpr);
     let hash = sample_and_phash(pixels, 32, 32, bpr);
     sc.latest_hash.store(hash.to_bits(), Ordering::Relaxed);
@@ -136,7 +115,6 @@ fn sample_and_phash(pixels: &[u8], w: usize, h: usize, bpr: usize) -> StateId {
             let sx = sx.min(w.saturating_sub(1));
             let px = sy * bpr + sx * 4;
             if px + 2 < pixels.len() {
-                // IOSurface pixel format: BGRA
                 let b = pixels[px] as f32;
                 let g = pixels[px + 1] as f32;
                 let r = pixels[px + 2] as f32;
@@ -150,7 +128,6 @@ fn sample_and_phash(pixels: &[u8], w: usize, h: usize, bpr: usize) -> StateId {
     farscry_core::phash_image(&luma)
 }
 
-// ─── Window lookup ────────────────────────────────────────────────────────────
 
 use core_graphics::window::{
     copy_window_info, kCGNullWindowID, kCGWindowListExcludeDesktopElements,
@@ -227,7 +204,6 @@ pub fn ppid(pid: u32) -> Option<u32> {
         .ok()
 }
 
-// ─── Path helpers ─────────────────────────────────────────────────────────────
 
 pub fn sessions_dir() -> PathBuf {
     dirs::home_dir()

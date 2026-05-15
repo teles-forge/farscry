@@ -24,12 +24,9 @@ pub fn phash_image(image: &DynamicImage) -> StateId {
 pub fn phash_from_bgra(data: &[u8], w: u32, h: u32) -> StateId {
     let wu = w as usize;
     let hu = h as usize;
-    // Compute actual bytes-per-row (may include alignment padding).
     let bpr = if hu > 0 { data.len() / hu } else { wu * 4 };
 
-    // Sample 32×32 pixels using (i + 0.5) * src_size / 32 to match
-    // image::imageops::FilterType::Nearest and keep hashes consistent.
-    let mut gray_bytes = vec![0u8; 1024]; // 1024 bytes — trivial
+    let mut gray_bytes = vec![0u8; 1024];
     for row in 0..32usize {
         let src_y = ((row as f64 + 0.5) * hu as f64 / 32.0) as usize;
         let src_y = src_y.min(hu.saturating_sub(1));
@@ -38,7 +35,6 @@ pub fn phash_from_bgra(data: &[u8], w: u32, h: u32) -> StateId {
             let src_x = src_x.min(wu.saturating_sub(1));
             let px = src_y * bpr + src_x * 4;
             if px + 2 < data.len() {
-                // BGRA layout: [B, G, R, A]
                 let b = data[px] as f32;
                 let g = data[px + 1] as f32;
                 let r = data[px + 2] as f32;

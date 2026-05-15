@@ -94,12 +94,9 @@ fn hamming(a: StateId, b: StateId) -> u8 {
 }
 
 fn run_capture_loop(opts: RecordOpts) -> Result<()> {
-    // On Linux: zero-copy path — pHash computed directly from the X11 shared
-    // memory frame slice.  No Vec allocation, no OCR model loaded.
     #[cfg(target_os = "linux")]
     return capture_loop_linux(opts);
 
-    // macOS and other platforms: full pipeline with OCR.
     #[cfg(not(target_os = "linux"))]
     capture_loop_default(opts)
 }
@@ -144,12 +141,10 @@ fn capture_loop_linux(opts: RecordOpts) -> Result<()> {
             break;
         }
 
-        // frame() borrows X11 shared memory — no allocation in our heap.
         let hash_opt = loop {
             match capturer.frame() {
                 Ok(frame) => {
                     let h = farscry_core::phash_from_bgra(&frame, img_w, img_h);
-                    // frame borrow ends here; X11 shared memory is released.
                     break Some(h);
                 }
                 Err(e) if e.kind() == std::io::ErrorKind::WouldBlock => {
@@ -446,7 +441,6 @@ fn cgimage_to_dynamic(image: core_graphics::image::CGImage) -> Option<image::Dyn
     image::RgbaImage::from_raw(width, height, rgba).map(image::DynamicImage::ImageRgba8)
 }
 
-// Windows and other non-macOS/non-Linux platforms.
 #[cfg(not(any(target_os = "macos", target_os = "linux")))]
 fn capture_screen(window_pid: Option<u32>) -> Option<image::DynamicImage> {
     let _ = window_pid;

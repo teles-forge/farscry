@@ -1,16 +1,3 @@
-// display_stream.m — ScreenCaptureKit wrapper (macOS 12.3+, required on macOS 15+).
-//
-// SCStream delivers frames at the GPU's compositor output.  We configure
-// width=32, height=32 so the GPU scales BEFORE delivering to us.  The
-// CVPixelBuffer in each callback is 32×32 BGRA (128–256 bytes per row).
-// We lock it, call the Rust callback (which samples 1024 pixels), then unlock.
-// The pixel data never reaches the Rust heap as a large allocation.
-//
-// Memory model (per frame):
-//   CVPixelBuffer lock:  shared GPU memory → zero RSS impact
-//   Rust sampling:       reads 4 KB (1024 pixels × 4 bytes) in place
-//   pHash internals:     ~12 KB alloc + free (DCT on 32×32)
-//   Net heap growth:     ~0 bytes (tiny allocs reused by allocator)
 
 #import <ScreenCaptureKit/ScreenCaptureKit.h>
 #import <CoreVideo/CoreVideo.h>
@@ -22,8 +9,6 @@
 #include <stdint.h>
 #include <string.h>
 
-// Callback invoked while the pixel buffer is locked.
-// base: pointer to BGRA pixel data  bpr: bytes per row  ctx: Rust closure
 typedef void (*FarscryFrameCb)(const void *base, size_t bpr, void *ctx);
 
 typedef struct {
@@ -35,7 +20,7 @@ typedef struct {
 
 typedef struct {
     SCStream   *stream;
-    id          output;    // FarscryOutput (opaque to C callers)
+    id          output;
     FrameState *state;
 } StreamBundle;
 
@@ -45,7 +30,6 @@ static uint64_t mono_ns(void) {
     return (uint64_t)ts.tv_sec * 1000000000ULL + (uint64_t)ts.tv_nsec;
 }
 
-// ─── SCStreamOutput delegate ──────────────────────────────────────────────────
 
 @interface FarscryOutput : NSObject <SCStreamOutput, SCStreamDelegate>
 @property (nonatomic, assign) FrameState *state;
@@ -85,10 +69,7 @@ static uint64_t mono_ns(void) {
 
 @end
 
-// ─── Public C API ─────────────────────────────────────────────────────────────
 
-// Start an SCStream on the primary display, scaled to (out_w × out_h).
-// Returns NULL on failure (e.g. no Screen Recording permission).
 void *farscry_stream_start(
     uint32_t      display_id __attribute__((unused)),
     size_t        out_w,
@@ -104,7 +85,7 @@ void *farscry_stream_start(
     state->user_ctx       = ctx;
     state->min_interval_ns = fps_limit > 0
         ? 1000000000ULL / fps_limit
-        : 500000000ULL;   // default: 2 FPS max
+        : 500000000ULL;
 
     dispatch_semaphore_t sem = dispatch_semaphore_create(0);
     __block StreamBundle *result = NULL;
@@ -170,7 +151,6 @@ void *farscry_stream_start(
     return result;
 }
 
-// Stop and free the stream.
 void farscry_stream_stop(void *handle) {
     if (!handle) return;
     StreamBundle *b = (StreamBundle *)handle;
@@ -184,8 +164,6 @@ void farscry_stream_stop(void *handle) {
     free(b);
 }
 
-// Stubs so the IOSurface helpers in iosurface_phash.rs compile even though
-// we no longer use them from the stream path.
 int    farscry_surface_lock(void *s)      { (void)s; return 0; }
 void   farscry_surface_unlock(void *s)    { (void)s; }
 void  *farscry_surface_base(void *s)      { (void)s; return NULL; }

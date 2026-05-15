@@ -11,11 +11,8 @@ const HOOK_EVAL_LINE: &str = "eval \"$(farscry hook init)\"  # farscry hook";
 /// On non-macOS platforms this is a no-op.
 #[cfg(target_os = "macos")]
 fn check_screen_capture_permission() {
-    // CoreGraphics is already linked via the `core-graphics` crate dependency.
     extern "C" {
         fn CGPreflightScreenCaptureAccess() -> bool;
-        // CGRequestScreenCaptureAccess() shows the native macOS permission dialog.
-        // Available on macOS 11+.
         fn CGRequestScreenCaptureAccess() -> bool;
     }
 
@@ -23,15 +20,11 @@ fn check_screen_capture_permission() {
         return;
     }
 
-    // Trigger the native system permission dialog.
-    // For GUI apps this shows a modal; for terminal tools it registers the
-    // request in TCC and may surface the dialog or a notification.
     let granted_via_dialog = unsafe { CGRequestScreenCaptureAccess() };
     if granted_via_dialog {
         return;
     }
 
-    // Not granted yet — guide the user.
     println!("farscry needs Screen Recording permission to capture your terminal.");
     println!();
     println!("A permission dialog should have appeared — approve it, then run:");
@@ -53,7 +46,6 @@ fn check_screen_capture_permission() {
 
 #[cfg(not(target_os = "macos"))]
 fn check_screen_capture_permission() {
-    // No permission gate needed on non-macOS platforms.
 }
 
 const HOOK_SCRIPT: &str = r#"_farscry_session_start() {

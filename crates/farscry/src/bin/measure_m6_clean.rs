@@ -1,4 +1,3 @@
-// M6 clean-process measurement: CGContext 32×32 direct render, no model, no prior contamination.
 
 use std::time::Duration;
 

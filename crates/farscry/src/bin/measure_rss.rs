@@ -1,6 +1,3 @@
-// Standalone RSS measurement program.
-// Covers all 4 research questions before the single-daemon architecture is built.
-// Run: cargo run --release --bin measure_rss 2>&1
 
 use std::time::{Duration, Instant};
 
@@ -27,7 +24,6 @@ fn section(title: &str) {
     eprintln!("\n=== {} ===", title);
 }
 
-// ─── Screen capture (macOS only) ─────────────────────────────────────────────
 
 #[cfg(target_os = "macos")]
 fn capture_main_display() -> Option<image::DynamicImage> {
@@ -67,7 +63,6 @@ fn capture_main_display() -> Option<image::DynamicImage> {
     None
 }
 
-// ─── MEASUREMENT 1: pHash only, no model ─────────────────────────────────────
 
 fn measurement_1_phash_only() {
     section("MEASUREMENT 1 — pHash only, no model loading");
@@ -122,7 +117,6 @@ fn measurement_1_phash_only() {
     eprintln!("[M1] baseline={}MB  max_steady={}MB", baseline, baseline + max_retained);
 }
 
-// ─── MEASUREMENT 2: CGWindowListCreateImage peak vs steady ───────────────────
 
 #[cfg(target_os = "macos")]
 fn measurement_2_cgwindow_cost() {
@@ -142,7 +136,6 @@ fn measurement_2_cgwindow_cost() {
     }
     const CF_NUMBER_SINT32: i32 = 3;
 
-    // Get own window id (if any), else fall back to CGDisplay
     let self_pid = std::process::id();
     let win_id: Option<u32> = (|| {
         let wins = copy_window_info(
@@ -187,7 +180,6 @@ fn measurement_2_cgwindow_cost() {
 
     let baseline = probe("baseline");
 
-    // Phase A: CGDisplay (full screen)
     eprintln!("[M2-A] --- CGDisplay full-screen capture ---");
     for i in 0..5 {
         let before = rss_mb();
@@ -205,7 +197,6 @@ fn measurement_2_cgwindow_cost() {
         std::thread::sleep(Duration::from_millis(200));
     }
 
-    // Phase B: CGWindowListCreateImage (specific window) if available
     if let Some(wid) = win_id {
         eprintln!("[M2-B] --- CGWindowListCreateImage wid={} ---", wid);
         for i in 0..5 {
@@ -233,7 +224,6 @@ fn measurement_2_cgwindow_cost() {
         eprintln!("[M2-B] no own window found (terminal process has no GUI window — expected)");
     }
 
-    // Phase C: CGWindowListCopyWindowInfo cost (window enumeration)
     eprintln!("[M2-C] --- CGWindowListCopyWindowInfo enumeration cost ---");
     let before = rss_mb();
     let wins = copy_window_info(
@@ -259,7 +249,6 @@ fn measurement_2_cgwindow_cost() {
     eprintln!("[M2] macOS only — skipped");
 }
 
-// ─── MEASUREMENT 3: Unix socket IPC overhead ─────────────────────────────────
 
 fn measurement_3_ipc_overhead() {
     use std::io::{Read, Write};
@@ -302,7 +291,6 @@ fn measurement_3_ipc_overhead() {
         baseline, final_rss, final_rss.saturating_sub(baseline));
 }
 
-// ─── MEASUREMENT 4: CoreML model (mmap) ──────────────────────────────────────
 
 #[cfg(all(target_os = "macos", target_arch = "aarch64", feature = "coreml"))]
 fn measurement_4_coreml() {
@@ -326,13 +314,11 @@ fn measurement_4_coreml() {
     eprintln!("[M4] model load delta: +{}MB", after_load.saturating_sub(baseline));
 
     if let Ok(engine) = engine {
-        // Run one inference to warm up the ANE/GPU
         let dummy = image::DynamicImage::ImageRgba8(image::RgbaImage::new(640, 480));
         let _ = farscry_core::OcrEngine::extract(&engine, &dummy);
         let after_infer = probe("after first CoreML inference");
         eprintln!("[M4] inference delta: +{}MB", after_infer.saturating_sub(baseline));
 
-        // Run 5 more to check if it grows
         for i in 1..6 {
             let _ = farscry_core::OcrEngine::extract(&engine, &dummy);
             let mb = rss_mb();
@@ -373,7 +359,6 @@ fn measurement_4_ort() {
         let after_infer = probe("after first ORT inference (640x480)");
         eprintln!("[M4-ORT] inference delta vs baseline: +{}MB", after_infer.saturating_sub(baseline));
 
-        // Larger image: simulate real terminal screen
         let screen = image::DynamicImage::ImageRgba8(image::RgbaImage::new(3600, 2338));
         let _ = farscry_core::OcrEngine::extract(&engine, &screen);
         let after_large = probe("after ORT inference (3600x2338 Retina)");
@@ -395,7 +380,6 @@ fn measurement_4_ort() {
     }
 }
 
-// ─── Daemon steady-state simulation ──────────────────────────────────────────
 
 fn measurement_daemon_simulation() {
     section("MEASUREMENT 5 — Single-daemon steady-state simulation");
@@ -444,7 +428,6 @@ fn measurement_daemon_simulation() {
     );
 }
 
-// ─── MEASUREMENT 6: CGContext direct rendering (the proposed fix) ─────────────
 
 #[cfg(target_os = "macos")]
 fn measurement_6_cgcontext_direct() {
@@ -459,7 +442,6 @@ fn measurement_6_cgcontext_direct() {
     for i in 0..10 {
         let before = rss_mb();
 
-        // Step 1: capture (CGImage backed by IOSurface — not Rust heap)
         let cg_img = match CGDisplay::main().image() {
             Some(img) => img,
             None => { eprintln!("[M6] capture failed"); return; }
@@ -467,7 +449,6 @@ fn measurement_6_cgcontext_direct() {
         let (img_w, img_h) = (cg_img.width(), cg_img.height());
         let after_capture = rss_mb();
 
-        // Step 2: draw directly into a 32×32 grayscale buffer (1024 bytes, stack-allocated)
         let mut pixels = vec![0u8; 32 * 32];
         let cs = CGColorSpace::create_device_gray();
         {
@@ -481,13 +462,10 @@ fn measurement_6_cgcontext_direct() {
         }
         let after_draw = rss_mb();
 
-        // Step 3: drop full-res CGImage — IOSurface mapping released
         drop(cg_img);
         drop(cs);
         let after_drop_cg = rss_mb();
 
-        // Step 4: compute pHash from the 1024-byte grayscale pixels (tiny).
-        // Build a minimal Luma8 DynamicImage from the 32×32 buffer — no additional large alloc.
         let luma_img = image::GrayImage::from_raw(32, 32, pixels)
             .map(image::DynamicImage::ImageLuma8)
             .expect("32x32 luma image");

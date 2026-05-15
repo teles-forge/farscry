@@ -1,7 +1,4 @@
 fn main() {
-    // Use CARGO_CFG_TARGET_OS (the *target* platform, not the *host*) so that
-    // cross-compilation from macOS to Linux does not attempt to compile the
-    // Objective-C ScreenCaptureKit wrapper.
     let target_os = std::env::var("CARGO_CFG_TARGET_OS").unwrap_or_default();
 
     if target_os == "macos" {

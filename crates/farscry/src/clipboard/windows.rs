@@ -6,7 +6,6 @@ use base64::{engine::general_purpose::STANDARD, Engine as _};
 pub fn read_clipboard_image_windows() -> Result<Vec<u8>> {
     use std::process::Command;
 
-    // Try to get PNG data from clipboard via PowerShell
     let script = r#"
 Add-Type -AssemblyName System.Windows.Forms
 $img = [System.Windows.Forms.Clipboard]::GetImage()

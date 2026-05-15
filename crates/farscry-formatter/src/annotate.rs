@@ -6,18 +6,18 @@ use imageproc::rect::Rect;
 /// 12 neon colors cycled by element index.
 /// Adjacent boxes always get different colors; no fill avoids overlap noise.
 const NEON: &[Rgba<u8>] = &[
-    Rgba([255, 0, 128, 255]), // hot pink
-    Rgba([0, 255, 80, 255]),  // neon green
-    Rgba([0, 220, 255, 255]), // electric cyan
-    Rgba([255, 220, 0, 255]), // electric yellow
-    Rgba([200, 0, 255, 255]), // electric purple
-    Rgba([255, 80, 0, 255]),  // neon orange
-    Rgba([0, 255, 200, 255]), // spring green
-    Rgba([255, 0, 255, 255]), // magenta
-    Rgba([80, 255, 0, 255]),  // acid green
-    Rgba([255, 160, 0, 255]), // neon amber
-    Rgba([0, 128, 255, 255]), // electric blue
-    Rgba([255, 255, 0, 255]), // pure yellow
+    Rgba([255, 0, 128, 255]),
+    Rgba([0, 255, 80, 255]),
+    Rgba([0, 220, 255, 255]),
+    Rgba([255, 220, 0, 255]),
+    Rgba([200, 0, 255, 255]),
+    Rgba([255, 80, 0, 255]),
+    Rgba([0, 255, 200, 255]),
+    Rgba([255, 0, 255, 255]),
+    Rgba([80, 255, 0, 255]),
+    Rgba([255, 160, 0, 255]),
+    Rgba([0, 128, 255, 255]),
+    Rgba([255, 255, 0, 255]),
 ];
 
 /// Draw bounding boxes over every detected UI element.
@@ -38,14 +38,11 @@ pub fn annotate_image(img: DynamicImage, output: &VaspOutput) -> DynamicImage {
 
     let black = Rgba([0u8, 0, 0, 255]);
 
-    // draw_inward_box: 1px black then 1px neon, both shrinking inward from boundary.
     let mut draw_inward_box = |x0: i32, y0: i32, w: u32, h: u32, color: Rgba<u8>| {
         if w == 0 || h == 0 {
             return;
         }
-        // px 0: black outline at the boundary edge
         draw_hollow_rect_mut(&mut rgba, Rect::at(x0, y0).of_size(w, h), black);
-        // px 1: neon just inside (shrink by 1 on all sides)
         if w > 2 && h > 2 {
             draw_hollow_rect_mut(
                 &mut rgba,
@@ -53,7 +50,6 @@ pub fn annotate_image(img: DynamicImage, output: &VaspOutput) -> DynamicImage {
                 color,
             );
         }
-        // px 2: second neon pixel for affordances (only when box is large enough)
         if w > 4 && h > 4 {
             draw_hollow_rect_mut(
                 &mut rgba,

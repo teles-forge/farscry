@@ -1,7 +1,10 @@
 mod clipboard;
 mod commands;
 mod config;
+#[cfg(target_os = "macos")]
+mod iosurface_phash;
 mod pipeline;
+mod util;
 
 use anyhow::Result;
 use clap::{Parser, Subcommand};
@@ -127,7 +130,7 @@ enum Commands {
     },
 
     Record {
-        #[arg(short = 'o', long, value_name = "FILE")]
+        #[arg(short = 'o', long, value_name = "FILE", default_value = "/dev/null")]
         output: PathBuf,
 
         #[arg(long, default_value = "1")]
@@ -144,6 +147,14 @@ enum Commands {
 
         #[arg(long)]
         window_pid: Option<u32>,
+
+        /// Use the single global daemon (one per machine, ~7 MB RSS).
+        #[arg(long)]
+        global: bool,
+
+        /// Shell PID of the terminal to register. Defaults to parent PID.
+        #[arg(long)]
+        pid: Option<u32>,
     },
 
     Hook {
@@ -160,6 +171,17 @@ enum Commands {
 
         #[arg(long)]
         latest: bool,
+    },
+
+    /// Global session-recording daemon (one per machine).
+    Daemon {
+        /// Start the daemon in the foreground (called internally).
+        #[arg(long)]
+        start: bool,
+
+        /// Unregister a terminal shell PID from the daemon.
+        #[arg(long, value_name = "SHELL_PID")]
+        unregister: Option<u32>,
     },
 }
 
@@ -243,11 +265,25 @@ async fn main() {
         } => commands::pack::pack_frames(input, output, hamming_threshold),
         Commands::Timeline { input } => commands::timeline::timeline(input),
         Commands::Info { input } => commands::info::info(input),
-        Commands::Record { output, fps, daemon, silent, threshold, window_pid } => {
-            commands::record::record(commands::record::RecordOpts {
-                output, fps, daemon, silent, threshold, window_pid,
-            })
-        }
+        Commands::Record {
+            output,
+            fps,
+            daemon,
+            silent,
+            threshold,
+            window_pid,
+            global,
+            pid,
+        } => commands::record::record(commands::record::RecordOpts {
+            output,
+            fps,
+            daemon,
+            silent,
+            threshold,
+            window_pid,
+            global,
+            shell_pid: pid,
+        }),
         Commands::Hook { init, remove } => {
             if init {
                 commands::hook::hook_init()
@@ -262,6 +298,13 @@ async fn main() {
                 commands::session::session_latest()
             } else {
                 commands::session::session_list()
+            }
+        }
+        Commands::Daemon { unregister, .. } => {
+            if let Some(shell_pid) = unregister {
+                commands::daemon::unregister(shell_pid)
+            } else {
+                commands::daemon::run_daemon()
             }
         }
     };

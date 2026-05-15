@@ -11,11 +11,8 @@ const HOOK_EVAL_LINE: &str = "eval \"$(farscry hook init)\"  # farscry hook";
 /// On non-macOS platforms this is a no-op.
 #[cfg(target_os = "macos")]
 fn check_screen_capture_permission() {
-    // CoreGraphics is already linked via the `core-graphics` crate dependency.
     extern "C" {
         fn CGPreflightScreenCaptureAccess() -> bool;
-        // CGRequestScreenCaptureAccess() shows the native macOS permission dialog.
-        // Available on macOS 11+.
         fn CGRequestScreenCaptureAccess() -> bool;
     }
 
@@ -23,15 +20,11 @@ fn check_screen_capture_permission() {
         return;
     }
 
-    // Trigger the native system permission dialog.
-    // For GUI apps this shows a modal; for terminal tools it registers the
-    // request in TCC and may surface the dialog or a notification.
     let granted_via_dialog = unsafe { CGRequestScreenCaptureAccess() };
     if granted_via_dialog {
         return;
     }
 
-    // Not granted yet — guide the user.
     println!("farscry needs Screen Recording permission to capture your terminal.");
     println!();
     println!("A permission dialog should have appeared — approve it, then run:");
@@ -53,24 +46,18 @@ fn check_screen_capture_permission() {
 
 #[cfg(not(target_os = "macos"))]
 fn check_screen_capture_permission() {
-    // No permission gate needed on non-macOS platforms.
 }
 
 const HOOK_SCRIPT: &str = r#"_farscry_session_start() {
-  local ts
-  ts=$(date +%Y%m%d-%H%M%S)
-  farscry record \
-    --daemon \
-    --fps 1 \
-    --output "$HOME/.farscry/sessions/${ts}.vasf" \
-    --silent &
-  export FARSCRY_SESSION_PID=$!
-  export FARSCRY_SESSION_FILE="$HOME/.farscry/sessions/${ts}.vasf"
+  local session_file
+  session_file=$(farscry record --daemon --global --pid $$ --silent 2>/dev/null)
+  export FARSCRY_SESSION_PID=$$
+  export FARSCRY_SESSION_FILE="${session_file}"
 }
 
 _farscry_session_stop() {
   [ -n "$FARSCRY_SESSION_PID" ] && \
-    kill "$FARSCRY_SESSION_PID" 2>/dev/null
+    farscry daemon unregister "$FARSCRY_SESSION_PID" 2>/dev/null
   unset FARSCRY_SESSION_PID FARSCRY_SESSION_FILE
 }
 
@@ -86,7 +73,7 @@ pub fn setup_hook() -> Result<()> {
     check_screen_capture_permission();
 
     let rc = detect_rc_file()?;
-    let sessions_dir = sessions_dir();
+    let sessions_dir = crate::util::sessions_dir();
     std::fs::create_dir_all(&sessions_dir)?;
 
     let content = std::fs::read_to_string(&rc).unwrap_or_default();
@@ -155,9 +142,4 @@ fn detect_rc_file() -> Result<PathBuf> {
     Ok(rc)
 }
 
-pub fn sessions_dir() -> PathBuf {
-    dirs::home_dir()
-        .unwrap_or_else(|| PathBuf::from("."))
-        .join(".farscry")
-        .join("sessions")
-}
+

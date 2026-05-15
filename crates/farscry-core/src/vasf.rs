@@ -8,19 +8,8 @@ const MAGIC: &[u8; 4] = b"VASF";
 const FORMAT_VERSION: u16 = 2;
 const ZSTD_LEVEL: i32 = 3;
 
-// Token estimates used for the reduction_x metric.
-//
-// TOKENS_PER_RAW_FRAME: tokens consumed when an agent sends a raw screenshot
-// to a frontier model.  Retina 3600×2338 → 40 Claude tiles × 1 662 tok/tile
-// ≈ 66 480 tokens.  We use a round conservative figure that also covers
-// standard 1080p displays (≈ 6 600 tokens at 4 tiles).  A geometric middle
-// ground for mixed fleets: ~16 000.  Users on Retina displays get even higher
-// real-world reduction.
 const TOKENS_PER_RAW_FRAME: u64 = 16_000;
 
-// TOKENS_PER_VASF_FRAME: tokens in the VASP text that farscry produces for one
-// unique screen state.  Measured on a real session: the structured OCR output
-// (screen_type header + full UI tree) is ~900 tokens.  We use 900 here.
 const TOKENS_PER_VASF_FRAME: u64 = 900;
 
 pub struct VasfHeader {

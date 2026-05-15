@@ -211,7 +211,7 @@ fn run_ocr_pipeline(
     })
 }
 
-pub fn run_detection_inference(
+pub(crate) fn run_detection_inference(
     model: &MLModel,
     tensor: &ndarray::Array4<f32>,
 ) -> Result<ndarray::ArrayD<f32>, FarscryError> {

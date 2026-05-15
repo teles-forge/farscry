@@ -8,10 +8,6 @@ repository.workspace = true
 publish = false
 
 
-[[bin]]
-name = "test_pipeline"
-path = "src/bin/test_pipeline.rs"
-
 [target.'cfg(target_os = "macos")'.dependencies]
 farscry-core = { path = "../farscry-core" }
 image = { workspace = true }

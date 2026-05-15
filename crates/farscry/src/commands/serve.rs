@@ -78,7 +78,7 @@ async fn resolve_record_path(
                 .output_dir
                 .as_ref()
                 .map(PathBuf::from)
-                .unwrap_or_else(default_sessions_dir);
+                .unwrap_or_else(crate::util::sessions_dir);
             std::fs::create_dir_all(&dir)?;
             let path = dir.join(timestamp_filename());
             eprintln!("[farscry] session recording: auto (from config)");
@@ -95,7 +95,7 @@ async fn resolve_record_path(
 
 fn prompt_record_session() -> Result<Option<PathBuf>> {
     use std::io::Write;
-    let dir = default_sessions_dir();
+    let dir = crate::util::sessions_dir();
     std::fs::create_dir_all(&dir)?;
     let path = dir.join(timestamp_filename());
     eprint!("[farscry] session observability: disabled\nEnable recording? (y/N): ");
@@ -110,13 +110,6 @@ fn prompt_record_session() -> Result<Option<PathBuf>> {
     }
 }
 
-fn default_sessions_dir() -> PathBuf {
-    dirs::home_dir()
-        .unwrap_or_else(|| PathBuf::from("."))
-        .join(".farscry")
-        .join("sessions")
-}
-
 fn default_socket_path() -> PathBuf {
     dirs::home_dir()
         .unwrap_or_else(|| PathBuf::from("."))
@@ -127,17 +120,6 @@ fn default_socket_path() -> PathBuf {
 fn timestamp_filename() -> String {
     let now = Utc::now();
     format!("{}.vasf", now.format("%Y-%m-%d-%H%M"))
-}
-
-fn now_ms() -> i64 {
-    SystemTime::now()
-        .duration_since(UNIX_EPOCH)
-        .unwrap_or_default()
-        .as_millis() as i64
-}
-
-fn hamming(a: StateId, b: StateId) -> u8 {
-    (a.to_bits() ^ b.to_bits()).count_ones() as u8
 }
 
 struct SessionRecorder {
@@ -171,7 +153,7 @@ impl SessionRecorder {
         self.writer.total_input += 1;
         let is_new = self
             .last_state_id
-            .map(|last| hamming(vasp.state_id, last) > self.hamming_threshold)
+            .map(|last| vasp.state_id.hamming(last) > self.hamming_threshold)
             .unwrap_or(true);
         if !is_new {
             return;
@@ -180,7 +162,7 @@ impl SessionRecorder {
         let vasp_text = farscry_formatter::VaspFormatter::format_vasp(vasp, image_path, w, h);
         let frame = VasfFrame {
             state_id: vasp.state_id,
-            timestamp: now_ms(),
+            timestamp: crate::util::now_ms(),
             vasp_data: vasp_text.into_bytes(),
             delta_data: None,
         };

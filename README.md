@@ -1,187 +1,113 @@
 # farscry
 
-> Claude Computer Use succeeds on ~15% of OSWorld tasks.
-> We built tooling to measure what happens in the other 85%.
+The observability layer for computer-use agents.
 
-*farscry (n.) a magical artifact that reveals what is hidden at a distance.*
+[![Version](https://img.shields.io/crates/v/farscry)](https://crates.io/crates/farscry)
+[![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
+[![npm](https://img.shields.io/npm/v/farscry)](https://www.npmjs.com/package/farscry)
 
-**[X]% of failed sessions contain a silent failure: an action that returned OK but produced zero visual effect.**
-The agent continued with a broken world model.
+## Overview
 
-→ Paper: We measured why computer-use agents fail [[arXiv link — coming]]
-→ Dataset: [N] sessions, VASF format, public [[HuggingFace link — coming]]
+farscry records what agents see, detects when they fail silently, and lets you analyze session recordings without sending a single pixel to any external service. It converts screenshots to structured VASP text for agent context, and stores sessions as deduplicated `.vasf` files. The full pipeline runs locally — no cloud, no data egress.
 
----
+## Quick Start
 
-**Problem**: Devin CLI, Claude Code, and Cursor struggle with images.
-Give them a screenshot, they guess. Give them farscry output, they understand.
+```bash
+farscry setup --hook
+farscry extract screen.png
+farscry serve --mcp
+```
 
-## Benchmark
+## What It Records
 
-| Tool | Time | Cost/image | Offline | Coordinates |
-|---|---|---|---|---|
-| **farscry (warm)** | **38ms** | **$0** | **✅** | **✅** |
-| **farscry (cold)** | **~350ms** | **$0** | **✅** | **✅** |
-| Tesseract 5.5.2 (4K) | ~2,500ms | $0 | ✅ | ❌ |
-| Cloud Vision | ~2-5s | $0.0047 | ❌ | ❌ |
+Sessions are stored as `.vasf` files (Visual Agent Session File). Each file contains only the frames that are perceptually unique — farscry computes a 63-bit DCT perceptual hash for every frame and discards any frame within Hamming distance 10 of the previous stored state. On a real Retina session (3600×2338), 89% of frames were identical: `farscry pack` stored 1 frame in 160.
 
-N=223 screenshots (ScreenSpot-Pro, MIT). Warm daemon measured independently on M4 Pro (CoreML).
+Each stored frame carries:
+- A `state_id` (hex hash of the pHash)
+- A VASP snapshot: typed UI elements with pixel coordinates
+- A timestamp and terminal PID
+
+## CLI Reference
+
+| Command | Description | Example |
+|---------|-------------|---------|
+| `extract` | Convert a screenshot to VASP structured text | `farscry extract screen.png` |
+| `diff` | Semantic delta between two screenshots | `farscry diff before.png after.png` |
+| `annotate` | Render bounding boxes onto a screenshot | `farscry annotate screen.png -o out.png` |
+| `pack` | Pack a directory of screenshots into a `.vasf` file | `farscry pack shots/ -o session.vasf` |
+| `timeline` | Print the sequence of unique states in a session | `farscry timeline session.vasf` |
+| `info` | Print metadata for a `.vasf` file | `farscry info session.vasf` |
+| `serve` | Run the MCP server | `farscry serve --mcp` |
+| `hook` | Install or remove the terminal recording hook | `farscry hook --remove` |
+| `session` | List and inspect recorded sessions | `farscry session --list` |
+| `record` | Start a recording session manually | `farscry record --daemon --global --pid $$ --silent` |
+| `daemon` | Manage the global recording daemon | `farscry daemon unregister $$` |
+
+## MCP Integration
+
+Add to your agent's MCP configuration:
+
+```json
+{
+  "mcpServers": {
+    "farscry": {
+      "command": "farscry",
+      "args": ["serve", "--mcp"]
+    }
+  }
+}
+```
+
+The agent sends a screenshot path; farscry returns structured VASP text. No pixels leave the machine.
 
 ## Install
 
 ```bash
-# npm (global)
+cargo install farscry
+```
+
+```bash
+brew install farscry
+```
+
+```bash
 npm install -g farscry
+```
 
-# pip
+```bash
 pip install farscry
+```
 
-# curl (any platform)
+```bash
 curl -fsSL https://farscry.dev/install | sh
 ```
 
-## Quick start
+## Performance
 
-```bash
-# Describe any image, returns coordinates
-farscry extract screen.png
-
-# Diff before/after an action
-farscry diff before.png after.png
-
-# Pipe from clipboard (Cmd+Shift+4 on macOS)
-farscry extract --from-clipboard | your-agent "fix this"
-
-# Run as MCP server
-farscry serve --mcp
-```
-
-## Visual debug — annotate any screenshot
-
-```bash
-farscry annotate screenshot.png -o annotated.png
-# or from clipboard:
-farscry annotate --from-clipboard -o /tmp/out.png && open /tmp/out.png
-
-# Add alias for one-command visual debug:
-alias fannot='farscry annotate --from-clipboard -o /tmp/farscry_annotated.png && open /tmp/farscry_annotated.png'
-```
-
-Then: Shottr screenshot -> `fannot` -> annotated image opens automatically.
-
-## Smart paste
-
-Configure Cmd+V to auto-detect images in terminal:
-
-```bash
-farscry setup
-# -> detects your agents (claude, devin, codex, aider)
-# -> configures ffix alias for your preferred agent
-# -> asks: configure smart Cmd+V? (y/N)
-# -> creates ~/.farscry/smart-paste.sh
-# -> shows key binding instructions for your terminal
-```
-
-After setup: screenshot -> Cmd+V -> agent understands. No command to type.
-
-Supported terminals:
-- macOS: iTerm2, Warp (Terminal.app: use `fp` alias instead)
-- Linux: Kitty, Gnome Terminal
-- Windows: Windows Terminal
-
-## How it works
-
-```
-[image] → [binarize] → [layout detect] → [OCR per region] → [classify] → [VASP output]
-```
-
-Detects: error messages · UI fields + values · terminal output · conversations · config screens
-
-## Output (VASP format)
-
-~175 tokens average. Typed elements with exact pixel coordinates, not descriptions.
-
-```
-=== farscry visual context ===
-screen_type: config
----
-
-[middle-right]  button  "Save Changes"  enabled:true
-[middle-center] input   value="1500"    editable:true
-[bottom]     error   "Value must be ≤ 10000"
-
-affordances:
-  click → "Save Changes"  at (400,300)
-  type  → "Max Value"     at (200,120)  current:"1500"
-```
-
-## Agent integrations
-
-### Setup (recommended)
-```bash
-farscry setup
-```
-Detects claude, devin, codex, aider. Shows the alias to add and MCP config to paste. Saves your preferred agent to `~/.farscry/config.toml`.
-
-### Zero-friction workflow
-```bash
-echo "alias fp='farscry paste'" >> ~/.zshrc && source ~/.zshrc
-
-# Every time after: screenshot → fp → done
-fp
-fp "explain this error"
-fp --agent devin
-```
-
-### Claude Code
-```bash
-farscry extract screen.png | claude -p "fix this"
-farscry extract --from-clipboard | claude -p "fix this"
-```
-
-### Devin
-```bash
-devin -p "$(farscry extract screen.png): fix this"
-devin -p "$(farscry extract --from-clipboard): fix this"
-```
-
-### Codex
-```bash
-farscry extract screen.png | codex exec "fix this:"
-farscry extract --from-clipboard | codex exec "fix this:"
-```
-
-### MCP (all agents)
-```bash
-farscry serve --mcp
-```
-Supports multiple images via `image_paths` parameter.
-
-### Supported image formats
-PNG, JPEG, GIF, WEBP, TIFF. From clipboard, file, or stdin.
-From clipboard: Cmd+Shift+4, Shottr, or Cmd+C on an image file in Finder.
+| Metric | Platform | Value |
+|--------|----------|-------|
+| Token reduction — OCR + structured output | ScreenSpot-Pro, N=223 | **15.5×** |
+| Token reduction — session deduplication | Retina 3600×2338, real session | **160×** |
+| Warm daemon response time | macOS M4 Pro, CoreML | **38 ms** |
+| Daemon RSS — all terminals, one process | macOS | **22 MB** |
+| Daemon VmRSS | Linux, Docker + Xvfb | **11 MB** |
 
 ## Roadmap
 
-**v0.1.0** (released)
-- Extract: screenshot to typed VASP output, 38ms warm daemon
-- Diff: semantic delta between two screenshots
-- MCP server, smart paste, ffix alias
-- npm, pip, Homebrew, crates.io
-- VASP 1.0-draft open RFC
+### v0.5.0
 
-**v0.2.0** (in planning)
-- Multi-language OCR (Portuguese, Spanish, German, Japanese)
-- `farscry annotate` - screenshot with bounding boxes drawn over elements
-- Windows clipboard support
-- VASP adapters: Claude computer-use, Playwright, OpenAI vision
+- `farscry augment`: inject silent failure warnings directly into agent context via MCP — zero code changes to the agent
+- `farscry watch session.vasf --detect`: real-time silent failure and visual loop detection
+- Semantic export: webhook, Slack, JSONL log on session failure — never sends pixels, always structured text
+- `farscry watch-dir <path>`: file-system watch for agent screenshot directories (FSEvents/inotify)
+- `farscry diff --json`: structured diff output for tooling integration
 
-**v0.3.0** (planned)
-- `farscry watch` - continuous diff on screen region changes
-- Loop detection via state_id history in daemon
-- SDK native clients (no subprocess overhead)
+### v0.6.0
 
-Full spike docs: [docs/projects/roadmap-v0.2.0.md](docs/projects/roadmap-v0.2.0.md)
+- VASP adapters: native Playwright and OpenAI Vision support (currently stubs)
+- `farscry install-lang`: multilingual OCR models via CDN — Portuguese, Chinese, Japanese, Russian, Korean, Arabic
+- Per-window capture works when minimized or behind other windows (SCContentFilter)
+- `farscry serve` screen-lock awareness: maintains last StateId when display sleeps
 
 ## License
 

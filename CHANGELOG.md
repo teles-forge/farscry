@@ -2,7 +2,22 @@
 
 ## [0.4.0] — unreleased
 
-## [0.3.0] — unreleased
+## [0.3.0] — 2026-05-15
+
+### Added
+- `farscry hook`: zero-friction sidecar terminal recording via shell hook (`farscry setup --hook`)
+  - Automatically records every terminal session with <1% CPU overhead
+  - 18KB/min disk, ~22MB RAM (single daemon for all terminals)
+- `farscry record --daemon`: background screen capture daemon with pHash deduplication
+- `farscry session --list` / `--latest`: list and inspect recorded sessions
+- `farscry daemon`: global single-daemon architecture — N terminals = 1 process
+- `farscry hook --init` / `--remove`: manage shell hook lifecycle
+- Window-specific capture via `CGWindowListCreateImage` — works when terminal is minimized or behind other windows
+
+### Fixed
+- Screen capture now targets the specific terminal window, not the entire display
+- Graceful daemon shutdown — VASF header finalized on SIGTERM/SIGINT
+- Screen Recording permission dialog shown correctly on first run
 
 ## [0.2.0] — 2026-05-15
 

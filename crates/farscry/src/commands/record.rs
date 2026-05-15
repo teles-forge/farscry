@@ -94,6 +94,96 @@ fn hamming(a: StateId, b: StateId) -> u8 {
 }
 
 fn run_capture_loop(opts: RecordOpts) -> Result<()> {
+    // On Linux: zero-copy path — pHash computed directly from the X11 shared
+    // memory frame slice.  No Vec allocation, no OCR model loaded.
+    #[cfg(target_os = "linux")]
+    return capture_loop_linux(opts);
+
+    // macOS and other platforms: full pipeline with OCR.
+    #[cfg(not(target_os = "linux"))]
+    capture_loop_default(opts)
+}
+
+/// Linux-specific capture loop.
+///
+/// scrap::Capturer::frame() returns a slice into X11 XSHm shared memory.
+/// We sample 32×32 pixels directly from that slice via phash_from_bgra,
+/// then drop the frame reference.  No large heap allocation occurs:
+///   - X11 shared memory: not in Rust heap, not in process RSS
+///   - phash_from_bgra: ~1 KB gray + ~20 KB DCT, freed immediately
+/// Steady-state RSS: process baseline only (~7 MB).
+#[cfg(target_os = "linux")]
+fn capture_loop_linux(opts: RecordOpts) -> Result<()> {
+    use scrap::{Capturer, Display};
+
+    if let Some(parent) = opts.output.parent() {
+        std::fs::create_dir_all(parent)?;
+    }
+
+    let display = Display::primary()
+        .map_err(|e| anyhow::anyhow!("no display (is DISPLAY set?): {e}"))?;
+    let mut capturer =
+        Capturer::new(display).map_err(|e| anyhow::anyhow!("capturer init failed: {e}"))?;
+    let img_w = capturer.width() as u32;
+    let img_h = capturer.height() as u32;
+
+    let writer = Arc::new(Mutex::new(VasfWriter::create(&opts.output)?));
+    let mut last_hash: Option<StateId> = None;
+
+    let stop = Arc::new(AtomicBool::new(false));
+    let stop_c = stop.clone();
+    ctrlc::set_handler(move || stop_c.store(true, Ordering::SeqCst)).ok();
+
+    let fps = opts.fps.max(1);
+    let interval = Duration::from_millis(1000 / fps as u64);
+    let threshold = opts.threshold;
+
+    loop {
+        thread::sleep(interval);
+        if stop.load(Ordering::SeqCst) {
+            break;
+        }
+
+        // frame() borrows X11 shared memory — no allocation in our heap.
+        let hash_opt = loop {
+            match capturer.frame() {
+                Ok(frame) => {
+                    let h = farscry_core::phash_from_bgra(&frame, img_w, img_h);
+                    // frame borrow ends here; X11 shared memory is released.
+                    break Some(h);
+                }
+                Err(e) if e.kind() == std::io::ErrorKind::WouldBlock => {
+                    thread::sleep(Duration::from_millis(5));
+                }
+                Err(_) => break None,
+            }
+        };
+
+        let Some(hash) = hash_opt else { continue };
+        let ts = now_ms();
+        let is_new = last_hash
+            .map(|prev| hamming(hash, prev) > threshold)
+            .unwrap_or(true);
+
+        if let Ok(mut w) = writer.lock() {
+            if is_new {
+                w.append_state(hash, "").ok();
+                last_hash = Some(hash);
+            } else {
+                w.append_timeline(ts, hash).ok();
+            }
+        }
+    }
+
+    if let Ok(mut w) = writer.lock() {
+        w.finalize().ok();
+    }
+    Ok(())
+}
+
+/// Default capture loop (macOS + Windows): full pipeline with OCR.
+#[cfg(not(target_os = "linux"))]
+fn capture_loop_default(opts: RecordOpts) -> Result<()> {
     if let Some(parent) = opts.output.parent() {
         std::fs::create_dir_all(parent)?;
     }
@@ -142,6 +232,7 @@ fn run_capture_loop(opts: RecordOpts) -> Result<()> {
     Ok(())
 }
 
+#[cfg(not(target_os = "linux"))]
 fn effective_capture_pid(hint: Option<u32>) -> Option<u32> {
     #[cfg(target_os = "macos")]
     {
@@ -155,6 +246,7 @@ fn effective_capture_pid(hint: Option<u32>) -> Option<u32> {
     }
 }
 
+#[cfg(not(target_os = "linux"))]
 fn phash_thread(
     rx: crossbeam_channel::Receiver<image::DynamicImage>,
     ocr_tx: crossbeam_channel::Sender<(image::DynamicImage, StateId)>,
@@ -180,6 +272,7 @@ fn phash_thread(
     }
 }
 
+#[cfg(not(target_os = "linux"))]
 fn ocr_thread(
     rx: crossbeam_channel::Receiver<(image::DynamicImage, StateId)>,
     pipeline: std::sync::Arc<farscry_core::Pipeline>,
@@ -353,7 +446,8 @@ fn cgimage_to_dynamic(image: core_graphics::image::CGImage) -> Option<image::Dyn
     image::RgbaImage::from_raw(width, height, rgba).map(image::DynamicImage::ImageRgba8)
 }
 
-#[cfg(not(target_os = "macos"))]
+// Windows and other non-macOS/non-Linux platforms.
+#[cfg(not(any(target_os = "macos", target_os = "linux")))]
 fn capture_screen(window_pid: Option<u32>) -> Option<image::DynamicImage> {
     let _ = window_pid;
     use scrap::{Capturer, Display};

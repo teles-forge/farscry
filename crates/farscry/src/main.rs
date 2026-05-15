@@ -1,6 +1,7 @@
 mod clipboard;
 mod commands;
 mod config;
+#[cfg(target_os = "macos")]
 mod iosurface_phash;
 mod pipeline;
 

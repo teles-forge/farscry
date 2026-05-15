@@ -14,6 +14,45 @@ pub fn phash_image(image: &DynamicImage) -> StateId {
     pack_phash_bits(&dct)
 }
 
+/// Compute pHash directly from raw BGRA pixel data — no heap allocation for
+/// the pixel buffer itself.  `data` is the raw frame slice (BGRA, 4 bytes per
+/// pixel, may have per-row padding).  `w` and `h` are the pixel dimensions.
+///
+/// Total heap allocation: ~20 KB (DCT planner + 32-element scratch buffers),
+/// all freed on return.  The frame slice itself (X11 shared memory on Linux)
+/// is never copied.
+pub fn phash_from_bgra(data: &[u8], w: u32, h: u32) -> StateId {
+    let wu = w as usize;
+    let hu = h as usize;
+    // Compute actual bytes-per-row (may include alignment padding).
+    let bpr = if hu > 0 { data.len() / hu } else { wu * 4 };
+
+    // Sample 32×32 pixels using (i + 0.5) * src_size / 32 to match
+    // image::imageops::FilterType::Nearest and keep hashes consistent.
+    let mut gray_bytes = vec![0u8; 1024]; // 1024 bytes — trivial
+    for row in 0..32usize {
+        let src_y = ((row as f64 + 0.5) * hu as f64 / 32.0) as usize;
+        let src_y = src_y.min(hu.saturating_sub(1));
+        for col in 0..32usize {
+            let src_x = ((col as f64 + 0.5) * wu as f64 / 32.0) as usize;
+            let src_x = src_x.min(wu.saturating_sub(1));
+            let px = src_y * bpr + src_x * 4;
+            if px + 2 < data.len() {
+                // BGRA layout: [B, G, R, A]
+                let b = data[px] as f32;
+                let g = data[px + 1] as f32;
+                let r = data[px + 2] as f32;
+                gray_bytes[row * 32 + col] = (0.299 * r + 0.587 * g + 0.114 * b) as u8;
+            }
+        }
+    }
+
+    let luma = image::GrayImage::from_raw(32, 32, gray_bytes)
+        .map(DynamicImage::ImageLuma8)
+        .expect("32×32 GrayImage");
+    phash_image(&luma)
+}
+
 fn compute_2d_dct(input: &mut [f32], size: usize) -> Vec<f32> {
     let mut planner = DctPlanner::new();
     let dct = planner.plan_dct2(size);

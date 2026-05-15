@@ -6,7 +6,7 @@ pub mod types;
 pub mod vasf;
 
 pub use error::FarscryError;
-pub use hash::phash_image;
+pub use hash::{phash_from_bgra, phash_image};
 pub use pipeline::Pipeline;
 pub use traits::{
     DiffEngine, ElementClassifier, OcrEngine, Preprocessor, ScreenClassifier, StateHasher,

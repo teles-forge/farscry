@@ -1,6 +1,29 @@
 # Changelog
 
-## [0.4.0] — unreleased
+## [0.4.0] — 2026-05-15
+
+### Added
+- IOSurface zero-copy pHash: **22MB RSS** steady state via ScreenCaptureKit (down from 729MB)
+  - GPU scales display to 32×32 before delivering frames — no full-resolution copy to Rust heap
+  - Works on macOS 15+ via ScreenCaptureKit SCStream
+- Linux pHash from X11 shared memory: **11MB VmRSS** inside Docker with Xvfb
+  - scrap frame slice read directly without heap copy
+  - Works in Docker containers, GitHub Actions, any Linux with `DISPLAY` set
+- Single global daemon per machine: `farscry record --daemon --global --pid $$`
+  - N terminals = 22MB total (not N × 22MB)
+  - Lockfile + Unix socket IPC for terminal registration
+  - `farscry daemon unregister <pid>` on terminal EXIT
+
+### Changed
+- macOS capture backend updated to ScreenCaptureKit (CGDisplayStream was deprecated/removed in macOS 15)
+- `build.rs` now uses `CARGO_CFG_TARGET_OS` for correct cross-compilation (macOS → Linux builds)
+
+### Internals
+- Removed 841 lines of dead diagnostic code
+- Deduplicated `now_ms()`, `hamming()`, `sessions_dir()` — moved to shared utilities
+- Split `setup.rs` (729 lines) into focused submodules: `wizard`, `terminal`, `smart_paste`
+- Removed three always-`None` fields from `VaspOutput`
+- Fixed `evict_stale_daemon` liveness check on Linux (was always-true bug)
 
 ## [0.3.0] — 2026-05-15
 

@@ -275,7 +275,7 @@ fn measurement_3_ipc_overhead() {
     let listener = UnixListener::bind(&sock_path).expect("bind");
     probe("after UnixListener::bind");
 
-    let sock_path2 = sock_path.clone();
+    let _sock_path2 = sock_path.clone();
     let t = std::thread::spawn(move || {
         let (mut stream, _) = listener.accept().expect("accept");
         let mut buf = [0u8; 64];

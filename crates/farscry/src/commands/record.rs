@@ -16,9 +16,19 @@ pub struct RecordOpts {
     #[allow(dead_code)]
     pub silent: bool,
     pub window_pid: Option<u32>,
+    /// When true: delegate to the single global daemon instead of
+    /// spawning a private daemon.  The `shell_pid` identifies this terminal.
+    pub global: bool,
+    pub shell_pid: Option<u32>,
 }
 
 pub fn record(opts: RecordOpts) -> Result<()> {
+    if opts.daemon && opts.global {
+        let shell_pid = opts
+            .shell_pid
+            .unwrap_or_else(std::os::unix::process::parent_id);
+        return crate::commands::daemon::connect_and_register(shell_pid);
+    }
     if opts.daemon {
         return daemonize(opts);
     }

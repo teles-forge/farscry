@@ -1,4 +1,5 @@
 pub mod annotate;
+pub mod daemon;
 pub mod diff;
 pub mod extract;
 pub mod hook;

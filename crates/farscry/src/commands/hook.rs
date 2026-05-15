@@ -57,20 +57,15 @@ fn check_screen_capture_permission() {
 }
 
 const HOOK_SCRIPT: &str = r#"_farscry_session_start() {
-  local ts
-  ts=$(date +%Y%m%d-%H%M%S)
-  farscry record \
-    --daemon \
-    --fps 1 \
-    --output "$HOME/.farscry/sessions/${ts}.vasf" \
-    --silent &
-  export FARSCRY_SESSION_PID=$!
-  export FARSCRY_SESSION_FILE="$HOME/.farscry/sessions/${ts}.vasf"
+  local session_file
+  session_file=$(farscry record --daemon --global --pid $$ --silent 2>/dev/null)
+  export FARSCRY_SESSION_PID=$$
+  export FARSCRY_SESSION_FILE="${session_file}"
 }
 
 _farscry_session_stop() {
   [ -n "$FARSCRY_SESSION_PID" ] && \
-    kill "$FARSCRY_SESSION_PID" 2>/dev/null
+    farscry daemon unregister "$FARSCRY_SESSION_PID" 2>/dev/null
   unset FARSCRY_SESSION_PID FARSCRY_SESSION_FILE
 }
 

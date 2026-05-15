@@ -15,6 +15,7 @@ pub struct RecordOpts {
     pub threshold: u8,
     #[allow(dead_code)]
     pub silent: bool,
+    pub window_pid: Option<u32>,
 }
 
 pub fn record(opts: RecordOpts) -> Result<()> {
@@ -25,18 +26,32 @@ pub fn record(opts: RecordOpts) -> Result<()> {
 }
 
 fn daemonize(opts: RecordOpts) -> Result<()> {
+    #[cfg(unix)]
+    let pid_hint = opts
+        .window_pid
+        .unwrap_or_else(std::os::unix::process::parent_id);
+
     let exe = std::env::current_exe()?;
+    let mut args: Vec<String> = vec![
+        "record".to_string(),
+        "--output".to_string(),
+        opts.output.to_string_lossy().into_owned(),
+        "--fps".to_string(),
+        opts.fps.to_string(),
+        "--threshold".to_string(),
+        opts.threshold.to_string(),
+    ];
+
+    #[cfg(unix)]
+    {
+        args.push("--window-pid".to_string());
+        args.push(pid_hint.to_string());
+    }
+
+    args.push("--silent".to_string());
+
     let child = std::process::Command::new(&exe)
-        .args([
-            "record",
-            "--output",
-            &opts.output.to_string_lossy(),
-            "--fps",
-            &opts.fps.to_string(),
-            "--threshold",
-            &opts.threshold.to_string(),
-            "--silent",
-        ])
+        .args(&args)
         .stdout(std::process::Stdio::null())
         .stderr(std::process::Stdio::null())
         .spawn()
@@ -72,11 +87,13 @@ fn run_capture_loop(opts: RecordOpts) -> Result<()> {
     if let Some(parent) = opts.output.parent() {
         std::fs::create_dir_all(parent)?;
     }
+
+    let capture_pid = effective_capture_pid(opts.window_pid);
+
     let writer = Arc::new(Mutex::new(VasfWriter::create(&opts.output)?));
     let (cap_tx, cap_rx) = bounded::<image::DynamicImage>(3);
     let (ocr_tx, ocr_rx) = bounded::<(image::DynamicImage, StateId)>(1);
 
-    // Shared stop flag — set by SIGINT or SIGTERM handler.
     let stop = Arc::new(AtomicBool::new(false));
     let stop_ctrlc = stop.clone();
     ctrlc::set_handler(move || {
@@ -86,8 +103,6 @@ fn run_capture_loop(opts: RecordOpts) -> Result<()> {
 
     let threshold = opts.threshold;
     let writer_phash = writer.clone();
-    // Give phash thread sole ownership of ocr_tx: when it exits, the OCR
-    // channel closes and the OCR thread's for-loop terminates naturally.
     let t_phash = thread::spawn(move || phash_thread(cap_rx, ocr_tx, writer_phash, threshold));
 
     let pipeline = crate::pipeline::get_or_build_pipeline()?;
@@ -97,30 +112,37 @@ fn run_capture_loop(opts: RecordOpts) -> Result<()> {
     let fps = opts.fps.max(1);
     let interval = Duration::from_millis(1000 / fps as u64);
 
-    // Capture loop — sleeps between frames, checks stop flag each iteration.
     loop {
         thread::sleep(interval);
         if stop.load(Ordering::SeqCst) {
             break;
         }
-        if let Some(img) = capture_screen() {
+        if let Some(img) = capture_screen(capture_pid) {
             cap_tx.try_send(img).ok();
         }
     }
 
-    // Graceful shutdown sequence:
-    // 1. Drop cap_tx → phash_thread's for-loop sees a closed channel and exits,
-    //    which in turn drops ocr_tx → ocr_thread's for-loop exits.
     drop(cap_tx);
-    // 2. Wait for both threads to finish their in-flight work.
     t_phash.join().ok();
     t_ocr.join().ok();
-    // 3. All threads done — no one holds the mutex, finalize is safe.
     if let Ok(mut w) = writer.lock() {
         w.finalize().ok();
     }
 
     Ok(())
+}
+
+fn effective_capture_pid(hint: Option<u32>) -> Option<u32> {
+    #[cfg(target_os = "macos")]
+    {
+        let start = hint.unwrap_or_else(std::os::unix::process::parent_id);
+        resolve_terminal_pid(start)
+    }
+    #[cfg(not(target_os = "macos"))]
+    {
+        let _ = hint;
+        None
+    }
 }
 
 fn phash_thread(
@@ -165,20 +187,143 @@ fn ocr_thread(
 }
 
 #[cfg(target_os = "macos")]
-fn capture_screen() -> Option<image::DynamicImage> {
+fn resolve_terminal_pid(start_pid: u32) -> Option<u32> {
+    let mut pid = start_pid;
+    for _ in 0..8 {
+        if pid <= 1 {
+            break;
+        }
+        if find_window_id_for_pid(pid).is_some() {
+            return Some(pid);
+        }
+        match get_ppid(pid) {
+            Some(p) => pid = p,
+            None => break,
+        }
+    }
+    None
+}
+
+#[cfg(target_os = "macos")]
+fn get_ppid(pid: u32) -> Option<u32> {
+    let output = std::process::Command::new("ps")
+        .args(["-p", &pid.to_string(), "-o", "ppid="])
+        .output()
+        .ok()?;
+    std::str::from_utf8(&output.stdout)
+        .ok()?
+        .trim()
+        .parse::<u32>()
+        .ok()
+}
+
+#[cfg(target_os = "macos")]
+fn find_window_id_for_pid(target_pid: u32) -> Option<u32> {
+    use core_graphics::window::{
+        copy_window_info, kCGNullWindowID, kCGWindowListExcludeDesktopElements,
+        kCGWindowListOptionAll, kCGWindowNumber, kCGWindowOwnerPID,
+    };
+    use std::os::raw::c_void;
+
+    #[allow(improper_ctypes)]
+    extern "C" {
+        fn CFDictionaryGetValue(dict: *const c_void, key: *const c_void) -> *const c_void;
+        fn CFNumberGetValue(num: *const c_void, ty: i32, val: *mut c_void) -> bool;
+    }
+
+    const CF_NUMBER_SINT32: i32 = 3;
+
+    let windows = copy_window_info(
+        kCGWindowListOptionAll | kCGWindowListExcludeDesktopElements,
+        kCGNullWindowID,
+    )?;
+
+    for dict_raw in windows.get_all_values() {
+        unsafe {
+            let pid_cf = CFDictionaryGetValue(
+                dict_raw,
+                kCGWindowOwnerPID as *const c_void,
+            );
+            if pid_cf.is_null() {
+                continue;
+            }
+            let mut owner: i32 = 0;
+            if !CFNumberGetValue(
+                pid_cf,
+                CF_NUMBER_SINT32,
+                &mut owner as *mut i32 as *mut c_void,
+            ) {
+                continue;
+            }
+            if owner as u32 != target_pid {
+                continue;
+            }
+            let wid_cf = CFDictionaryGetValue(
+                dict_raw,
+                kCGWindowNumber as *const c_void,
+            );
+            if wid_cf.is_null() {
+                continue;
+            }
+            let mut wid: i32 = 0;
+            if CFNumberGetValue(
+                wid_cf,
+                CF_NUMBER_SINT32,
+                &mut wid as *mut i32 as *mut c_void,
+            ) {
+                return Some(wid as u32);
+            }
+        }
+    }
+    None
+}
+
+#[cfg(target_os = "macos")]
+fn capture_screen(window_pid: Option<u32>) -> Option<image::DynamicImage> {
+    if let Some(pid) = window_pid {
+        if let Some(wid) = find_window_id_for_pid(pid) {
+            if let Some(img) = capture_window(wid) {
+                return Some(img);
+            }
+        }
+    }
+    capture_full_screen()
+}
+
+#[cfg(target_os = "macos")]
+fn capture_window(window_id: u32) -> Option<image::DynamicImage> {
+    use core_graphics::window::{
+        create_image, kCGWindowImageBoundsIgnoreFraming, kCGWindowListOptionIncludingWindow,
+    };
+    let bounds = unsafe { core_graphics::display::CGRectNull };
+    let cg_img = create_image(
+        bounds,
+        kCGWindowListOptionIncludingWindow,
+        window_id,
+        kCGWindowImageBoundsIgnoreFraming,
+    )?;
+    cgimage_to_dynamic(cg_img)
+}
+
+#[cfg(target_os = "macos")]
+fn capture_full_screen() -> Option<image::DynamicImage> {
     use core_graphics::display::CGDisplay;
-    let display = CGDisplay::main();
-    let image = display.image()?;
+    let image = CGDisplay::main().image()?;
+    cgimage_to_dynamic(image)
+}
+
+#[cfg(target_os = "macos")]
+fn cgimage_to_dynamic(image: core_graphics::image::CGImage) -> Option<image::DynamicImage> {
     let data = image.data();
     let bytes = data.bytes().to_vec();
     let width = image.width() as u32;
     let height = image.height() as u32;
-    let bytes_per_row = image.bytes_per_row();
+    let bpr = image.bytes_per_row();
     let mut rgba = Vec::with_capacity((width * height * 4) as usize);
     for y in 0..height {
-        let row_start = (y as usize) * bytes_per_row;
+        let row = (y as usize) * bpr;
         for x in 0..width {
-            let px = row_start + (x as usize) * 4;
+            let px = row + (x as usize) * 4;
             if px + 3 < bytes.len() {
                 rgba.push(bytes[px + 2]);
                 rgba.push(bytes[px + 1]);
@@ -187,12 +332,12 @@ fn capture_screen() -> Option<image::DynamicImage> {
             }
         }
     }
-    image::RgbaImage::from_raw(width, height, rgba)
-        .map(image::DynamicImage::ImageRgba8)
+    image::RgbaImage::from_raw(width, height, rgba).map(image::DynamicImage::ImageRgba8)
 }
 
 #[cfg(not(target_os = "macos"))]
-fn capture_screen() -> Option<image::DynamicImage> {
+fn capture_screen(window_pid: Option<u32>) -> Option<image::DynamicImage> {
+    let _ = window_pid;
     use scrap::{Capturer, Display};
     let display = Display::primary().ok()?;
     let mut capturer = Capturer::new(display).ok()?;

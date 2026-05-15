@@ -141,6 +141,9 @@ enum Commands {
 
         #[arg(long, default_value = "10")]
         threshold: u8,
+
+        #[arg(long)]
+        window_pid: Option<u32>,
     },
 
     Hook {
@@ -240,9 +243,9 @@ async fn main() {
         } => commands::pack::pack_frames(input, output, hamming_threshold),
         Commands::Timeline { input } => commands::timeline::timeline(input),
         Commands::Info { input } => commands::info::info(input),
-        Commands::Record { output, fps, daemon, silent, threshold } => {
+        Commands::Record { output, fps, daemon, silent, threshold, window_pid } => {
             commands::record::record(commands::record::RecordOpts {
-                output, fps, daemon, silent, threshold,
+                output, fps, daemon, silent, threshold, window_pid,
             })
         }
         Commands::Hook { init, remove } => {

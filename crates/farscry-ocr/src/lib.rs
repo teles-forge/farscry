@@ -17,6 +17,7 @@ pub fn build_ocr_engine(models_dir: &Path) -> Result<PlatformOcrEngine, FarscryE
     return farscry_ocr_ort::OrtOcrEngine::from_models_dir(models_dir);
 }
 
+#[allow(dead_code)]
 pub fn active_backend() -> &'static str {
     #[cfg(all(target_os = "macos", target_arch = "aarch64", feature = "coreml"))]
     return "CoreML (native ANE/GPU, batch=32)";

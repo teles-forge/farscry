@@ -11,6 +11,10 @@ impl StateId {
     pub fn to_bits(&self) -> u64 {
         u64::from_be_bytes(self.0)
     }
+
+    pub fn hamming(self, other: StateId) -> u8 {
+        (self.to_bits() ^ other.to_bits()).count_ones() as u8
+    }
 }
 
 impl std::fmt::Display for StateId {
@@ -104,9 +108,6 @@ pub struct VaspOutput {
     pub screen_type: ScreenType,
     pub confidence: Confidence,
     pub lang: String,
-    pub delta_from: Option<StateId>,
-    pub context_similarity: Option<f32>,
-    pub context_changed: Option<bool>,
     pub agent_context: String,
     pub ui_tree: Vec<UiElement>,
     pub affordances: Vec<Affordance>,
@@ -129,9 +130,6 @@ impl VaspOutput {
             screen_type,
             confidence,
             lang: lang.into(),
-            delta_from: None,
-            context_similarity: None,
-            context_changed: None,
             agent_context: agent_context.into(),
             ui_tree,
             affordances,

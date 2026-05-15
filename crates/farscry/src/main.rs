@@ -4,6 +4,7 @@ mod config;
 #[cfg(target_os = "macos")]
 mod iosurface_phash;
 mod pipeline;
+mod util;
 
 use anyhow::Result;
 use clap::{Parser, Subcommand};

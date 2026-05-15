@@ -73,7 +73,7 @@ pub fn setup_hook() -> Result<()> {
     check_screen_capture_permission();
 
     let rc = detect_rc_file()?;
-    let sessions_dir = sessions_dir();
+    let sessions_dir = crate::util::sessions_dir();
     std::fs::create_dir_all(&sessions_dir)?;
 
     let content = std::fs::read_to_string(&rc).unwrap_or_default();
@@ -142,9 +142,4 @@ fn detect_rc_file() -> Result<PathBuf> {
     Ok(rc)
 }
 
-pub fn sessions_dir() -> PathBuf {
-    dirs::home_dir()
-        .unwrap_or_else(|| PathBuf::from("."))
-        .join(".farscry")
-        .join("sessions")
-}
+

@@ -9,13 +9,15 @@ use std::{
     path::PathBuf,
     sync::{Arc, Mutex},
     thread,
-    time::{Duration, SystemTime, UNIX_EPOCH},
+    time::Duration,
 };
 
 #[cfg(target_os = "macos")]
 use crate::iosurface_phash as ios;
 #[cfg(target_os = "macos")]
 use crate::iosurface_phash::DisplayStream;
+#[cfg(all(unix, not(target_os = "macos")))]
+use libc;
 
 
 struct WindowEntry {
@@ -149,12 +151,7 @@ fn register(shell_pid: u32, state: &SharedState) -> Result<(u32, PathBuf)> {
     #[cfg(not(target_os = "macos"))]
     let window_id: u32 = 0;
 
-    let dir = {
-        #[cfg(target_os = "macos")]
-        { ios::sessions_dir() }
-        #[cfg(not(target_os = "macos"))]
-        { dirs::home_dir().unwrap_or_else(|| PathBuf::from(".")).join(".farscry").join("sessions") }
-    };
+    let dir = crate::util::sessions_dir();
     std::fs::create_dir_all(&dir)?;
     let ts = Utc::now().format("%Y%m%d-%H%M%S");
     let file = dir.join(format!("{ts}-{shell_pid}.vasf"));
@@ -182,17 +179,6 @@ fn drop_window(shell_pid: u32, state: &SharedState) {
     }
 }
 
-
-fn now_ms() -> i64 {
-    SystemTime::now()
-        .duration_since(UNIX_EPOCH)
-        .unwrap_or_default()
-        .as_millis() as i64
-}
-
-fn hamming(a: StateId, b: StateId) -> u8 {
-    (a.to_bits() ^ b.to_bits()).count_ones() as u8
-}
 
 fn capture_loop(state: SharedState) {
     let threshold: u8 = 10;
@@ -226,12 +212,12 @@ fn capture_loop(state: SharedState) {
         let Some(hash) = current_hash else {
             continue;
         };
-        let ts = now_ms();
+        let ts = crate::util::now_ms();
 
         for entry in guard.values_mut() {
             let is_new = entry
                 .last_hash
-                .map(|prev| hamming(hash, prev) > threshold)
+                .map(|prev| hash.hamming(prev) > threshold)
                 .unwrap_or(true);
 
             if is_new {
@@ -251,7 +237,9 @@ fn evict_stale_daemon(pid_path: &PathBuf, sock_path: &PathBuf) {
         let alive = {
             #[cfg(target_os = "macos")]
             { ios::process_alive(pid) }
-            #[cfg(not(target_os = "macos"))]
+            #[cfg(all(unix, not(target_os = "macos")))]
+            { pid > 0 && unsafe { libc::kill(pid as libc::pid_t, 0) == 0 } }
+            #[cfg(not(unix))]
             { pid > 0 }
         };
         if !alive {

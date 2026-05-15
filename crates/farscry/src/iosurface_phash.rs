@@ -151,7 +151,7 @@ pub fn find_terminal_window(start_pid: u32) -> Option<CGWindowID> {
 }
 
 /// Return the first CGWindowID owned by `target_pid`.
-pub fn window_for_pid(target_pid: u32) -> Option<CGWindowID> {
+fn window_for_pid(target_pid: u32) -> Option<CGWindowID> {
     #[allow(improper_ctypes)]
     extern "C" {
         fn CFDictionaryGetValue(d: *const c_void, k: *const c_void) -> *const c_void;
@@ -204,13 +204,6 @@ pub fn ppid(pid: u32) -> Option<u32> {
         .ok()
 }
 
-
-pub fn sessions_dir() -> PathBuf {
-    dirs::home_dir()
-        .unwrap_or_else(|| PathBuf::from("."))
-        .join(".farscry")
-        .join("sessions")
-}
 
 pub fn daemon_pid_file() -> PathBuf {
     dirs::home_dir()

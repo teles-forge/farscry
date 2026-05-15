@@ -3,7 +3,7 @@ use farscry_core::vasf::{VasfFile, VasfFrame};
 use farscry_core::{DiffEngine, StateId};
 use farscry_diff::DiffEngineImpl;
 use std::path::{Path, PathBuf};
-use std::time::{SystemTime, UNIX_EPOCH};
+
 
 pub fn pack_frames(input: PathBuf, output: PathBuf, hamming_threshold: u8) -> Result<()> {
     let paths = collect_image_paths(&input)?;
@@ -21,7 +21,7 @@ pub fn pack_frames(input: PathBuf, output: PathBuf, hamming_threshold: u8) -> Re
             image::open(path).with_context(|| format!("cannot open image: {}", path.display()))?;
         let state_id = farscry_core::phash_image(&img);
         if let Some(lid) = last_id {
-            if hamming(state_id, lid) <= hamming_threshold {
+            if state_id.hamming(lid) <= hamming_threshold {
                 continue;
             }
         }
@@ -37,7 +37,7 @@ pub fn pack_frames(input: PathBuf, output: PathBuf, hamming_threshold: u8) -> Re
         });
         frames.push(VasfFrame {
             state_id: vasp.state_id,
-            timestamp: now_ms(),
+            timestamp: crate::util::now_ms(),
             vasp_data: vasp_text.into_bytes(),
             delta_data: delta_bytes,
         });
@@ -70,17 +70,6 @@ fn is_image_file(p: &Path) -> bool {
             p.extension().and_then(|e| e.to_str()),
             Some("png" | "jpg" | "jpeg")
         )
-}
-
-fn hamming(a: StateId, b: StateId) -> u8 {
-    (a.to_bits() ^ b.to_bits()).count_ones() as u8
-}
-
-fn now_ms() -> i64 {
-    SystemTime::now()
-        .duration_since(UNIX_EPOCH)
-        .unwrap_or_default()
-        .as_millis() as i64
 }
 
 fn print_stats(total: usize, unique: usize, output: &Path) {

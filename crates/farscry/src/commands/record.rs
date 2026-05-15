@@ -6,7 +6,7 @@ use std::path::PathBuf;
 use std::sync::atomic::{AtomicBool, Ordering};
 use std::sync::{Arc, Mutex};
 use std::thread;
-use std::time::{Duration, SystemTime, UNIX_EPOCH};
+use std::time::Duration;
 
 pub struct RecordOpts {
     pub output: PathBuf,
@@ -82,17 +82,6 @@ fn pid_file_path() -> PathBuf {
         .join(".current.pid")
 }
 
-fn now_ms() -> i64 {
-    SystemTime::now()
-        .duration_since(UNIX_EPOCH)
-        .unwrap_or_default()
-        .as_millis() as i64
-}
-
-fn hamming(a: StateId, b: StateId) -> u8 {
-    (a.to_bits() ^ b.to_bits()).count_ones() as u8
-}
-
 fn run_capture_loop(opts: RecordOpts) -> Result<()> {
     #[cfg(target_os = "linux")]
     return capture_loop_linux(opts);
@@ -155,9 +144,9 @@ fn capture_loop_linux(opts: RecordOpts) -> Result<()> {
         };
 
         let Some(hash) = hash_opt else { continue };
-        let ts = now_ms();
+        let ts = crate::util::now_ms();
         let is_new = last_hash
-            .map(|prev| hamming(hash, prev) > threshold)
+            .map(|prev| hash.hamming(prev) > threshold)
             .unwrap_or(true);
 
         if let Ok(mut w) = writer.lock() {
@@ -232,7 +221,7 @@ fn effective_capture_pid(hint: Option<u32>) -> Option<u32> {
     #[cfg(target_os = "macos")]
     {
         let start = hint.unwrap_or_else(std::os::unix::process::parent_id);
-        resolve_terminal_pid(start)
+        crate::iosurface_phash::find_terminal_window(start)
     }
     #[cfg(not(target_os = "macos"))]
     {
@@ -251,9 +240,9 @@ fn phash_thread(
     let mut last_hash: Option<StateId> = None;
     for img in rx {
         let hash = farscry_core::phash_image(&img);
-        let ts = now_ms();
+        let ts = crate::util::now_ms();
         let is_new = last_hash
-            .map(|prev| hamming(hash, prev) > threshold)
+            .map(|prev| hash.hamming(prev) > threshold)
             .unwrap_or(true);
         if is_new {
             ocr_tx.try_send((img, hash)).ok();
@@ -275,7 +264,7 @@ fn ocr_thread(
 ) {
     for (img, hash) in rx {
         let (w, h) = (img.width(), img.height());
-        let ts = now_ms();
+        let ts = crate::util::now_ms();
         if let Ok(vasp) = pipeline.process(img) {
             let vasp_text =
                 farscry_formatter::VaspFormatter::format_vasp(&vasp, "screen", w, h);
@@ -289,104 +278,10 @@ fn ocr_thread(
 }
 
 #[cfg(target_os = "macos")]
-fn resolve_terminal_pid(start_pid: u32) -> Option<u32> {
-    let mut pid = start_pid;
-    for _ in 0..8 {
-        if pid <= 1 {
-            break;
-        }
-        if find_window_id_for_pid(pid).is_some() {
-            return Some(pid);
-        }
-        match get_ppid(pid) {
-            Some(p) => pid = p,
-            None => break,
-        }
-    }
-    None
-}
-
-#[cfg(target_os = "macos")]
-fn get_ppid(pid: u32) -> Option<u32> {
-    let output = std::process::Command::new("ps")
-        .args(["-p", &pid.to_string(), "-o", "ppid="])
-        .output()
-        .ok()?;
-    std::str::from_utf8(&output.stdout)
-        .ok()?
-        .trim()
-        .parse::<u32>()
-        .ok()
-}
-
-#[cfg(target_os = "macos")]
-fn find_window_id_for_pid(target_pid: u32) -> Option<u32> {
-    use core_graphics::window::{
-        copy_window_info, kCGNullWindowID, kCGWindowListExcludeDesktopElements,
-        kCGWindowListOptionAll, kCGWindowNumber, kCGWindowOwnerPID,
-    };
-    use std::os::raw::c_void;
-
-    #[allow(improper_ctypes)]
-    extern "C" {
-        fn CFDictionaryGetValue(dict: *const c_void, key: *const c_void) -> *const c_void;
-        fn CFNumberGetValue(num: *const c_void, ty: i32, val: *mut c_void) -> bool;
-    }
-
-    const CF_NUMBER_SINT32: i32 = 3;
-
-    let windows = copy_window_info(
-        kCGWindowListOptionAll | kCGWindowListExcludeDesktopElements,
-        kCGNullWindowID,
-    )?;
-
-    for dict_raw in windows.get_all_values() {
-        unsafe {
-            let pid_cf = CFDictionaryGetValue(
-                dict_raw,
-                kCGWindowOwnerPID as *const c_void,
-            );
-            if pid_cf.is_null() {
-                continue;
-            }
-            let mut owner: i32 = 0;
-            if !CFNumberGetValue(
-                pid_cf,
-                CF_NUMBER_SINT32,
-                &mut owner as *mut i32 as *mut c_void,
-            ) {
-                continue;
-            }
-            if owner as u32 != target_pid {
-                continue;
-            }
-            let wid_cf = CFDictionaryGetValue(
-                dict_raw,
-                kCGWindowNumber as *const c_void,
-            );
-            if wid_cf.is_null() {
-                continue;
-            }
-            let mut wid: i32 = 0;
-            if CFNumberGetValue(
-                wid_cf,
-                CF_NUMBER_SINT32,
-                &mut wid as *mut i32 as *mut c_void,
-            ) {
-                return Some(wid as u32);
-            }
-        }
-    }
-    None
-}
-
-#[cfg(target_os = "macos")]
-fn capture_screen(window_pid: Option<u32>) -> Option<image::DynamicImage> {
-    if let Some(pid) = window_pid {
-        if let Some(wid) = find_window_id_for_pid(pid) {
-            if let Some(img) = capture_window(wid) {
-                return Some(img);
-            }
+fn capture_screen(window_id: Option<u32>) -> Option<image::DynamicImage> {
+    if let Some(wid) = window_id {
+        if let Some(img) = capture_window(wid) {
+            return Some(img);
         }
     }
     capture_full_screen()

@@ -3,7 +3,7 @@ use farscry_core::vasf::VasfFile;
 use std::path::PathBuf;
 
 pub fn session_list() -> Result<()> {
-    let dir = super::hook::sessions_dir();
+    let dir = crate::util::sessions_dir();
     if !dir.exists() {
         println!("No sessions yet. Run: farscry setup --hook");
         return Ok(());
@@ -25,7 +25,7 @@ pub fn session_list() -> Result<()> {
 }
 
 pub fn session_latest() -> Result<()> {
-    let dir = super::hook::sessions_dir();
+    let dir = crate::util::sessions_dir();
     let latest = std::fs::read_dir(&dir)?
         .filter_map(|e| e.ok())
         .map(|e| e.path())

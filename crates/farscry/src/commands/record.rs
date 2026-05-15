@@ -161,8 +161,11 @@ fn phash_thread(
         if is_new {
             ocr_tx.try_send((img, hash)).ok();
             last_hash = Some(hash);
-        } else if let Ok(mut w) = writer.lock() {
-            w.append_timeline(ts, hash).ok();
+        } else {
+            drop(img);
+            if let Ok(mut w) = writer.lock() {
+                w.append_timeline(ts, hash).ok();
+            }
         }
     }
 }
@@ -178,6 +181,7 @@ fn ocr_thread(
         if let Ok(vasp) = pipeline.process(img) {
             let vasp_text =
                 farscry_formatter::VaspFormatter::format_vasp(&vasp, "screen", w, h);
+            drop(vasp);
             if let Ok(mut wr) = writer.lock() {
                 wr.append_state(hash, &vasp_text).ok();
                 wr.append_timeline(ts, hash).ok();
@@ -314,11 +318,14 @@ fn capture_full_screen() -> Option<image::DynamicImage> {
 
 #[cfg(target_os = "macos")]
 fn cgimage_to_dynamic(image: core_graphics::image::CGImage) -> Option<image::DynamicImage> {
-    let data = image.data();
-    let bytes = data.bytes().to_vec();
     let width = image.width() as u32;
     let height = image.height() as u32;
     let bpr = image.bytes_per_row();
+    let bytes = {
+        let data = image.data();
+        data.bytes().to_vec()
+    };
+    drop(image);
     let mut rgba = Vec::with_capacity((width * height * 4) as usize);
     for y in 0..height {
         let row = (y as usize) * bpr;
@@ -332,6 +339,7 @@ fn cgimage_to_dynamic(image: core_graphics::image::CGImage) -> Option<image::Dyn
             }
         }
     }
+    drop(bytes);
     image::RgbaImage::from_raw(width, height, rgba).map(image::DynamicImage::ImageRgba8)
 }
 
@@ -362,5 +370,84 @@ fn capture_screen(window_pid: Option<u32>) -> Option<image::DynamicImage> {
             }
             Err(_) => return None,
         }
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[cfg(unix)]
+    fn rss_kib() -> u64 {
+        let Ok(out) = std::process::Command::new("ps")
+            .args(["-o", "rss=", "-p", &std::process::id().to_string()])
+            .output()
+        else {
+            return 0;
+        };
+        String::from_utf8_lossy(&out.stdout)
+            .trim()
+            .parse::<u64>()
+            .unwrap_or(0)
+    }
+
+    #[test]
+    fn test_ring_buffer_drops_when_full() {
+        let (tx, rx) = bounded::<image::DynamicImage>(3);
+        for _ in 0..3 {
+            assert!(tx
+                .try_send(image::DynamicImage::ImageRgba8(
+                    image::RgbaImage::new(4, 4)
+                ))
+                .is_ok());
+        }
+        assert!(
+            tx.try_send(image::DynamicImage::ImageRgba8(image::RgbaImage::new(4, 4)))
+                .is_err(),
+            "must drop frame when full, never block"
+        );
+        drop(rx);
+    }
+
+    #[test]
+    #[cfg(unix)]
+    fn test_rss_bounded_after_60_frame_simulation() {
+        let rss_before = rss_kib();
+
+        let tmp = std::env::temp_dir().join("_farscry_mem_test.vasf");
+        let writer = Arc::new(Mutex::new(VasfWriter::create(&tmp).unwrap()));
+        let (cap_tx, cap_rx) = bounded::<image::DynamicImage>(3);
+        let (ocr_tx, ocr_rx) = bounded::<(image::DynamicImage, StateId)>(1);
+
+        let t_ocr: thread::JoinHandle<()> = thread::spawn(move || {
+            for (img, _) in &ocr_rx {
+                drop(img);
+            }
+        });
+
+        let w2 = writer.clone();
+        let t_phash = thread::spawn(move || phash_thread(cap_rx, ocr_tx, w2, 10));
+
+        for _ in 0..60 {
+            let img =
+                image::DynamicImage::ImageRgba8(image::RgbaImage::new(1920, 1080));
+            cap_tx.try_send(img).ok();
+        }
+
+        drop(cap_tx);
+        t_phash.join().unwrap();
+        t_ocr.join().unwrap();
+
+        let rss_after = rss_kib();
+        let delta_kib = rss_after.saturating_sub(rss_before);
+        assert!(
+            delta_kib < 50 * 1024,
+            "RSS grew {delta_kib}KiB after 60-frame simulation (limit: 50MiB)",
+        );
+
+        if let Ok(mut w) = writer.lock() {
+            w.finalize().ok();
+        }
+        std::fs::remove_file(&tmp).ok();
     }
 }
